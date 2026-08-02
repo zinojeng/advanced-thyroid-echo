@@ -322,6 +322,7 @@ def main() -> int:
         "footer",
         "discussions",
         "counter",
+        "ratings",
     )
     course = {
         "config": {k: CFG[k] for k in ui_keys if k in CFG},

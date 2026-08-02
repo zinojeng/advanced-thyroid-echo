@@ -9,6 +9,7 @@ import {
 } from "./player.js";
 import { bindKeys, listen as ytListen } from "./keys.js";
 import * as discuss from "./discuss.js";
+import * as rate from "./rate.js";
 
 let LESSON_NOUN = "堂主課";
 let DRILL_NOUN = "支跟練影片";
@@ -610,6 +611,8 @@ async function init() {
   setConfig(data.config);
   setLanguages(data.config?.languages);
   discuss.setDiscussions(data.config?.discussions);
+  rate.setConfig(data.config?.ratings);
+  rate.init();
   applyChrome(data);
   renderHits(data.config); // 不 await，取數慢不該擋住畫面
   setDrillEvidence(data.drillEvidence);

@@ -607,3 +607,121 @@ body[data-tab="player"] {
   border-radius: 4px;
   background: var(--bgColor-neutral-muted);
 }
+
+/* --- 影片評價 ------------------------------------------------------------
+ * 低分會進入換片清單，所以低分才追問「哪裡不合格」。
+ * 單色調：星星用填滿與否表示，不靠顏色。 */
+.Rate {
+  margin-top: var(--base-size-12);
+  padding: var(--base-size-16);
+  border: 1px solid var(--borderColor-default);
+  border-radius: var(--borderRadius-medium);
+  background: var(--bgColor-muted);
+}
+
+.Rate__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--base-size-8);
+  font-size: 13px;
+}
+
+.Rate__avg {
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.Rate__n,
+.Rate__none {
+  color: var(--fgColor-muted);
+  font-size: 12px;
+}
+
+.Rate__stars {
+  display: flex;
+  gap: 2px;
+  margin: var(--base-size-8) 0;
+}
+
+.Rate__star {
+  padding: 3px;
+  border: 0;
+  background: none;
+  color: var(--ink-5);
+  border-radius: var(--borderRadius-small);
+}
+
+.Rate__star:hover {
+  color: var(--fgColor-default);
+}
+
+/* 已選到的分數：實心。單色調下用 fill 而不是換色來表示「選中」 */
+.Rate__star.is-on svg {
+  fill: currentColor;
+}
+
+.Rate__star.is-on {
+  color: var(--fgColor-default);
+}
+
+.Rate__ask {
+  margin-top: var(--base-size-8);
+  padding-top: var(--base-size-8);
+  border-top: 1px solid var(--borderColor-muted);
+}
+
+.Rate__ask p {
+  margin-bottom: var(--base-size-8);
+  font-size: 12px;
+  color: var(--fgColor-muted);
+}
+
+.Rate__reasonBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--base-size-4);
+}
+
+.Rate__reasonBtn {
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Rate__thanks {
+  margin-top: var(--base-size-8);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.Rate__reasons {
+  margin-top: var(--base-size-12);
+  padding-top: var(--base-size-8);
+  border-top: 1px solid var(--borderColor-muted);
+  font-size: 12px;
+}
+
+.Rate__reasons li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--base-size-8);
+  padding: 2px 0;
+  color: var(--fgColor-muted);
+}
+
+.Rate__reasons b {
+  font-variant-numeric: tabular-nums;
+  color: var(--fgColor-default);
+}
+
+.Rate__note {
+  margin-top: var(--base-size-8);
+  font-size: 11px;
+  color: var(--fgColor-muted);
+}
+
+.Rate__btnCount {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}

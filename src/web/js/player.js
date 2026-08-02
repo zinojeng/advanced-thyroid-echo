@@ -2,6 +2,7 @@
 import { icon } from "./icons.js";
 import { esc, KIND, UI, sourceBadges, sourceFootnote } from "./render.js";
 import { button as discussButton, panel as discussPanel } from "./discuss.js";
+import { button as rateButton, panel as ratePanel, attach as rateAttach } from "./rate.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 
@@ -180,6 +181,7 @@ export function play(item, { total }) {
         <button class="btn" data-step="1" type="button"><span class="Player__btnText">${esc(UI.nextLabel || "")}</span> ${icon("chevron-right", 14)}</button>
         <button class="btn" data-mark-unit="${esc(item.unitId)}" type="button">${icon("check", 14)} ${esc(UI.doneLabel || "")}</button>
         <button class="btn btn-icon" data-toggle-list type="button" title="收起／顯示清單">${icon("layers", 16)}<span class="visually-hidden" data-list-label>收起清單</span></button>
+        ${rateButton()}
         ${discussButton()}
         <a class="btn btn-icon" href="${esc(item.url)}" target="_blank" rel="noopener" title="${esc(UI.openExternal || "")}">${icon("external-link", 16)}</a>
       </div>
@@ -194,9 +196,12 @@ export function play(item, { total }) {
            </details>`
         : ""
     }
+    ${ratePanel()}
     ${discussPanel()}`;
 
   fitFrame();
+  // 換片後把評價按鈕上的平均分換成這一支的
+  rateAttach(item.vid || null);
 }
 
 /** 不能嵌入的來源（學會、期刊、醫院教學站、需登入的病例庫）：

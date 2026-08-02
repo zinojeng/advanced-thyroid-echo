@@ -503,5 +503,42 @@
     "lang": "zh-TW",
     "reactions": true,
     "inputPosition": "top"
+  },
+  "ratings": {
+    "label": "評價這支影片",
+    "summaryLabel": "評價",
+    "hint": "評價會影響換片：低分且有具體原因的影片會進入替換清單。需要 D1 才會顯示，本機預覽看不到。",
+    "thanks": "已記錄，謝謝。",
+    "anonNote": "匿名評價，不需要帳號。一支影片一票，重投會覆蓋前一次。",
+    "countLabel": "人評價",
+    "noneLabel": "尚無評價",
+    "reasonPrompt": "哪裡不合格？（選一個，我們才知道要換成什麼）",
+    "lowThreshold": 2,
+    "reasons": [
+      {
+        "id": "no-imaging",
+        "label": "只有講解／對話，沒有實際超音波影像"
+      },
+      {
+        "id": "blurry",
+        "label": "影像太模糊，看不出特徵"
+      },
+      {
+        "id": "off-topic",
+        "label": "內容與這個單元不符"
+      },
+      {
+        "id": "outdated",
+        "label": "用了過時的分類或做法"
+      },
+      {
+        "id": "too-basic",
+        "label": "對 fellow 來說太基礎"
+      },
+      {
+        "id": "other",
+        "label": "其他"
+      }
+    ]
   }
 }

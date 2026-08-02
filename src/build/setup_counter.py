@@ -53,11 +53,18 @@ def create_db() -> str | None:
 
 
 def main() -> int:
-    if "counter" not in CFG:
+    # 同一個 D1 資料庫同時服務瀏覽次數與影片評價，兩個功能都是選用的。
+    # 只要其中一個有設定就該把資料庫建起來——原本只看 counter，
+    # 導致「只開評價、不要瀏覽次數」的課程建不了資料庫。
+    features = [k for k in ("counter", "ratings") if k in CFG]
+    if not features:
         print(
-            "✗ course.config.json 沒有 counter 區塊——這個功能是選用的，先加上再跑", file=sys.stderr
+            "✗ course.config.json 沒有 counter 也沒有 ratings 區塊——"
+            "這兩個功能都是選用的，至少加一個再跑",
+            file=sys.stderr,
         )
         return 1
+    print(f"啟用的功能：{'、'.join(features)}")
 
     print(f"專案 {PROJECT} · 資料庫 {DB_NAME}")
 

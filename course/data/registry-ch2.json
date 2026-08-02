@@ -53,7 +53,10 @@
     "yt-dlp ytsearch: thyroid ultrasound pitfalls lecture mimics",
     "yt-dlp ytsearch: thyroid gland anatomical variants ultrasound lecture ectopic lingual thyroglossal",
     "yt-dlp ytsearch: thyroid ultrasound anatomy variants lecture radiology isthmus tubercle",
-    "yt-dlp channel listing: KeepMyThyroid（全頻道 140 支逐支檢視）"
+    "yt-dlp channel listing: KeepMyThyroid（全頻道 140 支逐支檢視）",
+    "yt-dlp ytsearch15: transcutaneous laryngeal ultrasound vocal cord（2026-08-02 替換查詢）",
+    "yt-dlp ytsearch15: laryngeal ultrasound vocal cord mobility technique（2026-08-02 替換查詢）",
+    "yt-dlp ytsearch15: vocal cord ultrasound thyroid surgery how to（2026-08-02 替換查詢）"
   ],
   "evaluated": [
     {
@@ -394,10 +397,27 @@
       "title": "Validating the Method. Transcutaneous Laryngeal Ultrasonography",
       "url": "https://www.youtube.com/watch?v=HHYuuNHyy4o",
       "source": "YouTube / Gdański Uniwersytet Medyczny（Medical University of Gdańsk）",
+      "decision": "excluded",
+      "unit": "ch2-u1",
+      "role": "drill",
+      "reason": "使用者回報：只有對話討論，沒有實際超音波影像。2026-08-02 逐幀複查證實——本片為 Medical University of Gdańsk 推廣室製作的博士生（Agastya Patel）形象／訪談短片，內容為訪談談話頭、格但斯克城市空景與研究計畫介紹，全片僅一個遠景帶到超音波螢幕、無探頭擺位示範、無標註、無動態掃描教學。符合 CURATION-BRIEF 排除標準「沒有實際動態掃描（只有口頭演講）」。已由 Gulfcoast Ultrasound Institute「How to do Vocal Cord Ultrasound」（MNqdjL5TFlI）取代。"
+    },
+    {
+      "title": "How to do Vocal Cord Ultrasound",
+      "url": "https://www.youtube.com/watch?v=MNqdjL5TFlI",
+      "source": "YouTube / Gulfcoast Ultrasound Institute（講者 Jennifer Sipos, MD）",
       "decision": "included",
       "unit": "ch2-u1",
       "role": "drill",
-      "reason": "影音改版：取代 Front Endocrinol 2024;15:1356935（術中 RLN echotexture）。改以經皮喉部超音波示範「超音波在 RLN 上真正能交付什麼」——看不到神經、但看得到聲帶活動。4:58、oEmbed 200，發布單位為可查證的大學醫學中心。"
+      "reason": "取代 HHYuuNHyy4o。1:51 全程真人實機掃描，探頭外觀與即時影像並列：甲狀軟骨上橫置探頭、降頻率至 8–9 MHz 並加 gain、依序指認 false vocal folds / arytenoid cartilages / true vocal folds，並以 bear down 與持續發「e」音兩種方式示範聲帶動態。正好交付本單元「看不到 RLN、但看得到它支配的聲帶」這個界限。oEmbed 200，duration 111 秒，觀看數約 1.07 萬。本片先前曾以「同機構影片已在 ch2-u4 使用，且 Gdańsk 版含方法學驗證」為由排除，該排除紀錄已刪除：Gdańsk 版經複查無任何超音波影像，排除理由不成立；本章 KeepMyThyroid 亦重複使用五次，CURATION-BRIEF 未禁止同頻道重複。"
+    },
+    {
+      "title": "High-Resolution Laryngeal US: Imaging Technique, Normal Anatomy, and Spectrum of Disease",
+      "url": "https://www.youtube.com/watch?v=djSU96jABQA",
+      "source": "YouTube / RadioGraphics（RSNA），Beale et al. RadioGraphics 2020;40:775-790 video abstract",
+      "decision": "excluded",
+      "unit": "ch2-u1",
+      "reason": "候選替代品之一，影像品質與權威性皆合格（含正常聲帶活動與聲帶麻痺的標註 cine clips）。未採用原因：3:30 內容重心在喉癌侵犯分期、軟骨侵犯與 Delphian node，超出本單元「頸部正常解剖 + RLN 能與不能」的範圍，且無探頭擺位實拍。"
     },
     {
       "title": "Thyroid Ultrasound for the Sonographer",
@@ -455,13 +475,6 @@
       "source": "YouTube / MedPrinting",
       "decision": "excluded",
       "reason": "51 秒的錐狀葉影像片段，俄語、無解說、發布者身分不明；影像價值不足以支撐一個 drill。"
-    },
-    {
-      "title": "How to do Vocal Cord Ultrasound",
-      "url": "https://www.youtube.com/watch?v=MNqdjL5TFlI",
-      "source": "YouTube / Gulfcoast Ultrasound Institute",
-      "decision": "excluded",
-      "reason": "1:52 的聲帶超音波示範，品質可用，但同機構影片已在 ch2-u4 使用（anisotropy），且大學來源的 Gdańsk 版本含方法學驗證，優先取後者。"
     },
     {
       "title": "American Association of Endocrine Surgeons 2014 Laryngeal Ultrasound",

@@ -56,6 +56,9 @@ registry: ## 合併各章搜尋紀錄成 SOURCE-REGISTRY.json
 gaps: ## 列出誠實留空的欄位、需登入的來源與證據不足的主題
 	$(PY) src/build/gaps.py
 
+ratings: ## 讀線上評價，印出建議換片的影片清單（低分且有具體原因）
+	$(PY) src/build/ratings.py
+
 serve: ## 本機預覽
 	@echo "→ http://localhost:$(PORT)"
 	@$(PY) -m http.server $(PORT) --directory $(DIST)
@@ -76,4 +79,4 @@ check: lint build audit ## 提交前跑這個（含離線稽核）
 clean: ## 清掉建置暫存
 	rm -rf .tmp .wrangler .ruff_cache dist **/__pycache__
 
-.PHONY: help build icons og meta counter audit verify verify-external registry gaps serve deploy lint fmt check clean
+.PHONY: help build icons og meta counter audit verify verify-external registry gaps ratings serve deploy lint fmt check clean

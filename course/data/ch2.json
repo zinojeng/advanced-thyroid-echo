@@ -68,22 +68,22 @@
           "last_verified": "2026-08-02"
         },
         {
-          "name": "看不到神經，但看得到聲帶：經皮喉部超音波",
-          "en": "Validating the Method. Transcutaneous Laryngeal Ultrasonography",
+          "name": "看不到神經，但看得到聲帶：經皮喉部超音波實作",
+          "en": "How to do Vocal Cord Ultrasound",
           "kind": "procedure",
-          "target": "波蘭格但斯克醫學大學（Medical University of Gdańsk）示範經皮喉部超音波的做法與其方法學驗證。收它是為了把本單元最容易被誇大的一點講清楚：門診條件下你掃不到 recurrent laryngeal nerve 本身，但你可以用同一支高頻探頭看聲帶的活動，取得這條神經功能的間接讀數——這才是超音波在 RLN 這件事上真正能交付的東西。",
-          "dose": "五分鐘。看完在下一位術前病人身上試一次：探頭橫放於甲狀軟骨上，請病人發長音，記錄能不能看到雙側聲帶對稱活動；看不到就記下原因（軟骨鈣化、頸圍、角度）。這個否定結果本身就是本單元要學到的界限。",
-          "title": "Validating the Method. Transcutaneous Laryngeal Ultrasonography",
-          "channel": "Gdański Uniwersytet Medyczny（Medical University of Gdańsk）",
-          "url": "https://www.youtube.com/watch?v=HHYuuNHyy4o",
-          "duration": "4:58",
-          "tier": "B",
+          "target": "Gulfcoast Ultrasound Institute 的 Hot Tips 短片，由甲狀腺超音波教學者 Jennifer Sipos 醫師（Ohio State）在真人受檢者身上全程實掃示範，畫面採探頭外觀與即時影像並列。內容涵蓋四件事：探頭橫置於甲狀軟骨上、把頻率從 10 MHz 降到 8–9 MHz 並調高 gain 才能穿透軟骨；以中線兩側對稱、明亮寬帶的 false vocal folds 作為第一個定位目標；認出後方成對的 arytenoid cartilages；再往深處分出較細的明亮線狀帶就是 true vocal folds。動態部分示範兩種誘發：請受檢者 bear down 憋氣可看到聲帶向中線 adduction、放鬆後隨呼吸再打開，以及請受檢者持續發「e」音時雙側聲帶在中線靠攏。收它是為了把本單元最容易被誇大的一點講清楚：門診條件下你掃不到 recurrent laryngeal nerve 本身，但同一支高頻探頭可以看到它支配的聲帶如何動——這個功能性的間接讀數，才是超音波在 RLN 這件事上真正能交付的東西。",
+          "dose": "不到兩分鐘，先看一次記下「降頻率、加 gain」這組設定。接著在下一位術前病人身上照著做：探頭橫放甲狀軟骨，先找 false vocal folds 定位，再依序指認 arytenoid 與 true vocal folds，然後用發長音「e」與 bear down 各誘發一次，記錄雙側是否對稱活動。看不到就寫下原因（軟骨鈣化、頸圍、探頭角度、頻率沒調降）——這個否定結果本身就是本單元要學到的界限。",
+          "title": "How to do Vocal Cord Ultrasound",
+          "channel": "Gulfcoast Ultrasound Institute",
+          "url": "https://www.youtube.com/watch?v=MNqdjL5TFlI",
+          "duration": "1:51",
+          "tier": "A",
           "source_type": "video",
           "provider": "youtube",
           "access": "open",
-          "license": "版權歸 Gdański Uniwersytet Medyczny，本站僅連結不重製",
+          "license": "版權歸 Gulfcoast Ultrasound Institute，本站僅連結不重製",
           "last_verified": "2026-08-02",
-          "note": "觀看數僅數百；納入理由是發布單位為可查證的大學醫學中心，且主題正好對應「超音波在 RLN 上的能與不能」。原本此欄位放的是 Frontiers in Endocrinology 2024;15:1356935（術中高頻探頭對照 RLN echotexture）的全文，依影音課程規則移出資源欄位，改由實證層 citations 承接；RLN 的 echotexture 描述仍以該文為準。oEmbed 驗證 HTTP 200。"
+          "note": "2026-08-02 替換：原本此欄位為 Medical University of Gdańsk 的 Validating the Method (HHYuuNHyy4o)，實際內容為博士生訪談與校園形象片，全片無教學性掃描示範（僅一個遠景帶到超音波螢幕），依 CURATION-BRIEF 排除標準汰換。本片為全程實機掃描示範，主講者 Jennifer Sipos 為可查證的甲狀腺超音波教育者，機構 GCUS 為 ACCME 認證超音波教育單位。oEmbed 驗證 HTTP 200（author_name: Gulfcoast Ultrasound Institute），duration 111 秒。另有 RadioGraphics 2020;40:775-790 的 video abstract（djSU96jABQA，含正常聲帶活動與聲帶麻痺 cine）內容亦合格，但偏重喉癌侵犯分期、超出本單元範圍，未採用。RLN 的 echotexture 描述仍以實證層 Frontiers in Endocrinology 2024;15:1356935 為準。"
         },
         {
           "name": "RLN 走向變異為什麼會改變你的掃描重點",
