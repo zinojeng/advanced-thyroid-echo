@@ -7,7 +7,7 @@
 ## 這是什麼專案
 
 一門線上影音課程：**進階甲狀腺及頸部超音波**，受眾是內分泌新陳代謝科 fellow
-與已取得專科資格的醫師。14 章、68 個單元、288 個資源欄位。
+與已取得專科資格的醫師。14 章、68 個單元、288 個資源欄位、257 支已驗證影片。
 
 - 線上：<https://thyroid-us.pages.dev>
 - Repo：`zinojeng/advanced-thyroid-echo`
@@ -75,7 +75,9 @@ make verify       # 重打 YouTube oEmbed 與 PubMed API
 ### oEmbed 證明不了影片拍了什麼
 
 使用者曾回報一支「經皮喉部超音波」影片**只有對話討論、沒有任何超音波影像**。
-連結是活的、標題也對，但內容不合格——這類錯誤自動化查核抓不到。
+連結是活的、標題也對，但內容不合格——這是這個專案最難防的一類錯誤。
+CH12 擴充時的稽核又抓到同一類：宣稱「全片實機掃描」實為投影片講座、
+一支 10:47 有 3/4 在推銷自營課程。
 
 選片時務必看描述與章節確認真的有動態掃描：
 
@@ -83,7 +85,48 @@ make verify       # 重打 YouTube oEmbed 與 PubMed API
 yt-dlp --no-update --skip-download --print "%(description)s" "<url>"
 ```
 
-站上的**影片評價**（`make ratings`）就是為了接住這類問題而做的。
+三道防線，缺一不可：
+
+1. `make verify-content`（Gemini 多模態）——**篩選器，不是判決**
+2. 站上的影片評價（`make ratings` / `make feedback`）——使用者的眼睛
+3. 人工開影片確認——前兩者都只是把可疑的挑出來
+
+### Gemini 的判斷不能當判決
+
+`make verify-content` 會標記可疑影片，但它**最常分不清「投影片上貼的靜態超音波截圖」
+與「實機動態掃描」**，也可能把解剖動畫當成超音波、或漏掉只出現數秒的片段；
+同一支重跑結果可能不同。
+
+所以：**這支腳本刻意不會自動改動任何課程資料**，被標記的一律人工確認後再決定。
+不要為了讓數字好看而把它接成自動修正。
+
+成本：一支約 9–10 萬 tokens，257 支一輪約 US$8。預設有快取，
+`--refresh` 只有在**沒有** `--only`／`--limit` 時才會整份重建。
+
+### 病例單元的「先答再看」很容易被破壞
+
+`type: case` 的單元靠「先自己判斷、再看答案」教學，而這件事有四個漏口：
+
+1. **YouTube 原標題**常直接寫著診斷（`Medullary carcinoma - case 21`）
+   → `build.py` 對 `type: case` 自動加 `spoiler`，前端隱藏 `en` 與 tooltip
+2. **片頭卡**常印著最終病理，而播放器 `autoplay` 從 0:00 開播
+   → 用 `start`（非負整數，秒）跳過。**`start` 擋不掉 YouTube 縮圖**（縮圖就是那張卡），
+   這個殘留風險要寫進 `note`，不要假裝解決了
+3. **答案與影像同框**（講者的手寫解說在畫面另一半）→ 物理上做不到先答再看，
+   要改寫 `dose`（例如遮住半邊）或把該資源降成對照用
+4. **`assessment` 自己引用了含診斷的標題** → 寫驗收指示時不要把片名整串貼進去
+
+### 平行修正時，複驗要能推翻修正者
+
+CH12 擴充跑了三輪。第二輪抓到修正者**把原本正確的 02:35 改成錯誤的 02:20**，
+還在 note 裡以稽核之名寫成更正紀錄；另一支新增了根本不存在的都卜勒時間戳。
+兩者都附上沒做過的「ffmpeg 已確認」宣稱。
+
+所以派修正 agent 時一定要：
+
+- 給它**複驗員實測出來的值**，並明講「直接套用，不要自己重新推導」
+- 明講「**不要宣稱你沒做的驗證**」——照抄不需要再驗一次，但要照實說是照抄
+- 修完再派一個獨立的人複驗，不要相信自述
 
 ### provider 是託管平台，不是發布機構
 
@@ -98,6 +141,12 @@ yt-dlp --no-update --skip-download --print "%(description)s" "<url>"
 
 分類圓點用 `--dotColor-*`，**不要**用 `--fgColor-<tone>`——
 後者在單色調下是反白字色，畫在淺色底上會消失。
+
+### 頁尾與文案都從設定檔讀
+
+`footer` 的四段（`disclaimer` / `creator` / `contact` / `credits` / `colophon`）
+都含 `<strong>` 與 `<a>`，而且**都要走同一條路**——曾經只有 `disclaimer` 直接插入、
+其餘走 `esc()`，結果 `<strong>版權。</strong>` 在畫面上印出字面。
 
 ### 醫學內容的紅線
 
@@ -126,9 +175,10 @@ src/build/                 建置與查核工具
   verify_links.py          YouTube oEmbed
   verify_refs.py           PubMed 引用
   verify_external.py       非 YouTube 連結（目前課程全是 YouTube，備而不用）
-  ratings.py / gaps.py / merge_registry.py
+  verify_content.py        Gemini 影片內容查核（篩選器，不改資料）
+  ratings.py / feedback.py / gaps.py / merge_registry.py / merge_ch12.py
 src/web/                   前端（css / js / index.html）
-functions/                 Cloudflare Pages Functions（瀏覽次數、影片評價）
+functions/                 Cloudflare Pages Functions（瀏覽次數、影片評價、回饋讀取）
 docs/                      BRIEF、策展契約、病例格式、評量題庫
 ```
 
@@ -143,14 +193,18 @@ make build            course/ → dist/，配額不符直接失敗
 make check            lint + build + audit，提交前跑這個
 make verify           重驗 YouTube 連結與 PubMed 引用
 make meta             用 yt-dlp 補齊影片長度／觀看數／頻道
+make verify-content   用 Gemini 查核影片內容（需 .env 的 GEMINI_API_KEY）
 make ratings          讀線上評價，印出建議換片清單
+make feedback         整理使用者回饋（含文字），ARGS="--post" 開成 GitHub Issue
 make gaps             列出誠實留空的欄位與證據不足的主題
 make registry         合併搜尋紀錄成 SOURCE-REGISTRY.json
 make og               重新產生社群預覽圖（Chrome headless + sips）
 make deploy           部署到 Cloudflare Pages
 ```
 
-部署需要環境變數 `CLOUDFLARE_API_TOKEN` 與 `CLOUDFLARE_ACCOUNT_ID`。
+`.env`（gitignored）需要：`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`、
+`GEMINI_API_KEY`（內容查核）、`FEEDBACK_TOKEN`（讀使用者文字回饋，
+同一個值也要 `wrangler pages secret put` 設進 Cloudflare）。
 **推 GitHub 不會更新網站**，要另外跑 `make deploy`。
 
 ---
@@ -169,12 +223,28 @@ make deploy           部署到 Cloudflare Pages
 
 ## 平行策展的教訓
 
-多個 agent 同時策展時，**每個 agent 給獨立的輸出檔**，最後由主流程合併。
-共用一個檔一定會互相覆蓋。暫存檔也要各給一個子目錄。
+多個 agent 同時策展時，**每個 agent 給獨立的輸出檔**，最後由主流程合併
+（`merge_ch12.py` 是範例）。共用一個檔一定會互相覆蓋。暫存檔也要各給一個子目錄。
+
+兩個 agent 會**各自選到同一支影片**當核心教材（CH12 的 u8 與 u10 都挑了同一場
+一小時 MTC webinar）。合併時要檢查跨單元重複，並由主流程裁決誰保留。
 
 YouTube 在短時間內大量請求後會限流，而且 **yt-dlp 在限流下會回傳部分資料
 （有標題有觀看數但沒有長度）而不是直接失敗**。`build.py` 遇到 `seconds=0`
 會保留策展時的長度，不用 `0:00` 覆蓋——不要把這個保護拿掉。
+
+## 動版面之前先量
+
+改播放器版面時實測出兩件光看程式碼不會發現的事：
+
+- 影片同時被**欄寬**與**可用高度**綁住。原本 `fitFrame()` 是「摘要要多高、
+  影片拿剩下的」，但在 1200px 視窗影片早就被欄寬卡死，拉高完全沒效果——
+  拖曳把手看起來像壞的。現在改成以影片高度為主變數、欄寬換算的高度當上限。
+- 摘要在 1500px 視窗會把 stage 撐爆 133px，而 `.Player` 是 `overflow: hidden`，
+  底部的評價 chips 根本點不到。
+
+所以動 `.Player__*` 的高度／`flex` 之前，先用無頭瀏覽器量 `stage`／`frame`／`info`
+的實際尺寸與 `scrollHeight - clientHeight`，不要憑 CSS 推論。
 
 ---
 
