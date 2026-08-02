@@ -3,7 +3,7 @@
 **Advanced Thyroid and Neck Ultrasonography for Endocrine Fellows and Specialists**
 
 給內分泌新陳代謝科 fellow 與專科醫師的進階甲狀腺及頸部超音波課程。
-14 章、63 個單元、196 個病例與示範資源欄位。
+14 章、68 個單元、220 個病例與示範資源欄位。
 
 > **不是入門課。** 假設你已經會掃、會量、知道基本術語。這門課處理的是**判讀落差**：
 > 機器參數怎麼救回困難影像、ACR TI-RADS 與 ATA／EU／K-TIRADS 在同一顆結節上為什麼
@@ -212,7 +212,7 @@ make ratings
 
 | 檔案 | 內容 |
 |---|---|
-| [`COURSE-PLAN.md`](COURSE-PLAN.md) | 受眾、章節、63 個單元、配額與理由、預估時數 |
+| [`COURSE-PLAN.md`](COURSE-PLAN.md) | 受眾、章節、68 個單元、配額與理由、預估時數 |
 | [`COMPETENCY-FRAMEWORK.md`](COMPETENCY-FRAMEWORK.md) | 42 條 fellow 能力、畢業標準、對應驗收方式 |
 | [`SEARCH-METHODOLOGY.md`](SEARCH-METHODOLOGY.md) | 資料庫、網站、query matrix、語言、納入／排除標準、驗證程序 |
 | [`GUIDELINE-MATRIX.md`](GUIDELINE-MATRIX.md) | ACR／ATA／EU／K-TIRADS 逐項比較與系統間不一致 |

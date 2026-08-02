@@ -162,7 +162,7 @@ function drill(d) {
   const inner = `
     <span class="Drill__marker" style="background:var(--dotColor-${esc((KIND[d.kind] || {}).tone || "accent")})"></span>
     <span class="Drill__main">
-      <span class="Drill__name">${esc(d.name)}${d.en ? ` <span class="Drill__en">${esc(d.en)}</span>` : ""}</span>
+      <span class="Drill__name">${esc(d.name)}${d.en && !d.spoiler ? ` <span class="Drill__en">${esc(d.en)}</span>` : ""}</span>
       <span class="Drill__meta">
         ${d.target ? `<span>${esc(d.target)}</span>` : ""}
         ${d.dose ? `<span class="Drill__dose">${esc(d.dose)}</span>` : ""}
@@ -177,8 +177,10 @@ function drill(d) {
   const attrs = `class="Drill" data-kind="${esc(d.kind)}" data-facets="${esc((d.facets || []).join("|"))}"${d.cat ? ` data-cat="${esc(d.cat)}"` : ""}`;
 
   // 有連結就整列可點，跟主課卡片一致
+  // spoiler 的資源連 tooltip 都不能顯示原標題——滑過去就看到診斷等於沒遮
+  const tip = d.spoiler ? UI.spoilerHint || "" : d.title || "";
   return d.url
-    ? `<li ${attrs}><a class="Drill__link" href="${esc(d.url)}" target="_blank" rel="noopener" title="${esc(d.title || "觀看示範")}">${inner}</a></li>`
+    ? `<li ${attrs}><a class="Drill__link" href="${esc(d.url)}" target="_blank" rel="noopener" title="${esc(tip)}">${inner}</a></li>`
     : `<li ${attrs}><span class="Drill__link" aria-disabled="true" title="尚未找到合格影片">${inner}</span></li>`;
 }
 

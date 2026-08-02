@@ -267,7 +267,14 @@ def main() -> int:
                 else:
                     alt_count[0] += 1
 
+            # 病例單元靠「先自己判斷、再看答案」教學，而原始影片標題常常直接寫著
+            # 診斷（Medullary carcinoma - case 21）。標題印在卡片上，drill 就失效了。
+            # 這裡預設把病例單元的資源標成 spoiler，前端據此不在卡面顯示英文原標題；
+            # 標題仍留在資料裡供查證與署名，策展者也可以明確設 false 覆蓋。
+            is_case = u.get("type") == "case"
             for d in u.get("drills") or []:
+                if is_case:
+                    d.setdefault("spoiler", True)
                 kinds[d.get("kind")] += 1
                 d["facets"] = facets.extract(d.get("target"), d.get("name")) if facets else []
                 cid = categories.classify(d) if categories else None

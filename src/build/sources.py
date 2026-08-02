@@ -112,6 +112,11 @@ def metadata_problems(v: dict) -> list[str]:
         out.append(f"tier「{tier}」必須是 A／B／C")
     if (lv := v.get("last_verified")) and not ISO_DATE.match(str(lv)):
         out.append(f"last_verified「{lv}」不是 YYYY-MM-DD")
+    # start 是「跳過片頭卡」用的秒數；寫成字串或負數會讓播放器安靜地忽略它，
+    # 而片頭卡上印著診斷——安靜失敗等於劇透
+    st = v.get("start")
+    if st is not None and (not isinstance(st, int) or isinstance(st, bool) or st < 0):
+        out.append(f"start「{st}」必須是非負整數（秒）")
 
     if provider != "youtube":
         # YouTube 靠 oEmbed 就能確認公開可看；其他來源必須人工標示存取與授權

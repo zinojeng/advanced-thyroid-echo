@@ -1,584 +1,1923 @@
 {
-  "chapter": "CH12",
-  "title": "高難度病例與影像陷阱",
-  "units": [
+ "chapter": "CH12",
+ "title": "高難度病例與影像陷阱",
+ "units": [
+  {
+   "id": "ch12-u1",
+   "name": "橋本假性結節 vs 惡性",
+   "type": "case",
+   "assessment": "打開本單元第一支病例影片（Tamas Solymosi 的橋本系列，站上卡片列在最前面），在任何文字說明之前先看完整段動態掃描，寫下：(1) 你認為腺體內有幾個「真結節」，各自的 composition、echogenicity、margin、shape、echogenic foci；(2) 每一個病灶的 ACR TI-RADS (2017) 分數與級別；(3) 你會不會穿刺、穿哪一顆。**三題都寫完之後**，再打開該片對應的 thyrosite 案例頁看細胞學與手術病理（連結在該資源的 dose 欄位；先看答案這一題就白做了）。最後逐項記錄你和作者判斷不同的地方，並明確寫出那個差異來自哪一個影像特徵——是 margin 的可辨識度、是低回音背景造成的相對低回音、還是纖維分隔造成的假邊界。同樣流程再跑一次本單元的第二支病例，比較 micronodular 型與 pseudonodular 型的差別。",
+   "tight": [
+    "把瀰漫性低回音背景中「相對正常回音」的區域誤判成 hyperechoic nodule，或反過來把纖維分隔切出來的低回音區當成 hypoechoic nodule——兩者都沒有真正的 capsule／可追蹤邊界",
+    "在橋本腺體上直接套用一般族群的 ACR TI-RADS 分數：Słowińska-Klencka 等人的資料顯示 solid echostructure 與 macrocalcification 在橋本病人身上幾乎失去鑑別力，而 microcalcification 反而是最強的惡性指標（OR 22.7）",
+    "假性結節在橫切面看起來像結節，轉 90 度縱切就散掉；只掃一個切面就下結論",
+    "被『橋本病人不用管小結節』這種簡化說法帶走，忽略橋本背景下同時存在的真結節與淋巴瘤風險"
+   ],
+   "weak": [
+    "用「兩個垂直切面都能追蹤到同一條邊界」作為判定 discrete lesion 是否為真結節的硬性條件",
+    "在瀰漫性低回音腺體中重新定義 echogenicity 的參照物（用頸前肌肉而不是周圍腺體）",
+    "說明為什麼 taller-than-wide 在橋本腺體要用不同的 AP/T 閾值，並能引用實際數據",
+    "把「這是假性結節」與「這一顆需要 FNA」拆成兩個獨立的決策，而不是混為一談"
+   ],
+   "lesson": {
+    "title": "Differentiation of discrete lesions in Hashimoto's thyroiditis",
+    "channel": "Tamas Solymosi",
+    "url": "https://www.youtube.com/watch?v=FvMSaHg_jVY",
+    "duration": "10:31",
+    "why": "整段只處理一個問題：橋本腺體裡的離散病灶哪些算真結節、哪些只是低回音背景中的相對高回音區。講者是 ETA Ultrasound Course 的授課者，示範的是可重複的判定準則（兩個垂直切面追蹤邊界），直接填掉 fellow 最常出錯的落差。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+    "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站；內容本身無廠商贊助跡象",
+    "last_verified": "2026-08-02",
+    "note": "已用 oEmbed 驗證存在且可嵌入；此影片無 YouTube chapter 標記，未偽造時間軸"
+   },
+   "drills": [
     {
-      "id": "ch12-u1",
-      "name": "橋本假性結節 vs 惡性",
-      "type": "case",
-      "assessment": "打開 Tamas Solymosi「Pseudonodular form. Chronic lymphocytic thyroiditis - case 26」，在任何文字說明之前先看完整段動態掃描，寫下：(1) 你認為腺體內有幾個「真結節」，各自的 composition、echogenicity、margin、shape、echogenic foci；(2) 每一個病灶的 ACR TI-RADS (2017) 分數與級別；(3) 你會不會穿刺、穿哪一顆。寫完再打開 thyrosite 對應案例頁 http://thyrosite.com/thyroid/103/index.htm 看細胞學與手術病理（答案是：全部不是結節，histopathology 只有 Hashimoto's thyroiditis）。最後逐項記錄你和作者判斷不同的地方，並明確寫出那個差異來自哪一個影像特徵——是 margin 的可辨識度、是低回音背景造成的相對低回音、還是纖維分隔造成的假邊界。同樣流程再跑一次 case 12（http://thyrosite.com/thyroid/974/index.htm ，影片 https://www.youtube.com/watch?v=JBxin9om6w0 ），比較 micronodular 型與 pseudonodular 型的差別。",
-      "tight": [
-        "把瀰漫性低回音背景中「相對正常回音」的區域誤判成 hyperechoic nodule，或反過來把纖維分隔切出來的低回音區當成 hypoechoic nodule——兩者都沒有真正的 capsule／可追蹤邊界",
-        "在橋本腺體上直接套用一般族群的 ACR TI-RADS 分數：Słowińska-Klencka 等人的資料顯示 solid echostructure 與 macrocalcification 在橋本病人身上幾乎失去鑑別力，而 microcalcification 反而是最強的惡性指標（OR 22.7）",
-        "假性結節在橫切面看起來像結節，轉 90 度縱切就散掉；只掃一個切面就下結論",
-        "被『橋本病人不用管小結節』這種簡化說法帶走，忽略橋本背景下同時存在的真結節與淋巴瘤風險"
-      ],
-      "weak": [
-        "用「兩個垂直切面都能追蹤到同一條邊界」作為判定 discrete lesion 是否為真結節的硬性條件",
-        "在瀰漫性低回音腺體中重新定義 echogenicity 的參照物（用頸前肌肉而不是周圍腺體）",
-        "說明為什麼 taller-than-wide 在橋本腺體要用不同的 AP/T 閾值，並能引用實際數據",
-        "把「這是假性結節」與「這一顆需要 FNA」拆成兩個獨立的決策，而不是混為一談"
-      ],
-      "lesson": {
-        "title": "Differentiation of discrete lesions in Hashimoto's thyroiditis",
-        "channel": "Tamas Solymosi",
-        "url": "https://www.youtube.com/watch?v=FvMSaHg_jVY",
-        "duration": "10:31",
-        "why": "整段只處理一個問題：橋本腺體裡的離散病灶哪些算真結節、哪些只是低回音背景中的相對高回音區。講者是 ETA Ultrasound Course 的授課者，示範的是可重複的判定準則（兩個垂直切面追蹤邊界），直接填掉 fellow 最常出錯的落差。",
-        "tier": "A",
-        "source_type": "video",
-        "provider": "youtube",
-        "access": "open",
-        "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-        "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站；內容本身無廠商贊助跡象",
-        "last_verified": "2026-08-02",
-        "note": "已用 oEmbed 驗證存在且可嵌入；此影片無 YouTube chapter 標記，未偽造時間軸"
-      },
-      "drills": [
-        {
-          "name": "慢性淋巴球性甲狀腺炎 case 26：假性結節型",
-          "en": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
-          "kind": "case",
-          "target": "44 歲男性，因結節性甲狀腺腫轉診、有吞嚥困難。要學員看出：整個腺體低回音、由多個離散的「正常回音」區域組成，但沒有任何一個符合真結節定義。手術病理只有 Hashimoto's thyroiditis，完全沒有結節——這是「觸診硬、影像像多結節、病理什麼都沒有」的原型病例。",
-          "dose": "先答再看：全長 52 秒，先看完整段不要讀標題與說明欄，寫下你的 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開 http://thyrosite.com/thyroid/103/index.htm 對答案（細胞學 Hashimoto、手術病理無結節）。",
-          "title": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=moU7a_9FH5U",
-          "duration": "0:52",
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com",
-          "last_verified": "2026-08-02",
-          "note": "有明確病理對照（thyrosite 案例頁載明手術 histopathology）。影片本身無 chapter 標記，故不列 timestamps。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "慢性淋巴球性甲狀腺炎 case 85：高回音「結節」其實是殘存的正常腺體",
-          "en": "Chronic lymphocytic thyroiditis - case 85",
-          "kind": "case",
-          "target": "27 歲女性，甲狀腺低下已治療 19 年，因「結節持續長大」轉診。10 歲時因細胞學讀為「疑似濾泡癌」接受左葉次全切除，histopathology 只有 Hashimoto's thyroiditis、完全沒有結節；此後 15 年追蹤，兩個「高回音結節」由 8 mm 長到 11 mm、由 12 mm 長到 16 mm。本次功能狀態：每日 162.5 微克 levothyroxine 下 TSH 0.92 mIU/L。影像：兩葉皆低回音並有纖維化，右葉中段與下極各有一個 echonormal 區域，形狀都不是規則的幾何形。要學員看出：這些「高回音結節」其實是受炎症影響較少、相對正常的殘存腺體，會長大只是腺體本身從兒童到成人的正常增長，不是腫瘤生長。鑑別診斷至少三個：真正的高回音結節（濾泡性腺瘤／增生性結節）、炎症影響較輕的殘存腺體、橋本背景下共存的乳突癌——最容易被選錯的是第一個。下一步是繼續追蹤，不是再穿刺或再手術。有手術病理對照（15 年前的左葉次全切除證實同樣的外觀沒有任何結節），但本次這兩個病灶本身無病理對照。",
-          "dose": "先答再看：全長 35 秒，先看完整段動態掃描、不要讀標題與說明欄，寫下你認為腺體內有幾個病灶、每一個的 structured description（composition、echogenicity、shape、margin、echogenic foci）、ACR TI-RADS (2017) 分數與是否穿刺；再打開說明欄的 http://www.thyrosite.com/thyroid/252/index.htm 讀 Clinical data 與 Comments 對答案，重點在「長大」這件事的意義。最後回答：如果你只拿到今天這一張影像、沒有 15 年前的病理，你的報告會怎麼寫。",
-          "title": "Chronic lymphocytic thyroiditis - case 85",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=ShIN93-kLRg",
-          "duration": "0:35",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "整段只有一次連續掃描，這裡就是「第一眼」——先暫停自己判斷再播放"
-            }
-          ],
-          "note": "影片為無旁白的動態掃描，無 YouTube chapter 標記，故僅標 0:00 起點，未自行推測其他時間點。病理對照來自說明欄連結的 thyrosite 案例頁（15 年前左葉次全切除）。"
-        },
-        {
-          "tier": "A",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "慢性淋巴球性甲狀腺炎 case 17：橋本腺體裡的粗鈣化與細胞學偽陽性",
-          "en": "Chronic lymphocytic thyroiditis - case 17",
-          "kind": "case",
-          "target": "55 歲女性，甲狀腺功能亢進治療 13 年，因體重增加 3 公斤、疲倦、掉髮回診，被發現多結節性甲狀腺腫；外院細胞學為「疑似濾泡癌」，已排定全甲狀腺切除，病人自行要求第二意見。功能狀態：甲狀腺功能正常（TSH 2.06 mIU/L、TSAb 陰性、aTPO 9 U/mL）。影像：基礎回音中度低下，多個回音型態不一的離散病灶；問題病灶位於左葉，低回音、不均質、帶 coarse calcification，既沒有 halo sign 也沒有 perinodular blood flow。重新在右葉低回音區與原可疑病灶各做一次細胞學，兩次都是 Hashimoto's thyroiditis。Histopathology：Hashimoto's thyroiditis、沒有任何結節，左葉只有一處粗鈣化。要學員帶走兩件事：(1) 在橋本腺體裡，coarse calcification 這種在一般族群被當成特徵的所見會失去鑑別力，不能單獨拿來加分；(2) halo sign 與 perinodular blood flow「同時缺席」是反對濾泡性腫瘤的強力論據。鑑別至少三個：濾泡性腫瘤、橋本背景下的真結節、纖維化加鈣化的非結節區——最容易被選錯的是濾泡性腫瘤，因為細胞學已經先講了。下一步不是直接手術，而是在有疑慮時重做細胞學。有手術病理對照。",
-          "dose": "先答再看：全長 1 分 02 秒，先看完整段、不要讀標題，寫下左葉那個病灶的 structured description、ACR TI-RADS (2017) 分數與你的處置（直接手術／重做 FNA／追蹤）；再打開 http://www.thyrosite.com/thyroid/388/index.htm 讀 Cytology、Histopathology 與 Comments 對答案。最後寫下：把「已知細胞學疑似濾泡癌」這個資訊拿掉之後，你的分級會不會改變——這一題測的是你有沒有被細胞學錨定。",
-          "title": "Chronic lymphocytic thyroiditis - case 17",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=p20o-Hv8Ebk",
-          "duration": "1:02",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼影像——先在這裡暫停，寫完描述與分級再繼續"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。細胞學與手術病理對照來自說明欄連結的 thyrosite 案例頁。此欄原為 Cancers 2021 的四套風險分層系統驗證論文，改為影片後，「macrocalcification 在橋本族群失去鑑別力」的量化證據由實證層（citations）承接。"
-        }
-      ]
+     "name": "慢性淋巴球性甲狀腺炎 case 26：假性結節型",
+     "en": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
+     "kind": "case",
+     "target": "44 歲男性，因結節性甲狀腺腫轉診、有吞嚥困難。要學員看出：整個腺體低回音、由多個離散的「正常回音」區域組成，但沒有任何一個符合真結節定義。手術病理只有 Hashimoto's thyroiditis，完全沒有結節——這是「觸診硬、影像像多結節、病理什麼都沒有」的原型病例。",
+     "dose": "先答再看：全長 52 秒，先看完整段不要讀標題與說明欄，寫下你的 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開 http://thyrosite.com/thyroid/103/index.htm 對答案（細胞學 Hashimoto、手術病理無結節）。",
+     "title": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=moU7a_9FH5U",
+     "duration": "0:52",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com",
+     "last_verified": "2026-08-02",
+     "note": "有明確病理對照（thyrosite 案例頁載明手術 histopathology）。影片本身無 chapter 標記，故不列 timestamps。"
     },
     {
-      "id": "ch12-u2",
-      "name": "海綿樣結節中的可疑焦點、邊緣鈣化結節、微小後方病灶",
-      "type": "case",
-      "assessment": "從自己門診調出三顆結節：一顆 spongiform／partially cystic 且內含 echogenic foci、一顆有 rim（eggshell）calcification、一顆 ≤ 10 mm 且位於後方或深部。對每一顆先不查任何文獻，寫下：(1) echogenic foci 你判為 punctate echogenic foci、comet-tail artifact 還是 macrocalcification，以及你用哪一個影像特徵做的區分（後方是否有 comet tail、是否隨探頭角度改變、是否在囊性成分的後壁）；(2) ACR TI-RADS (2017) 各項得分與總分；(3) 穿刺決定。寫完再依序讀本單元三個資源對答案：Li 等人的 echogenic focus scoring 一文對照你的第 (1) 題，Shin/Na 等人的 KJR 邊緣鈣化研究對照你的第 (2) 題，Lisco 等人的 ≤ 10 mm 研究對照你的第 (3) 題。最後寫出：如果你把 comet-tail 誤判成 punctate echogenic foci，這三顆的 TI-RADS 級別各會跳幾級、穿刺建議會不會改變。",
-      "tight": [
-        "把 spongiform／囊性成分後壁的 comet-tail artifact（膠質結晶）當成 punctate echogenic foci，直接讓 ACR TI-RADS 多加 3 分",
-        "把 rim calcification 一律當成良性：ACR TI-RADS 只給 2 分，但實際資料顯示 rim calcification 在 partially cystic 或 iso/hyperechoic 結節中與惡性獨立相關，而且 eggshell 局部中斷加上厚而明顯低回音的 halo 更需要警覺",
-        "邊緣鈣化的後方聲影把結節內部完全遮住，卻仍然照常填寫 echogenicity 與 composition 欄位",
-        "≤ 10 mm 的深部／後方病灶因為在焦點區以外、探頭壓迫不到位而低估 taller-than-wide 與 margin，或反過來因為部分容積效應而高估微鈣化"
-      ],
-      "weak": [
-        "以「後方是否有 V 型 comet tail、是否位於囊性成分邊界、是否隨角度消失」三個問題系統性區分 comet-tail artifact 與真微鈣化",
-        "對 rim-calcified 結節能講出：什麼情況下要提高風險（局部中斷、厚低回音 halo、內部低回音成分向外突出），什麼情況下可以只追蹤",
-        "為深部或後方小病灶主動調整 focus、frequency 與 depth 之後才下判讀，而不是拿一張不合格的影像硬分級",
-        "說明 ≤ 10 mm 結節「分級」與「該不該穿刺」是兩件事，並能引用實際的診斷效能限制"
-      ],
-      "lesson": {
-        "title": "Weibinar on Intranodular echogenic figures - Advanced Online Papillon Course",
-        "channel": "Tamas Solymosi",
-        "url": "https://www.youtube.com/watch?v=TU4v25ug7WM",
-        "duration": "2:11:19",
-        "why": "整場兩小時只講一件事：結節內的高回音構造到底是什麼。用連續病例逐一拆解 punctate echogenic foci、comet-tail artifact、粗鈣化與邊緣鈣化，正好對應 ACR TI-RADS 中最容易被錯加分的 echogenic foci 欄位。",
-        "tier": "A",
-        "source_type": "webinar",
-        "provider": "youtube",
-        "access": "open",
-        "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-        "coi": "本場為講者付費 Papillon Course 的公開場次，說明欄導向其自營 thyrosite.com",
-        "last_verified": "2026-08-02",
-        "note": "全長 2 小時 11 分，無 YouTube chapter 標記，因此不列 timestamps。建議分兩次看：每當主講者丟出一個病例就暫停、先自己判讀再繼續播放。"
-      },
-      "drills": [
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "結節內高回音圖形 case 372：comet-tail 還是微鈣化，分不出來的時候怎麼辦",
-          "en": "Differential diagnostic of intranodular hyperechogenic figures - case 372",
-          "kind": "case",
-          "target": "55 歲女性，右葉突然出現腫塊三週；三年前已知有囊性結節並抽出 2.5 mL 囊液。功能狀態：甲狀腺功能正常（TSH 1.07 mIU/L）。影像：甲狀腺回音正常；右葉一個混合性（中度低回音＋囊性）結節，內含多種結節內高回音顆粒——包含非特異性顆粒與更明亮的顆粒，後者可能是 comet-tail artifact 也可能是 microcalcification；左葉另有數個中度低回音病灶。抽出 3 mL 棕色液體，細胞學為 benign cystic degeneration。要學員帶走的正是作者的註解：這一題之所以重要，在於後果不同——comet-tail 幾乎只出現在良性病灶，而 microcalcification 會提高乳突癌的機率，在 ACR TI-RADS (2017) 裡兩者相差 3 分。鑑別至少三個：膠質結晶造成的 comet-tail、真微鈣化、囊壁後方回音增強造成的假亮點——最容易選錯的是把後兩者混為一談。下一步是抽吸加細胞學而不是直接手術。無手術病理對照（結局為細胞學 benign cystic degeneration）。",
-          "dose": "先答再看：全長 47 秒。第一次播放時每看到一個亮點就暫停，對每一個亮點問三個問題——後方有沒有 V 形漸窄拖尾？是不是貼在囊性成分的邊界或後壁？轉動探頭角度會不會消失？把答案寫成一張表，再給整顆結節一個 ACR TI-RADS (2017) 總分與穿刺決定。然後打開 http://www.thyrosite.com/thyroid/372/index.php 讀 Ultrasonography 與 Comments 對答案，並算出：如果你把那些曖昧顆粒全部判成 punctate echogenic foci，總分會多幾分、級別會跳幾級。",
-          "title": "Differential diagnostic of intranodular hyperechogenic figures - case 372",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=LwYNNjQmWHk",
-          "duration": "0:47",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "整段就是第一眼影像——建議 0.5 倍速反覆播放，逐一標記亮點"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。僅有細胞學對照，無手術病理。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "結節內高回音圖形 case 928：同一顆結節裡三種高回音圖形一起出現",
-          "en": "Differential diagnostic of intranodular hyperechogenic figures - case 928",
-          "kind": "case",
-          "target": "85 歲女性，多結節性甲狀腺腫已數十年，吞嚥困難數年；CT 顯示右葉胸骨後延伸、氣管被壓到剩一半；核醫掃描為多個正常攝取的結節。功能狀態：甲狀腺功能正常（TSH 0.31 mIU/L、FT4 15.9 pM/L、FT3 4.63 pM/L）。影像：甲狀腺回音正常，右葉多個結節，其中一個大的 echonormal 結節同時具備 coarse calcification、成對出現的高回音線與顆粒（結締組織），以及數個更明亮的 punctate echogenic foci。細胞學為 benign colloid goiter；右葉切除後 histopathology 為 benign hyperplastic nodules。要學員看出：粗鈣化與其後方聲影會遮住結節內部，讓 composition 與 echogenicity 根本無法可靠填寫；而當同一顆結節裡同時出現三種高回音圖形時，用最可疑的那一種去給 ACR TI-RADS (2017) 加 3 分，會直接把一顆良性結節推上 TR5。鑑別至少三個：粗鈣化、結締組織的高回音線與顆粒、真微鈣化——最容易選錯的是把結締組織的顆粒讀成微鈣化。下一步在此是評估壓迫症狀與手術指徵，而不是為了鈣化去追加穿刺。有手術病理對照。",
-          "dose": "先答再看：全長 34 秒。先只看不讀標題，把右葉那顆大結節裡的高回音圖形分成幾群、各自畫在紙上，寫下 ACR TI-RADS (2017) 各項得分、總分與穿刺決定；特別記錄「被聲影遮住的部分你是怎麼填 composition 的」。再打開 http://thyrosite.com/thyroid/928/index 對答案（細胞學 benign colloid goiter、右葉切除後為良性增生性結節）。",
-          "title": "Differential diagnostic of intranodular hyperechogenic figures - case 928",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=tu2RGopIGzU",
-          "duration": "0:34",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先暫停，把亮點分群後再繼續播放"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照。本章找不到以 rim（eggshell）calcification 為主題、可公開觀看且有動態掃描的病例影片：thyrosite 的 eggshell 病例（benign nodular hyperplasia case 9／18／50）都沒有對應影片，KeepMyThyroid 與 Yoda Kim Ultrasound School 兩個頻道也沒有；邊緣鈣化的風險分層證據改由實證層承接。"
-        },
-        {
-          "name": "結節內高回音圖形 case 367：抽掉囊液之後，同一個小病灶就換了一張臉",
-          "en": "Differential diagnostic of intranodular hyperechogenic figures - case 367",
-          "kind": "case",
-          "target": "39 歲女性，因突然出現的腫塊轉來做細針穿刺；觸診右葉一個具彈性的結節，甲狀腺功能正常（TSH 0.71 mIU/L）。影像：右葉兩個病灶，上方是一個已鈣化的結節，下方是囊性結節；緊鄰囊性結節旁另有一個低回音病灶，內含多種結節內高回音圖形（包括微鈣化），而且當下無法判斷它是囊性結節的一部分還是另一個獨立病灶。抽出 6.5 mL 棕色液體之後，這個低回音病灶才變得容易分析——邊界變銳利、形狀是規則的幾何形、並可見 perilesional blood flow。細胞學為 cystic degeneration，但作者當時仍給出「合併超音波與細胞學：疑似乳突癌」的結論；histopathology 最後是 follicular adenoma，作者自己寫下「我們過度解讀了超音波表現」。要學員帶走兩件事：(1) 小的、緊貼囊性成分或位置受限的病灶，在技術條件（抽液、focus、frequency、depth、探頭壓迫）改變之前，拿到的就是一張不合格的影像，硬分級只會製造假的確定性；(2)「分級」「合併診斷」與「最終病理」是三件事，而超音波的過度解讀會連帶把細胞學的結論一起帶偏。鑑別至少三個：乳突癌、濾泡性腫瘤、囊性退化的良性結節——最容易選錯的是第一個。下一步是先抽液改善成像、重新描述，再決定要不要手術。有手術病理對照。",
-          "dose": "先答再看：全長 47 秒。第一輪先在「還沒抽液」的畫面上停格，寫下你對那個低回音病灶的 structured description、ACR TI-RADS (2017) 分數、以及你有多確定它是獨立病灶還是囊腫的一部分（用 0–10 分自評確定度）；第二輪看抽液後的畫面，重新描述一次並重新給分。再打開 http://www.thyrosite.com/thyroid/367/index.php 讀 Ultrasonography、Cytology 與 Comment 對答案（最終病理為 follicular adenoma）。最後回答兩題：抽液前後你的分數差幾分？如果門診當下不能抽液，你會在報告裡怎麼寫這個病灶——請實際寫出一句「本次影像無法可靠評估此病灶」的句子與你指定的下一步。",
-          "title": "Differential diagnostic of intranodular hyperechogenic figures - case 367",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=3JE8Afx-R-0",
-          "duration": "0:47",
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先在抽液前的畫面上寫完描述與分級，再往下看"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照（follicular adenoma）。此欄原為 IJE 2025 的 ≤ 10 mm 結節風險分層論文，改為影片後，微小結節上各套演算法效能下降的量化證據由實證層承接；另一支更貼近「不到 1 公分的病灶被讀成多發性乳突癌」的影片（thyrosite case 1539，H46ERGpK8K4，健檢誤判、兩次良性細胞學、右葉切除後為完整甲狀腺）只有 16 秒，低於本站項目影片 0:30 的下限，故未採用。"
-        }
-      ]
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "慢性淋巴球性甲狀腺炎 case 85：高回音「結節」其實是殘存的正常腺體",
+     "en": "Chronic lymphocytic thyroiditis - case 85",
+     "kind": "case",
+     "target": "27 歲女性，甲狀腺低下已治療 19 年，因「結節持續長大」轉診。10 歲時因細胞學讀為「疑似濾泡癌」接受左葉次全切除，histopathology 只有 Hashimoto's thyroiditis、完全沒有結節；此後 15 年追蹤，兩個「高回音結節」由 8 mm 長到 11 mm、由 12 mm 長到 16 mm。本次功能狀態：每日 162.5 微克 levothyroxine 下 TSH 0.92 mIU/L。影像：兩葉皆低回音並有纖維化，右葉中段與下極各有一個 echonormal 區域，形狀都不是規則的幾何形。要學員看出：這些「高回音結節」其實是受炎症影響較少、相對正常的殘存腺體，會長大只是腺體本身從兒童到成人的正常增長，不是腫瘤生長。鑑別診斷至少三個：真正的高回音結節（濾泡性腺瘤／增生性結節）、炎症影響較輕的殘存腺體、橋本背景下共存的乳突癌——最容易被選錯的是第一個。下一步是繼續追蹤，不是再穿刺或再手術。有手術病理對照（15 年前的左葉次全切除證實同樣的外觀沒有任何結節），但本次這兩個病灶本身無病理對照。",
+     "dose": "先答再看：全長 35 秒，先看完整段動態掃描、不要讀標題與說明欄，寫下你認為腺體內有幾個病灶、每一個的 structured description（composition、echogenicity、shape、margin、echogenic foci）、ACR TI-RADS (2017) 分數與是否穿刺；再打開說明欄的 http://www.thyrosite.com/thyroid/252/index.htm 讀 Clinical data 與 Comments 對答案，重點在「長大」這件事的意義。最後回答：如果你只拿到今天這一張影像、沒有 15 年前的病理，你的報告會怎麼寫。",
+     "title": "Chronic lymphocytic thyroiditis - case 85",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=ShIN93-kLRg",
+     "duration": "0:35",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "整段只有一次連續掃描，這裡就是「第一眼」——先暫停自己判斷再播放"
+      }
+     ],
+     "note": "影片為無旁白的動態掃描，無 YouTube chapter 標記，故僅標 0:00 起點，未自行推測其他時間點。病理對照來自說明欄連結的 thyrosite 案例頁（15 年前左葉次全切除）。"
     },
     {
-      "id": "ch12-u3",
-      "name": "甲狀腺淋巴瘤 vs 嚴重甲狀腺炎、瀰漫硬化型 PTC",
-      "type": "case",
-      "assessment": "先做「盲判」：打開 thyrosite 的 MALT 淋巴瘤 case 1 頁面，只讀到 Ultrasonography 那一段就停（不要往下捲到 Cytology 與 Biopsy），配合影片 https://www.youtube.com/watch?v=_v-GjeLTF3k ，寫下你的 structured description、三個鑑別診斷的排序，以及你的下一步（觀察／FNA／core needle biopsy／立即轉血液腫瘤科）。寫完再讀完整頁對答案。接著用同一份描述去比對 Zheng 等人的 PTL vs DSVPTC 對照研究，回答：如果只給你這一張影像而不給年齡、病程長短、TSH 與 anti-TPO，你能不能分開 PTL 與 DSVPTC？最後寫出三個「非影像」變項（年齡中位數 64.5 vs 36、病程速度、Hashimoto 與甲狀腺低下的盛行率）如何改變你的排序，以及在什麼情況下你會直接跳過 FNA 改做 core needle biopsy。",
-      "tight": [
-        "把快速增大、極度低回音、瀰漫性的腺體當成「嚴重橋本」而只追蹤——淋巴瘤與嚴重淋巴球性甲狀腺炎的灰階外觀高度重疊，兩者又常在同一位病人身上並存",
-        "在懷疑淋巴瘤時只做細針細胞學：MALT 淋巴瘤的細胞學常被讀成 Hashimoto's thyroiditis（只是 lymphoblast 比例偏高），細胞學在此的主要任務其實是排除 anaplastic carcinoma",
-        "瀰漫硬化型 PTC 常沒有可辨識的腫塊，只有整葉散布的微鈣化（snowstorm）與腫大淋巴結；照「找結節」的掃法會整個漏掉",
-        "忘記 DSVPTC 好發於年輕女性且側頸轉移率高，把年輕病人的『瀰漫性甲狀腺炎樣』影像預設為良性"
-      ],
-      "weak": [
-        "在瀰漫性極低回音腺體上，能列出 PTL、DSVPTC、嚴重 Hashimoto、anaplastic carcinoma、Riedel 五者的鑑別順序並說明依據",
-        "認得 DSVPTC 的 snowstorm 微鈣化型態，並在沒有明確腫塊時仍主動掃側頸分區",
-        "把臨床節奏（數週 vs 數年）、年齡、TSH／anti-TPO、壓迫症狀當成影像判讀的一部分而不是附註",
-        "知道何時該從 FNA 升級到 core needle biopsy 或開放式切片，並能說出理由"
-      ],
-      "lesson": {
-        "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
-        "channel": "THANC Foundation",
-        "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
-        "duration": "1:01:41",
-        "why": "498 例原發性甲狀腺淋巴瘤的回溯性世代（87% 合併 Hashimoto、1.8% Graves、11.6% 無自體免疫背景），把「淋巴瘤長在甲狀腺炎的背景上」這件事用實際數字說清楚，並附 Terry Davies 的專家討論；填的是 fellow 面對『這到底是很嚴重的橋本還是淋巴瘤』時缺乏族群基準率的落差。",
-        "tier": "A",
-        "source_type": "webinar",
-        "provider": "youtube",
-        "access": "open",
-        "license": "版權歸 THANC Foundation，本站僅連結不重製",
-        "last_verified": "2026-08-02",
-        "timestamps": [
-          {
-            "at": "3:26",
-            "note": "Background & Study Objective：PTL 與 Hashimoto 的關係、DLBCL 與 MALT 兩大亞型"
-          },
-          {
-            "at": "13:31",
-            "note": "Methods & Findings：498 例中 87% Hashimoto、1.8% Graves、11.6% 無自體免疫；亞型分布與預後無顯著差異"
-          },
-          {
-            "at": "25:24",
-            "note": "Conclusions & Discussion：不同自體免疫背景間人口學與長期結果無顯著差異；無自體免疫者的可能基因變異"
-          },
-          {
-            "at": "31:15",
-            "note": "Dr. Davies 討論甲狀腺自體免疫在 PTL 發生中的角色"
-          },
-          {
-            "at": "51:02",
-            "note": "Q&A 臨床討論"
-          }
-        ],
-        "note": "時間軸取自影片說明欄由發布者自行標註的章節，未自行推測。"
-      },
-      "drills": [
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "甲狀腺淋巴瘤 case 1：原發性 MALT 型非何杰金氏淋巴瘤",
-          "en": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1",
-          "kind": "case",
-          "target": "66 歲女性，雙側甲狀腺腫塊在 1.5 個月內迅速長大；右葉 75×55×120 mm，整體極度低回音、不均質、血流不規則增加；TSH 21.0 mIU/L、FT4 6.09 pM/L、anti-TPO > 1000 U/L。細胞學讀成「Hashimoto's thyroiditis，但 lymphoblast 對小淋巴球的比例高於一般甲狀腺炎」，最終切片病理為 MALT 型淋巴瘤。要學員學到的正是作者的註解：診斷 MALT 淋巴瘤靠的是臨床表現與病史，細胞學在此的主要角色是排除 anaplastic carcinoma。鑑別至少三個：嚴重的 Hashimoto's thyroiditis、原發性甲狀腺淋巴瘤、anaplastic carcinoma——最容易選錯的是第一個，因為灰階外觀與抗體、TSH 全部都支持它。下一步是升級到 core needle biopsy 或開放式切片，而不是重複細針細胞學。有切片病理對照。",
-          "dose": "先答再看：全長 31 秒。先看完整段動態掃描、不要讀標題與說明欄，寫下 structured description、三個鑑別診斷的排序，以及你的下一步（觀察／FNA／core needle biopsy／立即轉血液腫瘤科）；再打開說明欄的 http://www.thyrosite.com/thyroid/867/index.htm，先只讀到 Ultrasonography 為止確認你的描述，再往下讀 Cytology／Biopsy and histopathology／Comment 對答案。",
-          "title": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=_v-GjeLTF3k",
-          "duration": "0:31",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼影像——先暫停寫下描述與鑑別排序"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有切片病理對照（說明欄連結的 thyrosite 案例頁載明 histopathology）。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "乳突癌 case 8：18 歲、甲狀腺炎樣背景、微鈣化與側頸轉移",
-          "en": "Papillary carcinoma - case 8",
-          "kind": "case",
-          "target": "18 歲女性，例行檢查發現結節。觸診右葉硬結節；功能狀態：甲狀腺功能正常（TSH 0.91 mIU/L）。影像：甲狀腺整體輕度低回音、不均質（甲狀腺炎背景），右葉有一個更低回音的結節，內含大量 microcalcification、邊界不規則且模糊、結節內血流紊亂。細胞學為 Hürthle-cell tumor、疑似 oxyphilic variant 乳突癌；histopathology 為 oxyphilic variant 乳突癌合併 chronic lymphocytic thyroiditis，右側頸部有轉移淋巴結。要學員練的是本單元最難的一題：年輕女性加上「甲狀腺炎樣」的瀰漫低回音不均質背景，正是最容易被預設為良性的組合，而微鈣化、模糊邊界與側頸轉移才是真正的線索；掃到這種背景一定要主動掃完側頸各分區，不能只看甲狀腺。鑑別至少三個：嚴重的 Hashimoto's thyroiditis、瀰漫硬化型乳突癌（DSVPTC）、原發性甲狀腺淋巴瘤——最容易選錯的是第一個。下一步是 FNA 加上側頸淋巴結評估（必要時 washout Tg）。有手術病理與淋巴結病理對照。",
-          "dose": "先答再看：全長 33 秒。先看完整段、不要讀標題，寫下 (1) 你對背景腺體的判讀（正常／甲狀腺炎／無法判定）、(2) 右葉病灶的 structured description 與 ACR TI-RADS (2017) 分級、(3) 你會不會加掃側頸、掃哪幾區。再打開 http://www.thyrosite.com/thyroid/218/index.php 對答案（細胞學、手術病理與頸部轉移）。最後回答：如果沒有人告訴你病人只有 18 歲，你的鑑別排序會不會不同。",
-          "title": "Papillary carcinoma - case 8",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=BV9coXs3Ds8",
-          "duration": "0:33",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼影像——先判背景腺體，再判結節"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照。誠實說明：本例病理為 oxyphilic variant，不是 diffuse sclerosing variant。查過 ytsearch 的 \"diffuse sclerosing variant papillary thyroid carcinoma\"、\"diffuse sclerosing variant thyroid ultrasound snowstorm microcalcifications\"、\"diffuse sclerosing papillary carcinoma thyroid case ultrasound teaching\" 以及韓文查詢，並掃過 thyrosite 的 75 個乳突癌病例頁，都找不到可公開觀看、有實際動態掃描的 DSVPTC 病例影片；唯一標題相符的 YouTube 影片（vXvbYUoW9DM，Creative Medicine）看起來是付費課程的整段轉錄，依策展契約排除。因此改以「年輕病人＋甲狀腺炎樣背景＋微鈣化＋側頸轉移」這一組可遷移線索代替，DSVPTC 的影像—病理對照證據由實證層承接。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "甲狀腺淋巴瘤 case 11：抗體為 0、功能正常、病程以年計的淋巴瘤",
-          "en": "Thyroid lymphomas - case 11",
-          "kind": "case",
-          "target": "48 歲女性，兩年前已診斷 low grade、stage III/A 的非何杰金氏淋巴瘤；第一次與後續 PET-CT 都描述甲狀腺內多發病灶且無進展，至今未接受任何治療，這次主動要求做甲狀腺評估。觸診兩葉略硬但摸不到離散病灶；TSH 1.56 mIU/L、anti-TPO 0 U/mL。影像：甲狀腺回音正常，兩葉多個不均質、部分邊界模糊的低回音與中度低回音離散病灶；兩側頸部都有多個淋巴結。三處病灶各做細胞學，都是符合非何杰金氏淋巴瘤的型態。要學員看出：這一例和同單元的 MALT case 1 完全相反——case 1 是 TSH 21、anti-TPO > 1000、橋本背景、腫塊一個半月內暴長；本例 anti-TPO 為 0、功能正常、背景腺體回音正常、病程以年計。淋巴瘤在甲狀腺的表現可以完全不像「嚴重甲狀腺炎」，把「一定長在橋本背景上、一定快速增大」當成必要條件會漏掉這一型。鑑別至少三個：多發性良性結節、轉移性腫瘤、橋本背景的多發假性結節——最容易選錯的是第一個。下一步是對多處病灶取樣（本例做了三處細胞學）並回頭核對全身分期影像。無病理對照（結局為三處細胞學與 PET-CT 追蹤，未做手術病理）。",
-          "dose": "先答再看：全長 1 分 26 秒。先看完整段、不要讀標題與說明欄，寫下背景腺體的判讀、每一葉病灶的 structured description、ACR TI-RADS (2017) 分級與你會不會穿刺、穿幾處；再打開 http://www.thyrosite.com/649/index.php 對答案。最後把本例與同單元的 case 1（MALT）做一張兩欄對照表：年齡、病程、TSH、anti-TPO、背景腺體回音、病灶型態、取樣策略各是什麼，並寫下哪一欄最能把兩者分開。",
-          "title": "Thyroid lymphomas - case 11",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=4weSTiGLW4Q",
-          "duration": "1:26",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼影像——先判背景腺體是否為甲狀腺炎"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。無手術病理對照，結局為三處細胞學與 PET-CT 追蹤，故 tier 最高只給 B。此欄原為 PTL 與 DSVPTC 臨床特徵對照的期刊論文，改為影片後，年齡中位數與轉移率等量化對照由實證層承接。"
-        }
-      ]
+     "tier": "A",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "慢性淋巴球性甲狀腺炎 case 17：橋本腺體裡的粗鈣化與細胞學偽陽性",
+     "en": "Chronic lymphocytic thyroiditis - case 17",
+     "kind": "case",
+     "target": "55 歲女性，甲狀腺功能亢進治療 13 年，因體重增加 3 公斤、疲倦、掉髮回診，被發現多結節性甲狀腺腫；外院細胞學為「疑似濾泡癌」，已排定全甲狀腺切除，病人自行要求第二意見。功能狀態：甲狀腺功能正常（TSH 2.06 mIU/L、TSAb 陰性、aTPO 9 U/mL）。影像：基礎回音中度低下，多個回音型態不一的離散病灶；問題病灶位於左葉，低回音、不均質、帶 coarse calcification，既沒有 halo sign 也沒有 perinodular blood flow。重新在右葉低回音區與原可疑病灶各做一次細胞學，兩次都是 Hashimoto's thyroiditis。Histopathology：Hashimoto's thyroiditis、沒有任何結節，左葉只有一處粗鈣化。要學員帶走兩件事：(1) 在橋本腺體裡，coarse calcification 這種在一般族群被當成特徵的所見會失去鑑別力，不能單獨拿來加分；(2) halo sign 與 perinodular blood flow「同時缺席」是反對濾泡性腫瘤的強力論據。鑑別至少三個：濾泡性腫瘤、橋本背景下的真結節、纖維化加鈣化的非結節區——最容易被選錯的是濾泡性腫瘤，因為細胞學已經先講了。下一步不是直接手術，而是在有疑慮時重做細胞學。有手術病理對照。",
+     "dose": "先答再看：全長 1 分 02 秒，先看完整段、不要讀標題，寫下左葉那個病灶的 structured description、ACR TI-RADS (2017) 分數與你的處置（直接手術／重做 FNA／追蹤）；再打開 http://www.thyrosite.com/thyroid/388/index.htm 讀 Cytology、Histopathology 與 Comments 對答案。最後寫下：把「已知細胞學疑似濾泡癌」這個資訊拿掉之後，你的分級會不會改變——這一題測的是你有沒有被細胞學錨定。",
+     "title": "Chronic lymphocytic thyroiditis - case 17",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=p20o-Hv8Ebk",
+     "duration": "1:02",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼影像——先在這裡暫停，寫完描述與分級再繼續"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。細胞學與手術病理對照來自說明欄連結的 thyrosite 案例頁。此欄原為 Cancers 2021 的四套風險分層系統驗證論文，改為影片後，「macrocalcification 在橋本族群失去鑑別力」的量化證據由實證層（citations）承接。"
     },
     {
-      "id": "ch12-u4",
-      "name": "術後疤痕 vs 復發、食道憩室 vs 結節、異位／甲狀腺內副甲狀腺",
-      "type": "case",
-      "assessment": "挑三個資源做同一套流程：thyrosite 的 case 6（肌纖維冒充復發乳突癌）、case 17（縫線周圍肉芽腫）與本單元的 Killian–Jamieson 憩室病例。每一個都先只看影像／只讀到 Ultrasonography 那一段，寫下：(1) 你在甲狀腺床上看到幾個病灶、各自的位置（用中央區／側頸分區描述）與 structured description；(2) 你判為疤痕、殘餘腺體、肉芽腫、血管、肌肉、食道結構還是復發；(3) 你會不會穿刺、要不要加做 washout Tg／PTH 或其他影像。寫完再讀完整案例對答案，逐項記錄你和作者判斷不同的地方，並明確寫出那個差異來自哪一個影像特徵——是縱切面沒掃、是沒讓病人吞嚥、是沒做兩個垂直切面、還是沒注意到病灶內的氣體強回音。最後把三個病例的『下一步檢查』整理成一張自己的決策表。",
-      "tight": [
-        "只掃橫切面就把甲狀腺床的低回音構造判成復發：肌纖維與血管在橫切看起來都像淋巴結或結節，轉成縱切才會現形",
-        "看到甲狀腺床病灶內的無定形高回音顆粒就聯想到微鈣化，忽略手術縫線周圍肉芽腫這個常見且完全良性的原因",
-        "Killian–Jamieson 憩室位於頸段食道前外側、緊貼左葉，灰階上是低回音病灶帶點狀高回音（氣體），非常像帶微鈣化的乳突癌；不讓病人吞嚥、不做動態觀察就直接排 FNA 甚至手術",
-        "誤穿憩室取得鱗狀上皮、碎屑甚至食物殘渣，讓細胞學落到 Bethesda 的錯誤分類裡而更難翻案",
-        "甲狀腺內副甲狀腺腺瘤被當成 TR4／TR5 結節去穿刺，卻沒有先看血鈣與 PTH，也沒做 washout PTH"
-      ],
-      "weak": [
-        "術後頸部掃描一律做兩個垂直切面，並在報告中固定描述甲狀腺床的解剖對位（氣管、頸總動脈、食道、帶狀肌）",
-        "用吞嚥動作、飲水或探頭角度改變作為區分食道結構／憩室與真結節的常規動作",
-        "看到甲狀腺床或甲狀腺內的低回音病灶時，把「血鈣＋PTH」與「washout Tg／PTH」納入下一步選項，而不是只想到 FNA",
-        "在報告中明確寫出「本次影像無法區分疤痕與復發」這種誠實結論，並指定具體的下一步"
-      ],
-      "lesson": {
-        "title": "Ultrasound of the operated thyroid - introductory lecture",
-        "channel": "Tamas Solymosi",
-        "url": "https://www.youtube.com/watch?v=jmJVXweb_WY",
-        "duration": "21:21",
-        "why": "以手術後甲狀腺床為主題的系統性導論，逐一交代殘餘腺體、疤痕、縫線肉芽腫、肌肉與血管在術後頸部的常見外觀，正好覆蓋 fellow 最容易把良性術後變化讀成復發的那一段落差。",
-        "tier": "A",
-        "source_type": "video",
-        "provider": "youtube",
-        "access": "open",
-        "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-        "coi": "講者經營付費 Papillon Course 與 thyrosite.com；說明欄導向 http://thyrosite.com/ctu/section06/operated_thyroid/introduction.php",
-        "last_verified": "2026-08-02",
-        "note": "無 YouTube chapter 標記，故不列 timestamps。搭配說明欄的 thyrosite 章節頁一起讀。"
+     "name": "現場加映三例：橋本腺體裡哪一塊才是真的癌（含專家對「橋本是否增加乳突癌風險」的辯論）",
+     "en": "Discussion of three bonus cases",
+     "kind": "case",
+     "target": "2022 年 2 月 3 日 Papillon 線上 webinar 結束前，主講者臨時加映三個「不在課程網站上」的病例，全部是甲狀腺功能低下、橋本背景的病人，全部最後證實為乳突癌——正好補上本單元三支既有短片都是『假性結節、最後什麼都不是』的另一半。第一例（0:00 起）：瀰漫型淋巴球性甲狀腺炎，纖維結締組織把腺體切成三大塊，嚴格說沒有任何一塊符合結節定義；三塊看起來幾乎一樣，唯一的差別是其中一塊含有微鈣化，而那一塊就是乳突癌，最大徑將近 3 公分（不是微小癌）；旁邊還有一顆可疑淋巴結（2:59）。血流是這一例的第二個陷阱：癌的部位反而只有周邊／病灶旁血流、內部血流稀少，和一般人預期的『癌內血流豐富』相反（11:16–12:12）。講者另外揭露一件值得 fellow 記住的事（10:31）：他把這張影像投稿到一個美國大學主持的人工智慧研究，對方拒收，因為 AI 根本沒把這塊 3 公分的癌認成結節。第二例（12:28 起，case 84）：同樣是甲狀腺功能低下的病人，左葉一個約 12 mm 的低回音、邊界不規則病灶，細胞學為乳突癌；教學點是兩個可遷移的判準——(a) 這個病灶裡的高回音點明顯比腺體其他地方的結締組織線／點更大更亮，(b) 在滿是幾毫米離散病灶的腺體裡，它是唯一超過 1 公分的那一個。講者同時誠實指出：乳突癌幾乎都會頂到被膜、被膜看起來不連續，所以超音波的 extrathyroidal spread 徵象在乳突癌身上很難用（14:19 前後）。第三例（16:56 起，case 88）：一顆帶大量微鈣化的大型乳突癌，是『橋本合併乳突癌』最常見、也最好判的樣子，講者刻意拿來對照，提醒學員不要把前兩例的難度當成常態。3:24–10:00 是本片對 fellow 最有價值的一段：現場專家（含法國的甲狀腺超音波專家）就『橋本是否增加乳突癌風險』互相辯論——主講者主張這只是共病（約 10% 女性一生會因橋本而需要治療甲狀腺低下，若真有致癌性早就是大災難）；對方主張以手術／病理為 gold standard 的研究有 surgical bias，以細胞學為基準的研究看不到風險上升，並區分『真正的 Hashimoto's disease（有甲狀腺腫、明顯低回音、血流豐富）』與『一般的慢性淋巴球性甲狀腺炎（腺體正常或偏小、不需常規超音波追蹤）』，只有前者的乳突癌與淋巴瘤風險略高。鑑別至少三個：纖維分隔造成的假性結節、橋本背景下共存的真結節／乳突癌、瀰漫浸潤而沒有可辨識腫塊的惡性——最容易選錯的是第一個，因為三塊的回音幾乎一樣。下一步是針對含微鈣化的那一塊取樣並加掃頸部淋巴結。三例都有結局（第一、二例講者明講證實為乳突癌），但這三個 bonus case 不在 thyrosite 公開案例頁上，病理只由講者口頭揭曉，無法逐項交叉核對，因此依契約 tier 給 B。",
+     "dose": "先答再看：全長 20 分 48 秒（最後約 2 分鐘是課程考試的行政說明，可略過）。第一輪在 0:00–1:50 之間反覆看，先不要聽講者結論，把腺體裡的三塊各自寫成一段 structured description（composition、echogenicity、shape、margin、echogenic foci），標出你認為哪一塊要穿刺、理由是什麼、以及你有幾成把握；1:52 講者揭曉『這一塊是乳突癌』，對答案並記錄你是不是靠微鈣化做出的決定。第二輪在 12:28 暫停，對 case 84 重做一次同樣的流程，這次額外回答兩題：這個病灶裡的高回音點和其他地方的結締組織點差在哪裡（大小？亮度？成對出現？）、以及『它是唯一超過 1 公分的離散病灶』這件事在你的報告裡值不值得寫進去。第三輪看 16:56 的 case 88，寫下你判它需要幾秒鐘——用它來校正前兩例的難度。最後把 3:24–10:00 的專家辯論做成一張兩欄表（主張共病 vs 主張 surgical bias），並寫出你自己門診的立場：對一位 TSH 正常、抗體陽性、腺體不大的慢性淋巴球性甲狀腺炎病人，你要不要做常規超音波追蹤、多久一次、理由寫成一句話。",
+     "title": "Discussion of three bonus cases",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=sjgZfBOq1ko",
+     "duration": "20:48",
+     "tier": "B",
+     "source_type": "webinar",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，本片為該付費課程 webinar 的公開錄影，片尾含課程考試說明",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一例第一眼——纖維結締組織把腺體切成三塊，先暫停寫完三段描述再往下"
       },
-      "drills": [
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "教學病例 6：肌纖維冒充復發乳突癌",
-          "en": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases - case 6",
-          "kind": "case",
-          "target": "乳突癌術後 11 年、規則追蹤且無症狀的病人，因頸動脈都卜勒檢查被報「復發乳突癌」轉診；Tg 0.3 ng/mL、anti-hTg < 20 IU/mL 皆正常。影像：左側甲狀腺床有三個低回音病灶，其中兩個是動脈，第三個在橫切面看起來像淋巴結或甲狀腺病灶，轉成縱切面才看出是肌肉。要學員學到的就是作者的結論：正確的超音波檢查必須做兩個互相垂直的切面。鑑別至少三個：復發腫瘤、血管橫切面、帶狀肌／胸鎖乳突肌的肌纖維——最容易選錯的是第一個，因為轉診單上已經寫了「復發」。下一步是補做縱切面與都卜勒，而不是排 FNA。無病理對照——結局是以兩個垂直切面的影像判讀與正常 Tg／anti-Tg 追蹤確認為肌肉，未做切片。",
-          "dose": "先答再看：全長 1 分 05 秒。先看完整段、不要讀標題與說明欄，把三個病灶各自的位置（用中央區／側頸分區描述）、structured description、你的判讀（復發／血管／肌肉／淋巴結）與是否穿刺寫下來；再打開說明欄的 http://www.thyrosite.com/thyroid/1696/index.htm 讀 Ultrasonography 與 Comment 對答案。最後寫下：你判錯的那一個，是因為沒看縱切面、沒開都卜勒，還是被轉診單的字帶走。",
-          "title": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases- case 6",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=8ZLkrn5PmLE",
-          "duration": "1:05",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先在橫切面上寫下三個病灶的判讀，再看縱切"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。無病理對照（以影像與正常 Tg／anti-Tg 追蹤為結局），tier 最高只給 B。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "術後甲狀腺 case 17：縫線周圍多發性肉芽腫",
-          "en": "Multiple granulations around surgical thread. The operated thyroid - case 17",
-          "kind": "case",
-          "target": "61 歲女性，17 年前因多結節性甲狀腺腫接受雙側次全甲狀腺切除、病理為良性增生性結節，因峽部「可疑結節」被轉來做細針穿刺。影像：兩側殘餘腺體都有多個低回音病灶，內含無定形高回音顆粒，皆無血流。細胞學結果為縫線周圍的良性肉芽腫。要學員看出：這些高回音顆粒不是微鈣化，觸診硬、影像嚇人，但「曾經開過刀」這個病史就是關鍵；沒有血流與病灶的多發、對稱分布也都支持良性。鑑別至少三個：縫線周圍肉芽腫、殘餘腺體內的復發／新生結節、帶微鈣化的乳突癌——最容易選錯的是第三個。下一步是回頭問手術史並比對舊報告，必要時做細胞學確認。有細胞學對照（良性縫線肉芽腫），無手術病理。",
-          "dose": "先答再看：全長 38 秒。先在完全不知道手術史的前提下看完整段，寫下每個病灶的 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開說明欄的 http://www.thyrosite.com/thyroid/1557/index.htm 讀 Clinical data 與 Aspiration cytology 對答案，並明確記錄「知道 17 年前開過刀」讓你的分級改變了幾級。",
-          "title": "Multiple granulations around surgical thread. The operated thyroid - case 17",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=zy-qUXIanqs",
-          "duration": "0:38",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先假裝不知道手術史，寫完分級再繼續"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有細胞學對照，無手術病理。"
-        },
-        {
-          "name": "Yoda Kim 超音波學校 case 1393：被當成甲狀腺結節追蹤四年的頸段食道憩室",
-          "en": "Yoda Kim Ultrasound School(1393) - Zenker's diverticulum of the left thyroid",
-          "kind": "case",
-          "target": "45 歲女性，四年前被診斷為甲狀腺結節並持續追蹤；本次追蹤超音波才被推定為左葉旁的頸段食道憩室。影像關鍵：所謂「左葉結節」內可見伴隨 ring-down artifact 的高回音，這個高回音代表的是氣體；左葉縱切掃描可以看到這個「結節」與食道相連。要學員學到：憩室內的氣體造成的點狀／線狀高回音，在靜態影像上和乳突癌的微鈣化幾乎一樣，但 ring-down artifact 與「和食道的連續性」兩個所見可以把它翻過來；而且這一題只有動態掃描與縱切面能回答，橫切面的靜止影像永遠翻不了案。鑑別至少三個：帶微鈣化的乳突癌、良性結節內的粗鈣化、頸段食道憩室（Killian–Jamieson 或 Zenker）——最容易選錯的是第一個。下一步是縱切追蹤與食道的連續性、請病人吞嚥或飲水觀察內容物移動，必要時加做食道攝影或 CT，而不是直接 FNA。無病理對照（結局為影像推定的食道憩室，未做切片；發表者本人也以「추정」（推定）表述）。",
-          "dose": "先答再看：全長 5 分 58 秒，韓文口說、無英文字幕，但畫面上的影像本身就足以判讀，建議先靜音看完第一輪。第一輪只看橫切影像，寫下你的 structured description、ACR TI-RADS (2017) 分級與是否穿刺；第二輪再看縱切與 ring-down artifact 那一段，修正你的判讀並寫下你是被哪一個所見說服的。最後回答：如果門診當下你只有橫切影像，你會用哪一個床邊動作（吞嚥、飲水、改變探頭角度）來排除憩室。",
-          "title": "Yoda Kim Ultrasound School(1393) - Dr.최종화 증례. 좌측 갑상선의 Zenker 게실",
-          "channel": "김일봉（Yoda Kim Ultrasound School）",
-          "url": "https://www.youtube.com/watch?v=p52XW7Qts5A",
-          "duration": "5:58",
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
-          "coi": "頻道由韓國大邱 김일봉 내과의원（Kim Il-Bong 內科）經營，說明欄推廣自營的 hands-on DVD 與超音波課程；影片內容本身無廠商贊助跡象",
-          "last_verified": "2026-08-02",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先只看橫切面，寫完分級再往下看"
-            }
-          ],
-          "note": "韓文口說、無字幕；影像判讀不依賴語言，說明欄有完整韓文病例敘述（45 歲女性、四年前診斷為結節、ring-down artifact 提示氣體、縱切見與食道相連）。無 chapter 標記，故僅標 0:00。此欄原為 Killian–Jamieson 憩室的期刊 case report，改為影片後，該病例的 CT／鋇劑對照證據由實證層承接。註：KeepMyThyroid 的 (ENG)Diagnosis of esophageal diverticulum on US 內容更完整，但已分別用在 CH2 與 CH9，同一支影片不再第三次使用；該頻道的 (Silence)esophageal diverticulum misinterpreted as a thyroid nodule 與 (KOR)Remember! Esophageal diverticulum 的 oEmbed 皆回 401（停用嵌入），依契約不可用。"
-        },
-        {
-          "name": "甲狀腺內副甲狀腺腺瘤",
-          "en": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
-          "kind": "case",
-          "target": "57 歲女性，因高血鈣與副甲狀腺機能亢進轉診（鈣 3.08 mM/L、PTH 177.4 pg/mL）。甲狀腺回音正常，右葉上段中央有一個小低回音病灶且帶高回音顆粒；細胞學只能說是良性，無法區分副甲狀腺腺瘤或良性甲狀腺病灶；washout PTH 203 pg/mL 而 washout Tg 僅 9.08 mg/L，MIBI 掃描對甲狀腺內病灶結果模稜兩可。右葉切除後病理為完整甲狀腺內的良性副甲狀腺腺瘤。要學員學到：甲狀腺內的低回音病灶不一定是甲狀腺來源，washout PTH 是這裡的決定性檢查。",
-          "dose": "先答再看：先看影片（32 秒）不看標題，寫下 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開 http://www.thyrosite.com/thyroid/1399/index.htm 對答案（含 washout PTH 與手術病理），並回答：在什麼臨床條件下你會在穿刺前就先驗血鈣與 PTH。",
-          "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
-          "duration": "0:32",
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com",
-          "last_verified": "2026-08-02",
-          "note": "有手術病理對照（thyrosite 案例頁載明右葉切除後 histopathology）。影片無 chapter 標記，故不列 timestamps。"
-        }
-      ]
-    },
-    {
-      "id": "ch12-u5",
-      "name": "影像與細胞學不一致、TI-RADS 系統互相矛盾的病例",
-      "type": "case",
-      "assessment": "分三段做，每一段都先答再看。第一段：從自己門診找五顆已有細胞學結果的結節，逐顆同時做 ACR TI-RADS (2017)、EU-TIRADS 2017 與 K-TIRADS 2021 三套分級，先寫下每套系統各自的穿刺建議，再讀 Borges 等人 665 顆結節的研究對照——他們的資料是 26.1% 的結節在兩套系統間分到不同風險級別、8.1% 的結節穿刺建議因此改變；算出你自己這五顆的不一致率，並指出差異落在哪一個影像特徵（混合性結節中的低回音、單一可疑特徵是否足以直接升到高風險、低風險結節的尺寸閾值）。第二段：挑一顆你判為 TR4／TR5 但細胞學為 Bethesda II 的結節，先寫下你的處置計畫，再讀 Rosário 與 Calsolari 的 105 位病人資料對答案（兩次良性細胞學後惡性率 2%）並修正你的追蹤間隔。第三段：讀 thyrosite 副甲狀腺 case 10，先只讀到 Ultrasonography 就停，寫下你的判讀與下一步，再往下看細胞學（誤讀為乳突癌）與最終病理（副甲狀腺腺瘤），寫出你會用什麼檢查在術前推翻這個細胞學結論。",
-      "tight": [
-        "把「影像可疑但細胞學良性」直接當成良性收案：兩次良性細胞學後仍有約 2% 為惡性，需要的是有明確間隔的追蹤，而不是結案或立刻手術",
-        "反向的陷阱同樣存在——細胞學讀成乳突癌、影像也不典型，最後病理是副甲狀腺腺瘤；細胞學不是無誤的仲裁者",
-        "只用一套 TI-RADS 就宣稱『指引怎麼說』：同一顆結節在 EU-TIRADS 2017 與 ACR TI-RADS (2017) 之間有相當比例分到不同級別，而且 EU-TIRADS 傾向給出較高風險",
-        "把系統之間的差異當成「哪一套比較準」的問題，而不是先釐清差異來自定義（混合性結節中的低回音、單一可疑特徵是否自動升級、尺寸閾值）",
-        "忽略臨床脈絡：影像看起來良性但病人有頭頸部輻射暴露史、家族史、calcitonin 升高或術後 Tg 上升時，影像的陰性預測值並不適用"
-      ],
-      "weak": [
-        "同一顆結節能同時跑完 ACR TI-RADS (2017)、EU-TIRADS 2017、K-TIRADS 2021 並說出三者穿刺建議不同的原因落在哪一個定義差異",
-        "面對影像—細胞學不一致時，能寫出一個具體的處置路徑（重複 FNA 的時機、是否改 core needle biopsy、追蹤間隔、什麼情況下直接手術）而不是含糊的「密切追蹤」",
-        "在報告中同時揭露分級系統名稱與版本，讓下游醫師知道這個建議是哪一套系統給的",
-        "把臨床風險（輻射史、家族史、calcitonin、Tg 趨勢）與影像風險分開陳述，再合併成一個處置建議"
-      ],
-      "lesson": {
-        "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
-        "channel": "American College of Radiology",
-        "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
-        "duration": "59:52",
-        "why": "由 ACR 官方以逐個病例的方式示範 ACR TI-RADS (2017) 的實際套用，並回答最常被問到的邊界情況；這是把「系統之間為什麼會給出不同答案」講清楚的最權威起點，也讓學員先建立一套標準做法再去比較其他系統。",
-        "tier": "A",
-        "source_type": "webinar",
-        "provider": "youtube",
-        "access": "open",
-        "license": "版權歸 American College of Radiology，本站僅連結不重製",
-        "last_verified": "2026-08-02",
-        "note": "說明欄指向的 ACR 時間軸頁面（acr.org/Clinical-Resources/Reporting-and-Data-Systems/TI-RADS/Webinars）目前回傳 404，影片本身也無 chapter 標記，因此不列 timestamps，未自行推測時間點。使用方式：每出現一個病例就暫停，自己分完級再繼續播放。"
+      {
+       "at": "1:52",
+       "note": "揭曉：其中一塊是乳突癌，唯一的差別是微鈣化"
       },
-      "drills": [
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "結節內高回音圖形 case 876：兩家醫院、兩個相反建議的同一顆結節",
-          "en": "Differential diagnostic of intranodular hyperechogenic figures - case 876",
-          "kind": "case",
-          "target": "70 歲女性，同一個團隊追蹤這顆結節已 13 年，其間細胞學兩次都是良性。兩個月前她因高血壓危象在另一家醫院住院，被告知甲狀腺有「非常可疑的病灶，不論細胞學結果如何都應該手術切除」。功能狀態：甲狀腺功能正常（TSH 1.37 mIU/L）。影像：甲狀腺回音正常；右葉一個部分囊性、實質部分為 echonormal 的結節，內含多種高回音圖形——包含明確的 comet-tail artifact 與判不出來的曖昧顆粒；13 年來沒有長大。本次細胞學為 benign cystic-colloid goiter。作者的結論寫得很清楚：那些曖昧顆粒的亮度和同一顆結節裡已知的 comet-tail 一樣，很可能也是膠質結晶，但不能完全排除微鈣化；而這一例不屬於「單憑超音波就必須手術」的例外。要學員練的是：當兩個醫療團隊對同一顆結節給出相反建議時，可以拿來仲裁的到底是什麼——13 年不變的大小、兩次良性細胞學、以及「把曖昧亮點和同一畫面裡已知的 comet-tail 比亮度」這個具體動作。鑑別至少三個：膠質結晶（comet-tail）、真微鈣化、囊壁後方回音增強造成的假亮點——最容易選錯的是把曖昧顆粒一律當微鈣化。下一步是維持追蹤而不是手術。無病理對照（結局為 13 年追蹤與連續兩次以上良性細胞學）。",
-          "dose": "先答再看：全長 47 秒。先看完整段、不要讀標題與說明欄，寫下你的 structured description、ACR TI-RADS (2017) 分數，以及你會給病人什麼建議（手術／重複 FNA／追蹤，並寫出追蹤間隔）；再打開 http://thyrosite.com/thyroid/876/index 讀 Ultrasonography 與 Comments 對答案。最後寫一段門診會用的說法：你要怎麼向一位已經被別家醫院告知「應該開刀」的病人，說明你為什麼建議追蹤——並把 13 年穩定、兩次良性細胞學、亮度比對這三項各寫成一句話。",
-          "title": "Differential diagnostic of intranodular hyperechogenic figures - case 876",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=Ec1DNtauH98",
-          "duration": "0:47",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先分級、再寫給病人的建議，最後才對答案"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。無手術病理對照（以 13 年追蹤與連續良性細胞學為結局），tier 最高只給 B。此欄原為「影像高度可疑但兩次細胞學良性」的期刊研究（整體惡性率 2%），改為影片後該數字由實證層承接。"
-        },
-        {
-          "name": "2020 國際甲狀腺大會：K-TIRADS 的分級邏輯，以及它為什麼常和 ACR TI-RADS 不一致",
-          "en": "(ENG)2020 ITC_KTIRADS",
-          "kind": "lecture",
-          "target": "由 Kwak TI-RADS（Radiology 2011;260:892-9）第一作者、韓國甲狀腺影像與介入領域的資深影像醫學科醫師在 2020 International Thyroid Congress 上的 TI-RADS 講題，主題是韓國的 K-TIRADS。要學員帶走的不是「哪一套比較準」，而是不一致的結構性來源：K-TIRADS 是 pattern-based——先判實質性與回音，再看三項可疑特徵（微鈣化、邊緣不規則、taller-than-wide）決定歸類；ACR TI-RADS (2017) 則是把五個面向各自給分再加總。兩者的決策邏輯不同、穿刺的尺寸門檻也不同，所以同一顆結節落到不同級別、甚至得到相反的穿刺建議，是系統設計的必然結果而不是誰判錯。看完要能說出：你自己的報告是用哪一套系統、版本是哪一年，以及下游醫師看到你的建議時應該知道什麼。",
-          "dose": "先答再看：先拿五顆自己門診已有細胞學或病理結果的結節，逐顆跑完 ACR TI-RADS (2017)，把每一顆的分數、級別與穿刺建議寫下來——先不要看影片。看完這場 23 分 06 秒的講題之後，同樣五顆改用 K-TIRADS 2021 再分一次，算出你自己的不一致率（級別不同的比例、穿刺建議改變的比例），並逐顆指出差異落在哪一個定義上：混合性結節中的低回音怎麼算、單一可疑特徵是否自動升級、低風險結節的尺寸門檻。最後把兩套系統的建議寫進同一份報告的模擬段落，看看讀報告的人會不會被搞混。",
-          "title": "(ENG)2020 ITC_KTIRADS",
-          "channel": "KeepMyThyroid",
-          "url": "https://www.youtube.com/watch?v=SZ9NS4EaClY",
-          "duration": "23:06",
-          "tier": "A",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（KeepMyThyroid），本站僅連結不重製",
-          "last_verified": "2026-08-02",
-          "note": "英文口說、無字幕。頻道自述經營者為甲狀腺影像與介入的影像醫學科專科醫師、大韓民國醫學翰林院正會員、Kwak TI-RADS（Radiology 2011;260:892-9）第一作者、2015／2020／2025 三屆 ITC 受邀講者；說明欄僅寫「International Thyroid Congress2020_TIRADS」，無 chapter 標記，因此不列 timestamps，未自行推測時間點。誠實說明：本欄的內容描述依標題、說明欄與講者身分寫成，未逐段核對投影片。此欄原為 665 顆結節同時套 EU-TIRADS 與 ACR TI-RADS 的期刊研究（26.1% 級別不同、8.1% 穿刺建議改變），改為影片後那些數字由實證層承接。"
-        },
-        {
-          "tier": "B",
-          "source_type": "video",
-          "provider": "youtube",
-          "access": "open",
-          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
-          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
-          "last_verified": "2026-08-02",
-          "name": "副甲狀腺病例 10：影像與細胞學同時誤導",
-          "en": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10",
-          "kind": "case",
-          "target": "40 歲女性，外院細胞學為 AUS-FLUS（Bethesda III）；影像：右葉上段腹外側一個低回音病灶、血流不具特異性、TSH 正常。本院細胞學抹片上細胞質豐富、有空泡，最大細胞團中多個核出現 inclusion，因而判為「疑似乳突癌」。右葉切除後 histopathology 是副甲狀腺腺瘤。作者的註解正是本單元的核心：抹片上細胞很少，核內包涵體出現的頻率卻高得反常，而超音波表現反而是唯一沒有讓判讀完全走偏的那一項。要學員練的是——當影像與細胞學互相支持、卻同時指向錯誤答案時，還有什麼可以救。鑑別至少三個：乳突癌、甲狀腺外／甲狀腺內的副甲狀腺病灶、良性甲狀腺結節——最容易選錯的是第一個。下一步是在手術前驗血鈣與 PTH，必要時做 washout PTH。有手術病理對照。",
-          "dose": "先答再看：全長 31 秒。先看完整段、不要讀標題與說明欄，寫下病灶的解剖位置（相對於甲狀腺、氣管、頸總動脈）、structured description、ACR TI-RADS (2017) 分級與下一步；再打開說明欄的 http://www.thyrosite.com/thyroid/1597/index.php，先只讀到 Ultrasonography 確認描述，再往下讀 Cytology 與 Histopathology 對答案。最後寫出：你會用哪一項術前檢查（血鈣、PTH、washout PTH）推翻「疑似乳突癌」這個細胞學結論，以及什麼臨床線索會讓你在穿刺前就想到要驗。",
-          "title": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10",
-          "channel": "Tamas Solymosi",
-          "url": "https://www.youtube.com/watch?v=sSJC42uW8o8",
-          "duration": "0:31",
-          "timestamps": [
-            {
-              "at": "0:00",
-              "note": "第一眼——先定位再描述，不要急著給診斷"
-            }
-          ],
-          "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照（右葉切除，histopathology 為副甲狀腺腺瘤）。"
-        }
-      ]
+      {
+       "at": "2:59",
+       "note": "甲狀腺旁的可疑淋巴結"
+      },
+      {
+       "at": "3:24",
+       "note": "專家辯論開始：橋本與乳突癌的關聯是因果還是共病"
+      },
+      {
+       "at": "6:39",
+       "note": "以手術／病理為基準的研究存在 surgical bias 的反方論點"
+      },
+      {
+       "at": "7:18",
+       "note": "區分『真正的 Hashimoto's disease（有甲狀腺腫）』與一般慢性淋巴球性甲狀腺炎，風險評估不同"
+      },
+      {
+       "at": "10:31",
+       "note": "AI 研究拒收這個病例——因為演算法沒把這塊 3 公分的癌認成結節"
+      },
+      {
+       "at": "11:16",
+       "note": "血流陷阱：癌的部位只有周邊血流，內部反而稀少"
+      },
+      {
+       "at": "12:28",
+       "note": "第二例（case 84）第一眼——先暫停再聽細胞學結果"
+      },
+      {
+       "at": "16:56",
+       "note": "第三例（case 88）：典型、好判的橋本合併大型乳突癌，用來校正難度"
+      }
+     ],
+     "note": "選片理由：本單元原有三支資源都是 30–60 秒無旁白的短片、且結局都是『不是結節』，缺少『橋本腺體裡真的長癌』與帶討論的完整推理。本片為英語現場討論（講者為匈牙利籍，另有法語口音的與談者），YouTube 有自動英文字幕（en-orig）可開啟。已用 oEmbed 驗證存在且可嵌入（HTTP 200，標題／頻道相符），並逐格檢視 storyboard 確認整段以實際超音波動態掃描與都卜勒畫面為主、非純投影片；片尾約最後 2 分鐘為課程網站的考試行政說明。時間點取自 YouTube 自動字幕的時間軸，未自行推測。誠實說明：這三個 bonus case 依講者自述『不在網站上』，因此結局僅有口頭揭曉、無公開案例頁可對照，tier 最高只給 B，不得單獨作為『微鈣化＝惡性』的診斷證據。"
     }
-  ]
+   ]
+  },
+  {
+   "id": "ch12-u2",
+   "name": "海綿樣結節中的可疑焦點、邊緣鈣化結節、微小後方病灶",
+   "type": "case",
+   "assessment": "從自己門診調出三顆結節：一顆 spongiform／partially cystic 且內含 echogenic foci、一顆有 rim（eggshell）calcification、一顆 ≤ 10 mm 且位於後方或深部。對每一顆先不查任何文獻，寫下：(1) echogenic foci 你判為 punctate echogenic foci、comet-tail artifact 還是 macrocalcification，以及你用哪一個影像特徵做的區分（後方是否有 comet tail、是否隨探頭角度改變、是否在囊性成分的後壁）；(2) ACR TI-RADS (2017) 各項得分與總分；(3) 穿刺決定。寫完再依序讀本單元三個資源對答案：Li 等人的 echogenic focus scoring 一文對照你的第 (1) 題，Shin/Na 等人的 KJR 邊緣鈣化研究對照你的第 (2) 題，Lisco 等人的 ≤ 10 mm 研究對照你的第 (3) 題。最後寫出：如果你把 comet-tail 誤判成 punctate echogenic foci，這三顆的 TI-RADS 級別各會跳幾級、穿刺建議會不會改變。",
+   "tight": [
+    "把 spongiform／囊性成分後壁的 comet-tail artifact（膠質結晶）當成 punctate echogenic foci，直接讓 ACR TI-RADS 多加 3 分",
+    "把 rim calcification 一律當成良性：ACR TI-RADS 只給 2 分，但實際資料顯示 rim calcification 在 partially cystic 或 iso/hyperechoic 結節中與惡性獨立相關，而且 eggshell 局部中斷加上厚而明顯低回音的 halo 更需要警覺",
+    "邊緣鈣化的後方聲影把結節內部完全遮住，卻仍然照常填寫 echogenicity 與 composition 欄位",
+    "≤ 10 mm 的深部／後方病灶因為在焦點區以外、探頭壓迫不到位而低估 taller-than-wide 與 margin，或反過來因為部分容積效應而高估微鈣化"
+   ],
+   "weak": [
+    "以「後方是否有 V 型 comet tail、是否位於囊性成分邊界、是否隨角度消失」三個問題系統性區分 comet-tail artifact 與真微鈣化",
+    "對 rim-calcified 結節能講出：什麼情況下要提高風險（局部中斷、厚低回音 halo、內部低回音成分向外突出），什麼情況下可以只追蹤",
+    "為深部或後方小病灶主動調整 focus、frequency 與 depth 之後才下判讀，而不是拿一張不合格的影像硬分級",
+    "說明 ≤ 10 mm 結節「分級」與「該不該穿刺」是兩件事，並能引用實際的診斷效能限制"
+   ],
+   "lesson": {
+    "title": "Weibinar on Intranodular echogenic figures - Advanced Online Papillon Course",
+    "channel": "Tamas Solymosi",
+    "url": "https://www.youtube.com/watch?v=TU4v25ug7WM",
+    "duration": "2:11:19",
+    "why": "整場兩小時只講一件事：結節內的高回音構造到底是什麼。用連續病例逐一拆解 punctate echogenic foci、comet-tail artifact、粗鈣化與邊緣鈣化，正好對應 ACR TI-RADS 中最容易被錯加分的 echogenic foci 欄位。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+    "coi": "本場為講者付費 Papillon Course 的公開場次，說明欄導向其自營 thyrosite.com",
+    "last_verified": "2026-08-02",
+    "note": "全長 2 小時 11 分，無 YouTube chapter 標記，因此不列 timestamps。建議分兩次看：每當主講者丟出一個病例就暫停、先自己判讀再繼續播放。"
+   },
+   "drills": [
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "結節內高回音圖形 case 372：comet-tail 還是微鈣化，分不出來的時候怎麼辦",
+     "en": "Differential diagnostic of intranodular hyperechogenic figures - case 372",
+     "kind": "case",
+     "target": "55 歲女性，右葉突然出現腫塊三週；三年前已知有囊性結節並抽出 2.5 mL 囊液。功能狀態：甲狀腺功能正常（TSH 1.07 mIU/L）。影像：甲狀腺回音正常；右葉一個混合性（中度低回音＋囊性）結節，內含多種結節內高回音顆粒——包含非特異性顆粒與更明亮的顆粒，後者可能是 comet-tail artifact 也可能是 microcalcification；左葉另有數個中度低回音病灶。抽出 3 mL 棕色液體，細胞學為 benign cystic degeneration。要學員帶走的正是作者的註解：這一題之所以重要，在於後果不同——comet-tail 幾乎只出現在良性病灶，而 microcalcification 會提高乳突癌的機率，在 ACR TI-RADS (2017) 裡兩者相差 3 分。鑑別至少三個：膠質結晶造成的 comet-tail、真微鈣化、囊壁後方回音增強造成的假亮點——最容易選錯的是把後兩者混為一談。下一步是抽吸加細胞學而不是直接手術。無手術病理對照（結局為細胞學 benign cystic degeneration）。",
+     "dose": "先答再看：全長 47 秒。第一次播放時每看到一個亮點就暫停，對每一個亮點問三個問題——後方有沒有 V 形漸窄拖尾？是不是貼在囊性成分的邊界或後壁？轉動探頭角度會不會消失？把答案寫成一張表，再給整顆結節一個 ACR TI-RADS (2017) 總分與穿刺決定。然後打開 http://www.thyrosite.com/thyroid/372/index.php 讀 Ultrasonography 與 Comments 對答案，並算出：如果你把那些曖昧顆粒全部判成 punctate echogenic foci，總分會多幾分、級別會跳幾級。",
+     "title": "Differential diagnostic of intranodular hyperechogenic figures - case 372",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=LwYNNjQmWHk",
+     "duration": "0:47",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "整段就是第一眼影像——建議 0.5 倍速反覆播放，逐一標記亮點"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。僅有細胞學對照，無手術病理。"
+    },
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "結節內高回音圖形 case 928：同一顆結節裡三種高回音圖形一起出現",
+     "en": "Differential diagnostic of intranodular hyperechogenic figures - case 928",
+     "kind": "case",
+     "target": "85 歲女性，多結節性甲狀腺腫已數十年，吞嚥困難數年；CT 顯示右葉胸骨後延伸、氣管被壓到剩一半；核醫掃描為多個正常攝取的結節。功能狀態：甲狀腺功能正常（TSH 0.31 mIU/L、FT4 15.9 pM/L、FT3 4.63 pM/L）。影像：甲狀腺回音正常，右葉多個結節，其中一個大的 echonormal 結節同時具備 coarse calcification、成對出現的高回音線與顆粒（結締組織），以及數個更明亮的 punctate echogenic foci。細胞學為 benign colloid goiter；右葉切除後 histopathology 為 benign hyperplastic nodules。要學員看出：粗鈣化與其後方聲影會遮住結節內部，讓 composition 與 echogenicity 根本無法可靠填寫；而當同一顆結節裡同時出現三種高回音圖形時，用最可疑的那一種去給 ACR TI-RADS (2017) 加 3 分，會直接把一顆良性結節推上 TR5。鑑別至少三個：粗鈣化、結締組織的高回音線與顆粒、真微鈣化——最容易選錯的是把結締組織的顆粒讀成微鈣化。下一步在此是評估壓迫症狀與手術指徵，而不是為了鈣化去追加穿刺。有手術病理對照。",
+     "dose": "先答再看：全長 34 秒。先只看不讀標題，把右葉那顆大結節裡的高回音圖形分成幾群、各自畫在紙上，寫下 ACR TI-RADS (2017) 各項得分、總分與穿刺決定；特別記錄「被聲影遮住的部分你是怎麼填 composition 的」。再打開 http://thyrosite.com/thyroid/928/index 對答案（細胞學 benign colloid goiter、右葉切除後為良性增生性結節）。",
+     "title": "Differential diagnostic of intranodular hyperechogenic figures - case 928",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=tu2RGopIGzU",
+     "duration": "0:34",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先暫停，把亮點分群後再繼續播放"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照。本章找不到以 rim（eggshell）calcification 為主題、可公開觀看且有動態掃描的病例影片：thyrosite 的 eggshell 病例（benign nodular hyperplasia case 9／18／50）都沒有對應影片，KeepMyThyroid 與 Yoda Kim Ultrasound School 兩個頻道也沒有；邊緣鈣化的風險分層證據改由實證層承接。"
+    },
+    {
+     "name": "結節內高回音圖形 case 367：抽掉囊液之後，同一個小病灶就換了一張臉",
+     "en": "Differential diagnostic of intranodular hyperechogenic figures - case 367",
+     "kind": "case",
+     "target": "39 歲女性，因突然出現的腫塊轉來做細針穿刺；觸診右葉一個具彈性的結節，甲狀腺功能正常（TSH 0.71 mIU/L）。影像：右葉兩個病灶，上方是一個已鈣化的結節，下方是囊性結節；緊鄰囊性結節旁另有一個低回音病灶，內含多種結節內高回音圖形（包括微鈣化），而且當下無法判斷它是囊性結節的一部分還是另一個獨立病灶。抽出 6.5 mL 棕色液體之後，這個低回音病灶才變得容易分析——邊界變銳利、形狀是規則的幾何形、並可見 perilesional blood flow。細胞學為 cystic degeneration，但作者當時仍給出「合併超音波與細胞學：疑似乳突癌」的結論；histopathology 最後是 follicular adenoma，作者自己寫下「我們過度解讀了超音波表現」。要學員帶走兩件事：(1) 小的、緊貼囊性成分或位置受限的病灶，在技術條件（抽液、focus、frequency、depth、探頭壓迫）改變之前，拿到的就是一張不合格的影像，硬分級只會製造假的確定性；(2)「分級」「合併診斷」與「最終病理」是三件事，而超音波的過度解讀會連帶把細胞學的結論一起帶偏。鑑別至少三個：乳突癌、濾泡性腫瘤、囊性退化的良性結節——最容易選錯的是第一個。下一步是先抽液改善成像、重新描述，再決定要不要手術。有手術病理對照。",
+     "dose": "先答再看：全長 47 秒。第一輪先在「還沒抽液」的畫面上停格，寫下你對那個低回音病灶的 structured description、ACR TI-RADS (2017) 分數、以及你有多確定它是獨立病灶還是囊腫的一部分（用 0–10 分自評確定度）；第二輪看抽液後的畫面，重新描述一次並重新給分。再打開 http://www.thyrosite.com/thyroid/367/index.php 讀 Ultrasonography、Cytology 與 Comment 對答案（最終病理為 follicular adenoma）。最後回答兩題：抽液前後你的分數差幾分？如果門診當下不能抽液，你會在報告裡怎麼寫這個病灶——請實際寫出一句「本次影像無法可靠評估此病灶」的句子與你指定的下一步。",
+     "title": "Differential diagnostic of intranodular hyperechogenic figures - case 367",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=3JE8Afx-R-0",
+     "duration": "0:47",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先在抽液前的畫面上寫完描述與分級，再往下看"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照（follicular adenoma）。此欄原為 IJE 2025 的 ≤ 10 mm 結節風險分層論文，改為影片後，微小結節上各套演算法效能下降的量化證據由實證層承接；另一支更貼近「不到 1 公分的病灶被讀成多發性乳突癌」的影片（thyrosite case 1539，H46ERGpK8K4，健檢誤判、兩次良性細胞學、右葉切除後為完整甲狀腺）只有 16 秒，低於本站項目影片 0:30 的下限，故未採用。"
+    },
+    {
+     "name": "同一葉裡的兩顆病灶：完整蛋殼鈣化的大結節，與 10 mm 囊性病灶裡的壁內乳頭狀突起",
+     "en": "Thyroid Ultrasound & Color Doppler: Goiter with Eggshell Calcification & Suspicious Papillary Lesion",
+     "kind": "case",
+     "target": "多結節性甲狀腺腫的病人，同一葉裡並排兩顆完全不同性質的病灶，逼學員把「鈣化環」與「囊內實質突起」兩題一次做完。第一顆是大結節，帶一圈薄而連續的周邊鈣化環（eggshell／rim calcification），後方一整片緻密聲影，都卜勒上結節內部沒有血流——片中直接標注為 likely benign，對應的是良性膠質結節或長期退化性增生結節。第二顆只有 10 mm，是囊性病灶，但囊壁上長出一個實質的壁內乳頭狀突起（intramural papillary projection）；關鍵在於這個乳頭狀成分「沒有微鈣化、彩色與能量都卜勒上也沒有明顯血流」（片中標注 not very vascular），片中仍把它標為 potentially malignant，並明講：微鈣化與血流是支持惡性的線索，缺乏它們並不能拿來排除。此病灶的 FNAC 結果為 inconclusive——這在囊性結節很常見，尤其實質成分取樣不足時；建議的下一步是重做超音波導引、把針尖精準對準實質乳頭部分。要學員帶走四件事：(1) rim calcification 該問的不是「有沒有鈣化環」，而是「鈣化環薄不薄、連不連續」——片中 2:02 之後的文字段落把這條界線寫得很明白：鈣化環變厚、不規則或中斷時才要提高惡性懷疑，本例正好是「完整而薄」的對照組；(2) 完整鈣化環後方的聲影會把結節內部整片遮住，composition 與 echogenicity 在物理上根本無法可靠填寫，硬填就是製造假的確定性；(3) 同一個病人身上，一顆只要追蹤、一顆要 targeted FNA，兩個決定要能各自說出理由；(4) 囊性病灶抽不到診斷性細胞不是運氣問題，而是取樣位置問題。鑑別至少三個：良性膠質／增生結節的完整蛋殼鈣化、鈣化環變厚或局部中斷且有實質成分向外突出的惡性、囊性乳突癌或囊性濾泡性腫瘤的壁內乳頭狀突起——最容易選錯的是把「有蛋殼鈣化」直接讀成良性就結案，其次是因為「沒有微鈣化」而放掉那顆 10 mm 的囊性病灶。下一步是對實質乳頭成分做超音波導引 targeted FNA。無手術病理對照——結局停在 FNAC inconclusive 與「建議重抽、必要時考慮外科會診」，因此只能用來練描述與取樣策略，不能用來證明任何一顆的最終性質。",
+     "dose": "先答再看：全長 2 分 46 秒、無旁白（只有背景音樂）。結構很重要——約 0:00–2:00 是連續的灰階與彩色／能量都卜勒動態掃描，2:02 之後才是文字討論，所以答案就在片尾，第一輪務必把播放器停在 2:00 之前。第一輪只看 0:00–1:22：對兩顆病灶各寫一段 structured description 與 ACR TI-RADS (2017) 各項得分、總分與穿刺決定；特別誠實地記錄一件事——蛋殼鈣化後方聲影遮住的部分，你剛才是怎麼填 composition 與 echogenicity 的，還是其實你猜的。第二輪回到 0:31 的壁內乳頭狀突起與 0:53 的都卜勒，回答兩題：你在畫面上找不到微鈣化、也看不到明顯血流，這兩件事各自把你的懷疑度往下拉了多少？如果把它們當成排除惡性的理由，你錯在哪一步。第三輪放到 2:02 之後的文字段落對答案，並把「鈣化環薄而連續 vs 變厚／不規則／中斷」這條界線抄成一句可以直接貼進報告模板的話。最後寫下：這顆 10 mm 囊性病灶的 FNAC 是 inconclusive，你要怎麼跟病人解釋『這次抽不到不是白抽，而是要換位置再抽一次』，以及你會在報告的建議欄實際寫哪一句。",
+     "title": "Thyroid Ultrasound & Color Doppler: Goiter with Eggshell Calcification & Suspicious Papillary Lesion",
+     "channel": "Ultrasound videos（Joe Antony, MD／ultrasound-images.com）",
+     "url": "https://www.youtube.com/watch?v=jPRWuQ2oB8g",
+     "duration": "2:46",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Ultrasound videos／Joe Antony, MD），本站僅連結不重製",
+     "coi": "頻道與同名網站 ultrasound-images.com 由 Joe Antony 醫師個人經營，網站設有一般橫幅廣告版位；影片本體無任何產品、課程或教材推銷，亦無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼：右葉灰階掃描，同一葉裡兩顆病灶——先暫停，兩顆各寫一段描述再往下"
+      },
+      {
+       "at": "0:31",
+       "note": "放大 10 mm 囊性病灶，標注壁內乳頭狀突起（intramural nodule）"
+      },
+      {
+       "at": "0:53",
+       "note": "彩色／能量都卜勒：乳頭狀突起標為 not very vascular——先寫下這件事有沒有改變你的決定"
+      },
+      {
+       "at": "1:16",
+       "note": "並列標注：蛋殼鈣化大結節（benign）vs 囊內乳頭狀突起（potentially malignant）"
+      },
+      {
+       "at": "1:23",
+       "note": "蛋殼鈣化結節：薄而連續的鈣化環與後方緻密聲影，內部整片被遮住"
+      },
+      {
+       "at": "2:02",
+       "note": "文字討論開始（答案區）：兩顆病灶的影像所見與病理生理"
+      },
+      {
+       "at": "2:13",
+       "note": "鑑別診斷清單，並點出鈣化環『變厚、不規則或中斷』才要提高惡性懷疑"
+      },
+      {
+       "at": "2:29",
+       "note": "建議的下一步：對實質乳頭成分重做導引 FNAC，必要時彈性成像／對比增強超音波與外科會診"
+      }
+     ],
+     "note": "換片說明（本欄原填 ctW-rSClnJM，已整支換掉）：稽核以字幕逐秒核對後發現，該片全長 10:47 中真正的病例只有約 2:55–5:25，其餘 3/4 是講者在影片本體裡推銷自營課程與 USB 教材（含招生電話、期數與定價頁），直接命中策展契約「一律排除：缺乏利益揭露的高度商業宣傳」，因此不是縮短時間戳可以補救的，整支替換。替換過程中另逐支查證了同頻道其他六支同主題病例（CHaMnXNKr_8、NRpe4NsxzI4、HHWLf_9mcU4、bIOhUfdvxMY、QaabV2UA1AY、s1VCr7O0Hik），韓文自動字幕顯示每一支都在片中內嵌同樣的 USB 教材與招生宣傳（多數從影片一半左右開始），故整個 김일봉／Yoda Kim Ultrasound School 頻道不予採用。本片驗證方式：yt-dlp 搜尋取得 ID，oEmbed HTTP 200、標題與頻道相符，author_url 為 @DRJOEA；作者身分可回溯——影片說明欄指向 https://www.ultrasound-images.com/thyroid-2/（curl 200），該站頁尾版權標示為 Joe Antony, MD。已把 storyboard（sb0，10 張 × 9 格）逐格檢視：0:00 至約 2:00 全部是實際的甲狀腺灰階與彩色／能量都卜勒動態掃描（機器面板可見 L12-4 探頭、42Hz），畫面上有英文標注（Papillary intramural nodule、FNAC、egg shell calcification、benign／potentially malignant、Not very vascular），2:02 之後為文字討論頁，全片無任何商業宣傳。誠實說明四件事：(1) 本片無旁白、無字幕（自動字幕只抓到 [Music]），時間點是由 storyboard 的 90 格均分推算的近似值，誤差約 ±2 秒，非取自字幕時間軸；(2) 片尾文字討論的行文（『Let's break down the ultrasound findings and differentials』等）明顯經 AI 輔助整理，內容經核對與 ACR TI-RADS (2017) 及 rim calcification 現行認識一致、無明顯錯誤，但不應把它當成同儕審查過的權威敘述；(3) 無手術病理對照，結局僅到 FNAC inconclusive，tier 最高只給 B；(4) 本欄仍未完全填補原 ch12-u2 註記中的缺口——本片示範的是『完整而薄的鈣化環』這個對照組，真正最難的『鈣化環局部中斷合併實質成分外突』至今仍找不到可公開觀看、無商業宣傳的病例影片，該變化型的風險分層證據繼續由實證層（Shin／Na 等人的 KJR 邊緣鈣化研究）承接。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u3",
+   "name": "甲狀腺淋巴瘤 vs 嚴重甲狀腺炎、瀰漫硬化型 PTC",
+   "type": "case",
+   "assessment": "先做「盲判」：打開 thyrosite 的 MALT 淋巴瘤 case 1 頁面，只讀到 Ultrasonography 那一段就停（不要往下捲到 Cytology 與 Biopsy），配合影片 https://www.youtube.com/watch?v=_v-GjeLTF3k ，寫下你的 structured description、三個鑑別診斷的排序，以及你的下一步（觀察／FNA／core needle biopsy／立即轉血液腫瘤科）。寫完再讀完整頁對答案。接著用同一份描述去比對 Zheng 等人的 PTL vs DSVPTC 對照研究，回答：如果只給你這一張影像而不給年齡、病程長短、TSH 與 anti-TPO，你能不能分開 PTL 與 DSVPTC？最後寫出三個「非影像」變項（年齡中位數 64.5 vs 36、病程速度、Hashimoto 與甲狀腺低下的盛行率）如何改變你的排序，以及在什麼情況下你會直接跳過 FNA 改做 core needle biopsy。",
+   "tight": [
+    "把快速增大、極度低回音、瀰漫性的腺體當成「嚴重橋本」而只追蹤——淋巴瘤與嚴重淋巴球性甲狀腺炎的灰階外觀高度重疊，兩者又常在同一位病人身上並存",
+    "在懷疑淋巴瘤時只做細針細胞學：MALT 淋巴瘤的細胞學常被讀成 Hashimoto's thyroiditis（只是 lymphoblast 比例偏高），細胞學在此的主要任務其實是排除 anaplastic carcinoma",
+    "瀰漫硬化型 PTC 常沒有可辨識的腫塊，只有整葉散布的微鈣化（snowstorm）與腫大淋巴結；照「找結節」的掃法會整個漏掉",
+    "忘記 DSVPTC 好發於年輕女性且側頸轉移率高，把年輕病人的『瀰漫性甲狀腺炎樣』影像預設為良性"
+   ],
+   "weak": [
+    "在瀰漫性極低回音腺體上，能列出 PTL、DSVPTC、嚴重 Hashimoto、anaplastic carcinoma、Riedel 五者的鑑別順序並說明依據",
+    "認得 DSVPTC 的 snowstorm 微鈣化型態，並在沒有明確腫塊時仍主動掃側頸分區",
+    "把臨床節奏（數週 vs 數年）、年齡、TSH／anti-TPO、壓迫症狀當成影像判讀的一部分而不是附註",
+    "知道何時該從 FNA 升級到 core needle biopsy 或開放式切片，並能說出理由"
+   ],
+   "lesson": {
+    "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+    "channel": "THANC Foundation",
+    "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
+    "duration": "1:01:41",
+    "why": "498 例原發性甲狀腺淋巴瘤的回溯性世代（87% 合併 Hashimoto、1.8% Graves、11.6% 無自體免疫背景），把「淋巴瘤長在甲狀腺炎的背景上」這件事用實際數字說清楚，並附 Terry Davies 的專家討論；填的是 fellow 面對『這到底是很嚴重的橋本還是淋巴瘤』時缺乏族群基準率的落差。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸 THANC Foundation，本站僅連結不重製",
+    "last_verified": "2026-08-02",
+    "timestamps": [
+     {
+      "at": "3:26",
+      "note": "Background & Study Objective：PTL 與 Hashimoto 的關係、DLBCL 與 MALT 兩大亞型"
+     },
+     {
+      "at": "13:31",
+      "note": "Methods & Findings：498 例中 87% Hashimoto、1.8% Graves、11.6% 無自體免疫；亞型分布與預後無顯著差異"
+     },
+     {
+      "at": "25:24",
+      "note": "Conclusions & Discussion：不同自體免疫背景間人口學與長期結果無顯著差異；無自體免疫者的可能基因變異"
+     },
+     {
+      "at": "31:15",
+      "note": "Dr. Davies 討論甲狀腺自體免疫在 PTL 發生中的角色"
+     },
+     {
+      "at": "51:02",
+      "note": "Q&A 臨床討論"
+     }
+    ],
+    "note": "時間軸取自影片說明欄由發布者自行標註的章節，未自行推測。"
+   },
+   "drills": [
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "甲狀腺淋巴瘤 case 1：原發性 MALT 型非何杰金氏淋巴瘤",
+     "en": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1",
+     "kind": "case",
+     "target": "66 歲女性，雙側甲狀腺腫塊在 1.5 個月內迅速長大；右葉 75×55×120 mm，整體極度低回音、不均質、血流不規則增加；TSH 21.0 mIU/L、FT4 6.09 pM/L、anti-TPO > 1000 U/L。細胞學讀成「Hashimoto's thyroiditis，但 lymphoblast 對小淋巴球的比例高於一般甲狀腺炎」，最終切片病理為 MALT 型淋巴瘤。要學員學到的正是作者的註解：診斷 MALT 淋巴瘤靠的是臨床表現與病史，細胞學在此的主要角色是排除 anaplastic carcinoma。鑑別至少三個：嚴重的 Hashimoto's thyroiditis、原發性甲狀腺淋巴瘤、anaplastic carcinoma——最容易選錯的是第一個，因為灰階外觀與抗體、TSH 全部都支持它。下一步是升級到 core needle biopsy 或開放式切片，而不是重複細針細胞學。有切片病理對照。",
+     "dose": "先答再看：全長 31 秒。先看完整段動態掃描、不要讀標題與說明欄，寫下 structured description、三個鑑別診斷的排序，以及你的下一步（觀察／FNA／core needle biopsy／立即轉血液腫瘤科）；再打開說明欄的 http://www.thyrosite.com/thyroid/867/index.htm，先只讀到 Ultrasonography 為止確認你的描述，再往下讀 Cytology／Biopsy and histopathology／Comment 對答案。",
+     "title": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=_v-GjeLTF3k",
+     "duration": "0:31",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼影像——先暫停寫下描述與鑑別排序"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有切片病理對照（說明欄連結的 thyrosite 案例頁載明 histopathology）。"
+    },
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "乳突癌 case 8：18 歲、甲狀腺炎樣背景、微鈣化與側頸轉移",
+     "en": "Papillary carcinoma - case 8",
+     "kind": "case",
+     "target": "18 歲女性，例行檢查發現結節。觸診右葉硬結節；功能狀態：甲狀腺功能正常（TSH 0.91 mIU/L）。影像：甲狀腺整體輕度低回音、不均質（甲狀腺炎背景），右葉有一個更低回音的結節，內含大量 microcalcification、邊界不規則且模糊、結節內血流紊亂。細胞學為 Hürthle-cell tumor、疑似 oxyphilic variant 乳突癌；histopathology 為 oxyphilic variant 乳突癌合併 chronic lymphocytic thyroiditis，右側頸部有轉移淋巴結。要學員練的是本單元最難的一題：年輕女性加上「甲狀腺炎樣」的瀰漫低回音不均質背景，正是最容易被預設為良性的組合，而微鈣化、模糊邊界與側頸轉移才是真正的線索；掃到這種背景一定要主動掃完側頸各分區，不能只看甲狀腺。鑑別至少三個：嚴重的 Hashimoto's thyroiditis、瀰漫硬化型乳突癌（DSVPTC）、原發性甲狀腺淋巴瘤——最容易選錯的是第一個。下一步是 FNA 加上側頸淋巴結評估（必要時 washout Tg）。有手術病理與淋巴結病理對照。",
+     "dose": "先答再看：全長 33 秒。先看完整段、不要讀標題，寫下 (1) 你對背景腺體的判讀（正常／甲狀腺炎／無法判定）、(2) 右葉病灶的 structured description 與 ACR TI-RADS (2017) 分級、(3) 你會不會加掃側頸、掃哪幾區。再打開 http://www.thyrosite.com/thyroid/218/index.php 對答案（細胞學、手術病理與頸部轉移）。最後回答：如果沒有人告訴你病人只有 18 歲，你的鑑別排序會不會不同。",
+     "title": "Papillary carcinoma - case 8",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=BV9coXs3Ds8",
+     "duration": "0:33",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼影像——先判背景腺體，再判結節"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照。誠實說明：本例病理為 oxyphilic variant，不是 diffuse sclerosing variant。查過 ytsearch 的 \"diffuse sclerosing variant papillary thyroid carcinoma\"、\"diffuse sclerosing variant thyroid ultrasound snowstorm microcalcifications\"、\"diffuse sclerosing papillary carcinoma thyroid case ultrasound teaching\" 以及韓文查詢，並掃過 thyrosite 的 75 個乳突癌病例頁，都找不到可公開觀看、有實際動態掃描的 DSVPTC 病例影片；唯一標題相符的 YouTube 影片（vXvbYUoW9DM，Creative Medicine）看起來是付費課程的整段轉錄，依策展契約排除。因此改以「年輕病人＋甲狀腺炎樣背景＋微鈣化＋側頸轉移」這一組可遷移線索代替，DSVPTC 的影像—病理對照證據由實證層承接。"
+    },
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "甲狀腺淋巴瘤 case 11：抗體為 0、功能正常、病程以年計的淋巴瘤",
+     "en": "Thyroid lymphomas - case 11",
+     "kind": "case",
+     "target": "48 歲女性，兩年前已診斷 low grade、stage III/A 的非何杰金氏淋巴瘤；第一次與後續 PET-CT 都描述甲狀腺內多發病灶且無進展，至今未接受任何治療，這次主動要求做甲狀腺評估。觸診兩葉略硬但摸不到離散病灶；TSH 1.56 mIU/L、anti-TPO 0 U/mL。影像：甲狀腺回音正常，兩葉多個不均質、部分邊界模糊的低回音與中度低回音離散病灶；兩側頸部都有多個淋巴結。三處病灶各做細胞學，都是符合非何杰金氏淋巴瘤的型態。要學員看出：這一例和同單元的 MALT case 1 完全相反——case 1 是 TSH 21、anti-TPO > 1000、橋本背景、腫塊一個半月內暴長；本例 anti-TPO 為 0、功能正常、背景腺體回音正常、病程以年計。淋巴瘤在甲狀腺的表現可以完全不像「嚴重甲狀腺炎」，把「一定長在橋本背景上、一定快速增大」當成必要條件會漏掉這一型。鑑別至少三個：多發性良性結節、轉移性腫瘤、橋本背景的多發假性結節——最容易選錯的是第一個。下一步是對多處病灶取樣（本例做了三處細胞學）並回頭核對全身分期影像。無病理對照（結局為三處細胞學與 PET-CT 追蹤，未做手術病理）。",
+     "dose": "先答再看：全長 1 分 26 秒。先看完整段、不要讀標題與說明欄，寫下背景腺體的判讀、每一葉病灶的 structured description、ACR TI-RADS (2017) 分級與你會不會穿刺、穿幾處；再打開 http://www.thyrosite.com/649/index.php 對答案。最後把本例與同單元的 case 1（MALT）做一張兩欄對照表：年齡、病程、TSH、anti-TPO、背景腺體回音、病灶型態、取樣策略各是什麼，並寫下哪一欄最能把兩者分開。",
+     "title": "Thyroid lymphomas - case 11",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=4weSTiGLW4Q",
+     "duration": "1:26",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼影像——先判背景腺體是否為甲狀腺炎"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。無手術病理對照，結局為三處細胞學與 PET-CT 追蹤，故 tier 最高只給 B。此欄原為 PTL 與 DSVPTC 臨床特徵對照的期刊論文，改為影片後，年齡中位數與轉移率等量化對照由實證層承接。"
+    },
+    {
+     "name": "瀰漫硬化型乳突癌（DSVPTC）三例：找不到腫塊、整葉鋪滿砂粒體，診斷時淋巴結已經轉移",
+     "en": "미만성 경화 아형 갑상선 유두암 초음파 증례（Ultrasound cases of diffuse sclerosing variant papillary thyroid carcinoma）",
+     "kind": "case",
+     "target": "由韓國 삼성내과 최영식 원장（內科、長期執行甲狀腺超音波）示範三個以超音波診斷的瀰漫硬化型乳突癌（diffuse sclerosing variant, DSVPTC）。증례 1（02:28）：13 歲女性，在開業診所的甲狀腺超音波被發現異常而轉診；影像上整片粟粒狀的白色點狀高回音，講者直接稱之為 psammoma body（砂粒體），並在同一畫面下方指出已經轉移的頸部淋巴結。증례 2（03:03）：23 歲男性，健檢 TSH 9 mIU/L，被判讀為慢性甲狀腺炎造成的不顯性甲狀腺低下而來做超音波；兩葉可見同樣的白點瀰漫散布，講者說明對這些部位做細針細胞學就會得到乳突癌，同時頸部淋巴結已有轉移——這一例正是本單元最危險的組合：年輕、TSH 偏高、被『甲狀腺炎』這個標籤先入為主。증례 3（03:52）：63 歲男性，健檢超音波異常轉入，講者曾在學會報告過；影像同樣是整個甲狀腺鋪滿砂粒體樣白點，診斷當下已有淋巴結轉移。講者對 DSVPTC 的說明分散在三處，不在同一段：流行病學在**前言 01:55–02:12**（DSVPTC 約占全部乳突癌的 0.7%、好發於年輕族群、發現當時就已有淋巴結轉移、因此預後較差），影像特徵總結在 **04:12–04:26**（白點瀰漫沉積於整個腺體是其特徵、診斷當下已有淋巴結轉移），治療與預後在 **05:05–05:20**（接受手術與放射碘治療後預後與一般乳突癌差別不大，但可能復發，必須長期追蹤）；中間 04:36 另有一段講者的立場——雖然近來常說甲狀腺癌太容易被發現、不該做超音波，但對年輕族群的病人要特別留意。策展註解（非講者原話）：DSVPTC 常常沒有可辨識的腫塊——旁白中並未出現這句話，它是由三例的影像表現與文獻共識推得，不得引用為本片內容。要學員練的是本單元最硬的一題：當腺體裡根本沒有一顆可以量測的『結節』時，ACR TI-RADS (2017) 這種以結節為單位的系統會整個失效，你必須改用『背景腺體型態 ＋ 微鈣化分布 ＋ 側頸分區』來下結論。鑑別至少三個：慢性淋巴球性甲狀腺炎（尤其像 증례 2 那樣先被 TSH 帶走）、多發性良性結節的粗鈣化與結締組織高回音、瀰漫硬化型乳突癌——最容易選錯的是第一個。下一步是對白點最密集處做細胞學，並主動掃完側頸各分區（必要時 washout Tg）。結局：講者說明對這些病灶做細針細胞學即為乳突癌（증례 2 講得最明確），但影片未逐例出示手術病理報告，故視為無完整手術病理對照。",
+     "dose": "先答再看：全長 5 分 44 秒，韓文口說，YouTube 有自動字幕與英文自動翻譯可開啟（建議第一輪先關掉字幕）。分別跳到 02:28、03:03、03:52 三個病例的第一眼畫面各自暫停，對每一例寫下四件事：(1) 背景腺體判讀（正常／甲狀腺炎／無法判定）；(2) 你能不能在畫面上圈出一顆可以量測的結節——如果不能，你的報告要怎麼寫；(3) 你打算怎麼套 ACR TI-RADS (2017)，以及這套系統在這裡失效的地方在哪；(4) 你會不會加掃側頸、掃哪幾區。三例都寫完再看 04:12 起講者的影像特徵總結對答案（流行病學那段在更前面的 01:55 前言，不在片尾）。最後回答兩題：如果影像報告只寫「甲狀腺炎變化，未見明顯結節，建議追蹤」，這三位病人會發生什麼事；以及你要在自己的報告模板裡加上哪一句話，才能讓下游醫師知道『瀰漫性微鈣化』和『甲狀腺炎的不均質』是兩件事。",
+     "title": "미만성 경화 아형 갑상선 유두암 초음파 증례",
+     "channel": "삼성내과MR영상의학과",
+     "url": "https://www.youtube.com/watch?v=jhkAu_eGsJM",
+     "duration": "5:44",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（삼성내과MR영상의학과），本站僅連結不重製",
+     "coi": "頻道由韓國삼성내과（開業診所）經營，講者為該診所 최영식 원장，影片同時具診所宣傳性質；內容本身無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "總論：甲狀腺超音波可診斷的疾病、乳突癌中預後不佳的亞型"
+      },
+      {
+       "at": "1:55",
+       "note": "前言即給出 DSVPTC 的流行病學：占乳突癌約 0.7%、好發年輕、發現當時已有淋巴結轉移故預後較差（片尾沒有再講一次這些數字）"
+      },
+      {
+       "at": "2:28",
+       "note": "증례 1：13 歲女性——第一眼，先暫停判斷背景腺體與白點分布"
+      },
+      {
+       "at": "3:03",
+       "note": "증례 2：23 歲男性，健檢 TSH 9 mIU/L 被判為慢性甲狀腺炎——本單元最容易誤判的組合"
+      },
+      {
+       "at": "3:52",
+       "note": "증례 3：63 歲男性，整個腺體鋪滿砂粒體樣白點"
+      },
+      {
+       "at": "4:12",
+       "note": "影像特徵總結：白點瀰漫沉積於整個腺體、診斷當下已有淋巴結轉移（此處不含 0.7% 等流行病學數字）"
+      },
+      {
+       "at": "4:36",
+       "note": "講者立場：近來常說甲狀腺癌太容易被發現、不該做超音波，但年輕族群要特別留意"
+      },
+      {
+       "at": "5:05",
+       "note": "治療與預後：手術加放射碘後與一般乳突癌差異不大，但可能復發，需長期追蹤"
+      }
+     ],
+     "note": "本欄直接補上原 ch12-u3 註記中承認的缺口：先前以多組英文與韓文查詢、並掃過 thyrosite 的乳突癌病例頁，都找不到可公開觀看、有實際動態掃描的 DSVPTC 病例影片，只能改用 oxyphilic variant 代替。本片是以 ytsearch 韓文查詢「미만성 경화형 갑상선암 초음파」找到的。已用 oEmbed 驗證（HTTP 200，標題與頻道相符），並逐格檢視 storyboard 確認：開場約 2 分鐘為講者出鏡講述（有字幕），02:28 之後為三個病例的實際甲狀腺超音波影像（可見瀰漫性點狀高回音與頸部淋巴結畫面），不是純投影片。時間點取自 YouTube 自動字幕（ko-orig）的時間軸，未自行推測。修正紀錄（2026-08-03）：本欄原把「DSVPTC 占乳突癌約 0.7%、好發年輕、診斷時多已淋巴結轉移」標在 04:22，經重新逐句核對 ko-orig 字幕，這段其實在 01:55–02:12 的前言；04:12–04:26 只講白點瀰漫沉積全腺體與診斷當下已有淋巴結轉移，04:52 那格所述的治療與預後實際在 05:05–05:20。三處時間戳已更正並拆開標示，另把原文中「常無可辨識腫塊」一句明確標為策展註解——旁白中並未出現。誠實說明：三例的結局在旁白中以細胞學／臨床陳述帶過，影片未逐例出示手術病理報告，故 tier 最高只給 B，不得作為 DSVPTC 影像—病理對照的唯一依據；DSVPTC 與原發性甲狀腺淋巴瘤的量化臨床對照仍由實證層承接。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u4",
+   "name": "術後疤痕 vs 復發、食道憩室 vs 結節、異位／甲狀腺內副甲狀腺",
+   "type": "case",
+   "assessment": "挑三個資源做同一套流程：thyrosite 的 case 6（肌纖維冒充復發乳突癌）、case 17（縫線周圍肉芽腫）與本單元的 Killian–Jamieson 憩室病例。每一個都先只看影像／只讀到 Ultrasonography 那一段，寫下：(1) 你在甲狀腺床上看到幾個病灶、各自的位置（用中央區／側頸分區描述）與 structured description；(2) 你判為疤痕、殘餘腺體、肉芽腫、血管、肌肉、食道結構還是復發；(3) 你會不會穿刺、要不要加做 washout Tg／PTH 或其他影像。寫完再讀完整案例對答案，逐項記錄你和作者判斷不同的地方，並明確寫出那個差異來自哪一個影像特徵——是縱切面沒掃、是沒讓病人吞嚥、是沒做兩個垂直切面、還是沒注意到病灶內的氣體強回音。最後把三個病例的『下一步檢查』整理成一張自己的決策表。",
+   "tight": [
+    "只掃橫切面就把甲狀腺床的低回音構造判成復發：肌纖維與血管在橫切看起來都像淋巴結或結節，轉成縱切才會現形",
+    "看到甲狀腺床病灶內的無定形高回音顆粒就聯想到微鈣化，忽略手術縫線周圍肉芽腫這個常見且完全良性的原因",
+    "Killian–Jamieson 憩室位於頸段食道前外側、緊貼左葉，灰階上是低回音病灶帶點狀高回音（氣體），非常像帶微鈣化的乳突癌；不讓病人吞嚥、不做動態觀察就直接排 FNA 甚至手術",
+    "誤穿憩室取得鱗狀上皮、碎屑甚至食物殘渣，讓細胞學落到 Bethesda 的錯誤分類裡而更難翻案",
+    "甲狀腺內副甲狀腺腺瘤被當成 TR4／TR5 結節去穿刺，卻沒有先看血鈣與 PTH，也沒做 washout PTH"
+   ],
+   "weak": [
+    "術後頸部掃描一律做兩個垂直切面，並在報告中固定描述甲狀腺床的解剖對位（氣管、頸總動脈、食道、帶狀肌）",
+    "用吞嚥動作、飲水或探頭角度改變作為區分食道結構／憩室與真結節的常規動作",
+    "看到甲狀腺床或甲狀腺內的低回音病灶時，把「血鈣＋PTH」與「washout Tg／PTH」納入下一步選項，而不是只想到 FNA",
+    "在報告中明確寫出「本次影像無法區分疤痕與復發」這種誠實結論，並指定具體的下一步"
+   ],
+   "lesson": {
+    "title": "Ultrasound of the operated thyroid - introductory lecture",
+    "channel": "Tamas Solymosi",
+    "url": "https://www.youtube.com/watch?v=jmJVXweb_WY",
+    "duration": "21:21",
+    "why": "以手術後甲狀腺床為主題的系統性導論，逐一交代殘餘腺體、疤痕、縫線肉芽腫、肌肉與血管在術後頸部的常見外觀，正好覆蓋 fellow 最容易把良性術後變化讀成復發的那一段落差。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+    "coi": "講者經營付費 Papillon Course 與 thyrosite.com；說明欄導向 http://thyrosite.com/ctu/section06/operated_thyroid/introduction.php",
+    "last_verified": "2026-08-02",
+    "note": "無 YouTube chapter 標記，故不列 timestamps。搭配說明欄的 thyrosite 章節頁一起讀。"
+   },
+   "drills": [
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "教學病例 6：肌纖維冒充復發乳突癌",
+     "en": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases - case 6",
+     "kind": "case",
+     "target": "乳突癌術後 11 年、規則追蹤且無症狀的病人，因頸動脈都卜勒檢查被報「復發乳突癌」轉診；Tg 0.3 ng/mL、anti-hTg < 20 IU/mL 皆正常。影像：左側甲狀腺床有三個低回音病灶，其中兩個是動脈，第三個在橫切面看起來像淋巴結或甲狀腺病灶，轉成縱切面才看出是肌肉。要學員學到的就是作者的結論：正確的超音波檢查必須做兩個互相垂直的切面。鑑別至少三個：復發腫瘤、血管橫切面、帶狀肌／胸鎖乳突肌的肌纖維——最容易選錯的是第一個，因為轉診單上已經寫了「復發」。下一步是補做縱切面與都卜勒，而不是排 FNA。無病理對照——結局是以兩個垂直切面的影像判讀與正常 Tg／anti-Tg 追蹤確認為肌肉，未做切片。",
+     "dose": "先答再看：全長 1 分 05 秒。先看完整段、不要讀標題與說明欄，把三個病灶各自的位置（用中央區／側頸分區描述）、structured description、你的判讀（復發／血管／肌肉／淋巴結）與是否穿刺寫下來；再打開說明欄的 http://www.thyrosite.com/thyroid/1696/index.htm 讀 Ultrasonography 與 Comment 對答案。最後寫下：你判錯的那一個，是因為沒看縱切面、沒開都卜勒，還是被轉診單的字帶走。",
+     "title": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases- case 6",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=8ZLkrn5PmLE",
+     "duration": "1:05",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先在橫切面上寫下三個病灶的判讀，再看縱切"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。無病理對照（以影像與正常 Tg／anti-Tg 追蹤為結局），tier 最高只給 B。"
+    },
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "術後甲狀腺 case 17：縫線周圍多發性肉芽腫",
+     "en": "Multiple granulations around surgical thread. The operated thyroid - case 17",
+     "kind": "case",
+     "target": "61 歲女性，17 年前因多結節性甲狀腺腫接受雙側次全甲狀腺切除、病理為良性增生性結節，因峽部「可疑結節」被轉來做細針穿刺。影像：兩側殘餘腺體都有多個低回音病灶，內含無定形高回音顆粒，皆無血流。細胞學結果為縫線周圍的良性肉芽腫。要學員看出：這些高回音顆粒不是微鈣化，觸診硬、影像嚇人，但「曾經開過刀」這個病史就是關鍵；沒有血流與病灶的多發、對稱分布也都支持良性。鑑別至少三個：縫線周圍肉芽腫、殘餘腺體內的復發／新生結節、帶微鈣化的乳突癌——最容易選錯的是第三個。下一步是回頭問手術史並比對舊報告，必要時做細胞學確認。有細胞學對照（良性縫線肉芽腫），無手術病理。",
+     "dose": "先答再看：全長 38 秒。先在完全不知道手術史的前提下看完整段，寫下每個病灶的 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開說明欄的 http://www.thyrosite.com/thyroid/1557/index.htm 讀 Clinical data 與 Aspiration cytology 對答案，並明確記錄「知道 17 年前開過刀」讓你的分級改變了幾級。",
+     "title": "Multiple granulations around surgical thread. The operated thyroid - case 17",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=zy-qUXIanqs",
+     "duration": "0:38",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先假裝不知道手術史，寫完分級再繼續"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有細胞學對照，無手術病理。"
+    },
+    {
+     "name": "Yoda Kim 超音波學校 case 1393：被當成甲狀腺結節追蹤四年的頸段食道憩室",
+     "en": "Yoda Kim Ultrasound School(1393) - Zenker's diverticulum of the left thyroid",
+     "kind": "case",
+     "target": "45 歲女性，四年前被診斷為甲狀腺結節並持續追蹤；本次追蹤超音波才被推定為左葉旁的頸段食道憩室。影像關鍵：所謂「左葉結節」內可見伴隨 ring-down artifact 的高回音，這個高回音代表的是氣體；左葉縱切掃描可以看到這個「結節」與食道相連。要學員學到：憩室內的氣體造成的點狀／線狀高回音，在靜態影像上和乳突癌的微鈣化幾乎一樣，但 ring-down artifact 與「和食道的連續性」兩個所見可以把它翻過來；而且這一題只有動態掃描與縱切面能回答，橫切面的靜止影像永遠翻不了案。鑑別至少三個：帶微鈣化的乳突癌、良性結節內的粗鈣化、頸段食道憩室（Killian–Jamieson 或 Zenker）——最容易選錯的是第一個。下一步是縱切追蹤與食道的連續性、請病人吞嚥或飲水觀察內容物移動，必要時加做食道攝影或 CT，而不是直接 FNA。無病理對照（結局為影像推定的食道憩室，未做切片；發表者本人也以「추정」（推定）表述）。",
+     "dose": "先答再看：全長 5 分 58 秒，韓文口說、無英文字幕，但畫面上的影像本身就足以判讀，建議先靜音看完第一輪。第一輪只看橫切影像，寫下你的 structured description、ACR TI-RADS (2017) 分級與是否穿刺；第二輪再看縱切與 ring-down artifact 那一段，修正你的判讀並寫下你是被哪一個所見說服的。最後回答：如果門診當下你只有橫切影像，你會用哪一個床邊動作（吞嚥、飲水、改變探頭角度）來排除憩室。",
+     "title": "Yoda Kim Ultrasound School(1393) - Dr.최종화 증례. 좌측 갑상선의 Zenker 게실",
+     "channel": "김일봉（Yoda Kim Ultrasound School）",
+     "url": "https://www.youtube.com/watch?v=p52XW7Qts5A",
+     "duration": "5:58",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
+     "coi": "頻道由韓國大邱 김일봉 내과의원（Kim Il-Bong 內科）經營，說明欄推廣自營的 hands-on DVD 與超音波課程；影片內容本身無廠商贊助跡象",
+     "last_verified": "2026-08-02",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先只看橫切面，寫完分級再往下看"
+      }
+     ],
+     "note": "韓文口說、無字幕；影像判讀不依賴語言，說明欄有完整韓文病例敘述（45 歲女性、四年前診斷為結節、ring-down artifact 提示氣體、縱切見與食道相連）。無 chapter 標記，故僅標 0:00。此欄原為 Killian–Jamieson 憩室的期刊 case report，改為影片後，該病例的 CT／鋇劑對照證據由實證層承接。註：KeepMyThyroid 的 (ENG)Diagnosis of esophageal diverticulum on US 內容更完整，但已分別用在 CH2 與 CH9，同一支影片不再第三次使用；該頻道的 (Silence)esophageal diverticulum misinterpreted as a thyroid nodule 與 (KOR)Remember! Esophageal diverticulum 的 oEmbed 皆回 401（停用嵌入），依契約不可用。"
+    },
+    {
+     "name": "甲狀腺內副甲狀腺腺瘤",
+     "en": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
+     "kind": "case",
+     "target": "57 歲女性，因高血鈣與副甲狀腺機能亢進轉診（鈣 3.08 mM/L、PTH 177.4 pg/mL）。甲狀腺回音正常，右葉上段中央有一個小低回音病灶且帶高回音顆粒；細胞學只能說是良性，無法區分副甲狀腺腺瘤或良性甲狀腺病灶；washout PTH 203 pg/mL 而 washout Tg 僅 9.08 mg/L，MIBI 掃描對甲狀腺內病灶結果模稜兩可。右葉切除後病理為完整甲狀腺內的良性副甲狀腺腺瘤。要學員學到：甲狀腺內的低回音病灶不一定是甲狀腺來源，washout PTH 是這裡的決定性檢查。",
+     "dose": "先答再看：先看影片（32 秒）不看標題，寫下 structured description、ACR TI-RADS (2017) 分級與穿刺決定；再打開 http://www.thyrosite.com/thyroid/1399/index.htm 對答案（含 washout PTH 與手術病理），並回答：在什麼臨床條件下你會在穿刺前就先驗血鈣與 PTH。",
+     "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
+     "duration": "0:32",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com",
+     "last_verified": "2026-08-02",
+     "note": "有手術病理對照（thyrosite 案例頁載明右葉切除後 histopathology）。影片無 chapter 標記，故不列 timestamps。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u5",
+   "name": "影像與細胞學不一致、TI-RADS 系統互相矛盾的病例",
+   "type": "case",
+   "assessment": "分三段做，每一段都先答再看。第一段：從自己門診找五顆已有細胞學結果的結節，逐顆同時做 ACR TI-RADS (2017)、EU-TIRADS 2017 與 K-TIRADS 2021 三套分級，先寫下每套系統各自的穿刺建議，再讀 Borges 等人 665 顆結節的研究對照——他們的資料是 26.1% 的結節在兩套系統間分到不同風險級別、8.1% 的結節穿刺建議因此改變；算出你自己這五顆的不一致率，並指出差異落在哪一個影像特徵（混合性結節中的低回音、單一可疑特徵是否足以直接升到高風險、低風險結節的尺寸閾值）。第二段：挑一顆你判為 TR4／TR5 但細胞學為 Bethesda II 的結節，先寫下你的處置計畫，再讀 Rosário 與 Calsolari 的 105 位病人資料對答案（兩次良性細胞學後惡性率 2%）並修正你的追蹤間隔。第三段：讀 thyrosite 副甲狀腺 case 10，先只讀到 Ultrasonography 就停，寫下你的判讀與下一步，再往下看細胞學（誤讀為乳突癌）與最終病理（副甲狀腺腺瘤），寫出你會用什麼檢查在術前推翻這個細胞學結論。",
+   "tight": [
+    "把「影像可疑但細胞學良性」直接當成良性收案：兩次良性細胞學後仍有約 2% 為惡性，需要的是有明確間隔的追蹤，而不是結案或立刻手術",
+    "反向的陷阱同樣存在——細胞學讀成乳突癌、影像也不典型，最後病理是副甲狀腺腺瘤；細胞學不是無誤的仲裁者",
+    "只用一套 TI-RADS 就宣稱『指引怎麼說』：同一顆結節在 EU-TIRADS 2017 與 ACR TI-RADS (2017) 之間有相當比例分到不同級別，而且 EU-TIRADS 傾向給出較高風險",
+    "把系統之間的差異當成「哪一套比較準」的問題，而不是先釐清差異來自定義（混合性結節中的低回音、單一可疑特徵是否自動升級、尺寸閾值）",
+    "忽略臨床脈絡：影像看起來良性但病人有頭頸部輻射暴露史、家族史、calcitonin 升高或術後 Tg 上升時，影像的陰性預測值並不適用"
+   ],
+   "weak": [
+    "同一顆結節能同時跑完 ACR TI-RADS (2017)、EU-TIRADS 2017、K-TIRADS 2021 並說出三者穿刺建議不同的原因落在哪一個定義差異",
+    "面對影像—細胞學不一致時，能寫出一個具體的處置路徑（重複 FNA 的時機、是否改 core needle biopsy、追蹤間隔、什麼情況下直接手術）而不是含糊的「密切追蹤」",
+    "在報告中同時揭露分級系統名稱與版本，讓下游醫師知道這個建議是哪一套系統給的",
+    "把臨床風險（輻射史、家族史、calcitonin、Tg 趨勢）與影像風險分開陳述，再合併成一個處置建議"
+   ],
+   "lesson": {
+    "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
+    "channel": "American College of Radiology",
+    "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
+    "duration": "59:52",
+    "why": "由 ACR 官方以逐個病例的方式示範 ACR TI-RADS (2017) 的實際套用，並回答最常被問到的邊界情況；這是把「系統之間為什麼會給出不同答案」講清楚的最權威起點，也讓學員先建立一套標準做法再去比較其他系統。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸 American College of Radiology，本站僅連結不重製",
+    "last_verified": "2026-08-02",
+    "note": "說明欄指向的 ACR 時間軸頁面（acr.org/Clinical-Resources/Reporting-and-Data-Systems/TI-RADS/Webinars）目前回傳 404，影片本身也無 chapter 標記，因此不列 timestamps，未自行推測時間點。使用方式：每出現一個病例就暫停，自己分完級再繼續播放。"
+   },
+   "drills": [
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "結節內高回音圖形 case 876：兩家醫院、兩個相反建議的同一顆結節",
+     "en": "Differential diagnostic of intranodular hyperechogenic figures - case 876",
+     "kind": "case",
+     "target": "70 歲女性，同一個團隊追蹤這顆結節已 13 年，其間細胞學兩次都是良性。兩個月前她因高血壓危象在另一家醫院住院，被告知甲狀腺有「非常可疑的病灶，不論細胞學結果如何都應該手術切除」。功能狀態：甲狀腺功能正常（TSH 1.37 mIU/L）。影像：甲狀腺回音正常；右葉一個部分囊性、實質部分為 echonormal 的結節，內含多種高回音圖形——包含明確的 comet-tail artifact 與判不出來的曖昧顆粒；13 年來沒有長大。本次細胞學為 benign cystic-colloid goiter。作者的結論寫得很清楚：那些曖昧顆粒的亮度和同一顆結節裡已知的 comet-tail 一樣，很可能也是膠質結晶，但不能完全排除微鈣化；而這一例不屬於「單憑超音波就必須手術」的例外。要學員練的是：當兩個醫療團隊對同一顆結節給出相反建議時，可以拿來仲裁的到底是什麼——13 年不變的大小、兩次良性細胞學、以及「把曖昧亮點和同一畫面裡已知的 comet-tail 比亮度」這個具體動作。鑑別至少三個：膠質結晶（comet-tail）、真微鈣化、囊壁後方回音增強造成的假亮點——最容易選錯的是把曖昧顆粒一律當微鈣化。下一步是維持追蹤而不是手術。無病理對照（結局為 13 年追蹤與連續兩次以上良性細胞學）。",
+     "dose": "先答再看：全長 47 秒。先看完整段、不要讀標題與說明欄，寫下你的 structured description、ACR TI-RADS (2017) 分數，以及你會給病人什麼建議（手術／重複 FNA／追蹤，並寫出追蹤間隔）；再打開 http://thyrosite.com/thyroid/876/index 讀 Ultrasonography 與 Comments 對答案。最後寫一段門診會用的說法：你要怎麼向一位已經被別家醫院告知「應該開刀」的病人，說明你為什麼建議追蹤——並把 13 年穩定、兩次良性細胞學、亮度比對這三項各寫成一句話。",
+     "title": "Differential diagnostic of intranodular hyperechogenic figures - case 876",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=Ec1DNtauH98",
+     "duration": "0:47",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先分級、再寫給病人的建議，最後才對答案"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。無手術病理對照（以 13 年追蹤與連續良性細胞學為結局），tier 最高只給 B。此欄原為「影像高度可疑但兩次細胞學良性」的期刊研究（整體惡性率 2%），改為影片後該數字由實證層承接。"
+    },
+    {
+     "name": "2020 國際甲狀腺大會：K-TIRADS 的分級邏輯，以及它為什麼常和 ACR TI-RADS 不一致",
+     "en": "(ENG)2020 ITC_KTIRADS",
+     "kind": "lecture",
+     "target": "由 Kwak TI-RADS（Radiology 2011;260:892-9）第一作者、韓國甲狀腺影像與介入領域的資深影像醫學科醫師在 2020 International Thyroid Congress 上的 TI-RADS 講題，主題是韓國的 K-TIRADS。要學員帶走的不是「哪一套比較準」，而是不一致的結構性來源：K-TIRADS 是 pattern-based——先判實質性與回音，再看三項可疑特徵（微鈣化、邊緣不規則、taller-than-wide）決定歸類；ACR TI-RADS (2017) 則是把五個面向各自給分再加總。兩者的決策邏輯不同、穿刺的尺寸門檻也不同，所以同一顆結節落到不同級別、甚至得到相反的穿刺建議，是系統設計的必然結果而不是誰判錯。看完要能說出：你自己的報告是用哪一套系統、版本是哪一年，以及下游醫師看到你的建議時應該知道什麼。",
+     "dose": "先答再看：先拿五顆自己門診已有細胞學或病理結果的結節，逐顆跑完 ACR TI-RADS (2017)，把每一顆的分數、級別與穿刺建議寫下來——先不要看影片。看完這場 23 分 06 秒的講題之後，同樣五顆改用 K-TIRADS 2021 再分一次，算出你自己的不一致率（級別不同的比例、穿刺建議改變的比例），並逐顆指出差異落在哪一個定義上：混合性結節中的低回音怎麼算、單一可疑特徵是否自動升級、低風險結節的尺寸門檻。最後把兩套系統的建議寫進同一份報告的模擬段落，看看讀報告的人會不會被搞混。",
+     "title": "(ENG)2020 ITC_KTIRADS",
+     "channel": "KeepMyThyroid",
+     "url": "https://www.youtube.com/watch?v=SZ9NS4EaClY",
+     "duration": "23:06",
+     "tier": "A",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（KeepMyThyroid），本站僅連結不重製",
+     "last_verified": "2026-08-02",
+     "note": "英文口說、無字幕。頻道自述經營者為甲狀腺影像與介入的影像醫學科專科醫師、大韓民國醫學翰林院正會員、Kwak TI-RADS（Radiology 2011;260:892-9）第一作者、2015／2020／2025 三屆 ITC 受邀講者；說明欄僅寫「International Thyroid Congress2020_TIRADS」，無 chapter 標記，因此不列 timestamps，未自行推測時間點。誠實說明：本欄的內容描述依標題、說明欄與講者身分寫成，未逐段核對投影片。此欄原為 665 顆結節同時套 EU-TIRADS 與 ACR TI-RADS 的期刊研究（26.1% 級別不同、8.1% 穿刺建議改變），改為影片後那些數字由實證層承接。"
+    },
+    {
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-02",
+     "name": "副甲狀腺病例 10：影像與細胞學同時誤導",
+     "en": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10",
+     "kind": "case",
+     "target": "40 歲女性，外院細胞學為 AUS-FLUS（Bethesda III）；影像：右葉上段腹外側一個低回音病灶、血流不具特異性、TSH 正常。本院細胞學抹片上細胞質豐富、有空泡，最大細胞團中多個核出現 inclusion，因而判為「疑似乳突癌」。右葉切除後 histopathology 是副甲狀腺腺瘤。作者的註解正是本單元的核心：抹片上細胞很少，核內包涵體出現的頻率卻高得反常，而超音波表現反而是唯一沒有讓判讀完全走偏的那一項。要學員練的是——當影像與細胞學互相支持、卻同時指向錯誤答案時，還有什麼可以救。鑑別至少三個：乳突癌、甲狀腺外／甲狀腺內的副甲狀腺病灶、良性甲狀腺結節——最容易選錯的是第一個。下一步是在手術前驗血鈣與 PTH，必要時做 washout PTH。有手術病理對照。",
+     "dose": "先答再看：全長 31 秒。先看完整段、不要讀標題與說明欄，寫下病灶的解剖位置（相對於甲狀腺、氣管、頸總動脈）、structured description、ACR TI-RADS (2017) 分級與下一步；再打開說明欄的 http://www.thyrosite.com/thyroid/1597/index.php，先只讀到 Ultrasonography 確認描述，再往下讀 Cytology 與 Histopathology 對答案。最後寫出：你會用哪一項術前檢查（血鈣、PTH、washout PTH）推翻「疑似乳突癌」這個細胞學結論，以及什麼臨床線索會讓你在穿刺前就想到要驗。",
+     "title": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=sSJC42uW8o8",
+     "duration": "0:31",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "第一眼——先定位再描述，不要急著給診斷"
+      }
+     ],
+     "note": "無旁白動態掃描，無 chapter 標記。有手術病理對照（右葉切除，histopathology 為副甲狀腺腺瘤）。"
+    },
+    {
+     "name": "Papillon 第八場 webinar：細胞學說良性、影像說開刀——兩個方向相反的錯誤（含可操作的 teamwork 決策骨架）",
+     "en": "Webinar on Discrete lesions and Teamwork",
+     "kind": "case",
+     "target": "本片後半段是本單元最想要的東西：同一位講者，用兩個結局相反的病例，示範『影像與細胞學不一致』時該往哪一邊倒。先是 40:35 起約半小時的 teamwork 段落，給出一個可以直接抄進診間的決策骨架（41:42 起）：超音波發現大於 5 mm 的病灶 → 看 TSH（低就先做核醫排除自主功能腺瘤）→ 依 TI-RADS 分數、可疑特徵與大小決定要不要 FNA → 做完這一輪之後仍有約 20–30% 的病人結論不明確，這些人才進入『思考期』；接著針對 non-diagnostic（好手 5–10%、經驗不足者可到 30%）、AUS/FLUS、濾泡性腫瘤三類分別處理，並以實際病例示範重複 FNA 的時機（43:36、47:43 起）。然後是兩個對照病例。正方向的是 case 882（1:08:55 起）：24 歲女性，健檢發現不顯性甲狀腺低下（TSH 6.31 mIU/L、FT4 15.8 pM/L、aTPO 317 U/mL），觸診兩葉硬、右葉峽部段更硬但摸不出是不是結節；影像為兩葉輕度低回音並含多個更低回音區，右葉峽部段與左葉腹側各一個低回音病灶，兩者都呈 starry sky（大量微鈣化），血流為 type 3、左葉那顆完全紊亂。細胞學的部分有一個必須先講明的落差：**影片口述與書面案例頁不一致**。影片裡講者說他在兩個不同時間做了三到四針（1:09:26），四次都只取到良性細胞、找不到任何非典型細胞（1:10:56–1:11:08）；但同一個病例在 thyrosite 的公開案例頁（case 882，標題就叫 The role of complex diagnosis - **not diagnostic** cytology - Case 1）寫的是：只從右葉那顆取了兩管，一小時後鏡檢「抹片上只有血球」，病人拒絕左葉那顆的抽吸、也在聽完醫師意見後決定不重抽——也就是 **non-diagnostic，不是良性**。講者自己在 1:11:59 也改口說「既然細胞學無法下結論，我建議葉切除加術中冰凍切片」，可見他心裡兩種說法都有。這件事會直接改變這個病例的命題：「細胞學良性仍要開刀」與「細胞學無法診斷所以要開刀」是兩種不同的臨床情境，強度也不同——請兩種版本都記住，並以書面案例頁為準。不論採哪一版，他在術前告訴病人的話沒有變：不管細胞學結果如何，這顆刀避不掉。最終病理是兩葉多發性乳突癌合併淋巴球性甲狀腺炎，右葉幾乎整片被浸潤，但最大病灶只有 5 mm——這正是細胞學一直穿不到癌的原因（1:10:18、1:10:46）。他的結論是：面對某些特定的超音波型態（最常見的就是 starry sky），即使細胞學不支持惡性也必須送刀（1:11:27，原話為 even if the cytology is benign）。反方向的是 1:18:27 起的第二個病例：同樣有可疑亮點，但講者當場帶著大家逐一分辨 comet-tail artifact、囊腫後壁的高回音與可能的微鈣化，並承認『無法完全排除微鈣化』；細胞學為良性，他拿五個學會（含韓國 K-TIRADS）的建議逐條比對後主張這一顆應該冷靜下來、盡一切努力避免手術（1:20:01 起、1:26:24），但病人最後仍接受手術，病理是 follicular adenoma，講者自評這一台刀他沒能避免（1:26:40）。要學員練的就是這條分界線：兩例都是「影像可疑 ＋ 細胞學良性」，為什麼一個要開、一個不該開。鑑別與判準至少三項：starry sky 型微鈣化 vs 膠質結晶的 comet-tail vs 囊腫後壁高回音；細胞學良性的『陰性程度』（幾針、幾次、取樣位置是否命中可疑區）；以及多發性微小病灶讓細胞學系統性失準這件事。下一步在 case 882 是葉切除加術中冰凍，在第二例是持續追蹤。兩例都有手術病理對照（多發性乳突癌／濾泡性腺瘤）。",
+     "dose": "先答再看，建議分兩次。第一次只看 40:35–1:08:38 的 teamwork 段落，把講者的決策骨架抄成自己的一頁流程圖，並在圖上標出「我的診間和他不同的那一步」；同時寫下你自己過去一年的 non-diagnostic 比例，和他給的 5–10%／30% 兩個數字比對。第二次跳到 1:08:55 的 case 882：在講者說出最終診斷之前（他到 1:10:18 才講）先暫停，寫下 structured description、ACR TI-RADS (2017) 分級，以及最關鍵的一題——「細針結果不支持惡性，你送不送刀」。這一題請刻意做兩次，因為影片口述與書面案例頁不一致：版本 A 依影片口述（兩個時段共三到四針，四次全部只有良性細胞）；版本 B 依 thyrosite case 882 頁的書面紀錄（只從右葉取兩管、抹片上只有血球＝non-diagnostic、病人拒絕重抽也拒絕左葉那顆）。兩個版本各寫一次 yes/no 與一句理由，再回答：你的答案有沒有因為版本不同而改變？如果會，代表你真正在用的判準其實是「細胞學有多可信」而不是「細胞學說了什麼」。聽完答案後再跳到 1:18:27 的第二個病例，用同一套標準再判一次，並在 1:26:24 之前先寫下你的建議。兩例都做完，回答三題：(1) 你的分界線是什麼——寫成一句可以拿到晨會被同事挑戰的話；(2) 「細胞學良性」在你心中值多少，取決於幾針、幾次、有沒有命中可疑區，把你的門檻寫成數字；(3) 如果你的分界線用在第二例會讓病人白挨一刀，你要怎麼修正它。最後把 case 882 的臨床資料與病理拿 thyrosite 案例頁 http://www.thyrosite.com/thyroid/882/index.php 對照一次——注意細胞學那一段兩邊寫的不一樣（見上），請以書面紀錄為準，並把這個落差本身當成一個教訓：同一個病例在口述與書面之間都會漂移，你在晨會引用別人的病例時要引哪一個版本。",
+     "title": "Webinar on Discrete lesions and Teamwork",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=bvHEG41bVTk",
+     "duration": "1:49:33",
+     "tier": "B",
+     "source_type": "webinar",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費 Papillon Course 與 thyrosite.com；本片為該付費課程 2022 年 4 月 14 日場次的錄影，由 thyrosite 課程頁公開嵌入",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:37",
+       "note": "講者說明本場分兩部分，第二部分聚焦 teamwork"
+      },
+      {
+       "at": "40:35",
+       "note": "teamwork 段落起點（此切點取自 thyrosite 課程頁作者自述）"
+      },
+      {
+       "at": "41:42",
+       "note": "決策骨架：超音波＋TSH＋FNA 之後，仍有 20–30% 的病人結論不明確"
+      },
+      {
+       "at": "43:36",
+       "note": "non-diagnostic 的實際比例（好手 5–10%、經驗不足者可到 30%）"
+      },
+      {
+       "at": "47:43",
+       "note": "反覆 non-diagnostic 的兩個示範病例，現場互動決定下一步"
+      },
+      {
+       "at": "1:08:55",
+       "note": "case 882 第一眼——先暫停，寫完描述、分級與『送不送刀』再往下"
+      },
+      {
+       "at": "1:09:26",
+       "note": "講者口述的細胞學：兩個時段共三到四針、未見任何非典型細胞（與書面案例頁記為 non-diagnostic 不一致，兩版都要看）"
+      },
+      {
+       "at": "1:10:18",
+       "note": "揭曉：多發性乳突癌，右葉幾乎整片浸潤但最大病灶僅 5 mm"
+      },
+      {
+       "at": "1:11:27",
+       "note": "核心結論：特定超音波型態（starry sky）下，細胞學良性也要開刀"
+      },
+      {
+       "at": "1:18:27",
+       "note": "反向病例：亮點難分辨、細胞學良性，先寫下你的建議再聽"
+      },
+      {
+       "at": "1:20:01",
+       "note": "逐條比對五個學會的建議（含 K-TIRADS）"
+      },
+      {
+       "at": "1:26:40",
+       "note": "結局：病人仍接受手術，病理為 follicular adenoma，講者自評未能避免這台刀"
+      }
+     ],
+     "note": "已用 oEmbed 驗證存在且可嵌入（HTTP 200，回傳標題 Webinar on Discrete lesions and Teamwork、頻道 Tamas Solymosi）。誠實說明四件事：(1) **本片在 YouTube 上為 unlisted（未列出）**，並非一般公開影片；其公開嵌入狀態經 thyrosite 官方課程頁佐證——http://thyrosite.com/ctu/thyroid/webinars/08_april14/case.php（curl 200）實際以 iframe 嵌入 bvHEG41bVTk，該頁本身無登入牆，任何人有連結即可觀看，故 access 記為 open；同一頁作者自述的段落切點（teamwork 40:35、case 段 1:08:38 起為 case 882／443／769）與本欄記載一致。因屬未列出狀態，日後有被移除的風險，若失效請改用同課程頁的其他場次。(2) 40:35 與 1:08:38 兩個切點取自該課程頁作者自述的段落說明，其餘時間點取自 YouTube 自動英文字幕（en-orig）的時間軸，未自行推測。(3) 已逐格檢視 storyboard 確認整場以實際超音波動態掃描與多格影像對照為主（含彩色都卜勒），非純投影片。前半段（0:00–40:35）討論的七個病例（710、495、888、116、1229、775／2055）主題是自體免疫甲狀腺疾病中離散病灶的判定，臨床資料公開於同一課程頁，與 ch12-u1 高度相關，可延伸使用；case 882 的臨床資料與手術病理可在 http://www.thyrosite.com/thyroid/882/index.php 對照（curl 200）。(4) 修正紀錄（2026-08-03）：本欄原寫 case 882 的細胞學為「兩次共三到四針全為良性」，該說法僅出自影片口述（en-orig 字幕 1:09:26 與 1:10:56–1:11:08 確有 three or four punches／only gained benign cells）；但 thyrosite 案例頁的書面紀錄是「只從右葉取兩管、抹片上只有血球、病人拒絕重抽」，標題即為 not diagnostic cytology，也就是 non-diagnostic 而非良性。target 與 dose 已改為並列兩個版本並要求學員以書面紀錄為準，因為「細胞學良性仍要開刀」與「細胞學無法診斷所以要開刀」是兩種不同的臨床命題。手術病理（multifocal papillary carcinoma in both lobes、lymphocytic thyroiditis）兩邊一致，已核對無誤。tier 給 B 而非 A，理由是本片為付費課程的場次錄影、內容依課程進度編排而非獨立完整教材。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u6",
+   "name": "鈣化的陷阱：邊緣鈣化、粗鈣化與膠質 comet-tail",
+   "type": "case",
+   "assessment": "全部先答再看，不准先讀標題與說明欄（本單元五支影片的標題都會透露影像所見，其中 54 歲女性那一支直接把病理診斷寫在標題裡，57 歲女性那一支把關鍵發現「단열＝中斷」寫在標題裡）。開播前務必先讀各支的 dose：本單元有三支影片的起播點是設計過的——57 歲那支要跳過 02:02–02:51 的第一段手寫解說直接從 02:51 開始（這支沒設自動起播點，因為 00:00–02:02 的臨床資料要看，請自己拉）；54 歲那支與 thyrosite case 1490 那支已設自動起播點（站內播放會分別從 01:34 與 0:04 開始，跳過會洩漏診斷的韓文文字頁與片頭卡），但只要你改在 YouTube 上開啟，就要自己拉到同一個時間點，而且 YouTube 縮圖與標題擋不掉；54 歲那支還要遮住畫面下緣的燒錄字幕，並在約 02:43–02:58 快轉跳過那頁細胞學報告（報告上直接印著最終診斷）；另有一支（46 歲甲亢）答案與影像左右同框，做不到乾淨的先答再看，請照該支 dose 的遮擋法或直接當對照用教材。(1) 打開核心教材，從 00:00 播到 00:20 就按暫停——這段就是右葉那顆蛋殼樣邊緣鈣化結節的掃描（畫面是攝影機翻拍診間超音波螢幕，影像約占一半，同時看得到講者與診間背景）。寫下完整的 structured description（composition、echogenicity、shape、margin、echogenic foci），其中 echogenic foci 一定要明確歸類成 peripheral(rim) calcification／macrocalcification／punctate echogenic foci／comet-tail artifact 四選一或並列，並另外記下三件事：鈣化環是完整還是有中斷、中斷處外側有沒有低回音的軟組織、後方聲影遮掉了幾毫米。(2) 以 ACR TI-RADS (2017) 逐項給分，寫出總分、級別與 size cutoff；再以 K-TIRADS 2021 分一次級（四支影片的作者都用 K-TIRADS），記錄兩套系統對「peripheral calcification」與「macrocalcification」的處理差在哪裡。(3) 明確寫下 yes/no：你要不要 FNA？如果要，畫一張示意圖標出針尖要放在哪裡——鈣化環內、鈣化環外的實體低回音區、還是環的中斷處，並寫出理由。(4) 再看完整段影片與講者 03:07 之後的手寫解說，逐項比對，把不一致的地方寫進 logbook 的「判讀落差」欄，並註明差異來自哪一個影像特徵。(5) 四支 drill 各跑一次同樣流程，最後統計兩個數字：你有幾次把 comet-tail artifact 讀成 punctate echogenic foci、有幾次因為粗鈣化的後方聲影就在報告裡寫「未見微鈣化」而不是「後方無法評估」。這兩個數字就是你這個單元的成績。",
+   "tight": [
+    "把 rim（eggshell）calcification 當成良性保證。ACR TI-RADS (2017) 給 peripheral calcification 2 分、和 macrocalcification 同分，本來就不是良性訊號；真正要判的是鈣化環有沒有中斷（interrupted rim），以及中斷處外側有沒有低回音的軟組織外突與該處的血流",
+    "把膠質造成的 comet-tail artifact 讀成 punctate echogenic foci。靜止影像上兩者都是亮點，只有在動態播放、放大並確認亮點後方有「逐漸變細變淡」的尾巴才分得開；ACR TI-RADS (2017) 對這兩項是 0 分 vs 3 分，同一顆結節可以因此差兩個級別與整個穿刺決策",
+    "粗鈣化的後方聲影把結節後緣與深部整片遮掉，報告卻寫成「結節內未見微鈣化」。看不到不等於沒有——沒有寫「後方 X mm 因聲影無法評估」，等於替病人簽下一張自己沒看過的陰性報告",
+    "看到 macrocalcification 就往兩極倒：不是直接歸成良性退化性鈣化，就是直接當惡性。真正拉高風險的是組合——粗鈣化與微鈣化並存、粗鈣化坐落在低回音實體結節內、或鈣化旁邊出現不規則的低回音區",
+    "鈣化擋住針路時，把針對準鈣化本身或整顆結節的幾何中心，抽到的是無細胞的鈣化碎屑，換來一次 non-diagnostic，然後把責任推給「這顆太硬抽不到」"
+   ],
+   "weak": [
+    "看完動態掃描後能把每一個 echogenic focus 歸到 peripheral rim／macrocalcification／punctate echogenic foci／comet-tail artifact 其中一類，並說得出你是用哪一個動態證據（尾巴、聲影、位置、隨呼吸的閃爍）做的分類",
+    "能把 rim calcification 的完整度講成三檔（完整／局部中斷／多處中斷），並在每一個中斷處主動去找低回音軟組織外突與該處血流——這是把「良性外觀」翻成惡性線索的唯一機械式動作",
+    "報告裡凡遇後方聲影，一律寫出「後方 X mm 因聲影無法評估」，並說明這對本次分級與追蹤間隔的影響，而不是讓聲影後面的空白偽裝成陰性",
+    "穿刺前先在影像上決定 target，而不是決定「要不要抽」：針尖要放在鈣化環的中斷處或鈣化外的實體低回音部分，並能說出為什麼不放在結節中心",
+    "Take-home：鈣化本身不是診斷，鈣化是一張「哪裡還看得到、哪裡看不到」的地圖——先分類、再找中斷、再決定針放哪裡；這三步可以原封不動搬到任何一顆帶鈣化的結節"
+   ],
+   "lesson": {
+    "title": "김일봉 원장 동영상 초음파 증례토의(261)-달걀 껍질 형태의 변연 석회화를 동반한 우측 갑상선 결절(F/37)",
+    "channel": "김일봉（Yoda Kim Ultrasound School）",
+    "url": "https://www.youtube.com/watch?v=5dtwYcQqO0c",
+    "duration": "12:36",
+    "why": "這是本單元唯一一支把「蛋殼樣邊緣鈣化 → 在環的低回音處決定 target → 拿到細胞學結果」整個決策鏈走完的影片：37 歲女性健檢發現右葉 0.7x0.6x0.8 cm 邊緣鈣化結節，講者不是在鈣化環中央下針，而是明確指出環上的低回音區並瞄準該處穿刺，細胞學為良性腺瘤樣結節。它直接填掉 fellow 最常出錯的兩個落差——把 rim calcification 當良性保證、以及穿刺時不知道該把針放哪裡。畫面格式請先有心理準備：這不是超音波機直接輸出的全螢幕畫面，而是攝影機在診間對著超音波螢幕翻拍——看得到螢幕邊框、房間背景與講者本人（片頭就有講者臉部特寫），超音波影像大約只占畫面一半，解析度與細節不如機器直出；動態掃描本身是真的實機掃描，不是投影片翻拍的靜止圖。韓語旁白、無英文字幕，但影像加手寫解說板，判讀不依賴語言。時間投資要注意：影片全長 12:36，但甲狀腺病例只占 00:00–05:31（約 44%），之後轉入完全無關的腹部超音波講義，使用時請在 05:31 停——真正可用的是 5.5 分鐘，不是 12.5 分鐘。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
+    "coi": "講者為韓國大邱김일봉내과의원院長，經營自費的 용초사 超音波教育聚會與 hands-on DVD，說明欄留有招生電話；影片中使用 ALPINION 超音波機、講者亦曾於 Alpinion 超音波學院授課。內容本身無廠商置入或產品比較。",
+    "last_verified": "2026-08-03",
+    "timestamps": [
+     {
+      "at": "0:00",
+      "note": "第一眼——右葉蛋殼樣（달걀 껍질）邊緣鈣化結節的動態掃描，影片一開始就是影像；請注意這是攝影機翻拍診間超音波螢幕，畫面同時看得到螢幕邊框、診間背景與講者，超音波影像約占畫面一半（片頭幾秒有講者臉部特寫）。先在這裡暫停，寫完描述、ACR TI-RADS (2017) 與 K-TIRADS 2021 分級、穿刺決定再繼續"
+     },
+     {
+      "at": "03:07",
+      "note": "講者切到手寫解說板，開始說明他怎麼看這顆結節、為什麼要穿刺、針要瞄哪裡"
+     },
+     {
+      "at": "05:31",
+      "note": "甲狀腺病例結束（經 storyboard 逐格確認：05:25 仍是甲狀腺，05:30 已切到「복부 초음파 기초의 기초」腹部超音波投影片），之後全片為電腦螢幕上的腹超講義，與本單元無關——看到這裡就停"
+     }
+    ],
+    "note": "已用 yt-dlp 與 oEmbed 實際驗證（HTTP 200，標題與頻道相符）。影片無 YouTube chapter 標記，上列時間點由 YouTube storyboard（156 格 / 756 秒，每格 4.85 秒）取樣推算，誤差約 ±5 秒，非憑記憶填寫；05:31 的切點已逐格核對確認。畫面格式更正（原稿誤寫為「全螢幕超音波機影像」）：實為攝影機對著診間超音波螢幕翻拍，畫面含螢幕邊框、房間背景與講者本人，超音波影像約占畫面一半——動態掃描為實機掃描屬實，但不是機器直出的全螢幕畫面。可用段落僅 00:00–05:31，占全長 12:36 的約 44%。細胞學結果（양성 선종양 결절 / benign adenomatoid nodule）來自影片說明欄的原始病例敘述；無手術病理對照。"
+   },
+   "drills": [
+    {
+     "name": "右葉邊緣鈣化結節：57 歲女性，該追蹤還是穿刺、針要放哪裡",
+     "en": "Yoda Kim Ultrasound School(1015) - a right thyroid nodule with marginal calcification (case discussion)",
+     "kind": "case",
+     "target": "57 歲女性，因疲倦就診，甲狀腺功能檢查正常，非因結節轉診。畫面結構請先看清楚（經 storyboard 逐格核對）：00:00–02:02 是 KakaoTalk 討論串視窗內的靜止超音波截圖與臨床資料，不是動態掃描；02:02–02:51 是講者手寫解說板的第一段，會直接寫出答案；02:51–04:05 才是唯一一段全螢幕實機動態掃描，這裡才是你的「第一眼」；04:30 之後是第二段手寫解說。真正的判讀線索不是「有沒有邊緣鈣化」，而是鈣化環在某一段消失了——interrupted rim calcification，以及中斷處外側那一片低回音組織；02:51 起那段全螢幕掃描才看得清楚破口。鑑別診斷至少三個：良性退化性邊緣鈣化的腺瘤樣結節、鈣化環被腫瘤突破的乳突癌（extrusive soft tissue through the interrupted rim）、鈣化環外緣被壓縮的正常腺體造成的假性低回音暈——最容易被選錯的是第一個，因為「蛋殼鈣化 = 良性」這個印象太強。下一步：講者的建議是不要放棄這顆，而是把針瞄準鈣化中斷處做 FNA（석회화 단열 부위를 target 하여 FNA 권함），不是追蹤、也不是抽結節中心。無病理對照——影片與說明欄都沒有給細胞學或手術結果，只到「建議穿刺」為止，因此本例只能用來練描述與 target 決策，不能拿來當「中斷的鈣化環 = 惡性」的診斷證據。",
+     "dose": "先答再看，這一支的起播點很關鍵，照著做：(a) 不要讀 YouTube 標題（標題已寫出「단열＝中斷」）。(b) 先看 00:00–02:02 的 KakaoTalk 討論串拿臨床資料（57/F、疲倦就診、功能正常），這段是視窗內的靜止截圖，不是動態掃描，看不出破口很正常。(c) 一定要跳過 02:02–02:51——那是講者手寫解說的第一段，答案就寫在上面；把播放器直接拉到 02:51。(d) 從 02:51 播到 04:05 暫停，這 74 秒是全片唯一一段全螢幕實機動態掃描，也是你唯一乾淨的「第一眼」。寫下 structured description、鈣化環是完整還是中斷、中斷有幾處、每一處外面有沒有低回音組織，再給 ACR TI-RADS (2017) 分數與 K-TIRADS 2021 級別，並明確寫 yes/no 要不要穿刺、針尖畫在哪裡。(e) 答完再回頭補看 02:02–02:51，然後從 04:30 起看第二段手寫解說對答案。特別記錄一件事：你在 02:51–04:05 這段裡有沒有自己看到破口——如果沒有，回頭想是因為只看了一個切面，還是因為你先入為主認定蛋殼鈣化不用細看。",
+     "title": "Yoda Kim Ultrasound School(1015) - Dr.배병석 초음파 증례 토의. 우측 갑상선의 변연 석회화 단열을 보이는 결절",
+     "channel": "김일봉（Yoda Kim Ultrasound School）",
+     "url": "https://www.youtube.com/watch?v=CHaMnXNKr_8",
+     "duration": "6:27",
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
+     "coi": "同核心教材：講者經營自費超音波教育聚會與 hands-on DVD，說明欄有招生聯絡方式；無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "病例提問——KakaoTalk 討論串視窗內的靜止超音波截圖與臨床資料；這一整段（含 01:23–01:53）都是視窗裡的靜止畫面，不是動態掃描"
+      },
+      {
+       "at": "02:02",
+       "note": "手寫解說板第一段——含答案，先答再看的話請跳過這 49 秒，不要在這裡停留"
+      },
+      {
+       "at": "02:51",
+       "note": "第一眼——全片唯一一段全螢幕實機動態掃描（02:51–04:05），鈣化環的中斷處在這裡才看得清楚；請從這裡開始自己判斷"
+      },
+      {
+       "at": "03:50",
+       "note": "掃描手法示範（約 03:50–04:00），畫面中出現受檢者臉部；示範對象為男性，與本例 57 歲女性不是同一人，純屬手法示範"
+      },
+      {
+       "at": "04:30",
+       "note": "手寫解說第二段——講者的判讀與「瞄準鈣化中斷處做 FNA」的建議"
+      }
+     ],
+     "note": "yt-dlp 與 oEmbed 驗證通過（200，標題頻道相符）。無 chapter 標記，時間點由 storyboard（79 格 / 387 秒，每格 4.90 秒）逐格核對，誤差約 ±5 秒。時間軸更正（原稿有誤）：原稱「01:40 起為全螢幕動態掃描」不成立——01:23–01:53 畫面仍是 KakaoTalk 視窗內的靜止截圖，連續數格幾乎完全相同；真正的全螢幕動態掃描是 02:51–04:05。原稿也漏了 02:02–02:51 的第一段手寫解說（含答案），舊 dose 指示「01:40 播到 02:10」會讓學員先看靜止截圖、再直接撞上答案，已改為從 02:51 起播。第二段手寫解說實際起於約 04:30（原稿誤寫 04:15）。03:50–04:00 的掃描手法示範屬實，畫面中可看到受檢者的臉（示範對象為男性，非本例病人；畫面上無姓名、病歷號或生日等識別資料）。無細胞學或手術病理對照。"
+    },
+    {
+     "name": "帶後方聲影的粗鈣化：46 歲甲亢女性，被問「這個鈣化是不是惡性」",
+     "en": "Yoda Kim Ultrasound School(1451) - calcified lesion with posterior shadowing and multiple nodules in the right thyroid",
+     "kind": "case",
+     "target": "【格式警告，請先讀完再決定怎麼用這一支】經逐格核對，本片沒有任何一段是全螢幕超音波：從 00:56 到約 02:32，畫面一律是左右分割——左半是超音波影像，右半同框顯示講者的手寫解說與判讀結論。也就是說「看得到影像但看不到答案」的視窗在這支片子裡並不存在，物理上做不到乾淨的先答再看。因此本支的角色定位為【對照用教材】而非標準病例演練：建議先在其他三支 drill 上練完流程，再用這支檢核你對「粗鈣化＋後方聲影」的判讀是否與講者一致；若你想勉強當演練用，唯一的辦法是照 dose 的指示用紙或視窗遮住畫面右半。\n\n臨床資料：46 歲女性，甲狀腺功能亢進、methimazole 治療中，轉來的問題只有一句：帶後方聲影的鈣化病灶有沒有惡性可能。影像段為 00:56–約 02:32（分割畫面）。這一題真正考的是兩件事：(1) 你有沒有先解決「這是幾顆結節」——講者的判讀是右葉不是單一結節，而是多個等回音到高回音結節融合在一起，整體屬 K-TIRADS 2021 low suspicion；(2) 你有沒有在報告裡處理那片被聲影遮掉的區域。鑑別診斷至少三個：退化性粗鈣化（講者的結論，認為屬良性變性所致）、乳突癌內的粗鈣化（通常伴隨低回音實體成分與微鈣化）、鈣化性結節旁被聲影遮住而漏掉的第二顆可疑病灶——最容易被選錯的是第二個，因為「粗鈣化 + 聲影」看起來很兇。下一步：以 K-TIRADS 分級決定追蹤而非立即穿刺，但報告必須寫出後方無法評估的範圍。無病理對照——只有講者的影像判讀，沒有細胞學或手術結果，因此不得拿本例當「粗鈣化 = 良性」的證據。",
+     "dose": "本支答案與影像同框，無法靠起播點做先答再看，請二選一：\n\n【A．遮擋法，想當演練用就照這個做】先看 00:14–00:56 的提問投影片拿臨床資料（46/F、메티마졸 복용 중、問惡性可能）。播放前，先用一張紙、便利貼或另開的視窗把螢幕右半完全遮住——從 00:56 起畫面就是左右分割，右半整段都是講者的手寫判讀與結論。只看左半的超音波，播到 01:30 暫停，寫下：這是一顆還是多顆？各自的 structured description、ACR TI-RADS (2017) 分數與 K-TIRADS 2021 級別、要不要穿刺。另外強制寫一行「後方 __ mm 因聲影無法評估」，把數字填出來。答完再把遮擋拿掉，重播 00:56–約 02:32 對照右半的判讀；02:32–02:33 影像段轉黑切走，02:42–02:43 回到視窗內的提問投影片、02:46–02:50 是 Windows 桌面，02:51 起到片尾才是講者的手寫解說單頁。\n\n【B．對照法，預設用法】不遮擋，直接當對照用教材看：一邊看左半影像、一邊看右半講者怎麼把同一個畫面寫成文字判讀，重點放在「他寫了哪些我剛才三支 drill 沒寫的東西」，而不是自己重新判一次。\n\n兩種做法都要收尾回答同一個延伸題：如果這顆鈣化旁邊多出一塊 5 mm 的不規則低回音區，你的處置會怎麼變——這一題測的是你有沒有把粗鈣化當成獨立特徵而不是組合的一部分。",
+     "title": "Yoda Kim Ultrasound School(1451) - Dr.박상훈 증례. 우측 갑상선 후방음영 동반 석회화 병변 다발성 결절",
+     "channel": "김일봉（Yoda Kim Ultrasound School）",
+     "url": "https://www.youtube.com/watch?v=ktK-IWsSXpc",
+     "duration": "5:01",
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
+     "coi": "同核心教材：講者經營自費超音波教育聚會與 hands-on DVD；無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "桌面畫面（約前 14 秒），無教學內容"
+      },
+      {
+       "at": "00:14",
+       "note": "提問投影片（約 00:14–00:56）：46 歲女性、methimazole 治療中，問「帶後方聲影的鈣化病灶是不是惡性」"
+      },
+      {
+       "at": "00:56",
+       "note": "影像段開始，但畫面是左右分割：左半為鈣化病灶與後方聲影的超音波，右半同框就是講者的手寫判讀與答案——不遮住右半就不可能先答再看。超音波只占畫面左半，無全螢幕段落"
+      },
+      {
+       "at": "02:32",
+       "note": "影像段結束（02:32 分割畫面仍在，02:33 已轉黑切走），之後畫面回到提問投影片與桌面"
+      },
+      {
+       "at": "02:51",
+       "note": "手寫解說單頁開始，之後到片尾都是這一頁（多個結節融合、K-TIRADS low suspicion、粗鈣化推測為變性所致）。02:42–02:43 是視窗內的提問投影片、02:46–02:50 是 Windows 桌面，都還不是解說頁"
+      }
+     ],
+     "note": "yt-dlp 與 oEmbed 驗證通過（200）。格式更正（原稿有誤）：原稱「00:58–約 02:35 為全螢幕動態掃描」不成立——本片沒有任何全螢幕超音波段落，00:56 起一律為左右分割畫面（左半超音波、右半講者手寫判讀同框）。因為答案與影像同框，本支已從標準病例演練降級為對照用教材，dose 改為「遮擋右半」或「直接當對照」兩種用法。時間點更正紀錄（來源要說清楚）：上一版本 note 曾寫「影像段實際結束於約 02:20 而非 02:35」，那是把原本接近正確的值改錯；複驗員以 ffmpeg 逐格實測，02:20／02:28／02:32 畫面都還是左右分割的影像段、02:33 已轉黑切走，真正結束點約 02:32–02:33。另一處「02:42 之後到片尾全部是手寫解說單頁」同樣不成立：實測 02:42–02:43 是視窗內的提問投影片、02:46–02:50 是 Windows 桌面、02:51 才切到手寫解說單頁。本檔現用的 02:32 與 02:51 是直接照抄複驗員的 ffmpeg 實測值，本次修正未再自行抽格複驗，也不宣稱驗過。臨床資料與判讀結論取自影片說明欄；無細胞學或手術病理對照。"
+    },
+    {
+     "name": "兩種鈣化並存的結節：54 歲女性健檢發現",
+     "en": "A thyroid nodule with coexisting coarse and punctate echogenic foci, 54-year-old woman",
+     "kind": "case",
+     "target": "54 歲女性，健檢超音波發現右葉甲狀腺結節後轉診做細胞學（片中的細胞學報告頁寫的是 thyroid gland, right middle）。第一眼影像在 01:32，影像段為 01:32–約 03:20（其中約 02:43–02:58 插入一頁白底文字，不是連續影像，而且那一頁就是答案，詳見下段）。劇透風險有四層，開播前要知道：(1) YouTube 標題直接寫出病理診斷；(2) 00:19–01:32 的韓文文字頁會寫出診斷；(3) 影像段本身從第一格起，畫面下緣就燒錄了黃色韓文字幕在描述病灶所見——看得懂韓文的話，光看影像也會被劇透；(4) 約 02:43–02:58 那一頁白底文字不是無關的過場，而是「갑상선 세포진 결과 / Fine needle aspiration cytology」報告全文，白紙黑字印著「Thyroid gland, right middle, aspiration cytology (slide B1-3): Papillary carcinoma, consistent with」——先答再看的人絕對不能停在這一頁。本例是前一支 drill 的反面教材：同樣有粗鈣化，結局完全相反。要學員看出的關鍵不是「有粗鈣化」，而是粗鈣化與微鈣化在同一顆低回音結節內並存，而且結節不大——小到很容易被粗鈣化的聲影蓋掉、也很容易被判成「太小不用管」（實際尺寸請自己在影片上量，不要照抄別人的數字）。鑑別診斷至少三個：退化性粗鈣化的良性結節、粗鈣化+微鈣化的乳突癌、鈣化性結節旁的正常組織偽影——最容易被選錯的是第一個。下一步：直接 FNA，且針要避開粗鈣化的聲影、瞄準含微鈣化的低回音實體部分。結局：細胞學／病理診斷為乳突癌（유두암），影片標題即載明；請務必先不要讀標題。有細胞學層級的結局，但影片未逐項揭露報告全文與是否手術。",
+     "dose": "先答再看，這一支最容易被劇透，四道防線都要做：(1) 不要讀 YouTube 標題（標題直接寫出病理診斷）；(2) 不要讀 00:19–01:32 那段韓文文字頁（同樣會寫出診斷）——站內播放已設定自動從 01:34 開始，會跳過這一頁；若你是在 YouTube 上開啟，請自行把進度條拉到 01:34 再看；(3) 影像段本身畫面下緣有燒錄的黃色韓文字幕在描述所見——若你看得懂韓文，請先用紙或便利貼遮住畫面最下緣約五分之一的字幕帶再播；(4) 播到約 02:43 會插入一頁白底文字，那是細胞學報告全文、直接寫著最終診斷，請在 02:43 前就把畫面遮住或快轉到 02:58，不要停在那一頁。從 01:34 播到 02:10 暫停。寫下 structured description（特別要分開標註哪些是粗鈣化、哪些是 punctate echogenic foci）、量出結節最大徑、給 ACR TI-RADS (2017) 分數與級別、對照 size cutoff 判斷要不要穿刺，並畫出你要下針的位置與進針角度（避開聲影）。看完 01:34–約 03:20 全部影像後（中間約 02:43–02:58 那頁白底文字是細胞學報告，含最終診斷，答完前務必跳過）才回頭讀標題、字幕與文字段落對答案。最後回答：如果這顆只有 4 mm，你的建議會不會改變？依據是哪一個系統的哪一條 size cutoff？",
+     "title": "조대 석회화,미세 석회화를 동반한 갑상선 유두암, 54세 여성",
+     "channel": "김일봉（Yoda Kim Ultrasound School）",
+     "url": "https://www.youtube.com/watch?v=oXfcU-DE2KY",
+     "duration": "8:55",
+     "start": 94,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（김일봉 / Yoda Kim Ultrasound School），本站僅連結不重製",
+     "coi": "同核心教材：講者經營自費超音波教育聚會與 hands-on DVD；無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "00:19",
+       "note": "韓文病例文字頁（約 00:19–01:32）——會直接洩漏診斷，先跳過不要讀"
+      },
+      {
+       "at": "01:32",
+       "note": "第一眼——結節的動態掃描（含彩色都卜勒）開始，兩型高回音病灶並存；站內播放已設 start=94（01:34）自動從這裡開播，跳過前面會洩漏診斷的韓文文字頁。先在這裡暫停自己判斷。注意畫面下緣燒錄了黃色韓文字幕在描述病灶所見，懂韓文者請先遮住最下緣"
+      },
+      {
+       "at": "02:43",
+       "note": "【最強劇透點】影像中間插入一頁白底文字（約 02:43–02:58），影像並非連續——這一頁是細胞學報告全文「갑상선 세포진 결과 / Fine needle aspiration cytology」，印著「Thyroid gland, right middle, aspiration cytology (slide B1-3): Papillary carcinoma, consistent with」，等於最終診斷。先答再看者絕對不能停在這裡，請快轉到 02:58"
+      },
+      {
+       "at": "03:20",
+       "note": "影像段落結束（03:20 仍是全螢幕超音波但畫面上已出現右鍵選單、03:22 影像已縮成桌面上的播放器視窗、03:24 為純 Windows 桌面），真正結束點約 03:20–03:23"
+      },
+      {
+       "at": "03:38",
+       "note": "文獻內文整理頁開始（標題「4. 유두암 papillary adenocarcinoma : PAC」）。在這之前：03:29 是 Windows 桌面、03:32 是《갑상선과 경부의 초음파 진단》書封，都還不是文獻內文"
+      }
+     ],
+     "note": "yt-dlp 與 oEmbed 驗證通過（200，標題與頻道相符）。時間軸更正（值的來源分兩種，分開講）：影像段結束（03:20，實測 03:20 仍是超音波、03:22 已縮成桌面播放器視窗、03:24 為純桌面）、白底文字頁區間（02:43–02:58）、文獻頁真正起點（03:29 桌面→03:32 書封→03:38 內文頁）這三組數字，是直接照抄複驗員 ffmpeg 逐格實測的結果，本次修正未自行重跑抽格，也不宣稱驗過；先前版本寫的 03:14／02:40–02:55／03:29 起為文獻頁都偏早 8–9 秒，且先前 note 以「已核對、誤差 ±5 秒」的口吻寫這些值，屬於過度宣稱，一併撤回。內容更正：約 02:43–02:58 那一頁白底文字不是無關過場，而是細胞學報告全文，含最終診斷（Papillary carcinoma），先前只寫「跳過即可」等於漏掉第四道劇透防線，已在 timestamps、target 與 dose 三處明寫。劇透更正：影像段自第一格起，畫面下緣即燒錄黃色韓文說明字幕描述病灶所見，原稿只警告了 00:19–01:32 的文字頁，未提醒字幕，已補入 dose。站上顯示名稱（name／en）原本直接寫出「乳突癌／papillary thyroid carcinoma」，已去識別化；其後一版改成「…，前一支的反面」，但前一支 drill 的結論是良性退化性粗鈣化，這句在課程列表上等於直接告訴學員本例是惡性，去識別化並不完整，本次已把結局暗示整句拿掉，只留「兩種鈣化並存的結節：54 歲女性健檢發現」。已加 spoiler: true（type: case 本來就會由 build.py 自動補上同樣的預設，這裡明寫是為了讓意圖顯性、不依賴預設），前端據此不在卡面顯示英文原標題；YouTube 原標題（title 欄）依規定保留不改，故 dose 仍要求不要讀標題。起播點：已設 start=94（01:34），站內播放與外連按鈕都會從影像段開頭起播，跳過 00:19–01:32 那頁會寫出診斷的韓文文字頁——這個邊界複驗員沒有量，改由我在 2026-08-03 自行以 yt-dlp 下載本片、ffmpeg 精確 seek 抽 88／90／92／94／96 秒實測：90 秒畫面仍是那頁韓文文字（標題「조대 석회화, 미소 석회화를 동반한 갑상선 유두암(F/54)」與內文的「유두암으로 진단되었습니다」都清楚可讀），92 與 94 秒已是全螢幕動態掃描；取 94 是為 YouTube 依關鍵格 seek 留 2 秒餘裕。殘留風險（沒有解決，誠實記錄）：start 只擋播放，擋不掉 YouTube 縮圖與標題——本片縮圖是一張帶燒錄韓文字幕「우측 갑상선 결절 세포진」的超音波截圖（會透露側別與已做穿刺，未直接寫出診斷），而 YouTube 標題本身直接寫著「갑상선 유두암」，只要學員切到 YouTube 頁面或看到縮圖就會被劇透。01:32 起確為超音波動態掃描含彩色都卜勒，其餘為文字頁。本影片說明欄只有頻道通用資訊，臨床細節（54 歲女性、健檢發現、乳突癌）取自標題；同一頻道另有一支較長的同案例討論（youtube.com/watch?v=kefYs2Vqwfg，14:41）在說明欄載明「우측 갑상선 결절의 세포진에서 유두암으로 진단」，但該片前 6 分鐘為講者對鏡頭講述、影像密度低，故此處採用影像密度較高的這一支。兩支是否為同一位病人未經作者確認，僅可確定臨床描述一致。"
+    },
+    {
+     "name": "Thyrosite case 1490：乍看是微鈣化，其實是膠質的 comet-tail",
+     "en": "Differential diagnostic of intranodular hyperechogenic figures - case 1490",
+     "kind": "case",
+     "target": "37 歲女性，四年前因結節性甲狀腺腫首次就診、當時抽出 2 mL 褐色囊液，本次為追蹤，無不適；觸診右葉可疑有結節；功能正常，TSH 1.60 mIU/L。第一眼影像在 0:04（全片 46 秒的連續動態掃描）。這是本單元、也是全課最容易搞混的一組：結節為中度低回音、內含小囊變區與兩型高回音顆粒，乍看就是 punctate echogenic foci（微鈣化），但作者的原始評註寫得很白——「值得把影片放來看，第一眼這些亮點看起來就是微鈣化」，實際上它們背後有逐漸變細變淡的尾巴，屬 comet-tail artifact。另一個常被忽略的線索：這顆結節四年來從 17x15x19 mm 縮到 11x10x14 mm，也就是囊性部分四年沒有再填充。鑑別診斷至少三個：含微鈣化的乳突癌、膠質造成 comet-tail 的良性囊實性結節、結節內纖維化造成的非特異性高回音線與顆粒——最容易被選錯的是第一個。下一步：本例作者做了 FNA（因為首次穿刺只抽到巨噬細胞），細胞學結果為 benign cystic-colloid goiter。有細胞學結局，無手術病理對照。",
+     "dose": "先答再看：全長只有 46 秒，先把整段看完，不要讀標題、不要開說明欄。片頭 0:00–約 0:03 是印著影片標題與 case 號的 thyrosite 片頭卡（沒有寫出診斷，但標題已點出「intranodular hyperechogenic figures 的鑑別」這個題目方向）——站內播放會自動從 0:04 開始跳過它；若你在 YouTube 上開啟，請自行把進度條拉到 0:04，並注意該影片的 YouTube 縮圖就是同一張片頭卡。在 0:04–0:20 之間至少暫停兩次，把每一個亮點分別標成 punctate echogenic foci 或 comet-tail artifact，並寫下你用什麼證據分類（有沒有尾巴、尾巴會不會隨深度變淡、有沒有後方聲影）。給出 ACR TI-RADS (2017) 分數兩次：一次假設這些是 punctate echogenic foci（+3 分），一次假設是 comet-tail（+0 分），比較兩次的級別與穿刺建議差幾級。再打開說明欄的 http://thyrosite.com/thyroid/1490/index.php 讀 Ultrasonography、Comments 與細胞學結果對答案。最後寫一句話：如果你只拿到一張靜止影像而不是這 46 秒的動態影片，你分得出來嗎？",
+     "title": "Differential diagnostic of intranodular hyperechogenic figures - case 1490",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=0tiWR-kRGHw",
+     "duration": "0:46",
+     "start": 4,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站；內容本身無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "thyrosite 片頭卡（0:00–約 0:03）：灰底印著影片標題「Differential diagnostic of intranodular hyperechogenic figures」、Case 1490 與 thyrosite 蝴蝶 logo。轉場是由左往右的 wipe，2.8 秒畫面右側仍殘留標題文字，3.0 秒才乾淨。站內播放已設 start=4 自動跳過"
+      },
+      {
+       "at": "0:04",
+       "note": "第一眼——連續動態掃描開始（實測 4.0 秒為乾淨的灰階實掃，無片頭殘留文字）；先暫停，判斷那些亮點是 punctate echogenic foci 還是 comet-tail artifact"
+      },
+      {
+       "at": "0:09",
+       "note": "彩色都卜勒段落（結節周邊血流）"
+      }
+     ],
+     "note": "yt-dlp 與 oEmbed 驗證通過（200，標題與頻道相符）。無 chapter 標記，時間點由 storyboard（每格 0.98 秒）取樣推算，誤差約 ±2 秒。已檢視 storyboard 確認為無旁白的連續動態掃描含彩色都卜勒，非投影片。片頭卡與起播點（本次由我實際抽格量測，非照抄）：2026-08-03 以 yt-dlp 下載本片、ffmpeg 精確 seek 抽 0.5／2.0／2.4／2.6／2.8／3.0／3.5／4.0 秒——0.5 與 2.0 秒為完整片頭卡（標題＋Case 1490＋www.thyrosite.com），2.6 與 2.8 秒為由左往右 wipe 的殘留文字，3.0 與 4.0 秒已是乾淨的灰階實掃畫面。因此設 start=4（取 3.0 秒後再留 1 秒餘裕，避開 YouTube 依關鍵格 seek 的誤差）。此片頭卡印的是影片標題與 case 號，不像同系列其他 Solymosi 影片會直接印出診斷，但標題已透露題目方向。殘留風險（未解決，誠實記錄）：start 只影響播放起點，擋不掉 YouTube 縮圖——我已 curl 下載 hqdefault 比對，本片縮圖就是同一張片頭卡；學員在站內卡片外的任何 YouTube 介面（縮圖、分頁標題、搜尋結果）仍會看到標題文字。臨床資料、影像描述與細胞學結果（benign cystic-colloid goiter）為 2026-08-03 實際抓取 http://thyrosite.com/thyroid/1490/index.php 的內容（影片說明欄給的 www 版本會 301 導向此網址，最終回應 200，文字完整）。無手術病理對照。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u7",
+   "name": "微小、深部與位置刁鑽的病灶",
+   "type": "case",
+   "assessment": "先做自己的：下一次門診連續掃五位病人，每一位的報告都必須明確寫出五件事——峽部厚度與有無病灶、兩側上極、兩側下極、後方（背側）包膜線是否可見、以及下緣在仰臥位與吞嚥時各是否可見。接著進本單元：核心教材播到 05:59「Thyroid capsule」與 09:28「Abutment」時各暫停一次，回頭統計你那五位病人裡真正看得到後方包膜線的比例，寫進 logbook。四支病例影片的開頭標題卡都直接印出最終診斷（含病理與良惡性），**站內播放器已針對每一支設定自動起播秒數（0:02～0:05），會直接跳過片頭卡，你不需要自己拖進度條**；若你改在 YouTube 上開啟，請依各 drill 的 dose 自行拉到指定秒數。三個站內擋不掉、必須靠你自己配合的殘留劇透：(1) **YouTube 影片縮圖就是那張片頭卡**，站內卡片與外連按鈕上的縮圖仍可能讓你瞄到診斷，看到請別細讀；(2) YouTube 頁面本身的標題列、瀏覽器分頁標籤與說明欄都寫著英文原標題與診斷（本站卡片已自動隱藏英文原標題，YouTube 端擋不住）；(3) 說明欄的 thyrosite 連結是答案頁，請等你寫完判讀再點。起播後先暫停在 timestamps 標示的「第一眼」，不要聽旁白，直接寫下 structured description（composition、echogenicity、shape、margin、echogenic foci）、ACR TI-RADS (2017) 逐項得分與總分、K-TIRADS 2021 分類、以及穿刺 yes/no 與理由；病灶若 < 1 cm，額外標註你對 taller-than-wide 這一項的信心是高／中／低，並寫出理由（探頭壓迫？焦點位置？部分容積？）。看完影片再打開影片說明欄連到的 thyrosite 病例頁對答案，逐案記錄三件事：(1) 你和最終診斷差在哪一個影像特徵；(2) 那個差異是不是由病灶的位置或深度造成；(3) 如果只換一個掃描動作（換高頻／低頻探頭、換角度、墊肩、吞嚥、Valsalva）能不能補救。最後把那五份報告全部改寫一次：凡是你其實沒看清楚的結構，一律改成「⋯⋯無法評估，建議⋯⋯」的明確句型，不得留白。",
+   "tight": [
+    "把「看不清楚」當成「沒有可疑特徵」：深部或後方病灶在焦點區以外、增益不足、又被氣管或鎖骨遮擋，影像根本不夠格分級，卻仍照常填完 ACR TI-RADS (2017) 五個欄位並得出低分",
+    "在 < 1 cm 的病灶硬套 taller-than-wide：小病灶的 A/T 比只要量測游標差一兩格、或探頭稍微壓迫變形，就會在「wider-than-tall」與「taller-than-wide」之間跳動，等於憑一個不可靠的特徵決定要不要穿刺",
+    "峽部病灶被整段漏掉：橫切只掃兩葉、峽部被近場偽影與氣管前方混響蓋住、報告只寫「兩葉未見結節」；且峽部病灶就算不大也更貼近前方包膜與氣管，extrathyroidal 風險與純大小不成比例",
+    "下極背側病灶只當成甲狀腺結節分級，忘了先問「這顆到底在不在甲狀腺裡」——副甲狀腺病灶、食道／憩室、頸長肌與異位組織都住在同一個位置",
+    "胸骨後延伸時只寫「甲狀腺腫大」：仰臥位看不到下緣、吞嚥後仍看不到，報告卻沒有一句「下緣無法評估」，也沒有建議 CT／MRI，讓後續手術規劃完全失去警示"
+   ],
+   "weak": [
+    "下判讀之前先問「這張影像有沒有資格被分級」：不合格就先調 depth、focus、frequency、動態範圍，或改用較低頻探頭、墊肩、轉頭、吞嚥與 Valsalva，補救之後才給分級；補救不了就在報告寫成無法評估",
+    "在 < 1 cm 的病灶只用高可信度特徵（punctate echogenic foci、明顯不規則／分葉邊緣、極低回音、確定的包膜中斷）下決定，並在報告中主動說明 taller-than-wide 在此大小不可靠",
+    "把「位置」當成一個獨立的判讀變項：峽部、上極、下極背側、氣管旁與胸骨後各有各的漏診機轉與鑑別清單，掃描與報告都必須逐一交代",
+    "遇到下極背側或上極以上的病灶，能主動用甲狀腺實質包覆關係、隨吞嚥移動、feeding vessel 走向與 washout（Tg／PTH）把「不是甲狀腺結節」的可能性排除掉",
+    "報告寫法能落實一句話原則：看不到的東西要被寫出來——「下緣於吞嚥後仍無法顯示，縱膈範圍無法評估，建議 CT 評估」比任何形容詞都有用"
+   ],
+   "lesson": {
+    "title": "Extrathyroidal extension - prerecorded short summary",
+    "channel": "Tamas Solymosi",
+    "url": "https://www.youtube.com/watch?v=Tn2A-pKPlPc",
+    "duration": "19:58",
+    "why": "深部與後方病灶最常失敗的判讀，不是它的回音或鈣化，而是「你到底看不看得到它和包膜的關係」。這支影片把甲狀腺包膜在哪些位置看得到、abutment（貼靠）與 barging（推擠）怎麼區分逐一講清楚，正好補上後方、氣管旁與深部病灶最沒有把握的那一段判讀概念，而且六個 YouTube chapter 的秒數與內容一致，可以精準跳段落。**格式先講清楚：這是一支旁白式 PowerPoint 講座，不是實機動態掃描。**0:00 到約 07:00 全部是純文字投影片（title／Some considerations and syllabus／Definitions／The discontinuation of the thyroid capsule），一張超音波都沒有；約 07:00（實測分界落在 06:58–07:00 之間）之後出現的超音波是投影片上的 **2×2 靜態病例圖拼盤**（帶白／紅／黃箭頭註記，如 Case 2128、50037、comp 040/060、Case 2018、2138），逐秒抽格畫面完全相同，屬於靜止影像而非 cine loop 或實掃。因此本片用來建立「包膜關係怎麼看」的概念與詞彙很好用，但**學不到掃描手法**，掃描手法請看本單元四支實掃 drill 與 ch1-u5。",
+    "tier": "A",
+    "kind": "lecture",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+    "coi": "講者經營付費 Papillon Course 與自架教學站 thyrosite.com，影片說明欄導向其自家網站",
+    "last_verified": "2026-08-03",
+    "timestamps": [
+     {
+      "at": "00:00",
+      "note": "Introduction：為什麼 ETE 影響手術範圍與分期，不只是描述用語。本段為純文字投影片，沒有影像"
+     },
+     {
+      "at": "02:56",
+      "note": "Definitions：minimal 與 gross extension 的界線，先寫下你自己平常用的定義再往下看。本段仍為純文字投影片"
+     },
+     {
+      "at": "05:59",
+      "note": "Thyroid capsule：包膜在哪些位置看得到、哪些位置（尤其後方與深部）本來就看不到——在這裡暫停，統計自己門診看得到後方包膜線的比例。注意本章開頭仍是文字投影片，第一張超音波靜態圖要到約 07:00 才出現"
+     },
+     {
+      "at": "09:28",
+      "note": "Abutment：貼靠的判準（接觸範圍、包膜線消失的長度、角度），深部病灶最常在這裡被過度或不足解讀。本章的超音波皆為 2×2 靜態圖拼盤，附箭頭註記，不是動態掃描"
+     },
+     {
+      "at": "12:44",
+      "note": "Barging：推擠但未突破的外觀，與真正侵犯的差別。同樣是靜態圖拼盤"
+     },
+     {
+      "at": "14:42",
+      "note": "Exotic spread（章節名稱如此，但**本章沒有任何超音波影像**）：整段是 The handling of ETE in different TIRADS 表、US signs in the prediction of malignancy 表、The occurrence and the degree of ETE in subtypes 表、Kim 2014 對 Trachea／Esophagus／Major vessels／Recurrent laryngeal nerve 的 sensitivity/specificity 數字表，以及 Summary 文字頁。想看「往氣管、食道、縱膈方向擴散長什麼樣子」在這裡看不到——把這段當成統計與 summary 段落來讀"
+     }
+    ],
+    "note": "影像／文字的實際分布：0:00–約 07:00 純文字投影片；約 07:00–14:42 為帶箭頭註記的 2×2 靜態病例圖拼盤，這是全片唯一有超音波的區間；14:42 起到片尾全部轉為統計表與 summary 投影片（不是先前所寫的「約 17 分以後」）。作為判讀教材請把重點放在 07:00–14:42；全片沒有任何動態掃描或 cine loop。秒數來源說明：上述 07:00 這個分界是**複驗員以 ffmpeg 逐格抽格實測**的結果（實測到 417 秒／6:57 仍是「The discontinuation of the thyroid capsule」純文字投影片，第一張 2×2 拼盤在 420 秒／7:00 出現，分界在 417–420 秒之間），本條目為照抄該實測值；策展者本人未重跑抽格，先前寫的「約 06:30」是沿用稽核報告估值、比實際早約 28 秒，已作廢。"
+   },
+   "drills": [
+    {
+     "name": "4 mm 的那一顆：小到什麼程度，特徵還算數？",
+     "en": "Papillary carcinoma - case 59",
+     "kind": "case",
+     "target": "臨床背景：45 歲男性，因父母皆有甲狀腺低下而自行要求檢查，本人無任何症狀；觸診無異常；功能正常（TSH 1.82 mIU/L）。影像關鍵：甲狀腺實質回音正常，右葉「內側」（貼近氣管、屬於深部不易掃的區域）有兩個相鄰的小低回音病灶，其中一個最大徑僅 4 mm 且內含微鈣化；此大小的血流型態沒有判讀價值，這一點作者在病例中明確寫出（原文 The vascular pattern in such small lesions has no relevance）。鑑別至少三個：良性增生性微結節、慢性淋巴球性甲狀腺炎的 discrete lesion（假結節）、乳突微小癌——最容易選錯的是把它當成「太小、先追蹤就好」的良性小病灶。下一步：對 4 mm 病灶做超音波導引 FNA（而不是只給追蹤）。結局：細胞學為乳突癌（背景可見 psammoma body、核內包涵體），手術病理為最大徑 4 mm 的 papillary microcancer——有病理對照。素材注意事項（秒數為複驗員 ffmpeg 抽格實測值，此處照抄）：本片為真實實機掃描（機器時間戳 2005Mar04），但 (a) 0:00–約 0:04 的標題卡就印出最終診斷「Papillary microcarcinoma」，而且結束方式不是硬切而是**由右往左的 wipe 轉場**：4.00 秒仍可讀到「Papillary micro…」「Case his…」，4.20／4.40 秒仍有殘留文字，4.50 秒只剩蝴蝶 logo，5.00 秒才完全乾淨——光是「Papillary micro」這幾個字就足以洩漏診斷，所以乾淨起點是 0:05 而不是 0:04；(b) 約 0:11 起紅色「papillary ca.」與白色「harmless lesion」箭頭直接標在影像上，答案與影像同框；(c) 4 mm 這個數字只出現在 thyrosite 病例頁的文字，影片畫面上**沒有**量測游標或數字讀數。",
+     "dose": "先答再看（本片劇透很重）：全長 51 秒。0:00–約 0:04 的標題卡直接印著「Papillary microcarcinoma」，而且是 wipe 轉場、文字殘留到約 4.5 秒，所以乾淨起點是 **00:05**。**站內播放器已設定自動從 00:05 開播，你不需要自己拖進度條**；若你改在 YouTube 上開啟，請自行拉到 0:05，並且不要看 YouTube 頁面的標題列、分頁標籤與說明欄（那裡的英文原標題就寫著診斷；本站卡片已自動隱藏英文原標題，YouTube 頁面則擋不住）。真正乾淨、可以自己判斷的窗口只有 **00:05–00:10 這六秒**：約 0:11 起畫面上就會出現紅色「papillary ca.」與白色「harmless lesion」箭頭，答案與影像同框，之後全程都在。所以請看到 00:10 就暫停，在還沒聽到旁白、也還沒看到箭頭之前寫下你對這兩個小病灶的 structured description、ACR TI-RADS (2017) 得分與 K-TIRADS 2021 分類，並明確回答：以這個大小，你敢不敢用 taller-than-wide？敢不敢用 margin？再寫穿刺 yes/no。寫完才放行看完後半段（後半段等於作者的標準答案）。播完後打開說明欄的 http://www.thyrosite.com/thyroid/594/index.htm 對答案，記錄你和最終病理差在哪一個特徵，以及若依 ACR TI-RADS (2017) 的大小門檻，這顆 4 mm 病灶原本會不會被建議穿刺——把「分級」與「該不該扎」分開寫。",
+     "title": "Papillary carcinoma - case 59",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=izWoW1VVlZ8",
+     "duration": "0:51",
+     "start": 5,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "note": "start=5 的來源：複驗員以 ffmpeg 精確 seek 抽格實測（4.00 秒仍可讀「Papillary micro…／Case his…」，4.20／4.40 秒有殘留文字，4.50 秒只剩蝴蝶 logo，5.00 秒全乾淨），本欄位為照抄該實測值，策展者本人未重跑抽格。**殘留風險（未解決）**：start 只能讓站內播放器跳過片頭卡，擋不掉 YouTube 縮圖——這支影片的縮圖就是印著「Papillary microcarcinoma」的片頭卡，站內卡片與外連按鈕仍會顯示它；也擋不掉 YouTube 頁面標題列、分頁標籤與說明欄的英文原標題。這部分只能靠 dose 的文字提醒，沒有技術解。",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "00:00",
+       "note": "⚠ 劇透：0:00–約 0:04 為標題卡（wipe 轉場，文字殘留到約 4.5 秒），畫面上直接印出「Papillary microcarcinoma / Case 59」。站內播放器已自動跳過這段"
+      },
+      {
+       "at": "00:05",
+       "note": "標題卡文字完全清空、第一眼實掃影像（Kr Is 機器、時間戳 2005Mar04）——站內播放從這裡開始；在 YouTube 開啟請自行拉到 0:05 再判讀"
+      },
+      {
+       "at": "00:10",
+       "note": "自主判讀的最後一秒：在這裡暫停寫答案。約 0:11 起答案註記就會蓋上畫面"
+      },
+      {
+       "at": "00:12",
+       "note": "紅色「papillary ca.」與白色「harmless lesion」箭頭已完整出現，把兩個相鄰小病灶分別標成癌與無害——此後全片答案與影像同框"
+      },
+      {
+       "at": "00:46",
+       "note": "彩色都卜勒取樣框（ROI）：框內僅一小點紅色血流訊號。**畫面上沒有量測游標、沒有數字讀數、也沒有放大**，影片並未在此確認 4 mm；作者是在示範此大小病灶的血流型態沒有判讀價值"
+      }
+     ]
+    },
+    {
+     "name": "峽部與下極的低回音區：是真結節，還是位置害你多看了一顆",
+     "en": "Differentiation of discrete lesions - case 691",
+     "kind": "case",
+     "target": "臨床背景：55 歲女性，因「喉嚨有異物感」檢查後被轉介評估「結節性甲狀腺腫」；觸診兩葉表面不平、質地偏硬，但摸不到明確結節；TSH 1.78 mIU/L、aTPO 704 U/mL。影像關鍵：兩葉都由中央多個 discrete lesion 加上周邊一圈回音正常的 rim 組成，各病灶回音型態不一；從腫瘤學角度只有兩個低回音病灶值得注意——一個在右葉的峽部側（isthmic part of the right lobe），一個在左葉下極，而這兩個位置正是常規橫切最容易略過或最容易被誤認的地方。鑑別至少三個：真結節、Hashimoto 的假結節（pseudonodular pattern）、峽部前方混響與氣管前方偽影造成的假性低回音區——最容易選錯的是把峽部側那一塊直接當成真結節上報。下一步：對左葉下極該病灶做 FNA（而非對每一塊低回音區都扎）。結局：細胞學為 Hashimoto's thyroiditis——僅有細胞學對照，無手術病理對照。素材注意事項（本片秒數由策展者自行以 ffmpeg 抽格實測，複驗清單未涵蓋本片）：(a) **0:00–約 0:02 的標題卡直接印出「the final diagnosis was Hashimoto's thyroiditis」**，是硬劇透；結束方式是由左往右的 wipe：實測 1.5 秒仍完整可讀「Hashimoto's thyroiditis／Case 36」，1.8 秒右側仍殘留「…roiditis:」，1.9 秒只剩 thyrosite logo 殘字，2.0 秒完全乾淨，所以乾淨起點是 0:02；(b) 病例編號原始素材不一致——YouTube 標題寫 case 691（那是 thyrosite 的頁面編號），但影片標題卡與 thyrosite 頁面本身都標為 **Case 36**，兩個編號指的是同一個病例；(c) thyrosite 頁的 Comments 一句「All but two of the discrete lesions are unlikely true nodules while the hypoechogenic areas are probably not a true nodules」語意自相矛盾（前半留下兩個當真結節、後半又說低回音區大概都不是真結節），請以「大多數 discrete lesion 並非真結節」這個主旨理解，不要把該句當精確結論引用。",
+     "dose": "先答再看：全長 47 秒。0:00–約 0:02 的標題卡就寫著「the final diagnosis was Hashimoto's thyroiditis」，乾淨起點是 **00:02**（此時標題文字已完全被實掃畫面取代）。**站內播放器已設定自動從 00:02 開播，你不需要自己拖進度條**；若你改在 YouTube 上開啟，請自行拉到 0:02，並且不要看 YouTube 頁面的標題列、分頁標籤與說明欄（那裡的英文原標題就寫著診斷；本站卡片已自動隱藏英文原標題，YouTube 頁面則擋不住）。起播後先在 00:03 暫停，畫出一張示意圖，標出你認為的每一個「病灶」位置（峽部？上極？下極？前方或背側？），並各給一個 ACR TI-RADS (2017) 級別與 K-TIRADS 2021 分類；接著寫下：這幾塊裡你只願意扎哪一個、為什麼。全片播完後到 http://www.thyrosite.com/thyroid/691/index.php 對答案，記錄你多算了幾個「結節」、少算了哪一個，以及位置（峽部、下極）在你的誤判裡佔多少比重。",
+     "title": "Differentiation of discrete lesions - case 691",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=EFWR9NDKKJs",
+     "duration": "0:47",
+     "start": 2,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "note": "start=2 的來源：本片不在複驗清單內，秒數由策展者自行下載後以 ffmpeg 抽格實測（1.5 秒完整可讀「Hashimoto's thyroiditis／Case 36」，1.8 秒殘留「…roiditis:」，1.9 秒只剩 thyrosite logo，2.0 秒全乾淨）。**殘留風險（未解決）**：start 只能讓站內播放器跳過片頭卡，擋不掉 YouTube 縮圖——這支影片的縮圖就是印著最終診斷的片頭卡，站內卡片與外連按鈕仍會顯示它；也擋不掉 YouTube 頁面標題列、分頁標籤與說明欄。這部分只能靠 dose 的文字提醒，沒有技術解。",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "00:00",
+       "note": "⚠ 劇透：0:00–約 0:02 為標題卡（wipe 轉場，1.8 秒仍有殘字），畫面上直接印出「the final diagnosis was Hashimoto's thyroiditis / Case 36」。站內播放器已自動跳過這段"
+      },
+      {
+       "at": "00:02",
+       "note": "標題卡完全消失、實掃影像佔滿畫面（Philips L12-5、Thyrosite preset）——站內播放從這裡開始；在 YouTube 開啟請自行拉到 0:02"
+      },
+      {
+       "at": "00:03",
+       "note": "第一眼影像穩定——先暫停，數一數你認為有幾個病灶、各在哪個位置"
+      },
+      {
+       "at": "00:25",
+       "note": "影片後半段換到另一側掃描，把兩個關鍵低回音區（右葉峽部側與左葉下極）拿來對照"
+      },
+      {
+       "at": "00:44",
+       "note": "片尾（至 0:47）仍是**連續實掃、沒有停格或標註畫面**；請自己在此段反覆比對周邊 echonormal rim 與中央 discrete lesion 的分布，本片全程不提供任何畫面上的答案標記"
+      }
+     ]
+    },
+    {
+     "name": "下極背側的那一顆：先問它在不在甲狀腺裡",
+     "en": "A nodule in unusual location. Benign nodular hyperplasia - case 58",
+     "kind": "case",
+     "target": "臨床背景：45 歲女性，自己摸到左側腫塊而就醫；觸診左葉有結節；功能正常（TSH 1.55 mIU/L）。影像關鍵：甲狀腺實質回音正常、含數個小囊性病灶；左葉有多個回音不一的結節，但真正的問題在右葉——一顆相對大的結節長在右葉的「下方－背側」（lower-dorsal part of the right lobe），正是探頭最難壓到、深度最深、又最容易被鎖骨與氣管遮蔽的角落；作者明講：這個位置本身就讓人必須考慮副甲狀腺來源。鑑別至少三個：甲狀腺自身的增生性結節、副甲狀腺腺瘤、食道／憩室或頸部深層其他構造（以及淋巴結）——最容易選錯的是憑「回音低、邊界清楚」就直接歸成甲狀腺結節分級上報。下一步：FNA 並同時送 washout（Tg 與 PTH），而不是只看細胞學。結局：細胞學為良性；washout thyroglobulin 201 pg/mL、washout parathormone 僅 3.1 pg/mL（血清 Tg 72 pg/mL、血清 PTH 45.8 pg/mL），支持甲狀腺來源的良性增生結節——有 washout 與細胞學對照，但無手術病理對照。素材注意事項（本片秒數由策展者自行以 ffmpeg 抽格實測，複驗清單未涵蓋本片）：0:00–約 0:03 的標題卡直接印出「A nodule in an unusual location／Benign, hyperplastic nodular goiter／Case 58」，等於先公布良惡性答案；結束方式是 wipe 而非硬切：實測 2.5 秒仍可讀到「…stic nodular goiter:／Case 58」（良性答案未擋掉），2.8 秒只剩「…cation」殘字，3.0 秒完全乾淨，所以乾淨起點是 0:03。0:03 起為連續實掃（Philips L12-5），全程沒有任何畫面上的答案註記。",
+     "dose": "先答再看：全長 35 秒，是本單元最短、也最考驗第一眼的一支。0:00–約 0:03 的標題卡就印著「Benign, hyperplastic nodular goiter」，先看就等於先知道良惡性，乾淨起點是 **00:03**。**站內播放器已設定自動從 00:03 開播，你不需要自己拖進度條**；若你改在 YouTube 上開啟，請自行拉到 0:03，並且不要看 YouTube 頁面的標題列、分頁標籤與說明欄（那裡的英文原標題就寫著「Benign nodular hyperplasia」；本站卡片已自動隱藏英文原標題，YouTube 頁面則擋不住）。起播後立刻暫停，先只憑影像回答一題：這顆病灶是「在甲狀腺實質內」還是「貼在甲狀腺外」？寫下你的判斷依據（實質包覆、包膜線、與下極的相對位置、feeding vessel 方向），再給 ACR TI-RADS (2017) 與 K-TIRADS 2021 分級與穿刺決定，並寫下你會不會加驗 washout。播完後到 http://www.thyrosite.com/thyroid/1626/index.htm 對答案。延伸練習：若 washout PTH 高、Tg 低，你的報告與下一步要怎麼改寫（副甲狀腺主題另見 ch12-u4，本單元只練「位置與深度造成的誤判」）。",
+     "title": "A nodule in unusual location. Benign nodular hyperplasia - case 58",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=eSyYZcktG5c",
+     "duration": "0:35",
+     "start": 3,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "note": "start=3 的來源：本片不在複驗清單內，秒數由策展者自行下載後以 ffmpeg 抽格實測（2.5 秒仍可讀「…stic nodular goiter:／Case 58」，2.8 秒只剩「…cation」殘字，3.0 秒全乾淨）。**殘留風險（未解決）**：start 只能讓站內播放器跳過片頭卡，擋不掉 YouTube 縮圖——這支影片的縮圖就是印著「Benign, hyperplastic nodular goiter」的片頭卡，站內卡片與外連按鈕仍會顯示它；也擋不掉 YouTube 頁面標題列、分頁標籤與說明欄。這部分只能靠 dose 的文字提醒，沒有技術解。",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "00:00",
+       "note": "⚠ 劇透：0:00–約 0:03 為標題卡（wipe 轉場，2.5 秒仍讀得到良性診斷），畫面上直接印出「A nodule in an unusual location / Benign, hyperplastic nodular goiter / Case 58」。站內播放器已自動跳過這段"
+      },
+      {
+       "at": "00:03",
+       "note": "標題卡文字完全清空、第一眼實掃影像（Philips L12-5）——站內播放從這裡開始；在 YouTube 開啟請自行拉到 0:03，暫停並回答「在不在甲狀腺裡」"
+      },
+      {
+       "at": "00:26",
+       "note": "後半段病灶與下極、背側周邊構造關係最清楚的一段；全程為連續實掃，畫面上沒有任何答案註記"
+      }
+     ]
+    },
+    {
+     "name": "吞嚥前看不到下緣：報告該怎麼寫",
+     "en": "Substernal spread - moderate degree. Other edifying cases - case 13",
+     "kind": "case",
+     "target": "臨床背景：67 歲女性，多結節毒性甲狀腺腫、吞嚥困難；甲狀腺腫已四十餘年並持續變大，曾拒絕手術，抗甲狀腺藥治療五年；觸診雙葉腫大、多顆結節；服用 methimazole 10 mg／日下為亞臨床甲狀腺低下（TSH 6.09 mIU/L、FT4 12.0 pM/L、FT3 4.18 pM/L）。影像關鍵：雙葉腫大、多個回音型態不一的結節；仰臥位、吞嚥前「兩葉下極皆無法顯示」；吞嚥時右葉下極才進入視野，左葉下極始終看不到——這正是超音波唯一能給的胸骨後線索：動態動作能不能把下緣拉出來。鑑別至少三個：單純大甲狀腺腫（下緣只是被鎖骨遮擋）、真正的胸骨後延伸、縱膈其他腫塊（含異位甲狀腺、胸腺、淋巴瘤）——最容易選錯的是把「看不到下緣」直接寫成「甲狀腺腫大」而不再追。下一步：安排 CT 評估縱膈範圍並據此規劃手術入路。結局：CT 顯示右側僅極輕度、左側顯著胸骨後延伸；再次建議手術，實際手術必須加做左側開胸；病理為良性增生性結節性甲狀腺腫——有病理與影像對照。素材注意事項（秒數為複驗員 ffmpeg 抽格實測值，此處照抄）：(a) **0:00–約 0:03 的標題卡直接印出「Substernal spread - moderate degree／Case histories／Other edifying cases: Case 13」**，連「程度」這個 dose 要你自答的答案都先公布了；實測 3.00 秒整張畫面仍是完整可讀的標題卡，硬切到 Philips 實掃約在 3.05–3.10 秒之間，3.5 秒起已確認乾淨，所以乾淨起點是 0:04 而不是 0:03；(b) 病例編號原始素材不一致——YouTube 標題與影片標題卡都寫 Case 13，但 thyrosite 病例頁（thyroid/978）標題寫的是「Other edifying cases - Case 14: Different degrees of substernal spread」，兩處編號不同，請以臨床內容而非編號辨識；(c) 該頁同時給出胸骨後延伸的三級定義（mild：直立看不到下緣、仰臥伸頸看得到；moderate：仰臥伸頸吞嚥前看不到、吞嚥時進入視野，本例屬此級；severe：仰臥伸頸連吞嚥時都看不到），這三級定義才是本片最該帶走的東西。",
+     "dose": "先答再看：全長 1 分 12 秒。0:00–約 0:03 的標題卡就印著「Substernal spread - moderate degree」，連你等一下要自答的 mild／moderate／severe 分級答案都先給了，乾淨起點是 **00:04**。**站內播放器已設定自動從 00:04 開播，你不需要自己拖進度條**；若你改在 YouTube 上開啟，請自行拉到 0:04，並且不要看 YouTube 頁面的標題列、分頁標籤與說明欄（那裡的英文原標題連「moderate degree」都寫出來；本站卡片已自動隱藏英文原標題，YouTube 頁面則擋不住）。起播後立刻暫停，先寫下你這一刻能回答與不能回答的清單：兩葉下極看得到嗎？下緣在哪裡？你能不能說出胸骨後延伸的程度（mild／moderate／severe）？接著把 00:35 起的「Before swallowing／While swallowing」上下對照畫面看完，再回答同樣的問題，並用你自己單位的報告格式寫出兩句話：一句描述吞嚥前後下緣可見度的變化，一句是明確的建議（是否需要 CT、為什麼）。最後打開 http://www.thyrosite.com/thyroid/978/index.htm 對答案，比對三級定義、CT 與手術結果，記錄你原本的報告若照抄會不會讓外科低估左側範圍。本片旁白極短，完整臨床、CT 與病理資訊在該病例頁；本單元不談掃描手法本身（另見 ch1-u5）。",
+     "title": "Substernal spread - moderate degree. Other edifying cases - case 13",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=NmEV1g0lu3g",
+     "duration": "1:12",
+     "start": 4,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "note": "start=4 的來源：複驗員以 ffmpeg 精確 seek 抽 2.90/3.00/3.10/3.20/3.30/3.40 秒實測（3.00 秒整張仍是完整可讀的標題卡，硬切到 Philips 實掃約在 3.05–3.10 秒，3.5 秒起確認乾淨），本欄位為照抄該實測值，策展者本人未重跑抽格。**殘留風險（未解決）**：start 只能讓站內播放器跳過片頭卡，擋不掉 YouTube 縮圖——這支影片的縮圖就是印著「Substernal spread - moderate degree」的片頭卡，連 dose 要學員自答的 mild／moderate／severe 分級答案都在上面，站內卡片與外連按鈕仍會顯示它；也擋不掉 YouTube 頁面標題列、分頁標籤與說明欄。這部分只能靠 dose 的文字提醒，沒有技術解。",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "00:00",
+       "note": "⚠ 劇透：0:00–約 0:03 為標題卡（3.00 秒仍完整可讀，硬切在 3.05–3.10 秒），畫面上直接印出「Substernal spread - moderate degree / Case histories / Other edifying cases: Case 13」，連分級答案都先給。站內播放器已自動跳過這段"
+      },
+      {
+       "at": "00:04",
+       "note": "標題卡已切掉、第一眼實掃影像（Philips L12-5）——站內播放從這裡開始；在 YouTube 開啟請自行拉到 0:04，先寫下「能回答／不能回答」清單"
+      },
+      {
+       "at": "00:35",
+       "note": "「Before swallowing」（上）與「While swallowing」（下）的上下分割對照畫面：右葉下極被吞嚥動作帶入視野，左葉仍不可見。這是全片唯一直接示範動態動作價值的一段"
+      },
+      {
+       "at": "00:43",
+       "note": "彩色都卜勒段（畫面上出現紅／藍血流與 ROI 框），之後回到 B 模式繼續掃描至片尾；用來確認結節分布與下緣位置的極限"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch12-u8",
+   "name": "不典型表現的惡性腫瘤與隱匿原發",
+   "type": "case",
+   "assessment": "依序跑四段「先答再看」，全部寫在紙上再對答案。(1) 打開核心教材，只跑 02:25–02:57，02:58 之後連「聽」都不要聽。這一段必須「只聽、不看」，而且必須在 02:57 準時停下來：畫面上，02:22 起 Case Presentation 投影片就一直停著，白紙黑字寫著 FNA 結果、RET germ-line mutation、possible differential diagnosis of a medullary thyroid cancer，以及現場投票的四個選項（a) Calcitonin）——投影片比你起播的 02:25 還早 3 秒上來，所以你一 seek 過去畫面就是答案；聲音上，講者是照著投影片唸的，02:58 說出「An FNA biopsy was performed and reported as malignant」、03:06 說出「a RET germline mutation」、03:17 說出「the possible diagnosis of medullary thyroid cancer」、03:28 說出「So we have four choices. A, calcitonin」——「要不要 FNA」「是不是髓質癌」「該加驗什麼」三個答案會直接從耳朵灌進來，所以遮畫面不夠，非停不可。請把播放器最小化或用手遮住畫面，只聽 02:25–02:57 這 32 秒的口述（口述的影像描述在 02:56 講完 microcalcifications 就結束）：男性、4 個月頸部腫塊與聲音沙啞、3.1×2.6×2.1 cm 單一實質結節、卵圓形 wider-than-tall、邊緣平滑、有微鈣化；年齡在原始素材裡自相矛盾——講者口述「50 歲」，同一時間的投影片印的是「A 52 year-old male patient」，兩個都照抄下來即可，不要挑一個當真。02:57 一到立刻暫停，寫下你的 ACR TI-RADS (2017) 總分與級別、K-TIRADS 2021 分級、要不要 FNA，以及在送 FNA 之前你還會多開哪一項血液檢查；答案寫完之後才可以回頭看畫面、也才可以聽 02:58 起的內容，依序用 02:58–03:27 的 FNA 結果／RET germ-line mutation／髓質癌鑑別、03:28 的現場投票、19:47–20:30 的 M-type / B-type 型態段落、31:24–32:45 的 calcitonin 與 FNA 侷限段落對答案。看到那張投影片時請一併更正它自身的錯誤：它把 FNA 結果標成 Malignant (Bethesda IV)，但 Bethesda IV 是 follicular neoplasm／suspicious for follicular neoplasm，Malignant 是 Bethesda VI，別把這個對應關係背錯。(2) 四支 Solymosi 病例每一支都先看完整段動態掃描。劇透警告：這四支影片自己的 0:00–0:02 是印著最終診斷的片頭卡（例如「Medullary cancers: Case 19」「Anaplastic cancers: Case 11」），而 YouTube 縮圖用的就是同一張片頭卡。站內播放器已經設定成跳過片頭卡（案例 19、案例 21、淋巴結 case 2 從 0:03 開始，案例 11 從 0:05 開始），所以請一律在站內播；若你自己到 YouTube 開啟，請先把進度條拉到該支的起點再開始看，並且在判讀寫完之前不要讀 YouTube 頁面上的原標題、瀏覽器分頁標題與說明欄——那裡直接寫著最終診斷。縮圖擋不掉：外連按鈕旁、YouTube 首頁與搜尋結果顯示的縮圖仍然是那張片頭卡，這一格只能靠你自己別去看。各寫一份 structured description（composition、echogenicity、shape、margin、echogenic foci）＋ ACR TI-RADS (2017) 與 EU-TIRADS 2017 兩套分級＋明確的 FNA yes/no ＋下一步（加驗血、針洗液、CT、轉介、手術時程擇一），再開該支 dose 欄裡的 thyrosite 案例頁看細胞學、腫瘤標記與手術病理。(3) 對每一支寫下你原本的前三名鑑別診斷，圈出「你差點選錯的那一個」，並註明是哪一個影像特徵把你帶偏。(4) 最後統計：五個病例（含教材開場那顆）裡，有幾個你光憑超音波就會漏掉正確的組織型別？把數字與逐案差異寫進 logbook 的「判讀落差」欄，並補一句話說明 calcitonin、針洗液 Tg／calcitonin、細胞學各補上了超音波做不到的哪一塊。本單元不接受任何「這個型態就是髓質癌／未分化癌」的結論——超音波只給 pattern 與風險層級，組織型別一律留給細胞學、病理與腫瘤標記。",
+   "tight": [
+    "把「卵圓形、wider-than-tall、邊緣平滑」當成可以往下降級的理由：核心教材開場那顆 3.1 cm 的髓質癌正好是這個外觀，所謂 B-type（benign-like）髓質癌在 ACR TI-RADS (2017) 常常只落在 TR4，靠形狀與邊緣降級就會直接漏掉",
+    "把髓質癌內的 amyloid 高回音沉積讀成乳突癌的微鈣化或粗鈣化：case 19 是「cotton-like 高回音團塊」與真微鈣化並存，影像與細胞學都會往 classic PTC 帶；case 21 的轉移結同時有高回音團塊、粗鈣化與微鈣化，看起來就是 PTC 的頸部轉移",
+    "把「快速增大」直接等同於未分化癌：髓質癌 case 17 也是 3 個月內長大且觸診石硬；反過來未分化癌 case 11 早期腺體基本回音結構仍正常、只有右葉多發低回音結節，細胞學甚至讀成 Hürthle cell tumor——快速增大是行動的觸發條件，不是型別的證據",
+    "甲狀腺掃起來乾淨就跳過頸部再掃一次、直接開 PET-CT：忽略了「重掃甲狀腺上極與被鎖骨遮住的下極 → 淋巴結 FNA 細胞學 → 針洗液（Tg 或 calcitonin）」這條又快又便宜、而且常常直接給答案的路徑",
+    "看到淋巴結內高回音團塊就反射寫「符合乳突癌轉移」：本單元兩支轉移結病例外觀高度重疊，一支病理是髓質癌、一支細胞學是來源不明的 anaplastic adenocarcinoma、原發在肺"
+   ],
+   "weak": [
+    "遇到「細胞學說惡性但型別講不清」或「臨床行為與細胞學明顯矛盾」時，能立刻講出下一個要驗的血是 serum calcitonin，並能說明 ATA 2015 不建議常規驗、ETA 建議所有結節常規驗，以及你自己的機構為什麼採哪一邊",
+    "報告時能把「超音波看到什麼」與「這是什麼組織型別」嚴格拆開：超音波只寫 pattern、分級與可疑度，組織型別交給細胞學／病理／腫瘤標記——這是本單元唯一不可退讓的原則",
+    "對每一顆可疑淋巴結都能當場決定要不要做針洗液、做哪一種（懷疑分化型甲狀腺癌用 Tg、懷疑髓質癌用 calcitonin），並知道甲狀腺全切後 washout Tg 的判讀邏輯",
+    "面對「甲狀腺看起來乾淨的頸部轉移結」，能背出固定的下一步順序：重掃甲狀腺（含上極、氣管後與鎖骨後死角）→ 淋巴結 FNA 細胞學 →針洗液 → 由細胞型別導向的原發搜尋（肺／腸胃／乳房／頭頸／黑色素瘤），而不是一律先送影像",
+    "能正確使用 rapidly enlarging 這個病史：它是「當天到隔天安排 FNA、同時做氣道與聲帶評估」的觸發條件，不是判定未分化癌的依據，也不能反過來排除髓質癌或淋巴瘤"
+   ],
+   "lesson": {
+    "title": "Medullary Thyroid Carcinoma with Dr. Sergiy Kushchayev",
+    "channel": "THANC Foundation",
+    "url": "https://www.youtube.com/watch?v=uIG4-K9gQ9s",
+    "duration": "1:00:58",
+    "why": "一開場就是本單元的核心陷阱：一顆卵圓形、wider-than-tall、邊緣平滑、只有微鈣化的 3.1 cm 結節，用 ACR TI-RADS 幾乎判不到最高級，答案卻是髓質癌；接著現場投票問「甲狀腺全切前你會多做哪一項」，把「何時該想到查 calcitonin」變成一個要當場作答的決策。後半 Rossleigh 的段落直接講明髓質癌在細胞學上常被讀成 atypical follicular pattern、多數是切下來才知道，並比較 ETA 常規驗 calcitonin 與 ATA 不常規驗的分歧；院內第二個病例是 57 歲女性、術前細胞學讀成乳突癌、術後 calcitonin 800 才揭曉是髓質癌，剛好補上「型別不能靠影像決定」這一課。使用限制先說清楚：這是一場投影片式的 journal club webinar，影像是投影片上的靜態超音波／CT／PET 圖，不是即時動態掃描；而且開場病例的投影片本身就把答案（FNA 結果、RET germ-line mutation、髓質癌的鑑別診斷、投票四選項）印在畫面上（02:22 起），講者又是照著投影片唸的（02:58 起口頭把同樣三個答案講完），所以「先答再看」在這一段只剩 02:25–02:57 這 32 秒可用：遮住畫面聽，02:57 一到就必須停。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（THANC Foundation），本站僅連結不重製",
+    "last_verified": "2026-08-03",
+    "note": "已用 oEmbed 驗證存在且可嵌入（200，標題與頻道相符）。影像確認：抽取 07:40–07:55 與 19:45–20:10 的畫面，投影片上有標註 Primary MTC ×2 與 Metastatic LN 的實際超音波影像，以及頸部／縱膈／肺／脊椎的 CT 影像，並非只有講者頭像或純文字投影片。誠實限制一：這是一場投影片式的 journal club webinar，影像是投影片上的靜態超音波／CT／PET 圖，不是即時動態掃描；動態掃描由本單元四支 drill 補上。誠實限制二（劇透，2026-08-03 依獨立複驗結果更正）：本欄先前寫「02:30 起投影片才停在畫面上」是錯的，複驗員逐格抽幀實測為 02:22（02:20、02:21 仍是 THANC 講者介紹封面，02:22 已切成 Case Presentation 投影片並持續到之後）——本次修訂直接照抄複驗值，未由本欄重新抽幀。02:22 比原本指定的起播點 02:25 還早 3 秒，代表學員一 seek 過去畫面就已經印著 An FNA biopsy was performed and reported as Malignant (Bethesda IV)、RET germ-line mutation、possible differential diagnosis of a medullary thyroid cancer 以及投票四選項 a) Calcitonin。更重要的是，本欄先前宣稱「改為遮住畫面只聽口述即可解決」也是錯的：複驗員實測自動字幕，講者是照投影片唸的，02:58「An FNA biopsy was performed and reported as malignant」、03:06「a RET germline mutation」、03:17「the possible diagnosis of medullary thyroid cancer」、03:28「So we have four choices. A, calcitonin」——劇透只是從視覺通道換到聽覺通道。因此暫停點已從 03:27 提前到 02:57（口述的影像描述在 02:56 講完 microcalcifications 就結束），assessment 改為「遮住畫面、只聽 02:25–02:57 這 32 秒，02:58 之後連聽都不聽」。誠實殘留風險：02:22–02:25 的畫面與 02:58 之後的音軌都必須靠學員自律避開，本站無法從技術上擋掉。誠實限制三（原始素材不一致）：講者口述「a 50-year old male patient」（字幕 02:28），同一時間的投影片寫「A 52 year-old male patient」，本單元不替素材選邊，兩個數字都照實標註。素材更正：該投影片把 Bethesda IV 寫成 Malignant 是錯的，Bethesda IV 為 follicular neoplasm／suspicious for follicular neoplasm，Malignant 為 Bethesda VI，引用這張投影片時必須一併更正。YouTube chapter 只有三個（34:07 Assessment of disease extent、38:21 Case: 57 year old female、44:01 References），其餘 timestamps 由自動字幕逐句核對後標出，未憑印象填寫。單元層級的劇透殘留風險（2026-08-03）：四支 Solymosi drill 的 0:00–0:02 片頭卡直接印出診斷，四支都已加 start（案例 19、案例 21、淋巴結 case 2 為 3 秒，案例 11 為 5 秒）讓站內播放跳過片頭卡，但 YouTube 縮圖就是同一張片頭卡，start 擋不掉；卡片外連處、YouTube 首頁與搜尋結果仍會露出診斷，本站無法從技術上遮蔽，只能在 dose 裡提醒。以上片頭卡內容與秒數均照抄獨立複驗員的抽幀實測結果，本欄未自行重新抽幀。",
+    "timestamps": [
+     {
+      "at": "02:22",
+      "note": "劇透警告：Case Presentation 投影片在這裡切上來後就一直停在畫面上（比下面的起播點還早 3 秒），直接印出 FNA 結果、RET germ-line mutation、髓質癌的鑑別診斷與投票四選項；答案沒寫完前不要看畫面。同一張投影片把 Bethesda IV 標成 Malignant 是錯的（IV 是 follicular neoplasm、VI 才是 Malignant）"
+     },
+     {
+      "at": "02:25",
+      "note": "病例開場（口述）——男性、頸部腫塊與聲音沙啞 4 個月。年齡原始素材不一致：口述 50 歲、投影片 52 歲。這一段請遮住畫面只聽聲音，播到 02:57 就必須暫停作答"
+     },
+     {
+      "at": "02:39",
+      "note": "第一眼影像描述（口述）：3.1×2.6×2.1 cm 單一實質結節、卵圓形、wider-than-tall、邊緣平滑、有微鈣化（口述描述在 02:56 講完 microcalcifications 就結束）"
+     },
+     {
+      "at": "02:58",
+      "note": "聽覺劇透起點：講者照著投影片唸出 FNA 報 malignant（02:58）、RET germline mutation（03:06）、possible diagnosis of medullary thyroid cancer（03:17）。答案沒寫完前連聽都不要聽，02:57 就要停"
+     },
+     {
+      "at": "03:28",
+      "note": "現場投票：全切前你會做 A calcitonin／B ultrasound／C CT neck／D FDG PET"
+     },
+     {
+      "at": "07:38",
+      "note": "超音波影像對照：兩張原發髓質癌與一張髓質癌轉移淋巴結"
+     },
+     {
+      "at": "19:47",
+      "note": "多數髓質癌為低回音併鈣化，好發於腺葉外側上三分之一（C 細胞密度最高處）"
+     },
+     {
+      "at": "20:03",
+      "note": "M-type（惡性樣）與 B-type（良性樣）兩種超音波型態——本單元最重要的一段"
+     },
+     {
+      "at": "21:46",
+      "note": "術後 calcitonin 54、超音波看到可疑淋巴結，接著比較 fluorodopa／FDG／gallium-DOTATATE 三種示蹤劑"
+     },
+     {
+      "at": "31:24",
+      "note": "不驗 calcitonin 就難以在術前診斷；ETA 建議所有結節常規驗、ATA 不建議常規驗"
+     },
+     {
+      "at": "32:05",
+      "note": "FNA 不做 calcitonin 免疫染色或針洗液時可能只報成 atypical follicular pattern，多數要靠手術病理才確診"
+     },
+     {
+      "at": "38:21",
+      "note": "院內病例：57 歲女性、術前細胞學讀成乳突癌，術後 calcitonin 800 才揭曉髓質癌"
+     },
+     {
+      "at": "41:07",
+      "note": "同一病例的顱骨病灶切下來是 intraosseous meningioma——功能性影像的偽陽性"
+     }
+    ]
+   },
+   "drills": [
+    {
+     "name": "案例 19：低回音＋微鈣化，第一眼像一顆典型乳突癌",
+     "en": "Medullary carcinoma - case 19",
+     "kind": "case",
+     "target": "32 歲女性，自己摸到結節 6 個月轉診。觸診左葉兩顆，下面那顆硬。功能狀態：euthyroid，TSH 0.87 mIU/L。影像：左葉兩顆病灶，上面那顆 echonormal；下面那顆低回音、含微鈣化，另外有一塊 cotton-like 的較大高回音團塊，形狀不規則、血流為 type 3 pattern。要學員看出：真正把這顆從 classic PTC 拉開的線索不是微鈣化本身，而是「cotton-like 高回音團塊（amyloid 沉積）＋不規則形狀＋type 3 血流」這個組合——但這個組合只提高懷疑度，仍不足以在報告上寫死型別。鑑別診斷至少三個：classic papillary carcinoma（最容易被選錯）、medullary carcinoma、退化性增生結節伴粗鈣化。下一步：FNA，而且不要等細胞學結果，同一次抽血就加驗 serum calcitonin。結局有手術病理對照：細胞學為 suspicion of medullary carcinoma，serum calcitonin 13.7 pM/L（正常 0–3.36），histopathology 為 medullary cancer。",
+     "dose": "先答再看：全長 28 秒，0:03 開始是動態掃描。劇透警告：本片 0:00–0:02 是印著最終診斷的片頭卡（大字寫「A patient with a multinodular goiter / Case histories / Medullary cancers: Case 19」），YouTube 縮圖用的就是同一張片頭卡。站內播放會自動從 0:03 開始、跳過片頭卡；若你在 YouTube 開啟，請自行把進度條拉到 0:03 之後再開始看。另外 YouTube 頁面上的原標題、瀏覽器分頁標題與說明欄也直接寫出最終診斷，判讀寫完前都不要讀。先看完整段，寫下兩顆病灶各自的 structured description（composition、echogenicity、shape、margin、echogenic foci）、ACR TI-RADS (2017) 與 EU-TIRADS 2017 兩套分級、要不要穿刺、以及除了送 FNA 之外你還會加驗哪一項血。0:25 之後才出現彩色都卜勒，請先把 B-mode 的判斷寫完再看血流，不要讓血流回頭改你的形態描述。全部寫完再開 http://thyrosite.com/thyroid/1197/index.htm 對細胞學、calcitonin 與手術病理，並逐項記錄差異來自哪一個影像特徵。",
+     "title": "Medullary carcinoma - case 19",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=q6MBfvNYAKI",
+     "duration": "0:28",
+     "start": 3,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站；內容本身無廠商贊助跡象",
+     "last_verified": "2026-08-03",
+     "note": "已用 oEmbed 驗證（200，標題與頻道相符）。已抽幀確認 0:03 起為 Philips L12-5 探頭的實際動態掃描、0:25 起為彩色都卜勒，畫面上只有機器參數與日期，無姓名、病歷號或生日。影片本身無 YouTube chapter，下列 timestamps 由 1 fps 抽幀逐格判讀後標出。劇透處理（2026-08-03，依獨立複驗結果加上，秒數照抄複驗員的抽幀實測值，本欄未重新抽幀）：複驗員抽 0:01 的幀，確認 0:00–0:02 是印著診斷的片頭卡「A patient with a multinodular goiter / Case histories / Medullary cancers: Case 19」，因此本資源已加 start: 3，站內播放器會用 ?start=3 從 0:03 開播、外連按鈕帶 &t=3s。誠實殘留風險：start 只擋得掉播放，擋不掉 YouTube 縮圖——複驗員 curl 下載 hqdefault 比對過，縮圖就是同一張片頭卡，所以卡片外連處、YouTube 首頁與搜尋結果仍會出現診斷，這一格本站無法從技術上遮蔽，只能在 dose 裡提醒學員別看。另 spoiler 已在本 drill 顯式寫成 true（build.py 對 type: case 本來就會 setdefault，這裡改為顯性宣告），前端因此不會在卡面顯示英文原標題。",
+     "timestamps": [
+      {
+       "at": "0:03",
+       "note": "第一眼影像——B-mode 動態掃描開始，先在這裡暫停自己判斷"
+      },
+      {
+       "at": "0:25",
+       "note": "彩色都卜勒：type 3 血流型態，寫完 B-mode 判斷後再看"
+      }
+     ]
+    },
+    {
+     "name": "案例 21：甲狀腺床是空的，一堆側頸轉移結卻長得像乳突癌轉移",
+     "en": "Medullary carcinoma - case 21",
+     "kind": "case",
+     "target": "57 歲男性，3 個月前自己摸到頸部腫塊變大而轉診。他曾因甲狀腺癌接受手術，但是來自中東的難民、沒有任何病歷，本人也不記得是哪一型；手術之外未接受其他治療。觸診：左頜下（left submandibular，level IB）多顆淋巴結。功能狀態：每日 75 微克 levothyroxine 下 TSH 11.9 mIU/L 的甲狀腺低下。影像：甲狀腺床內沒有殘餘腺體；左頦下（left submental，level IA，下巴正下方中線）有一顆腫塊——請注意原始案例頁在這裡是刻意分開寫的：觸診寫的是 multiple lymph nodes in the left submandibular area（左頜下、level IB），超音波看到的那顆腫塊寫的是 a mass in the left submental area（左頦下、level IA），兩者是不同分區，本單元正在訓練你寫 structured description 與定位轉移結，不可以混用；順帶留意這裡的一個張力：頦下區（level IA）在解剖上是中線區，原文卻仍標成 left，寫報告時該照抄原始描述還是改寫成「中線偏左」，本身就是一個值得討論的定位用語問題；另沿左側胸鎖乳突肌有 3 顆彼此相鄰的淋巴結——其中一顆同時有高回音團塊與粗鈣化，另一顆有微鈣化，全部都看不到 hilum，血流從無血流到血流增加都有。這是「頸部一堆轉移結、影像像乳突癌轉移、但原發型別完全不明」的原型病例。鑑別診斷至少三個：乳突癌淋巴結轉移（最容易被選錯，因為粗鈣化＋微鈣化＋高回音團塊就是它的招牌）、髓質癌淋巴結轉移、頭頸鱗狀細胞癌或其他部位原發的轉移。下一步：超音波導引下對頦下（submental）腫塊與其中兩顆側頸結做 FNA（三處都報 metastatic carcinoma，但細胞學本身不能定型別），同時抽 serum calcitonin。結局有手術病理對照：calcitonin 21.9 pM/L（正常 <3.36），接受包含中央區的改良式根治性頸部廓清，histopathology 為 11 顆淋巴結有髓質癌轉移。",
+     "dose": "先答再看：全長 48 秒，0:03 起是動態掃描，0:41 之後才是彩色都卜勒。劇透警告：本片 0:00–0:02 是印著最終診斷的片頭卡（大字寫「A patient with multiple metastatic lymph nodes / Medullary carcinomas: Case 21」），YouTube 縮圖用的就是同一張片頭卡。站內播放會自動從 0:03 開始、跳過片頭卡；若你在 YouTube 開啟，請自行把進度條拉到 0:03 之後再開始看。另外 YouTube 頁面上的原標題、瀏覽器分頁標題與說明欄也直接寫出最終診斷，判讀寫完前都不要讀。寫下四件事：(1) 這些淋巴結的完整描述（short axis、S/L 比、有無 hilum、回音、內部高回音團塊與鈣化型態、血流分布），並替每一顆標上頸部分區——特別留意左頦下（left submental）是 level IA、左頜下（left submandibular）是 level IB，本案例兩個詞都出現過但指的是不同位置，寫錯就等於定位錯；(2) 你判斷原發最可能是什麼，排出前三名並註明各自的理由；(3) 你會不會做針洗液，做哪一種（Tg 還是 calcitonin），為什麼；(4) 除了 FNA 之外你會加驗哪一項血液檢查。寫完再開 http://thyrosite.com/thyroid/529/index.php（原文寫的是 multiple lymph nodes in the left submandibular area 與 a mass in the left submental area，側別是左）對細胞學、calcitonin 與 11 顆淋巴結的手術病理，特別檢查你有沒有因為粗鈣化與高回音團塊就把答案寫死在乳突癌。",
+     "title": "Medullary carcinoma - case 21",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=4iTK5g6tXFk",
+     "duration": "0:48",
+     "start": 3,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "note": "已用 oEmbed 驗證（200，標題與頻道相符）。已抽幀確認 0:03 起為實際動態掃描、0:41 起有彩色都卜勒取樣框，畫面只有機器參數，無可識別患者資訊。thyrosite 案例頁副檔名是 .php（不是其他案例的 .htm），已用 curl 實測回 200。解剖分區更正（2026-08-03，依 thyrosite 案例頁原文重新核對）：原文觸診寫的是 submandibular area（頜下，level IB），但超音波所見那顆腫塊寫的是 submental area（頦下，level IA，下巴正下方中線）。本欄先前把兩處都譯成「左頜下」是錯的，已分別改為頜下（觸診）與頦下（影像）。側別補回（2026-08-03，依獨立複驗指出的原文缺漏）：上一版把兩處的「左」都漏掉了，原文是 multiple lymph nodes in the left submandibular area 與 a mass in the left submental area，已在 target 與 dose 補回「左」，並在 target 點出「level IA 是中線區、原文仍寫 left」這個定位用語上的張力。劇透處理（2026-08-03，依獨立複驗結果加上，秒數照抄複驗員的抽幀實測值，本欄未重新抽幀）：複驗員抽 0:01 的幀，確認 0:00–0:02 是印著診斷的片頭卡「A patient with multiple metastatic lymph nodes / Medullary carcinomas: Case 21」，因此已加 start: 3，站內播放器用 ?start=3 從 0:03 開播、外連按鈕帶 &t=3s。誠實殘留風險：start 擋得掉播放，擋不掉 YouTube 縮圖——複驗員 curl 下載 hqdefault 比對過，縮圖就是同一張片頭卡，卡片外連處與 YouTube 頁面仍會出現診斷，本站無法從技術上遮蔽。YouTube 原標題同樣寫出診斷，但站上卡片不會顯示英文原標題（本 drill 已顯式寫 spoiler: true，前端 render.js 據此不印英文名、tooltip 也換成 spoilerHint），先前 dose 裡「本站卡片上的英文名同樣是原標題」的說法是錯的，已刪除、改成只警告 YouTube 頁面本身。影片無 YouTube chapter，timestamps 由 1 fps 抽幀判讀後標出。",
+     "timestamps": [
+      {
+       "at": "0:03",
+       "note": "第一眼影像——先確認甲狀腺床有沒有殘餘腺體，再開始描述淋巴結"
+      },
+      {
+       "at": "0:41",
+       "note": "彩色都卜勒：同一顆淋巴結的血流分布，注意有沒有 hilar 血流"
+      }
+     ]
+    },
+    {
+     "name": "案例 11：5 週快速長大，但腺體回音結構還是正常的",
+     "en": "Anaplastic thyroid carcinoma - case 11",
+     "kind": "case",
+     "target": "61 歲女性，右葉腫塊在 5 週內快速長大而轉診。觸診：右葉中度腫大、其中一顆非常硬且不能自由移動，兩葉都摸得到多顆結節。功能狀態：euthyroid，TSH 0.48 mIU/L。影像：甲狀腺的基本回音結構仍然正常，右葉有多顆低回音結節——沒有教科書上未分化癌那種佔滿整葉、大片壞死、明顯跨包膜侵犯的樣子，這正是本病例的價值：未分化癌的早期影像可以很不起眼。細胞學更誤導：背景無膠質、濾泡細胞多呈 oxyphilic metaplasia、部分細胞有核內包涵體、僅中度 anisonucleosis、完全沒有 pleomorphic 細胞，報成「oxyphilic tumor，侵襲性風險高於平均」，型態幾乎等同 Hürthle cell tumor；作者自己在 Comment 註明這個細胞學與臨床表現嚴重矛盾。鑑別診斷至少三個：Hürthle cell（oncocytic）腫瘤（最容易被選錯，因為細胞學就長這樣）、未分化癌、甲狀腺淋巴瘤或低分化癌。下一步：以臨床病程覆蓋細胞學的樂觀讀法，走 combined clinical-cytological diagnosis，安排立即手術與氣道／聲帶評估，而不是排三個月後追蹤。結局有手術病理對照：histopathology 為 anaplastic cancer。",
+     "dose": "先答再看：全長 1 分鐘，0:05 起是動態掃描（0:32 附近出現一次彩色取樣框）。劇透警告：本片 0:00–0:02 是印著最終診斷的片頭卡（大字寫「Anaplastic cancer / Anaplastic cancers: Case 11」），YouTube 縮圖用的就是同一張片頭卡。站內播放會自動從 0:05 開始、跳過片頭卡；若你在 YouTube 開啟，請自行把進度條拉到 0:05 之後再開始看。另外 YouTube 頁面上的原標題、瀏覽器分頁標題與說明欄也直接寫出最終診斷，判讀寫完前都不要讀。先看完整段，寫下：structured description、ACR TI-RADS (2017) 分級、你判斷這是良性還是惡性、以及你會給的處理時程——是幾天內處理、幾週內處理、還是三到六個月後追蹤。特別把你的時程決定寫成一個明確的日期區間，這一題比分級更能看出你有沒有把「5 週」讀進去。寫完再開 http://thyrosite.com/thyroid/908/index.htm，先看細胞學報告（會讓你想改答案），最後才看 Comment 與 histopathology。",
+     "title": "Anaplastic thyroid carcinoma - case 11",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=vBQ_siW61Do",
+     "duration": "1:00",
+     "start": 5,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "note": "已用 oEmbed 驗證（200，標題與頻道相符）。已抽幀確認 0:05 起為實際動態掃描（較舊機型，畫面右上僅有 Be Is 與 2006Jun01 的日期戳，無姓名或病歷號），0:32 附近有一次彩色取樣框。影片無 YouTube chapter，timestamps 由 1 fps 抽幀判讀後標出。劇透處理（2026-08-03，依獨立複驗結果加上，秒數照抄複驗員的抽幀實測值，本欄未重新抽幀）：複驗員抽 0:01 的幀，確認 0:00–0:02 是印著診斷的片頭卡「Anaplastic cancer / Anaplastic cancers: Case 11」，本支的乾淨起點是 0:05，因此已加 start: 5，站內播放器用 ?start=5 從 0:05 開播、外連按鈕帶 &t=5s。誠實殘留風險：start 擋得掉播放，擋不掉 YouTube 縮圖——複驗員 curl 下載 hqdefault 比對過，縮圖就是同一張片頭卡，卡片外連處與 YouTube 頁面仍會出現診斷，本站無法從技術上遮蔽。本 drill 已顯式寫 spoiler: true，站上卡片不顯示英文原標題（先前 dose 稱「本站卡片上的英文名同樣是原標題」是錯的，已刪除）。此病例的教學重點是「細胞學型別讀錯、超音波也不典型」，因此更要守住課程原則：超音波不能單獨決定組織型別。",
+     "timestamps": [
+      {
+       "at": "0:05",
+       "note": "第一眼影像——注意腺體背景回音是正常的，先在這裡暫停自己判斷"
+      },
+      {
+       "at": "0:32",
+       "note": "彩色取樣框出現，觀察結節內部血流"
+      }
+     ]
+    },
+    {
+     "name": "頸部淋巴結 case 2：甲狀腺完全正常，鎖骨上一堆帶高回音團塊的轉移結",
+     "en": "Metastasis of an anaplastic adenocarcinoma of the lung. Lymph nodes in the neck - case 2",
+     "kind": "case",
+     "target": "58 歲男性，2 個月前發現多顆頸部淋巴結腫大，正在尋找原發灶。觸診：甲狀腺沒有異常；兩側鎖骨上多顆固定、硬的淋巴結。影像：甲狀腺完全正常（intact）；兩側鎖骨上多顆淋巴結，形狀與邊界完全不規則，內部含多處界線清楚的高回音區——這個外觀最常被直覺讀成乳突癌的頸部轉移，但這位病人的甲狀腺沒有任何病灶。鑑別診斷至少三個：乳突癌淋巴結轉移（最容易被選錯）、淋巴瘤、非甲狀腺原發（肺／腸胃／乳房／黑色素瘤）的轉移。下一步：作者明確採取「先做淋巴結 FNA 細胞學、不要先開 PET-CT」的策略，理由寫在案例頁的 Comment：在該國一次抽吸細胞學的成本只有 PET-CT 的 6%，而甲狀腺癌、黑色素瘤、大腸癌、小細胞肺癌、乳癌在轉移灶上往往就有相當特徵性的細胞學型態，而且細胞學幾乎都能先把 carcinoma 與 lymphoma 分開。結局：細胞學為 anaplastic adenocarcinoma of unknown origin，進一步檢查在右下肺葉發現腫塊，經皮肺切片證實為肺的 anaplastic adenocarcinoma。原發灶有經皮切片病理，但頸部淋巴結本身無手術病理對照。",
+     "dose": "先答再看：全長 1 分 3 秒，0:03 起是動態掃描。劇透警告：本片 0:00–0:02 是印著原發灶與最終診斷的片頭卡（大字寫「Metastasis of an anaplastic adenocarcinoma of the lung / Lymph nodes in the neck: Case 2」），YouTube 縮圖用的就是同一張片頭卡。站內播放會自動從 0:03 開始、跳過片頭卡；若你在 YouTube 開啟，請自行把進度條拉到 0:03 之後再開始看。另外 YouTube 頁面上的原標題、瀏覽器分頁標題與說明欄也直接寫出原發灶與最終診斷，判讀寫完前都不要讀。先看完整段，寫下三件事：(1) 這些淋巴結的完整描述與你判斷的惡性機率；(2) 你認為原發最可能在哪，排出前三名；(3) 你接下來實際會開哪幾張單、依什麼順序——甲狀腺與側頸再掃一次（含上極與鎖骨後死角）？淋巴結 FNA？針洗液 Tg？PET-CT？把順序與每一步的理由都寫下來，再開 http://thyrosite.com/thyroid/154/index.htm 對答案，重點讀 Comment 那段「為什麼先做細胞學而不是先做 PET-CT」，並檢討你的順序和它差在哪裡。",
+     "title": "Metastasis of an anaplastic adenocarcinoma of the lung. Lymph nodes in the neck - case 2",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=O1GluvPN79I",
+     "duration": "1:03",
+     "start": 3,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "講者經營付費的 Papillon Course 與 thyrosite.com 教學網站，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "note": "已用 oEmbed 驗證（200，標題與頻道相符）。已抽幀確認 0:03 起為 Philips L12-5 的實際動態掃描，全片為鎖骨上淋巴結的灰階掃描，畫面只有機器參數，無可識別患者資訊。誠實標註：頸部淋巴結只有細胞學、無手術病理對照（原發肺病灶有經皮切片病理），依 CASE-FORMAT 規則 tier 最高只給 B，且本病例不得用來當作任何影像特徵的診斷證據。影片無 YouTube chapter，timestamps 由 1 fps 抽幀判讀後標出。劇透處理（2026-08-03，依獨立複驗結果加上，秒數照抄複驗員的抽幀實測值，本欄未重新抽幀）：複驗員抽 0:01 的幀，確認 0:00–0:02 是印著診斷的片頭卡「Metastasis of an anaplastic adenocarcinoma of the lung / Lymph nodes in the neck: Case 2」，因此已加 start: 3，站內播放器用 ?start=3 從 0:03 開播、外連按鈕帶 &t=3s。誠實殘留風險：start 擋得掉播放，擋不掉 YouTube 縮圖——複驗員 curl 下載 hqdefault 比對過，縮圖就是同一張片頭卡，卡片外連處與 YouTube 頁面仍會出現診斷（本支的片頭卡連原發在肺都寫出來了），本站無法從技術上遮蔽。本 drill 已顯式寫 spoiler: true，站上卡片不顯示英文原標題（先前 dose 稱「本站卡片上的英文名同樣是原標題」是錯的，已刪除）。",
+     "timestamps": [
+      {
+       "at": "0:03",
+       "note": "第一眼影像——先確認甲狀腺本身是正常的，再開始描述鎖骨上淋巴結"
+      },
+      {
+       "at": "0:30",
+       "note": "多顆邊界不規則、內含界線清楚高回音區的淋巴結，注意這個外觀和乳突癌轉移的重疊程度"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch12-u9",
+   "name": "急性與感染性病變：出血性囊腫、膿瘍與急速增大",
+   "type": "case",
+   "assessment": "先做盲判再對答案。重要前提：本單元四支病例影片的片頭卡（以及 YouTube 頁面本身的標題）都直接寫出最終診斷。站內播放器已對這四支設定 start，按下播放就自動從片頭卡之後開始，站內卡片也不顯示英文原標題；但 start 擋不掉 YouTube 縮圖——那張縮圖就是片頭卡，只要你在 YouTube 開啟、或看到任何帶縮圖的預覽，診斷還是會先跳出來。所以請先讀完 target 的臨床背景再點播，並盡量在站內播放。第一步，打開核心教材的 13:05「Echogenic figures in cystic lesions」，每出現一張囊性病灶就暫停，先不聽旁白，寫下 composition（cystic／mixed cystic-and-solid／solid）、你認定的「實質成分」在畫面哪個位置、echogenicity、shape、margin、echogenic foci，並同時給出 ACR TI-RADS (2017) 與 K-TIRADS 2021 兩套分數與各自明確的 FNA yes/no 與 size cutoff；放完該段再對答案，記錄你有幾次把凝血塊、塌陷的纖維分隔或 colloid 的 comet-tail 當成 solid component 或 punctate echogenic foci 而多給了分。第二步，對四支病例影片各做一次同樣的流程：只讀 target 開頭的臨床背景（年齡、性別、TSH、疼痛與發燒天數、病程長短）與第一眼影像截點，先寫下三個鑑別診斷的排序、當天要不要穿刺或引流、要不要開抗生素、要不要當作急診氣道問題處理，寫完才去讀 thyrosite 完整病史或影片後半段的解答。第三步，把每一次落差寫進 logbook 的「判讀落差」欄，並註明差異來自哪一個影像特徵（囊內回音、分隔厚度、有無血流、有無壞死區、周圍脂肪回音）或哪一個臨床變項（疼痛、發燒、CRP、白血球、病程天數）。最後回答一題：如果把「五週內長大」這個病史從未分化癌那例拿掉，你的鑑別排序會不會改變？",
+   "tight": [
+    "出血性囊腫內的凝血塊、纖維蛋白絲與塌陷的分隔在灰階上是低回音到等回音的團塊，被當成 solid component，ACR TI-RADS (2017) 的 composition 就從 0 分（cystic）跳到 1 分（mixed）甚至更高，整個結節被過度分級並多做一次不必要的 FNA；真正的分辨點是凝血塊沒有血流、會隨體位或加壓移動、且不與囊壁相連",
+    "把「會痛」直接當成良性的證據：出血性囊腫、亞急性肉芽腫性甲狀腺炎、急性化膿性甲狀腺炎都會痛，但快速長大的 anaplastic carcinoma 與部分原發性甲狀腺淋巴瘤同樣會痛並壓迫氣道，疼痛不能用來排除惡性",
+    "把「上次是良性」當成這次的答案：已知多年、甚至細胞學已讀過 benign colloid goiter 的結節，仍可能在數天內轉成膿瘍（thyrosite case 386 正是這個劇本），只看舊報告就只安排追蹤會延誤引流",
+    "膿瘍腔內的碎屑與產氣造成的高回音點被讀成 microcalcification；反過來，膿瘍厚而不規則的壁與周圍發炎充血被讀成 extrathyroidal extension，兩個方向的誤讀都會把感染送去癌症流程",
+    "只掃甲狀腺本身：急性化膿性甲狀腺炎好發於左側、以兒童為主（Case 34 投影片引用的數字為 95% 左側），病因多為第三／第四鰓裂（梨狀窩）廔管；不往上掃梨狀窩與周圍軟組織就找不到源頭，引流後會反覆復發"
+   ],
+   "weak": [
+    "能用「有無血流、會不會隨體位移動、與囊壁相不相連、有無後方增強」四個問題，在 30 秒內把囊內凝血塊與真正的實質成分分開，並據此給出正確的 ACR TI-RADS (2017) composition 分數",
+    "面對「數週內長大的頸部腫塊」，能同時把出血性囊腫、膿瘍、anaplastic carcinoma、原發性甲狀腺淋巴瘤四者排出順序，並說出哪一個影像特徵（囊內無血流的凝血塊、產氣與液平、結節內壞死高回音區、周圍脂肪回音增強、極度低回音的瀰漫浸潤）會把順序整個翻掉",
+    "把 CRP、白血球、發燒與疼痛的天數、病程長短與 TSH 當成影像判讀的一部分，寫進報告的 impression，而不是丟在臨床資訊欄當附註",
+    "知道超音波導引抽吸／引流什麼時候同時是診斷與治療（膿瘍、症狀性出血性囊腫），什麼時候是錯的選擇（懷疑 anaplastic carcinoma 時應改做 core needle biopsy、抽血 calcitonin 並先評估氣道）",
+    "抽吸或引流後一定安排追蹤影像，並能解釋再積液、殘餘實質成分、囊壁增厚各代表什麼——立刻再充填代表病灶不是單純囊腫，需要考慮手術"
+   ],
+   "lesson": {
+    "title": "Composition of the thyroid nodules - videolecture",
+    "channel": "Tamas Solymosi",
+    "url": "https://www.youtube.com/watch?v=3Y-M87cfRbU",
+    "duration": "30:55",
+    "why": "本單元最大的失分來自把囊內回音與分隔當成實質成分而過度分級。這支影片用 13:05–22:11 整整九分鐘只講囊性病灶裡的 echogenic figures（凝血塊、colloid、分隔、來源不明的高回音點），接著直接處理 TIRADS 對囊性病灶的方法學問題（22:11 起）與囊性變如何改變處置（26:27 起），最後補上囊性變在常見甲狀腺癌中的樣貌；填的正是 fellow 在急性出血性囊腫面前把 composition 分數打錯、進而把 TI-RADS 級別整個推高的落差。格式要先講清楚：這是一支深藍底投影片式 videolecture（PowerPoint 講座），內容以文字投影片為主幹（Technical conditions、Cystic lesions in TIRADS 表格、Methodological concern about TIRADS、Effects of cystic degeneration 條列、Kim et al. AJNR 2010 表格），超音波是以多格靜態灰階／彩色都卜勒影像貼在投影片上呈現，只偶爾出現全螢幕動態掃描（如 Left lobe, longitudinal scan），並非實機連續掃描錄影。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+    "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+    "last_verified": "2026-08-03",
+    "timestamps": [
+     {
+      "at": "2:45",
+      "note": "Categorization of nodules according to their composition：composition 的定義與分類"
+     },
+     {
+      "at": "8:35",
+      "note": "Theory vs. reality：教科書分類與實際影像的落差——先在這裡暫停自己判斷"
+     },
+     {
+      "at": "13:05",
+      "note": "Echogenic figures in cystic lesions：囊內高回音構造的來源與辨識，本單元核心段落（章節開頭是深藍底純文字投影片「Back wall cystic figures」的 Essence／Presentation／Issues 條列，該頁沒有超音波影像；後續才出現貼在投影片上的靜態影像）"
+     },
+     {
+      "at": "22:11",
+      "note": "Cystic lesions in TIRADS：各 TIRADS 系統怎麼處理囊性病灶（表格投影片）"
+     },
+     {
+      "at": "23:30",
+      "note": "Methodological concern about TIRADS：分類方法本身的問題"
+     },
+     {
+      "at": "24:02",
+      "note": "Is there hyperechoic spot of uncertain origin present?：來源不明的高回音點該不該當成 punctate echogenic foci"
+     },
+     {
+      "at": "26:27",
+      "note": "Effects of cystic degeneration on the management：囊性變如何改變分類與後續診斷步驟"
+     },
+     {
+      "at": "29:18",
+      "note": "Cystic degeneration in the most frequent thyroid carcinomas：惡性結節也會囊性變"
+     }
+    ],
+    "note": "章節時間軸由 yt-dlp 讀出影片自帶 chapters（785s=13:05、1331s=22:11、1442s=24:02、1587s=26:27、1758s=29:18），未自行推測。格式已用 ffmpeg 抽格核對：畫面為深藍底 PowerPoint 投影片，超音波為貼在投影片上的多格靜態影像（部分投影片為純文字或表格），僅少數段落是全螢幕動態掃描；先前描述的「全螢幕實機超音波影像、非投影片」為錯誤宣稱，已更正。13:05 章節開頭的畫面描述改用複驗員實抽 785s+2s／+10s 的結果（深藍底純文字投影片「Back wall cystic figures」），先前寫的「並列 comet-tail artifacts 說明與 Case 284／624 靜態影像」與該頁不符，已刪除；此條為照抄複驗值，非本次自行抽格。因為超音波多為靜態影像，做結構化描述練習時請以單張影像判讀為準，不要期待可以自行操作切面。"
+   },
+   "drills": [
+    {
+     "name": "頸部拳擊外傷後數小時內長大的右葉腫塊（33 歲男性）",
+     "en": "A traumatic thyroid cyst. Other edifying cases - case 22",
+     "kind": "case",
+     "target": "33 歲男性，拳擊時頸部外傷，外傷後數小時內就發現右葉腫塊並持續變大，5 天後轉診；觸診為大而有彈性的結節，TSH 2.57 mIU/L（thyrosite 原文標記為 subclinical hyperthyroidism，與所列 TSH 數值不一致，請以數值為準）。影像關鍵：兩葉回音正常，但一個多房囊性結節幾乎佔滿整個右葉，分隔的纖維束呈斷裂狀，病灶有 halo sign 與結節周邊血流——這些「分隔＋斷裂的纖維束」正是最容易被讀成 solid component 的東西，也是本單元過度分級的原型。鑑別至少三個：外傷／自發性出血性囊腫、囊性變的良性濾泡性病灶（cystadenoma）、囊性變的 papillary carcinoma，另加外傷後的急性化膿性甲狀腺炎；最容易選錯的是 papillary carcinoma，因為多房、分隔、內部回音看起來「不單純」。下一步：超音波導引抽吸，兼具診斷與減壓。結果：抽出 23 mL 血性液體，但抽吸當下囊腔立刻再充填、大小不變，因此建議手術；病理為 benign cystadenoma（有病理對照）。劇透提醒：影片 0:00–約 0:05 是標題卡，直接寫著「A patient with a traumatic thyroid cyst」，YouTube 頁面本身的標題也一樣。站內播放已設定從 0:06 起播、自動跳過片頭卡，站內卡片也不顯示英文原標題；但 YouTube 縮圖用的就是這張片頭卡，start 擋不掉，在 YouTube 開啟或看到縮圖預覽時診斷仍會先出現。請先讀完上面的臨床背景再點播。",
+     "dose": "站內播放會自動從 0:06 起播、跳過片頭卡；若你在 YouTube 開啟，請自行把進度條拉到 0:06（0:00–約 0:05 是寫出「traumatic thyroid cyst」的標題卡）。先只看 0:06–0:29 的第一眼灰階掃描就暫停，寫下 composition、ACR TI-RADS (2017) 分數、K-TIRADS 2021 分級與是否穿刺的決定，特別標出你把哪幾條線算成了 solid component；再看完整支（0:30–0:38 是全片唯一的彩色都卜勒段，0:56–1:03 有作者的紅色雙箭頭標註，可用來對照你剛才圈的位置）；最後才打開 http://www.thyrosite.com/thyroid/353/index.htm 的完整病史對答案。額外回答：抽完立刻再充填這件事，會不會改變你原本「單純出血性囊腫、追蹤即可」的結論？",
+     "title": "A traumatic thyroid cyst. Other edifying cases - case 22",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=P1xz9WD-xIs",
+     "duration": "2:42",
+     "start": 6,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "標題卡（0:00–約 0:05，wipe 轉場，5.5 秒仍可讀到殘留文字）：直接寫出「A patient with a traumatic thyroid cyst」，是劇透；站內播放已用 start=6 自動跳過"
+      },
+      {
+       "at": "0:06",
+       "note": "第一眼影像（機器畫面 2010Aug25 08:56 起）：右葉多房囊性病灶——在這裡暫停自己判斷，寫下 composition 與分級"
+      },
+      {
+       "at": "0:30",
+       "note": "彩色都卜勒段（0:30–0:38）：ROI 涵蓋囊腔，囊內無血流、僅結節周邊有血流"
+      },
+      {
+       "at": "0:56",
+       "note": "紅色雙箭頭標註囊腔內的分隔與斷裂纖維束（0:56–1:03，以 ffmpeg 逐秒抽格確認；原標的 1:21 為錯誤時間，該處已無箭頭）"
+      }
+     ],
+     "note": "說明欄僅有一行 thyrosite 連結、無自帶 chapters。畫面為全螢幕實機動態掃描錄影（機器畫面含日期時間 2010Aug25 08:56–09:00 的同一次檢查），紅色雙箭頭標註出現在 0:56–1:03。彩色都卜勒時間戳採用複驗員的實測值（彩色像素計數：僅 0:30–0:38 有彩色，t=32 影格左上為 Color 1244Hz＋色標尺＋綠色 ROI；56–62 秒偵測到的彩色是紅色標註箭頭，不是都卜勒），本次為照抄複驗值、未自行重抽；先前 JSON 的「0:52 彩色都卜勒」與自述的「ffmpeg t=52 確認為 Color 模式」與實測相反，已刪除。start=6 是本次自行以 ffmpeg 抽 4.5/5.0/5.5/6.0 秒實測所得：5.5 秒畫面左半仍有標題卡殘留文字，6.0 秒已全為實機影像。殘留風險：start 只影響播放起點，YouTube 縮圖用的仍是片頭卡，站外看到縮圖就會看到診斷。"
+    },
+    {
+     "name": "已知七年、細胞學讀過良性的左葉結節，三週內再度增大並伴疼痛發燒（60 歲女性）",
+     "en": "Rare forms of thyroiditis - case 2: Acute thyroiditis",
+     "kind": "case",
+     "target": "60 歲女性，左葉結節已知 7 年，因「喉嚨有異物感」回診做追蹤。第一次檢查：TSH 2.95 mIU/L，右葉正常，左葉一個低回音結節，體積較前次增加 38%，細胞學為 benign colloid goiter。三週後她因左葉疼痛與發燒回診，症狀已 3 天，家醫已給抗生素但無改善；granulocytosis 11 G/L、CRP 23.8 mg/L。第二次影像的關鍵：甲狀腺其餘部分不變，只有那顆結節再度增大並轉為囊性，內含多顆高回音顆粒（對應蛋白質豐富的膿性內容物），血流為 type 1 型態——注意這些高回音顆粒既不是 microcalcification，也不是可穿刺的實質成分。鑑別至少三個：出血性囊腫、急性化膿性甲狀腺炎／膿瘍、囊性變的惡性結節；最容易選錯的是出血性囊腫，因為「已知良性結節、突然長大、內部出現回音」完全吻合，而且前一次細胞學已經給了良性的安全感。下一步：超音波導引抽吸兼引流，並依細胞學與培養調整抗生素。結果：抽出 5 mL 膿液，細胞學為 acute inflammation，據此更換抗生素（有細胞學對照，無手術病理）。影片範圍要先說清楚：這支 1:10 的影片**只有三週後那一次檢查**（機器畫面日期時間全部是 2012Sep28 09:56–10:01 的同一次連續掃描），沒有第一次檢查的畫面；第一次檢查的影像請到 thyrosite case 386 頁面看第 1 列靜態影像。另外，0:00–約 0:05 的標題卡直接寫著「Acute purulent inflammation in a nodule」，等於把答案印在片頭；站內播放已設定從 0:06 起播自動跳過，站內卡片也不顯示英文原標題，但 YouTube 縮圖就是這張片頭卡，start 擋不掉。",
+     "dose": "先做兩件事再按播放：（1）只讀上面臨床背景的「第一次檢查」段落，加上 thyrosite case 386 頁面第 1 列的靜態影像，寫下你對第一次檢查的 structured description、ACR TI-RADS (2017) 與 K-TIRADS 2021 分級、是否穿刺；（2）確認起播點——站內播放會自動從 0:06 開始跳過片頭卡；若在 YouTube 開啟，請自行把進度條拉到 0:06（0:00–約 0:05 是寫出「Acute purulent inflammation in a nodule」的標題卡，看了就沒有 drill 了）。接著看 0:06 到結尾（整支都是三週後的第二次檢查），重新分級，並在打開解答前先寫下三個決定：今天要不要穿刺／引流、要不要換抗生素、要不要當天安排住院。最後讀 http://www.thyrosite.com/thyroid/386/index.htm 對答案，並回答：如果沒有 CRP 與白血球，你單憑影像分得出膿瘍與出血嗎？",
+     "title": "Rare forms of thyroiditis - case 2: Acute thyroiditis",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=AzhOf-Xh8RQ",
+     "duration": "1:10",
+     "start": 6,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "標題卡（0:00–約 0:05，wipe 轉場）：直接寫出「Acute purulent inflammation in a nodule」，是完整劇透；站內播放已用 start=6 自動跳過"
+      },
+      {
+       "at": "0:06",
+       "note": "第一眼影像，也是本片唯一的檢查——三週後的第二次檢查（機器畫面 2012Sep28 09:56 起）：先在這裡暫停自己判斷"
+      },
+      {
+       "at": "0:20",
+       "note": "彩色都卜勒段：ROI 涵蓋整個病灶，囊性區內無血流（type 1 型態）"
+      },
+      {
+       "at": "0:35",
+       "note": "續掃橫切／縱切，可清楚看到囊腔內多顆高回音顆粒（膿性內容物），非 microcalcification"
+      }
+     ],
+     "note": "說明欄僅有一行 thyrosite 連結、無自帶 chapters。已用 ffmpeg 抽格核對（0/8/16/24/32/40/48/56/64 秒＋0:04–0:08 逐秒）：0:00–0:05 為標題卡，0:06 起全部是 2012Sep28 09:56→10:01 的同一次連續掃描，全螢幕實機動態掃描錄影。先前 JSON 宣稱的「0:00 第一次檢查、0:35 起才是第二次檢查」兩段式結構在影片裡不存在，已刪除；第一次檢查僅存在於 thyrosite 386 頁面的靜態影像。start=6 為本次自行以 ffmpeg 抽 4.5/5.0/5.5/6.0 秒實測：5.5 秒左下僅剩蝴蝶 logo、已無診斷文字，6.0 秒完全乾淨，取 6 秒保守值。殘留風險：start 擋不掉 YouTube 縮圖，縮圖用的就是這張寫著診斷的片頭卡。"
+    },
+    {
+     "name": "兒童急性前頸腫脹、發紅發熱與壓痛：左葉不均質腫大合併腺體周圍充血（投影片式病例報告）",
+     "en": "Ultrasound Case 34 - Acute Suppurative Thyroiditis",
+     "kind": "case",
+     "target": "以急性前頸腫脹、局部發紅發熱與壓痛表現的兒童病例（投影片 C/P 頁寫：Child presenting with neck pain, left neck swelling with overlying hotness, tenderness and fever）。影像關鍵：左葉腫大、質地不均、界線不清；腺體周圍軟組織回音增強、與左葉之間的脂肪層界線消失；灰階加上彩色都卜勒可見左葉與腺體周圍充血。真正要學的是時間軸——早期只有非特異的界線不清低回音區，之後才出現真正的膿瘍腔，再之後才是腺體周圍發炎與 echogenic fat；投影片並引用流行病學數字「Typically left-sided (95%)」「Most patients are children」（此為原投影片說法，未附引用文獻，請當成量級印象而非可直接引用的數據）。影片後段用 CECT 與鰓裂囊腫解剖圖處理最關鍵的鑑別與病因：感染的第四鰓裂囊腫（梨狀窩廔管）。鑑別至少三個：急性化膿性甲狀腺炎／膿瘍、亞急性肉芽腫性（de Quervain）甲狀腺炎、出血性囊腫，另加快速長大的 anaplastic carcinoma；最容易選錯的是亞急性甲狀腺炎，因為兩者都痛、都低回音、都界線不清，差別在發燒型態、CRP／白血球與是否有膿腔。下一步：超音波導引抽吸送培養＋引流，並安排咽部造影或 CT 尋找梨狀窩廔管，否則引流後會反覆復發。本病例未提供手術病理與長期追蹤，無病理對照。使用前必須知道兩件事：（1）**這支的角色是「對照用教材」而非盲判素材**——YouTube 頁面本身的標題就是「Ultrasound Case 34 - Acute Suppurative Thyroiditis」，0:00–約 0:03 的片頭投影片也直接寫出「Case 34 – Acute suppurative thyroiditis」，物理上無法做到完全不知情的盲判；站內播放已設定 start=4 自動從 C/P 頁開始、站內卡片也不顯示英文原標題，但 YouTube 縮圖用的就是那張片頭投影片，start 擋不掉。能做的是只看 C/P 頁上的影像做結構化描述，再用後面的投影片逐條對照。（2）**旁白為阿拉伯語（埃及口語，YouTube 自動字幕原始語言為 ar-orig），投影片全為英文**；非阿語使用者請直接關掉聲音讀投影片，內容不會漏。格式上這是 PowerPoint 病例報告，超音波為貼在投影片上的小格靜態影像（單格約佔畫面 1/4 以下），不是全螢幕連續掃描。",
+     "dose": "把這支當「對照用教材」跑：先讀上面的臨床背景。站內播放會自動從 0:04 起播、跳過寫出診斷的片頭投影片（0:00–約 0:03）；若在 YouTube 開啟請自行把進度條拉到 0:04。停在 C/P 頁（約 0:04–1:05，該頁只有臨床資訊與右葉／左葉灰階＋彩色都卜勒影像，沒有診斷字樣）——這是本片唯一還能盲判的畫面。用手或視窗遮住投影片最上方那兩行文字只看影像，寫下你的 structured description、三個鑑別診斷排序、以及「今天會不會穿刺、會不會住院打抗生素」。寫完再往下：1:05 起是把影像所見逐條寫成文字的答案頁（答案與影像同框，看了就不能再回頭判讀），1:55 是單張左葉影像頁，1:58 起是 Acute suppurative thyroiditis 整理頁，4:00 起是 CECT 與梨狀窩廔管，5:20 起是鑑別頁（感染的第四鰓裂囊腫＋鰓裂囊腫解剖圖）。最後回答：這個病人接下來要不要做咽部造影？如果不做會怎樣？",
+     "title": "Ultrasound Case 34 - Acute Suppurative Thyroiditis",
+     "channel": "Dr.Ismail Sayed Ismail",
+     "url": "https://www.youtube.com/watch?v=okYSmWtjeg0",
+     "duration": "6:01",
+     "start": 4,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Dr.Ismail Sayed Ismail），本站僅連結不重製",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "片頭投影片（0:00–約 0:03）：「Small Parts Ultrasound／Case 34 – Acute suppurative thyroiditis」直接寫出診斷；站內播放已用 start=4 自動跳過"
+      },
+      {
+       "at": "0:04",
+       "note": "C/P 頁（約 0:04–1:05）：只有臨床資訊（Child presenting with neck pain, left neck swelling with overlying hotness, tenderness and fever）與 Rt Lobe／Lt Lobe 灰階＋彩色都卜勒影像，無診斷字樣——本片唯一可盲判的畫面，在這裡暫停"
+      },
+      {
+       "at": "1:05",
+       "note": "影像所見文字頁（約 1:05–1:50）：Enlarged left thyroid lobe with heterogenous texture & ill-defined、腺體周圍組織回音增強且脂肪層界線不清、Left thyroid lobe and perithyroid hyperaemia——答案與影像同框，看到就等於對答案"
+      },
+      {
+       "at": "1:55",
+       "note": "單張影像頁：「Relatively well-defined hypoechoic area within the left thyroid lobe with surrounding ring of vascularity」（左葉，先前漏掉側別已補回）"
+      },
+      {
+       "at": "2:05",
+       "note": "Acute suppurative thyroiditis 整理頁（約 1:58–3:55）：臨床與超音波表現時間軸、投影片引用的 Typically left-sided (95%) 與 Most patients are children"
+      },
+      {
+       "at": "4:00",
+       "note": "CECT 頁（約 3:55–5:00）：口服對比＋trumpet maneuver 顯示左側甲狀腺內膿瘍含氣泡與梨狀窩廔管（PSF）"
+      },
+      {
+       "at": "5:20",
+       "note": "鑑別頁（約 5:00 起）：DD: Infected 4th branchial cleft cyst 與鰓裂囊腫解剖圖；約 5:50 之後畫面又回到 Acute suppurative thyroiditis 整理頁作結（原標的 4:30 指到的是 CECT 頁，已更正）"
+      }
+     ],
+     "note": "以 yt-dlp 查得說明欄為空、無自帶 chapters；yt-dlp 字幕清單顯示原始語言為 Arabic (Original)，故旁白為阿拉伯語、投影片為英文，已在 target 聲明。時間戳修正分兩部分：5:20 鑑別頁的起點（約 5:00：t=300 仍為 CECT／PSF 頁、t=305 已切到 DD 頁）與 2:05 整理頁的範圍（約 1:58–3:55）為照抄複驗員實測值；本次另自行以 ffmpeg 抽 0/1/2/3/3.5/4/5/6/8/10/12/14/16/55/62/64/66/70/100/115/118/232/235/240/296/300/305/355 秒，實測到片頭投影片只到約 0:03（t=3 仍是片頭、t=3.5 已是 C/P 頁），故 start 設 4，並據此把原本錯誤的「片頭 0:00–0:08」「C/P 頁 0:15–1:00」改為「0:00–約 0:03」「約 0:04–1:05」；1:55 那頁投影片原文為「Relatively well-defined hypoechoic area within the left thyroid lobe with surrounding ring of vascularity」，先前引用漏掉 within the left thyroid lobe，已補上；t=355 實測畫面又回到整理頁，已在時間戳註明。殘留風險：start 只改播放起點，YouTube 縮圖仍是寫著診斷的片頭投影片，且本片頁面標題本身就是答案，故僅能定位為對照用教材。呈現形式為投影片式病例報告，超音波以小格靜態影像貼在投影片上，並非全螢幕連續動態掃描；且多數投影片把影像與文字結論並列，因此列為 tier B、定位為對照用教材。"
+    },
+    {
+     "name": "71 歲女性，頸部腫塊五週內迅速長大並合併呼吸困難與吞嚥困難",
+     "en": "Anaplastic carcinoma - case 4",
+     "kind": "case",
+     "target": "71 歲女性，頸部腫塊在五週內迅速長大，近 5 天出現嚴重呼吸困難與吞嚥困難；觸診雙葉為大而石硬的腫塊；甲狀腺功能正常（TSH 3.93 mIU/L、FT4 10.1 pM/L）。影像關鍵：雙葉極度腫大、最大徑超過 13 cm，並向胸骨後與氣管後延伸；整個腺體由多個低回音結節組成、僅剩小塊完整實質；結節內含對應壞死的高回音區——壞死區正是本例最有用的灰階線索。注意影片裡機器深度標到 4.7–5.9 cm 時腫塊仍填滿整個畫面，這本身就是體積線索。鑑別至少三個：anaplastic carcinoma、原發性甲狀腺淋巴瘤（MALT／DLBCL）、medullary carcinoma，另加大範圍膿瘍／急性化膿性甲狀腺炎；最容易選錯的是淋巴瘤，本例細胞學也只敢報「惡性腫瘤，anaplastic 或 medullary」，是靠 calcitonin 正常才排除 medullary。作者的可遷移註解：壞死灶在 anaplastic carcinoma 常見、在 MALT 型淋巴瘤非常罕見。下一步：立刻取細胞學／core needle biopsy、抽血 calcitonin、評估氣道並安排 CT 看氣管與縱膈延伸，而不是安排「三個月後追蹤超音波」。結果：術前診斷 anaplastic carcinoma，病理證實 anaplastic cancer（有病理對照）。劇透提醒：影片 0:00–約 0:05 的標題卡直接寫著「Anaplastic carcinoma／Case histories／Anaplastic cancers: Case 4」，YouTube 頁面本身的標題也一樣。站內播放已設定從 0:06 起播自動跳過片頭卡、站內卡片也不顯示英文原標題，但 YouTube 縮圖用的就是這張片頭卡，start 擋不掉；請先讀完上面的臨床背景再點播。",
+     "dose": "站內播放會自動從 0:06 起播、跳過把答案印出來的標題卡（0:00–約 0:05）；若在 YouTube 開啟請自行把進度條拉到 0:06。先看 0:06–0:20 就暫停，只根據影像寫下三個鑑別診斷排序，以及一個明確的處置決定：這個人可以當一般門診結節排程，還是今天就要處理氣道？再看兩段彩色都卜勒（0:25–0:27 與 0:45 到片尾），確認腫塊內血流稀疏、壞死區無訊號。最後讀 http://www.thyrosite.com/thyroid/1183/index.htm 對答案，並回答兩題：（1）如果把「五週」這個病程從病史裡拿掉，你的排序會不會變？（2）如果你先入為主當成膿瘍去抽吸，會發生什麼事？",
+     "title": "Anaplastic carcinoma - case 4",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=Q3CXGu77MHQ",
+     "duration": "0:47",
+     "start": 6,
+     "spoiler": true,
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製",
+     "coi": "作者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向自家網站",
+     "last_verified": "2026-08-03",
+     "timestamps": [
+      {
+       "at": "0:00",
+       "note": "標題卡（0:00–約 0:05，wipe 轉場）：直接寫出「Anaplastic carcinoma / Anaplastic cancers: Case 4」，是完整劇透；站內播放已用 start=6 自動跳過"
+      },
+      {
+       "at": "0:06",
+       "note": "第一眼影像（機器畫面 2013Mar25 11:19 起）：深度 3.8→5.9 cm 仍填滿畫面的巨大不均質低回音腫塊——先在這裡暫停自己判斷"
+      },
+      {
+       "at": "0:25",
+       "note": "第一段彩色都卜勒（0:25–0:27，僅約 2 秒）：ROI 內僅見零星血流訊號"
+      },
+      {
+       "at": "0:45",
+       "note": "第二段彩色都卜勒（0:45 至片尾 0:46）：可看到腫塊內稀疏的紅藍點狀血流與無訊號的壞死區（原標的 0:35 為灰階畫面，已更正）"
+      }
+     ],
+     "note": "說明欄僅有一行 thyrosite 連結、無自帶 chapters。已用 ffmpeg 抽格核對（0–12 秒每 2 秒、22–28.5 秒每 0.5 秒、41–46 秒）：0:00–0:05 為標題卡，0:06 起為全螢幕實機動態掃描錄影（2013Mar25 11:19–11:20 同一次檢查），彩色都卜勒只出現在 0:25–0:27 與 0:45 之後；0:28–0:44 全為灰階，原標的 0:35 彩色都卜勒為錯誤時間。實測片長 46.5 秒。start=6 為本次自行以 ffmpeg 抽 4.5/5.0/5.5/6.0 秒實測：5.5 秒左半僅剩蝴蝶 logo、標題文字已消失，6.0 秒完全是實機畫面，取 6 秒保守值。殘留風險：start 擋不掉 YouTube 縮圖，縮圖用的就是寫著 Anaplastic carcinoma 的片頭卡。"
+    }
+   ]
+  },
+  {
+   "id": "ch12-u10",
+   "name": "高風險臨床背景下的「良性」影像",
+   "type": "case",
+   "assessment": "從自己門診調出三位「影像看起來不需要處理、但臨床背景高風險」的病人：一位有頸部放射線病史或一等親甲狀腺癌家族史、一位反覆 Bethesda III／IV、一位有 MEN2／RET 帶因或不明原因腹瀉與潮紅。對每一位，先只看影像、蓋住病史，寫下完整 structured description（composition、echogenicity、shape、margin、echogenic foci、size）、ACR TI-RADS (2017) 分數與 K-TIRADS (2021) 或 EU-TIRADS 2017 分級，以及「只憑影像我會不會穿刺、多久追蹤一次」。寫完後才打開病史，重新回答同樣三個問題，並明確寫出：哪一個臨床變項改變了你的決定、改變了幾個月的追蹤間隔、有沒有讓你加驗 calcitonin 或轉介遺傳諮詢。最後看完本單元的核心教材與四份資源，逐一比對作者的決定與你的差異，把每一次「影像說可以放、臨床說不能放」的落差寫進 logbook 的「判讀落差」欄，並註明該落差是來自影像特徵判讀不同，還是來自你原本沒有把臨床脈絡納入計算。",
+   "tight": [
+    "髓質癌（MTC）常呈實質低回音但缺乏微鈣化與 taller-than-wide，用 ACR TI-RADS (2017) 只落在 TR3–TR4，很容易被當成「先追蹤」而錯過；MTC 內的粗大高回音其實是類澱粉沉積，不是良性膠質或 comet-tail artifact",
+    "把「影像不可疑」等同於「風險低」——同一張影像在頸部輻射病史、一等親甲狀腺癌、Cowden／PTEN 症候群或 RET 帶因者身上，事後惡性率完全不同，但 TI-RADS 分數不會替你調整",
+    "反覆 Bethesda III／IV 時，把第二次、第三次細胞學當成「愈來愈接近良性」的證據；實際上重覆不確定本身就是風險訊號，而影像在這個情境的加值在於挑穿刺標的與偵測體積變化，不是宣告良性",
+    "在 Cowden／PTEN 這類多結節背景下，滿滿的結節讓人習慣性判成良性多結節甲狀腺腫，忽略了整腺高負荷本身就是症候群線索",
+    "把「結節長大」直接當成惡性、把「大小不變」直接當成良性——顯著體積增長是「該不該轉介」的門檻，不是惡性的證據；良性濾泡腺瘤一樣可以在一年半內長大八成"
+   ],
+   "weak": [
+    "看到不典型的實質低回音結節時，能主動反問「這會不會是 MTC」，並知道加驗 calcitonin 與問家族史的門檻在哪裡",
+    "能把臨床脈絡（輻射病史、家族史、症候群表現、反覆不確定細胞學）當成獨立於 TI-RADS 之外的風險修正項，明確講出它把追蹤間隔或穿刺門檻往哪個方向移動",
+    "在反覆 Bethesda III／IV 的病人身上，能說清楚超音波接下來的三個具體任務：重選穿刺標的、量化體積變化、偵測頸部淋巴結——而不是重複給一個分級",
+    "能用「體積變化率 + 影像特徵是否改變 + 臨床風險」三者一起決定手術轉介時機，而不是單看任一項",
+    "遇到影像與細胞學都不確定時，能明確寫出下一步是分子檢測、遺傳諮詢、還是縮短追蹤間隔，並說明理由"
+   ],
+   "lesson": {
+    "title": "General Approach in Clinical Management of Thyroid Nodules",
+    "channel": "MedStar Georgetown Department of Medicine",
+    "url": "https://www.youtube.com/watch?v=hhoQpjSAfOI",
+    "duration": "47:33",
+    "why": "本單元要練的不是「這顆結節像不像癌」，而是「影像不像癌的時候，臨床背景能不能把它往上調」。Leila Shobab 這場 Georgetown 內科 Grand Rounds 把結節評估從病史／理學檢查一路走到超音波、細胞學與分子檢測，中間兩段正好卡在本單元的兩個要害：05:36 起那張〈Clinical Findings Associated with Increased Risk of Thyroid Cancer〉（引 Burman & Wartofsky 2015 NEJM）逐條列出本單元的高風險變項——一等親分化型甲狀腺癌病史、兒童或青少年期外照射／游離輻射暴露、男性、FDG 局部攝取、MEN2 或家族性髓質癌的個人與家族史、血清 calcitonin >50–100 pg/mL；42:49 起的〈How Long Should I Follow Up Thyroid Nodules?〉則把「影像可疑度 × 良性 FNA」對到具體追蹤間隔，並給出重做 FNA 的量化門檻（體積增加 ≥50%，或至少兩個徑線各增加 ≥20% 且 ≥2 mm）。這兩張投影片合起來就是本單元的骨架：影像放行、臨床不放行時，追蹤間隔與轉介門檻該往哪邊移。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸 MedStar Georgetown Department of Medicine，本站僅連結",
+    "last_verified": "2026-08-03",
+    "note": "格式據實描述：這是院內 Grand Rounds 的投影片講座錄影（2022-10-27 演講、2022-11-17 上線），沒有任何實機動態掃描示範；畫面是 4:3 投影片置中、左右各一條黑邊，右上角約八分之一畫面是講者的視訊縮圖，投影片本身並非全螢幕。動態掃描請看本單元的兩支 Solymosi 病例短片。已抽幀核對 05:40、07:00、17:35、25:20、43:00、43:40 六處投影片與本頁引用相符。內容以 2015 ATA 指引為骨幹（不是後來的更新版），TI-RADS 那段用的是 ACR 2017 版圖表，讀的時候請自行對照本課採用的 ACR TI-RADS (2017) 與 K-TIRADS (2021)。另有一處原始素材自己不一致：講者口頭說「高度可疑影像＋良性 FNA，我通常六個月內就重做超音波」，同一張投影片寫的卻是 repeat U/S and FNA within 12 months——投影片是引 ATA 的版本，口述是她個人更保守的做法，兩者請分開記。",
+    "timestamps": [
+     {
+      "at": "00:00",
+      "note": "開場與本場架構：流行病學 → 病史理學 → 超音波 → FNA → 分子檢測"
+     },
+     {
+      "at": "05:36",
+      "note": "〈Clinical Findings Associated with Increased Risk of Thyroid Cancer〉投影片——一等親分化型甲狀腺癌、兒童期外照射或游離輻射暴露"
+     },
+     {
+      "at": "06:44",
+      "note": "同一張投影片下半：MEN2／家族性髓質癌的個人與家族史、calcitonin >50–100 pg/ml"
+     },
+     {
+      "at": "17:29",
+      "note": "ACR TI-RADS (2017) 計分表逐項說明"
+     },
+     {
+      "at": "25:16",
+      "note": "Bethesda 六類與惡性風險：估計值 vs 各機構實際值（III 14%、IV 25%）"
+     },
+     {
+      "at": "28:10",
+      "note": "分子檢測在 Bethesda III／IV 的角色：rule-in／rule-out 與盛行率的關係"
+     },
+     {
+      "at": "42:49",
+      "note": "〈How Long Should I Follow Up Thyroid Nodules?〉——追蹤間隔與重做 FNA 的量化門檻（≥50% 體積，或兩個徑線各 ≥20% 且 ≥2 mm），本單元最該抄下來的一段"
+     }
+    ]
+   },
+   "drills": [
+    {
+     "name": "國際甲狀腺腫瘤討論會 2023 年 6 月場：家族史與 PTEN 症候群改寫的判讀",
+     "en": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (June 2023)",
+     "kind": "case",
+     "spoiler": true,
+     "target": "步驟 1 臨床背景：Case 1 是一位年輕女性，甲狀腺多結節、家族有多結節甲狀腺腫病史，影像本身並不特別可疑；Case 2 是一位細胞學與病理結論互相衝突的病人。步驟 4 影像關鍵特徵：整腺結節負荷與「滿是良性樣結節」的分布型態，本身就是症候群線索，而不是可以安心的理由；Case 2 則示範單靠影像與細胞學無法定案時，詳細家族史與分子檢測如何把 benign follicular lesion 與 medullary thyroid cancer 分開。步驟 5 鑑別診斷：良性多結節甲狀腺腫、Cowden（PTEN hamartoma tumor syndrome）背景下的多結節、濾泡性腫瘤、髓質癌——最容易選錯的是「單純良性多結節甲狀腺腫」。步驟 8 下一步：Tarasova 團隊走的是手術＋遺傳檢測（PTEN），Khorsandi 則說明 MTC 淋巴結在影像上為何難以判定、該選哪一種影像。步驟 9 結果：Case 1 有病理對照並確立 Cowden Syndrome 診斷；Case 2 有病理與分子結果討論。",
+     "dose": "先只讀 Tarasova 在 3:38 提出的病史與影像，暫停，寫下你的分級、是否穿刺、追蹤間隔，以及「你會不會轉介遺傳諮詢」；再播 5:51 與 13:37，比對 Cunningham-Lubitz／Alexander 為何以年齡與家族史為由優先手術、以及 PTEN 突變出現後整個決策如何翻轉。Case 2 從 23:43 開始同樣先答再看：在 25:46 之前先寫下你會怎麼處理「細胞學說良性濾泡性病變、臨床卻懷疑髓質癌」的衝突。",
+     "title": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (June 2023)",
+     "channel": "THANC Foundation",
+     "url": "https://www.youtube.com/watch?v=IEMOk_nX10I",
+     "duration": "58:06",
+     "tier": "A",
+     "source_type": "webinar",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 THANC Foundation，本站僅連結",
+     "last_verified": "2026-08-03",
+     "note": "webinar 形式（病例投影片＋多科討論），有影像判讀段落但非動態掃描示範。",
+     "timestamps": [
+      {
+       "at": "03:38",
+       "note": "Case 1 病史與影像——第一眼，在這裡暫停自己判斷"
+      },
+      {
+       "at": "05:51",
+       "note": "為何以年齡與家族史為由優先手術"
+      },
+      {
+       "at": "13:37",
+       "note": "PTEN 突變揭曉，決策翻轉"
+      },
+      {
+       "at": "17:28",
+       "note": "Cowden Syndrome 的典型表現與甲狀腺影像意義"
+      },
+      {
+       "at": "23:43",
+       "note": "Case 2 開始——細胞學與病理衝突"
+      },
+      {
+       "at": "25:46",
+       "note": "詳細家族史＋分子檢測如何區分良性濾泡性病變與髓質癌"
+      },
+      {
+       "at": "29:18",
+       "note": "髓質癌的頸部淋巴結為何在影像上難以判定"
+      }
+     ]
+    },
+    {
+     "name": "case 20：多結節腺體中，左葉一顆邊緣不規則的大結節",
+     "en": "Medullary carcinoma - case 20",
+     "kind": "case",
+     "spoiler": true,
+     "target": "步驟 1 臨床背景：69 歲女性，因體重減輕 10 公斤與腹瀉三個月接受檢查而發現甲狀腺結節；多年前診斷橋本甲狀腺炎、未服藥；TSH 1.86 mIU/L，euthyroid；觸診左葉有硬結節。步驟 4 影像關鍵特徵：兩葉大致 echonormal、含數個囊性區與一顆右葉 echonormal 結節；左葉一顆大結節部分 echonormal、部分低回音，邊緣不規則，結節內血流不規則增加——沒有微鈣化、沒有 taller-than-wide，單看影像非常容易只給 TR3–TR4 並排在三個月後追蹤。步驟 5 鑑別診斷：橋本背景下的假性結節、良性增生性結節、濾泡性腫瘤、乳突癌、髓質癌——最容易選錯的是「橋本背景的良性結節」。步驟 8 下一步：本例做了 FNA 並加驗 calcitonin。步驟 9 結果：細胞學為髓質癌，血清 calcitonin 高於 5852 pM/L，全甲狀腺切除，病理證實左葉髓質癌（有病理對照）。真正把診斷推出來的是腹瀉與體重減輕這兩個臨床線索，不是影像。",
+     "dose": "先答再看，但這支有兩個劇透要先處理：(1) 影片 00:00–00:02 是 thyrosite 標題卡，卡面直接印著「Medullary carcinomas: Case 20」，那就是答案——請把播放器拉到 00:02 再開始看；(2) YouTube 原標題同樣寫出診斷，作答前不要點進影片頁、不要展開播放器的標題列（本站卡面已不顯示英文原標題）。從 00:02 播到 00:17 暫停，寫下 structured description、ACR TI-RADS (2017) 分數、K-TIRADS (2021) 分級與「你會不會穿刺／幾個月後追蹤」。寫完後才允許自己讀病史（69 歲、腹瀉、體重減輕 10 公斤、橋本），再回答一次同樣三題，並明確寫下「我會不會加驗 calcitonin」。最後對照 thyrosite 原始病例的病理結果，記錄你的第一次答案距離正確處置差了幾步。",
+     "title": "Medullary carcinoma - case 20",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=UYtiSYlAoFA",
+     "duration": "0:37",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi / thyrosite.com），本站僅連結",
+     "last_verified": "2026-08-03",
+     "note": "真實動態超音波錄影，無旁白，檔案總長 37 秒。已逐格核對：00:00–00:02 為 thyrosite 標題卡，卡面直接寫出最終診斷；00:02–00:32 為灰階掃描（實際掃描約 35 秒）；彩色都卜勒只出現在 00:32–00:37。原資料把彩色都卜勒標在 00:25，該時點畫面上並沒有彩色血流，已更正為 00:32。完整病史、細胞學與病理見影片描述連結的 thyrosite 病例頁。",
+     "timestamps": [
+      {
+       "at": "00:02",
+       "note": "標題卡結束、第一眼影像——從這裡起播，先蓋住病史自己分級"
+      },
+      {
+       "at": "00:15",
+       "note": "左葉大結節的邊緣與內部回音變化"
+      },
+      {
+       "at": "00:32",
+       "note": "彩色都卜勒：結節內不規則增加的血流（全片唯一有彩色的一段，到片尾）"
+      }
+     ]
+    },
+    {
+     "name": "濾泡性病變追蹤 case 3：Bethesda IV、影像溫和的右葉單一結節",
+     "en": "Follow-up of follicular thyroid lesions - case 3",
+     "kind": "case",
+     "spoiler": true,
+     "target": "步驟 1 臨床背景：44 歲男性，健檢發現甲狀腺結節、無症狀；核醫掃描為 cold nodule；觸診右葉單一硬結節；TSH 0.38 mIU/L，euthyroid。步驟 4 影像關鍵特徵：右葉單一、中度低回音結節，具 halo sign 與結節周邊血流——這是典型「看起來像濾泡性腫瘤但不像癌」的影像，惡性風險被估在 2% 以下。步驟 5 鑑別診斷：良性增生性結節、濾泡腺瘤、濾泡癌、oncocytic（Hürthle cell）腫瘤——最容易選錯的是「halo + 周邊血流＝良性，可以放很久」。步驟 8 下一步：細胞學為 follicular tumor（Bethesda IV 情境），病人極度抗拒手術，作者以每年超音波追蹤取代立即手術。步驟 9 結果：18 個月後結節體積增加 84%，作者判定再拖有實質風險，行右側葉切除；病理為 follicular adenoma（有病理對照）。也就是說「顯著長大」促成了正確的轉介決定，但最終病理是良性——體積變化是轉介門檻，不是惡性證據。",
+     "dose": "先答再看，但起播點要改：影片 00:00–00:07 是 thyrosite 標題卡，卡面直接印著本例的最終病理，按下播放的第一眼就會看到答案——請把播放器拉到 00:08 再開始看。從 00:08 播到片尾（實際掃描約 40 秒）後暫停，寫下 structured description、ACR TI-RADS (2017) 分數、你會給的追蹤間隔（3／6／12／24 個月）以及「多少體積變化你才會轉介手術」。再打開影片描述連結的 thyrosite 病例頁，看第二次檢查（18 個月後）與最終病理，回答兩個問題：(1) 你原本的追蹤間隔會不會太長而錯過那次顯著增長？(2) 若最終病理是良性腺瘤，你會因此下修「體積增長」在你決策中的權重嗎——如果會，你打算用什麼取代它？",
+     "title": "Follow-up of follicular thyroid lesions - case 3",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=vQDIqNzL5lc",
+     "duration": "0:47",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道（Tamas Solymosi / thyrosite.com），本站僅連結",
+     "last_verified": "2026-08-03",
+     "note": "真實動態超音波錄影，無旁白，檔案總長 47 秒，但 00:00–00:07 是 thyrosite 標題卡（卡面直接寫出最終病理），實際掃描只有約 40 秒（00:08–00:47），原資料寫的「47 秒的掃描」高估了。已逐格核對：彩色都卜勒只出現在 00:14–00:22，另在 00:28 前後閃現約半秒，其餘全為灰階；原資料標的 00:20「halo sign 與結節邊界」與 00:35「周邊為主的血流型態」都與畫面不符（00:35 畫面上沒有彩色血流），已更正。追蹤結果與病理見影片描述連結的 thyrosite 病例頁。",
+     "timestamps": [
+      {
+       "at": "00:08",
+       "note": "標題卡結束、第一眼影像——從這裡起播，暫停後寫下分級與你要給的追蹤間隔"
+      },
+      {
+       "at": "00:14",
+       "note": "彩色都卜勒段落：結節周邊為主的血流（彩色只到 00:22）"
+      },
+      {
+       "at": "00:24",
+       "note": "回到灰階：halo sign 與結節邊界最清楚的一段"
+      }
+     ]
+    },
+    {
+     "name": "Bethesda III 反覆不確定時：分子檢測能回答什麼、不能回答什麼",
+     "en": "Molecular Testing for Bethesda III Thyroid Nodules with Dr. McManus",
+     "kind": "lecture",
+     "spoiler": false,
+     "target": "當同一顆結節反覆落在 Bethesda III（AUS）時，這場 2025 年的 webinar 處理三個 fellow 最常卡住的問題：(1) 分子檢測的 rule-in／rule-out 能力在不同惡性盛行率下如何改變，也就是為什麼同一個檢測結果在「臨床高風險病人」與「一般風險病人」身上不能作同樣解讀；(2) 影像在這個情境的加值到底在哪——重選穿刺標的、量化體積變化、掃頸部淋巴結，而不是再給一次 TI-RADS 分數；(3) 什麼時候該停止重覆穿刺、改成診斷性手術或轉介。Dr. Via 的第二段從臨床端補上決策與成本考量。看的時候要抓的重點是：不要讓一個「陰性」的分子結果或一個「不可疑」的影像分級，蓋過頸部輻射病史、家族史或症候群背景所帶來的 pre-test probability。本資源為講座與討論形式，非病例影像判讀，無病理對照，也沒有答案需要遮蔽，因此不套用本單元的劇透遮罩。",
+     "dose": "先答再看：在按播放之前，先寫下你目前的實際做法——「同一顆結節第二次 Bethesda III，我下一步做什麼？第三次呢？如果這位病人有頸部輻射病史或一等親甲狀腺癌，我的答案會不會改變？」把答案寫成三行。播到 33:24 之前先停，比對 McManus 的資料與你的第一行答案；聽完 Dr. Via 的 33:24–50:12 後修訂第二、三行；50:12 之後的 Q&A 用來檢查自己有沒有把 pre-test probability 這件事講清楚。最後把修訂前後的差異寫進 logbook。",
+     "title": "Molecular Testing for Bethesda III Thyroid Nodules with Dr. McManus",
+     "channel": "THANC Foundation",
+     "url": "https://www.youtube.com/watch?v=R3RLMTVnuEU",
+     "duration": "1:01:23",
+     "tier": "A",
+     "source_type": "webinar",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 THANC Foundation，本站僅連結",
+     "last_verified": "2026-08-03",
+     "note": "2025-03 上線，投影片＋討論形式的 webinar，非超音波影像判讀教學；收入本單元是為了補「反覆 Bethesda III 時影像與分子檢測各自的角色」。",
+     "timestamps": [
+      {
+       "at": "02:28",
+       "note": "Dr. McManus 開講——Bethesda III 的分子檢測表現"
+      },
+      {
+       "at": "33:24",
+       "note": "Dr. Via 從臨床端談決策與轉介門檻"
+      },
+      {
+       "at": "50:12",
+       "note": "Q&A：高風險背景病人的解讀差異"
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

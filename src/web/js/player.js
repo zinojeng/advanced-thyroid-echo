@@ -44,6 +44,7 @@ export function buildPlaylist(course) {
           coi: les.coi,
           last_verified: les.last_verified,
           timestamps: les.timestamps,
+          start: les.start,
           assessment: u.assessment,
         });
       }
@@ -71,6 +72,7 @@ export function buildPlaylist(course) {
           coi: d.coi,
           last_verified: d.last_verified,
           timestamps: d.timestamps,
+          start: d.start,
           facets: d.facets,
           cat: d.cat,
         });
@@ -142,8 +144,12 @@ export function renderPlaylist(items, { doneSet, currentIndex, query, onlyTodo }
 export function play(item, { total }) {
   if (!item?.url) return;
 
+  // 病例影片的片頭卡常常直接印著最終診斷，而 YouTube 嵌入預設從 0:00 自動播——
+  // 學員按下播放的第一格就是答案，「先自己判斷」直接失效。
+  // 資源可以宣告 start（秒），播放器就從片頭卡之後開始。
+  const startAt = Number.isFinite(+item.start) && +item.start > 0 ? Math.floor(+item.start) : 0;
   $("#playerFrame").innerHTML = item.vid
-    ? `<iframe id="ytFrame" src="${EMBED}${esc(item.vid)}?rel=0&modestbranding=1&autoplay=1&enablejsapi=1&origin=${encodeURIComponent(location.origin)}"
+    ? `<iframe id="ytFrame" src="${EMBED}${esc(item.vid)}?rel=0&modestbranding=1&autoplay=1&enablejsapi=1${startAt ? `&start=${startAt}` : ""}&origin=${encodeURIComponent(location.origin)}"
             title="${esc(item.title || item.name)}"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -206,6 +212,14 @@ export function play(item, { total }) {
 
 /** 不能嵌入的來源（學會、期刊、醫院教學站、需登入的病例庫）：
  *  站內不重製也不代管，只把該知道的事講清楚再連出去。 */
+function startAtNote(item) {
+  const ui = UI.source || {};
+  if (!item.start) return "";
+  const m = Math.floor(item.start / 60);
+  const sec = Math.floor(item.start % 60);
+  return (ui.startAtLabel || "").replace("{at}", `${m}:${String(sec).padStart(2, "0")}`);
+}
+
 function externalCard(item) {
   const ui = UI.source || {};
   const rows = [
@@ -229,7 +243,12 @@ function externalCard(item) {
              </div>`
           : ""
       }
-      <a class="btn btn-primary" href="${esc(item.url)}" target="_blank" rel="noopener">
+      ${
+        startAtNote(item)
+          ? `<p class="ExternalCard__note">${esc(startAtNote(item))}</p>`
+          : ""
+      }
+      <a class="btn btn-primary" href="${esc(item.url)}${item.start ? `&t=${Math.floor(item.start)}s` : ""}" target="_blank" rel="noopener">
         ${esc(ui.openLabel || "在原網站開啟")} ${icon("external-link", 14)}
       </a>
     </div>`;
