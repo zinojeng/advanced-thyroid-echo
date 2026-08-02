@@ -454,6 +454,10 @@
      "type": "integer",
      "minimum": 0,
      "description": "外部連結的 last_verified 超過幾天就警告（0 = 不檢查）"
+    },
+    "requireVideo": {
+     "type": "boolean",
+     "description": "資源欄位是否一律必須是影音（文獻與指引原文改放實證層）"
     }
    }
   }

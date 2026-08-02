@@ -26,6 +26,12 @@ ACCESS = ("open", "registration", "subscription", "institutional")
 
 TIERS = ("A", "B", "C")
 
+# 這門課是影音課程：每個資源欄位都必須是「看得到的影片」。
+# 期刊原文與指引 PDF 仍然重要，但它們的位置在實證層（citations）與
+# GUIDELINE-MATRIX.md，不是課程的資源欄位。
+VIDEO_PROVIDERS = ("youtube", "vimeo", "society", "hospital", "external")
+VIDEO_SOURCE_TYPES = ("video", "webinar")
+
 YT = re.compile(
     r"^https://(?:www\.)?youtube\.com/watch\?v=[\w-]{11}(?:&\S*)?$|^https://youtu\.be/[\w-]{11}"
 )
@@ -113,6 +119,25 @@ def metadata_problems(v: dict) -> list[str]:
             if not v.get(field):
                 out.append(f"非 YouTube 來源缺少 {field}")
     return out
+
+
+def is_video(v: dict) -> bool:
+    """這個欄位是不是影音資源。
+
+    判定看 source_type：YouTube／Vimeo 的網址一定是影片；其他平台
+    （學會自架播放器、醫院教學站、廠商頻道）要靠 source_type 宣告。
+    """
+    if infer_provider(v) in ("youtube", "vimeo"):
+        return True
+    return v.get("source_type") in VIDEO_SOURCE_TYPES
+
+
+def not_video_reason(v: dict) -> str | None:
+    """不是影片就回傳原因；是影片回 None。沒有網址的欄位不在此檢查範圍。"""
+    if not v.get("url") or is_video(v):
+        return None
+    st = v.get("source_type") or "未標示"
+    return f"source_type「{st}」不是影音（本課程的資源欄位只收影片，文獻請放實證層）"
 
 
 def embeddable(v: dict) -> bool:

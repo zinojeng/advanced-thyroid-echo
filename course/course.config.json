@@ -73,14 +73,14 @@
         "label": "核心教材時長"
       },
       {
-        "icon": "book-open",
+        "icon": "play",
         "field": "drill_units",
-        "label": "個病例與示範資源"
+        "label": "個病例與示範影片"
       },
       {
-        "icon": "external-link",
-        "field": "external_slots",
-        "label": "個非 YouTube 學術來源"
+        "icon": "book-open",
+        "field": "video_unique",
+        "label": "支不重複影片"
       },
       {
         "icon": "microscope",
@@ -148,7 +148,7 @@
     "discussNote": "留言會同步到 GitHub Discussions，需要 GitHub 帳號才能發言。每個資源各有一串討論。",
     "filterAll": "全部",
     "lessonNoun": "個核心教材",
-    "drillNoun": "個病例與示範資源",
+    "drillNoun": "個病例與示範影片",
     "source": {
       "openLabel": "在原網站開啟",
       "externalNote": "這個來源不允許站內嵌入，本站不下載也不重製。以下是連出去之前該知道的事。",
@@ -169,12 +169,7 @@
       },
       "sourceTypes": {
         "video": "影片",
-        "webinar": "線上研討會",
-        "case": "病例",
-        "atlas": "影像圖譜",
-        "guideline": "指引原文",
-        "article": "文獻",
-        "quiz": "測驗"
+        "webinar": "線上研討會"
       },
       "access": {
         "open": "公開",
@@ -204,7 +199,7 @@
   "kinds": [
     {
       "id": "case",
-      "label": "病例",
+      "label": "病例影片",
       "tone": "accent"
     },
     {
@@ -214,13 +209,8 @@
     },
     {
       "id": "atlas",
-      "label": "影像圖譜",
+      "label": "影像判讀教學",
       "tone": "success"
-    },
-    {
-      "id": "guideline",
-      "label": "指引原文",
-      "tone": "done"
     },
     {
       "id": "lecture",
@@ -456,7 +446,8 @@
     "minCitations": 2,
     "allowMissingUrls": 12,
     "requireSourceMetadata": true,
-    "verifyStaleDays": 180
+    "verifyStaleDays": 180,
+    "requireVideo": true
   },
   "evidenceAlias": {},
   "stance": {

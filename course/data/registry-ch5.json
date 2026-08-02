@@ -38,7 +38,37 @@
   "PubMed esearch: Ha EJ[Author] AND core needle biopsy AND complication AND thyroid",
   "PubMed esearch: isolated macrocalcification thyroid nodule fine-needle aspiration core needle biopsy",
   "PubMed esearch: nondiagnostic thyroid fine needle aspiration repeat biopsy core needle diagnostic yield",
-  "aium.org 站內瀏覽：Official Statements / Practice Parameters / Interventional-Intraoperative Ultrasound / Training Guidelines"
+  "aium.org 站內瀏覽：Official Statements / Practice Parameters / Interventional-Intraoperative Ultrasound / Training Guidelines",
+  "yt-dlp ytsearch20: thyroid core needle biopsy ultrasound guided",
+  "yt-dlp ytsearch20: thyroid core needle biopsy ultrasound guided technique transisthmic",
+  "yt-dlp ytsearch20: KSThR thyroid guideline core needle biopsy lecture",
+  "yt-dlp ytsearch20: thyroid core needle biopsy complications hematoma management",
+  "yt-dlp ytsearch20: core needle biopsy versus fine needle aspiration thyroid nodule lecture",
+  "yt-dlp ytsearch20: thyroglobulin washout fine needle aspiration lymph node",
+  "yt-dlp ytsearch15: thyroglobulin washout lymph node thyroid cancer lecture endocrinology",
+  "yt-dlp ytsearch15: FNA washout thyroglobulin technique needle rinse saline",
+  "yt-dlp ytsearch20: parathyroid PTH washout ultrasound guided aspiration localization",
+  "yt-dlp ytsearch15: parathyroid adenoma ultrasound localization biopsy PTH assay",
+  "yt-dlp ytsearch15: parathyroid ultrasound localization hyperparathyroidism lecture",
+  "yt-dlp ytsearch15: PTH washout fine needle aspiration parathyroid",
+  "yt-dlp ytsearch20: cervical lymph node ultrasound metastasis thyroid cancer FNA criteria lecture",
+  "yt-dlp ytsearch15: periprocedural anticoagulation management image guided biopsy bleeding risk",
+  "yt-dlp ytsearch15: anticoagulation antiplatelet interventional radiology procedure lecture SIR guidelines",
+  "yt-dlp ytsearch15: ultrasound probe disinfection infection control interventional procedure",
+  "yt-dlp ytsearch15: high level disinfection ultrasound transducer percutaneous procedure guidelines webinar",
+  "yt-dlp ytsearch15: AIUM webinar ultrasound guided procedure training competency",
+  "yt-dlp ytsearch15: AIUM practice parameter ultrasound guided procedures webinar",
+  "yt-dlp ytsearch15: point of care ultrasound credentialing privileging competency assessment",
+  "yt-dlp ytsearch12: ultrasound guided procedure sterile technique needle guide setup demonstration",
+  "yt-dlp ytsearch12: thyroid FNA service setup training pathway supervision competency",
+  "yt-dlp ytsearch15: calcified thyroid nodule ultrasound macrocalcification rim calcification interpretation",
+  "yt-dlp ytsearch15: thyroid nodule calcification ultrasound lecture eggshell rim",
+  "yt-dlp ytsearch15: cystic thyroid nodule FNA sampling solid component technique",
+  "yt-dlp ytsearch20: KeepMyThyroid",
+  "yt-dlp ytsearch20: thyroid ultrasound guided biopsy technique Korean radiologist",
+  "yt-dlp ytsearch20: K-TIRADS 2021 thyroid nodule risk stratification lecture",
+  "yt-dlp 頻道全清單：https://www.youtube.com/channel/UCC2t3xNGvkjj42wO6O8FM3Q/videos（KeepMyThyroid，共 140 餘支）",
+  "yt-dlp 頻道全清單：https://www.youtube.com/@AIUMultrasound/videos"
  ],
  "verification": {
   "youtube": "每一支影片都以 https://www.youtube.com/oembed?url=…&format=json 實際 curl，記錄 HTTP 狀態碼與回傳的 title／author_name，並與 yt-dlp 搜尋結果的標題、頻道、長度比對。收錄的 12 支全部回 200 且標題頻道相符。",
@@ -46,8 +76,11 @@
   "content_review": "GM Cancer Academy Session 3／5／7 與 USCAP Ljung 的內容判斷來自實際取得的自動字幕逐字稿或官方章節時間軸；KSThR、K-TIRADS、Ultrasonography、JCEM、Frontiers、Diagnostics 各篇的數字均自 PMC 全文以字串比對取出，未憑印象書寫。無法取得內容者已在該筆的 dose 欄位誠實揭露（見 HfOLBthdHnM）。",
   "shared_urls": [
    "https://www.youtube.com/watch?v=mXh9en_nCBU 同時作為 ch5-u2 主課與 ch5-u3 的 drill，兩處使用不同時間軸與不同教學重點",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240493/ 同時出現在 ch5-u2（trans-isthmic 進針路徑）與 ch5-u5（CNB 適應症、術前用藥與併發症），兩處 target 不重疊"
-  ]
+   "https://www.youtube.com/watch?v=2tCJ05wDIyQ 也用於 ch4-u4（macrocalcification 在 ATA pattern 下的 lexicon 意義）；ch5-u3 只取「對穿刺決策與取樣成敗的意義」，target 與時間軸不重疊",
+   "https://www.youtube.com/watch?v=9_Xw5fAM47s 也用於 ch9-u4（甲狀腺旁病灶的鑑別流程）；ch5-u4 只取「washout 送檢實作與不該穿刺的時機」"
+  ],
+  "video_only_revision_2026-08-02": "課程改版為純影音：本章原有 10 個資源欄位是學會共識與期刊原文（AIUM training guidelines、SIR 2019 圍術期共識、KSThR 2016 CNB 共識×2、K-TIRADS 2021 共識、KSThR 2016 結節共識、Ultrasonography 2016 孤立 macrocalcification、JCEM 2025 FNA-Tg washout 統合分析、Frontiers 2025 PTH washout、Diagnostics 2026 CNB 配對分析），全部換成實際驗證過的影片。10 個新影片每一支都做了兩層查核：yt-dlp 搜尋或頻道清單取得 id（未憑記憶拼湊），再以 https://www.youtube.com/oembed?url=…&format=json 實際 curl 確認 HTTP 200 且 title／author_name 相符；另以 yt-dlp（ios player client）抓下自動字幕逐字稿逐段閱讀，target／why 裡的每一個數字與病例細節都出自逐字稿，未憑印象書寫。長度與觀看數以 yt-dlp 實測值寫入 course/data/video-meta.json。被換掉的 10 份文獻仍是本章的實證依據，位置在 drill-evidence-2.json（細針穿刺技術與檢體適足性／粗針切片／沖洗液 thyroglobulin／PTH 檢驗／頸部淋巴結評估與術前 mapping／副甲狀腺病灶定位）與 GUIDELINE-MATRIX.md。",
+  "channel_identity_2026-08-02": "新收的 8 支影片來自 YouTube 個人頻道 KeepMyThyroid（UCC2t3xNGvkjj42wO6O8FM3Q）。以 curl 抓回頻道 about 頁的 channelMetadataRenderer 確認作者身分：甲狀腺影像與介入次專長之영상의학과（放射診斷科）專科醫師、2020 年起大韓民國醫學翰林院正會員、Kwak TIRADS 原始論文（Radiology 2011;260:892-9）第一作者、《Thyroid Ultrasound and Intervention》一至五版作者、Yonsei Medical Journal 編輯委員、ITC 2015／2020／2025 受邀講者。頻道多數影片同時提供 (ENG) 與 (KOR) 兩版，本章除 LmkM4lWHL08 外一律採英語版。觀看數多在 30–150 之間，遠低於 minViews 門檻 300——品質判定依作者身分與逐字稿內容，不依觀看數。"
  },
  "evaluated": [
   {
@@ -70,19 +103,21 @@
    "title": "Training Guidelines for Licensed Medical Providers Who Perform and Interpret Ultrasound-Guided Procedures",
    "url": "https://www.aium.org/resources/training-guidelines/view/training-guidelines-for-licensed-medical-providers-who-perform-and-interpret-ultrasound-guided-procedures",
    "source": "AIUM（第一級：學會官方訓練規範）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u1",
-   "reason": "curl 200，抓回內文確認為 AIUM 對超音波導引操作執行者的能力要求，頁面標示 2025-03-29 更新。直接支撐本章「公開影音不能取代當地 credentialing 與 supervision」的要求。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，抓回內文確認為 AIUM 對超音波導引操作執行者的能力要求，頁面標示 2025-03-29 更新。直接支撐本章「公開影音不能取代當地 credentialing 與 supervision」的要求。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=9K_gkq8CKBg"
   },
   {
    "title": "SIR Consensus Guidelines for the Periprocedural Management of Thrombotic and Bleeding Risk—Part II: Recommendations",
    "url": "https://pubmed.ncbi.nlm.nih.gov/31229333/",
    "source": "J Vasc Interv Radiol 2019（PubMed 書目頁）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u1",
-   "reason": "jvir.org 全文頁回 403、doi.org 導向 linkinghub 亦為登入牆，故改用 PubMed 書目與摘要頁（curl 200，標題完全相符），並在 access 標為 subscription、於 dose 說明全文需訂閱。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——jvir.org 全文頁回 403、doi.org 導向 linkinghub 亦為登入牆，故改用 PubMed 書目與摘要頁（curl 200，標題完全相符），並在 access 標為 subscription、於 dose 說明全文需訂閱。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=dDln1SE0j6k"
   },
   {
    "title": "Fine Needle Aspiration Biopsy (FNA) Techniques - Dr. Britt Marie Ljung",
@@ -120,19 +155,21 @@
    "title": "Core Needle Biopsy of the Thyroid: 2016 Consensus Statement and Recommendations from KSThR",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240493/",
    "source": "Korean Journal of Radiology 2017;18(1):217-237（KSThR，第一級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u2、ch5-u5",
-   "reason": "curl 200，citation_title 相符。以字串比對確認全文含 transisthmic（3 處，明載為建議首選路徑並說明 RLN 保護理由）、anticoagulation（4 處，含 aspirin/clopidogrel 7–10 天、warfarin 3–5 天、heparin 4–6 小時之停藥時程）、complication（35 處）、hematoma（10 處，含 0–4.1% 併發症率與 30–120 分鐘壓迫）。本章併發症內容的主要依據。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。以字串比對確認全文含 transisthmic（3 處，明載為建議首選路徑並說明 RLN 保護理由）、anticoagulation（4 處，含 aspirin/clopidogrel 7–10 天、warfarin 3–5 天、heparin 4–6 小時之停藥時程）、complication（35 處）、hematoma（10 處，含 0–4.1% 併發症率與 30–120 分鐘壓迫）。本章併發症內容的主要依據。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=MDlA0zTRpQ0（ch5-u2）／https://www.youtube.com/watch?v=Jo4TPntbquk（ch5-u5）"
   },
   {
    "title": "2021 Korean Thyroid Imaging Reporting and Data System … KSThR Consensus Statement and Recommendations",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8628155/",
    "source": "Korean Journal of Radiology 2021;22(12):2094-2123（KSThR，第一級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u3（主課）",
-   "reason": "curl 200，citation_title 相符。全文含完整 lexicon 定義表、切片 size cutoff（Table 5）與 FNA 結果 × 超音波型態的處置表（Table 6）。在找不到合格的困難病灶技術影片時，作為本單元主課並在 why 中說明此一取捨。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。全文含完整 lexicon 定義表、切片 size cutoff（Table 5）與 FNA 結果 × 超音波型態的處置表（Table 6）。在找不到合格的困難病灶技術影片時，作為本單元主課並在 why 中說明此一取捨。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=dVa5yPp2jus"
   },
   {
    "title": "Thyroid cystic nodule ultrasound-guided drainage/aspiration",
@@ -146,10 +183,11 @@
    "title": "Thyroid nodules with isolated macrocalcification: malignancy risk and diagnostic efficacy of FNA and CNB",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4939718/",
    "source": "Ultrasonography 2016;35(3):212-219（Korean Society of Ultrasound in Medicine，第二級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u3",
-   "reason": "curl 200，citation_title 相符。摘要與結果段確認惡性率 16.1%／11.4%、CNB vs FNA 的 nondiagnostic 率 7.7% vs 53.8%、inconclusive 率 15.4% vs 57.7%。已在 target 註明為單一機構回溯研究、樣本數小。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。摘要與結果段確認惡性率 16.1%／11.4%、CNB vs FNA 的 nondiagnostic 率 7.7% vs 53.8%、inconclusive 率 15.4% vs 57.7%。已在 target 註明為單一機構回溯研究、樣本數小。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=2tCJ05wDIyQ"
   },
   {
    "title": "Ultrasound-guided aspiration - piffalls",
@@ -179,28 +217,31 @@
    "title": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised KSThR Consensus",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4842857/",
    "source": "Korean Journal of Radiology 2016;17(3):370-395（KSThR，第一級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u4",
-   "reason": "curl 200，citation_title 相符。全文比對確認含頸部淋巴結 FNA 適應症表（術前可疑 >3–5 mm、不確定 >5 mm；術後 >8–10 mm）與「側頸應加測 tissue-washout thyroglobulin、中央區選擇性使用」的明文建議。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。全文比對確認含頸部淋巴結 FNA 適應症表（術前可疑 >3–5 mm、不確定 >5 mm；術後 >8–10 mm）與「側頸應加測 tissue-washout thyroglobulin、中央區選擇性使用」的明文建議。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=1p6XiQQD-6Y"
   },
   {
    "title": "Diagnostic Efficiency of Thyroglobulin in Lymph Node Fine-needle Aspiration Washout: A Systematic Review and Meta-analysis",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12623056/",
    "source": "J Clin Endocrinol Metab 2025（Endocrine Society，第二級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u4",
-   "reason": "curl 200，citation_title 相符。Data Synthesis 段確認彙總敏感度 0.94（0.91–0.96）、特異度 0.92（0.88–0.94）、AUC 0.98，術後族群敏感度 0.96，並明載 s-Tg-Ab 干擾極小。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。Data Synthesis 段確認彙總敏感度 0.94（0.91–0.96）、特異度 0.92（0.88–0.94）、AUC 0.98，術後族群敏感度 0.96，並明載 s-Tg-Ab 干擾極小。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=LmkM4lWHL08"
   },
   {
    "title": "Lesion size and cystic morphology are key determinants of parathyroid hormone washout in primary hyperparathyroidism",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12479290/",
    "source": "Front Endocrinol 2025（第二級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u4",
-   "reason": "curl 200，citation_title 相符。Methods 與 Conclusion 段確認檢體處理方式（1 mL 生理食鹽水沖洗三次、10 分鐘內送驗、最低可接受值 33 pg/mL）與「PTH-WO 隨病灶大小變動、囊性腺瘤數值較高、B-mode 與 Doppler 特徵無顯著關聯」的結論。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。Methods 與 Conclusion 段確認檢體處理方式（1 mL 生理食鹽水沖洗三次、10 分鐘內送驗、最低可接受值 33 pg/mL）與「PTH-WO 隨病灶大小變動、囊性腺瘤數值較高、B-mode 與 Doppler 特徵無顯著關聯」的結論。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=9_Xw5fAM47s"
   },
   {
    "title": "Updates to the Bethesda System with Dr. Baloch",
@@ -214,10 +255,11 @@
    "title": "Clinical Value of Core Needle Biopsy as a Second-Line Approach After Non-Conclusive Fine-Needle Aspiration in Thyroid Nodules: A Paired Analysis",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13072916/",
    "source": "Diagnostics (Basel) 2026（第二級）",
-   "decision": "included",
+   "decision": "excluded",
    "unit": "ch5-u5",
-   "reason": "curl 200，citation_title 相符。摘要確認 434 顆結節、FNAB non-conclusive 56.5% vs CNB 23.5%、配對分析中 53.7% 被 CNB 重新分類為 conclusive（p<0.001），並記載 CNB 輕微併發症較多。",
-   "last_verified": "2026-08-02"
+   "reason": "2026-08-02 課程改版為純影音：期刊原文與學會共識不再佔資源欄位，本筆已移出 ch5.json，內容改由實證層（drill-evidence-2.json 的 citations）與 GUIDELINE-MATRIX.md 承接。原評估紀錄保留於下——curl 200，citation_title 相符。摘要確認 434 顆結節、FNAB non-conclusive 56.5% vs CNB 23.5%、配對分析中 53.7% 被 CNB 重新分類為 conclusive（p<0.001），並記載 CNB 輕微併發症較多。",
+   "last_verified": "2026-08-02",
+   "superseded_by": "https://www.youtube.com/watch?v=Y9oGlQdOOks"
   },
   {
    "title": "Cytopathology: Head and Neck Cytology - ROSE Adequacy Crash Course",
@@ -431,6 +473,170 @@
    "unit": "—",
    "reason": "curl 200、citation_title 確認無誤，但 FNA 適應症與 sonographic pattern 屬 CH4 主場；本章 ch5-u1 的穿刺門檻比較已由 GM Session 3（BTA）與 K-TIRADS 2021 承擔，不重複佔用名額。可供 CH4 使用。",
    "last_verified": "2026-08-02"
+  },
+  {
+   "title": "(ENG)Lets make a phantom for FNA practice",
+   "url": "https://www.youtube.com/watch?v=9K_gkq8CKBg",
+   "source": "YouTube / KeepMyThyroid（Kwak Jin Young 教授個人頻道，第三級）",
+   "decision": "included",
+   "unit": "ch5-u1",
+   "reason": "取代 AIUM training guidelines 的位置。逐字稿確認內容：12×12 cm、厚 2.5 cm 豬肉 + 2–3 顆去核橄欖，橄欖腔內必須灌超音波膠（留空氣會呈高回音而看不到針）。oEmbed 200、標題頻道相符、長度 2:44、觀看 121。選它的理由是它補上「看影片」與「可獨立操作」之間唯一能自學的那一步；credentialing 與 supervision 的governance 面向改由 target 文字明說，不再佔資源欄位。"
+  },
+  {
+   "title": "(ENG)thyroid FNA1_pre-procedural evaluations",
+   "url": "https://www.youtube.com/watch?v=dDln1SE0j6k",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u1",
+   "reason": "取代 SIR 2019 圍術期共識（PMID 31229333）。逐字稿逐句核對後確認影片明確給出：知情同意須含 inconclusive／false negative／false positive 的限制；warfarin 停 5 天、INR <1.5–1.7；橋接方案為術前 2 天停 warfarin + 每 12 小時 enoxaparin、隔天恢復 warfarin 並續用 enoxaparin 至 INR 達治療區間；aspirin／clopidogrel 停 3–5 天、術後 3 天；並明說有研究未發現抗凝血劑與 FNA 後出血相關、停藥須與開藥醫師共同決定、術前不需常規凝血篩檢。oEmbed 200、長度 2:44、觀看 58。"
+  },
+  {
+   "title": "(ENG)Precautions for beginners when doing FNA1",
+   "url": "https://www.youtube.com/watch?v=MDlA0zTRpQ0",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u2",
+   "reason": "取代 KSThR 2016 CNB 共識在 ch5-u2 的「四條進針路徑」位置。逐字稿確認：實務進針多為斜向而非 0／90 度；淺層病灶垂直進針的 to-and-fro 不穩定；兩個扎到 common carotid artery 的病例（病人主訴異常尖銳疼痛、事後見 subendothelial carotid hematoma、處置是立即停止並壓迫）。這是「路徑選擇是為了不讓針指向危險構造」的實拍版，與 trans-isthmic 建議同源。oEmbed 200、長度 6:03、觀看 117。"
+  },
+  {
+   "title": "(ENG)thyroid FNA2_technique2",
+   "url": "https://www.youtube.com/watch?v=dVa5yPp2jus",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u3（主課）",
+   "reason": "取代 K-TIRADS 2021 共識作為 ch5-u3 主課。原本的 why 主張「困難病灶的第一個決策是該不該扎、扎哪一點」，改版後把「該不該扎」交還 CH4，本單元主課專注「扎哪一點」。逐字稿與 VTT 時間戳確認六個教學點：00:04 parallel vs perpendicular、01:02 進針前開 color Doppler 選入針點、02:03 壓迫 30 分鐘、02:50 to-and-fro 必須換位置（中央癌、周邊纖維化的病例）、03:51 鈣化結節取非鈣化實質部分（證實為 PTC）、04:19 針座翻轉塗片與立即酒精固定。oEmbed 200、長度 5:22、觀看 114。誠實揭露：片長 5:22 明顯短於本課其他單元主課，why 已註明必須與四支 drill 併看。"
+  },
+  {
+   "title": "Macrocalcifications and Malignancy Risk Within the ATA Sonographic Pattern System with Dr. Kobaly",
+   "url": "https://www.youtube.com/watch?v=2tCJ05wDIyQ",
+   "source": "YouTube / THANC Foundation virtual journal club（第二級）",
+   "decision": "included",
+   "unit": "ch5-u3",
+   "reason": "取代 Ultrasonography 2016 孤立 macrocalcification 研究。逐字稿確認由論文第一作者 Kristen Kobaly（Penn）親自報告、Dr. Azadi 為指定討論人；728 顆連續切片結節、三位盲讀內分泌科醫師、把 non-high suspicion calcification 當作不存在重新分級；並回顧 2020 年逾三千顆結節研究（孤立 macrocalcification 佔 1.2%、惡性率 23%，但僅 6 顆有手術病理、其中 4 顆本即 high suspicion）與 Wildman-Tobriner 2019 Radiology 的 AI TI-RADS 拿掉粗鈣化計分後效能未變差；另說明 PEF 對病理砂粒體的 PPV 僅約 45–48%。oEmbed 200、長度 1:00:09、觀看 1704。與 ch4-u4 共用同一支影片，兩處 target 與時間軸不重疊。"
+  },
+  {
+   "title": "(ENG)A cervical lesion requiring differential diagnosis from lymph node metastasis",
+   "url": "https://www.youtube.com/watch?v=1p6XiQQD-6Y",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u4",
+   "reason": "取代 KSThR 2016 結節共識在 ch5-u4 的「淋巴結穿刺大小門檻」位置。逐字稿確認病例：甲狀腺癌術後多次復發再手術與放射碘後，左 level IV 出現明顯囊性病灶被當成轉移；穿刺抽出乳白色液體、細胞學陰性、抽吸液 Tg 正常，改測三酸甘油酯升高，診斷為 chylous lymphocele；並說明 thoracic duct 位於左內頸靜脈與鎖骨下靜脈交會處、漏出量 <500 mL/日多可保守處理。選它的理由是它同時教「washout 不只有 Tg」與「Tg washout 陰性是有意義的陰性」。oEmbed 200、長度 3:20、觀看 33。誠實揭露：片中乳糜漏發生率數字（約 0.5–2%，手術範圍大者約 4.7–8.3%）取自英語旁白的自動字幕，target 已註明引用前須回查原始文獻。"
+  },
+  {
+   "title": "(KOR)Benign result at a LN FNA, are you sure?",
+   "url": "https://www.youtube.com/watch?v=LmkM4lWHL08",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u4",
+   "reason": "取代 JCEM 2025 FNA-Tg washout 統合分析。韓文自動字幕逐字稿確認病例與教學點：40 歲女性、外院甲狀腺細胞學 category 5、側頸可疑淋巴結 FNA 只見 macrophage 且穿刺後縮小；講者引該院 2010 年分析說明最終證實轉移者中細胞學未見惡性細胞並不少見（只有 macrophage、細胞量過少、甚至讀為良性）；正解是重做 FNA 並加測 washout——先塗片，再以 1 cc 生理食鹽水稀釋針座殘留檢體送檢 Tg，結合超音波型態判讀；並強調側頸轉移會改變手術時機與廓清範圍。oEmbed 200、長度 5:34、觀看 139。誠實揭露：韓語旁白、僅有自動字幕（韓文可再自動翻譯），片中提到的 cutoff 為該院自訂，drill 的 dose 已要求學員回頭問自己實驗室，未把該數值寫進課程文字。"
+  },
+  {
+   "title": "(ENG)Parathyroid Hormone Analysis in the FNA Samples",
+   "url": "https://www.youtube.com/watch?v=9_Xw5fAM47s",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u4",
+   "reason": "取代 Frontiers in Endocrinology 2025 的 PTH washout 研究。逐字稿確認兩個病例（囊壁周邊高回音的『甲狀腺囊腫』、甲狀腺下方實質低回音結節）細胞學皆讀為良性，靠 FNA washout 的 PTH 值偏高定位為副甲狀腺病灶，並由掃描與手術病理證實、術後血中 PTH 正常化；送檢方式與 Tg washout 相同（塗片後殘留檢體以 1 cc 生理食鹽水沖洗）；後半段的關鍵警告是臨床已幾乎確定副甲狀腺亢進時不建議穿刺，因術後纖維化沾黏會讓微創副甲狀腺手術做不成、並增加術中出血。oEmbed 200、長度 3:36、觀看 38。與 ch9-u4 共用，兩處 target 切入點不同。"
+  },
+  {
+   "title": "(ENG)Check for post-FNA/CNB bleeding",
+   "url": "https://www.youtube.com/watch?v=Jo4TPntbquk",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u5",
+   "reason": "取代 KSThR 2016 CNB 共識在 ch5-u5 的併發症位置。逐字稿確認：FNA 前後對照的新生低回音（出血）、甲狀腺後方大量出血、外院 CNB 後仍可見 specimen notch 與後方血腫且一週後吸收；並給出可操作的解剖推理——superior thyroid artery 走前方、inferior thyroid artery 走後方，血腫位置即可反推傷到哪一條；另有兩例針靠近頸動脈後出現 subendothelial（壁內）hematoma，結論是只要發現並確實壓迫多能自行緩解，危險的是沒發現。oEmbed 200、長度 3:30、觀看 36。誠實揭露：影片提供的是影像辨識，不是併發症發生率；KSThR 的 0–4.1% 等數字改由實證層承接。"
+  },
+  {
+   "title": "(ENG)Understanding of nondiagnostic and AUS cytology",
+   "url": "https://www.youtube.com/watch?v=Y9oGlQdOOks",
+   "source": "YouTube / KeepMyThyroid（第三級）",
+   "decision": "included",
+   "unit": "ch5-u5",
+   "reason": "取代 Diagnostics 2026 的 CNB 配對分析。逐字稿確認教學點：把 nondiagnostic 說成『細胞不夠』不精確，正確說法是 follicular cell 不足；適足性標準為至少 6 群、每群至少 10 個良性 follicular cell（Bethesda 沿用，並設 colloid 豐富、少量 atypical cell、超音波無可疑特徵之囊性結節等例外）；2006 年病理科醫師調查（40% 認為現行標準適當、23% 認為可放寬到 5 群）與 Bethesda 第 2 版曾討論下修門檻但無共識；腫瘤異質性使 to-and-fro 必須換方向；示範病例為 31 歲女性、K-TIRADS 5、11 mm、兩院兩位有經驗操作者皆 nondiagnostic，靠九年前舊影像證實為 mummification。oEmbed 200、長度 7:26、觀看 40。"
+  },
+  {
+   "title": "KSThR Thyroid Guideline: Core Needle Biopsy | Soo Yeon - HAN Samsung Medical Center",
+   "url": "https://www.youtube.com/watch?v=pkXU7y35Wc0",
+   "source": "YouTube / Cận lâm sàng（越南語第三方頻道，2019 上傳）",
+   "decision": "excluded",
+   "reason": "主題完全命中（KSThR CNB 共識的官方講座，18:30），oEmbed 200 可用。排除理由是來源出處：上傳者是與 KSThR、Samsung Medical Center 或講者均無關的第三方頻道，影片說明欄只有標題、沒有授權說明，全站再無第二個上傳版本可交叉驗證。依策展契約「未經授權重新上傳」一律排除，寧可留空也不收來源不明的重製。"
+  },
+  {
+   "title": "(KOR)중급자를 위한 FNA 고찰 / (ENG)thyroid FNA",
+   "url": "https://www.youtube.com/watch?v=AQCf317WdDY",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "內容主題（中階者的 FNA 檢討：nondiagnostic、細胞量不足、經驗與技術）非常貼近 ch5-u3／u5，但 oEmbed 回 401，同頻道的 BKVdnvLHmHc 亦然——代表這兩支不可嵌入或有播放限制，站內無法使用，排除。"
+  },
+  {
+   "title": "Diagnostic & Therapeutic Approach to Lymph Nodes with Dr. Alvarez",
+   "url": "https://www.youtube.com/watch?v=STI3ePEgkfg",
+   "source": "YouTube / THANC Foundation（第二級）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、1:02:18，官方章節標記顯示 38:48 起有 FNA washout 段落，本來是 ch5-u4 Tg washout 的首選。排除是因為它已經是 ch7-u1 的主課，整支影片的主軸（淋巴結形態學判讀）與 ch7 高度重疊；依「能不共用就不共用」改用 KeepMyThyroid 的兩支專講 washout 的短片。"
+  },
+  {
+   "title": "Ultrasound of cervical lymph nodes technique & evaluation criteria (Gerasimos Sykiotis)",
+   "url": "https://www.youtube.com/watch?v=SisuHT1hQ1g",
+   "source": "YouTube / НМИЦ онкологии им. Н.Н. Петрова（White Nights 腫瘤論壇官方頻道，第二級）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、21:38、講者為 Lausanne 大學醫院內分泌科醫師。內容合格，但已是 ch7-u2 的主課，放進 ch5-u4 會與 ch7 大幅重疊，排除。"
+  },
+  {
+   "title": "(ENG)2020 ITC_KTIRADS",
+   "url": "https://www.youtube.com/watch?v=SZ9NS4EaClY",
+   "source": "YouTube / KeepMyThyroid（ITC 2020 受邀演講錄影，第二級）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、23:06。逐字稿確認內容紮實：K-TIRADS 與 ACR TI-RADS (2017)、ATA 2015、EU-TIRADS 2017 的四系統比較與各自的 FNA size cutoff、判讀者間 kappa 多在 0.5–0.6 以下、「診斷準確度受 size threshold 影響大於受風險分層系統影響」、AI（SERA）應用、韓國過度診斷的實測數字。曾一度選為 ch5-u3 主課（用來接替 K-TIRADS 2021 共識的位置），最後排除：它回答的是「該不該扎」，屬於 CH4 風險分層的範圍，對 ch5-u3 的 tight／weak 清單（囊性、鈣化、後方、深部、微小病灶的取樣技術）幾乎沒有著力點。建議 CH4 策展者考慮收錄。"
+  },
+  {
+   "title": "COVID-19 Transducer Cleaning and Personal Protective Equipment",
+   "url": "https://www.youtube.com/watch?v=bNVtjV1TrAU",
+   "source": "YouTube / AIUMultrasound（第一級）",
+   "decision": "excluded",
+   "reason": "唯一找到的 AIUM 官方影音、與感染控制直接相關（oEmbed 200、1:07:45、觀看 11621）。排除理由有二：一是 2020 年疫情期間錄製，整場以 COVID-19 為框架，收進來就得處理「使用過時脈絡卻未說明版本」的問題；二是它談的是探頭清潔與 PPE，不是被取代的那份 AIUM 文件所談的『誰可以執行超音波導引操作』。改以 target 文字明說 credentialing／supervision／感染控制須依當地成文規定。"
+  },
+  {
+   "title": "Anticoagulation in IR",
+   "url": "https://www.youtube.com/watch?v=XqWgjZFD48k",
+   "source": "YouTube / Health4TheWorld Academy（第三級）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、33:41，是搜尋『periprocedural anticoagulation image-guided biopsy』唯一命中的完整講座。但影片說明欄的主題標籤集中在 DVT 治療與抗凝血藥物本身，不是 SIR 共識那種「依操作出血風險分級決定停不停藥」的框架，對甲狀腺 FNA／CNB 也無著墨；改用 KeepMyThyroid 直接針對甲狀腺 FNA 給出停藥天數的短片。"
+  },
+  {
+   "title": "How I do it: thyroid biopsy",
+   "url": "https://www.youtube.com/watch?v=gwkL1DW6IdU",
+   "source": "YouTube / Yale Radiology and Biomedical Imaging（第一級）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、15:22、觀看 113526，是本次搜尋中品質最好的機構型甲狀腺切片示範之一。未收錄的原因是本章 u1／u2 的操作示範槽位已由 GM Cancer Academy、USCAP Ljung、Gulfcoast、Sonosite 與 KeepMyThyroid 填滿，再加一支同質的『整體流程示範』不會補上任何 tight 清單上的落差。留作備援。"
+  },
+  {
+   "title": "(ENG)thyroid FNA2_technique1",
+   "url": "https://www.youtube.com/watch?v=uQ9W3F0iyTs",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "oEmbed 200、3:28。逐字稿確認內容很對題（3 cm 囊實混合結節要取實質部分；實質成分不到 10% 且帶微鈣化的囊性為主病灶先抽液再取實質，證實為 papillary carcinoma；23G 針 + 2cc 針筒、不用 syringe holder；擺位與鋪單）。未收錄是因為與同系列 technique2（已選為 ch5-u3 主課）內容連續、教學點重疊，收兩支等於同一堂課切兩半。"
+  },
+  {
+   "title": "(ENG)Precautions for beginners when doing FNA2",
+   "url": "https://www.youtube.com/watch?v=qfuc4hibOYM",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "oEmbed 200、4:02。逐字稿確認涵蓋針筒預先來回鬆動、沖檢體時必須固定針與針筒接合處（否則黏稠檢體會噴到操作者、助手或病人）、17G 針抽出 9 cc 極黏稠囊液的病例，以及銳器專用容器與「不可徒手分離針頭」的處置流程。職業安全與銳器處理很值得講，但本章 u1 的兩個空位優先給了訓練路徑與術前用藥；留作備援。"
+  },
+  {
+   "title": "(ENG)Understanding Cytology Results in the Differential Diagnosis of Cervical Cystic Nodules",
+   "url": "https://www.youtube.com/watch?v=Mvz4TGI89cY",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "oEmbed 200、6:09。逐字稿確認為頸部囊性病灶的細胞學—影像對照（呼吸道上皮細胞出現時的鑑別：誤穿氣管、thyroglossal duct cyst、bronchogenic cyst），並提醒不要只看 Bethesda 分類、要讀後面的描述性報告。內容優良但與 ch5-u3 既有的囊性病灶 drill 功能重複，未收錄。"
+  },
+  {
+   "title": "(ENG)A cervical lesion requiring differential diagnosis from lymph node metastasis2",
+   "url": "https://www.youtube.com/watch?v=XKfrkANqNQo",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "oEmbed 200、5:01。逐字稿確認為 vagus nerve schwannoma 被當成側頸轉移淋巴結的病例（穿刺時病人一插針就咳嗽、washout Tg 未升高、CT 呈神經源性腫瘤的典型位置），教學價值高。ch5-u4 已收同系列第 1 集（chylous lymphocele），兩集功能相近，只取其一。"
   }
  ]
 }

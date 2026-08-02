@@ -110,6 +110,13 @@ deep learning thyroid nodule external validation
 
 ## 四、納入標準
 
+> **2026-08-02 改版：資源欄位一律只收影音。**
+> 期刊原文、指引 PDF 與病例圖譜網頁不再佔用資源欄位，改列在實證層的 `citations`
+> 與 `GUIDELINE-MATRIX.md`。`source_type` 只能是 `video` 或 `webinar`，
+> 違反會被 `make audit`（`requireVideo`）判為錯誤。
+> 機構官方頻道與個人專家頻道**同等接受**，判準是作者可確認、影像品質足夠、內容正確。
+
+
 每個資源至少記錄下列欄位（實際 schema 見 `docs/CURATION-BRIEF.md`）：
 
 title、speaker／channel、institution、URL、platform（`provider`）、publication date、

@@ -1,441 +1,522 @@
 {
- "chapter": "CH1",
- "search_date": "2026-08-02",
- "tools": [
-  "yt-dlp 2026.07.04 — ytsearch20/ytsearch15，--flat-playlist --print id|title|channel|duration|view_count",
-  "YouTube oEmbed（curl，逐支確認存在且可嵌入；401 一律剔除）",
-  "curl -sL -w '%{http_code} %{url_effective} %{content_type}'（非 YouTube 連結）",
-  "pdftotext（AIUM、EFSUMB PDF 內文確認）",
-  "NCBI E-utilities esummary（PMID 8125784 書目確認）",
-  "tavily_extract（Radiopaedia／AIUM 為 JS 應用，curl 對任何路徑都回 200，必須另行取內文確認條目存在）"
- ],
- "searched": [
-  "thyroid ultrasound knobology image optimization",
-  "ultrasound transducer selection preset image optimization lecture",
-  "thyroid ultrasound scanning technique optimization depth focus gain",
-  "ultrasound gain time gain compensation dynamic range tutorial",
-  "harmonic imaging compound imaging ultrasound explained",
-  "ultrasound spatial resolution temporal resolution frame rate tradeoff",
-  "thyroid ultrasound artifacts comet tail colloid calcification shadowing",
-  "color Doppler power Doppler PRF wall filter optimization",
-  "Doppler aliasing PRF scale wall filter tutorial ultrasound",
-  "substernal goiter ultrasound scanning technique swallowing",
-  "how I scan the thyroid neck ultrasound technique lecture",
-  "thyroid ultrasound scanning protocol demonstration radiology",
-  "ultrasound scanning obese patient difficult body habitus image optimization",
-  "thyroid ultrasound pitfalls artifacts lecture",
-  "ultrasound artifacts reverberation comet tail ring down explained radiology",
-  "AIUM ultrasound image optimization webinar",
-  "thyroid ultrasound preset GE Philips Siemens setup small parts",
-  "microvascular flow imaging superb microvascular imaging thyroid nodule",
-  "large goiter ultrasound extended field of view panoramic imaging technique",
-  "thyroid ultrasound tips and tricks difficult cases endocrinologist",
-  "neck ultrasound Valsalva swallowing maneuver dynamic scanning",
-  "linear transducer frequency selection penetration resolution small parts ultrasound",
-  "spatial compound imaging speckle reduction ultrasound demonstration",
-  "thyroid nodule vascularity Doppler technique demonstration",
-  "retrosternal thyroid ultrasound scanning short neck positioning",
-  "甲状腺 超音波 走査法 描出 コツ",
-  "갑상선 초음파 검사 기법 스캔",
-  "thyroid ultrasound patient positioning neck extension pillow technique demonstration",
-  "goiter ultrasound examination technique demonstration large multinodular",
-  "thyroid ultrasound inferior pole lower pole swallowing technique",
-  "ultrasound technically difficult patient image optimization webinar tips deep structures",
-  "esophagus ultrasound swallowing water neck pseudonodule dynamic",
-  "Gulfcoast ultrasound thyroid neck hot tips scanning",
-  "Sonography Minutes knobology gallery harmonics compound imaging",
-  "AIUM webinar thyroid ultrasound",
-  "thyroid ultrasound lecture fellowship advanced neck sonography grand rounds",
-  "Valsalva maneuver ultrasound neck internal jugular vein demonstration",
-  "ultrasound swallowing thyroid nodule mobility retrosternal extension demonstration",
-  "deep thyroid gland ultrasound curvilinear probe low frequency obese neck",
-  "thyroid ultrasound image optimization masterclass settings deep gland",
-  "neck ultrasound difficult patient anatomy scanning strategy webinar radiology",
-  "AIUM practice parameter performance thyroid parathyroid ultrasound examination PDF（網頁）",
-  "Radiopaedia ultrasound artefacts / tissue harmonic imaging / spatial compounding（網頁）",
-  "EFSUMB course book chapter free PDF physics artefacts Doppler ultrasound education（網頁）",
-  "substernal retrosternal goiter ultrasound limitation swallowing maneuver open access review（網頁）",
-  "\"thyroid ultrasound\" \"swallowing\" maneuver dynamic scan assess inferior extent substernal PubMed technique（網頁）",
-  "ultrasonography.org open access review artifacts ultrasound Korean Society of Ultrasound in Medicine（網頁）",
-  "\"Alberta SONO\" ultrasound University of Alberta point of care ultrasound program（網頁，作者身分查證）",
-  "FundBioImag YouTube \"Fundamentals of Biomedical Imaging\" course author university（網頁，作者身分查證）"
- ],
- "evaluated": [
-  {
-   "title": "General Ultrasound Image Optimization | Don't Do This!",
-   "url": "https://www.youtube.com/watch?v=6mC2fVP248w",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "included",
-   "unit": "ch1-u1",
-   "reason": "23:35，全程真實影像前後對照，主題就是最佳化的順序與常見錯誤；oEmbed 200。缺點是非甲狀腺專用、非學會來源，故列 Tier C。"
-  },
-  {
-   "title": "AIUM–ACR–SPR–SRU Practice Parameter … Extracranial Head and Neck（2018 PDF）",
-   "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
-   "source": "AIUM（學會，第一級）",
-   "decision": "included",
-   "unit": "ch1-u1",
-   "reason": "curl 200 application/pdf 89,940 bytes；pdftotext 確認含 Equipment Specifications 段落（線陣為主、10–14 MHz 以上、深度不足可降頻、深部或大型構造可用凸陣、下頸部可用 curved linear、Doppler frequencies should be set to optimize flow detection）。已於 note 標明 2023 年新版（doi:10.1002/jum.16251）僅在 Wiley 且不可公開取得。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Choice of ultrasound frequency : Penetration vs. Resolution",
-   "url": "https://www.youtube.com/watch?v=gxahrWViIH0",
-   "source": "YouTube / FundBioImag（EPFL 課程）",
-   "decision": "included",
-   "unit": "ch1-u1",
-   "reason": "oEmbed 200；經網頁查證頻道為 EPFL「Fundamentals of Biomedical Imaging」課程錄影（Rolf Gruetter），作者可確認。7:19，支撐 AIUM 允許降頻那一句的物理基礎。"
-  },
-  {
-   "title": "General Ultrasound | Grayscale Optimization | It's All About the Angle",
-   "url": "https://www.youtube.com/watch?v=jUya7d-pRvg",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "included",
-   "unit": "ch1-u1",
-   "reason": "oEmbed 200；9:33。入射角造成的假性邊緣模糊直接連到 CH4 的 margin 判讀，是 fellow 常見誤判來源。"
-  },
-  {
-   "title": "OPTIMIZE ULTRASOUND IMAGE（Prof. Jeff Bamber for IBUS）",
-   "url": "https://www.youtube.com/watch?v=H8nWqJArj4U",
-   "source": "YouTube / IBUS BREAST IMAGING SCHOOL",
-   "decision": "included",
-   "unit": "ch1-u2",
-   "reason": "oEmbed 200；1:24:44，25,529 次觀看。由超音波物理學者為國際乳房超音波學校主講，是公開資源中把每個旋鈕對應到物理量講得最完整的一堂。示範器官為乳房（同屬 small parts 高頻線陣），設定邏輯可移植；甲狀腺領域查無同等深度課程。"
-  },
-  {
-   "title": "EFSUMB Course Book 2nd Edition, Ch.32 Ultrasound \"Knobology\"",
-   "url": "https://efsumb.org/wp-content/uploads/2023/07/ECB2nd_Chapter_KNOBOLOGY_FULL.pdf",
-   "source": "EFSUMB（學會，第一級）",
-   "decision": "included",
-   "unit": "ch1-u2",
-   "reason": "curl 200 application/pdf 978,110 bytes；pdftotext 確認作者 Adrian K.P. Lim（Imperial College London）、Carmel M. Moran（University of Edinburgh）、Christoph F. Dietrich，DOI 10.37713/ECB32，官網標示免費下載，另有中文版。涵蓋 transducer choice 與全部基本／進階旋鈕。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Time Gain Compensation | Radiology Physics Course #13",
-   "url": "https://www.youtube.com/watch?v=gFzvAajSk4U",
-   "source": "YouTube / Radiology Tutorials",
-   "decision": "included",
-   "unit": "ch1-u2",
-   "reason": "oEmbed 200；6:36，39,815 次觀看。TGC 與 overall gain 的差別是本單元核心誤區。屬考試向物理教學，故 Tier C，並在 dose 要求回到機器實作。"
-  },
-  {
-   "title": "Adjusting Dynamic Range",
-   "url": "https://www.youtube.com/watch?v=Axmh3oKBhCE",
-   "source": "YouTube / Clarius Mobile Health（設備廠商）",
-   "decision": "included",
-   "unit": "ch1-u2",
-   "reason": "oEmbed 200；1:18。極短但為真實影像上的動態範圍前後對照，直接對應「微鈣化被壓掉」這個誤判。已填 coi 標明廠商身分，並限定其僅作操作示範。"
-  },
-  {
-   "title": "AlbertaSono knobology and image manipulation",
-   "url": "https://www.youtube.com/watch?v=6xBKcg1arWo",
-   "source": "YouTube / Alberta SONO（University of Alberta 教學計畫）",
-   "decision": "included",
-   "unit": "ch1-u2",
-   "reason": "oEmbed 200；10:05，1,556 次觀看（低於 config minViews 300 以上但偏低）。經網頁查證 Alberta SONO 為 University of Alberta 急重症超音波教育計畫（albertasono.ca），來源可確認。示範情境為 POCUS 而非甲狀腺，已於 note 說明。"
-  },
-  {
-   "title": "AIUM Webinar: Artifacts in Sonography（Frederick Kremkau）",
-   "url": "https://www.youtube.com/watch?v=WrzisTDAZcM",
-   "source": "YouTube / AIUMultrasound（學會，第一級）",
-   "decision": "included",
-   "unit": "ch1-u3",
-   "reason": "oEmbed 200；59:24，36,034 次觀看。AIUM 官方 webinar，主講者為超音波物理權威；同時涵蓋灰階與 Doppler 假影的成因、辨認與處置，正好符合本章「假影不只是要認得，還要知道是不是自己按出來的」。"
-  },
-  {
-   "title": "Tissue Harmonic Ultrasound Imaging | Radiology Physics Course #24",
-   "url": "https://www.youtube.com/watch?v=LvkXFwBlAOc",
-   "source": "YouTube / Radiology Tutorials",
-   "decision": "included",
-   "unit": "ch1-u3",
-   "reason": "oEmbed 200；24:38，55,682 次觀看。諧波成像的得失（對比變好、穿透變差）對厚頸病人有直接臨床後果。"
-  },
-  {
-   "title": "Beam Focusing, Steering and Spatial Compounding | Radiology Physics Course #16",
-   "url": "https://www.youtube.com/watch?v=1_-BmMrxUjA",
-   "source": "YouTube / Radiology Tutorials",
-   "decision": "included",
-   "unit": "ch1-u3",
-   "reason": "oEmbed 200；10:13，41,194 次觀看。同時涵蓋 focus 數目、beam steering 與 spatial compounding 對 frame rate 與後方聲影的影響，是本單元「取捨」主題的核心。"
-  },
-  {
-   "title": "Comet tail artifact（Radiopaedia 條目）",
-   "url": "https://radiopaedia.org/articles/comet-tail-artifact",
-   "source": "Radiopaedia（第二級病例圖譜）",
-   "decision": "included",
-   "unit": "ch1-u3",
-   "reason": "curl 200；因 Radiopaedia 對不存在的 slug 也回 200（實測 this-slug-does-not-exist-xyz123 → 200），另以 tavily_extract 取內文確認條目確實存在，且明列 thyroid colloid nodules 與其他成因、要求與 ring-down artifact 鑑別。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Doppler Ultrasound 101 | The Basics",
-   "url": "https://www.youtube.com/watch?v=LeI3ns30mvg",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "included",
-   "unit": "ch1-u4",
-   "reason": "oEmbed 200；38:16，86,946 次觀看。原本首選的同頻道《Color Doppler Optimization Checklist》(EjI_bJOKGuQ) oEmbed 三次皆 401（不允許嵌入）而剔除，改用本片。標題寫 basics 但內容為逐旋鈕實機對照，符合本章「參數怎麼調」的定位；非學會來源故 Tier C。"
-  },
-  {
-   "title": "New Classification Of Doppler Vascularization Of Thyroid Nodules（AIUM 電子壁報，Lucy Kerr）",
-   "url": "https://www.youtube.com/watch?v=psvgHsrzRt4",
-   "source": "YouTube / AIUMultrasound",
-   "decision": "included",
-   "unit": "ch1-u4",
-   "reason": "oEmbed 200；10:33，1,769 次觀看。全章唯一把 Doppler 參數直接接到甲狀腺結節的資源。但屬單一作者提案、未被任何 TI-RADS 系統採納，故列 Tier B，並在 dose 明確要求不得據以改變穿刺決策。"
-  },
-  {
-   "title": "Wall Filter, Steering, and Angle Correction - Advanced Ultrasound Doppler Settings made Easy",
-   "url": "https://www.youtube.com/watch?v=hPAnhB_ERbI",
-   "source": "YouTube / POCUS 101",
-   "decision": "included",
-   "unit": "ch1-u4",
-   "reason": "oEmbed 200；8:05，37,103 次觀看。wall filter 是「結節內明明有血流卻顯示不出來」最常見的兇手，直接對應本單元的低流速訊號主題。"
-  },
-  {
-   "title": "Aliasing Artifact | Radiology Physics Course #23",
-   "url": "https://www.youtube.com/watch?v=auG2nND0e7w",
-   "source": "YouTube / Radiology Tutorials",
-   "decision": "included",
-   "unit": "ch1-u4",
-   "reason": "oEmbed 200；15:11，40,821 次觀看。後半段講如何降低 aliasing（PRF、基線、頻率、角度）為可操作內容。"
-  },
-  {
-   "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
-   "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
-   "source": "YouTube / AIUMultrasound（學會，第一級）",
-   "decision": "included",
-   "unit": "ch1-u5",
-   "reason": "oEmbed 200；44:34，130,137 次觀看。作為 u5 主課是折衷選擇：主題是頸部超音波的可見範圍與臨床用途邊界，切中本單元「寫出可視下界」的目標，但並非專講困難體型。已在 why 誠實標明本節缺乏專門課程。與 CH2 有主題重疊風險，交付時請併章去重。"
-  },
-  {
-   "title": "Сканирование щитовидной железы у пациента с ожирением на Mindray Resona i9",
-   "url": "https://www.youtube.com/watch?v=Fa6eAo0LgzY",
-   "source": "YouTube / MEDLIGA（醫療設備經銷商）",
-   "decision": "included",
-   "unit": "ch1-u5",
-   "reason": "oEmbed 200；11:00，453 次觀看。全章搜尋中唯一實際示範肥胖病人深部甲狀腺掃描並更換探頭（L14-3 → L9-3）的動態影片。缺點：俄語、觀看數低、廠商內容。已填 coi 與 note，並要求以 AIUM practice parameter 交叉驗證。"
-  },
-  {
-   "title": "Substernal goitre（Radiopaedia 條目）",
-   "url": "https://radiopaedia.org/articles/retrosternal-goitre",
-   "source": "Radiopaedia（第二級病例圖譜）",
-   "decision": "included",
-   "unit": "ch1-u5",
-   "reason": "curl 200；tavily_extract 取得內文確認條目存在且標題為 Substernal goitre，Ultrasound 段明確寫出「無法掃到最下極本身即為胸骨後甲狀腺腫的線索」，CT 段說明手術決策特徵。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Differential movement during swallowing as an aid in the detection of thyroid pseudonodules",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/8125784/",
-   "source": "PubMed / Head & Neck 1994;16(1):21-4（Siminoski K）",
-   "decision": "included",
-   "unit": "ch1-u5",
-   "reason": "curl 200；NCBI esummary 確認書目（標題、期刊、年份、卷期頁、作者）。是把「吞嚥動態」寫成判讀依據的原始文獻。年代久遠、樣本小、全文需訂閱，已於 note 標明並限定其支持範圍。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Doppler Ultrasound | Color Doppler Optimization Checklist",
-   "url": "https://www.youtube.com/watch?v=EjI_bJOKGuQ",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "excluded",
-   "reason": "內容最貼近 u4 主課需求（17:44 逐項 Doppler 最佳化檢查表），但 oEmbed 連續三次回 401（影片不允許嵌入或設為私人），依契約視為不可用，改用同頻道 LeI3ns30mvg。"
-  },
-  {
-   "title": "Ultrasound Knobology Gallery 系列（Output Power / Dynamic Range / TGC / Gain / Depth / PRF-Scale）",
-   "url": "https://www.youtube.com/watch?v=3iZmD3zdpWk",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "excluded",
-   "reason": "整個系列（3iZmD3zdpWk、4-IvIfEkwJo、CqJmY-AE4a4、S_HQE_ts_YQ、_O_ZkrtmqEU、_xw0tZRo2ek）oEmbed 全部回 401，不允許嵌入。原本規劃 output power 與 dynamic range 兩支進 u2，改以 Clarius 影片與 EFSUMB 章節替代。"
-  },
-  {
-   "title": "Dynamic Range of Ultrasound and Compression Knobology",
-   "url": "https://www.youtube.com/watch?v=u20BFG32Duk",
-   "source": "YouTube / Ultrasound Board Review",
-   "decision": "excluded",
-   "reason": "yt-dlp 回「This video is not available」，影片已下架。"
-  },
-  {
-   "title": "The Secret Behind Perfect Ultrasound Images | Knobology in Action | Thyroid Ultrasound Demonstration",
-   "url": "https://www.youtube.com/watch?v=mR7gi3-xeVw",
-   "source": "YouTube / ScanCentral",
-   "decision": "excluded",
-   "reason": "主題非常貼題（甲狀腺 knobology 示範）但僅 63 次觀看、頻道與作者身分無法確認，符合「無法確認作者或來源」排除條款。"
-  },
-  {
-   "title": "How to optimize your ultrasound and Doppler machine 2021 (knobology), Dr/Amr Salah (part 2)",
-   "url": "https://www.youtube.com/watch?v=K148jhS5qfA",
-   "source": "YouTube / AMR SALAH (ultrasound step by step)",
-   "decision": "excluded",
-   "reason": "oEmbed 200、49,316 次觀看，內容為長時間實機最佳化，但 1:33:10 超出 config 的主課長度上限 1:30:00，且為 part 2（缺前半脈絡）、講者機構背景無法確認。已有 IBUS／Bamber 涵蓋同一主題，故不納入。"
-  },
-  {
-   "title": "Ultrasound of the Neck: There's More to See Than Thyroid Nodules",
-   "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
-   "source": "YouTube / Radiology Video - radiology made esay",
-   "decision": "excluded",
-   "reason": "內容相關且觀看數高（64,905），但頻道為第三方轉載他人演講的聚合頻道，無法確認授權，符合「未經授權重新上傳」風險，排除。"
-  },
-  {
-   "title": "ECR 2019 Symposium - Multiparametric Ultrasound in Thyroid & Salivary Glands Daily Practice",
-   "url": "https://www.youtube.com/watch?v=6Gp3W20l2aM",
-   "source": "YouTube / Canon Medical ANZ（設備廠商）",
-   "decision": "excluded",
-   "reason": "廠商贊助的 ECR 衛星研討會，主題偏向該公司多參數成像技術（SMI 等）而非通用參數調整，且 161 次觀看。屬 CH11 新興技術範疇，本章不收。"
-  },
-  {
-   "title": "A demonstration of Differential Tissue Harmonic Imaging / A technical explanation of 3rd Harmonic Imaging",
-   "url": "https://www.youtube.com/watch?v=XjO8cWkfCLQ",
-   "source": "YouTube / Global Medical Business at Canon Inc.（設備廠商）",
-   "decision": "excluded",
-   "reason": "純廠商專有技術（DTHI、3rd harmonic）宣傳片，各約 3 分鐘，無法一般化到其他機型，且缺乏可驗證的比較條件。u3 改用可通用的諧波成像原理教學。"
-  },
-  {
-   "title": "Thyroid Ultrasound course (Part 1) (25-04-2021) - IDEA Clinics",
-   "url": "https://www.youtube.com/watch?v=i4BxEgfgfqU",
-   "source": "YouTube / IDEA CLINICS",
-   "decision": "excluded",
-   "reason": "1:38:47 超出主課長度上限，且為私人診所主辦課程、講者資歷與課程審查機制無法確認。"
-  },
-  {
-   "title": "Small Parts Ultrasound | Thyroid - Protocol, Tips & Tricks",
-   "url": "https://www.youtube.com/watch?v=vlAMWL9V9fY",
-   "source": "YouTube / Sonography Minutes",
-   "decision": "excluded",
-   "reason": "品質良好（18:51，含完整章節標記，25,179 次觀看），但內容是標準甲狀腺掃描 protocol，屬 fellow 已具備的基礎能力，依受眾規則不列入 CH1；建議留給 CH0 複習或 CH2 使用。"
-  },
-  {
-   "title": "Thyroid - Ultrasound Scanning Technique / Basic Thyroid U/S Protocol",
-   "url": "https://www.youtube.com/watch?v=ftg6kTYpzGA",
-   "source": "YouTube / Clarius Mobile Health（設備廠商）",
-   "decision": "excluded",
-   "reason": "2:04，128,755 次觀看，但屬入門掃描示範（探頭怎麼放），非參數調整，依受眾規則排除。"
-  },
-  {
-   "title": "Ultrasound Artifacts, Part 1 / Part 2（Shadowing、enhancement、edge、reverberation）",
-   "url": "https://www.youtube.com/watch?v=SN6_YKVl-U0",
-   "source": "YouTube / Core Ultrasound",
-   "decision": "excluded",
-   "reason": "內容合適但兩支（SN6_YKVl-U0、SyYkOglVVLo）oEmbed 皆回 401，不允許嵌入。"
-  },
-  {
-   "title": "Color and Power Doppler Made Easy!",
-   "url": "https://www.youtube.com/watch?v=QsC9eQx3uF8",
-   "source": "YouTube / Core Ultrasound",
-   "decision": "excluded",
-   "reason": "oEmbed 200，4:46。內容正確但層次偏入門（color 與 power Doppler 的基本差異），u4 三個名額已由 wall filter、aliasing 與甲狀腺應用填滿，故不納入。備選資源。"
-  },
-  {
-   "title": "Understanding Pulse Repetition Frequency, Scale, Wall Filter and Nyquist Limit. / Wall Filter of Ultrasound",
-   "url": "https://www.youtube.com/watch?v=g2KNJGT-XGA",
-   "source": "YouTube / Ultrasound Board Review",
-   "decision": "excluded",
-   "reason": "oEmbed 200，內容涵蓋 PRF 與 wall filter，但為超音波考試複習頻道、作者身分未公開，且與已納入的 POCUS 101 與 Radiology Tutorials 兩支重疊。備選資源。"
-  },
-  {
-   "title": "Ultrasound Artifacts | Radiology Physics Course #25 / Ultrasound Artifacts（UW WISH）",
-   "url": "https://www.youtube.com/watch?v=GOWlzuMziUU",
-   "source": "YouTube / Radiology Tutorials；YouTube / UW WISH",
-   "decision": "excluded",
-   "reason": "兩支 oEmbed 皆 200、品質可用，但與 u3 主課（AIUM／Kremkau）內容大幅重疊；u3 的第三個名額改給甲狀腺專屬的 comet-tail 條目。備選資源。"
-  },
-  {
-   "title": "Adjusting Gain and Depth",
-   "url": "https://www.youtube.com/watch?v=u5xM1D0KrkE",
-   "source": "YouTube / Clarius Mobile Health（設備廠商）",
-   "decision": "excluded",
-   "reason": "oEmbed 200，2:22。為避免 u2 四個名額中出現兩支同一廠商內容而未納入；已保留 Axmh3oKBhCE（dynamic range）一支。備選資源。"
-  },
-  {
-   "title": "A Primer on the Physical Principles of Tissue Harmonic Imaging（RadioGraphics 2015）",
-   "url": "https://pubs.rsna.org/doi/full/10.1148/rg.2015140338",
-   "source": "RadioGraphics（期刊，第二級）",
-   "decision": "excluded",
-   "reason": "內容極為適合 u3，但 2026-08-02 curl 回 403（Cloudflare／訂閱牆），無法確認一般讀者可否取用，依契約不納入。"
-  },
-  {
-   "title": "Compound Spatial Sonography of the Thyroid Gland: Evaluation of Freedom from Artifacts and of Nodule Conspicuity（AJR 2001）",
-   "url": "https://www.ajronline.org/doi/10.2214/ajr.177.5.1771195",
-   "source": "AJR（期刊，第二級）",
-   "decision": "excluded",
-   "reason": "主題與 u3 完全吻合（複合成像對甲狀腺假影與結節顯著度的影響），但 curl 回 403，無法驗證取用狀態。列為 KNOWN-GAPS：若日後取得開放版本應優先補入 u3。"
-  },
-  {
-   "title": "AIUM Practice Parameter for the Performance and Interpretation of Diagnostic Ultrasound of the Thyroid and Extracranial Head and Neck（2023）",
-   "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.16251",
-   "source": "AIUM / Journal of Ultrasound in Medicine（Wiley）",
-   "decision": "excluded",
-   "reason": "這是現行版本，AIUM 官網 practice parameters 頁面確認 Year 2023 且 Article url 指向此連結；但 curl 回 403（bot 防護／需訂閱）。u1 因此改連 AIUM 官網可公開下載的 2018 版 PDF，並在 note 標明版本差異與此連結。"
-  },
-  {
-   "title": "Thyroid ultrasound and its ancillary techniques（Rev Endocr Metab Disord 2023）",
-   "url": "https://link.springer.com/article/10.1007/s11154-023-09841-1",
-   "source": "Springer（期刊，第二級）",
-   "decision": "excluded",
-   "reason": "curl 最終 200 但被導向 cookies_not_supported 參數頁，WebFetch 遭 idp.springer.com 認證轉址，無法確認一般讀者能否閱讀全文；且內容偏向 elastography／CEUS 等輔助技術，屬 CH11 範疇。"
-  },
-  {
-   "title": "Substernal Goiter（StatPearls, NCBI Bookshelf）",
-   "url": "https://www.ncbi.nlm.nih.gov/books/NBK557416/",
-   "source": "NCBI Bookshelf（開放取用）",
-   "decision": "excluded",
-   "reason": "curl 200、內容正確（超音波無法評估胸骨後範圍），但同一論點由 Radiopaedia 條目以影像佐證呈現，教學價值較高，故 u5 採用後者以免重複。備選資源。"
-  },
-  {
-   "title": "Ultrasound Physics and Technical Facts for the Beginner（ACEP Sonoguide）",
-   "url": "https://www.acep.org/sonoguide/basic/ultrasound-physics-and-technical-facts-for-the-beginner",
-   "source": "ACEP（學會，第一級）",
-   "decision": "excluded",
-   "reason": "curl 200、學會來源，但標題與內容定位為 beginner，依受眾規則不納入進階課程。"
-  },
-  {
-   "title": "Ultrasound 101 – Part 8: Artifacts in Ultrasound（123sonography）",
-   "url": "https://123sonography.com/blog/ultrasound-101/ultrasound-101-part-8-artifacts-ultrasound",
-   "source": "123sonography（商業教育網站）",
-   "decision": "excluded",
-   "reason": "curl 200，但為付費課程平台的引流文章，深度不足且入門定位。"
-  },
-  {
-   "title": "EFSUMB Course Book Ch.01 Physical Principles of Medical Ultrasound",
-   "url": "https://efsumb.org/physical-principles-of-medical-ultrasound/",
-   "source": "EFSUMB（學會，第一級）",
-   "decision": "excluded",
-   "reason": "curl 200、免費下載，但主題是物理原理而非參數調整，違反本章「重點是參數怎麼調，不是超音波原理是什麼」的定位。備選資源。"
-  },
-  {
-   "title": "日文甲狀腺／頸部超音波掃描教學（複數頻道）",
-   "url": "https://www.youtube.com/results?search_query=%E7%94%B2%E7%8A%B6%E8%85%BA+%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%B5%B0%E6%9F%BB%E6%B3%95",
-   "source": "YouTube（日文搜尋）",
-   "decision": "excluded",
-   "reason": "以「甲状腺 超音波 走査法 描出 コツ」搜尋 20 筆，命中內容集中在腹部、頸動脈與探頭握法基礎，無一支處理甲狀腺的機器參數最佳化或困難體型；無合格資源。"
-  },
-  {
-   "title": "韓文甲狀腺超音波掃描教學（SONOUS Education 等）",
-   "url": "https://www.youtube.com/results?search_query=%EA%B0%91%EC%83%81%EC%84%A0+%EC%B4%88%EC%9D%8C%ED%8C%8C+%EA%B2%80%EC%82%AC+%EA%B8%B0%EB%B2%95",
-   "source": "YouTube（韓文搜尋）",
-   "decision": "excluded",
-   "reason": "以「갑상선 초음파 검사 기법 스캔」搜尋 20 筆，多為付費課程的樣本片段（49–152 秒）或民眾衛教，無完整的機器最佳化教學；付費課程樣本不符可連結完整內容的要求。"
-  },
-  {
-   "title": "Panoramic Scanning / 大型甲狀腺腫的 extended field of view 掃描",
-   "url": "https://www.youtube.com/watch?v=ZCli-mLx_hQ",
-   "source": "YouTube / Mark Yousef Sono",
-   "decision": "excluded",
-   "reason": "「large goiter ultrasound extended field of view panoramic imaging technique」搜尋僅回 1 筆結果，內容為通用全景掃描示範、未涉及甲狀腺，作者機構無法確認。u5 的大型甲狀腺腫測量問題因此留在 KNOWN-GAPS。"
-  },
-  {
-   "title": "Valsalva／吞嚥動態掃描示範影片",
-   "url": "https://www.youtube.com/results?search_query=neck+ultrasound+Valsalva+swallowing+maneuver+dynamic+scanning",
-   "source": "YouTube（3 組不同英文查詢，共約 50 筆）",
-   "decision": "excluded",
-   "reason": "三次查詢（neck ultrasound Valsalva swallowing maneuver dynamic scanning／ultrasound swallowing thyroid nodule mobility retrosternal extension demonstration／thyroid ultrasound inferior pole lower pole swallowing technique）全部命中臨床理學檢查 OSCE、吞嚥復健或衛教影片，查無任何示範頸部超音波吞嚥或 Valsalva 動態手法的合格影片。u5 因此改用 PubMed 原始文獻（PMID 8125784）承接此主題，屬本章最大的影音缺口。"
-  }
- ],
- "known_gaps": [
-  "u5「困難體型與動態掃描」缺乏專門的高品質公開課程：短頸、頸部無法後仰、吞嚥與 Valsalva 動態手法均查無合格示範影片，目前以 AIUM 頸部範圍 webinar + 廠商肥胖病例示範 + 1994 年原始文獻拼湊，是本章最需要人工補課與專家審閱之處。",
-  "複合成像對甲狀腺假影與結節顯著度的直接證據（AJR 2001, doi:10.2214/ajr.177.5.1771195）因 403 無法納入；若取得開放版本應補進 ch1-u3。",
-  "AIUM 頸部 practice parameter 現行版本為 2023 年（doi:10.1002/jum.16251），但只在 Wiley 且無法公開驗證，本章連結的是官網免費的 2018 版，已於資源 note 明示版本。",
-  "大型／多結節性甲狀腺腫的 extended field of view（panoramic）測量技術查無合格教學資源。",
-  "Sonography Minutes 的 Knobology Gallery 系列（單一旋鈕的實機對照，最貼近本章需求）整組不允許嵌入，導致 u2 的 depth／focus／gain 分項示範只能以較長的綜合影片替代。"
- ]
+  "chapter": "CH1",
+  "search_date": "2026-08-02",
+  "tools": [
+    "yt-dlp 2026.07.04 — ytsearch20/ytsearch15，--flat-playlist --print id|title|channel|duration|view_count",
+    "YouTube oEmbed（curl，逐支確認存在且可嵌入；401 一律剔除）",
+    "curl -sL -w '%{http_code} %{url_effective} %{content_type}'（非 YouTube 連結）",
+    "pdftotext（AIUM、EFSUMB PDF 內文確認）",
+    "NCBI E-utilities esummary（PMID 8125784 書目確認）",
+    "tavily_extract（Radiopaedia／AIUM 為 JS 應用，curl 對任何路徑都回 200，必須另行取內文確認條目存在）"
+  ],
+  "searched": [
+    "thyroid ultrasound knobology image optimization",
+    "ultrasound transducer selection preset image optimization lecture",
+    "thyroid ultrasound scanning technique optimization depth focus gain",
+    "ultrasound gain time gain compensation dynamic range tutorial",
+    "harmonic imaging compound imaging ultrasound explained",
+    "ultrasound spatial resolution temporal resolution frame rate tradeoff",
+    "thyroid ultrasound artifacts comet tail colloid calcification shadowing",
+    "color Doppler power Doppler PRF wall filter optimization",
+    "Doppler aliasing PRF scale wall filter tutorial ultrasound",
+    "substernal goiter ultrasound scanning technique swallowing",
+    "how I scan the thyroid neck ultrasound technique lecture",
+    "thyroid ultrasound scanning protocol demonstration radiology",
+    "ultrasound scanning obese patient difficult body habitus image optimization",
+    "thyroid ultrasound pitfalls artifacts lecture",
+    "ultrasound artifacts reverberation comet tail ring down explained radiology",
+    "AIUM ultrasound image optimization webinar",
+    "thyroid ultrasound preset GE Philips Siemens setup small parts",
+    "microvascular flow imaging superb microvascular imaging thyroid nodule",
+    "large goiter ultrasound extended field of view panoramic imaging technique",
+    "thyroid ultrasound tips and tricks difficult cases endocrinologist",
+    "neck ultrasound Valsalva swallowing maneuver dynamic scanning",
+    "linear transducer frequency selection penetration resolution small parts ultrasound",
+    "spatial compound imaging speckle reduction ultrasound demonstration",
+    "thyroid nodule vascularity Doppler technique demonstration",
+    "retrosternal thyroid ultrasound scanning short neck positioning",
+    "甲状腺 超音波 走査法 描出 コツ",
+    "갑상선 초음파 검사 기법 스캔",
+    "thyroid ultrasound patient positioning neck extension pillow technique demonstration",
+    "goiter ultrasound examination technique demonstration large multinodular",
+    "thyroid ultrasound inferior pole lower pole swallowing technique",
+    "ultrasound technically difficult patient image optimization webinar tips deep structures",
+    "esophagus ultrasound swallowing water neck pseudonodule dynamic",
+    "Gulfcoast ultrasound thyroid neck hot tips scanning",
+    "Sonography Minutes knobology gallery harmonics compound imaging",
+    "AIUM webinar thyroid ultrasound",
+    "thyroid ultrasound lecture fellowship advanced neck sonography grand rounds",
+    "Valsalva maneuver ultrasound neck internal jugular vein demonstration",
+    "ultrasound swallowing thyroid nodule mobility retrosternal extension demonstration",
+    "deep thyroid gland ultrasound curvilinear probe low frequency obese neck",
+    "thyroid ultrasound image optimization masterclass settings deep gland",
+    "neck ultrasound difficult patient anatomy scanning strategy webinar radiology",
+    "AIUM practice parameter performance thyroid parathyroid ultrasound examination PDF（網頁）",
+    "Radiopaedia ultrasound artefacts / tissue harmonic imaging / spatial compounding（網頁）",
+    "EFSUMB course book chapter free PDF physics artefacts Doppler ultrasound education（網頁）",
+    "substernal retrosternal goiter ultrasound limitation swallowing maneuver open access review（網頁）",
+    "\"thyroid ultrasound\" \"swallowing\" maneuver dynamic scan assess inferior extent substernal PubMed technique（網頁）",
+    "ultrasonography.org open access review artifacts ultrasound Korean Society of Ultrasound in Medicine（網頁）",
+    "\"Alberta SONO\" ultrasound University of Alberta point of care ultrasound program（網頁，作者身分查證）",
+    "FundBioImag YouTube \"Fundamentals of Biomedical Imaging\" course author university（網頁，作者身分查證）",
+    "yt-dlp ytsearch: ultrasound transducer probe selection linear curved frequency lecture",
+    "yt-dlp ytsearch: knobology ultrasound machine GE Philips Samsung tutorial",
+    "yt-dlp ytsearch: GE Healthcare ultrasound knobology LOGIQ image optimization",
+    "yt-dlp ytsearch: Samsung Philips ultrasound thyroid image optimization education",
+    "yt-dlp ytsearch: comet tail artifact reverberation ultrasound thyroid colloid",
+    "yt-dlp ytsearch: ring down artifact comet tail ultrasound physics",
+    "yt-dlp ytsearch: Reverberation Artifact Ultrasound Physics Radiology Physics Course",
+    "yt-dlp ytsearch: retrosternal goiter ultrasound substernal thyroid imaging",
+    "yt-dlp ytsearch: esophagus thyroid ultrasound swallowing pseudonodule",
+    "yt-dlp ytsearch: thyroid ultrasound swallowing dynamic scan esophagus differentiate",
+    "yt-dlp channel listing: Tamas Solymosi、KeepMyThyroid"
+  ],
+  "evaluated": [
+    {
+      "title": "General Ultrasound Image Optimization | Don't Do This!",
+      "url": "https://www.youtube.com/watch?v=6mC2fVP248w",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "included",
+      "unit": "ch1-u1",
+      "reason": "23:35，全程真實影像前後對照，主題就是最佳化的順序與常見錯誤；oEmbed 200。缺點是非甲狀腺專用、非學會來源，故列 Tier C。"
+    },
+    {
+      "title": "AIUM–ACR–SPR–SRU Practice Parameter … Extracranial Head and Neck（2018 PDF）",
+      "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+      "source": "AIUM（學會，第一級）",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200 application/pdf 89,940 bytes；pdftotext 確認含 Equipment Specifications 段落（線陣為主、10–14 MHz 以上、深度不足可降頻、深部或大型構造可用凸陣、下頸部可用 curved linear、Doppler frequencies should be set to optimize flow detection）。已於 note 標明 2023 年新版（doi:10.1002/jum.16251）僅在 Wiley 且不可公開取得。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Choice of ultrasound frequency : Penetration vs. Resolution",
+      "url": "https://www.youtube.com/watch?v=gxahrWViIH0",
+      "source": "YouTube / FundBioImag（EPFL 課程）",
+      "decision": "included",
+      "unit": "ch1-u1",
+      "reason": "oEmbed 200；經網頁查證頻道為 EPFL「Fundamentals of Biomedical Imaging」課程錄影（Rolf Gruetter），作者可確認。7:19，支撐 AIUM 允許降頻那一句的物理基礎。"
+    },
+    {
+      "title": "General Ultrasound | Grayscale Optimization | It's All About the Angle",
+      "url": "https://www.youtube.com/watch?v=jUya7d-pRvg",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "included",
+      "unit": "ch1-u1",
+      "reason": "oEmbed 200；9:33。入射角造成的假性邊緣模糊直接連到 CH4 的 margin 判讀，是 fellow 常見誤判來源。"
+    },
+    {
+      "title": "OPTIMIZE ULTRASOUND IMAGE（Prof. Jeff Bamber for IBUS）",
+      "url": "https://www.youtube.com/watch?v=H8nWqJArj4U",
+      "source": "YouTube / IBUS BREAST IMAGING SCHOOL",
+      "decision": "included",
+      "unit": "ch1-u2",
+      "reason": "oEmbed 200；1:24:44，25,529 次觀看。由超音波物理學者為國際乳房超音波學校主講，是公開資源中把每個旋鈕對應到物理量講得最完整的一堂。示範器官為乳房（同屬 small parts 高頻線陣），設定邏輯可移植；甲狀腺領域查無同等深度課程。"
+    },
+    {
+      "title": "EFSUMB Course Book 2nd Edition, Ch.32 Ultrasound \"Knobology\"",
+      "url": "https://efsumb.org/wp-content/uploads/2023/07/ECB2nd_Chapter_KNOBOLOGY_FULL.pdf",
+      "source": "EFSUMB（學會，第一級）",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200 application/pdf 978,110 bytes；pdftotext 確認作者 Adrian K.P. Lim（Imperial College London）、Carmel M. Moran（University of Edinburgh）、Christoph F. Dietrich，DOI 10.37713/ECB32，官網標示免費下載，另有中文版。涵蓋 transducer choice 與全部基本／進階旋鈕。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Time Gain Compensation | Radiology Physics Course #13",
+      "url": "https://www.youtube.com/watch?v=gFzvAajSk4U",
+      "source": "YouTube / Radiology Tutorials",
+      "decision": "included",
+      "unit": "ch1-u2",
+      "reason": "oEmbed 200；6:36，39,815 次觀看。TGC 與 overall gain 的差別是本單元核心誤區。屬考試向物理教學，故 Tier C，並在 dose 要求回到機器實作。"
+    },
+    {
+      "title": "Adjusting Dynamic Range",
+      "url": "https://www.youtube.com/watch?v=Axmh3oKBhCE",
+      "source": "YouTube / Clarius Mobile Health（設備廠商）",
+      "decision": "included",
+      "unit": "ch1-u2",
+      "reason": "oEmbed 200；1:18。極短但為真實影像上的動態範圍前後對照，直接對應「微鈣化被壓掉」這個誤判。已填 coi 標明廠商身分，並限定其僅作操作示範。"
+    },
+    {
+      "title": "AlbertaSono knobology and image manipulation",
+      "url": "https://www.youtube.com/watch?v=6xBKcg1arWo",
+      "source": "YouTube / Alberta SONO（University of Alberta 教學計畫）",
+      "decision": "included",
+      "unit": "ch1-u2",
+      "reason": "oEmbed 200；10:05，1,556 次觀看（低於 config minViews 300 以上但偏低）。經網頁查證 Alberta SONO 為 University of Alberta 急重症超音波教育計畫（albertasono.ca），來源可確認。示範情境為 POCUS 而非甲狀腺，已於 note 說明。"
+    },
+    {
+      "title": "AIUM Webinar: Artifacts in Sonography（Frederick Kremkau）",
+      "url": "https://www.youtube.com/watch?v=WrzisTDAZcM",
+      "source": "YouTube / AIUMultrasound（學會，第一級）",
+      "decision": "included",
+      "unit": "ch1-u3",
+      "reason": "oEmbed 200；59:24，36,034 次觀看。AIUM 官方 webinar，主講者為超音波物理權威；同時涵蓋灰階與 Doppler 假影的成因、辨認與處置，正好符合本章「假影不只是要認得，還要知道是不是自己按出來的」。"
+    },
+    {
+      "title": "Tissue Harmonic Ultrasound Imaging | Radiology Physics Course #24",
+      "url": "https://www.youtube.com/watch?v=LvkXFwBlAOc",
+      "source": "YouTube / Radiology Tutorials",
+      "decision": "included",
+      "unit": "ch1-u3",
+      "reason": "oEmbed 200；24:38，55,682 次觀看。諧波成像的得失（對比變好、穿透變差）對厚頸病人有直接臨床後果。"
+    },
+    {
+      "title": "Beam Focusing, Steering and Spatial Compounding | Radiology Physics Course #16",
+      "url": "https://www.youtube.com/watch?v=1_-BmMrxUjA",
+      "source": "YouTube / Radiology Tutorials",
+      "decision": "included",
+      "unit": "ch1-u3",
+      "reason": "oEmbed 200；10:13，41,194 次觀看。同時涵蓋 focus 數目、beam steering 與 spatial compounding 對 frame rate 與後方聲影的影響，是本單元「取捨」主題的核心。"
+    },
+    {
+      "title": "Comet tail artifact（Radiopaedia 條目）",
+      "url": "https://radiopaedia.org/articles/comet-tail-artifact",
+      "source": "Radiopaedia（第二級病例圖譜）",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200；因 Radiopaedia 對不存在的 slug 也回 200（實測 this-slug-does-not-exist-xyz123 → 200），另以 tavily_extract 取內文確認條目確實存在，且明列 thyroid colloid nodules 與其他成因、要求與 ring-down artifact 鑑別。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Doppler Ultrasound 101 | The Basics",
+      "url": "https://www.youtube.com/watch?v=LeI3ns30mvg",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "included",
+      "unit": "ch1-u4",
+      "reason": "oEmbed 200；38:16，86,946 次觀看。原本首選的同頻道《Color Doppler Optimization Checklist》(EjI_bJOKGuQ) oEmbed 三次皆 401（不允許嵌入）而剔除，改用本片。標題寫 basics 但內容為逐旋鈕實機對照，符合本章「參數怎麼調」的定位；非學會來源故 Tier C。"
+    },
+    {
+      "title": "New Classification Of Doppler Vascularization Of Thyroid Nodules（AIUM 電子壁報，Lucy Kerr）",
+      "url": "https://www.youtube.com/watch?v=psvgHsrzRt4",
+      "source": "YouTube / AIUMultrasound",
+      "decision": "included",
+      "unit": "ch1-u4",
+      "reason": "oEmbed 200；10:33，1,769 次觀看。全章唯一把 Doppler 參數直接接到甲狀腺結節的資源。但屬單一作者提案、未被任何 TI-RADS 系統採納，故列 Tier B，並在 dose 明確要求不得據以改變穿刺決策。"
+    },
+    {
+      "title": "Wall Filter, Steering, and Angle Correction - Advanced Ultrasound Doppler Settings made Easy",
+      "url": "https://www.youtube.com/watch?v=hPAnhB_ERbI",
+      "source": "YouTube / POCUS 101",
+      "decision": "included",
+      "unit": "ch1-u4",
+      "reason": "oEmbed 200；8:05，37,103 次觀看。wall filter 是「結節內明明有血流卻顯示不出來」最常見的兇手，直接對應本單元的低流速訊號主題。"
+    },
+    {
+      "title": "Aliasing Artifact | Radiology Physics Course #23",
+      "url": "https://www.youtube.com/watch?v=auG2nND0e7w",
+      "source": "YouTube / Radiology Tutorials",
+      "decision": "included",
+      "unit": "ch1-u4",
+      "reason": "oEmbed 200；15:11，40,821 次觀看。後半段講如何降低 aliasing（PRF、基線、頻率、角度）為可操作內容。"
+    },
+    {
+      "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+      "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+      "source": "YouTube / AIUMultrasound（學會，第一級）",
+      "decision": "included",
+      "unit": "ch1-u5",
+      "reason": "oEmbed 200；44:34，130,137 次觀看。作為 u5 主課是折衷選擇：主題是頸部超音波的可見範圍與臨床用途邊界，切中本單元「寫出可視下界」的目標，但並非專講困難體型。已在 why 誠實標明本節缺乏專門課程。與 CH2 有主題重疊風險，交付時請併章去重。"
+    },
+    {
+      "title": "Сканирование щитовидной железы у пациента с ожирением на Mindray Resona i9",
+      "url": "https://www.youtube.com/watch?v=Fa6eAo0LgzY",
+      "source": "YouTube / MEDLIGA（醫療設備經銷商）",
+      "decision": "included",
+      "unit": "ch1-u5",
+      "reason": "oEmbed 200；11:00，453 次觀看。全章搜尋中唯一實際示範肥胖病人深部甲狀腺掃描並更換探頭（L14-3 → L9-3）的動態影片。缺點：俄語、觀看數低、廠商內容。已填 coi 與 note，並要求以 AIUM practice parameter 交叉驗證。"
+    },
+    {
+      "title": "Substernal goitre（Radiopaedia 條目）",
+      "url": "https://radiopaedia.org/articles/retrosternal-goitre",
+      "source": "Radiopaedia（第二級病例圖譜）",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200；tavily_extract 取得內文確認條目存在且標題為 Substernal goitre，Ultrasound 段明確寫出「無法掃到最下極本身即為胸骨後甲狀腺腫的線索」，CT 段說明手術決策特徵。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Differential movement during swallowing as an aid in the detection of thyroid pseudonodules",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8125784/",
+      "source": "PubMed / Head & Neck 1994;16(1):21-4（Siminoski K）",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200；NCBI esummary 確認書目（標題、期刊、年份、卷期頁、作者）。是把「吞嚥動態」寫成判讀依據的原始文獻。年代久遠、樣本小、全文需訂閱，已於 note 標明並限定其支持範圍。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Doppler Ultrasound | Color Doppler Optimization Checklist",
+      "url": "https://www.youtube.com/watch?v=EjI_bJOKGuQ",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "excluded",
+      "reason": "內容最貼近 u4 主課需求（17:44 逐項 Doppler 最佳化檢查表），但 oEmbed 連續三次回 401（影片不允許嵌入或設為私人），依契約視為不可用，改用同頻道 LeI3ns30mvg。"
+    },
+    {
+      "title": "Ultrasound Knobology Gallery 系列（Output Power / Dynamic Range / TGC / Gain / Depth / PRF-Scale）",
+      "url": "https://www.youtube.com/watch?v=3iZmD3zdpWk",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "excluded",
+      "reason": "整個系列（3iZmD3zdpWk、4-IvIfEkwJo、CqJmY-AE4a4、S_HQE_ts_YQ、_O_ZkrtmqEU、_xw0tZRo2ek）oEmbed 全部回 401，不允許嵌入。原本規劃 output power 與 dynamic range 兩支進 u2，改以 Clarius 影片與 EFSUMB 章節替代。"
+    },
+    {
+      "title": "Dynamic Range of Ultrasound and Compression Knobology",
+      "url": "https://www.youtube.com/watch?v=u20BFG32Duk",
+      "source": "YouTube / Ultrasound Board Review",
+      "decision": "excluded",
+      "reason": "yt-dlp 回「This video is not available」，影片已下架。"
+    },
+    {
+      "title": "The Secret Behind Perfect Ultrasound Images | Knobology in Action | Thyroid Ultrasound Demonstration",
+      "url": "https://www.youtube.com/watch?v=mR7gi3-xeVw",
+      "source": "YouTube / ScanCentral",
+      "decision": "excluded",
+      "reason": "主題非常貼題（甲狀腺 knobology 示範）但僅 63 次觀看、頻道與作者身分無法確認，符合「無法確認作者或來源」排除條款。"
+    },
+    {
+      "title": "How to optimize your ultrasound and Doppler machine 2021 (knobology), Dr/Amr Salah (part 2)",
+      "url": "https://www.youtube.com/watch?v=K148jhS5qfA",
+      "source": "YouTube / AMR SALAH (ultrasound step by step)",
+      "decision": "excluded",
+      "reason": "oEmbed 200、49,316 次觀看，內容為長時間實機最佳化，但 1:33:10 超出 config 的主課長度上限 1:30:00，且為 part 2（缺前半脈絡）、講者機構背景無法確認。已有 IBUS／Bamber 涵蓋同一主題，故不納入。"
+    },
+    {
+      "title": "Ultrasound of the Neck: There's More to See Than Thyroid Nodules",
+      "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
+      "source": "YouTube / Radiology Video - radiology made esay",
+      "decision": "excluded",
+      "reason": "內容相關且觀看數高（64,905），但頻道為第三方轉載他人演講的聚合頻道，無法確認授權，符合「未經授權重新上傳」風險，排除。"
+    },
+    {
+      "title": "ECR 2019 Symposium - Multiparametric Ultrasound in Thyroid & Salivary Glands Daily Practice",
+      "url": "https://www.youtube.com/watch?v=6Gp3W20l2aM",
+      "source": "YouTube / Canon Medical ANZ（設備廠商）",
+      "decision": "excluded",
+      "reason": "廠商贊助的 ECR 衛星研討會，主題偏向該公司多參數成像技術（SMI 等）而非通用參數調整，且 161 次觀看。屬 CH11 新興技術範疇，本章不收。"
+    },
+    {
+      "title": "A demonstration of Differential Tissue Harmonic Imaging / A technical explanation of 3rd Harmonic Imaging",
+      "url": "https://www.youtube.com/watch?v=XjO8cWkfCLQ",
+      "source": "YouTube / Global Medical Business at Canon Inc.（設備廠商）",
+      "decision": "excluded",
+      "reason": "純廠商專有技術（DTHI、3rd harmonic）宣傳片，各約 3 分鐘，無法一般化到其他機型，且缺乏可驗證的比較條件。u3 改用可通用的諧波成像原理教學。"
+    },
+    {
+      "title": "Thyroid Ultrasound course (Part 1) (25-04-2021) - IDEA Clinics",
+      "url": "https://www.youtube.com/watch?v=i4BxEgfgfqU",
+      "source": "YouTube / IDEA CLINICS",
+      "decision": "excluded",
+      "reason": "1:38:47 超出主課長度上限，且為私人診所主辦課程、講者資歷與課程審查機制無法確認。"
+    },
+    {
+      "title": "Small Parts Ultrasound | Thyroid - Protocol, Tips & Tricks",
+      "url": "https://www.youtube.com/watch?v=vlAMWL9V9fY",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "excluded",
+      "reason": "品質良好（18:51，含完整章節標記，25,179 次觀看），但內容是標準甲狀腺掃描 protocol，屬 fellow 已具備的基礎能力，依受眾規則不列入 CH1；建議留給 CH0 複習或 CH2 使用。"
+    },
+    {
+      "title": "Thyroid - Ultrasound Scanning Technique / Basic Thyroid U/S Protocol",
+      "url": "https://www.youtube.com/watch?v=ftg6kTYpzGA",
+      "source": "YouTube / Clarius Mobile Health（設備廠商）",
+      "decision": "excluded",
+      "reason": "2:04，128,755 次觀看，但屬入門掃描示範（探頭怎麼放），非參數調整，依受眾規則排除。"
+    },
+    {
+      "title": "Ultrasound Artifacts, Part 1 / Part 2（Shadowing、enhancement、edge、reverberation）",
+      "url": "https://www.youtube.com/watch?v=SN6_YKVl-U0",
+      "source": "YouTube / Core Ultrasound",
+      "decision": "excluded",
+      "reason": "內容合適但兩支（SN6_YKVl-U0、SyYkOglVVLo）oEmbed 皆回 401，不允許嵌入。"
+    },
+    {
+      "title": "Color and Power Doppler Made Easy!",
+      "url": "https://www.youtube.com/watch?v=QsC9eQx3uF8",
+      "source": "YouTube / Core Ultrasound",
+      "decision": "excluded",
+      "reason": "oEmbed 200，4:46。內容正確但層次偏入門（color 與 power Doppler 的基本差異），u4 三個名額已由 wall filter、aliasing 與甲狀腺應用填滿，故不納入。備選資源。"
+    },
+    {
+      "title": "Understanding Pulse Repetition Frequency, Scale, Wall Filter and Nyquist Limit. / Wall Filter of Ultrasound",
+      "url": "https://www.youtube.com/watch?v=g2KNJGT-XGA",
+      "source": "YouTube / Ultrasound Board Review",
+      "decision": "excluded",
+      "reason": "oEmbed 200，內容涵蓋 PRF 與 wall filter，但為超音波考試複習頻道、作者身分未公開，且與已納入的 POCUS 101 與 Radiology Tutorials 兩支重疊。備選資源。"
+    },
+    {
+      "title": "Ultrasound Artifacts | Radiology Physics Course #25 / Ultrasound Artifacts（UW WISH）",
+      "url": "https://www.youtube.com/watch?v=GOWlzuMziUU",
+      "source": "YouTube / Radiology Tutorials；YouTube / UW WISH",
+      "decision": "excluded",
+      "reason": "兩支 oEmbed 皆 200、品質可用，但與 u3 主課（AIUM／Kremkau）內容大幅重疊；u3 的第三個名額改給甲狀腺專屬的 comet-tail 條目。備選資源。"
+    },
+    {
+      "title": "Adjusting Gain and Depth",
+      "url": "https://www.youtube.com/watch?v=u5xM1D0KrkE",
+      "source": "YouTube / Clarius Mobile Health（設備廠商）",
+      "decision": "excluded",
+      "reason": "oEmbed 200，2:22。為避免 u2 四個名額中出現兩支同一廠商內容而未納入；已保留 Axmh3oKBhCE（dynamic range）一支。備選資源。"
+    },
+    {
+      "title": "A Primer on the Physical Principles of Tissue Harmonic Imaging（RadioGraphics 2015）",
+      "url": "https://pubs.rsna.org/doi/full/10.1148/rg.2015140338",
+      "source": "RadioGraphics（期刊，第二級）",
+      "decision": "excluded",
+      "reason": "內容極為適合 u3，但 2026-08-02 curl 回 403（Cloudflare／訂閱牆），無法確認一般讀者可否取用，依契約不納入。"
+    },
+    {
+      "title": "Compound Spatial Sonography of the Thyroid Gland: Evaluation of Freedom from Artifacts and of Nodule Conspicuity（AJR 2001）",
+      "url": "https://www.ajronline.org/doi/10.2214/ajr.177.5.1771195",
+      "source": "AJR（期刊，第二級）",
+      "decision": "excluded",
+      "reason": "主題與 u3 完全吻合（複合成像對甲狀腺假影與結節顯著度的影響），但 curl 回 403，無法驗證取用狀態。列為 KNOWN-GAPS：若日後取得開放版本應優先補入 u3。"
+    },
+    {
+      "title": "AIUM Practice Parameter for the Performance and Interpretation of Diagnostic Ultrasound of the Thyroid and Extracranial Head and Neck（2023）",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.16251",
+      "source": "AIUM / Journal of Ultrasound in Medicine（Wiley）",
+      "decision": "excluded",
+      "reason": "這是現行版本，AIUM 官網 practice parameters 頁面確認 Year 2023 且 Article url 指向此連結；但 curl 回 403（bot 防護／需訂閱）。u1 因此改連 AIUM 官網可公開下載的 2018 版 PDF，並在 note 標明版本差異與此連結。"
+    },
+    {
+      "title": "Thyroid ultrasound and its ancillary techniques（Rev Endocr Metab Disord 2023）",
+      "url": "https://link.springer.com/article/10.1007/s11154-023-09841-1",
+      "source": "Springer（期刊，第二級）",
+      "decision": "excluded",
+      "reason": "curl 最終 200 但被導向 cookies_not_supported 參數頁，WebFetch 遭 idp.springer.com 認證轉址，無法確認一般讀者能否閱讀全文；且內容偏向 elastography／CEUS 等輔助技術，屬 CH11 範疇。"
+    },
+    {
+      "title": "Substernal Goiter（StatPearls, NCBI Bookshelf）",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557416/",
+      "source": "NCBI Bookshelf（開放取用）",
+      "decision": "excluded",
+      "reason": "curl 200、內容正確（超音波無法評估胸骨後範圍），但同一論點由 Radiopaedia 條目以影像佐證呈現，教學價值較高，故 u5 採用後者以免重複。備選資源。"
+    },
+    {
+      "title": "Ultrasound Physics and Technical Facts for the Beginner（ACEP Sonoguide）",
+      "url": "https://www.acep.org/sonoguide/basic/ultrasound-physics-and-technical-facts-for-the-beginner",
+      "source": "ACEP（學會，第一級）",
+      "decision": "excluded",
+      "reason": "curl 200、學會來源，但標題與內容定位為 beginner，依受眾規則不納入進階課程。"
+    },
+    {
+      "title": "Ultrasound 101 – Part 8: Artifacts in Ultrasound（123sonography）",
+      "url": "https://123sonography.com/blog/ultrasound-101/ultrasound-101-part-8-artifacts-ultrasound",
+      "source": "123sonography（商業教育網站）",
+      "decision": "excluded",
+      "reason": "curl 200，但為付費課程平台的引流文章，深度不足且入門定位。"
+    },
+    {
+      "title": "EFSUMB Course Book Ch.01 Physical Principles of Medical Ultrasound",
+      "url": "https://efsumb.org/physical-principles-of-medical-ultrasound/",
+      "source": "EFSUMB（學會，第一級）",
+      "decision": "excluded",
+      "reason": "curl 200、免費下載，但主題是物理原理而非參數調整，違反本章「重點是參數怎麼調，不是超音波原理是什麼」的定位。備選資源。"
+    },
+    {
+      "title": "日文甲狀腺／頸部超音波掃描教學（複數頻道）",
+      "url": "https://www.youtube.com/results?search_query=%E7%94%B2%E7%8A%B6%E8%85%BA+%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%B5%B0%E6%9F%BB%E6%B3%95",
+      "source": "YouTube（日文搜尋）",
+      "decision": "excluded",
+      "reason": "以「甲状腺 超音波 走査法 描出 コツ」搜尋 20 筆，命中內容集中在腹部、頸動脈與探頭握法基礎，無一支處理甲狀腺的機器參數最佳化或困難體型；無合格資源。"
+    },
+    {
+      "title": "韓文甲狀腺超音波掃描教學（SONOUS Education 等）",
+      "url": "https://www.youtube.com/results?search_query=%EA%B0%91%EC%83%81%EC%84%A0+%EC%B4%88%EC%9D%8C%ED%8C%8C+%EA%B2%80%EC%82%AC+%EA%B8%B0%EB%B2%95",
+      "source": "YouTube（韓文搜尋）",
+      "decision": "excluded",
+      "reason": "以「갑상선 초음파 검사 기법 스캔」搜尋 20 筆，多為付費課程的樣本片段（49–152 秒）或民眾衛教，無完整的機器最佳化教學；付費課程樣本不符可連結完整內容的要求。"
+    },
+    {
+      "title": "Panoramic Scanning / 大型甲狀腺腫的 extended field of view 掃描",
+      "url": "https://www.youtube.com/watch?v=ZCli-mLx_hQ",
+      "source": "YouTube / Mark Yousef Sono",
+      "decision": "excluded",
+      "reason": "「large goiter ultrasound extended field of view panoramic imaging technique」搜尋僅回 1 筆結果，內容為通用全景掃描示範、未涉及甲狀腺，作者機構無法確認。u5 的大型甲狀腺腫測量問題因此留在 KNOWN-GAPS。"
+    },
+    {
+      "title": "Valsalva／吞嚥動態掃描示範影片",
+      "url": "https://www.youtube.com/results?search_query=neck+ultrasound+Valsalva+swallowing+maneuver+dynamic+scanning",
+      "source": "YouTube（3 組不同英文查詢，共約 50 筆）",
+      "decision": "excluded",
+      "reason": "三次查詢（neck ultrasound Valsalva swallowing maneuver dynamic scanning／ultrasound swallowing thyroid nodule mobility retrosternal extension demonstration／thyroid ultrasound inferior pole lower pole swallowing technique）全部命中臨床理學檢查 OSCE、吞嚥復健或衛教影片，查無任何示範頸部超音波吞嚥或 Valsalva 動態手法的合格影片。u5 因此改用 PubMed 原始文獻（PMID 8125784）承接此主題，屬本章最大的影音缺口。"
+    },
+    {
+      "title": "Basic settings - ETA Ultrasound Course",
+      "url": "https://www.youtube.com/watch?v=nLlE3ga5V_Q",
+      "source": "YouTube / Tamas Solymosi（ETA Ultrasound Course）",
+      "decision": "included",
+      "unit": "ch1-u1",
+      "reason": "影音改版：取代 AIUM–ACR–SPR–SRU practice parameter 的 Equipment Specifications 段。少數由甲狀腺專科學會直接示範機器設定的公開影音，7:50、oEmbed 200，列 Tier A。"
+    },
+    {
+      "title": "GE Logiq e Training Part 2: 2D Imaging and Image Optimization",
+      "url": "https://www.youtube.com/watch?v=nMkzDnehLHk",
+      "source": "YouTube / Probo Medical（超音波設備廠商）",
+      "decision": "included",
+      "unit": "ch1-u2",
+      "reason": "影音改版：取代 EFSUMB Course Book Ch.32 Knobology PDF。實機逐鍵示範 2D 最佳化，補上「知道觀念但找不到按鍵」的落差。13:49、oEmbed 200。已填 coi（設備買賣與服務廠商、示範機型為其銷售品項），Tier C。"
+    },
+    {
+      "title": "Ultrasound Artifacts | Ultrasound Physics Course | Radiology Physics Course #25",
+      "url": "https://www.youtube.com/watch?v=GOWlzuMziUU",
+      "source": "YouTube / Radiology Tutorials",
+      "decision": "included",
+      "unit": "ch1-u3",
+      "reason": "影音改版：取代 Radiopaedia comet tail artifact 條目。涵蓋 reverberation 家族（comet-tail、ring-down）的產生條件，17:38、60,884 次觀看、oEmbed 200。與本單元主課（AIUM Kremkau webinar）重疊，定位為短版參考。"
+    },
+    {
+      "title": "Ultrasound Physics Review | Multiple Echo Artifacts | Sonography Minutes",
+      "url": "https://www.youtube.com/watch?v=D1LXyOrtSIM",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "excluded",
+      "reason": "主題最貼近 comet-tail／ring-down 鑑別，但 2026-08-02 oEmbed 回 HTTP 401（作者關閉嵌入），依驗證規則不可用。"
+    },
+    {
+      "title": "Ultrasound Artifacts, Part 2 (Reverberation artifacts)",
+      "url": "https://www.youtube.com/watch?v=SyYkOglVVLo",
+      "source": "YouTube / Core Ultrasound",
+      "decision": "excluded",
+      "reason": "同上，oEmbed 回 HTTP 401，不可嵌入。"
+    },
+    {
+      "title": "CASE 757 Multiple thyroid cystic colloid nodules with comet tail artifact score TIRAD 2",
+      "url": "https://www.youtube.com/watch?v=Fy7seNGF7y8",
+      "source": "YouTube / Educational Radiology Channel ERC",
+      "decision": "excluded",
+      "reason": "主題完全對題（甲狀腺膠質結節的 comet tail），但片長僅 36 秒、頻道僅以病例編號發布且未公開作者身分與機構，不符合「無法確認作者或來源」的排除條款。"
+    },
+    {
+      "title": "A patient with a substernal spreading nodular goiter. Other edifying cases - case 14",
+      "url": "https://www.youtube.com/watch?v=yAYgOUvX0DQ",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch1-u5",
+      "reason": "影音改版：取代 Radiopaedia substernal goitre 條目。標題與內容即胸骨後延伸的結節性甲狀腺腫病例，可直接對應「可視下界」的報告訓練。0:52、oEmbed 200，Tier B；已在 note 標明片長極短、無旁白。"
+    },
+    {
+      "title": "(ENG)A one-minute method for differentiating a neck mass from the cervical spine on US",
+      "url": "https://www.youtube.com/watch?v=Waz0glS7GyE",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch1-u5",
+      "reason": "影音改版：取代 Siminoski K, Head Neck 1994;16(1):21-4（PMID 8125784）。搜尋不到吞嚥相對移動的影音示範，改以同屬假病灶鑑別的動態手法補位。1:15、oEmbed 200；觀看數僅 33，已在 note 標明納入理由為作者可查證。"
+    },
+    {
+      "title": "The role of ultrasound in the evaluation of nodular goiter",
+      "url": "https://www.youtube.com/watch?v=UYVXb4u3wKw",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "excluded",
+      "reason": "33:26 的結節性甲狀腺腫講座，品質足夠，但 2026-08-02 因 YouTube 對本機回 429，無法取得說明欄與章節資訊確認其是否處理胸骨後延伸；不憑推測收錄，改採標題即可確認主題的 case 14。"
+    },
+    {
+      "title": "Ultrasound Level 1: Knobology",
+      "url": "https://www.youtube.com/watch?v=28SpcuXV3fI",
+      "source": "YouTube / Bromley Emergency Courses",
+      "decision": "excluded",
+      "reason": "32 分鐘的完整 knobology 課程，內容合格，但情境為急診 POCUS 且與本單元主課（IBUS Bamber）觀念層面重疊；本欄位需要的是實機按鍵操作，故選 Probo Medical 版本。"
+    }
+  ],
+  "known_gaps": [
+    "u5「困難體型與動態掃描」缺乏專門的高品質公開課程：短頸、頸部無法後仰、吞嚥與 Valsalva 動態手法均查無合格示範影片，目前以 AIUM 頸部範圍 webinar + 廠商肥胖病例示範 + 1994 年原始文獻拼湊，是本章最需要人工補課與專家審閱之處。",
+    "複合成像對甲狀腺假影與結節顯著度的直接證據（AJR 2001, doi:10.2214/ajr.177.5.1771195）因 403 無法納入；若取得開放版本應補進 ch1-u3。",
+    "AIUM 頸部 practice parameter 現行版本為 2023 年（doi:10.1002/jum.16251），但只在 Wiley 且無法公開驗證，本章連結的是官網免費的 2018 版，已於資源 note 明示版本。",
+    "大型／多結節性甲狀腺腫的 extended field of view（panoramic）測量技術查無合格教學資源。",
+    "Sonography Minutes 的 Knobology Gallery 系列（單一旋鈕的實機對照，最貼近本章需求）整組不允許嵌入，導致 u2 的 depth／focus／gain 分項示範只能以較長的綜合影片替代。"
+  ]
 }

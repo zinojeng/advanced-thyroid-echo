@@ -19,52 +19,57 @@
         "能對每一個甲狀腺床病灶寫出可被下一位醫師重複量測的結構化描述（位置、三軸、與氣管／頸動脈的關係）"
       ],
       "lesson": {
-        "title": "Differentiated Thyroid Cancer after Thyroidectomy",
-        "channel": "RadioGraphics (Radiological Society of North America)",
-        "url": "https://pubs.rsna.org/doi/10.1148/rg.240021",
-        "why": "這是目前唯一把「正常術後床、疤痕、縫線肉芽腫、殘餘甲狀腺組織、真正復發」五種外觀放在同一組標註影像裡逐項對照的開放取用回顧，正面回答 fellow 最卡的那一題。YouTube 上關於術後甲狀腺床的動態掃描教學極少且來源多不可考，因此本單元核心教材選用期刊圖像回顧而非影片。",
+        "title": "Ultrasound in the management of thyroid cancer with Dr  Noureldine 262",
+        "channel": "ThyCa: Thyroid Cancer Survivors' Association, Inc.",
+        "url": "https://www.youtube.com/watch?v=SqiYpDY67x8",
+        "duration": "59:52",
+        "why": "由頭頸內分泌外科醫師 Salem Noureldine 主講，把超音波在甲狀腺癌整段照護裡各自回答什麼問題排成一條線：術前定位、決定切除範圍、術後頸部監測、以及什麼時候該穿刺。本單元的第一個問題是「術後那一次掃描到底在找什麼」，這堂課提供判讀框架；正常術後床、疤痕與縫線肉芽腫的實際動態影像則由下面兩支病例補上。英文口述，無官方字幕。",
         "tier": "A",
-        "source_type": "article",
-        "provider": "journal",
+        "source_type": "video",
+        "provider": "youtube",
         "access": "open",
-        "license": "RSNA 開放取用，CC BY 4.0；本站僅連結不重製。",
+        "license": "版權歸原頻道（ThyCa: Thyroid Cancer Survivors' Association），本站僅連結。",
         "last_verified": "2026-08-02",
-        "note": "以 curl 直接存取 pubs.rsna.org 會回 403（Cloudflare／Atypon 機器人防護），以一般瀏覽器 user agent 取得頁面內容成功，確認為開放取用全文而非付費牆。DOI 10.1148/rg.240021，RadioGraphics 2024;44(10)。"
+        "note": "ThyCa 國際病友年會第 262 場錄影。場合為病友教育會議，講題本身是超音波應用的完整回顧，但以投影片講述為主、動態掃描畫面比例不高，須與本單元兩支病例影片合併使用。原本此格為 RadioGraphics 2024 的術後影像回顧（DOI 10.1148/rg.240021），課程改為純影音課程後，該回顧移入實證層。"
       },
       "drills": [
         {
-          "name": "術後甲狀腺超音波該看什麼（ECR 2024 教育電子壁報）",
-          "en": "Post-operative thyroid ultrasound: what to look for?",
-          "kind": "atlas",
-          "target": "把術後頸部的「正常」與「不正常」拆成可以逐項打勾的清單：正常甲狀腺床呈倒三角或扁平的均質高回音區；復發腫瘤為低回音、邊緣毛刺、有微鈣化；轉移淋巴結呈圓形、失去 hilum、內部不均質；縫線肉芽腫則是邊界不清、內含高回音亮點的結節；另外還要認得手術床內的淋巴組織增生。",
-          "dose": "先把壁報的影像逐張看過但不看圖說，自己寫下判讀，再展開圖說核對。特別注意「良性 mimic」那一段，那是本單元真正的考點。",
-          "title": "Post-operative thyroid ultrasound: what to look for?",
-          "channel": "European Society of Radiology — EPOS (ECR 2024, poster C-17536)",
-          "url": "https://epos.myesr.org/poster/esr/ecr2024/C-17536",
+          "name": "同一位病人術前與術後的甲狀腺床縱向對照",
+          "en": "A patient after a bilateral near total thyroidectomy. The operated thyroid - case 22 (part 2)",
+          "kind": "case",
+          "target": "先把「正常」看熟：雙側近全切除後的甲狀腺床實際長什麼樣——殘餘腺體組織、被推移的胸骨舌骨肌與氣管、以及即時掃描時疤痕如何與周邊組織融合。認不出正常，就沒有辦法認出不正常。",
+          "dose": "先看同一病例的術前影像（part 1：https://www.youtube.com/watch?v=gzG2DWTf3tU ，1:00，多結節性甲狀腺腫），再看這支術後影像，逐一寫下「哪一塊是殘餘腺體、哪一塊是纖維化」，並註明各自的形狀與內部均質度。兩支加起來不到一分半，適合當門診前暖身。",
+          "title": "A patient after a bilateral near total thyroidectomy. The operated thyroid - case 22 (part 2)",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=4DGyZyKJnPg",
+          "duration": "0:32",
           "tier": "B",
-          "source_type": "atlas",
-          "provider": "society",
+          "source_type": "video",
+          "provider": "youtube",
           "access": "open",
-          "license": "ESR EPOS 教育電子壁報，公開瀏覽；DOI 10.26044/ecr2024/C-17536。授權狀況未確認，僅連結不重製。",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製。",
           "last_verified": "2026-08-02",
-          "note": "作者 G. Zouhir、A. Merzem、H. Belgadir、M. D. O. Amriss、M. Nadia、N. Elbenna。屬會議教育展示，未經同儕審查期刊審稿流程，因此列 Tier B，作為影像清單使用，不作為證據來源。"
+          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向該站的對應章節頁。影像與判讀可用，但不得視為獨立第三方驗證。",
+          "note": "無旁白的純動態掃描片段，觀看數低（約 138 次），價值在影像本身而非講解。原本此格為 ECR 2024 教育電子壁報（DOI 10.26044/ecr2024/C-17536），課程改為純影音課程後移除；該壁報的正常／異常清單內容可由本單元 lesson 與 CH8 實證層取得。"
         },
         {
-          "name": "縫線肉芽腫與手術夾偽裝成復發",
-          "en": "Suture Granuloma and Surgical Clips as a Mimic of Thyroid Cancer Recurrence",
+          "name": "縫線周圍的多發性肉芽腫",
+          "en": "Multiple granulations around surgical thread. The operated thyroid - case 17",
           "kind": "case",
-          "target": "看一個真的被誤判的完整過程：術後追蹤發現雙側中頸腫塊合併鈣化樣亮點，PET/CT 還呈現高代謝，最後病理是異物肉芽腫與手術夾。要學會的是「手術夾在超音波上是線狀亮帶、不是鈣化」，以及影像加 PET 都可以同時錯，最終仍需細胞學或病理。",
-          "dose": "只看 Figure 1 的頸部超音波與臨床敘述，先自己決定「這是復發嗎？要不要 FNA？」再往下讀 PET/CT 與病理。重點不是背特徵，是體會影像確定性的上限。",
-          "title": "Suture Granuloma and Surgical Clips as a Mimic of Thyroid Cancer Recurrence",
-          "channel": "AACE Clinical Case Reports (American Association of Clinical Endocrinology)",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9363507/",
+          "target": "直接看縫線肉芽腫的動態影像：手術縫線周邊出現的多發性小病灶，以及縫線本身在超音波上呈現的成對高回音亮點。要練的是把這種亮點與 PTC 的 punctate echogenic foci 分開——縫線的亮點多半 >1 mm、成對、位置偏中央且沿線性走向排列。",
+          "dose": "播放時先暫停在出現高回音亮點的畫面，自己判定「這是微鈣化還是異物」，寫下判斷依據（亮點大小、是否成對、是否沿線排列、有無後方聲影），再看完整片段核對。看完後回頭比對本單元 drill 1 的正常術後床，確認自己能分開兩者。",
+          "title": "Multiple granulations around surgical thread. The operated thyroid - case 17",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=zy-qUXIanqs",
+          "duration": "0:38",
           "tier": "B",
-          "source_type": "case",
-          "provider": "journal",
+          "source_type": "video",
+          "provider": "youtube",
           "access": "open",
-          "license": "CC BY-NC-ND 4.0；PMC 免費全文，本站僅連結不重製。",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製。",
           "last_verified": "2026-08-02",
-          "note": "Frye CC 等，AACE Clin Case Rep 2022;8(4):185-187，DOI 10.1016/j.aace.2022.02.002，PMID 35959081。單一病例，僅作補充不作唯一依據。"
+          "coi": "同上：講者經營付費 Papillon Course 與 thyrosite.com。",
+          "note": "無旁白的純動態掃描片段，觀看數極低（約 9 次）；納入的理由是這是目前唯一找得到、來源可確認的縫線肉芽腫動態超音波影像。原本此格為 AACE Clinical Case Reports 的縫線肉芽腫／手術夾誤判病例（PMID 35959081），課程改為純影音課程後移入實證層；該病例的 PET/CT 與病理對照無法由影片取代，須另行閱讀。"
         },
         {
           "name": "甲狀腺癌超音波的實戰技巧與常被略過的掃描區域",
@@ -103,17 +108,18 @@
         "能比對同一顆病灶不同時間點的影像，說出「今年變了什麼」而不是只回報「與前次類似」"
       ],
       "lesson": {
-        "title": "2013 European Thyroid Association Guidelines for Cervical Ultrasound Scan and Ultrasound-Guided Techniques in the Postoperative Management of Patients with Thyroid Cancer",
-        "channel": "European Thyroid Journal / European Thyroid Association",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4017749/",
-        "why": "這是唯一一份專門為「術後頸部超音波」而寫的學會指引，把甲狀腺床與頸部淋巴結的良性／病理性樣態、掃描與報告標準、以及 FNA 與 in situ thyroglobulin 測定的適應症全部寫清楚，正好補上大多數 fellow 只會判讀原發結節、卻沒有一套術後判讀語言的缺口。",
+        "title": "Thyroid Cancer Imaging Update with Dr. Flavell",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=GIgLeGtmba0",
+        "duration": "57:11",
+        "why": "由影像端而非外科端來談復發偵測：什麼時候該用超音波、什麼時候超音波已經到極限而該換模態、以及各模態各自回答什麼問題。本單元最容易犯的錯是「看到可疑就換更貴的檢查」，這堂課把先後順序與各檢查的適應症講清楚，讓頸部超音波回到第一線的位置。英文口述，無官方字幕。",
         "tier": "A",
-        "source_type": "guideline",
-        "provider": "journal",
+        "source_type": "webinar",
+        "provider": "youtube",
         "access": "open",
-        "license": "© 2013 European Thyroid Association，S. Karger AG 出版；PMC 免費全文，本站僅連結不重製。",
+        "license": "版權歸原頻道（THANC Foundation），本站僅連結。",
         "last_verified": "2026-08-02",
-        "note": "Leenhardt L 等，Eur Thyroid J 2013;2(3):147-159，DOI 10.1159/000354537，PMID 24847448，PMC4017749。發表已逾十年且 ETA 迄今未發布術後頸部超音波的更新版，使用時須自行以 ATA 2015 與 RadioGraphics 2024 回顧交叉核對；Karger 官方頁面（karger.com）以 curl 存取回 403，PMC 版本可正常開啟。"
+        "note": "以研究與模態比較的投影片簡報為主，動態掃描畫面有限，須與本單元三支病例／操作影片合併使用。原本此格為 ETA 2013 術後頸部超音波指引（PMID 24847448），它仍是本單元 assessment 的欄位依據，課程改為純影音課程後移入實證層與 GUIDELINE-MATRIX.md；tight／weak／assessment 三節仍照 ETA 2013 的欄位撰寫，未更動。"
       },
       "drills": [
         {
@@ -155,21 +161,22 @@
           "note": "2021-07-19 上傳。技術示範性質、影片極短且無證據討論，列 Tier C，必須搭配本單元的指引資源一起使用。"
         },
         {
-          "name": "復發甲狀腺癌的射頻消融：2025 KSThR 指引",
-          "en": "Radiofrequency Ablation for Recurrent Thyroid Cancers: 2025 Korean Society of Thyroid Radiology Guideline",
-          "kind": "guideline",
-          "target": "當復發被確認之後，超音波的角色從「找出來」變成「判斷這一顆適不適合非手術處理」。本指引寫明適應症、禁忌症、與消融後影像追蹤時程（術後 6–12 個月，之後每年），以及要記錄哪些量：最大徑、體積、腫瘤內血流、有無新病灶。",
-          "dose": "先讀適應症與禁忌症兩節，把自己手上的復發個案逐一套用，判斷哪些其實不符合條件。追蹤影像那一節留到 ch8-u4 再細讀。",
-          "title": "Radiofrequency Ablation for Recurrent Thyroid Cancers: 2025 Korean Society of Thyroid Radiology Guideline",
-          "channel": "Korean Journal of Radiology / Korean Society of Thyroid Radiology",
-          "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2024.0963",
-          "tier": "A",
-          "source_type": "guideline",
-          "provider": "journal",
+          "name": "復發病灶的射頻消融：超音波導引下實際怎麼做",
+          "en": "(ENG)RFA at a recurrence",
+          "kind": "procedure",
+          "target": "當復發被確認之後，超音波的角色從「找出來」變成「判斷這一顆適不適合非手術處理、以及消融時看什麼」。看韓國介入放射科醫師在超音波導引下處理復發病灶的實際操作：如何定位、如何避開重要構造、消融過程中影像怎麼變化。",
+          "dose": "看之前先自己回答：這位病人為什麼不是直接開刀？看的時候把注意力放在「消融當下影像的即時變化」與「術者用哪些切面確認邊界」。適應症與禁忌症請以 KSThR 2025 指引（Korean J Radiol 2025;26(1):10-28，DOI 10.3348/kjr.2024.0963）為準，該文件已收在本課程實證層，不得以單支示範影片作為治療依據。",
+          "title": "(ENG)RFA at a recurrence",
+          "channel": "KeepMyThyroid",
+          "url": "https://www.youtube.com/watch?v=HnMoxS0Aosk",
+          "duration": "6:34",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
           "access": "open",
-          "license": "CC BY-NC 4.0；Korean Journal of Radiology 開放取用，本站僅連結不重製。",
+          "license": "版權歸原頻道 KeepMyThyroid，本站僅連結不重製。",
           "last_verified": "2026-08-02",
-          "note": "Ha EJ、Lee MK、Baek JH 等，Korean J Radiol 2025;26(1):10-28，DOI 10.3348/kjr.2024.0963。文件為英文。"
+          "note": "頻道作者為韓國甲狀腺影像與介入專科放射科醫師（頻道自述為《Thyroid Ultrasound and Intervention》1–5 版作者、Kwak TI-RADS 原始論文第一作者，Radiology 2011;260:892-9），身分可確認。技術示範性質、無對照與證據討論，列 Tier C，必須搭配 KSThR 2025 指引使用。英文口述，無字幕，觀看數低（約 104 次）。原本此格即為 KSThR 2025 指引本身，課程改為純影音課程後移入實證層。"
         }
       ]
     },
@@ -221,28 +228,39 @@
           "license": "版權歸原頻道（THANC Foundation），本站僅連結。",
           "last_verified": "2026-08-02",
           "timestamps": [
-            {"at": "26:40", "note": "Case #2 開始：合併 Hashimoto 的多發性 PTC"},
-            {"at": "30:40", "note": "選擇不做放射碘後，以每半年 TgAb 追蹤的理由"},
-            {"at": "38:00", "note": "術後 TgAb 長期持續陽性的現象與其臨床意義"}
+            {
+              "at": "26:40",
+              "note": "Case #2 開始：合併 Hashimoto 的多發性 PTC"
+            },
+            {
+              "at": "30:40",
+              "note": "選擇不做放射碘後，以每半年 TgAb 追蹤的理由"
+            },
+            {
+              "at": "38:00",
+              "note": "術後 TgAb 長期持續陽性的現象與其臨床意義"
+            }
           ],
           "note": "2023-10-27 上傳。病例由 Fabian Pitoia 提出，主持人 Michael Tuttle（MSKCC），與談 Janice Pasieka、Monica Rossleigh、Zubair Baloch、Erik Alexander。以投影片病例討論為主，動態掃描畫面有限。無官方字幕。"
         },
         {
-          "name": "甲狀腺床病灶、體積變化與 Tg 倍增的組合判讀",
-          "en": "Evaluation of Thyroid Bed Nodules on Ultrasonography after Total Thyroidectomy: Risk for Loco-Regional Recurrence of Thyroid Cancer",
+          "name": "術後甲狀腺內同時存在復發結節與其他良性病灶",
+          "en": "Recurrent nodules and other lesions in an operated thyroid. The operated thyroid - case 19",
           "kind": "case",
-          "target": "60 位有甲狀腺床病灶的術後病人，追蹤後 25% 確認復發。關鍵數字是：復發組有 60% 出現 >3 mm 增大（非復發組僅 7%），80% 出現 Tg 兩倍以上上升（非復發組 13%）；「病灶變大」加上「Tg 倍增」兩個條件同時成立時，陽性預測值達 100%。這正是本單元要建立的思路——影像與 Tg 要一起讀，不是二選一。",
-          "dose": "先看 Methods 裡「可疑」的定義（微鈣化、周邊血流增加、失去 fatty hilum、低回音），再讀 Results 的表。讀完把自己上一位 Tg 上升的病人套進去，看落在哪一格。注意這是單中心回溯性研究、樣本僅 60 人，100% PPV 不可外推成通則。",
-          "title": "Evaluation of Thyroid Bed Nodules on Ultrasonography after Total Thyroidectomy: Risk for Loco-Regional Recurrence of Thyroid Cancer",
-          "channel": "European Thyroid Journal",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521061/",
+          "target": "一次掃描裡同時看到復發結節與不具意義的術後病灶。這支影片訓練的是「分流」而不是「找到」：在同一個術後頸部裡，哪一顆值得對應到 Tg 的變化去追、哪一顆寫進報告就好。Tg 與影像的一致性判讀，前提是你先挑對要盯的那一顆。",
+          "dose": "播放時把每個看到的病灶編號，各寫一行描述（位置、三軸、形狀、內部均質度、有無高回音亮點），然後標出「若下次 Tg 倍增，我會回頭量哪一顆」。做完後把這份清單套用到自己 assessment 裡那位 Tg 上升的病人身上。定量的組合判讀依據（>3 mm 增大加 Tg 兩倍上升）見本課程實證層 Choudhary 等，Eur Thyroid J 2015;4(2):106-114，PMID 26279996；該研究為單中心回溯性、樣本僅 60 人，其 100% 陽性預測值不可外推成通則。",
+          "title": "Recurrent nodules and other lesions in an operated thyroid. The operated thyroid - case 19",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=ovVbZ3lOsJI",
+          "duration": "0:50",
           "tier": "B",
-          "source_type": "article",
-          "provider": "journal",
+          "source_type": "video",
+          "provider": "youtube",
           "access": "open",
-          "license": "© 2015 European Thyroid Association，S. Karger AG 出版；PMC 免費全文，本站僅連結不重製。",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結不重製。",
           "last_verified": "2026-08-02",
-          "note": "Choudhary C、Wartofsky L、Tefera E、Burman KD，Eur Thyroid J 2015;4(2):106-114，DOI 10.1159/000431317，PMID 26279996。單中心回溯性研究，樣本數小，證據等級 moderate，列 Tier B；bioscientifica 官網（etj.bioscientifica.com）以 curl 存取回 403，PMC 版本可正常開啟。"
+          "coi": "講者經營付費 Papillon Course 與 thyrosite.com，影片說明欄導向該站的對應章節頁。",
+          "note": "無旁白的純動態掃描片段，觀看數極低（約 15 次），價值在影像本身而非講解；納入理由是本單元其餘三格皆為講述型內容，需要一段真正的術後頸部動態掃描。原本此格為 Eur Thyroid J 2015 的甲狀腺床病灶研究（PMID 26279996），課程改為純影音課程後移入實證層，其關鍵數字已寫進本項 dose。"
         },
         {
           "name": "術後 thyroglobulin 該怎麼用在臨床決策",
@@ -293,27 +311,31 @@
         "license": "版權歸原頻道（THANC Foundation），本站僅連結。",
         "last_verified": "2026-08-02",
         "timestamps": [
-          {"at": "0:37", "note": "Morris 開始報告：六種腫瘤體積動力學型態"}
+          {
+            "at": "0:37",
+            "note": "Morris 開始報告：六種腫瘤體積動力學型態"
+          }
         ],
         "note": "2024-07-12 上傳，特邀討論者 Eyal Robenshtok。以研究數據與圖表為主，非動態掃描教學。無官方字幕。"
       },
       "drills": [
         {
-          "name": "主動監測的標準化超音波評估：2024 KSThR 共識",
-          "en": "Standardized Ultrasound Evaluation for Active Surveillance of Low-Risk Thyroid Microcarcinoma in Adults: 2024 Korean Society of Thyroid Radiology Consensus Statement",
-          "kind": "guideline",
-          "target": "把「怎麼量」寫成可稽核的規則：每次都要用與前次相同的影像切面量三軸；進展定義為單一徑增加 ≥3 mm 或兩個徑各增加 ≥2 mm；追蹤間隔為開始後 1–2 年內每 6 個月、其後每年一次；達 13 mm（或兩個徑達 12 mm）並經連續兩次確認時轉手術。這份文件是本單元 assessment 的操作依據。",
-          "dose": "先讀量測方法與進展定義兩節，然後拿自己一位主動監測病人的歷次影像，照規則重量一次，看結論會不會改變。",
-          "title": "Standardized Ultrasound Evaluation for Active Surveillance of Low-Risk Thyroid Microcarcinoma in Adults: 2024 Korean Society of Thyroid Radiology Consensus Statement",
-          "channel": "Korean Journal of Radiology / Korean Society of Thyroid Radiology",
-          "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2024.0871",
+          "name": "主動監測的原始設計者談量測與轉手術門檻",
+          "en": "Active Surveillance of Adult Low-Risk Papillary Thyroid Microcarcinoma with Dr. Sugitani",
+          "kind": "lecture",
+          "target": "由日本主動監測系列研究的主持人 Iwao Sugitani 親自說明這套方案的原始設計：納入與排除條件、追蹤間隔、腫瘤成長怎麼定義、以及什麼情況才轉手術。要帶走的是「主動監測不是不處理，而是一套有門檻的方案」，以及日本標準與韓國 KSThR 標準的差異來自哪裡。",
+          "dose": "一邊聽一邊把自己那位主動監測病人的紀錄攤開，逐項核對：切面有沒有固定、三軸有沒有每次都量、門檻寫在病歷哪裡。聽完後明確寫下你採用的是哪一套門檻。量測方法的逐條規則見本課程實證層的 KSThR 2024 共識（Korean J Radiol 2024;25(11):942-958，DOI 10.3348/kjr.2024.0871）：同切面量三軸、進展定義為單一徑增加 ≥3 mm 或兩個徑各增加 ≥2 mm、達 13 mm 且連續兩次確認時轉手術——本單元 assessment 仍以該文件為操作依據。",
+          "title": "Active Surveillance of Adult Low-Risk Papillary Thyroid Microcarcinoma with Dr. Sugitani",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=dXEmFqRzFTo",
+          "duration": "1:01:41",
           "tier": "A",
-          "source_type": "guideline",
-          "provider": "journal",
+          "source_type": "webinar",
+          "provider": "youtube",
           "access": "open",
-          "license": "CC BY-NC 4.0；Korean Journal of Radiology 開放取用，本站僅連結不重製。",
+          "license": "版權歸原頻道（THANC Foundation），本站僅連結。",
           "last_verified": "2026-08-02",
-          "note": "Lee JY、Lee MK、Lim HK 等（通訊 Na DG、Baek JH），Korean J Radiol 2024;25(11):942-958，DOI 10.3348/kjr.2024.0871。文件為英文；韓國族群為主的共識，門檻與日本 Sugitani／Miyauchi 系列研究略有差異，使用時需說明採用哪一套。"
+          "note": "以研究數據與圖表為主，非動態掃描教學；縱向影像對照由本單元 drill 3 的 RFA 前後對照補上。英文口述，無官方字幕，觀看數低（約 641 次）。原本此格為 KSThR 2024 共識本身，課程改為純影音課程後移入實證層與 GUIDELINE-MATRIX.md。"
         },
         {
           "name": "乙醇消融治療轉移淋巴結的長期成效",
@@ -332,10 +354,22 @@
           "license": "版權歸原頻道（THANC Foundation），本站僅連結。",
           "last_verified": "2026-08-02",
           "timestamps": [
-            {"at": "16:24", "note": "乙醇消融後頸部轉移淋巴結的偵測與復發"},
-            {"at": "22:19", "note": "與既有文獻比較：療效受哪些因素影響"},
-            {"at": "29:30", "note": "討論者 Schmitz 分析既有 PEI 研究的方法學限制"},
-            {"at": "40:06", "note": "綜合討論與問答"}
+            {
+              "at": "16:24",
+              "note": "乙醇消融後頸部轉移淋巴結的偵測與復發"
+            },
+            {
+              "at": "22:19",
+              "note": "與既有文獻比較：療效受哪些因素影響"
+            },
+            {
+              "at": "29:30",
+              "note": "討論者 Schmitz 分析既有 PEI 研究的方法學限制"
+            },
+            {
+              "at": "40:06",
+              "note": "綜合討論與問答"
+            }
           ],
           "note": "2022-09-09 上傳。講題原名 Long-Term Efficacy of Ethanol Ablation as Treatment of Metastatic Lymph Nodes From Papillary Thyroid Carcinoma。以研究簡報為主，動態掃描比例低。無官方字幕。"
         },

@@ -9,6 +9,10 @@
 > 機器參數怎麼救回困難影像、ACR TI-RADS 與 ATA／EU／K-TIRADS 在同一顆結節上為什麼
 > 給出不同答案、頸部淋巴結與術後甲狀腺床怎麼追、副甲狀腺與甲狀腺外病灶怎麼鑑別。
 
+> **全部是影音。** 每一個資源欄位都是看得到的影片——YouTube、Vimeo、學會與醫院的
+> 影音頻道，機構官方與個人專家頻道都收。期刊原文與指引 PDF 不佔資源欄位，
+> 它們的位置在實證層的 `citations` 與 `GUIDELINE-MATRIX.md`。
+>
 > **每個網址都查得到來源。** 每個資源標示分級（Tier A/B/C）、存取條件、授權與**最後查核日期**；
 > 每個論斷標示證據等級（7 級，含 `contested` 與 `educational_demo_only`）。
 > 找不到合格資源的地方**誠實留空**並寫清楚查過什麼——留空比捏造一個看起來合理的連結誠實。
@@ -85,12 +89,16 @@ make deploy           部署到 Cloudflare Pages
 
 ### C. 非 YouTube 來源的支援方案
 
+框架原本只認 YouTube。本課程雖然是純影音，影片仍然散在 Vimeo、學會自架播放器與
+醫院教學站上，所以來源判定還是必須可插拔——只是多了一條「資源欄位必須是影音」的規則
+（`audit.requireVideo`，違反即錯誤）。
+
 `src/build/sources.py` 定義單一事實來源，`build` / `audit` / `verify_external` 三者共用：
 
 ```jsonc
 {
-  "provider":    "youtube | vimeo | society | journal | hospital | case_library | external",
-  "source_type": "video | webinar | case | atlas | guideline | article | quiz",
+  "provider":    "youtube | vimeo | society | hospital | external",
+  "source_type": "video | webinar",          // 影音課程：只收這兩種
   "url":         "https://…",
   "embed_url":   "…",            // 有才嵌入，沒有就顯示外連卡片
   "embeddable":  true,            // 預設：youtube / vimeo 為 true，其餘 false

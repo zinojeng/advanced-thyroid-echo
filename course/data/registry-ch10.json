@@ -39,7 +39,25 @@
   "Europe PMC TITLE:\"thyroid incidentaloma\" AND OPEN_ACCESS:Y",
   "Europe PMC TITLE:\"thyroid cancer surveillance\" AND TITLE:\"survivors\"",
   "Europe PMC (TITLE:\"radiation-induced\" AND TITLE:\"thyroid\") AND OPEN_ACCESS:Y",
-  "Unpaywall DOI 10.1016/j.ctrv.2017.11.005 / 10.1016/j.jacr.2014.09.038 / 10.1089/thy.2016.0457"
+  "Unpaywall DOI 10.1016/j.ctrv.2017.11.005 / 10.1016/j.jacr.2014.09.038 / 10.1089/thy.2016.0457",
+  "yt-dlp ytsearch20: pediatric thyroid nodule ultrasound children management",
+  "yt-dlp ytsearch20: medullary thyroid carcinoma MEN2 RET ultrasound calcitonin",
+  "yt-dlp ytsearch20: prophylactic thyroidectomy MEN2 RET mutation timing",
+  "yt-dlp ytsearch20: thyroid cancer surveillance childhood cancer survivors radiation neck",
+  "yt-dlp ytsearch20: radiation induced thyroid cancer screening survivors late effects thyroid",
+  "yt-dlp ytsearch20: thyroid nodules after radiation exposure Chernobyl ultrasound screening",
+  "yt-dlp ytsearch20: thyroid cancer risk after radiation therapy Hodgkin lymphoma survivor screening endocrine",
+  "yt-dlp ytsearch20: history of neck irradiation thyroid nodule evaluation",
+  "yt-dlp ytsearch20: childhood cancer survivor thyroid late effects endocrine surveillance webinar",
+  "yt-dlp ytsearch20: multinodular goiter ultrasound which nodule to biopsy",
+  "yt-dlp ytsearch20: Solymosi multinodular goiter ultrasound case",
+  "yt-dlp ytsearch20: substernal retrosternal goiter imaging evaluation",
+  "yt-dlp ytsearch20: parathyroid ultrasound localization hyperparathyroidism scanning technique",
+  "yt-dlp ytsearch20: secondary hyperparathyroidism ultrasound dialysis parathyroid hyperplasia",
+  "yt-dlp ytsearch20: thyroid incidentaloma ultrasound evaluation",
+  "yt-dlp ytsearch20: incidental thyroid nodule CT MRI PET incidentaloma management",
+  "yt-dlp ytsearch20: thyroid nodule incidentally detected on CT PET FDG uptake radiology lecture management",
+  "yt-dlp ytsearch20: thyroid cancer overdiagnosis screening ultrasound harms"
  ],
  "verification": {
   "youtube": "每支影片以 yt-dlp ytsearch 取得 video ID，再以 https://www.youtube.com/oembed 驗證，全數 HTTP 200 且標題與頻道相符（2026-08-02）。yt-dlp 單片 metadata 抓取當日被 YouTube 以 429 / bot check 擋下，因此片長取自搜尋結果的 duration 欄位，影片描述僅能取得 flat-playlist 的截斷片段；未觀看全片者一律以 tier B/C 標示或在 why 中據實說明依據。",
@@ -325,6 +343,107 @@
    "source": "YouTube / RFAMD︱Doctor Thyroid",
    "decision": "excluded",
    "reason": "講者本身具權威性，但託管頻道為執業推廣導向且無利益揭露；內容亦無超音波影像。高齡族群因此在本章未取得合格資源，改以 ch10-u2 的 tight／assessment 涵蓋"
+  },
+  {
+   "title": "Pediatric Thyroid Nodules and Cancer",
+   "url": "https://www.youtube.com/watch?v=ktLWYM18b6w",
+   "source": "YouTube / Stanford Otolaryngology — Head & Neck Surgery",
+   "decision": "included",
+   "unit": "ch10-u1",
+   "role": "drill",
+   "reason": "53:37；Stanford Grand Rounds（2019-01-24）。YouTube 章節verified：THYROID ULTRASOUND(4:30)、為什麼需要兒科指引(25:21)、child 的定義(25:46)、15 歲女性個案從篩檢超音波(27:46) → FNA(30:43) → 術前追加影像(34:11) → 手術與併發症 → 遺傳諮詢(42:38) → 術後分期與監測(50:42)，並逐一交代 APC-associated polyposis(42:20)、DICER1(44:00)、PTEN hamartoma tumor syndrome(44:17)——正好對應 ch10-u1 的 weak 條目。取代原 ETA 2022 兒科指引原文。時序早於 ETA 2022，已在 dose 中註明。oEmbed 200。"
+  },
+  {
+   "title": "Medullary thyroid cancer   The beginning of the journey with Drs.  Busaidy & Grubbs 143",
+   "url": "https://www.youtube.com/watch?v=JX-336yNaiQ",
+   "source": "YouTube / ThyCa: Thyroid Cancer Survivors' Association, Inc.",
+   "decision": "included",
+   "unit": "ch10-u2",
+   "role": "drill",
+   "reason": "54:17；內分泌科（Naifa Busaidy, MD Anderson）與內分泌外科（Elizabeth Grubbs）同場。YouTube 章節verified：為什麼要遺傳諮詢／MTC 的兩種形式(4:23)、MEN2 中的遺傳性 MTC(5:37)、等待 RET 結果期間必須先完成的術前檢查(7:00)、腫瘤標記(10:23)、如何處理中央區(14:57)、為什麼用 calcitonin 20 與 200 pg/mL 當預防性側頸廓清門檻(24:54)、術後持續偏高 calcitonin 的評估(40:31)。直接對應 ch10-u2 的 tight『MEN2 的手術時機由 RET codon 與 calcitonin 決定』。取代原 ATA MTC 指引原文。2021 年病友年會場次、超音波影像不多，列 tier B。oEmbed 200。"
+  },
+  {
+   "title": "Medullary Thyroid Carcinoma: A Surgeon's Perspective with Dr. Lorenz (Part 1)",
+   "url": "https://www.youtube.com/watch?v=lJAnLJ4H-N4",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "27:02，內容（calcitonin、超音波所見與遺傳因素如何決定分期與手術範圍）非常契合 ch10-u2，但該 URL 已由 CH6-u3 收錄，避免跨章重複，改用 JX-336yNaiQ。"
+  },
+  {
+   "title": "The role of ultrasound in the evaluation of nodular goiter patients - videolecture",
+   "url": "https://www.youtube.com/watch?v=C0K_lIKtUR8",
+   "source": "YouTube / Tamas Solymosi (thyrosite.com)",
+   "decision": "included",
+   "unit": "ch10-u3",
+   "role": "drill",
+   "reason": "30:02；講者為長期經營甲狀腺超音波病例庫的內分泌科醫師，同系列已被本課程其他章節採用。主題與 ch10-u3 的多結節腺體判讀完全對應，取代原 CytoJournal 非主導結節惡性率論文（該論文的數字仍在實證層）。影片無字幕軌可下載、無章節，僅能以標題與講者既有作品判斷，故列 tier B、不填 timestamps。oEmbed 200。"
+  },
+  {
+   "title": "Parathyroid ultrasound when, why and how to do it? (Gerasimos Sykiotis)",
+   "url": "https://www.youtube.com/watch?v=PYAM_Gl4FA8",
+   "source": "YouTube / N.N. Petrov NMRC of Oncology（White Nights Forum）",
+   "decision": "included",
+   "unit": "ch10-u3",
+   "role": "drill",
+   "reason": "21:03；講者為 Lausanne 大學醫院（CHUV）內分泌科醫師，與 ch7-u2 lesson 同一講者不同講次。YouTube 章節verified：何時該做副甲狀腺影像(2:31)、超音波相對 sestamibi／18F-choline PET 的優劣(7:33/8:26)、正常腺體解剖(9:02)、腺瘤特徵含 95–98% 位於甲狀腺外(10:20)、5 公分等回音腺瘤被誤判為甲狀腺結節(11:04)、甲狀腺內腺瘤(11:20)、如何掃(15:00)、往哪裡找含異位(15:50)、多腺體疾病(18:17)、副甲狀腺 FNA 的角色(18:50)。取代原 Clinical Kidney Journal 的 SHPT 定位論文。重要限制：本講以原發性亢進與單一腺瘤定位為主軸，洗腎族群的四腺增生僅由 18:17 的多腺體病例間接涵蓋，已在 dose 中據實寫明。oEmbed 200。"
+  },
+  {
+   "title": "Neck US - Lymph Nodes and Abscesses",
+   "url": "https://www.youtube.com/watch?v=g2_xvYaH7QI",
+   "source": "YouTube / Radiology Education by Joseph W. Owen, MD",
+   "decision": "included",
+   "unit": "ch10-u4",
+   "role": "drill",
+   "reason": "7:38；大學放射科醫師教學頻道。影片說明列出學習目標與結論摘要（淋巴結：平滑低回音 cortex／central echogenic fatty hilum／hilar 血流；膿瘍：複雜性液體／邊界不規則／後方回音增強／中央無血流／周邊水腫），YouTube 章節verified 含兩題自我測驗(3:04、6:12)。補上 registry 原列『急診頸部腫脹』未覆蓋的缺口。受眾為醫學生與住院醫師、深度低於本課程水準，列 tier C 並在 dose 中寫明。取代原 ACR 意外發現白皮書（該白皮書的年齡與尺寸門檻已移至實證層，assessment 第一段仍照原要求執行）。oEmbed 200。"
+  },
+  {
+   "title": "Incidental thyroid nodules with Jenny Hoang",
+   "url": "https://www.youtube.com/watch?v=pg8B4CPBjgU",
+   "source": "YouTube / Radiology Channel（Radiopaedia Reading Room Podcast Ep 8）",
+   "decision": "excluded",
+   "reason": "39:08，講者即 ACR Incidental Thyroid Findings Committee 白皮書的作者，內容正是 ch10-u4 所需的分流門檻由來，是本次搜尋中主題最貼近的一支。但影片說明顯示這是 Radiopaedia Reading Room Podcast 的錄音上傳（Apple Podcasts／Spotify／Podbean 同步發布），屬純口頭訪談、無教學影像，違反策展契約『只有口頭演講、只有投影片』的排除條款，故不收。若日後改版放寬對純語音節目的限制，這是第一順位候補。"
+  },
+  {
+   "title": "Thyroid Nodules - Cancer Risk Factors and Radiation Exposure (Chernobyl, Fukushima)",
+   "url": "https://www.youtube.com/watch?v=CNP4PtaVKyE",
+   "source": "YouTube / University of California Television (UCTV)",
+   "decision": "excluded",
+   "reason": "4:35，UCSF 內分泌外科醫師 Wen Shen 談輻射暴露與甲狀腺癌風險，來源機構可靠，但這是一般民眾講座的節錄片段，內容停在風險因子層次，未觸及輻射病史者的監測策略與 overdiagnosis 權衡。"
+  },
+  {
+   "title": "Why Is There a Lump in My Neck and Do I Need to Worry?",
+   "url": "https://www.youtube.com/watch?v=5NKh5Wx9GXE",
+   "source": "YouTube / University of California Television (UCTV)",
+   "decision": "excluded",
+   "reason": "59:37，上一則的完整版。YouTube 章節verified 為 UCSF 面向公眾的 mini medical school 講座（branchial cleft cyst、thyroglossal duct cyst、mononucleosis 等），受眾為一般民眾，深度不符本課程『假設學員已經會掃』的前提。"
+  },
+  {
+   "title": "Pediatric Thyroid Tumor Board w/ Drs. Tuttle & Bauer (Nov 2025)",
+   "url": "https://www.youtube.com/watch?v=Yg0XpS8ztZc",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "56:57，品質足夠，但 ch10-u1 已收錄同一位講者（Andrew Bauer）的 THANC 兒童病例回顧（c1mczt5Gjf4），同單元不重複收同型態的病例討論；改收 Stanford Grand Rounds 以取得指引邏輯的講解角度。"
+  },
+  {
+   "title": "Pediatric Thyroid Nodules: Clinical Insights & Approaches w/ Dr. Wen Jiang | ENT Ep. 274",
+   "url": "https://www.youtube.com/watch?v=15_4WwGx7Zw",
+   "source": "YouTube / BackTable ENT & Allergy",
+   "decision": "excluded",
+   "reason": "59:41，內容相關，但 BackTable 為 podcast 節目，屬純口頭訪談、無教學影像。"
+  },
+  {
+   "title": "Management of secondary hyperparathyroidism in dialysis patients",
+   "url": "https://www.youtube.com/watch?v=KCAtGvECAPI",
+   "source": "YouTube / Event Troop",
+   "decision": "excluded",
+   "reason": "60:19，主題正是 ch10-u3 的次發性副甲狀腺亢進，但為腎臟科藥物治療取向的講次，未處理超音波定位；且上傳頻道無機構標示，無法確認原始主辦單位。"
+  },
+  {
+   "title": "CT assessment - evaluating a retrosternal goitre",
+   "url": "https://www.youtube.com/watch?v=ICRPxg1cUj0",
+   "source": "YouTube / Thoracic Imaging",
+   "decision": "excluded",
+   "reason": "2:28，與 ch10-u3 lesson（Preoperative CT Assessment of a Thyroid Mass）主題重疊且更短，不重複佔用配額。"
   }
  ],
  "gaps": [
@@ -345,6 +464,60 @@
    "unit": "ch10-u4",
    "status": "刻意不重複收錄",
    "detail": "術後甲狀腺床追蹤屬 CH8、消融技術與消融後影像屬 CH5／CH11，本章不重複佔用配額；已在 ch10-u4 的 tight 中保留判讀陷阱條目。"
+  },
+  {
+   "topic": "頸部輻射病史者的甲狀腺監測",
+   "unit": "ch10-u2",
+   "status": "影音層未取得合格資源（該格已留空並附 note）",
+   "detail": "改版前這一格放的是 IGHG / PanCareSurFup 的國際共識（PMID 29202445），改版後移至實證層與 GUIDELINE-MATRIX.md。共查過六組 query：'thyroid cancer surveillance childhood cancer survivors radiation neck'、'radiation induced thyroid cancer screening survivors late effects thyroid'、'thyroid nodules after radiation exposure Chernobyl ultrasound screening'、'thyroid cancer risk after radiation therapy Hodgkin lymphoma survivor screening endocrine'、'history of neck irradiation thyroid nodule evaluation'、'childhood cancer survivor thyroid late effects endocrine surveillance webinar'，回傳結果集中在放射治療副作用衛教、RAI 治療與病友見證。唯二接近的 CNP4PtaVKyE 與其完整版 5NKh5Wx9GXE 皆為面向公眾的講座，已排除（理由見 evaluated）。ch10-u2 的 tight 與 weak 仍保留該主題的判讀陷阱與能力要求。"
+  },
+  {
+   "topic": "ACR 意外發現甲狀腺結節的年齡與尺寸分流門檻",
+   "unit": "ch10-u4",
+   "status": "影音層未覆蓋（有候補但不合格）",
+   "detail": "白皮書原文（PMID 25456025）已移至實證層。主題最貼近的影音是 Radiopaedia Reading Room Podcast Ep 8（pg8B4CPBjgU，白皮書作者 Jenny Hoang 親自說明分流門檻的由來），但屬純語音節目、無教學影像，依策展契約排除。該格改收 g2_xvYaH7QI（急性頸部腫脹的淋巴結 vs 膿瘍鑑別），覆蓋本單元另一個原本未覆蓋的主題；ch10-u4 的 assessment 第一段（算出不必要轉檢比例）與 tight／weak 條目未更動，執行時請以 GUIDELINE-MATRIX.md 的條目為準。"
   }
- ]
+ ],
+ "revision": {
+  "date": "2026-08-02",
+  "reason": "課程改版為純影音課程：資源欄位只收影片（source_type 僅 video / webinar，kind 移除 guideline）。CH10 原有 6 個非影片欄位（指引原文與期刊論文）中，5 個換成實測驗過的 YouTube 影片，1 個（頸部輻射病史者的甲狀腺監測）查無合格影音，誠實留空並附 note。被換掉的文獻仍存在於 drill-evidence-*.json 的 citations 與 GUIDELINE-MATRIX.md。",
+  "replaced": [
+   {
+    "unit": "ch10-u1",
+    "role": "drill",
+    "was": "2022 ETA Guidelines for the management of pediatric thyroid nodules and DTC (PMC9716393)",
+    "now": "https://www.youtube.com/watch?v=ktLWYM18b6w"
+   },
+   {
+    "unit": "ch10-u2",
+    "role": "drill",
+    "was": "Revised ATA Guidelines for the Management of Medullary Thyroid Carcinoma (PMC4490627)",
+    "now": "https://www.youtube.com/watch?v=JX-336yNaiQ"
+   },
+   {
+    "unit": "ch10-u2",
+    "role": "drill",
+    "was": "IGHG / PanCareSurFup thyroid cancer surveillance recommendations (PMID 29202445)",
+    "now": null
+   },
+   {
+    "unit": "ch10-u3",
+    "role": "drill",
+    "was": "Malignancy rate in nondominant nodules in multinodular goiter (CytoJournal 2011;8:20)",
+    "now": "https://www.youtube.com/watch?v=C0K_lIKtUR8"
+   },
+   {
+    "unit": "ch10-u3",
+    "role": "drill",
+    "was": "Preoperative localization of parathyroid glands in secondary hyperparathyroidism (PMC11897698)",
+    "now": "https://www.youtube.com/watch?v=PYAM_Gl4FA8"
+   },
+   {
+    "unit": "ch10-u4",
+    "role": "drill",
+    "was": "Managing incidental thyroid nodules detected on imaging: ACR white paper (PMID 25456025)",
+    "now": "https://www.youtube.com/watch?v=g2_xvYaH7QI"
+   }
+  ]
+ }
 }

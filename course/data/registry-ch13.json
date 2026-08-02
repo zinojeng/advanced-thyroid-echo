@@ -1,283 +1,500 @@
 {
  "chapter": "CH13",
  "searched": [
-  "AACE ECNU Endocrine Certification in Neck Ultrasound requirements",
-  "ACR practice parameter thyroid parathyroid ultrasound PDF",
-  "AIUM practice parameter performance thyroid parathyroid ultrasound examination 2022 aium.org pdf",
-  "thyroid ultrasound structured reporting template RSNA RadReport thyroid",
-  "interobserver variability ACR TI-RADS agreement radiologists study kappa",
-  "EFSUMB minimum training requirements practice medical ultrasound Europe level 1 2 3 pdf",
-  "ACR peer learning radiology acr.org program quality improvement",
-  "RCR Radiology events and learning meetings standards guidance rcr.ac.uk",
-  "RCR AuditLive thyroid ultrasound audit template U classification reporting",
-  "aium.org ECNU endocrine certification neck ultrasound credential page",
-  "ECNU program discontinued sunset AACE no longer offered neck ultrasound certification 2024 2025",
-  "Korean Society of Thyroid Radiology KSThR thyroid ultrasound course certification education program",
-  "thyroid neck ultrasound hands-on course 2026 society certificate endocrinologists",
-  "American Thyroid Association annual meeting 2026 ultrasound course neck ultrasound program thyroid.org",
-  "PubMed eutils: Interobserver Variability of Sonographic Features Used in the American College of Radiology Thyroid Imaging Reporting and Data System",
-  "PubMed eutils: Update on ACR TI-RADS Successes Challenges and Future Directions",
-  "PubMed eutils: thyroid nodule biopsy rate reduction ACR TI-RADS unnecessary",
-  "PubMed eutils: peer learning radiology quality improvement RADPEER",
-  "PubMed eutils: OSCE ultrasound competency assessment objective structured",
-  "PubMed eutils: logbook ultrasound training competency number of examinations",
-  "PubMed eutils: direct observation of procedural skills ultrasound assessment tool",
-  "Europe PMC: TITLE:\"thyroid\" AND TITLE:\"biopsy\" AND TITLE:\"audit\"",
-  "Europe PMC: TITLE:\"missed\" AND TITLE:\"thyroid cancer\"",
-  "Europe PMC: \"unnecessary biopsies\" AND \"TI-RADS\" AND TITLE:\"thyroid\"",
-  "Europe PMC: TITLE:\"radiology events and learning\" OR TITLE:\"discrepancy meeting\"",
-  "Europe PMC: (TITLE:\"interobserver\" OR \"inter-observer\" OR \"reproducibility\") AND TITLE:\"thyroid\" AND TITLE:\"ultrasound\" AND OPEN_ACCESS:Y",
-  "Europe PMC: TITLE:\"thyroid\" AND (TITLE:\"OSCE\" OR TITLE:\"objective structured\")",
-  "Europe PMC: (TITLE:\"OSCE\" OR \"direct observation\" OR \"assessment tool\") AND TITLE:\"ultrasound\" AND OPEN_ACCESS:Y AND (TITLE:\"competence\" OR \"competency\" OR \"skills\")",
-  "Europe PMC: TITLE:\"logbook\" AND TITLE:\"ultrasound\"",
-  "Europe PMC: TITLE:\"Thyroid Ultrasound Education in the United States\"",
-  "yt-dlp ytsearch12: thyroid ultrasound structured reporting quality audit TI-RADS interobserver",
-  "yt-dlp ytsearch10: thyroid ultrasound report quality assurance audit"
+  "yt-dlp ytsearch20: radiology structured reporting lecture",
+  "yt-dlp ytsearch20: thyroid ultrasound reporting TI-RADS lecture radiologist",
+  "yt-dlp ytsearch20: radiology peer learning peer review quality improvement",
+  "yt-dlp ytsearch20: radiology discrepancy meeting learning from error",
+  "yt-dlp ytsearch20: David Larson peer learning radiology",
+  "yt-dlp ytsearch20: Jennifer Broder peer learning radiology",
+  "yt-dlp ytsearch20: interobserver variability radiology diagnostic error",
+  "yt-dlp ytsearch20: clinical audit radiology quality improvement how to",
+  "yt-dlp ytsearch20: radiology quality improvement grand rounds",
+  "yt-dlp ytsearch20: reducing unnecessary thyroid biopsies TI-RADS",
+  "yt-dlp ytsearch20: ACR TI-RADS webinar",
+  "yt-dlp ytsearch20: Jenny Hoang TI-RADS",
+  "yt-dlp ytsearch20: thyroid ultrasound protocol documentation how to scan complete exam",
+  "yt-dlp ytsearch20: AIUM thyroid ultrasound webinar",
+  "yt-dlp ytsearch15: TI-RADS Webinar Part I American College of Radiology",
+  "yt-dlp ytsearch15: RSNA RadReport structured reporting templates",
+  "yt-dlp ytsearch15: radiology report quality communication RSNA",
+  "yt-dlp ytsearch15: thyroid ultrasound documentation minimum images sonographer worksheet",
+  "yt-dlp ytsearch15: missed cancer radiology error case review conference",
+  "yt-dlp ytsearch15: radiology errors cognitive bias perception lecture",
+  "yt-dlp ytsearch15: RCR radiology events and learning meetings REALM",
+  "yt-dlp ytsearch15: second opinion discordance thyroid ultrasound reinterpretation",
+  "yt-dlp ytsearch15: THANC Foundation thyroid ultrasound agreement",
+  "yt-dlp ytsearch15: thyroid nodule risk stratification systems comparison interobserver agreement lecture",
+  "yt-dlp ytsearch15: thyroid nodule ultrasound interobserver reproducibility variability webinar endocrine",
+  "yt-dlp ytsearch15: why radiologists disagree thyroid nodule ultrasound features",
+  "yt-dlp ytsearch15: TI-RADS pitfalls disagreement discordance lecture",
+  "yt-dlp ytsearch15: ultrasound image labeling annotation standards sonographer quality",
+  "yt-dlp ytsearch15: ultrasound image annotation labeling orientation right left marker error",
+  "yt-dlp ytsearch15: ultrasound image quality optimization gain depth focus common mistakes",
+  "yt-dlp ytsearch15: left right side labeling error imaging patient safety wrong side",
+  "yt-dlp ytsearch15: European Society of Radiology clinical audit ESR",
+  "yt-dlp ytsearch15: EFSUMB ultrasound education training",
+  "yt-dlp ytsearch15: ultrasound credentialing privileging hospital policy POCUS",
+  "yt-dlp ytsearch15: thyroid ultrasound quality assurance sonographer accreditation",
+  "yt-dlp ytsearch15: thyroid ultrasound scanning protocol image documentation lecture sonographer",
+  "yt-dlp ytsearch15: AIUM accreditation ultrasound practice how to apply",
+  "yt-dlp ytsearch15: sonographer image quality review technologist quality assurance ultrasound department",
+  "yt-dlp ytsearch20: direct observation of procedural skills DOPS workplace based assessment",
+  "yt-dlp ytsearch20: OSCE examiner training objective structured clinical examination assessment",
+  "yt-dlp ytsearch20: competency based medical education entrustable professional activities assessment",
+  "yt-dlp ytsearch20: ultrasound competency assessment training logbook credentialing",
+  "yt-dlp ytsearch15: POCUS credentialing privileging competency pathway hospital ultrasound physicians webinar",
+  "yt-dlp ytsearch15: endocrinologist neck ultrasound certification ECNU training course",
+  "yt-dlp ytsearch15: learning curve number of cases ultrasound competence training",
+  "yt-dlp ytsearch12: AIUM ultrasound practice accreditation webinar image submission review",
+  "yt-dlp ytsearch12: ACR ultrasound accreditation image quality clinical image review",
+  "yt-dlp ytsearch12: IAC accreditation image quality case study submission ultrasound",
+  "yt-dlp channel listing: https://www.youtube.com/@RoyalCollegeofRadiologists/videos（404，該 handle 不存在）",
+  "yt-dlp channel listing: https://www.youtube.com/@THANCFoundation/videos（無法解析）",
+  "（改版前的文獻與文件搜尋，保留紀錄）AACE ECNU Endocrine Certification in Neck Ultrasound requirements",
+  "（改版前）AIUM practice parameter performance thyroid parathyroid ultrasound examination 2022 aium.org pdf",
+  "（改版前）EFSUMB minimum training requirements practice medical ultrasound Europe level 1 2 3 pdf",
+  "（改版前）RCR AuditLive thyroid ultrasound audit template U classification reporting",
+  "（改版前）Europe PMC: (TITLE:\"interobserver\" OR \"inter-observer\" OR \"reproducibility\") AND TITLE:\"thyroid\" AND TITLE:\"ultrasound\" AND OPEN_ACCESS:Y",
+  "（改版前）Europe PMC: TITLE:\"thyroid\" AND (TITLE:\"OSCE\" OR TITLE:\"objective structured\")",
+  "（改版前）Europe PMC: (TITLE:\"OSCE\" OR \"direct observation\" OR \"assessment tool\") AND TITLE:\"ultrasound\" AND OPEN_ACCESS:Y AND (TITLE:\"competence\" OR \"competency\" OR \"skills\")",
+  "（改版前）Europe PMC: TITLE:\"logbook\" AND TITLE:\"ultrasound\"",
+  "（改版前）PubMed eutils: peer learning radiology quality improvement RADPEER",
+  "（改版前）PubMed eutils: direct observation of procedural skills ultrasound assessment tool"
  ],
  "evaluated": [
+  {
+   "title": "How to Write a Great Report: Diagnostic Radiologist's Perspective",
+   "url": "https://www.youtube.com/watch?v=TKPTNFeMGTA",
+   "source": "YouTube / ARRS（American Roentgen Ray Society），講者 Francis Deng, MD",
+   "decision": "included",
+   "unit": "ch13-u1",
+   "reason": "學會官方頻道、17:48、有章節時間戳。結構化報告與 checklist、用字精確度、impression 可執行性逐段講到，並以頭頸部癌症個案收尾。oEmbed 200，標題與頻道相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS Structured reporting template",
+   "url": "https://www.youtube.com/watch?v=P7GHtG_9GvQ",
+   "source": "YouTube / Jenny Hoang（ACR TI-RADS 委員會成員；個人頻道）",
+   "decision": "included",
+   "unit": "ch13-u1",
+   "reason": "公開影音中唯一逐欄示範甲狀腺超音波結構化報告範本的影片，作者身分可確認。oEmbed 200。**與 ch4-u3 共用**，兩章用法不同（CH4 教分級、CH13 教報告可重現性），已在各自 dose 分開寫",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Thyroid TI RADS Review",
+   "url": "https://www.youtube.com/watch?v=n-UJpStoFV8",
+   "source": "YouTube / THP Sonographer Rounds（Trillium Health Partners 超音波科內訓）",
+   "decision": "included",
+   "unit": "ch13-u1",
+   "reason": "描述明載「Review of ACR TI-RADS guidelines and updated thyroid ultrasound SOP」，是本章唯一看得到「一個單位的最小影像集 SOP 怎麼教給整組操作者」的實例。頻道為醫院內訓（channel id UC8nmq0oIeBW4J8i8cmdcfEQ），oEmbed 200。觀看數僅 91，已知低於稽核門檻，仍收錄並降為 tier B",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Thyroid Ultrasound Protocol",
+   "url": "https://www.youtube.com/watch?v=Sk28k_od8fk",
+   "source": "YouTube / Educational Ultrasound Channel",
+   "decision": "included",
+   "unit": "ch13-u1",
+   "reason": "4:43 的純示範，依序走過峽部、雙葉橫切／縱切、三維測量與頸部淋巴結，可直接抄成最小影像集存檔清單。描述附時間戳，oEmbed 200，70,265 次觀看。僅涵蓋掃描端故列 tier C",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+   "url": "https://www.youtube.com/watch?v=r9jwnXoUMIA",
+   "source": "YouTube / THANC Foundation（講者 Nydia Burgos，討論者 Franklin Tessler）",
+   "decision": "included",
+   "unit": "ch13-u2",
+   "reason": "受測者為兩個內分泌學會的會員，正是本課目標讀者；逐項秀出哪些超音波特徵掉在 AC1 0.6 以下。oEmbed 200。**與 ch4-u1、ch0-u1 共用**——這是公開影音中唯一以內分泌科醫師為受測對象的判讀一致度報告，無可替換",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Peer Review and Peer Learning-Are We Just Meeting Requirements or Are We Improving Our Practices?",
+   "url": "https://www.youtube.com/watch?v=xFZoDdiVkz8",
+   "source": "YouTube / RSNA（Jennifer Broder、Richard Sharpe Jr.、Lane Donnelly）",
+   "decision": "included",
+   "unit": "ch13-u2",
+   "reason": "學會官方頻道，10:38 把 peer review 與 peer learning 的制度差異與 just culture 前提講清楚。oEmbed 200。觀看數 253 低於稽核門檻，但講者與發布機構層級足以支撐 tier A",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "How to Launch Your Peer Learning Program Next Week",
+   "url": "https://www.youtube.com/watch?v=Kr85n3btC5k",
+   "source": "YouTube / American College of Radiology",
+   "decision": "included",
+   "unit": "ch13-u2",
+   "reason": "ACR 官方 61 分鐘實作webinar，內容即改版前 ch13-u2 收的 ACR Peer Learning Resources 網頁所指向的工具包；提報流程、案例篩選、主持方式、學習點回饋迴路俱全。oEmbed 200，1,047 次觀看",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Radiology Rewind: SRT 2019 - 'Discrepancies in Radiology' by Dr James Stephenson",
+   "url": "https://www.youtube.com/watch?v=fxmdTEMwyT8",
+   "source": "YouTube / The Society of Radiologists in Training (UK)",
+   "decision": "included",
+   "unit": "ch13-u2",
+   "reason": "英國 RCR/REALM 制度的實作視角，是改版前 ch13-u2 所收 BFCR(20)1 REALM 標準最接近的影音替代。oEmbed 200，503 次觀看",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Demystifying the Thyroid: TIRADS, FNA and Everything In-Between",
+   "url": "https://www.youtube.com/watch?v=28JQowWSJsg",
+   "source": "YouTube / Association of Academic Radiology（Constantine Burgan, UAB）",
+   "decision": "included",
+   "unit": "ch13-u3",
+   "reason": "把 TI-RADS 分級到穿刺門檻的對應與灰帶整場走過，提供稽核第（二）欄「分數是否對應到指引建議門檻」的判定依據。oEmbed 200，715 次觀看。以 ACR TI-RADS (2017) 為主軸，已在 coi 註明本地系統需替換門檻",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "How to do a QUICK radiology audit",
+   "url": "https://www.youtube.com/watch?v=1AB-oSl2dcg",
+   "source": "YouTube / Mr Radiologist（英國放射科醫師個人頻道）",
+   "decision": "included",
+   "unit": "ch13-u3",
+   "reason": "7:42 把稽核循環（題目、標準與出處、樣本、指標、改善措施、再稽核）壓縮成可執行的一頁；描述中直接連向 RCR AuditLive 範本資料庫，等於保留了通往改版前所收甲狀腺 U-classification 稽核範本的路徑。oEmbed 200，4,315 次觀看。英國住院醫師取向，故列 tier B",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Vascular Testing Accreditation: Lessons Learned and What You Should Know",
+   "url": "https://www.youtube.com/watch?v=T7Bn3_wBz0E",
+   "source": "YouTube / Intersocietal Accreditation Commission (IAC)",
+   "decision": "included",
+   "unit": "ch13-u3",
+   "reason": "認證機構自身說明審查者如何評一批送審影像（影像品質、標示、流程一致性、退件原因），是本章找得到最接近「影像品質稽核怎麼評分」的影音。**內容為血管超音波非甲狀腺**，已在 dose 明寫可轉移的只是審查方法、並在 coi 註明 IAC 為收費認證機構。oEmbed 200，583 次觀看",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Assessment of Skills: Who gets honors and who get remediated and how do we judge?",
+   "url": "https://www.youtube.com/watch?v=sIHOh-7hh7g",
+   "source": "YouTube / AIUMultrasound（講者 Chris Fox, UC Irvine）",
+   "decision": "included",
+   "unit": "ch13-u4",
+   "reason": "全課唯一正面處理「超音波能力怎麼評」的學會影音：知識測驗、影像判讀、直接觀察、OSCE 式站別各能測到什麼，以及通過／需補救的分界。oEmbed 200。觀看數 243 低於門檻、場景為醫學生教育，已在 coi 說明；仍為 ch13-u4 主課的最佳選擇",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "What is DOPS?",
+   "url": "https://www.youtube.com/watch?v=D2_zNQ8sXE8",
+   "source": "YouTube / RACP（Royal Australasian College of Physicians）",
+   "decision": "included",
+   "unit": "ch13-u4",
+   "reason": "專科學院官方說明 Direct Observation of Procedural Skills 的四個必要條件（事前議定項目、固定表單、當場回饋、寫下一件要改的事），可直接轉成 UGFNA 的觀察表。oEmbed 200，3,494 次觀看",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Primary Care POCUS: Why it is Needed and Common Questions About Billing and Credentialing",
+   "url": "https://www.youtube.com/watch?v=HHRZvqlXBU4",
+   "source": "YouTube / AIUMultrasound（講者 Paul Bornemann, MD, RMSK, RPVI）",
+   "decision": "included",
+   "unit": "ch13-u4",
+   "reason": "ECNU 停辦後本章找不到甲狀腺專屬的個人認證影音；這支是 AIUM 官方對「個人能力／院內 privileging／付款方要求」三層差異最完整的說明。oEmbed 200，2,341 次觀看。美國制度、基層醫療 POCUS 場景，已在 coi 註明",
+   "last_verified": "2026-08-02"
+  },
+
+  {
+   "title": "General Ultrasound | How to Annotate an Ultrasound Image",
+   "url": "https://www.youtube.com/watch?v=WuRNTI3w8PU",
+   "source": "YouTube / Sonography Minutes",
+   "decision": "excluded",
+   "reason": "內容正是 ch13-u3 影像標示稽核需要的四條標註規則（3:32），但 oEmbed 回 401（作者關閉嵌入／不可用），依契約「401/403/404 = 不可用」不得採用。yt-dlp 顯示 availability=public，屬僅關閉嵌入，仍不合格",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Error and Uncertainty in Diagnostic Radiology (Michael A. Bruno, Penn State)",
+   "url": "https://www.youtube.com/watch?v=4Hwc_Km3YZo",
+   "source": "YouTube / Patient Safety Authority",
+   "decision": "excluded",
+   "reason": "品質極佳（Bruno 為放射科錯誤研究權威，59:10，oEmbed 200，1,404 次觀看），但 ch13-u2 僅 3 個 drill 名額，內容與已收的 SRT 'Discrepancies in Radiology' 及 ACR peer learning 重疊。列為本章第一備選，若日後 u2 擴充應優先補入",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Conducting Good Clinical Audits in Radiology",
+   "url": "https://www.youtube.com/watch?v=JJpxt9DNgaM",
+   "source": "YouTube / Radiology Interest Group Africa",
+   "decision": "excluded",
+   "reason": "72 分鐘完整走過稽核循環，oEmbed 200，但僅 9 次觀看、講者資歷無法從頻道確認，且 ch13-u3 已收更精簡並直指 RCR AuditLive 的替代。列為備選",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Webinar 2: Structured reporting in the era of precision medicine (C. Kahn)",
+   "url": "https://www.youtube.com/watch?v=Xjjf7xK0lf0",
+   "source": "YouTube / European Society of Medical Imaging Informatics (EuSoMII)",
+   "decision": "excluded",
+   "reason": "Charles Kahn 是 RadLex／結構化報告的權威，內容札實（49:42），但屬影像資訊學的通論、無甲狀腺影像，ch13-u1 的四個名額優先給了報告寫作實作與甲狀腺專屬材料",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "General Radiology Lecture: Revving up the Radiology Report",
+   "url": "https://www.youtube.com/watch?v=bYj1W0hmO2E",
+   "source": "YouTube / Learn Abdominal Radiology（Radiopaedia 2024 會議演講）",
+   "decision": "excluded",
+   "reason": "報告品質與溝通的好講座（29:03，1,197 次觀看），但與已收的 ARRS 主課主題重疊；ch13-u1 需要的第三、四個名額給了甲狀腺專屬的 SOP 與掃描示範",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS Webinar Part I: This Is How We Do It / Part II / Part III",
+   "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
+   "source": "YouTube / American College of Radiology",
+   "decision": "excluded",
+   "reason": "三支皆 oEmbed 200 且品質高，但 Part I 已用於 ch4-u1、Part II 用於 ch4-u2 與 ch12-u5、Part III 用於 ch4-u3。為避免跨章重複過多，CH13 改收同主題但未被使用的 AAR 'Demystifying the Thyroid' 與 ARRS 報告寫作",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Peer Learning: From Toxic Scoring to Transformative Education with Dr. David Larson",
+   "url": "https://www.youtube.com/watch?v=jNNjhjOJErg",
+   "source": "YouTube / AHRAVideos（另有 Imalogix 版本 lJT5ceUdBq8）",
+   "decision": "excluded",
+   "reason": "David Larson 是 peer learning 的主要推動者，內容切題（44:16），但兩個版本皆由第三方（協會影音與廠商行銷頻道 Rethink Imaging by Imalogix）發布、觀看數僅 3 與 17，且 Imalogix 版屬廠商內容行銷。已改收 ACR 官方版本的同主題 webinar",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Why Radiologists Are Abandoning Peer Review and Turning to Peer Learning",
+   "url": "https://www.youtube.com/watch?v=wfs0VdNu9ys",
+   "source": "YouTube / Rethink Imaging by Imalogix",
+   "decision": "excluded",
+   "reason": "觀看數高（17,015）且主題正確，但發布者為影像分析廠商的內容行銷頻道，缺乏利益揭露；同主題已有 ACR 與 RSNA 官方版本可用",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "iCode REALM: The Tool for Every REALM Chair",
+   "url": "https://www.youtube.com/watch?v=nHhzSy1sAM0",
+   "source": "YouTube / Rosenfield Health",
+   "decision": "excluded",
+   "reason": "唯一在 YouTube 上直接命中 REALM 一詞的影片，但只有 60 秒、且為 REALM 管理軟體的產品廣告，沒有教學內容",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Professor Sir David Spiegelhalter Interview | REAL Meeting 2023",
+   "url": "https://www.youtube.com/watch?v=eRsgUdf8bZw",
+   "source": "YouTube / The Royal College of Radiologists",
+   "decision": "excluded",
+   "reason": "RCR 官方頻道確實存在（該 handle 名稱與 @RoyalCollegeofRadiologists 不同，後者 404），但頻道上與 CH13 相關的只有這支年會名人專訪，內容為統計素養與風險溝通，非 AuditLive 或 REALM 教學。確認 RCR 沒有把稽核與 REALM 標準做成影音",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "OSCE Training Video - Assessment",
+   "url": "https://www.youtube.com/watch?v=xhScIBm7MrQ",
+   "source": "YouTube / Gloucestershire Hospitals NHS Foundation Trust",
+   "decision": "excluded",
+   "reason": "考官端的 OSCE 訓練影片（17:27，32,537 次觀看），品質可用，但站別內容為一般臨床技能、與超音波無關；ch13-u4 只有 2 個 drill 名額，優先給了 DOPS 與 credentialing。OSCE 缺口已在 ch13.json notes 記錄",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "How to: 6 steps to developing ultrasound competency in you or your students",
+   "url": "https://www.youtube.com/watch?v=iXGBk_2NN6M",
+   "source": "YouTube / Zedu Ultrasound Training Solutions",
+   "decision": "excluded",
+   "reason": "能力養成六步驟的實用框架（43:57，3,146 次觀看），但發布者為商業超音波訓練公司、內容導向自家課程；同一位置已由 AIUM 官方的評量方法影音承擔",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Direct Observation of Practical Skills (DOPS)",
+   "url": "https://www.youtube.com/watch?v=jufTIsJHqPI",
+   "source": "YouTube / NHS England Workforce, Training and Education",
+   "decision": "excluded",
+   "reason": "觀看數較高（12,180）且為官方單位發布，但明載對象是 foundation pharmacist training year（藥師），示範情境與醫師的操作技術評分距離較遠；改收 RACP（內科專科學院）的同名工具說明",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Ultrasound Accreditation and Regulatory Compliance from A to Z",
+   "url": "https://www.youtube.com/watch?v=9KYz5QMmcoo",
+   "source": "YouTube / TechNation TV",
+   "decision": "excluded",
+   "reason": "涵蓋 AIUM／ACR／IAC／CMS 認證要求（50:12），但對象是醫工與設備管理人員、重點在機器測試與法規合規，不是影像品質稽核；且發布者為產業媒體",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "2014 ACR Accreditation for Ultrasound",
+   "url": "https://www.youtube.com/watch?v=iCh3LSLmSmk",
+   "source": "YouTube / 個人帳號上傳",
+   "decision": "excluded",
+   "reason": "疑似未經授權重新上傳的 ACR 官方 webinar（79:30，上傳者為個人帳號、標題含 'YouTube 720p' 轉檔痕跡），依契約排除",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Survey on the Use of 5 Thyroid Nodule Risk Stratification Systems with Dr. Hoang",
+   "url": "https://www.youtube.com/watch?v=G-UuRVzLAoE",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "品質高且主題相鄰，但談的是臨床醫師對各套風險分層系統的使用意向，不是判讀一致度本身；且已用於 ch4-u6",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "yt-dlp 查無結果的查詢（本章的真實缺口）",
+   "url": null,
+   "source": "YouTube (yt-dlp)",
+   "decision": "excluded",
+   "reason": "下列查詢在 ytsearch12–15 下回傳零筆或全為不相關內容（連續劇、有聲書、機器旋鈕教學）：thyroid nodule ultrasound interobserver reproducibility variability webinar endocrine／why radiologists disagree thyroid nodule ultrasound features／TI-RADS pitfalls disagreement discordance lecture／second opinion discordance thyroid ultrasound reinterpretation／POCUS credentialing privileging competency pathway hospital ultrasound physicians webinar／endocrinologist neck ultrasound certification ECNU training course／RSNA RadReport structured reporting templates／ultrasound image annotation labeling orientation right left marker error／AIUM ultrasound practice accreditation webinar image submission review／thyroid ultrasound documentation minimum images sonographer worksheet。結論：甲狀腺專科的判讀一致度、報告模板系統、個人認證與影像標示稽核，公開影音實質不存在",
+   "last_verified": "2026-08-02"
+  },
+
   {
    "title": "Standardized Imaging and Reporting for Thyroid Ultrasound: Korean Society of Thyroid Radiology Consensus Statement and Recommendation",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9830140/",
    "source": "Korean Journal of Radiology / KSThR (PMID 36606617)",
-   "decision": "included",
-   "unit": "ch13-u1",
-   "reason": "唯一同時規範掃描標準化與報告格式的學會共識，直接涵蓋 minimum image set、lesion numbering 與 longitudinal comparison；開放取用，curl 200",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u1 主課，內容仍是本單元最完整的標準化來源（最小影像集、lesion numbering、縱向比較）。因課程改為純影音，文件不得放資源欄位；已移交 GUIDELINE-MATRIX.md 與實證層。2026-08-02 連結仍為 200",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Case Study Submission Requirements & Imaging Checklists – Thyroid/Neck Ultrasound",
    "url": "https://www.aium.org/docs/default-source/accreditation/case-study-requirements/thyroidneck.pdf?sfvrsn=b1e04e4a_7",
    "source": "AIUM",
-   "decision": "included",
-   "unit": "ch13-u1",
-   "reason": "26 項逐條勾選的甲狀腺／副甲狀腺影像檢核表，是最具體可執行的 minimum image set；curl 200 application/pdf，內容已用 pdftotext 讀過確認",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u1 drill，26 項影像檢核表仍是本單元 assessment 的判定依據（作業第一段直接引用）。純影音規則下移出資源欄位，改由 GUIDELINE-MATRIX.md 承載。curl 200 application/pdf",
    "last_verified": "2026-08-02"
   },
   {
    "title": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
    "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
    "source": "AIUM / ACR / SPR / SRU (doi:10.1002/jum.14830)",
-   "decision": "included",
-   "unit": "ch13-u1",
-   "reason": "四學會共同執業參數，Documentation 一節明定永久紀錄與影像標示要求；curl 200 application/pdf，已讀過 Documentation 與 Specifications 章節",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u1 drill；純影音規則下移出資源欄位，Documentation 一節的要求改由實證層與 GUIDELINE-MATRIX.md 承載",
    "last_verified": "2026-08-02"
   },
   {
    "title": "ESR Essentials: thyroid imaging—practice recommendations by the European Society of Head and Neck Radiology",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13086679/",
    "source": "European Radiology / ESHNR (PMID 41258456)",
-   "decision": "included",
-   "unit": "ch13-u1",
-   "reason": "歐洲觀點的報告標準化建議，可與 KSThR 共識對照；開放取用，curl 200",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u1 drill；純影音規則下移出資源欄位",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Considerable interobserver variation calls for unambiguous definitions of thyroid nodule ultrasound characteristics",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10083668/",
    "source": "European Thyroid Journal (PMID 36692389)",
-   "decision": "included",
-   "unit": "ch13-u2",
-   "reason": "以完整錄影盲讀、有手術病理對照，最接近真實判讀情境的 interobserver 研究；提供 margin 0.34、echogenicity 區分 0.17、ETE 辨識率 45.8% 等可直接引用的數字。開放取用，curl 200",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u2 主課。margin kappa 0.34、echogenicity 0.17、ETE 辨識率 45.8% 等數字仍寫在 ch13-u2 的 tight 欄位並應留在實證層；純影音規則下移出資源欄位",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11475346/",
    "source": "Diagnostics (MDPI) (PMID 39410542)",
-   "decision": "included",
-   "unit": "ch13-u2",
-   "reason": "橫跨五套風險分層系統比較靜態與動態影像的一致度，直接支撐「固定切面最小影像集」的設計；開放取用，curl 200",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u2 drill；純影音規則下移出資源欄位。其結論仍支撐 ch13-u2 第二條 tight（動態影像不必然更一致）",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Standards for radiology events and learning meetings (BFCR(20)1)",
    "url": "https://www.rcr.ac.uk/media/4vaobs4a/bfcr201-standards-for-radiology-events-and-learning-meetings.pdf",
    "source": "The Royal College of Radiologists",
-   "decision": "included",
-   "unit": "ch13-u2",
-   "reason": "把 discrepancy review／missed cancer conference 寫成可查核標準的官方文件（匿名提報、最低場次、出席率、回饋迴路）；curl 200 application/pdf",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u2 drill；純影音規則下移出資源欄位。RCR 官方頻道查無對應影音，改以 SRT 的 'Discrepancies in Radiology' 承載同一套制度的實作視角",
    "last_verified": "2026-08-02"
   },
   {
-   "title": "Peer Learning Resources",
+   "title": "ACR Peer Learning Resources",
    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Peer-Learning-Resources",
    "source": "American College of Radiology",
-   "decision": "included",
-   "unit": "ch13-u2",
-   "reason": "peer learning 取代計分式 peer review 的工具包與範本來源；curl 200。部分下載檔可能需 ACR 會員登入，已在 license 註明",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u2 drill（網頁）；已由同機構的官方影音 'How to Launch Your Peer Learning Program Next Week' 取代，教學內容不減",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Audit of thyroid U-classification and subsequent fine needle aspiration cytology",
    "url": "https://www.rcr.ac.uk/career-development/audit-quality-improvement/auditlive-radiology-templates/audit-of-thyroid-u-classification-and-subsequent-fine-needle-aspiration-cytology/",
    "source": "RCR AuditLive",
-   "decision": "included",
-   "unit": "ch13-u3",
-   "reason": "可直接執行的甲狀腺穿刺適當性稽核範本，標準／目標／指標／資料撈取方式俱全；curl 200，內容已用 tavily extract 讀過。以英國 BTA 2014 U-score 為基準，已在 coi 欄註明需替換本地分級系統",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u3 主課；純影音規則下移出資源欄位，但範本網址仍寫在 ch13-u3 的 assessment 文字中，學員照樣會被導去使用。已收的 'How to do a QUICK radiology audit' 亦在描述中連向 AuditLive 資料庫",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Audit of practitioner reporting in non-obstetric ultrasound imaging [QSI Ref: XR508]",
    "url": "https://www.rcr.ac.uk/career-development/audit-quality-improvement/auditlive-radiology-templates/audit-of-practitioner-reporting-in-non-obstetric-ultrasound-imaging-qsi-ref-xr508/",
    "source": "RCR AuditLive",
-   "decision": "included",
-   "unit": "ch13-u3",
-   "reason": "把影像品質與報告品質拆成兩組獨立指標的稽核範本，含建議樣本數 30 筆；curl 200，內容已讀過",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u3 drill；純影音規則下移出資源欄位。其「建議抽 30 筆」與影像／報告品質分開計分的設計已寫進 ch13-u3 的 assessment",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Standard Presentation and Labeling of Ultrasound Images, Sixth Edition",
-   "url": "http://aium.s3.amazonaws.com/resourceLibrary/splv6.pdf",
+   "url": "https://aium.s3.amazonaws.com/resourceLibrary/splv6.pdf",
    "source": "AIUM",
-   "decision": "included",
-   "unit": "ch13-u3",
-   "reason": "影像品質稽核的判準來源（姿勢、標準切面、螢幕方位、標示規則）；curl 200 application/pdf，已讀過目次與前段確認為 2020 第六版"
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u3 drill；純影音規則下移出資源欄位。影音替代查無合格者（唯一命中的 Sonography Minutes 標註教學 oEmbed 401），本標準留在 GUIDELINE-MATRIX.md",
+   "last_verified": "2026-08-02"
   },
   {
    "title": "Head and Neck Ultrasound - EFSUMB Training Recommendations for the Practice of Medical Ultrasound in Europe",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546639/",
-   "source": "EFSUMB / Ultrasound International Open (PMID 36212171, doi 10.1055/a-1922-6778)",
-   "decision": "included",
-   "unit": "ch13-u4",
-   "reason": "跨專科的頭頸部超音波三級能力本位架構，明言最低例數不可靠、正轉向 competency-based；開放取用，curl 200",
+   "source": "EFSUMB / Ultrasound International Open (PMID 36212171)",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u4 主課。三級能力架構仍是 ch13-u4 assessment 的骨架（作業第一句就要求對照）；純影音規則下移出資源欄位。EFSUMB 官方 YouTube 頻道以 yt-dlp 檢視只有 CEUS、皮膚與肝臟的 webinar，沒有訓練建議或頭頸部的影音版本",
    "last_verified": "2026-08-02"
   },
   {
    "title": "AIUM Ultrasound Training Guidelines",
    "url": "https://www.aium.org/resources/training-guidelines",
    "source": "AIUM",
-   "decision": "included",
-   "unit": "ch13-u4",
-   "reason": "北美體系把訓練與 maintenance of competence 寫成可查核條件的官方入口，診斷與導引介入分開規範；curl 200",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u4 drill（網頁）；純影音規則下移出資源欄位，改收同機構的 credentialing 影音",
    "last_verified": "2026-08-02"
   },
   {
-   "title": "Thyroid, Parathyroid, and Neck Ultrasound (practice accreditation)",
+   "title": "AIUM Practice Accreditation — Thyroid, Parathyroid, and Neck Ultrasound",
    "url": "https://www.aium.org/accreditation/thyroid-parathyroid-and-neck-ultrasound",
    "source": "AIUM",
-   "decision": "included",
-   "unit": "ch13-u4",
-   "reason": "執業單位層級認證的完整送審清單，可當自我稽核表；curl 200，頁面連結已逐一抓出並驗證",
+   "decision": "excluded",
+   "reason": "改版前為 ch13-u4 drill（網頁）；純影音規則下移出資源欄位。送審清單的自我稽核用法已寫進 ch13-u4 的 assessment，執業認證與個人認證的差異改由 IAC 與 AIUM 的兩支影音分別承載",
    "last_verified": "2026-08-02"
   },
+
   {
    "title": "Interobserver Variability of Sonographic Features Used in the American College of Radiology Thyroid Imaging Reporting and Data System",
    "url": "https://pubmed.ncbi.nlm.nih.gov/29702015/",
    "source": "AJR 2018 (Hoang et al., PMID 29702015)",
    "decision": "excluded",
-   "reason": "領域內經典（八位放射科醫師判讀 100 顆結節，biopsy recommendation kappa 由 0.22 提升到 0.51），但 ajronline.org 全文以瀏覽器標頭 curl 仍回 403，只有 PubMed 摘要頁 200。已改用兩篇全文開放的 interobserver 研究，內容涵蓋相同教學點"
-  },
-  {
-   "title": "Update on ACR TI-RADS: Successes, Challenges, and Future Directions",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/33112199/",
-   "source": "AJR 2021 (PMID 33112199)",
-   "decision": "excluded",
-   "reason": "ajronline.org 全文 403（含瀏覽器標頭），無 PMC 版本；僅摘要可讀，作為單元主課證據強度不足"
+   "reason": "改版前即排除：ajronline.org 全文以瀏覽器標頭 curl 仍 403。純影音課程下更不適用；保留紀錄供實證層使用"
   },
   {
    "title": "Reduction in Thyroid Nodule Biopsies and Improved Accuracy with American College of Radiology Thyroid Imaging Reporting and Data System",
    "url": "https://pubmed.ncbi.nlm.nih.gov/29498593/",
    "source": "Radiology 2018 (PMID 29498593)",
    "decision": "excluded",
-   "reason": "不當穿刺率的關鍵實證，但 pubs.rsna.org 全文 403（含瀏覽器標頭）、無開放版本。改以可直接執行的 RCR 稽核範本承載本單元，數字在 ch13-u3 的 tight／weak 中以概念方式提及而不引用未能核實的全文"
-  },
-  {
-   "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
-   "source": "JCEM 2019 (Grani et al., PMID 30299457)",
-   "decision": "excluded",
-   "reason": "同上，非開放取用；且主題與 CH4 風險分層系統比較重疊，留給該章處理"
+   "reason": "改版前即排除（pubs.rsna.org 403、無開放版本）。其結論由已收的 AAR 'Demystifying the Thyroid' 在影音中口頭涵蓋"
   },
   {
    "title": "RADPEER",
    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/RADPEER",
    "source": "American College of Radiology",
    "decision": "excluded",
-   "reason": "curl 200 可用，但計分式 peer review 已被 ACR 自家的 peer learning 路線取代，作為教材會傳遞過時的品質觀；改收 Peer Learning Resources"
-  },
-  {
-   "title": "AIUM Practice Parameter for Documentation of an Ultrasound Examination",
-   "url": "https://www.aium.org/docs/default-source/resources/guidelines/documentation.pdf",
-   "source": "AIUM",
-   "decision": "excluded",
-   "reason": "curl 200 application/pdf 可用，但屬全科通則、非甲狀腺專屬，內容已被 ch13-u1 收錄的 extracranial head and neck 執業參數與 AIUM 影像檢核表涵蓋"
+   "reason": "計分式 peer review 已被 ACR 自家 peer learning 路線取代，作為教材會傳遞過時的品質觀"
   },
   {
    "title": "RadReport reporting templates (RSNA)",
    "url": "https://radreport.org/",
    "source": "RSNA",
    "decision": "excluded",
-   "reason": "首頁與 https://www.rsna.org/practice-tools/data-tools-and-standards/radreport-reporting-templates 皆 curl 200，但站台為 SPA：/home/RPT50821 等模板網址回傳的都是同一份殼層 HTML（<title>RadReport</title>），/api/* 各種路徑一律回 200 但內容仍是殼層，無法核實任何一份甲狀腺模板的實際存在與內容。依「不得使用未實際打開的網址」原則不納入"
-  },
-  {
-   "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
-   "url": "https://www.jacr.org/article/S1546-1440(17)30186-4/fulltext",
-   "source": "JACR 2017",
-   "decision": "excluded",
-   "reason": "jacr.org 403（含瀏覽器標頭）；且屬 CH4 風險分層系統範圍，不在本章。ACR TI-RADS 官方頁 https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/TI-RADS 為 200，留給 CH4 使用以免跨章重複"
-  },
-  {
-   "title": "Impact of a multidisciplinary approach to ultrasound-guided thyroid fine-needle aspiration biopsy at Tygerberg Hospital, Cape Town, South Africa: A retrospective audit",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/35140004/",
-   "source": "South African Medical Journal 2022 (PMID 35140004)",
-   "decision": "excluded",
-   "reason": "單中心、服務模式與臺灣差異大，作為稽核方法示範不如 RCR 範本可直接套用；列為延伸閱讀"
+   "reason": "站台為 SPA，各模板網址回傳同一份殼層 HTML，無法核實任何一份甲狀腺模板的實際內容；影音側查詢 'RSNA RadReport structured reporting templates' 亦零筆結果"
   },
   {
    "title": "Thyroid Ultrasound Education in the United States Without the Endocrine Certification in Neck Ultrasound (ECNU) Program—What's Next?",
    "url": "https://www.liebertpub.com/doi/abs/10.1089/ct.2020%3B32.51-53",
    "source": "Clinical Thyroidology 2020 (Sistrunk et al.)",
    "decision": "excluded",
-   "reason": "主題極貼合 ch13-u4（ECNU 停辦後的認證真空），但出版商頁面 curl 403 並跳轉 sagepub 仍 403，無開放版本；僅在 ch13.json 的 notes 與 COURSES-AND-CREDENTIALS.md 中以文字說明制度變動"
+   "reason": "主題極貼合 ch13-u4，但出版商頁面 403、無開放版本；制度變動僅以文字寫在 ch13.json notes 與 docs/COURSES-AND-CREDENTIALS.md"
   },
   {
    "title": "Endocrine Certification in Neck Ultrasound (ECNU) Program Overview",
    "url": "https://pro.aace.com/education/certification-neck-ultrasound",
    "source": "AACE",
    "decision": "excluded",
-   "reason": "2026-08-02 以 curl（含完整瀏覽器標頭）為 403；以 tavily advanced extract 取回的是 AACE 的 \"We're sorry!\" 錯誤／會員牆頁面，非課程內容。https://www.aace.com/ecnu、https://pro.aace.com/ecnu、https://www.aium.org/ecnu 分別為 404／403／404。無法核實，不納入"
+   "reason": "2026-08-02 再次確認 403／'We're sorry!' 頁；www.aace.com/ecnu、pro.aace.com/ecnu、aium.org/ecnu 為 404／403。影音側查詢亦零筆。無法核實，不納入"
   },
   {
    "title": "Consensus statement for use and technical requirements of thyroid ultrasound in endocrinology units (SEEN)",
    "url": "https://www.elsevier.es/en-revista-endocrinologia-diabetes-nutricion-english-ed--413-articulo-consensus-statement-for-use-technical-S2530018017300409",
    "source": "Endocrinología, Diabetes y Nutrición 2017 (SEEN, PMID 28440762)",
    "decision": "excluded",
-   "reason": "curl 200 且描述了西班牙內分泌學會的三級能力認證制度（含 ATA／ETA 建議的每年 600 例頸部超音波、150 例 FNA、檢體不足率 <10% 等數字），但非開放取用、內容與 EFSUMB 三級架構高度重疊。已在 ch13-u4 的 assessment 中沿用其 10% 檢體不足率門檻概念，來源列入本登錄與課程清單"
+   "reason": "非開放取用且非影音；其 10% 檢體不足率門檻概念已沿用在 ch13-u4 的 assessment，來源留在本登錄"
   },
   {
-   "title": "Efficacy of an Integrated Hands-On Thyroid Ultrasound Session for medical students",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7847777/",
-   "source": "PMC7847777",
-   "decision": "excluded",
-   "reason": "對象為醫學生、內容為入門掃描課，低於本課程受眾層級"
-  },
-  {
-   "title": "Unique Multidisciplinary Training Practices in Cytopathology: Simulation Training in Ultrasound-Guided Fine Needle Aspiration of the Thyroid",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/35155742/",
-   "source": "Academic Pathology 2020 (PMID 35155742)",
-   "decision": "excluded",
-   "reason": "模擬訓練設計屬 CH5（穿刺與介入）範圍，且未涉及能力認證的評分或門檻，不放本章"
-  },
-  {
-   "title": "The ultrasound competency assessment tool for four-view cardiac POCUS / EBUS-STAT / undergraduate POCUS competency tool",
+   "title": "OSCE／direct observation 工具的最佳文獻命中（心臟 POCUS、EBUS-TBNA、大學部 POCUS）",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8476706/",
    "source": "The Ultrasound Journal 2021 等（PMC8476706、PMC11570438、PMC9854184）",
    "decision": "excluded",
-   "reason": "為搜尋 OSCE／direct observation 工具時的最佳命中，但全屬心臟 POCUS、EBUS-TBNA 與大學部教學，與甲狀腺頸部超音波無關；已在 ch13.json notes 中記錄此缺口"
-  },
-  {
-   "title": "Diagnostic Head and Neck Ultrasounds for Evaluation of Thyroid and Parathyroid Disorders（付款方認證條件）",
-   "url": "https://provider.bluecrossma.com/ProviderHome/wcm/connect/f157ff9c-e17f-4e3b-a1ed-59d0b5e76cf8/MPC_040616-1U-O-Endocrine_Consensus_Criteria.pdf?MOD=AJPERES",
-   "source": "Blue Cross Blue Shield of Massachusetts",
-   "decision": "excluded",
-   "reason": "內容有趣（把 AIUM／ACR 認證與 ECNU 送審寫進給付條件），但 curl 回傳 000（連線失敗），無法核實；且屬單一美國付款方規則，普遍性低"
-  },
-  {
-   "title": "YouTube 搜尋結果（品質保證／稽核方向）",
-   "url": null,
-   "source": "YouTube (yt-dlp)",
-   "decision": "excluded",
-   "reason": "兩組查詢共 22 筆結果全為細胞學講座、BI-RADS 播客、血管外科品質改善演講、病人衛教與非英語衛教影片，無一支涉及甲狀腺超音波報告品質、稽核或能力認證。本章不納入 YouTube 資源"
+   "reason": "全屬其他領域，與甲狀腺頸部超音波無關；此缺口在文獻側與影音側都存在，已記錄於 ch13.json notes"
   }
  ]
 }

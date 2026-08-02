@@ -1,454 +1,757 @@
 {
- "chapter": "CH12",
- "searched": [
-  "yt-dlp ytsearch20: Hashimoto thyroiditis pseudonodule ultrasound",
-  "yt-dlp ytsearch20: thyroid ultrasound pitfalls difficult cases",
-  "yt-dlp ytsearch20: spongiform nodule thyroid ultrasound TI-RADS",
-  "yt-dlp ytsearch15: esophageal diverticulum thyroid nodule ultrasound mimic",
-  "yt-dlp ytsearch15: diffuse sclerosing variant papillary thyroid carcinoma ultrasound",
-  "yt-dlp ytsearch15: thyroid lymphoma ultrasound",
-  "yt-dlp ytsearch15: thyroid nodule ultrasound case challenge quiz TI-RADS classify",
-  "yt-dlp ytsearch15: thyroid ultrasound echogenic foci comet tail microcalcification",
-  "yt-dlp ytsearch15: thyroid nodule benign cytology suspicious ultrasound discordance management",
-  "yt-dlp ytsearch12: RSNA Case Collection thyroid",
-  "yt-dlp ytsearch12: ACR TI-RADS webinar part II",
-  "yt-dlp channel dump: youtube.com/channel/UCKtc6VkVNjRlq0UiTlrDtlw/videos（Tamas Solymosi，3131 支），再以關鍵字過濾 lymphoma / diverticulum / parathyroid / recurrence / scar / sclerosing / medullary / rim / calcif / discordant / cytology / operated / esophagus / abscess / anaplastic / metastasis / pitfall / artifact / halo / ectopic / pseudo / micronodular",
-  "NCBI E-utilities esearch db=pmc: 'diffuse sclerosing variant[Title] AND thyroid[Title]'",
-  "NCBI E-utilities esearch db=pmc: 'primary thyroid lymphoma[Title] AND (ultrasound[Title] OR sonographic[Title])'",
-  "NCBI E-utilities esearch db=pmc: 'rim calcification[Title] AND thyroid[Title]'",
-  "NCBI E-utilities esearch db=pmc: '(discordant[Title] OR discordance[Title]) AND thyroid[Title]'",
-  "NCBI E-utilities esearch db=pmc: '(EU-TIRADS[Title] OR \"EU TIRADS\"[Title]) AND (ACR[Title] OR K-TIRADS[Title])'",
-  "NCBI E-utilities esearch db=pmc: 'pseudonodule[Title] OR pseudonodules[Title]'",
-  "NCBI E-utilities esearch db=pmc: 'Hashimoto[Title] AND (nodule[Title] OR nodules[Title]) AND (ultrasound[Title] OR sonograph*[Title])'",
-  "NCBI E-utilities esearch db=pmc: '(pitfall[Title] OR pitfalls[Title] OR mimic*[Title]) AND thyroid[Title] AND (ultrasound[Title] OR sonograph*[Title])'",
-  "NCBI E-utilities esearch db=pmc: 'thyroid bed[Title] AND (ultrasound[Title] OR sonograph*[Title])'",
-  "NCBI E-utilities esearch db=pmc: 'Killian-Jamieson diverticulum thyroid ultrasound'",
-  "NCBI E-utilities esearch db=pmc: 'calcified thyroid nodule[Title] AND case[Title]'",
-  "NCBI E-utilities esearch db=pmc: 'thyroid[Title] AND benign[Title] AND cytology[Title] AND malignan*[Title]'",
-  "NCBI E-utilities esearch db=pmc: '(subcentimeter[Title] OR \"10 mm\"[Title] OR microcarcinoma[Title]) AND thyroid[Title] AND ultrasound[Title]'",
-  "NCBI E-utilities esearch db=pmc: 'intrathyroidal parathyroid[Title]'（0 筆）",
-  "NCBI E-utilities esearch db=pmc: 'spongiform[Title] AND thyroid[Title]'（0 筆，僅命中 spongiform encephalopathy）",
-  "WebSearch: Radiopaedia case esophageal diverticulum mimicking thyroid nodule ultrasound",
-  "WebSearch: Radiopaedia thyroid lymphoma case ultrasound",
-  "WebSearch: rim calcification eggshell calcification thyroid nodule malignancy risk ultrasound PMC",
-  "WebSearch: discordant TI-RADS systems comparison ACR EU-TIRADS K-TIRADS ATA same nodule different recommendation",
-  "WebSearch: Hashimoto thyroiditis pseudonodule versus true nodule ultrasound differentiation pitfall PMC",
-  "WebSearch: postoperative neck ultrasound thyroid bed scar versus recurrence pictorial review RadioGraphics",
-  "WebSearch: ACR TI-RADS webinars page acr.org Reporting and Data Systems TI-RADS education",
-  "站內瀏覽 thyrosite.com：/thyroid/atlas、/thyroid/opus、/thyroid/lyn、/thyroid/edif、/thyroid/parathyroid lesions、/thyroid/med、/pitfalls/chr"
- ],
- "verification_method": {
-  "youtube": "yt-dlp ytsearchN --flat-playlist 取得 ID／標題／頻道／秒數；再以 https://www.youtube.com/oembed?...&format=json 逐支確認 HTTP 200 與標題頻道相符。影片說明欄以 youtubei/v1/player（WEB client）取得，用來確認內容與章節時間軸。",
-  "non_youtube": "curl -sL 帶桌面版 User-Agent 與 --compressed，記錄 %{http_code} 與 %{url_effective}；PMC 與 thyrosite 皆實際抓回 HTML 並讀出正文確認內容、病理結局與無可識別患者資料。",
-  "known_limitations": [
-   "本次作業期間本機 IP 被 Google 判定為異常流量，yt-dlp 單片 metadata 抓取回傳 429／captcha，改以 youtubei player API 取得說明欄。搜尋與 oEmbed 驗證不受影響。",
-   "radiopaedia.org 對 curl（406）與 WebFetch（403）皆回傳反爬蟲挑戰頁，即使帶瀏覽器 UA 拿到 200 也只是 bot challenge 頁面，無法確認案例內容，因此本章不採用任何 Radiopaedia 連結。",
-   "pubs.rsna.org、ajronline.org、mdpi.com、kjronline.org 直連皆回 403／000（付費牆或反爬蟲），改採同內容的 PMC 開放取用版本。"
+  "chapter": "CH12",
+  "searched": [
+    "yt-dlp ytsearch20: Hashimoto thyroiditis pseudonodule ultrasound",
+    "yt-dlp ytsearch20: thyroid ultrasound pitfalls difficult cases",
+    "yt-dlp ytsearch20: spongiform nodule thyroid ultrasound TI-RADS",
+    "yt-dlp ytsearch15: esophageal diverticulum thyroid nodule ultrasound mimic",
+    "yt-dlp ytsearch15: diffuse sclerosing variant papillary thyroid carcinoma ultrasound",
+    "yt-dlp ytsearch15: thyroid lymphoma ultrasound",
+    "yt-dlp ytsearch15: thyroid nodule ultrasound case challenge quiz TI-RADS classify",
+    "yt-dlp ytsearch15: thyroid ultrasound echogenic foci comet tail microcalcification",
+    "yt-dlp ytsearch15: thyroid nodule benign cytology suspicious ultrasound discordance management",
+    "yt-dlp ytsearch12: RSNA Case Collection thyroid",
+    "yt-dlp ytsearch12: ACR TI-RADS webinar part II",
+    "yt-dlp channel dump: youtube.com/channel/UCKtc6VkVNjRlq0UiTlrDtlw/videos（Tamas Solymosi，3131 支），再以關鍵字過濾 lymphoma / diverticulum / parathyroid / recurrence / scar / sclerosing / medullary / rim / calcif / discordant / cytology / operated / esophagus / abscess / anaplastic / metastasis / pitfall / artifact / halo / ectopic / pseudo / micronodular",
+    "NCBI E-utilities esearch db=pmc: 'diffuse sclerosing variant[Title] AND thyroid[Title]'",
+    "NCBI E-utilities esearch db=pmc: 'primary thyroid lymphoma[Title] AND (ultrasound[Title] OR sonographic[Title])'",
+    "NCBI E-utilities esearch db=pmc: 'rim calcification[Title] AND thyroid[Title]'",
+    "NCBI E-utilities esearch db=pmc: '(discordant[Title] OR discordance[Title]) AND thyroid[Title]'",
+    "NCBI E-utilities esearch db=pmc: '(EU-TIRADS[Title] OR \"EU TIRADS\"[Title]) AND (ACR[Title] OR K-TIRADS[Title])'",
+    "NCBI E-utilities esearch db=pmc: 'pseudonodule[Title] OR pseudonodules[Title]'",
+    "NCBI E-utilities esearch db=pmc: 'Hashimoto[Title] AND (nodule[Title] OR nodules[Title]) AND (ultrasound[Title] OR sonograph*[Title])'",
+    "NCBI E-utilities esearch db=pmc: '(pitfall[Title] OR pitfalls[Title] OR mimic*[Title]) AND thyroid[Title] AND (ultrasound[Title] OR sonograph*[Title])'",
+    "NCBI E-utilities esearch db=pmc: 'thyroid bed[Title] AND (ultrasound[Title] OR sonograph*[Title])'",
+    "NCBI E-utilities esearch db=pmc: 'Killian-Jamieson diverticulum thyroid ultrasound'",
+    "NCBI E-utilities esearch db=pmc: 'calcified thyroid nodule[Title] AND case[Title]'",
+    "NCBI E-utilities esearch db=pmc: 'thyroid[Title] AND benign[Title] AND cytology[Title] AND malignan*[Title]'",
+    "NCBI E-utilities esearch db=pmc: '(subcentimeter[Title] OR \"10 mm\"[Title] OR microcarcinoma[Title]) AND thyroid[Title] AND ultrasound[Title]'",
+    "NCBI E-utilities esearch db=pmc: 'intrathyroidal parathyroid[Title]'（0 筆）",
+    "NCBI E-utilities esearch db=pmc: 'spongiform[Title] AND thyroid[Title]'（0 筆，僅命中 spongiform encephalopathy）",
+    "WebSearch: Radiopaedia case esophageal diverticulum mimicking thyroid nodule ultrasound",
+    "WebSearch: Radiopaedia thyroid lymphoma case ultrasound",
+    "WebSearch: rim calcification eggshell calcification thyroid nodule malignancy risk ultrasound PMC",
+    "WebSearch: discordant TI-RADS systems comparison ACR EU-TIRADS K-TIRADS ATA same nodule different recommendation",
+    "WebSearch: Hashimoto thyroiditis pseudonodule versus true nodule ultrasound differentiation pitfall PMC",
+    "WebSearch: postoperative neck ultrasound thyroid bed scar versus recurrence pictorial review RadioGraphics",
+    "WebSearch: ACR TI-RADS webinars page acr.org Reporting and Data Systems TI-RADS education",
+    "站內瀏覽 thyrosite.com：/thyroid/atlas、/thyroid/opus、/thyroid/lyn、/thyroid/edif、/thyroid/parathyroid lesions、/thyroid/med、/pitfalls/chr",
+    "yt-dlp channel dump: youtube.com/@mosolyis1/videos（Tamas Solymosi，3131 支）——2026-08-02 改版重跑，再以 lymphocytic thyroiditis / hyperechogenic figures / papillary carcinoma / lymphoma / operated thyroid / edifying / parathyroid / de Quervain / anaplastic 過濾",
+    "yt-dlp channel dump: youtube.com/channel/UC4Y_bz_8BmgUU96NWdpBkdw/videos（THANC Foundation，712 支）",
+    "yt-dlp channel dump: youtube.com/channel/UCC2t3xNGvkjj42wO6O8FM3Q/videos（KeepMyThyroid，140 支）",
+    "yt-dlp ytsearch12: Killian Jamieson diverticulum ultrasound thyroid",
+    "yt-dlp ytsearch15: Killian-Jamieson diverticulum",
+    "yt-dlp ytsearch15: cervical esophageal diverticulum ultrasound neck",
+    "yt-dlp ytsearch15: Zenker diverticulum ultrasound neck thyroid",
+    "yt-dlp ytsearch12: esophageal diverticulum mimicking thyroid nodule ultrasound",
+    "yt-dlp ytsearch20: diffuse sclerosing variant papillary thyroid carcinoma",
+    "yt-dlp ytsearch15: diffuse sclerosing variant thyroid ultrasound snowstorm microcalcifications",
+    "yt-dlp ytsearch15: diffuse sclerosing papillary carcinoma thyroid case ultrasound teaching",
+    "yt-dlp ytsearch20: 갑상선 미만성 경화 변종 유두암 초음파（韓文，0 筆）",
+    "yt-dlp ytsearch15: thyroid nodule rim calcification ultrasound case",
+    "yt-dlp ytsearch15: eggshell calcification thyroid nodule ultrasound",
+    "yt-dlp ytsearch15: comet tail artifact thyroid ultrasound colloid",
+    "yt-dlp ytsearch15: ACR TI-RADS versus EU-TIRADS K-TIRADS comparison",
+    "yt-dlp ytsearch15: thyroid nodule risk stratification systems comparison lecture",
+    "yt-dlp ytsearch15: Hashimoto thyroiditis thyroid nodule risk stratification ultrasound lecture",
+    "yt-dlp ytsearch15: I-TIRADS international thyroid imaging reporting",
+    "yt-dlp ytsearch15: EU-TIRADS European Thyroid Association ultrasound",
+    "yt-dlp ytsearch15: discordant ultrasound cytology thyroid nodule benign FNA follow up",
+    "yt-dlp ytsearch15: papillary thyroid microcarcinoma ultrasound subcentimeter nodule case",
+    "yt-dlp ytsearch15: thyroid micronodule less than 1 cm ultrasound biopsy decision",
+    "thyrosite.com 目錄逐頁掃描：/thyroid/chr（86 例）、/thyroid/pap（75 例）、/thyroid/nod（60 例）、/thyroid/lyn（11 例）、/pitfalls/chr 與 /course book/chr 各表——以 sclerosing / carcinoma / histopathology / eggshell / rim calcification / peripheral calcification 為關鍵字比對，找出「有影片且有病理或明確追蹤結局」的病例"
+  ],
+  "verification_method": {
+    "youtube": "yt-dlp ytsearchN --flat-playlist 取得 ID／標題／頻道／秒數；再以 https://www.youtube.com/oembed?...&format=json 逐支確認 HTTP 200 與標題頻道相符。影片說明欄以 youtubei/v1/player（WEB client）取得，用來確認內容與章節時間軸。 ｜ 2026-08-02 影音化改版：新增的每一支影片都重新以 yt-dlp 頻道／關鍵字搜尋取得 ID，oEmbed 回 200 且標題頻道相符，再以 yt-dlp --skip-download 取回實際長度、上傳日期與說明欄全文。",
+    "non_youtube": "curl -sL 帶桌面版 User-Agent 與 --compressed，記錄 %{http_code} 與 %{url_effective}；PMC 與 thyrosite 皆實際抓回 HTML 並讀出正文確認內容、病理結局與無可識別患者資料。 ｜ 改版後本章資源欄位已無非 YouTube 來源；thyrosite 案例頁僅作為 drill 的 dose 中「對答案」的指路，仍逐頁 curl 抓回正文核對臨床、細胞學與手術病理。",
+    "known_limitations": [
+      "本次作業期間本機 IP 被 Google 判定為異常流量，yt-dlp 單片 metadata 抓取回傳 429／captcha，改以 youtubei player API 取得說明欄。搜尋與 oEmbed 驗證不受影響。",
+      "radiopaedia.org 對 curl（406）與 WebFetch（403）皆回傳反爬蟲挑戰頁，即使帶瀏覽器 UA 拿到 200 也只是 bot challenge 頁面，無法確認案例內容，因此本章不採用任何 Radiopaedia 連結。",
+      "pubs.rsna.org、ajronline.org、mdpi.com、kjronline.org 直連皆回 403／000（付費牆或反爬蟲），改採同內容的 PMC 開放取用版本。",
+      "2026-08-02 改版當天本機 IP 再次被 Google 判定為異常流量：youtube.com/watch 直連回 302→/sorry（429），WebFetch 亦被擋。yt-dlp 的搜尋、頻道列舉與 oEmbed 不受影響，單片 metadata 在等待後可取得，因此 THANC Foundation 與 ACR 幾支候選影片的說明欄無法逐項核對，寧可不選也不憑標題撰寫教學欄位。",
+      "遍查 YouTube 與 thyrosite 的 75 個乳突癌病例頁，找不到可公開觀看、有實際動態掃描的 diffuse sclerosing variant 病例影片；ch12-u3 的該欄改以 oxyphilic variant（Papillary carcinoma - case 8）承接可遷移線索，並在 note 中誠實標明變異型不同。",
+      "同樣找不到以 rim（eggshell）calcification 為主題的動態掃描影片；thyrosite 有三例 eggshell 病例（benign nodular hyperplasia case 9／18／50）皆有手術病理但無對應影片。"
+    ]
+  },
+  "evaluated": [
+    {
+      "title": "Differentiation of discrete lesions in Hashimoto's thyroiditis",
+      "url": "https://www.youtube.com/watch?v=FvMSaHg_jVY",
+      "source": "YouTube / Tamas Solymosi（ETA Ultrasound Course 授課者）",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "整段專講橋本腺體內離散病灶的真假判定，示範可重複的判準（兩個垂直切面追蹤邊界），最適合當本單元主課"
+    },
+    {
+      "title": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
+      "url": "https://www.youtube.com/watch?v=moU7a_9FH5U",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "52 秒動態掃描；配套 thyrosite 案例頁載明手術病理為單純 Hashimoto、無任何結節，是完整結局的假性結節原型"
+    },
+    {
+      "title": "Chronic lymphocytic thyroiditis - Case 26（案例全文）",
+      "url": "http://www.thyrosite.com/thyroid/103/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "上一支影片的解答頁，含臨床、觸診、TSH、細胞學與手術病理；在 drill 的 dose 中指定為對答案用"
+    },
+    {
+      "title": "Pitfalls — Chronic lymphocytic thyroiditis",
+      "url": "http://thyrosite.com/pitfalls/chr",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "以圖表對照收錄橋本背景下的低回音／高回音病灶、局部型甲狀腺炎與共存乳突癌，共 50 餘組，適合大量重複的先答再看練習"
+    },
+    {
+      "title": "Validation of Four Thyroid Ultrasound Risk Stratification Systems in Patients with Hashimoto's Thyroiditis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8507673/",
+      "source": "Cancers 2021（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u1",
+      "reason": "1188 顆有最終診斷的結節，量化 microcalcification 在橋本組 OR 22.7、solid 與 macrocalcification 在橋本組失效、shape 閾值可調整；提供本單元最缺的數字基準 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Micronodular form of Hashimoto's thyroiditis. Chronic lymphocytic thyroiditis - case 12",
+      "url": "https://www.youtube.com/watch?v=JBxin9om6w0",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "在單元 assessment 中指定為第二輪練習素材（配 thyrosite case 12），與 pseudonodular 型互為對照"
+    },
+    {
+      "title": "Chronic lymphocytic thyroiditis - Case 12（案例全文）",
+      "url": "http://www.thyrosite.com/thyroid/974/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "micronodular／pseudonodular 型的解答頁，含 anti-TPO > 900、細胞學有多核巨細胞的少見表現"
+    },
+    {
+      "title": "Weibinar on Intranodular echogenic figures - Advanced Online Papillon Course",
+      "url": "https://www.youtube.com/watch?v=TU4v25ug7WM",
+      "source": "YouTube / Tamas Solymosi（Papillon Course 公開場次）",
+      "decision": "included",
+      "unit": "ch12-u2",
+      "reason": "兩小時全部用於拆解結節內高回音構造，直接對應 ACR TI-RADS echogenic foci 欄位最易錯加分的地方"
+    },
+    {
+      "title": "Role of echogenic foci in ultrasonographic risk stratification of thyroid nodules",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9465029/",
+      "source": "Frontiers in Oncology 2022（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u2",
+      "reason": "852 顆結節以 core needle biopsy 為對照，四類高回音焦點的分類圖與惡性率表；指出 peripheral 與 macrocalcification 惡性率差異未達顯著（40.0% vs 30.6%，p = 0.474） ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Malignancy Risk Stratification of Thyroid Nodules with Macrocalcification and Rim Calcification Based on Ultrasound Patterns",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005340/",
+      "source": "Korean Journal of Radiology 2021（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u2",
+      "reason": "3603 顆有最終診斷的連續結節；證明 rim calcification 的意義取決於結節本身的 US pattern，推翻「邊緣鈣化＝良性」 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Risk Stratification of Thyroid Nodules 10 mm in Diameter or Less: Strength and Pitfalls of the Ultrasonographic Assessment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12474009/",
+      "source": "International Journal of Endocrinology 2025（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u2",
+      "reason": "有細胞學與手術病理對照的 ≤ 10 mm 結節，直接對應「微小後方病灶」的判讀不穩定問題；樣本數小故列 Tier B ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+      "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
+      "source": "YouTube / THANC Foundation",
+      "decision": "included",
+      "unit": "ch12-u3",
+      "reason": "498 例 PTL 世代（87% 合併 Hashimoto）加專家討論，提供淋巴瘤 vs 嚴重甲狀腺炎的族群基準率；說明欄有發布者自訂章節時間軸可直接引用"
+    },
+    {
+      "title": "Thyroid lymphomas - Case 1: Primary MALT-type non Hodgkin lymphoma",
+      "url": "http://www.thyrosite.com/thyroid/867/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u3",
+      "reason": "1.5 個月內迅速長大、極度低回音的雙側腫大，細胞學被讀成 Hashimoto，切片病理為 MALT 淋巴瘤；有明確病理結局"
+    },
+    {
+      "title": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1（影片）",
+      "url": "https://www.youtube.com/watch?v=_v-GjeLTF3k",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u3",
+      "reason": "上述案例的 31 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
+    },
+    {
+      "title": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma with histopathological correlation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10967076/",
+      "source": "Orphanet Journal of Rare Diseases 2024（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u3",
+      "reason": "DSVPTC 的影像—病理逐例對照，是「沒有腫塊、只有散布微鈣化」這一型少數有組織對照的公開資源 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Comparison of the clinical characteristics of primary thyroid lymphoma and diffuse sclerosing variant of papillary thyroid carcinoma",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8859968/",
+      "source": "Endocrine Connections 2022（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u3",
+      "reason": "52 例 PTL vs 40 例 DSVPTC，全部有病理；提供年齡中位數 64.5 vs 36、壓迫症狀、淋巴結轉移率、Hashimoto 盛行率等可立即用於鑑別的非影像變項 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Ultrasound of the operated thyroid - introductory lecture",
+      "url": "https://www.youtube.com/watch?v=jmJVXweb_WY",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "21 分鐘系統性交代術後甲狀腺床的殘餘腺體、疤痕、縫線肉芽腫、肌肉與血管外觀，是本單元最完整的導論"
+    },
+    {
+      "title": "Other edifying cases - Case 6: A muscle fiber mimicking recurrent papillary cancer",
+      "url": "http://www.thyrosite.com/thyroid/1696/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "外院把肌纖維報成復發乳突癌、Tg 與 anti-Tg 均正常；示範「兩個垂直切面」這一條硬規則。無病理對照，已在 note 註明"
+    },
+    {
+      "title": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases- case 6（影片）",
+      "url": "https://www.youtube.com/watch?v=8ZLkrn5PmLE",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "上述案例的 65 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
+    },
+    {
+      "title": "The operated thyroid - Case 17: Multiple granulations around surgical thread",
+      "url": "http://www.thyrosite.com/thyroid/1557/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "術後 17 年、峽部「可疑結節」，實為縫線周圍肉芽腫，有細胞學結局；示範病史如何改變分級"
+    },
+    {
+      "title": "Multiple granulations around surgical thread. The operated thyroid - case 17（影片）",
+      "url": "https://www.youtube.com/watch?v=zy-qUXIanqs",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "上述案例的 38 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
+    },
+    {
+      "title": "Look Before You Cut: How a Killian-Jamieson Diverticulum Can Lead to Unnecessary Thyroidectomy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13147952/",
+      "source": "Kaohsiung Journal of Medical Sciences 2026（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u4",
+      "reason": "TI-RADS 4 + AUS 細胞學已排定手術，靠 CT 的病灶內氣體與鋇劑攝影翻案；結局明確（免除不必要手術），且原文載明無利益衝突 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
+      "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "甲狀腺內副甲狀腺腺瘤，配套 thyrosite 頁有 washout PTH 203 pg/mL 與右葉切除病理，是完整結局的病例"
+    },
+    {
+      "title": "Parathyroid lesions - Case 9: an intrathyroidal parathyroid adenoma（案例全文）",
+      "url": "http://www.thyrosite.com/thyroid/1399/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "上一支影片的解答頁，含血鈣、PTH、washout PTH／Tg、MIBI 與手術病理"
+    },
+    {
+      "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
+      "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
+      "source": "YouTube / American College of Radiology（官方頻道）",
+      "decision": "included",
+      "unit": "ch12-u5",
+      "reason": "ACR 官方逐病例示範 ACR TI-RADS (2017) 的套用與邊界情況，是比較各系統差異前必須先建立的基準"
+    },
+    {
+      "title": "Thyroid nodules with highly suspicious ultrasonographic features, but with benign cytology on two occasions: is malignancy still possible?",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10118713/",
+      "source": "Archives of Endocrinology and Metabolism 2016（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u5",
+      "reason": "105 位病人、影像高度可疑但兩次 FNA 良性，最終惡性率 2%；直接回答本單元「suspicious ultrasound but benign cytology」這一題 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Analysis of 665 thyroid nodules using both EU-TIRADS and ACR TI-RADS classification systems",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10165776/",
+      "source": "Thyroid Research 2023（PMC 開放取用）",
+      "decision": "superseded",
+      "unit": "ch12-u5",
+      "reason": "量化系統間矛盾：26.1% 分級不同、8.1% 穿刺建議改變，並逐條說明差異來自哪些定義；是 discordant TI-RADS 最直接的證據 ｜ 2026-08-02 影音化改版後移出資源欄位（非影音）",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Parathyroid lesions - Case 10: A parathyroid adenoma with a deceptive ultrasound and cytological presentation",
+      "url": "http://www.thyrosite.com/thyroid/1597/index.php",
+      "source": "thyrosite.com case library",
+      "decision": "included",
+      "unit": "ch12-u5",
+      "reason": "細胞學誤判為乳突癌（核內包涵體頻率反常地高）、術後病理為副甲狀腺腺瘤；示範影像與細胞學同時誤導時的救援路徑"
+    },
+    {
+      "title": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10（影片）",
+      "url": "https://www.youtube.com/watch?v=sSJC42uW8o8",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u5",
+      "reason": "上述案例的 31 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
+    },
+    {
+      "title": "A Case-Based Comparison of the American Thyroid Association and Thyroid Imaging Reporting & Data System Guidelines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9462918/",
+      "source": "Missouri Medicine 2022（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "內容合格且切題（逐案比較 ATA 2015 與 ACR TI-RADS），但 ch12-u5 的 drill 名額只有 3 個，證據強度低於已選的 665 顆結節研究與 105 例細胞學不一致研究；建議 CH4 或 CH13 收錄"
+    },
+    {
+      "title": "Evaluation of Thyroid Bed Nodules on Ultrasonography after Total Thyroidectomy: Risk for Loco-Regional Recurrence of Thyroid Cancer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521061/",
+      "source": "European Thyroid Journal 2015（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "內容合格且有追蹤結局，但 ch12-u4 已滿 4 個 drill，且本章定位是病例陷阱而非世代資料；建議 CH8（術後追蹤與復發）收錄",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Suture granuloma mimicking recurrent thyroid carcinoma on ultrasonography",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2687764/",
+      "source": "Yonsei Medical Journal 2006（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "主題與 thyrosite case 17 重複，且 thyrosite 版本有動態掃描影片可搭配先答再看，教學價值較高"
+    },
+    {
+      "title": "Thyroid Ultrasound Pitfalls: Esophageal Fibrovascular Polyp Mimicking Thyroid Nodule",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4789053/",
+      "source": "Case Reports in Endocrinology 2016（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "合格病例，但食道相關陷阱已由 Killian–Jamieson 憩室病例代表，且該病例的臨床後果（差點被切甲狀腺）教學張力更強"
+    },
+    {
+      "title": "Pharyngoesophageal diverticulum mimicking thyroid nodules: Some interesting ultrasonographic signs",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9941519/",
+      "source": "Frontiers in Oncology 2023, CC BY（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "68 例憩室的四型超音波分類與 8 張圖，品質高；因 ch12-u4 名額已滿而未收，是本章最可惜的落選者，建議日後擴充時優先補回"
+    },
+    {
+      "title": "Killian-Jamieson diverticulum mimicking a calcified thyroid nodule on ultrasonography: A case report and literature review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5038824/",
+      "source": "Oncology Letters 2016（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "與已收的高醫 KJD 病例主題重複，且後者臨床脈絡（已排定手術）更完整"
+    },
+    {
+      "title": "Thyroid Lymphoepithelial Cysts Mimicking Calcified or Solid Nodules on Ultrasonography",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6602880/",
+      "source": "Ultrasound International Open 2019（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "病灶罕見度高但臨床遭遇頻率低，ch12-u2 名額有限，優先給邊緣鈣化與微小病灶這兩個天天遇到的問題"
+    },
+    {
+      "title": "Thyroid ultrasonography: pitfalls and techniques",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3955795/",
+      "source": "Korean Journal of Radiology 2014（PMC 開放取用）",
+      "decision": "excluded",
+      "reason": "優質總論但層級偏向 CH1／CH2（掃描技術與 artifact），不是本章要的「有結局的困難病例」"
+    },
+    {
+      "title": "Thyroid lymphoma | Radiology Case | Radiopaedia.org",
+      "url": "https://radiopaedia.org/cases/thyroid-lymphoma-1",
+      "source": "Radiopaedia",
+      "decision": "excluded",
+      "reason": "curl 回 406、WebFetch 回 403；即使帶瀏覽器 UA 拿到 200 也只是反爬蟲挑戰頁，無法實際確認案例內容與影像，依鐵則不得憑搜尋摘要收錄"
+    },
+    {
+      "title": "Differentiated Thyroid Cancer after Thyroidectomy",
+      "url": "https://pubs.rsna.org/doi/full/10.1148/rg.240021",
+      "source": "RadioGraphics 2024",
+      "decision": "excluded",
+      "reason": "curl 回 403，無法確認是否為登入牆或反爬蟲，也無法核對內容；不採用未實際打開的連結"
+    },
+    {
+      "title": "Normal and Abnormal Sonographic Findings at the Thyroidectomy Sites in Postoperative Patients With Thyroid Malignancy",
+      "url": "https://ajronline.org/doi/10.2214/AJR.09.2513",
+      "source": "AJR 2010",
+      "decision": "excluded",
+      "reason": "curl 回 403，無法確認內容與存取狀態"
+    },
+    {
+      "title": "Comparison of K-TIRADS, EU-TIRADS and ACR-TIRADS Guidelines for Malignancy Risk Determination of Thyroid Nodules",
+      "url": "https://www.mdpi.com/2075-4418/15/8/1015",
+      "source": "Diagnostics 2025",
+      "decision": "excluded",
+      "reason": "MDPI 直連回 403（反爬蟲），無法確認；已用 PMC 上可確認的 Thyroid Research 665 顆結節研究取代"
+    },
+    {
+      "title": "TI RADS Cases Challenges in Thyroid Nodule Analysis by Jill E Langer, MS SD",
+      "url": "https://www.youtube.com/watch?v=pWoultuUebE",
+      "source": "YouTube / 「Clinical Case From Everywhere」",
+      "decision": "excluded",
+      "reason": "內容本身是 Jill E. Langer 的專題演講（極高品質），但上傳頻道與講者、主辦單位無可辨識關係，疑似未經授權轉載他人課程；依契約「未經授權重新上傳的完整付費課程」與「無法確認來源」排除"
+    },
+    {
+      "title": "ACR TI RADS Tips, Pitfalls, and Prospects by Franklin N Tessler, MD SD",
+      "url": "https://www.youtube.com/watch?v=YqPrKfvdUVk",
+      "source": "YouTube / 「Clinical Case From Everywhere」",
+      "decision": "excluded",
+      "reason": "同上，疑似未授權轉載；同一講者的官方內容應改用 ACR 自家頻道"
+    },
+    {
+      "title": "Spongiform thyroid nodule",
+      "url": "https://www.youtube.com/watch?v=Q7O8tNAQZEc",
+      "source": "YouTube / 「Radiology educational videos」",
+      "decision": "excluded",
+      "reason": "44 秒示範海綿樣外觀，但頻道未揭露作者與機構、無病理或追蹤結局，不符「無法確認作者或來源」與本章的結局要求"
+    },
+    {
+      "title": "Case of the Week: TI-RADS 5 Papillary Thyroid Carcinoma",
+      "url": "https://www.youtube.com/watch?v=yfqRBdw39tI",
+      "source": "YouTube / RSNA Case Collection（官方）",
+      "decision": "excluded",
+      "reason": "來源權威且有病理，但典型 TR5 乳突癌屬 CH4／CH6 範圍，對『高難度病例與影像陷阱』而言太直白，不構成陷阱"
+    },
+    {
+      "title": "ACR TI-RADS Webinar Part I: This Is How We Do It",
+      "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
+      "source": "YouTube / American College of Radiology（官方）",
+      "decision": "excluded",
+      "reason": "屬系統教學而非陷阱病例，建議 CH4 收錄；本章只取以病例為主的 Part II"
+    },
+    {
+      "title": "Thyroid lymphoma (Radiopaedia.org) Cases in Radiology",
+      "url": "https://www.youtube.com/watch?v=0b3ehoHZXUw",
+      "source": "YouTube / 「Medically RAD」",
+      "decision": "excluded",
+      "reason": "以 Radiopaedia 影像二次剪輯上傳，授權關係不明，且無獨立教學旁白"
+    },
+    {
+      "title": "Primary thyroid lymphoma",
+      "url": "https://www.youtube.com/watch?v=dLjENEFN8cg",
+      "source": "YouTube / 「Radiology educational videos」",
+      "decision": "excluded",
+      "reason": "頻道未揭露作者與機構，且無病理或臨床結局"
+    },
+    {
+      "title": "Ultrasound cases 330 of 2000 || Thyroid lymphomas",
+      "url": "https://www.youtube.com/watch?v=7e3M0g9N298",
+      "source": "YouTube / 「Unified Medicare」",
+      "decision": "excluded",
+      "reason": "來源與病理結局皆無法確認"
+    },
+    {
+      "title": "Medullary carcinoma - case 19／20／21（thyrosite 系列）",
+      "url": "http://www.thyrosite.com/thyroid/1197/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "三例皆有 calcitonin 與病理結局，品質合格；但這三例的超音波表現其實都帶可疑特徵（微鈣化、邊緣不規則、type 3 血流），不能代表『benign-appearing ultrasound but clinically high-risk patient』這一題，收進來會誤導。本章因此在 ch12-u5 未能提供該子題的專屬素材，改於 tight／weak／assessment 中以文字處理"
+    },
+    {
+      "title": "Nodule or Pseudonodule? Differentiation in Hashimoto's Thyroiditis with Sonoelastography",
+      "url": "https://journals.sagepub.com/doi/10.1177/147323001103900636",
+      "source": "Journal of International Medical Research 2011",
+      "decision": "excluded",
+      "reason": "主題極貼近 ch12-u1，但 journals.sagepub.com 直連回 403，僅能從搜尋摘要判斷內容，未實際打開全文；且方法依賴 sonoelastography、屬 CH11 的進階技術範圍，2011 年的設備與現行差距大。本單元改用同族群但以灰階特徵為主的 Cancers 2021 驗證研究"
+    },
+    {
+      "title": "Thyroid nodules and Tirads / ACR TIRADS Classification Of Thyroid Nodules Ultrasound 等高觀看數 YouTube 教學片",
+      "url": "https://www.youtube.com/watch?v=t9aEMNRo-Gs",
+      "source": "YouTube / 一般放射教學頻道",
+      "decision": "excluded",
+      "reason": "屬 TI-RADS 入門教學，觀看數高但層級低於本課程受眾（內分泌 fellow 與專科醫師），且與 CH4 重疊"
+    },
+    {
+      "title": "Chronic lymphocytic thyroiditis - case 85",
+      "url": "https://www.youtube.com/watch?v=ShIN93-kLRg",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "35 秒動態掃描；thyrosite/252 載明 10 歲時的左葉次全切除 histopathology 為單純 Hashimoto、無任何結節，正好示範「高回音假性結節其實是殘存正常腺體」。取代原本的 thyrosite 陷阱圖表集（靜態網頁，非影音）"
+    },
+    {
+      "title": "Chronic lymphocytic thyroiditis - case 17",
+      "url": "https://www.youtube.com/watch?v=p20o-Hv8Ebk",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u1",
+      "reason": "1 分 02 秒動態掃描；thyrosite/388 載明外院細胞學疑似濾泡癌、已排定全甲狀腺切除，重做細胞學與 histopathology 皆為 Hashimoto 且無結節，左葉只有一處粗鈣化。以病例形式承接原本 Cancers 2021「橋本族群 macrocalcification 失去鑑別力」的教學點"
+    },
+    {
+      "title": "Differential diagnostic of intranodular hyperechogenic figures - case 372",
+      "url": "https://www.youtube.com/watch?v=LwYNNjQmWHk",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u2",
+      "reason": "47 秒；混合性結節內同時有非特異性顆粒與亮顆粒，作者明說無法區分 comet-tail 與微鈣化，細胞學為 benign cystic degeneration。取代 Frontiers in Oncology 的 echogenic focus scoring 論文"
+    },
+    {
+      "title": "Differential diagnostic of intranodular hyperechogenic figures - case 928",
+      "url": "https://www.youtube.com/watch?v=tu2RGopIGzU",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u2",
+      "reason": "34 秒；同一顆結節同時有 coarse calcification、結締組織高回音線與顆粒、punctate echogenic foci，右葉切除後 histopathology 為良性增生性結節。取代 KJR 2021 的粗鈣化／邊緣鈣化論文"
+    },
+    {
+      "title": "Differential diagnostic of intranodular hyperechogenic figures - case 1539",
+      "url": "https://www.youtube.com/watch?v=H46ERGpK8K4",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "excluded",
+      "reason": "內容最貼近「不到 1 公分的病灶被讀成多發性乳突癌、最後右葉切除卻是完整甲狀腺」，但全長只有 16 秒，低於本站項目影片 0:30 的下限，改用同系列的 case 367"
+    },
+    {
+      "title": "Papillary carcinoma - case 8",
+      "url": "https://www.youtube.com/watch?v=BV9coXs3Ds8",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u3",
+      "reason": "33 秒；18 歲女性、甲狀腺炎樣瀰漫背景、大量微鈣化、模糊邊界，histopathology 為 oxyphilic variant 乳突癌合併 chronic lymphocytic thyroiditis 且右頸有轉移。DSVPTC 影片遍尋不著，以此承接「年輕＋甲狀腺炎樣背景＋微鈣化＋側頸轉移」的可遷移線索，並在 note 中誠實標明變異型不同"
+    },
+    {
+      "title": "Thyroid lymphomas - case 11",
+      "url": "https://www.youtube.com/watch?v=4weSTiGLW4Q",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u3",
+      "reason": "1 分 26 秒；anti-TPO 0、功能正常、背景腺體回音正常、病程兩年的低惡性度 NHL 甲狀腺侵犯，與同單元 MALT case 1 形成強烈對照。無手術病理（三處細胞學＋PET-CT 追蹤），故 tier B"
+    },
+    {
+      "title": "Yoda Kim Ultrasound School(1393) - Dr.최종화 증례. 좌측 갑상선의 Zenker 게실",
+      "url": "https://www.youtube.com/watch?v=p52XW7Qts5A",
+      "source": "YouTube / 김일봉（Yoda Kim Ultrasound School，大邱 김일봉 내과의원）",
+      "decision": "included",
+      "unit": "ch12-u4",
+      "reason": "5 分 58 秒；45 歲女性被當成甲狀腺結節追蹤四年，ring-down artifact 提示氣體、縱切見與食道相連。取代 KJMS 的 Killian–Jamieson case report。韓文口說但影像判讀不依賴語言；無病理對照（影像推定），故 tier B"
+    },
+    {
+      "title": "Differential diagnostic of intranodular hyperechogenic figures - case 876",
+      "url": "https://www.youtube.com/watch?v=Ec1DNtauH98",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u5",
+      "reason": "47 秒；13 年追蹤零變化、兩次良性細胞學，卻被另一家醫院告知「不論細胞學結果都應手術」。是影像—細胞學—機構意見三方不一致的完整病例。取代 AEM 2016 的兩次良性細胞學研究"
+    },
+    {
+      "title": "(ENG)2020 ITC_KTIRADS",
+      "url": "https://www.youtube.com/watch?v=SZ9NS4EaClY",
+      "source": "YouTube / KeepMyThyroid（頻道自述為 Kwak TI-RADS, Radiology 2011;260:892-9 第一作者）",
+      "decision": "included",
+      "unit": "ch12-u5",
+      "reason": "23 分 06 秒，2020 International Thyroid Congress 的 K-TIRADS 講題。取代 Thyroid Research 2023 的 665 顆結節 EU-TIRADS vs ACR TI-RADS 論文，用來說明 pattern-based 與加總計分兩種邏輯為何必然給出不同答案"
+    },
+    {
+      "title": "Pitfalls — Chronic lymphocytic thyroiditis（thyrosite 陷阱圖表集）",
+      "url": "https://thyrosite.com/pitfalls/chr",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "2026-08-02 改版：靜態圖表網頁，不是影音，依「這是一門影音課程」條款移出資源欄位；內容價值仍高，保留為策展時的線索來源"
+    },
+    {
+      "title": "Validation of Four Thyroid Ultrasound Risk Stratification Systems in Patients with Hashimoto's Thyroiditis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8507673/",
+      "source": "Cancers 2021;13(19):4900",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層（citations）"
+    },
+    {
+      "title": "Role of echogenic foci in ultrasonographic risk stratification of thyroid nodules",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9465029/",
+      "source": "Frontiers in Oncology 2022;12:929500",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Malignancy Risk Stratification of Thyroid Nodules with Macrocalcification and Rim Calcification Based on Ultrasound Patterns",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005340/",
+      "source": "Korean Journal of Radiology 2021;22(4):663-671",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Risk Stratification of Thyroid Nodules 10 mm in Diameter or Less",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12474009/",
+      "source": "International Journal of Endocrinology 2025;2025:4063672",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Thyroid lymphomas - Case 1（案例全文）",
+      "url": "https://www.thyrosite.com/thyroid/867/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "靜態案例頁，非影音；改為對應影片 _v-GjeLTF3k 的解答頁，寫在 drill 的 dose 裡"
+    },
+    {
+      "title": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10967076/",
+      "source": "Orphanet Journal of Rare Diseases 2024;19:136",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Comparison of the clinical characteristics of primary thyroid lymphoma and diffuse sclerosing variant of papillary thyroid carcinoma",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8859968/",
+      "source": "Endocrine Connections 2022;11(1):e210364",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Other edifying cases - Case 6（案例全文）",
+      "url": "https://www.thyrosite.com/thyroid/1696/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "靜態案例頁，非影音；改為影片 8ZLkrn5PmLE 的解答頁，寫在 dose 裡"
+    },
+    {
+      "title": "The operated thyroid - Case 17（案例全文）",
+      "url": "https://www.thyrosite.com/thyroid/1557/index.htm",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "靜態案例頁，非影音；改為影片 zy-qUXIanqs 的解答頁，寫在 dose 裡"
+    },
+    {
+      "title": "Look Before You Cut: How a Killian-Jamieson Diverticulum Can Lead to Unnecessary Thyroidectomy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13147952/",
+      "source": "Kaohsiung J Med Sci 2026;42(4):e70141",
+      "decision": "excluded",
+      "reason": "期刊 case report，非影音；移至實證層"
+    },
+    {
+      "title": "Thyroid nodules with highly suspicious ultrasonographic features, but with benign cytology on two occasions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10118713/",
+      "source": "Arch Endocrinol Metab 2016;60(4):402-404",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Analysis of 665 thyroid nodules using both EU-TIRADS and ACR TI-RADS classification systems",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10165776/",
+      "source": "Thyroid Research 2023;16:12",
+      "decision": "excluded",
+      "reason": "期刊原文，非影音；移至實證層"
+    },
+    {
+      "title": "Parathyroid lesions - Case 10（案例全文）",
+      "url": "https://www.thyrosite.com/thyroid/1597/index.php",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "靜態案例頁，非影音；改為影片 sSJC42uW8o8 的解答頁，寫在 dose 裡"
+    },
+    {
+      "title": "21 9 diffuse sclerosing variant of papillary carcinoma mp4 || ENDOCRINE",
+      "url": "https://www.youtube.com/watch?v=vXvbYUoW9DM",
+      "source": "YouTube / Creative Medicine",
+      "decision": "excluded",
+      "reason": "唯一標題完全相符的 DSVPTC 影片，但標題形如「21 9 ….mp4」、頻道以 Lec 編號整批上傳，研判為付費課程整段轉錄，依「未經授權重新上傳的完整付費課程」條款排除"
+    },
+    {
+      "title": "Case Presentation | DIFFUSE SCLEROSING VARIANT OF PAPILLARY THYROID | OSMECON 2019",
+      "url": "https://www.youtube.com/watch?v=GUVrms55mVo",
+      "source": "YouTube / OSMECON - Undergraduate Medical Conference",
+      "decision": "excluded",
+      "reason": "大學部醫學生會議的病例報告，投影片為主、無實際動態掃描，且受眾層級不符"
+    },
+    {
+      "title": "Understanding Diffuse Sclerosing Variant of Papillary Thyroid Cancer",
+      "url": "https://www.youtube.com/watch?v=zzfoHpqBF0E",
+      "source": "YouTube / Without a Ribbon Australia",
+      "decision": "excluded",
+      "reason": "病友團體的 2 分鐘衛教影片，無超音波教學影像"
+    },
+    {
+      "title": "(ENG)Diagnosis of esophageal diverticulum on US",
+      "url": "https://www.youtube.com/watch?v=-n0tiRuBu_4",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "excluded",
+      "reason": "內容最完整（9:41）且 oEmbed 200，但已分別用於 ch2-u4 與 ch9-u3；依「能不共用就不共用」改用 Yoda Kim Ultrasound School 的 Zenker 憩室病例"
+    },
+    {
+      "title": "(Silence)esophageal diverticulum misinterpreted as a thyroid nodule",
+      "url": "https://www.youtube.com/watch?v=74VI3Eo0xRI",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "excluded",
+      "reason": "主題完全對題，但 oEmbed 回 401（停用嵌入），依契約不可用"
+    },
+    {
+      "title": "(KOR)Remember! Esophageal diverticulum",
+      "url": "https://www.youtube.com/watch?v=jTFnfssa2IE",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "excluded",
+      "reason": "oEmbed 回 401（停用嵌入）"
+    },
+    {
+      "title": "Upper esophageal diverticulum ultrasonography／상부 식도 게실",
+      "url": "https://www.youtube.com/watch?v=VOm3BdMNwA8",
+      "source": "YouTube / paul sim",
+      "decision": "excluded",
+      "reason": "oEmbed 回 401（停用嵌入）"
+    },
+    {
+      "title": "Macrocalcifications and Malignancy Risk Within the ATA Sonographic Pattern System with Dr. Kobaly",
+      "url": "https://www.youtube.com/watch?v=2tCJ05wDIyQ",
+      "source": "YouTube / THANC Foundation",
+      "decision": "excluded",
+      "reason": "是粗鈣化／邊緣鈣化最理想的影音替代（Kobaly 等人 Thyroid 2021 的第一手報告），但已用於 ch4；依「能不共用就不共用」改用 thyrosite case 928"
+    },
+    {
+      "title": "International TIRADS (I-TIRADS) Descriptors",
+      "url": "https://www.youtube.com/watch?v=KagXIU-hOJ0",
+      "source": "YouTube / Prof. Dr. Mustafa Secil",
+      "decision": "excluded",
+      "reason": "說明欄完整、直接談各套 TI-RADS 的國際共識描述詞，但已用於 ch4；改用 KeepMyThyroid 的 2020 ITC K-TIRADS 講題"
+    },
+    {
+      "title": "Exploring Thyroid Cancer & Autoimmune Thyroiditis: Study Insights with Dr. De Leo",
+      "url": "https://www.youtube.com/watch?v=SGoy7Djt2-I",
+      "source": "YouTube / THANC Foundation",
+      "decision": "excluded",
+      "reason": "主題貼近 ch12-u1 的橋本風險分層，但受 YouTube 端 429／bot 檢查所限，這次無法取回說明欄逐項核對內容，不願僅憑標題撰寫教學欄位；改用有完整 thyrosite 病理對照的 case 17"
+    },
+    {
+      "title": "Benign nodular hyperplasia - case 9 / case 18 / case 50（eggshell calcification）",
+      "url": "http://thyrosite.com/thyroid/653/index",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "三例皆有 eggshell calcification 與手術病理，是本章最想要的邊緣鈣化教材，但 Solymosi 頻道沒有對應影片，依影音課程條款無法採用"
+    },
+    {
+      "title": "Chronic lymphocytic thyroiditis - Case 11（thyrosite/1154）",
+      "url": "http://thyrosite.com/thyroid/1154/index",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "外院認為可疑而送手術、histopathology 為單純 Hashimoto 無結節，教學價值極高但無對應影片"
+    },
+    {
+      "title": "Papillary carcinoma - Case 52（thyrosite/1334，Hashimoto 背景的乳突癌）",
+      "url": "http://thyrosite.com/thyroid/1334/index",
+      "source": "thyrosite.com case library",
+      "decision": "excluded",
+      "reason": "無對應影片"
+    },
+    {
+      "title": "Differential diagnostic of intranodular hyperechogenic figures - case 367",
+      "url": "https://www.youtube.com/watch?v=3JE8Afx-R-0",
+      "source": "YouTube / Tamas Solymosi",
+      "decision": "included",
+      "unit": "ch12-u2",
+      "reason": "47 秒；緊鄰囊性成分的小病灶在抽出 6.5 mL 囊液前後判讀完全不同，作者自陳過度解讀超音波，histopathology 為 follicular adenoma。直接對應本單元「技術條件不合格就不要硬分級」與「分級≠診斷」"
+    }
   ]
- },
- "evaluated": [
-  {
-   "title": "Differentiation of discrete lesions in Hashimoto's thyroiditis",
-   "url": "https://www.youtube.com/watch?v=FvMSaHg_jVY",
-   "source": "YouTube / Tamas Solymosi（ETA Ultrasound Course 授課者）",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "整段專講橋本腺體內離散病灶的真假判定，示範可重複的判準（兩個垂直切面追蹤邊界），最適合當本單元主課"
-  },
-  {
-   "title": "Pseudonodular form. Chronic lymphocytic thyroiditis - case 26",
-   "url": "https://www.youtube.com/watch?v=moU7a_9FH5U",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "52 秒動態掃描；配套 thyrosite 案例頁載明手術病理為單純 Hashimoto、無任何結節，是完整結局的假性結節原型"
-  },
-  {
-   "title": "Chronic lymphocytic thyroiditis - Case 26（案例全文）",
-   "url": "http://www.thyrosite.com/thyroid/103/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "上一支影片的解答頁，含臨床、觸診、TSH、細胞學與手術病理；在 drill 的 dose 中指定為對答案用"
-  },
-  {
-   "title": "Pitfalls — Chronic lymphocytic thyroiditis",
-   "url": "http://thyrosite.com/pitfalls/chr",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "以圖表對照收錄橋本背景下的低回音／高回音病灶、局部型甲狀腺炎與共存乳突癌，共 50 餘組，適合大量重複的先答再看練習"
-  },
-  {
-   "title": "Validation of Four Thyroid Ultrasound Risk Stratification Systems in Patients with Hashimoto's Thyroiditis",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8507673/",
-   "source": "Cancers 2021（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "1188 顆有最終診斷的結節，量化 microcalcification 在橋本組 OR 22.7、solid 與 macrocalcification 在橋本組失效、shape 閾值可調整；提供本單元最缺的數字基準",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Micronodular form of Hashimoto's thyroiditis. Chronic lymphocytic thyroiditis - case 12",
-   "url": "https://www.youtube.com/watch?v=JBxin9om6w0",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "在單元 assessment 中指定為第二輪練習素材（配 thyrosite case 12），與 pseudonodular 型互為對照"
-  },
-  {
-   "title": "Chronic lymphocytic thyroiditis - Case 12（案例全文）",
-   "url": "http://www.thyrosite.com/thyroid/974/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u1",
-   "reason": "micronodular／pseudonodular 型的解答頁，含 anti-TPO > 900、細胞學有多核巨細胞的少見表現"
-  },
-  {
-   "title": "Weibinar on Intranodular echogenic figures - Advanced Online Papillon Course",
-   "url": "https://www.youtube.com/watch?v=TU4v25ug7WM",
-   "source": "YouTube / Tamas Solymosi（Papillon Course 公開場次）",
-   "decision": "included",
-   "unit": "ch12-u2",
-   "reason": "兩小時全部用於拆解結節內高回音構造，直接對應 ACR TI-RADS echogenic foci 欄位最易錯加分的地方"
-  },
-  {
-   "title": "Role of echogenic foci in ultrasonographic risk stratification of thyroid nodules",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9465029/",
-   "source": "Frontiers in Oncology 2022（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u2",
-   "reason": "852 顆結節以 core needle biopsy 為對照，四類高回音焦點的分類圖與惡性率表；指出 peripheral 與 macrocalcification 惡性率差異未達顯著（40.0% vs 30.6%，p = 0.474）",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Malignancy Risk Stratification of Thyroid Nodules with Macrocalcification and Rim Calcification Based on Ultrasound Patterns",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005340/",
-   "source": "Korean Journal of Radiology 2021（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u2",
-   "reason": "3603 顆有最終診斷的連續結節；證明 rim calcification 的意義取決於結節本身的 US pattern，推翻「邊緣鈣化＝良性」",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Risk Stratification of Thyroid Nodules 10 mm in Diameter or Less: Strength and Pitfalls of the Ultrasonographic Assessment",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12474009/",
-   "source": "International Journal of Endocrinology 2025（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u2",
-   "reason": "有細胞學與手術病理對照的 ≤ 10 mm 結節，直接對應「微小後方病灶」的判讀不穩定問題；樣本數小故列 Tier B",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
-   "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
-   "source": "YouTube / THANC Foundation",
-   "decision": "included",
-   "unit": "ch12-u3",
-   "reason": "498 例 PTL 世代（87% 合併 Hashimoto）加專家討論，提供淋巴瘤 vs 嚴重甲狀腺炎的族群基準率；說明欄有發布者自訂章節時間軸可直接引用"
-  },
-  {
-   "title": "Thyroid lymphomas - Case 1: Primary MALT-type non Hodgkin lymphoma",
-   "url": "http://www.thyrosite.com/thyroid/867/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u3",
-   "reason": "1.5 個月內迅速長大、極度低回音的雙側腫大，細胞學被讀成 Hashimoto，切片病理為 MALT 淋巴瘤；有明確病理結局"
-  },
-  {
-   "title": "Primary MALT-type lymphoma. Thyroid lymphomas - case 1（影片）",
-   "url": "https://www.youtube.com/watch?v=_v-GjeLTF3k",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u3",
-   "reason": "上述案例的 31 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
-  },
-  {
-   "title": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma with histopathological correlation",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10967076/",
-   "source": "Orphanet Journal of Rare Diseases 2024（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u3",
-   "reason": "DSVPTC 的影像—病理逐例對照，是「沒有腫塊、只有散布微鈣化」這一型少數有組織對照的公開資源",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Comparison of the clinical characteristics of primary thyroid lymphoma and diffuse sclerosing variant of papillary thyroid carcinoma",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8859968/",
-   "source": "Endocrine Connections 2022（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u3",
-   "reason": "52 例 PTL vs 40 例 DSVPTC，全部有病理；提供年齡中位數 64.5 vs 36、壓迫症狀、淋巴結轉移率、Hashimoto 盛行率等可立即用於鑑別的非影像變項",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Ultrasound of the operated thyroid - introductory lecture",
-   "url": "https://www.youtube.com/watch?v=jmJVXweb_WY",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "21 分鐘系統性交代術後甲狀腺床的殘餘腺體、疤痕、縫線肉芽腫、肌肉與血管外觀，是本單元最完整的導論"
-  },
-  {
-   "title": "Other edifying cases - Case 6: A muscle fiber mimicking recurrent papillary cancer",
-   "url": "http://www.thyrosite.com/thyroid/1696/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "外院把肌纖維報成復發乳突癌、Tg 與 anti-Tg 均正常；示範「兩個垂直切面」這一條硬規則。無病理對照，已在 note 註明"
-  },
-  {
-   "title": "A muscle fiber mimicking a recurrent papillary carcinoma. Other edifying cases- case 6（影片）",
-   "url": "https://www.youtube.com/watch?v=8ZLkrn5PmLE",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "上述案例的 65 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
-  },
-  {
-   "title": "The operated thyroid - Case 17: Multiple granulations around surgical thread",
-   "url": "http://www.thyrosite.com/thyroid/1557/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "術後 17 年、峽部「可疑結節」，實為縫線周圍肉芽腫，有細胞學結局；示範病史如何改變分級"
-  },
-  {
-   "title": "Multiple granulations around surgical thread. The operated thyroid - case 17（影片）",
-   "url": "https://www.youtube.com/watch?v=zy-qUXIanqs",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "上述案例的 38 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
-  },
-  {
-   "title": "Look Before You Cut: How a Killian-Jamieson Diverticulum Can Lead to Unnecessary Thyroidectomy",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13147952/",
-   "source": "Kaohsiung Journal of Medical Sciences 2026（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "TI-RADS 4 + AUS 細胞學已排定手術，靠 CT 的病灶內氣體與鋇劑攝影翻案；結局明確（免除不必要手術），且原文載明無利益衝突",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
-   "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "甲狀腺內副甲狀腺腺瘤，配套 thyrosite 頁有 washout PTH 203 pg/mL 與右葉切除病理，是完整結局的病例"
-  },
-  {
-   "title": "Parathyroid lesions - Case 9: an intrathyroidal parathyroid adenoma（案例全文）",
-   "url": "http://www.thyrosite.com/thyroid/1399/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u4",
-   "reason": "上一支影片的解答頁，含血鈣、PTH、washout PTH／Tg、MIBI 與手術病理"
-  },
-  {
-   "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
-   "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
-   "source": "YouTube / American College of Radiology（官方頻道）",
-   "decision": "included",
-   "unit": "ch12-u5",
-   "reason": "ACR 官方逐病例示範 ACR TI-RADS (2017) 的套用與邊界情況，是比較各系統差異前必須先建立的基準"
-  },
-  {
-   "title": "Thyroid nodules with highly suspicious ultrasonographic features, but with benign cytology on two occasions: is malignancy still possible?",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10118713/",
-   "source": "Archives of Endocrinology and Metabolism 2016（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u5",
-   "reason": "105 位病人、影像高度可疑但兩次 FNA 良性，最終惡性率 2%；直接回答本單元「suspicious ultrasound but benign cytology」這一題",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Analysis of 665 thyroid nodules using both EU-TIRADS and ACR TI-RADS classification systems",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10165776/",
-   "source": "Thyroid Research 2023（PMC 開放取用）",
-   "decision": "included",
-   "unit": "ch12-u5",
-   "reason": "量化系統間矛盾：26.1% 分級不同、8.1% 穿刺建議改變，並逐條說明差異來自哪些定義；是 discordant TI-RADS 最直接的證據",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Parathyroid lesions - Case 10: A parathyroid adenoma with a deceptive ultrasound and cytological presentation",
-   "url": "http://www.thyrosite.com/thyroid/1597/index.php",
-   "source": "thyrosite.com case library",
-   "decision": "included",
-   "unit": "ch12-u5",
-   "reason": "細胞學誤判為乳突癌（核內包涵體頻率反常地高）、術後病理為副甲狀腺腺瘤；示範影像與細胞學同時誤導時的救援路徑"
-  },
-  {
-   "title": "Deceptive ultrasound and cytological presentation. Parathyroid lesions - case 10（影片）",
-   "url": "https://www.youtube.com/watch?v=sSJC42uW8o8",
-   "source": "YouTube / Tamas Solymosi",
-   "decision": "included",
-   "unit": "ch12-u5",
-   "reason": "上述案例的 31 秒動態掃描，在 drill 的 dose 中指定為先看影像用"
-  },
-  {
-   "title": "A Case-Based Comparison of the American Thyroid Association and Thyroid Imaging Reporting & Data System Guidelines",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9462918/",
-   "source": "Missouri Medicine 2022（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "內容合格且切題（逐案比較 ATA 2015 與 ACR TI-RADS），但 ch12-u5 的 drill 名額只有 3 個，證據強度低於已選的 665 顆結節研究與 105 例細胞學不一致研究；建議 CH4 或 CH13 收錄"
-  },
-  {
-   "title": "Evaluation of Thyroid Bed Nodules on Ultrasonography after Total Thyroidectomy: Risk for Loco-Regional Recurrence of Thyroid Cancer",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521061/",
-   "source": "European Thyroid Journal 2015（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "內容合格且有追蹤結局，但 ch12-u4 已滿 4 個 drill，且本章定位是病例陷阱而非世代資料；建議 CH8（術後追蹤與復發）收錄",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Suture granuloma mimicking recurrent thyroid carcinoma on ultrasonography",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2687764/",
-   "source": "Yonsei Medical Journal 2006（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "主題與 thyrosite case 17 重複，且 thyrosite 版本有動態掃描影片可搭配先答再看，教學價值較高"
-  },
-  {
-   "title": "Thyroid Ultrasound Pitfalls: Esophageal Fibrovascular Polyp Mimicking Thyroid Nodule",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4789053/",
-   "source": "Case Reports in Endocrinology 2016（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "合格病例，但食道相關陷阱已由 Killian–Jamieson 憩室病例代表，且該病例的臨床後果（差點被切甲狀腺）教學張力更強"
-  },
-  {
-   "title": "Pharyngoesophageal diverticulum mimicking thyroid nodules: Some interesting ultrasonographic signs",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9941519/",
-   "source": "Frontiers in Oncology 2023, CC BY（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "68 例憩室的四型超音波分類與 8 張圖，品質高；因 ch12-u4 名額已滿而未收，是本章最可惜的落選者，建議日後擴充時優先補回"
-  },
-  {
-   "title": "Killian-Jamieson diverticulum mimicking a calcified thyroid nodule on ultrasonography: A case report and literature review",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5038824/",
-   "source": "Oncology Letters 2016（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "與已收的高醫 KJD 病例主題重複，且後者臨床脈絡（已排定手術）更完整"
-  },
-  {
-   "title": "Thyroid Lymphoepithelial Cysts Mimicking Calcified or Solid Nodules on Ultrasonography",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6602880/",
-   "source": "Ultrasound International Open 2019（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "病灶罕見度高但臨床遭遇頻率低，ch12-u2 名額有限，優先給邊緣鈣化與微小病灶這兩個天天遇到的問題"
-  },
-  {
-   "title": "Thyroid ultrasonography: pitfalls and techniques",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3955795/",
-   "source": "Korean Journal of Radiology 2014（PMC 開放取用）",
-   "decision": "excluded",
-   "reason": "優質總論但層級偏向 CH1／CH2（掃描技術與 artifact），不是本章要的「有結局的困難病例」"
-  },
-  {
-   "title": "Thyroid lymphoma | Radiology Case | Radiopaedia.org",
-   "url": "https://radiopaedia.org/cases/thyroid-lymphoma-1",
-   "source": "Radiopaedia",
-   "decision": "excluded",
-   "reason": "curl 回 406、WebFetch 回 403；即使帶瀏覽器 UA 拿到 200 也只是反爬蟲挑戰頁，無法實際確認案例內容與影像，依鐵則不得憑搜尋摘要收錄"
-  },
-  {
-   "title": "Differentiated Thyroid Cancer after Thyroidectomy",
-   "url": "https://pubs.rsna.org/doi/full/10.1148/rg.240021",
-   "source": "RadioGraphics 2024",
-   "decision": "excluded",
-   "reason": "curl 回 403，無法確認是否為登入牆或反爬蟲，也無法核對內容；不採用未實際打開的連結"
-  },
-  {
-   "title": "Normal and Abnormal Sonographic Findings at the Thyroidectomy Sites in Postoperative Patients With Thyroid Malignancy",
-   "url": "https://ajronline.org/doi/10.2214/AJR.09.2513",
-   "source": "AJR 2010",
-   "decision": "excluded",
-   "reason": "curl 回 403，無法確認內容與存取狀態"
-  },
-  {
-   "title": "Comparison of K-TIRADS, EU-TIRADS and ACR-TIRADS Guidelines for Malignancy Risk Determination of Thyroid Nodules",
-   "url": "https://www.mdpi.com/2075-4418/15/8/1015",
-   "source": "Diagnostics 2025",
-   "decision": "excluded",
-   "reason": "MDPI 直連回 403（反爬蟲），無法確認；已用 PMC 上可確認的 Thyroid Research 665 顆結節研究取代"
-  },
-  {
-   "title": "TI RADS Cases Challenges in Thyroid Nodule Analysis by Jill E Langer, MS SD",
-   "url": "https://www.youtube.com/watch?v=pWoultuUebE",
-   "source": "YouTube / 「Clinical Case From Everywhere」",
-   "decision": "excluded",
-   "reason": "內容本身是 Jill E. Langer 的專題演講（極高品質），但上傳頻道與講者、主辦單位無可辨識關係，疑似未經授權轉載他人課程；依契約「未經授權重新上傳的完整付費課程」與「無法確認來源」排除"
-  },
-  {
-   "title": "ACR TI RADS Tips, Pitfalls, and Prospects by Franklin N Tessler, MD SD",
-   "url": "https://www.youtube.com/watch?v=YqPrKfvdUVk",
-   "source": "YouTube / 「Clinical Case From Everywhere」",
-   "decision": "excluded",
-   "reason": "同上，疑似未授權轉載；同一講者的官方內容應改用 ACR 自家頻道"
-  },
-  {
-   "title": "Spongiform thyroid nodule",
-   "url": "https://www.youtube.com/watch?v=Q7O8tNAQZEc",
-   "source": "YouTube / 「Radiology educational videos」",
-   "decision": "excluded",
-   "reason": "44 秒示範海綿樣外觀，但頻道未揭露作者與機構、無病理或追蹤結局，不符「無法確認作者或來源」與本章的結局要求"
-  },
-  {
-   "title": "Case of the Week: TI-RADS 5 Papillary Thyroid Carcinoma",
-   "url": "https://www.youtube.com/watch?v=yfqRBdw39tI",
-   "source": "YouTube / RSNA Case Collection（官方）",
-   "decision": "excluded",
-   "reason": "來源權威且有病理，但典型 TR5 乳突癌屬 CH4／CH6 範圍，對『高難度病例與影像陷阱』而言太直白，不構成陷阱"
-  },
-  {
-   "title": "ACR TI-RADS Webinar Part I: This Is How We Do It",
-   "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
-   "source": "YouTube / American College of Radiology（官方）",
-   "decision": "excluded",
-   "reason": "屬系統教學而非陷阱病例，建議 CH4 收錄；本章只取以病例為主的 Part II"
-  },
-  {
-   "title": "Thyroid lymphoma (Radiopaedia.org) Cases in Radiology",
-   "url": "https://www.youtube.com/watch?v=0b3ehoHZXUw",
-   "source": "YouTube / 「Medically RAD」",
-   "decision": "excluded",
-   "reason": "以 Radiopaedia 影像二次剪輯上傳，授權關係不明，且無獨立教學旁白"
-  },
-  {
-   "title": "Primary thyroid lymphoma",
-   "url": "https://www.youtube.com/watch?v=dLjENEFN8cg",
-   "source": "YouTube / 「Radiology educational videos」",
-   "decision": "excluded",
-   "reason": "頻道未揭露作者與機構，且無病理或臨床結局"
-  },
-  {
-   "title": "Ultrasound cases 330 of 2000 || Thyroid lymphomas",
-   "url": "https://www.youtube.com/watch?v=7e3M0g9N298",
-   "source": "YouTube / 「Unified Medicare」",
-   "decision": "excluded",
-   "reason": "來源與病理結局皆無法確認"
-  },
-  {
-   "title": "Medullary carcinoma - case 19／20／21（thyrosite 系列）",
-   "url": "http://www.thyrosite.com/thyroid/1197/index.htm",
-   "source": "thyrosite.com case library",
-   "decision": "excluded",
-   "reason": "三例皆有 calcitonin 與病理結局，品質合格；但這三例的超音波表現其實都帶可疑特徵（微鈣化、邊緣不規則、type 3 血流），不能代表『benign-appearing ultrasound but clinically high-risk patient』這一題，收進來會誤導。本章因此在 ch12-u5 未能提供該子題的專屬素材，改於 tight／weak／assessment 中以文字處理"
-  },
-  {
-   "title": "Nodule or Pseudonodule? Differentiation in Hashimoto's Thyroiditis with Sonoelastography",
-   "url": "https://journals.sagepub.com/doi/10.1177/147323001103900636",
-   "source": "Journal of International Medical Research 2011",
-   "decision": "excluded",
-   "reason": "主題極貼近 ch12-u1，但 journals.sagepub.com 直連回 403，僅能從搜尋摘要判斷內容，未實際打開全文；且方法依賴 sonoelastography、屬 CH11 的進階技術範圍，2011 年的設備與現行差距大。本單元改用同族群但以灰階特徵為主的 Cancers 2021 驗證研究"
-  },
-  {
-   "title": "Thyroid nodules and Tirads / ACR TIRADS Classification Of Thyroid Nodules Ultrasound 等高觀看數 YouTube 教學片",
-   "url": "https://www.youtube.com/watch?v=t9aEMNRo-Gs",
-   "source": "YouTube / 一般放射教學頻道",
-   "decision": "excluded",
-   "reason": "屬 TI-RADS 入門教學，觀看數高但層級低於本課程受眾（內分泌 fellow 與專科醫師），且與 CH4 重疊"
-  }
- ]
 }

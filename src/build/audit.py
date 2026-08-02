@@ -52,6 +52,8 @@ DEFAULTS = {
     "allowMissingUrls": 0,
     # 非 YouTube 來源要不要強制標示 source_type / access / license / last_verified
     "requireSourceMetadata": True,
+    # 影音課程：每個資源欄位都必須是影片。文獻與指引原文放實證層，不佔資源欄位
+    "requireVideo": True,
     # 外部連結的 last_verified 超過幾天就警告（0 = 不檢查）
     "verifyStaleDays": 0,
 }
@@ -528,7 +530,7 @@ def audit_videos(cfg: dict, units: list[dict], opts: dict, rep: Report) -> None:
                 nodes.append((les.get("unit", "?"), "lesson", f"{les.get('lang', '')} 版", les))
 
     explained, unexplained, malformed = [], [], []
-    thin_meta, external, outdated = [], [], []
+    thin_meta, external, outdated, nonvideo = [], [], [], []
     seen: Counter = Counter()
     within: Counter = Counter()
     hits = 0
@@ -553,6 +555,8 @@ def audit_videos(cfg: dict, units: list[dict], opts: dict, rep: Report) -> None:
         if why := SRC.url_problem(v):
             malformed.append(f"{uid} / {label}：{why}")
             continue
+        if opts["requireVideo"] and (why := SRC.not_video_reason(v)):
+            nonvideo.append(f"{uid} / {label}：{why}")
         if opts["requireSourceMetadata"]:
             for problem in SRC.metadata_problems(v):
                 thin_meta.append(f"{uid} / {label}：{problem}")
@@ -622,6 +626,13 @@ def audit_videos(cfg: dict, units: list[dict], opts: dict, rep: Report) -> None:
         )
     if malformed:
         rep.err(sec, f"{len(malformed)} 個連結不合法", malformed)
+    if nonvideo:
+        rep.err(
+            sec,
+            f"{len(nonvideo)} 個資源欄位不是影音"
+            "（本課程是影音課程；期刊原文與指引請放 citations 或 GUIDELINE-MATRIX.md）",
+            nonvideo,
+        )
     if thin_meta:
         rep.err(
             sec,

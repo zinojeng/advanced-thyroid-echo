@@ -14,25 +14,49 @@
 | 項目 | 數字 |
 |---|---|
 | 章節 / 單元 / 資源欄位 | 14 / 63 / 259（核心教材 63 + 病例與示範 196） |
-| 去重後的實際資源 | 236（YouTube 116 · 非 YouTube 120） |
-| 評估過的來源總數 | 600（納入 264、排除 336） |
-| 執行過的搜尋 query | 478 |
-| **找不到合格資源而留空的欄位** | **0** |
-| 需註冊／訂閱／機構帳號的來源 | 14 |
-| 授權狀況未能確認的來源 | 16 |
+| 去重後的實際影片 | **228 支，全部為 YouTube** |
+| 課程總時長 | 104 小時 15 分 |
+| 評估過的來源總數 | 858（納入 277、排除 532、移入實證層 14、被更好的影片取代 35） |
+| 執行過的搜尋 query | 764 |
+| **找不到合格影片而留空的欄位** | **2** |
+| 需註冊／訂閱／機構帳號的來源 | **0**（全部免費公開） |
+| 授權狀況未能確認的來源 | 9 |
 | 實證判定總數 | 53（類別層級 26 + 單元層級 27） |
 | 其中證據不足或互斥 | 21（`limited` 11 · `contested` 7 · `expert_consensus` 2 · `educational_demo_only` 1） |
 | 有單元層級實證查核的單元 | 24 / 63 |
-| 連結驗證 | YouTube 116/116 · 外部 119/120 通過 + 1 待人工 |
+| 連結驗證 | YouTube **228/228** 全數有效 |
 | PubMed 引用驗證 | 315/315 標題與 PMID 相符 |
 
 ---
 
-## 一、找不到高品質資源的主題
+## 〇、2026-08-02 改版：全部改成影音
 
-**留空欄位：0 個。** 所有 259 個資源欄位都填上了實際驗證過的連結。
+原本 259 個資源欄位中有 127 個是期刊文章、指引 PDF 與病例網頁。
+改版後**每一個欄位都是可以看的影片**，理由是這是一門影音課程，
+文獻的位置在實證層而不是資源清單。
 
-這件事需要一個誠實的但書：**「填滿了」不等於「每一格都是理想教材」。**
+- 被換掉的 127 個欄位：125 個找到合格影片，**2 個誠實留空**（見下）
+- 期刊與指引**沒有消失**：315 筆 PubMed 引用與 `GUIDELINE-MATRIX.md` 原封不動
+- 副作用一：課程時長從 60 小時增加到 **104 小時**（完整 webinar 取代了文章連結）
+- 副作用二：**付費牆歸零**。原本有 14 個資源需要訂閱或機構帳號，現在全部免費公開
+- 副作用三：低觀看數的影片從 20 支增加到 75 支——因為會議錄影與學會 webinar
+  的觀看數本來就低。這是刻意的取捨，理由見 5.6
+
+---
+
+## 一、找不到高品質影片的主題
+
+**留空欄位：2 個**（容許 12 個）。
+
+| 欄位 | 主題 | 為什麼留空 |
+|---|---|---|
+| `ch4-u4` | EU-TIRADS 2017 專門教學影片 | 跑過 12 個 query 與 Vimeo 搜尋。找到的候選：德語無字幕的 1:18:46 講座（以投影片為主）、1:54 過短的法語片、俄語與越南語版本。ETA 官方影音只有 50 秒短片，沒有 EU-TIRADS 教學錄影 |
+| `ch10-u2` | 頸部輻射病史者的甲狀腺監測 | 該主題的 IGHG 國際共識有原文但沒有教學影音 |
+
+兩者的內容都仍可從別處取得：EU-TIRADS 的分級規則完整記錄在 `GUIDELINE-MATRIX.md`，
+輻射監測共識在 `oe-b.json` 的 citations 裡。
+
+其餘欄位需要一個誠實的但書：**「填滿了」不等於「每一格都是理想教材」。**
 配額是先訂好的，策展時若找不到 Tier A 的核心教材，做法是降級收 Tier B／C
 並在 `why` 說明限制，而不是留空。以下主題的資源品質明顯弱於其他章節：
 
@@ -148,14 +172,21 @@ K-TIRADS (2021)，並另闢兩節處理系統間不一致與臨床選擇。
 這些連結本身是安全的（只連結、不重製），但若未來要引用其內容、截圖或做成教材，
 **必須先取得授權**。清單見附錄。
 
-### 5.5 被 bot 防護擋下的 1 個連結
+### 5.5 3 支影片抓不到長度
 
-`https://pubs.rsna.org/doi/10.1148/rg.240021`（CH8 核心教材）對自動化請求回 403。
-以瀏覽器手動開啟可正常存取，但**這一筆的存活狀態沒有程式化證據**，需人工定期確認。
+`ch8-u1`、`ch8-u4`、`ch10-u3` 的 YouTube 中繼資料只回傳標題與觀看數，沒有長度。
+原因是本次改版在短時間內對 YouTube 發出約 500 次中繼資料請求後被限流，
+yt-dlp 在限流下會回傳**部分**資料而不是直接失敗。
 
-### 5.6 20 支觀看數低於 300 的影片
+處理方式：`build.py` 遇到 `seconds=0` 時改用策展時記錄的長度，
+**不再用 `0:00` 覆蓋**（否則網站會顯示假的零長度並少算總時長）。
+這三支的長度目前是策展值而非 API 值，差異在 45 秒以內，`make audit` 會持續警告到重抓為止。
+限流解除後跑 `make meta` 即可補上。
 
-`make audit` 依門檻（300 次）發出警告。**這 20 支我們選擇保留**，理由是：
+### 5.6 75 支觀看數低於 300 的影片
+
+改成全影音之後這個數字從 20 支增加到 75 支。
+`make audit` 依門檻（300 次）發出警告。**這 75 支我們選擇保留**，理由是：
 觀看數對專科醫學教育是**很差的品質代理指標**——一場 ETA 課程講者的病例集只有
 151 次觀看，不代表它比 50 萬觀看的一般衛教影片差，通常正好相反。
 這些資源的品質是靠來源機構與內容判斷的，不是靠數字。**但這代表它們未經廣泛同儕檢視。**
@@ -235,51 +266,32 @@ python3 src/build/gaps.py --json   # 機器可讀
 <!-- 以下區塊由 src/build/gaps.py --md 產出 -->
 ### 找不到合格資源而誠實留空的欄位
 
-目前沒有留空的欄位。
+共 2 個欄位。
+
+| 章節 | 單元 | 欄位 | 查過什麼、為什麼不合格 |
+|---|---|---|---|
+| CH4 結節描述語言與風險分層 | `ch4-u4` | EU-TIRADS 2017 專門教學影片（查無合格影音，留空） | 2026-08-02 查無合格影音。跑過的 yt-dlp 查詢：EU-TIRADS；EUTIRADS thyroid；EU-TIRADS 2017；EU-TIRADS how to use score thyroid ultrasound；EU-TIRADS thyroid nodule score explained radiology；European thyroid imaging reporting and data system EU-TIRADS lecture；European Thyroid Association thyroid nodule ultrasound webinar；European Thyroid Association annual meeting thyroid nodule ultrasound；Gilles Russ thyroid ultrasound TIRADS；Trimboli thyroid nodule ultrasound risk stratification；ECR European Congress of Radiology thyroid nodule ultrasound session；EFSUMB thyroid ultrasound course nodule；另跑 WebSearch 與 Vimeo 搜尋（vimeo.com/search 回 403）。找到的候選全部不合格：(1) ThyroidUpdate『TIRADS Klassifikation beim Schilddrüsenultraschall』（JuAHky0ZncA，1:18:46，講者 Georg Zettinig ÖGUM 3、與談 Jörg Bojunga DEGUM 3）確實逐一比較各分層系統、講者身分明確，但為德語授課且無字幕，以投影片講述為主，不符合本課程的語言規則與「需有實際影像示範」門檻；(2) iSonic 法語短片 m45rtpBwxX8 僅 1:54，過短；(3) НМИЦ онкологии 的 TI-RADS 講解（uxAPkVxDlpo、8BmCFEZ03aU）為俄語；(4) 越南語 EU／K／ACR TIRADS 比較片 rXuQQP08wsU 語言不符。ETA 官方影音僅見 European Thyroid Journal 頻道的 50 秒短片，沒有 EU-TIRADS 教學錄影。若日後 ETA 或 ESR 釋出 EU-TIRADS 課程錄影，應優先補進本欄位。 |
+| CH10 特殊族群與特殊情境 | `ch10-u2` | 頸部輻射病史者的甲狀腺監測（暫無合格影音） | 查過 'thyroid cancer surveillance childhood cancer survivors radiation neck'、'radiation induced thyroid cancer screening survivors late effects thyroid'、'thyroid nodules after radiation exposure Chernobyl ultrasound screening'、'thyroid cancer risk after radiation therapy Hodgkin lymphoma survivor screening endocrine'、'history of neck irradiation thyroid nodule evaluation'、'childhood cancer survivor thyroid late effects endocrine surveillance webinar' 六組 query（每組 ytsearch15–20）。回傳結果集中在放射治療副作用衛教、RAI 治療與病友見證，沒有一支針對輻射病史者甲狀腺監測的專業講次。唯二接近的兩支已排除：UCTV『Thyroid Nodules - Cancer Risk Factors and Radiation Exposure (Chernobyl, Fukushima)』（CNP4PtaVKyE，4:35）為一般民眾講座的節錄片段，其完整版 5NKh5Wx9GXE『Why Is There a Lump in My Neck and Do I Need to Worry?』（59:37）同樣是 UCSF 面向公眾的 mini medical school 講座，深度不符本課程受眾。寧缺勿濫，保留為空格。 |
 
 ### 需要註冊、訂閱或機構帳號才能完整取用的來源
 
-共 14 個。網站上會以標籤標示，點進去前就看得到。
-
-| 章節 | 單元 | 資源 | 存取條件 |
-|---|---|---|---|
-| CH1 | `ch1-u5` | 吞嚥時的相對移動：分辨真結節與甲狀腺假病灶 | 需訂閱 |
-| CH10 | `ch10-u2` | 頸部放療病史者的甲狀腺癌監測：IGHG 國際共識建議 | 需訂閱 |
-| CH10 | `ch10-u4` | ACR 意外發現甲狀腺結節處置白皮書 | 需訂閱 |
-| CH11 | `ch11-u1` | 核心教材：Strain 與 shear-wave elastography | 需訂閱 |
-| CH11 | `ch11-u2` | 核心教材：顯影劑超音波（CEUS） | 需訂閱 |
-| CH11 | `ch11-u2` | CEUS 鑑別良惡性結節的最新 meta-analysis（29 篇、3,521 顆結節） | 需訂閱 |
-| CH11 | `ch11-u2` | 只收組織學金標準的 CEUS meta-analysis：作者自報發表偏差 | 需訂閱 |
-| CH11 | `ch11-u3` | 核心教材：微血流成像、3D ultrasound 與融合影像 | 需訂閱 |
-| CH11 | `ch11-u4` | Automation bias 的直接證據：AI 給錯建議時判讀者跟著錯 | 需訂閱 |
-| CH4 | `ch4-u3` | ACR TI-RADS 白皮書原文（2017） | 需訂閱 |
-| CH4 | `ch4-u5` | C-TIRADS (2020)：中國甲狀腺結節超音波惡性風險分層指引 | 需訂閱 |
-| CH4 | `ch4-u6` | 多機構甲狀腺超音波登錄庫中各風險分層系統的穿刺建議差異 | 需訂閱 |
-| CH5 | `ch5-u1` | SIR 影像導引經皮介入的血栓與出血風險術前處理共識（Part II：建議） | 需訂閱 |
-| CH7 | `ch7-u4` | ATA 術前影像立場聲明 | 需訂閱 |
+目前全部來源皆為公開取用。
 
 ### 授權狀況未能確認的來源
 
-共 16 個。這些連結本身是安全的（本站只連結、不重製），但若要引用其內容或截圖，必須先取得授權。
+共 9 個。這些連結本身是安全的（本站只連結、不重製），但若要引用其內容或截圖，必須先取得授權。
 
 | 章節 | 單元 | 資源 |
 |---|---|---|
-| CH12 | `ch12-u1` | Thyrosite 陷阱圖表集：慢性淋巴球性甲狀腺炎 |
-| CH12 | `ch12-u3` | Thyrosite 甲狀腺淋巴瘤 case 1：原發性 MALT 型非何杰金氏淋巴瘤 |
-| CH12 | `ch12-u4` | Thyrosite 教學病例 6：肌纖維冒充復發乳突癌 |
-| CH12 | `ch12-u4` | Thyrosite 術後甲狀腺 case 17：縫線周圍多發性肉芽腫 |
-| CH12 | `ch12-u5` | Thyrosite 副甲狀腺 case 10：影像與細胞學同時誤導 |
+| CH11 | `ch11-u1` | 核心教材：Strain 與 shear-wave elastography |
+| CH11 | `ch11-u1` | Strain 與 shear-wave 到底在量什麼：原理、弱點與品質控制 |
+| CH11 | `ch11-u1` | 一位 elastography 權威講甲狀腺：為什麼乳房做得成、甲狀腺做不成 |
 | CH2 | `ch2-u2` | 異位甲狀腺的超音波病例 |
 | CH3 | `ch3-u1` | 核心教材：Graves disease 的超音波與都卜勒判讀 |
 | CH5 | `ch5-u3` | 囊性甲狀腺結節的超音波導引抽吸實錄 |
-| CH6 | `ch6-u1` | Hobnail 變異型乳突癌的超音波表現（病例報告） |
 | CH7 | `ch7-u1` | 頸部淋巴結超音波：四參數逐項判讀 |
+| CH7 | `ch7-u1` | 逐項特徵的權重與它們的重疊區 |
 | CH7 | `ch7-u2` | 分區、術前 mapping 與甲狀腺床以外的頸部所見 |
-| CH8 | `ch8-u1` | 術後甲狀腺超音波該看什麼（ECR 2024 教育電子壁報） |
-| CH9 | `ch9-u1` | 四腺增生：兩次都被當成 Hashimoto 假結節 |
-| CH9 | `ch9-u1` | 副甲狀腺癌：細胞學看起來像濾泡性腫瘤 |
-| CH9 | `ch9-u2` | 甲狀腺下極內的副甲狀腺腺瘤：washout 定性 |
-| CH9 | `ch9-u2` | 細胞學誤導：被判為疑似乳突癌的副甲狀腺腺瘤 |
 
 ### 證據不足或互斥的主題
 

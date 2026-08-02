@@ -1,388 +1,474 @@
 {
- "chapter": "CH2",
- "searched": [
-  "yt-dlp ytsearch20: thyroid ultrasound normal anatomy scanning technique neck",
-  "yt-dlp ytsearch20: thyroid ultrasound anatomy longus colli strap muscles",
-  "yt-dlp ytsearch20: recurrent laryngeal nerve ultrasound identification neck",
-  "yt-dlp ytsearch20: pyramidal lobe thyroid ultrasound",
-  "yt-dlp ytsearch20: Zuckerkandl tubercle thyroid",
-  "yt-dlp ytsearch20: ectopic thyroid lingual thyroid ultrasound",
-  "yt-dlp ytsearch20: thyroglossal duct cyst ultrasound",
-  "yt-dlp ytsearch20: neck lymph node levels ultrasound landmarks level VI central compartment",
-  "yt-dlp ytsearch20: cervical lymph node level classification ultrasound sonographic",
-  "yt-dlp ytsearch20: esophagus mimicking thyroid nodule ultrasound pseudolesion（零結果）",
-  "yt-dlp ytsearch20: thyroid ultrasound pitfalls artifacts pseudonodule anisotropy（零結果）",
-  "yt-dlp ytsearch15: esophagus thyroid ultrasound pseudonodule",
-  "yt-dlp ytsearch15: thyroid ultrasound pitfalls mimics",
-  "yt-dlp ytsearch15: thyroid ultrasound artifacts",
-  "yt-dlp ytsearch15: ETA thyroid ultrasound course Solymosi",
-  "yt-dlp ytsearch15: tracheoesophageal groove ultrasound recurrent laryngeal nerve sonoanatomy（零結果）",
-  "yt-dlp ytsearch15: thyroid ultrasound normal variants pseudolesions radiology lecture",
-  "yt-dlp ytsearch15: neck ultrasound level VI central compartment mapping thyroid cancer",
-  "yt-dlp ytsearch15: sonographic mapping neck nodes thyroid cancer preoperative",
-  "yt-dlp ytsearch15: cervical esophagus ultrasound swallowing neck",
-  "yt-dlp ytsearch15: thyroid nodule mimic esophagus diverticulum ultrasound",
-  "yt-dlp ytsearch15: anisotropy artifact ultrasound",
-  "yt-dlp ytsearch15: thyroid ultrasound false nodule pitfall case",
-  "yt-dlp ytsearch12: KeepMyThyroid ultrasound",
-  "yt-dlp ytsearch12: thyroid ultrasound comet tail artifact colloid posterior shadowing（零結果）",
-  "yt-dlp ytsearch12: longus colli muscle ultrasound neck",
-  "yt-dlp ytsearch12: thyroid ultrasound normal anatomy fellow lecture society",
-  "yt-dlp ytsearch12: thyroid embryology congenital anomalies imaging ectopic thyroglossal lecture radiology",
-  "yt-dlp ytsearch12: thyroid ultrasound anatomical variants lecture",
-  "yt-dlp ytsearch12: KeepMyThyroid anatomy",
-  "yt-dlp 頻道全列表: youtube.com/channel/UCKtc6VkVNjRlq0UiTlrDtlw/videos（ETA Ultrasound Course / Tamas Solymosi）",
-  "yt-dlp 頻道全列表: youtube.com/channel/UCC2t3xNGvkjj42wO6O8FM3Q/videos（KeepMyThyroid）",
-  "web: Radiopaedia cervical lymph node levels imaging-based classification",
-  "web: Radiopaedia pyramidal lobe thyroid Zuckerkandl tubercle",
-  "web: PMC open access ultrasonography neck lymph node levels thyroid cancer sonographic landmarks review",
-  "web: open access review thyroid ultrasound pitfalls mimics pseudonodule esophagus longus colli anisotropy artifact",
-  "web: \"Ultrasonographic identification of the anatomical landmarks that define cervical lymph nodes spaces\"",
-  "web: AIUM practice parameter performance thyroid parathyroid ultrasound examination pdf aium.org",
-  "web: AJNR Zuckerkandl Tubercle of the Thyroid Common Imaging Finding That May Mimic Pathology PMC",
-  "web: pyramidal lobe thyroid ultrasound detection prevalence open access PMC sonographic",
-  "web: high-frequency ultrasound visualization recurrent laryngeal nerve tracheoesophageal groove PMC open access",
-  "NCBI elink: pubmed 22300934 → PMC（取得 AJNR 全文的 PMC 編號，未憑記憶拼湊）"
- ],
- "evaluated": [
-  {
-   "title": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
-   "url": "https://www.youtube.com/watch?v=9C4yGa_RbUU",
-   "source": "YouTube / GM Cancer Academy（英國 Greater Manchester Cancer Academy, NHS）",
-   "decision": "included",
-   "unit": "ch2-u1",
-   "reason": "oEmbed 200。整場鎖定頸部超音波解剖與系統性掃描順序，30 分鐘、機構可查、非入門探頭教學，作為本單元主課。"
-  },
-  {
-   "title": "(ENG)Neck anatomy 1_center",
-   "url": "https://www.youtube.com/watch?v=yIehW-bCpVc",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "included",
-   "unit": "ch2-u1",
-   "reason": "oEmbed 200。頻道 about 頁實際抓取確認為韓國甲狀腺影像與介入專科放射科醫師、大韓民國醫學翰林院正會員、Kwak TI-RADS（Radiology 2011;260:892-9）第一作者。中央頸區逐層解剖，英語旁白。"
-  },
-  {
-   "title": "Neck US - Basic Anatomy",
-   "url": "https://www.youtube.com/watch?v=BT1mn761mrY",
-   "source": "YouTube / Radiology Education by Joseph W. Owen, MD（University of Kentucky）",
-   "decision": "included",
-   "unit": "ch2-u1",
-   "reason": "oEmbed 200。作者與機構可查，放射科視角補足側頸間隙與頸動脈鞘。標題含 Basic，故僅列 Tier C 作對照表用。"
-  },
-  {
-   "title": "Echotexture of recurrent laryngeal nerves: the depiction of recurrent laryngeal nerves at high-frequency ultrasound during radical thyroidectomy",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11424407/",
-   "source": "Frontiers in Endocrinology 2024;15:1356935",
-   "decision": "included",
-   "unit": "ch2-u1",
-   "reason": "curl 200，citation meta 實際抓取確認期刊、卷期、DOI 10.3389/fendo.2024.1356935 與作者。用來界定超音波看 RLN 的能力邊界。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "RLN Variation and Risk of Nerve Injury",
-   "url": "https://www.youtube.com/watch?v=4laAJoUE15w",
-   "source": "YouTube / THANC Foundation",
-   "decision": "included",
-   "unit": "ch2-u1",
-   "reason": "oEmbed 200。非營利頭頸癌基金會製作，說明 RLN 走向變異的手術意義。非超音波影像，列 Tier C。"
-  },
-  {
-   "title": "Zuckerkandl Tubercle of the Thyroid: A Common Imaging Finding That May Mimic Pathology",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8013239/",
-   "source": "AJNR 2012;33(6):1134-1138",
-   "decision": "included",
-   "unit": "ch2-u2",
-   "reason": "PMC 編號由 NCBI elink 從 PMID 22300934 解出，非憑記憶。curl 200 且 citation meta 確認期刊、卷頁、DOI 10.3174/ajnr.A2914 與作者。作為主課。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Ultrasound for the detection of the pyramidal lobe of the thyroid gland",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9098552/",
-   "source": "Journal of Endocrinological Investigation 2022;45(6):1201-1208",
-   "decision": "included",
-   "unit": "ch2-u2",
-   "reason": "curl 200，citation meta 確認 DOI 10.1007/s40618-022-01748-z 與作者 Freilinger／Kaserer／Zettinig。以大體解剖為金標準，量化判讀者間差異。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Ultrasound of Thyroglossal Duct Cyst",
-   "url": "https://www.youtube.com/watch?v=f4MPmWPdpvI",
-   "source": "YouTube / Radquarters",
-   "decision": "included",
-   "unit": "ch2-u2",
-   "reason": "oEmbed 200。放射科教學頻道，8 分鐘實際超音波影像走過甲狀舌管囊腫的判讀要點。"
-  },
-  {
-   "title": "Ectopic Thyroid Gland || Ultrasound || Case 368",
-   "url": "https://www.youtube.com/watch?v=tz-vPf3PyVQ",
-   "source": "YouTube / Imaging Study",
-   "decision": "included",
-   "unit": "ch2-u2",
-   "reason": "oEmbed 200。異位甲狀腺的完整超音波病例。頻道未公開作者身分，因此列 Tier B、授權狀況標為未確認，並在 note 中揭露此限制。本章品質最弱的兩個選材之一。"
-  },
-  {
-   "title": "(ENG)A normal anatomical structure misinterpreted as a pyramidal lymph node",
-   "url": "https://www.youtube.com/watch?v=bukzgM--OjA",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "included",
-   "unit": "ch2-u2",
-   "reason": "oEmbed 200。直接對應「正常構造被誤判為病灶」的單元命題，作者資格同上已查證。"
-  },
-  {
-   "title": "Sonographic assessment of cervical lymph nodes - ETA Ultrasound Course",
-   "url": "https://www.youtube.com/watch?v=_aJF1Uv-e1s",
-   "source": "YouTube / Tamas Solymosi（European Thyroid Association Ultrasound Course）",
-   "decision": "included",
-   "unit": "ch2-u3",
-   "reason": "oEmbed 200。ETA 官方超音波課程單元，內分泌科視角、全程搭配實際影像，作為主課。"
-  },
-  {
-   "title": "Ultrasonographic identification of the anatomical landmarks that define cervical lymph nodes spaces",
-   "url": "https://www.medultrason.ro/assets/Magazines/Medultrason-2013-vol15-no1/06Lenghel-DOI.pdf",
-   "source": "Medical Ultrasonography 2013;15(1):29-34",
-   "decision": "included",
-   "unit": "ch2-u3",
-   "reason": "curl 200、application/pdf、547 KB，實際解出 PDF 內文確認為 Med Ultrason 2013 Vol.15 no.1 29-34、DOI 10.11152/mu.2013.2066.151.lml1uia2。全章唯一專門處理「分區界標的超音波化」的文獻。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Cervical Lymph Node Levels in 5 minutes",
-   "url": "https://www.youtube.com/watch?v=K_nzlhMsTbU",
-   "source": "YouTube / Dave Nascene（University of Minnesota 神經放射科）",
-   "decision": "included",
-   "unit": "ch2-u3",
-   "reason": "oEmbed 200。以斷層影像講解分區界線的解剖理由。已在 note 中註明非超音波動態影像、僅作概念複習，避免違反本章「不是只有 CT 分區圖」的要求。"
-  },
-  {
-   "title": "CERVICAL LYMPH NODE USG",
-   "url": "https://www.youtube.com/watch?v=_rXJ4Y6c1lQ",
-   "source": "YouTube / MSBIRIA -MCR Academics（印度放射學會 Maharashtra 分會教學課程）",
-   "decision": "included",
-   "unit": "ch2-u3",
-   "reason": "oEmbed 200。24 分鐘實際掃描示範側頸各分區的探頭走法，補足主課因長度略過的連續移動路徑。"
-  },
-  {
-   "title": "Thyroid Ultrasonography: Pitfalls and Techniques",
-   "url": "https://www.kjronline.org/DOIx.php?id=10.3348%2Fkjr.2014.15.2.267",
-   "source": "Korean Journal of Radiology 2014;15(2):267-276",
-   "decision": "included",
-   "unit": "ch2-u4",
-   "reason": "curl 200，citation meta 確認期刊、日期 2014/04/01、卷頁、DOI 10.3348/kjr.2014.15.2.267 與作者 Choi／Kim／Kim。唯一同時涵蓋假性病灶與技術性偽影的圖解回顧，作為主課。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "(ENG)Pitfalls of Neck Ultrasonography",
-   "url": "https://www.youtube.com/watch?v=ov1oLOY-8mQ",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "included",
-   "unit": "ch2-u4",
-   "reason": "oEmbed 200。專家版的頸部假性病灶清單（舌下腺、甲狀軟骨、扁桃腺、會厭谷、梨狀窩、食道空氣、頸椎橫突結節、斜角肌）。"
-  },
-  {
-   "title": "(ENG)Diagnosis of esophageal diverticulum on US",
-   "url": "https://www.youtube.com/watch?v=-n0tiRuBu_4",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "included",
-   "unit": "ch2-u4",
-   "reason": "oEmbed 200。臨床後果最嚴重的陷阱（誤判導向不必要且有風險的穿刺），近十分鐘完整示範。"
-  },
-  {
-   "title": "Hot Tips - Anisotropy in Musculoskeletal (MSK) Ultrasound",
-   "url": "https://www.youtube.com/watch?v=jhHP-RNOmdw",
-   "source": "YouTube / Gulfcoast Ultrasound Institute",
-   "decision": "included",
-   "unit": "ch2-u4",
-   "reason": "oEmbed 200。anisotropy 的即時動態示範，頸部教材中找不到同等清楚的版本。屬肌肉骨骼影像、非頸部，已在 note 揭露；商業教育機構內容，已填 coi。本章品質最弱的兩個選材之一。"
-  },
-  {
-   "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
-   "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
-   "source": "YouTube / AIUMultrasound",
-   "decision": "excluded",
-   "reason": "品質足夠（原為 ch2-u1 主課首選），但 CH0 已將同一支影片用作 ch0-u1 主課。依契約「能不共用就不共用」，改用 GM Cancer Academy 的解剖工作坊。"
-  },
-  {
-   "title": "AIUM–ACR–SPR–SRU Practice Parameter ... Extracranial Head and Neck（2018 年版 PDF）",
-   "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
-   "source": "AIUM",
-   "decision": "excluded",
-   "reason": "curl 200 且已解出 PDF 內文確認可用，但 CH0 的 ch0-u2 已收錄同一份 PDF。改用 Frontiers in Endocrinology 的 RLN 超音波研究作為 ch2-u1 的非 YouTube 來源。另註：aium.org 免費 PDF 為 2018 年版，現行 2023 年版（DOI 10.1002/jum.16251）需訂閱。",
-   "last_verified": "2026-08-02"
-  },
-  {
-   "title": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
-   "url": "https://www.youtube.com/watch?v=rUhmKzcUjvM",
-   "source": "YouTube / Joseph Minardi",
-   "decision": "excluded",
-   "reason": "oEmbed 200、品質良好，但已被 CH0 的 ch0-u2 收錄，且屬掃描技術而非解剖判讀，本章不重複。"
-  },
-  {
-   "title": "#Sonoquickies - Neck Anatomy At The Level Of The Thyroid",
-   "url": "https://www.youtube.com/watch?v=0nzZT46Dmw0",
-   "source": "YouTube / Sonographic Tendencies",
-   "decision": "excluded",
-   "reason": "oEmbed 未逐一驗，內容為 2 分鐘的單一橫切標註，深度不足以支撐進階單元；同性質內容已由 KeepMyThyroid 的中央頸區系列涵蓋。"
-  },
-  {
-   "title": "Sonoquickie -Thyroglossal Duct Cyst",
-   "url": "https://www.youtube.com/watch?v=lcj_NQO7NPw",
-   "source": "YouTube / Sonographic Tendencies",
-   "decision": "excluded",
-   "reason": "oEmbed 200，內容正確但與 Radquarters 的甲狀舌管囊腫影片主題完全重疊且更短。為避免同一單元內主題重複而排除。"
-  },
-  {
-   "title": "Ultrasound Case 10 - Ectopic Thyroid (Web case)",
-   "url": "https://www.youtube.com/watch?v=PLyia1L4tcU",
-   "source": "YouTube / Dr.Ismail Sayed Ismail",
-   "decision": "excluded",
-   "reason": "oEmbed 200，內容可用，但與已收錄的異位甲狀腺病例主題重複。列為備案。"
-  },
-  {
-   "title": "Thyroid1（ENT Imaging Lectures）",
-   "url": "https://www.youtube.com/watch?v=BVIFWzCNDjw",
-   "source": "YouTube / Barton Branstetter（University of Pittsburgh）",
-   "decision": "excluded",
-   "reason": "oEmbed 200、作者為可查證的頭頸影像教授。排除原因有二：（一）無法取得影片說明或章節，無從確認是否涵蓋本單元的變異主題，不願憑推測填 why；（二）該系列為投影片講授型態，動態超音波掃描比重不明，有觸犯契約「只有投影片沒有動態掃描」的風險。"
-  },
-  {
-   "title": "LOBO PIRAMIDAL - VARIANTE ANATÔMICA TIREOIDIANA QUE VOCÊ PRECISA SABER",
-   "url": "https://www.youtube.com/watch?v=12A8ss5lE0g",
-   "source": "YouTube / Você Radiologista com João Paulo Queiroz",
-   "decision": "excluded",
-   "reason": "oEmbed 200 顯示原標題為葡萄牙文（yt-dlp 搜尋結果顯示的是自動翻譯標題）。依搜尋語言規則，葡萄牙文資源不在允許清單內，且無法確認是否有英文字幕。錐狀葉改以 J Endocrinol Invest 2022 的實證文獻涵蓋。"
-  },
-  {
-   "title": "Видеозапись УЗИ - Пирамидальная доля левой доли",
-   "url": "https://www.youtube.com/watch?v=bE_AHuLajDU",
-   "source": "YouTube / MedPrinting",
-   "decision": "excluded",
-   "reason": "oEmbed 200 顯示原標題為俄文。語言不在允許清單內，且頻道未公開作者或機構，無法確認來源。"
-  },
-  {
-   "title": "PREOPERATIVE ULTRASOUND CERVICAL MAPPING IN THYROID CANCER WHY, HOW | Dr. Bui Van Giang",
-   "url": "https://www.youtube.com/watch?v=fqpoeLdVFLY",
-   "source": "YouTube / Cận lâm sàng",
-   "decision": "excluded",
-   "reason": "oEmbed 200，主題（術前頸部超音波 mapping）與 ch2-u3 高度相符，但頻道為越南文、無法確認講授語言與是否有字幕（yt-dlp --list-subs 在本次工作階段被 YouTube 擋下）。改用 MSBIRIA 的英文教學。若日後能確認為英語授課，值得補回。"
-  },
-  {
-   "title": "USG NECK ANATOMY",
-   "url": "https://www.youtube.com/watch?v=fsIN7wChnb8",
-   "source": "YouTube / MSBIRIA -MCR Academics",
-   "decision": "excluded",
-   "reason": "oEmbed 200、40 分鐘頸部超音波解剖，品質可用。因同一頻道的淋巴結課程已收入 ch2-u3，且 ch2-u1 已有主課與四個 drill，避免單一頻道過度集中而未收。列為 ch2-u1 的第一備案。"
-  },
-  {
-   "title": "Ultrasound of the Neck: There's More to See Than Thyroid Nodules（及同頻道其他長講座）",
-   "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
-   "source": "YouTube / Radiology Video - radiology made esay",
-   "decision": "excluded",
-   "reason": "該頻道大量轉載他人完整講座，未見原始講者授權聲明，符合契約「未經授權重新上傳」與「無法確認來源」的排除條件。同頻道的 Sonographic Evaluation of Diffuse Thyroid Disease、Thyroid Nodules 系列一併排除。"
-  },
-  {
-   "title": "Execution of Thyroid Ultrasound / Basic settings - ETA Ultrasound Course",
-   "url": "https://www.youtube.com/watch?v=RW_YJOwNrbU",
-   "source": "YouTube / Tamas Solymosi（ETA Ultrasound Course）",
-   "decision": "excluded",
-   "reason": "oEmbed 200、品質為 Tier A，但主題屬掃描執行與機器設定，是 CH1 的範圍而非 CH2 的解剖與變異。留給 CH1 使用以免跨章重複。"
-  },
-  {
-   "title": "(ENG)How to Diagnose Better Using Ultrasound Artifacts",
-   "url": "https://www.youtube.com/watch?v=k-Nbu285Y7Y",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "excluded",
-   "reason": "oEmbed 200、主題貼合 ch2-u4。未收的原因是 ch2-u4 三個 drill 已有兩個來自同一頻道，再加第三個會讓單元完全依賴單一來源。列為第一備案。"
-  },
-  {
-   "title": "(ENG)A one-minute method for differentiating a neck mass from the cervical spine on US",
-   "url": "https://www.youtube.com/watch?v=Waz0glS7GyE",
-   "source": "YouTube / KeepMyThyroid",
-   "decision": "excluded",
-   "reason": "oEmbed 200、內容切題（頸椎橫突假性腫塊）。同上，為避免 ch2-u4 過度集中於單一頻道而未收；其核心觀念已由同單元的 Pitfalls of Neck Ultrasonography 涵蓋。"
-  },
-  {
-   "title": "Pharyngoesophageal diverticulum mimicking thyroid nodules: Some interesting ultrasonographic signs",
-   "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1030014/full",
-   "source": "Frontiers in Oncology 2023;13:1030014",
-   "decision": "excluded",
-   "reason": "curl 200、citation meta 已確認 DOI 10.3389/fonc.2023.1030014 與作者。內容優良但與 ch2-u4 已收錄的食道憩室影片主題重複，且該單元 drill 數已滿額（3 個）。列為 ch2-u4 的第一備案文獻。"
-  },
-  {
-   "title": "Sonographic Diagnosis of Cervical Lymph Node Metastasis in Patients with Thyroid Cancer and Comparison of European and Korean Guidelines",
-   "url": "https://kjronline.org/DOIx.php?id=10.3348/kjr.2022.0358",
-   "source": "Korean Journal of Radiology 2022;23(11):1102-1111",
-   "decision": "excluded",
-   "reason": "curl 200、WebFetch 實際讀取確認為開放取用。但實際內容是淋巴結良惡性風險分層的指引比較，僅提及 level I–VI 作為位置分類，沒有討論分區的超音波界標，與 ch2-u3 的教學目標不符。主題屬 CH7，建議轉交該章。"
-  },
-  {
-   "title": "Review of ultrasonography of malignant neck nodes: greyscale, Doppler, contrast enhancement and elastography",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894696/",
-   "source": "PubMed Central（Cancer Imaging）",
-   "decision": "excluded",
-   "reason": "curl 200。主題為惡性淋巴結的影像特徵而非分區定位，屬 CH7 範圍，本章不收。"
-  },
-  {
-   "title": "Sonographic localisation of neck lymph nodes using surgical neck level classifications",
-   "url": "https://onlinelibrary.wiley.com/doi/10.1002/sono.12443",
-   "source": "Sonography（Wiley）2024",
-   "decision": "excluded",
-   "reason": "主題與 ch2-u3 完全吻合（以舌骨、環狀軟骨、甲狀軟骨、氣管軟骨環等超音波界標定位手術分區），但 Wiley 對 curl 與 WebFetch 皆回 403，無法實際打開頁面確認全文可讀性與內容。依契約「不信任任何上游宣稱」，寧可不收。若日後能取得可驗證的開放全文，這是 ch2-u3 最值得補上的一篇。"
-  },
-  {
-   "title": "Cervical lymph node levels / Pyramidal lobe / Tubercle of Zuckerkandl（條目）",
-   "url": "https://radiopaedia.org/articles/cervical-lymph-node-levels",
-   "source": "Radiopaedia",
-   "decision": "excluded",
-   "reason": "curl 回 406、WebFetch 回 403，Radiopaedia 對自動化存取有防護，本次無法實際打開任何一個條目確認內容。依鐵則不得憑印象填入，因此整站條目一律不收。三個主題改以 AJNR、Journal of Endocrinological Investigation 與 Medical Ultrasonography 的原始文獻取代。"
-  },
-  {
-   "title": "Imaging-Based Nodal Classification for Evaluation of Neck Metastatic Adenopathy",
-   "url": "https://ajronline.org/doi/10.2214/ajr.174.3.1740837",
-   "source": "AJR 2000（Som 等）",
-   "decision": "excluded",
-   "reason": "curl 403，無法實際開啟確認可讀性。這是影像式頸部分區的經典原始文獻，但無法驗證即不收錄。"
-  },
-  {
-   "title": "Preoperative Visualized Ultrasound Assessment of the Recurrent Laryngeal Nerve in Thyroid Cancer Surgery",
-   "url": "https://www.dovepress.com/preoperative-visualized-ultrasound-assessment-of-the-recurrent-larynge-peer-reviewed-fulltext-article-CMAR",
-   "source": "Cancer Management and Research 2021;13:7057",
-   "decision": "excluded",
-   "reason": "curl 200、citation meta 已確認 DOI 10.2147/CMAR.S330114。與已收錄的 Frontiers in Endocrinology RLN 研究主題重疊，且該篇有術中對照的直接驗證設計更適合教學。列為 ch2-u1 備案。"
-  },
-  {
-   "title": "Anatomy, Head and Neck, Thyroid（StatPearls）",
-   "url": "https://www.ncbi.nlm.nih.gov/books/NBK470452/",
-   "source": "StatPearls / NCBI Bookshelf",
-   "decision": "excluded",
-   "reason": "curl 200、可完整閱讀。內容正確但屬教科書層級的基礎解剖，對「已經知道基本解剖」的受眾沒有增益，違反本課程不得把初學內容填入進階章節的規定。"
-  },
-  {
-   "title": "Zuckerkandl tubercle in Thyroid Surgery / Surgical Anatomy of Recurrent laryngeal nerve 等外科解剖講座",
-   "url": "https://www.youtube.com/watch?v=S6cpjfDVWUY",
-   "source": "YouTube（多個外科教學頻道）",
-   "decision": "excluded",
-   "reason": "此類影片為手術視野或投影片解剖講授，沒有超音波影像，無法訓練本章要求的影像判讀能力。Zuckerkandl tubercle 的影像面改以 AJNR 論文涵蓋。"
-  },
-  {
-   "title": "Basic Thyroid U/S Protocol / Thyroid - Ultrasound Scanning Technique / Cervical Ultrasound Anatomy",
-   "url": "https://www.youtube.com/watch?v=MJnQemGehH8",
-   "source": "YouTube / Clarius Mobile Health",
-   "decision": "excluded",
-   "reason": "設備廠商內容，且屬入門掃描示範（2–3 分鐘），對本課程受眾層級過低。並非因廠商身分排除，而是內容深度不足。"
-  },
-  {
-   "title": "Thyroid Ultrasound Normal Vs Abnormal Image Appearances Comparison 等系列",
-   "url": "https://www.youtube.com/watch?v=IaQiwochRd4",
-   "source": "YouTube / Dr. Sam's Imaging Library",
-   "decision": "excluded",
-   "reason": "觀看數高但內容為初學者導向的正常／異常對照，沒有處理變異、界標或假性病灶，不符合本章的進階定位。"
-  },
-  {
-   "title": "Ultrasound of the Normal Esophagus in the Neck / Thyroglossal Duct Cyst 系列",
-   "url": "https://www.youtube.com/watch?v=VBQcYaFL7eI",
-   "source": "YouTube / Ultrasound videos",
-   "decision": "excluded",
-   "reason": "頻道未公開作者、機構或任何署名，符合契約「無法確認作者或來源」的排除條件。"
-  }
- ]
+  "chapter": "CH2",
+  "searched": [
+    "yt-dlp ytsearch20: thyroid ultrasound normal anatomy scanning technique neck",
+    "yt-dlp ytsearch20: thyroid ultrasound anatomy longus colli strap muscles",
+    "yt-dlp ytsearch20: recurrent laryngeal nerve ultrasound identification neck",
+    "yt-dlp ytsearch20: pyramidal lobe thyroid ultrasound",
+    "yt-dlp ytsearch20: Zuckerkandl tubercle thyroid",
+    "yt-dlp ytsearch20: ectopic thyroid lingual thyroid ultrasound",
+    "yt-dlp ytsearch20: thyroglossal duct cyst ultrasound",
+    "yt-dlp ytsearch20: neck lymph node levels ultrasound landmarks level VI central compartment",
+    "yt-dlp ytsearch20: cervical lymph node level classification ultrasound sonographic",
+    "yt-dlp ytsearch20: esophagus mimicking thyroid nodule ultrasound pseudolesion（零結果）",
+    "yt-dlp ytsearch20: thyroid ultrasound pitfalls artifacts pseudonodule anisotropy（零結果）",
+    "yt-dlp ytsearch15: esophagus thyroid ultrasound pseudonodule",
+    "yt-dlp ytsearch15: thyroid ultrasound pitfalls mimics",
+    "yt-dlp ytsearch15: thyroid ultrasound artifacts",
+    "yt-dlp ytsearch15: ETA thyroid ultrasound course Solymosi",
+    "yt-dlp ytsearch15: tracheoesophageal groove ultrasound recurrent laryngeal nerve sonoanatomy（零結果）",
+    "yt-dlp ytsearch15: thyroid ultrasound normal variants pseudolesions radiology lecture",
+    "yt-dlp ytsearch15: neck ultrasound level VI central compartment mapping thyroid cancer",
+    "yt-dlp ytsearch15: sonographic mapping neck nodes thyroid cancer preoperative",
+    "yt-dlp ytsearch15: cervical esophagus ultrasound swallowing neck",
+    "yt-dlp ytsearch15: thyroid nodule mimic esophagus diverticulum ultrasound",
+    "yt-dlp ytsearch15: anisotropy artifact ultrasound",
+    "yt-dlp ytsearch15: thyroid ultrasound false nodule pitfall case",
+    "yt-dlp ytsearch12: KeepMyThyroid ultrasound",
+    "yt-dlp ytsearch12: thyroid ultrasound comet tail artifact colloid posterior shadowing（零結果）",
+    "yt-dlp ytsearch12: longus colli muscle ultrasound neck",
+    "yt-dlp ytsearch12: thyroid ultrasound normal anatomy fellow lecture society",
+    "yt-dlp ytsearch12: thyroid embryology congenital anomalies imaging ectopic thyroglossal lecture radiology",
+    "yt-dlp ytsearch12: thyroid ultrasound anatomical variants lecture",
+    "yt-dlp ytsearch12: KeepMyThyroid anatomy",
+    "yt-dlp 頻道全列表: youtube.com/channel/UCKtc6VkVNjRlq0UiTlrDtlw/videos（ETA Ultrasound Course / Tamas Solymosi）",
+    "yt-dlp 頻道全列表: youtube.com/channel/UCC2t3xNGvkjj42wO6O8FM3Q/videos（KeepMyThyroid）",
+    "web: Radiopaedia cervical lymph node levels imaging-based classification",
+    "web: Radiopaedia pyramidal lobe thyroid Zuckerkandl tubercle",
+    "web: PMC open access ultrasonography neck lymph node levels thyroid cancer sonographic landmarks review",
+    "web: open access review thyroid ultrasound pitfalls mimics pseudonodule esophagus longus colli anisotropy artifact",
+    "web: \"Ultrasonographic identification of the anatomical landmarks that define cervical lymph nodes spaces\"",
+    "web: AIUM practice parameter performance thyroid parathyroid ultrasound examination pdf aium.org",
+    "web: AJNR Zuckerkandl Tubercle of the Thyroid Common Imaging Finding That May Mimic Pathology PMC",
+    "web: pyramidal lobe thyroid ultrasound detection prevalence open access PMC sonographic",
+    "web: high-frequency ultrasound visualization recurrent laryngeal nerve tracheoesophageal groove PMC open access",
+    "NCBI elink: pubmed 22300934 → PMC（取得 AJNR 全文的 PMC 編號，未憑記憶拼湊）",
+    "yt-dlp ytsearch: Zuckerkandl（單一關鍵字全域搜尋，20 筆）",
+    "yt-dlp ytsearch: Zuckerkandl tubercle ultrasound thyroid",
+    "yt-dlp ytsearch: pyramidal lobe thyroid ultrasound scanning",
+    "yt-dlp ytsearch: pyramidal lobe ultrasound demonstration",
+    "yt-dlp ytsearch: recurrent laryngeal nerve ultrasound visualization neck",
+    "yt-dlp ytsearch: vocal cord ultrasound assessment thyroid surgery laryngeal",
+    "yt-dlp ytsearch: cervical lymph node levels ultrasound landmarks scanning technique",
+    "yt-dlp ytsearch: thyroid ultrasound pitfalls lecture mimics",
+    "yt-dlp ytsearch: thyroid gland anatomical variants ultrasound lecture ectopic lingual thyroglossal",
+    "yt-dlp ytsearch: thyroid ultrasound anatomy variants lecture radiology isthmus tubercle",
+    "yt-dlp channel listing: KeepMyThyroid（全頻道 140 支逐支檢視）"
+  ],
+  "evaluated": [
+    {
+      "title": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
+      "url": "https://www.youtube.com/watch?v=9C4yGa_RbUU",
+      "source": "YouTube / GM Cancer Academy（英國 Greater Manchester Cancer Academy, NHS）",
+      "decision": "included",
+      "unit": "ch2-u1",
+      "reason": "oEmbed 200。整場鎖定頸部超音波解剖與系統性掃描順序，30 分鐘、機構可查、非入門探頭教學，作為本單元主課。"
+    },
+    {
+      "title": "(ENG)Neck anatomy 1_center",
+      "url": "https://www.youtube.com/watch?v=yIehW-bCpVc",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u1",
+      "reason": "oEmbed 200。頻道 about 頁實際抓取確認為韓國甲狀腺影像與介入專科放射科醫師、大韓民國醫學翰林院正會員、Kwak TI-RADS（Radiology 2011;260:892-9）第一作者。中央頸區逐層解剖，英語旁白。"
+    },
+    {
+      "title": "Neck US - Basic Anatomy",
+      "url": "https://www.youtube.com/watch?v=BT1mn761mrY",
+      "source": "YouTube / Radiology Education by Joseph W. Owen, MD（University of Kentucky）",
+      "decision": "included",
+      "unit": "ch2-u1",
+      "reason": "oEmbed 200。作者與機構可查，放射科視角補足側頸間隙與頸動脈鞘。標題含 Basic，故僅列 Tier C 作對照表用。"
+    },
+    {
+      "title": "Echotexture of recurrent laryngeal nerves: the depiction of recurrent laryngeal nerves at high-frequency ultrasound during radical thyroidectomy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11424407/",
+      "source": "Frontiers in Endocrinology 2024;15:1356935",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200，citation meta 實際抓取確認期刊、卷期、DOI 10.3389/fendo.2024.1356935 與作者。用來界定超音波看 RLN 的能力邊界。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "RLN Variation and Risk of Nerve Injury",
+      "url": "https://www.youtube.com/watch?v=4laAJoUE15w",
+      "source": "YouTube / THANC Foundation",
+      "decision": "included",
+      "unit": "ch2-u1",
+      "reason": "oEmbed 200。非營利頭頸癌基金會製作，說明 RLN 走向變異的手術意義。非超音波影像，列 Tier C。"
+    },
+    {
+      "title": "Zuckerkandl Tubercle of the Thyroid: A Common Imaging Finding That May Mimic Pathology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8013239/",
+      "source": "AJNR 2012;33(6):1134-1138",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：PMC 編號由 NCBI elink 從 PMID 22300934 解出，非憑記憶。curl 200 且 citation meta 確認期刊、卷頁、DOI 10.3174/ajnr.A2914 與作者。作為主課。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Ultrasound for the detection of the pyramidal lobe of the thyroid gland",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9098552/",
+      "source": "Journal of Endocrinological Investigation 2022;45(6):1201-1208",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200，citation meta 確認 DOI 10.1007/s40618-022-01748-z 與作者 Freilinger／Kaserer／Zettinig。以大體解剖為金標準，量化判讀者間差異。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Ultrasound of Thyroglossal Duct Cyst",
+      "url": "https://www.youtube.com/watch?v=f4MPmWPdpvI",
+      "source": "YouTube / Radquarters",
+      "decision": "included",
+      "unit": "ch2-u2",
+      "reason": "oEmbed 200。放射科教學頻道，8 分鐘實際超音波影像走過甲狀舌管囊腫的判讀要點。"
+    },
+    {
+      "title": "Ectopic Thyroid Gland || Ultrasound || Case 368",
+      "url": "https://www.youtube.com/watch?v=tz-vPf3PyVQ",
+      "source": "YouTube / Imaging Study",
+      "decision": "included",
+      "unit": "ch2-u2",
+      "reason": "oEmbed 200。異位甲狀腺的完整超音波病例。頻道未公開作者身分，因此列 Tier B、授權狀況標為未確認，並在 note 中揭露此限制。本章品質最弱的兩個選材之一。"
+    },
+    {
+      "title": "(ENG)A normal anatomical structure misinterpreted as a pyramidal lymph node",
+      "url": "https://www.youtube.com/watch?v=bukzgM--OjA",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u2",
+      "reason": "oEmbed 200。直接對應「正常構造被誤判為病灶」的單元命題，作者資格同上已查證。"
+    },
+    {
+      "title": "Sonographic assessment of cervical lymph nodes - ETA Ultrasound Course",
+      "url": "https://www.youtube.com/watch?v=_aJF1Uv-e1s",
+      "source": "YouTube / Tamas Solymosi（European Thyroid Association Ultrasound Course）",
+      "decision": "included",
+      "unit": "ch2-u3",
+      "reason": "oEmbed 200。ETA 官方超音波課程單元，內分泌科視角、全程搭配實際影像，作為主課。"
+    },
+    {
+      "title": "Ultrasonographic identification of the anatomical landmarks that define cervical lymph nodes spaces",
+      "url": "https://www.medultrason.ro/assets/Magazines/Medultrason-2013-vol15-no1/06Lenghel-DOI.pdf",
+      "source": "Medical Ultrasonography 2013;15(1):29-34",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200、application/pdf、547 KB，實際解出 PDF 內文確認為 Med Ultrason 2013 Vol.15 no.1 29-34、DOI 10.11152/mu.2013.2066.151.lml1uia2。全章唯一專門處理「分區界標的超音波化」的文獻。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Cervical Lymph Node Levels in 5 minutes",
+      "url": "https://www.youtube.com/watch?v=K_nzlhMsTbU",
+      "source": "YouTube / Dave Nascene（University of Minnesota 神經放射科）",
+      "decision": "included",
+      "unit": "ch2-u3",
+      "reason": "oEmbed 200。以斷層影像講解分區界線的解剖理由。已在 note 中註明非超音波動態影像、僅作概念複習，避免違反本章「不是只有 CT 分區圖」的要求。"
+    },
+    {
+      "title": "CERVICAL LYMPH NODE USG",
+      "url": "https://www.youtube.com/watch?v=_rXJ4Y6c1lQ",
+      "source": "YouTube / MSBIRIA -MCR Academics（印度放射學會 Maharashtra 分會教學課程）",
+      "decision": "included",
+      "unit": "ch2-u3",
+      "reason": "oEmbed 200。24 分鐘實際掃描示範側頸各分區的探頭走法，補足主課因長度略過的連續移動路徑。"
+    },
+    {
+      "title": "Thyroid Ultrasonography: Pitfalls and Techniques",
+      "url": "https://www.kjronline.org/DOIx.php?id=10.3348%2Fkjr.2014.15.2.267",
+      "source": "Korean Journal of Radiology 2014;15(2):267-276",
+      "decision": "excluded",
+      "reason": "2026-08-02 影音改版下架：本課程的資源欄位改為只收影片，此文獻／指引移至實證層 citations 與 GUIDELINE-MATRIX.md。原納入理由：curl 200，citation meta 確認期刊、日期 2014/04/01、卷頁、DOI 10.3348/kjr.2014.15.2.267 與作者 Choi／Kim／Kim。唯一同時涵蓋假性病灶與技術性偽影的圖解回顧，作為主課。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "(ENG)Pitfalls of Neck Ultrasonography",
+      "url": "https://www.youtube.com/watch?v=ov1oLOY-8mQ",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u4",
+      "reason": "oEmbed 200。專家版的頸部假性病灶清單（舌下腺、甲狀軟骨、扁桃腺、會厭谷、梨狀窩、食道空氣、頸椎橫突結節、斜角肌）。"
+    },
+    {
+      "title": "(ENG)Diagnosis of esophageal diverticulum on US",
+      "url": "https://www.youtube.com/watch?v=-n0tiRuBu_4",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u4",
+      "reason": "oEmbed 200。臨床後果最嚴重的陷阱（誤判導向不必要且有風險的穿刺），近十分鐘完整示範。"
+    },
+    {
+      "title": "Hot Tips - Anisotropy in Musculoskeletal (MSK) Ultrasound",
+      "url": "https://www.youtube.com/watch?v=jhHP-RNOmdw",
+      "source": "YouTube / Gulfcoast Ultrasound Institute",
+      "decision": "included",
+      "unit": "ch2-u4",
+      "reason": "oEmbed 200。anisotropy 的即時動態示範，頸部教材中找不到同等清楚的版本。屬肌肉骨骼影像、非頸部，已在 note 揭露；商業教育機構內容，已填 coi。本章品質最弱的兩個選材之一。"
+    },
+    {
+      "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+      "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+      "source": "YouTube / AIUMultrasound",
+      "decision": "excluded",
+      "reason": "品質足夠（原為 ch2-u1 主課首選），但 CH0 已將同一支影片用作 ch0-u1 主課。依契約「能不共用就不共用」，改用 GM Cancer Academy 的解剖工作坊。"
+    },
+    {
+      "title": "AIUM–ACR–SPR–SRU Practice Parameter ... Extracranial Head and Neck（2018 年版 PDF）",
+      "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+      "source": "AIUM",
+      "decision": "excluded",
+      "reason": "curl 200 且已解出 PDF 內文確認可用，但 CH0 的 ch0-u2 已收錄同一份 PDF。改用 Frontiers in Endocrinology 的 RLN 超音波研究作為 ch2-u1 的非 YouTube 來源。另註：aium.org 免費 PDF 為 2018 年版，現行 2023 年版（DOI 10.1002/jum.16251）需訂閱。",
+      "last_verified": "2026-08-02"
+    },
+    {
+      "title": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
+      "url": "https://www.youtube.com/watch?v=rUhmKzcUjvM",
+      "source": "YouTube / Joseph Minardi",
+      "decision": "excluded",
+      "reason": "oEmbed 200、品質良好，但已被 CH0 的 ch0-u2 收錄，且屬掃描技術而非解剖判讀，本章不重複。"
+    },
+    {
+      "title": "#Sonoquickies - Neck Anatomy At The Level Of The Thyroid",
+      "url": "https://www.youtube.com/watch?v=0nzZT46Dmw0",
+      "source": "YouTube / Sonographic Tendencies",
+      "decision": "excluded",
+      "reason": "oEmbed 未逐一驗，內容為 2 分鐘的單一橫切標註，深度不足以支撐進階單元；同性質內容已由 KeepMyThyroid 的中央頸區系列涵蓋。"
+    },
+    {
+      "title": "Sonoquickie -Thyroglossal Duct Cyst",
+      "url": "https://www.youtube.com/watch?v=lcj_NQO7NPw",
+      "source": "YouTube / Sonographic Tendencies",
+      "decision": "excluded",
+      "reason": "oEmbed 200，內容正確但與 Radquarters 的甲狀舌管囊腫影片主題完全重疊且更短。為避免同一單元內主題重複而排除。"
+    },
+    {
+      "title": "Ultrasound Case 10 - Ectopic Thyroid (Web case)",
+      "url": "https://www.youtube.com/watch?v=PLyia1L4tcU",
+      "source": "YouTube / Dr.Ismail Sayed Ismail",
+      "decision": "excluded",
+      "reason": "oEmbed 200，內容可用，但與已收錄的異位甲狀腺病例主題重複。列為備案。"
+    },
+    {
+      "title": "Thyroid1（ENT Imaging Lectures）",
+      "url": "https://www.youtube.com/watch?v=BVIFWzCNDjw",
+      "source": "YouTube / Barton Branstetter（University of Pittsburgh）",
+      "decision": "excluded",
+      "reason": "oEmbed 200、作者為可查證的頭頸影像教授。排除原因有二：（一）無法取得影片說明或章節，無從確認是否涵蓋本單元的變異主題，不願憑推測填 why；（二）該系列為投影片講授型態，動態超音波掃描比重不明，有觸犯契約「只有投影片沒有動態掃描」的風險。"
+    },
+    {
+      "title": "LOBO PIRAMIDAL - VARIANTE ANATÔMICA TIREOIDIANA QUE VOCÊ PRECISA SABER",
+      "url": "https://www.youtube.com/watch?v=12A8ss5lE0g",
+      "source": "YouTube / Você Radiologista com João Paulo Queiroz",
+      "decision": "excluded",
+      "reason": "oEmbed 200 顯示原標題為葡萄牙文（yt-dlp 搜尋結果顯示的是自動翻譯標題）。依搜尋語言規則，葡萄牙文資源不在允許清單內，且無法確認是否有英文字幕。錐狀葉改以 J Endocrinol Invest 2022 的實證文獻涵蓋。"
+    },
+    {
+      "title": "Видеозапись УЗИ - Пирамидальная доля левой доли",
+      "url": "https://www.youtube.com/watch?v=bE_AHuLajDU",
+      "source": "YouTube / MedPrinting",
+      "decision": "excluded",
+      "reason": "oEmbed 200 顯示原標題為俄文。語言不在允許清單內，且頻道未公開作者或機構，無法確認來源。"
+    },
+    {
+      "title": "PREOPERATIVE ULTRASOUND CERVICAL MAPPING IN THYROID CANCER WHY, HOW | Dr. Bui Van Giang",
+      "url": "https://www.youtube.com/watch?v=fqpoeLdVFLY",
+      "source": "YouTube / Cận lâm sàng",
+      "decision": "excluded",
+      "reason": "oEmbed 200，主題（術前頸部超音波 mapping）與 ch2-u3 高度相符，但頻道為越南文、無法確認講授語言與是否有字幕（yt-dlp --list-subs 在本次工作階段被 YouTube 擋下）。改用 MSBIRIA 的英文教學。若日後能確認為英語授課，值得補回。"
+    },
+    {
+      "title": "USG NECK ANATOMY",
+      "url": "https://www.youtube.com/watch?v=fsIN7wChnb8",
+      "source": "YouTube / MSBIRIA -MCR Academics",
+      "decision": "excluded",
+      "reason": "oEmbed 200、40 分鐘頸部超音波解剖，品質可用。因同一頻道的淋巴結課程已收入 ch2-u3，且 ch2-u1 已有主課與四個 drill，避免單一頻道過度集中而未收。列為 ch2-u1 的第一備案。"
+    },
+    {
+      "title": "Ultrasound of the Neck: There's More to See Than Thyroid Nodules（及同頻道其他長講座）",
+      "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
+      "source": "YouTube / Radiology Video - radiology made esay",
+      "decision": "excluded",
+      "reason": "該頻道大量轉載他人完整講座，未見原始講者授權聲明，符合契約「未經授權重新上傳」與「無法確認來源」的排除條件。同頻道的 Sonographic Evaluation of Diffuse Thyroid Disease、Thyroid Nodules 系列一併排除。"
+    },
+    {
+      "title": "Execution of Thyroid Ultrasound / Basic settings - ETA Ultrasound Course",
+      "url": "https://www.youtube.com/watch?v=RW_YJOwNrbU",
+      "source": "YouTube / Tamas Solymosi（ETA Ultrasound Course）",
+      "decision": "excluded",
+      "reason": "oEmbed 200、品質為 Tier A，但主題屬掃描執行與機器設定，是 CH1 的範圍而非 CH2 的解剖與變異。留給 CH1 使用以免跨章重複。"
+    },
+    {
+      "title": "(ENG)How to Diagnose Better Using Ultrasound Artifacts",
+      "url": "https://www.youtube.com/watch?v=k-Nbu285Y7Y",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "excluded",
+      "reason": "oEmbed 200、主題貼合 ch2-u4。未收的原因是 ch2-u4 三個 drill 已有兩個來自同一頻道，再加第三個會讓單元完全依賴單一來源。列為第一備案。"
+    },
+    {
+      "title": "(ENG)A one-minute method for differentiating a neck mass from the cervical spine on US",
+      "url": "https://www.youtube.com/watch?v=Waz0glS7GyE",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "excluded",
+      "reason": "oEmbed 200、內容切題（頸椎橫突假性腫塊）。同上，為避免 ch2-u4 過度集中於單一頻道而未收；其核心觀念已由同單元的 Pitfalls of Neck Ultrasonography 涵蓋。"
+    },
+    {
+      "title": "Pharyngoesophageal diverticulum mimicking thyroid nodules: Some interesting ultrasonographic signs",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1030014/full",
+      "source": "Frontiers in Oncology 2023;13:1030014",
+      "decision": "excluded",
+      "reason": "curl 200、citation meta 已確認 DOI 10.3389/fonc.2023.1030014 與作者。內容優良但與 ch2-u4 已收錄的食道憩室影片主題重複，且該單元 drill 數已滿額（3 個）。列為 ch2-u4 的第一備案文獻。"
+    },
+    {
+      "title": "Sonographic Diagnosis of Cervical Lymph Node Metastasis in Patients with Thyroid Cancer and Comparison of European and Korean Guidelines",
+      "url": "https://kjronline.org/DOIx.php?id=10.3348/kjr.2022.0358",
+      "source": "Korean Journal of Radiology 2022;23(11):1102-1111",
+      "decision": "excluded",
+      "reason": "curl 200、WebFetch 實際讀取確認為開放取用。但實際內容是淋巴結良惡性風險分層的指引比較，僅提及 level I–VI 作為位置分類，沒有討論分區的超音波界標，與 ch2-u3 的教學目標不符。主題屬 CH7，建議轉交該章。"
+    },
+    {
+      "title": "Review of ultrasonography of malignant neck nodes: greyscale, Doppler, contrast enhancement and elastography",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894696/",
+      "source": "PubMed Central（Cancer Imaging）",
+      "decision": "excluded",
+      "reason": "curl 200。主題為惡性淋巴結的影像特徵而非分區定位，屬 CH7 範圍，本章不收。"
+    },
+    {
+      "title": "Sonographic localisation of neck lymph nodes using surgical neck level classifications",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/sono.12443",
+      "source": "Sonography（Wiley）2024",
+      "decision": "excluded",
+      "reason": "主題與 ch2-u3 完全吻合（以舌骨、環狀軟骨、甲狀軟骨、氣管軟骨環等超音波界標定位手術分區），但 Wiley 對 curl 與 WebFetch 皆回 403，無法實際打開頁面確認全文可讀性與內容。依契約「不信任任何上游宣稱」，寧可不收。若日後能取得可驗證的開放全文，這是 ch2-u3 最值得補上的一篇。"
+    },
+    {
+      "title": "Cervical lymph node levels / Pyramidal lobe / Tubercle of Zuckerkandl（條目）",
+      "url": "https://radiopaedia.org/articles/cervical-lymph-node-levels",
+      "source": "Radiopaedia",
+      "decision": "excluded",
+      "reason": "curl 回 406、WebFetch 回 403，Radiopaedia 對自動化存取有防護，本次無法實際打開任何一個條目確認內容。依鐵則不得憑印象填入，因此整站條目一律不收。三個主題改以 AJNR、Journal of Endocrinological Investigation 與 Medical Ultrasonography 的原始文獻取代。"
+    },
+    {
+      "title": "Imaging-Based Nodal Classification for Evaluation of Neck Metastatic Adenopathy",
+      "url": "https://ajronline.org/doi/10.2214/ajr.174.3.1740837",
+      "source": "AJR 2000（Som 等）",
+      "decision": "excluded",
+      "reason": "curl 403，無法實際開啟確認可讀性。這是影像式頸部分區的經典原始文獻，但無法驗證即不收錄。"
+    },
+    {
+      "title": "Preoperative Visualized Ultrasound Assessment of the Recurrent Laryngeal Nerve in Thyroid Cancer Surgery",
+      "url": "https://www.dovepress.com/preoperative-visualized-ultrasound-assessment-of-the-recurrent-larynge-peer-reviewed-fulltext-article-CMAR",
+      "source": "Cancer Management and Research 2021;13:7057",
+      "decision": "excluded",
+      "reason": "curl 200、citation meta 已確認 DOI 10.2147/CMAR.S330114。與已收錄的 Frontiers in Endocrinology RLN 研究主題重疊，且該篇有術中對照的直接驗證設計更適合教學。列為 ch2-u1 備案。"
+    },
+    {
+      "title": "Anatomy, Head and Neck, Thyroid（StatPearls）",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470452/",
+      "source": "StatPearls / NCBI Bookshelf",
+      "decision": "excluded",
+      "reason": "curl 200、可完整閱讀。內容正確但屬教科書層級的基礎解剖，對「已經知道基本解剖」的受眾沒有增益，違反本課程不得把初學內容填入進階章節的規定。"
+    },
+    {
+      "title": "Zuckerkandl tubercle in Thyroid Surgery / Surgical Anatomy of Recurrent laryngeal nerve 等外科解剖講座",
+      "url": "https://www.youtube.com/watch?v=S6cpjfDVWUY",
+      "source": "YouTube（多個外科教學頻道）",
+      "decision": "excluded",
+      "reason": "此類影片為手術視野或投影片解剖講授，沒有超音波影像，無法訓練本章要求的影像判讀能力。Zuckerkandl tubercle 的影像面改以 AJNR 論文涵蓋。"
+    },
+    {
+      "title": "Basic Thyroid U/S Protocol / Thyroid - Ultrasound Scanning Technique / Cervical Ultrasound Anatomy",
+      "url": "https://www.youtube.com/watch?v=MJnQemGehH8",
+      "source": "YouTube / Clarius Mobile Health",
+      "decision": "excluded",
+      "reason": "設備廠商內容，且屬入門掃描示範（2–3 分鐘），對本課程受眾層級過低。並非因廠商身分排除，而是內容深度不足。"
+    },
+    {
+      "title": "Thyroid Ultrasound Normal Vs Abnormal Image Appearances Comparison 等系列",
+      "url": "https://www.youtube.com/watch?v=IaQiwochRd4",
+      "source": "YouTube / Dr. Sam's Imaging Library",
+      "decision": "excluded",
+      "reason": "觀看數高但內容為初學者導向的正常／異常對照，沒有處理變異、界標或假性病灶，不符合本章的進階定位。"
+    },
+    {
+      "title": "Ultrasound of the Normal Esophagus in the Neck / Thyroglossal Duct Cyst 系列",
+      "url": "https://www.youtube.com/watch?v=VBQcYaFL7eI",
+      "source": "YouTube / Ultrasound videos",
+      "decision": "excluded",
+      "reason": "頻道未公開作者、機構或任何署名，符合契約「無法確認作者或來源」的排除條件。"
+    },
+    {
+      "title": "Validating the Method. Transcutaneous Laryngeal Ultrasonography",
+      "url": "https://www.youtube.com/watch?v=HHYuuNHyy4o",
+      "source": "YouTube / Gdański Uniwersytet Medyczny（Medical University of Gdańsk）",
+      "decision": "included",
+      "unit": "ch2-u1",
+      "role": "drill",
+      "reason": "影音改版：取代 Front Endocrinol 2024;15:1356935（術中 RLN echotexture）。改以經皮喉部超音波示範「超音波在 RLN 上真正能交付什麼」——看不到神經、但看得到聲帶活動。4:58、oEmbed 200，發布單位為可查證的大學醫學中心。"
+    },
+    {
+      "title": "Thyroid Ultrasound for the Sonographer",
+      "url": "https://www.youtube.com/watch?v=lstPzVhLDXI",
+      "source": "YouTube / Sononerds",
+      "decision": "included",
+      "unit": "ch2-u2",
+      "role": "lesson",
+      "reason": "影音改版：取代 AJNR 2012;33(6):1134-1138（Zuckerkandl tubercle）。以 Zuckerkandl 為關鍵字的全域搜尋（20 筆）結果全部是克林姆畫作、Zuckerkandl 器官 paraganglioma 與外科解剖動畫，YouTube 上不存在 Zuckerkandl tubercle 的動態超音波教材；改以 22:11 的正常甲狀腺超音波表現作為變異判讀的底圖，明列 Tier C 並在 why／note 說明降級理由。oEmbed 200。"
+    },
+    {
+      "title": "LOBO PIRAMIDAL - VARIANTE ANATÔMICA TIREOIDIANA QUE VOCÊ PRECISA SABER",
+      "url": "https://www.youtube.com/watch?v=12A8ss5lE0g",
+      "source": "YouTube / Você Radiologista com João Paulo Queiroz",
+      "decision": "included",
+      "unit": "ch2-u2",
+      "role": "drill",
+      "reason": "影音改版：取代 J Endocrinol Invest 2022;45(6):1201-1208（錐狀葉偵測率研究）。2:41、葡萄牙語、作者為可查證的放射科醫師；搜尋中沒有英語的錐狀葉超音波專題影片。Tier C，所有盛行率數字一律引用實證層文獻而非本片。oEmbed 200。"
+    },
+    {
+      "title": "(ENG)Neck anatomy2_center",
+      "url": "https://www.youtube.com/watch?v=QKcJ5ZSPkCM",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u3",
+      "role": "drill",
+      "reason": "影音改版：取代 Med Ultrason 2013;15(1):29-34（Lenghel 界標圖解）。同系列第二集，處理中線與中央區界標（同頻道韓語對照版標題列出舌下腺、甲狀軟骨、環狀軟骨），正是分區劃線所需。10:26、oEmbed 200。"
+    },
+    {
+      "title": "(ENG)How to Diagnose Better Using Ultrasound Artifacts",
+      "url": "https://www.youtube.com/watch?v=k-Nbu285Y7Y",
+      "source": "YouTube / KeepMyThyroid",
+      "decision": "included",
+      "unit": "ch2-u4",
+      "role": "lesson",
+      "reason": "影音改版：取代 Korean J Radiol 2014;15(2):267-276（Pitfalls and Techniques）。主題與單元標題一對一對應、為動態影像、作者身分可查（Kwak TI-RADS 第一作者）。5:27、觀看數 27，已在 why／note 誠實標明深度不及原文獻、覆蓋面改由三個 drill 承擔。oEmbed 200。"
+    },
+    {
+      "title": "Thyroid variation & TIRADS",
+      "url": "https://www.youtube.com/watch?v=ho7zS1K_o8k",
+      "source": "YouTube / Iraqi board of diagnostic radiology",
+      "decision": "excluded",
+      "reason": "標題最貼近 ch2-u2 所需（甲狀腺變異），36:32、發布者為放射科專科訓練機構；但 2026-08-02 YouTube 對本機的影片頁與 API 一律回 429／bot 驗證，oEmbed 只能確認存在與標題，無法確認其是否含動態超音波與涵蓋哪些變異。不憑推測作為主課。"
+    },
+    {
+      "title": "Anatomical variants of the thyroid gland",
+      "url": "https://www.youtube.com/watch?v=VMwvtQ7IP40",
+      "source": "YouTube / Radiology interesting",
+      "decision": "excluded",
+      "reason": "主題對題但頻道未公開作者身分與機構，符合「無法確認作者或來源」的排除條款。"
+    },
+    {
+      "title": "Ultrasound Video - Left Pyramidal Lobe",
+      "url": "https://www.youtube.com/watch?v=bE_AHuLajDU",
+      "source": "YouTube / MedPrinting",
+      "decision": "excluded",
+      "reason": "51 秒的錐狀葉影像片段，俄語、無解說、發布者身分不明；影像價值不足以支撐一個 drill。"
+    },
+    {
+      "title": "How to do Vocal Cord Ultrasound",
+      "url": "https://www.youtube.com/watch?v=MNqdjL5TFlI",
+      "source": "YouTube / Gulfcoast Ultrasound Institute",
+      "decision": "excluded",
+      "reason": "1:52 的聲帶超音波示範，品質可用，但同機構影片已在 ch2-u4 使用（anisotropy），且大學來源的 Gdańsk 版本含方法學驗證，優先取後者。"
+    },
+    {
+      "title": "American Association of Endocrine Surgeons 2014 Laryngeal Ultrasound",
+      "url": "https://www.youtube.com/watch?v=Qg4UGjxsrSM",
+      "source": "YouTube / Dr. W.（個人帳號）",
+      "decision": "excluded",
+      "reason": "疑為學會會議內容由個人帳號轉貼，授權狀態不明，符合「未經授權重新上傳」的排除考量。"
+    }
+  ]
 }

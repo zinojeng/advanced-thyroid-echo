@@ -233,7 +233,7 @@ take-home message。格式定義見 `docs/CASE-FORMAT.md`。
 | 12–14 章 | **14 章** | 取上限，因為副甲狀腺與品保各需獨立章節 |
 | 50–70 個單元 | **63 個單元** | 平均每章 4.5 個 |
 | 60–100 支核心課程影音 | **63 個核心教材欄位**（每單元 1 個） | 取下限附近：寧可每個單元一個高品質核心，不要湊數 |
-| 100–180 支病例或短片段資源 | **196 個資源欄位** | 略高於上限，因為納入非影片的指引與圖譜資源 |
+| 100–180 支病例或短片段資源 | **196 個資源欄位** | 略高於上限。2026-08-02 改版後全部為影片 |
 | 80–150 個結構化病例 | 見 `KNOWN-GAPS.md` | **未達標**，原因誠實記錄 |
 | 30–50 個介入或掃描技術示範 | CH1 + CH5 合計 34 個資源欄位 | 達標下緣 |
 | 100 篇以上經查核文獻 | 見 `course/data/*-evidence-*.json` 與 `GUIDELINE-MATRIX.md` | 實際數字見交付報告 |
@@ -272,13 +272,13 @@ take-home message。格式定義見 `docs/CASE-FORMAT.md`。
 | gym-course 概念 | 本課程對應 |
 |---|---|
 | 章節 → 單元 → 動作 | 章節 → 單元 → 資源 |
-| `kinds`：檢測／放鬆／啟動／訓練 | `kinds`：病例／操作示範／影像圖譜／指引原文／專題講座 |
+| `kinds`：檢測／放鬆／啟動／訓練 | `kinds`：病例影片／操作示範／影像判讀教學／專題講座 |
 | `tight` 緊繃肌群 | `tight` 最容易誤判的地方 |
 | `weak` 無力肌群 | `weak` 必須練成的判讀能力 |
 | `taxonomy/muscles.py` 肌群分面 | `taxonomy/lexicon.py` 影像特徵／疾病／分區／系統分面 |
 | `taxonomy/drills.py` 動作分類 | `taxonomy/resources.py` 資源分類（讓文獻掛在類別上） |
 | 實證分級 4 級 | 實證分級 7 級（加入 `guideline_supported`、`expert_consensus`、`educational_demo_only`） |
-| 只支援 YouTube | 擴充為 7 種 provider，見 `README.md` 的「框架適配」一節 |
+| 只支援 YouTube | 擴充為多 provider 並加上「資源欄位必須是影音」的強制規則（`audit.requireVideo`），見 `README.md` 的「框架適配」一節 |
 
 ---
 

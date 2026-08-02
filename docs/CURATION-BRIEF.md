@@ -5,6 +5,28 @@
 
 ---
 
+## 這是一門**影音課程**
+
+**每一個資源欄位都必須是看得到的影片。** 期刊原文、指引 PDF、病例圖譜網頁
+**不再放進資源欄位**——它們的位置在實證層（`drill-evidence-*.json` /
+`oe-*.json` 的 `citations`）與 `GUIDELINE-MATRIX.md`。
+
+可接受的來源：
+
+| 來源 | provider | 說明 |
+|---|---|---|
+| YouTube | `youtube` | 最主要。機構頻道與個人頻道都可以 |
+| Vimeo | `vimeo` | 學會與大學常用 |
+| 學會自架播放器 | `society` | 需 `source_type: video` 或 `webinar` |
+| 醫院／大學教學站的影片頁 | `hospital` | 同上 |
+| 其他影音平台、廠商教育頻道 | `external` | 同上，廠商內容必填 `coi` |
+
+`source_type` **只能是 `video` 或 `webinar`**。填 `article` / `guideline` /
+`atlas` / `case` 會被 `make audit` 判為錯誤。
+
+**個人頻道（private / individual channel）是可以的**——只要作者身分可確認、
+影像品質足夠、內容正確。不必堅持只收機構官方頻道。
+
 ## 鐵則
 
 1. **策展不是生成。** YouTube video ID 一律取自 `yt-dlp` 實際搜尋結果；外部網址一律取自
@@ -64,7 +86,7 @@
       "target": "教學重點：這個資源要學員看出什麼",
       "dose": "建議怎麼用（例如「先自己分級再看解答」或「重點在 04:10–09:30」）",
       "title": "…", "channel": "…", "url": "https://…", "duration": "12:03",
-      "tier": "B", "source_type": "case", "provider": "case_library",
+      "tier": "B", "source_type": "video", "provider": "youtube",
       "access": "open", "license": "…", "last_verified": "2026-08-02",
       "timestamps": [{"at": "04:10", "note": "微鈣化與後方聲影的對照"}]
     }]
@@ -77,15 +99,15 @@
 | 欄位 | 規則 |
 |---|---|
 | `type` | 只能用 `scan` / `anatomy` / `disease` / `lexicon` / `procedure` / `case` / `quality` / `assessment` |
-| `kind` | 只能用 `case` / `procedure` / `atlas` / `guideline` / `lecture` |
+| `kind` | 只能用 `case`（病例影片）／`procedure`（操作示範）／`atlas`（影像判讀教學）／`lecture`（專題講座）。**`guideline` 已移除** |
 | `tier` | `A` 核心教材 · `B` 病例補充 · `C` 技術示範。定義見下 |
-| `provider` | `youtube` / `vimeo` / `society` / `journal` / `hospital` / `case_library` / `external` |
-| `source_type` | `video` / `webinar` / `case` / `atlas` / `guideline` / `article` / `quiz` |
+| `provider` | `youtube` / `vimeo` / `society` / `hospital` / `external`（**`journal`、`case_library` 已不適用**） |
+| `source_type` | **只能是 `video` 或 `webinar`** |
 | `access` | `open` / `registration` / `subscription` / `institutional` |
 | `license` | 一句話寫清楚版權狀態。**不確定就寫「授權狀況未確認，僅連結不重製」** |
 | `last_verified` | `YYYY-MM-DD`，你實際打開連結那天 |
 | `coi` | 選填。廠商內容、講者與廠商有關係一定要寫 |
-| `duration` | `分:秒` 或 `時:分:秒`。非影片資源（指引 PDF、圖譜頁）省略 |
+| `duration` | `分:秒` 或 `時:分:秒`。**每個欄位都是影片，所以一律必填** |
 
 **非 YouTube 來源缺少 `source_type` / `access` / `license` / `last_verified` 任何一個，
 `make audit` 會直接報錯。**
@@ -135,7 +157,8 @@ Thyroid／JCEM、Radiopaedia 等專業影像病例庫、學術會議錄影與 we
 
 **第三級**：YouTube、Vimeo、專業醫療網站內嵌影片、醫院教學平台、設備廠商進階教育內容。
 
-**每一章至少要有 2 個非 YouTube 的第一或第二級來源。** 這門課不是 YouTube 播放清單。
+**優先找機構與學會的影音**，但個人頻道只要品質夠就可以收。
+非 YouTube 的影音平台（Vimeo、學會自架播放器）同樣歡迎。
 
 ---
 

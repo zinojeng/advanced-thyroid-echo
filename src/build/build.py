@@ -246,11 +246,18 @@ def main() -> int:
                 # 非 YouTube 來源沒有 oEmbed，長度一律用策展時填的
                 info = vmeta.get(video_id(url) or "")
                 if info and info.get("status") == "OK":
-                    v["duration"] = fmt_clock(info["seconds"])
+                    # seconds=0 是抓取失敗（YouTube 限流時會回部分中繼資料），
+                    # 不是真的零長度影片——這種時候保留策展時抄下來的長度，
+                    # 不要用 0:00 覆蓋掉，否則網站會顯示假的「0:00」並少算總時長
+                    if info.get("seconds"):
+                        v["duration"] = fmt_clock(info["seconds"])
+                        secs = info["seconds"]
+                        meta_hits[0] += 1
+                    else:
+                        secs = parse_duration(v.get("duration"))
+                        meta_miss.append(url)
                     v["channel"] = info["channel"]
                     v["views"] = info["views"]
-                    secs = info["seconds"]
-                    meta_hits[0] += 1
                 else:
                     secs = parse_duration(v.get("duration"))
                     meta_miss.append(url)

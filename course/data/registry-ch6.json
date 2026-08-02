@@ -25,12 +25,39 @@
   "web: \"metastases to the thyroid gland\" ultrasound imaging features review PMC secondary thyroid malignancy",
   "web: preoperative ultrasound detection multifocal bilateral papillary thyroid carcinoma sensitivity PMC",
   "web: ultrasound underestimates multifocality contralateral papillary thyroid carcinoma preoperative detection rate",
-  "web: \"Overview of the 2022 WHO Classification of Thyroid Neoplasms\" Endocrine Pathology PMC"
+  "web: \"Overview of the 2022 WHO Classification of Thyroid Neoplasms\" Endocrine Pathology PMC",
+  "yt-dlp ytsearch20: diffuse sclerosing variant papillary thyroid carcinoma",
+  "yt-dlp ytsearch20: diffuse sclerosing variant thyroid ultrasound snowstorm（零命中）",
+  "yt-dlp ytsearch20: thyroid snowstorm appearance microcalcifications ultrasound",
+  "yt-dlp ytsearch20: diffuse sclerosing variant papillary carcinoma ultrasound case report",
+  "yt-dlp ytsearch20: hobnail variant papillary thyroid carcinoma",
+  "yt-dlp ytsearch20: aggressive variants papillary thyroid carcinoma tall cell hobnail columnar lecture",
+  "yt-dlp ytsearch20: CASTLE intrathyroidal thymic carcinoma（零命中）",
+  "yt-dlp ytsearch20: cribriform morular thyroid carcinoma FAP（零命中）",
+  "yt-dlp ytsearch10: cribriform morular thyroid carcinoma",
+  "yt-dlp ytsearch20: medullary thyroid carcinoma ultrasound lecture",
+  "yt-dlp ytsearch20: anaplastic thyroid cancer tumor board",
+  "yt-dlp ytsearch20: thyroid lymphoma ultrasound lecture",
+  "yt-dlp ytsearch15: primary thyroid lymphoma ultrasound diagnosis",
+  "yt-dlp ytsearch15: metastasis to thyroid gland ultrasound case",
+  "yt-dlp ytsearch20: 2022 WHO classification thyroid neoplasms lecture",
+  "yt-dlp ytsearch20: thyroid cancer ultrasound pathology correlation",
+  "yt-dlp ytsearch20: follicular thyroid neoplasm ultrasound lecture",
+  "yt-dlp ytsearch20: thyroid multifocality contralateral occult carcinoma surgery extent（零命中）",
+  "yt-dlp ytsearch15: extent of surgery thyroid lobectomy total thyroidectomy multifocal papillary",
+  "yt-dlp ytsearch15: preoperative neck ultrasound mapping thyroid cancer surgeon",
+  "yt-dlp ytsearch15: thyroid cancer ultrasound staging before surgery webinar",
+  "yt-dlp ytsearch15: thyroid cancer subtypes pathology imaging correlation grand rounds",
+  "tavily（限定 youtube.com）: diffuse sclerosing variant papillary thyroid carcinoma ultrasound video",
+  "tavily（限定 youtube.com / vimeo.com）: intrathyroidal thymic carcinoma CASTLE OR cribriform-morular thyroid carcinoma lecture video",
+  "thyrosite.com：乳突癌 75 例、濾泡腺瘤、髓質癌、Secondary thyroid carcinomas 各案例頁逐一讀取臨床與超音波描述（latin-1 解碼）",
+  "Tamas Solymosi 頻道 3131 支影片標題全量比對關鍵字 scleros / hobnail / castle / thymic / cribriform / morular（全部零命中）"
  ],
  "verification": {
   "youtube": "每一支影片以 https://www.youtube.com/oembed?url=...&format=json 取回 200 並比對 author_name 與 title；ID 全部來自 yt-dlp 搜尋或頻道列表輸出，未自行拼湊。",
   "non_youtube": "每一個網址以 curl -sL 加瀏覽器 User-Agent 實際抓回 HTML，確認 HTTP 200、<title> 相符，並自頁面 meta 取回 citation_journal_title / citation_doi / citation_pmid 與 Creative Commons 授權字樣。",
-  "last_verified": "2026-08-02"
+  "last_verified": "2026-08-02",
+  "round2": "2026-08-02 影音改版：所有新收影片先以 yt-dlp ytsearch 取得 video ID（未自行拼湊），再以 https://www.youtube.com/oembed 取回 200 並比對 author_name 與 title；長度與觀看數取自 yt-dlp 搜尋輸出或 --print 的 duration_string。Tamas Solymosi 病例的臨床、細胞學與組織學內容另以 curl 實際抓取 thyrosite.com 對應病例頁確認。Will Kuenstner 的作者身分以 tavily 外部查證（MedStar Health 內分泌科、Georgetown 訓練、JCEM Case Reports 作者）。yt-dlp 單片 metadata 端點在作業後段被 YouTube 擋（Sign in to confirm you're not a bot），此後改以 oEmbed 與 ytsearch 輸出交叉驗證。"
  },
  "evaluated": [
   {
@@ -61,18 +88,18 @@
    "title": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma with histopathological correlation: a preliminary study",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10967076/",
    "source": "Orphanet Journal of Rare Diseases 2024（DOI 10.1186/s13023-023-02867-3，PMID 38532506）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u1",
-   "reason": "瀰漫硬化型的兩種超音波呈現（snowstorm 型與界線模糊結節型）並與病理逐項對照。CC BY 4.0，curl 200。",
+   "reason": "瀰漫硬化型的兩種超音波呈現（snowstorm 型與界線模糊結節型）並與病理逐項對照。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Sonographic appearances of hobnail papillary thyroid carcinoma: A case report of a rare tumour",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9058386/",
    "source": "Ultrasound: Journal of the British Medical Ultrasound Society 2021（DOI 10.1177/1742271X211038338，PMID 35509300）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u1",
-   "reason": "hobnail 變異型幾乎沒有 YouTube 教學影片；此病例報告呈現以囊性為主、可被誤判為良性的影像，正是本單元要打掉的捷徑。curl 200；頁面未標示 Creative Commons，license 誠實填為未確認。",
+   "reason": "hobnail 變異型幾乎沒有 YouTube 教學影片；此病例報告呈現以囊性為主、可被誤判為良性的影像，正是本單元要打掉的捷徑。curl 200；頁面未標示 Creative Commons，license 誠實填為未確認。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -87,9 +114,9 @@
    "title": "Sonographic Features Differentiating Follicular Thyroid Cancer from Follicular Adenoma–A Meta-Analysis",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7956257/",
    "source": "Cancers 2021（DOI 10.3390/cancers13050938，PMID 33668130）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u2",
-   "reason": "提供各特徵的 pooled 效應量，是「超音波分不出 FA 與 FTC」這句話的量化依據。CC BY 4.0，curl 200。",
+   "reason": "提供各特徵的 pooled 效應量，是「超音波分不出 FA 與 FTC」這句話的量化依據。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -112,9 +139,9 @@
    "title": "Ultrasound features of medullary thyroid cancer as predictors of biological behavior",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8033672/",
    "source": "Cancer Imaging 2021（DOI 10.1186/s40644-021-00402-w，PMID 33836831）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u3",
-   "reason": "把髓質癌分成「影像看起來惡性」與「影像不夠可疑」兩群並連到生物行為，正面回答本單元的核心落差。CC BY 4.0，curl 200。",
+   "reason": "把髓質癌分成「影像看起來惡性」與「影像不夠可疑」兩群並連到生物行為，正面回答本單元的核心落差。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -129,9 +156,9 @@
    "title": "The application value of modified thyroid imaging report and data system in diagnosing medullary thyroid carcinoma",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6601574/",
    "source": "Cancer Medicine 2019（DOI 10.1002/cam4.2217，PMID 31070290）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u3",
-   "reason": "量化現行以乳突癌為主體的 TI-RADS 在髓質癌上的診斷效能不足，並提出修正參數。CC BY 4.0，curl 200。",
+   "reason": "量化現行以乳突癌為主體的 TI-RADS 在髓質癌上的診斷效能不足，並提出修正參數。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -146,9 +173,9 @@
    "title": "Anaplastic Thyroid Cancer: Ultrasonographic Findings and the Role of Ultrasonography-Guided Fine Needle Aspiration Biopsy",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3809886/",
    "source": "Yonsei Medical Journal 2013（DOI 10.3349/ymj.2013.54.6.1400，PMID 24142644）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u4",
-   "reason": "病理確診的未分化癌系列，逐項列出超音波特徵比例，並討論細針穿刺在此類腫瘤的診斷侷限與取檢升級時機。CC BY-NC 3.0，curl 200。",
+   "reason": "病理確診的未分化癌系列，逐項列出超音波特徵比例，並討論細針穿刺在此類腫瘤的診斷侷限與取檢升級時機。CC BY-NC 3.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -171,45 +198,45 @@
    "title": "Sonographic features and ultrasonography-guided fine-needle aspiration of metastases to the thyroid gland",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4058967/",
    "source": "Ultrasonography（大韓超音波醫學會）2014（DOI 10.14366/usg.13014，PMID 24936494）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u4",
-   "reason": "第一級學會期刊；轉移灶的分布型態與特徵和原發癌的重疊程度，附導引穿刺角色討論。CC BY-NC 3.0，curl 200。",
+   "reason": "第一級學會期刊；轉移灶的分布型態與特徵和原發癌的重疊程度，附導引穿刺角色討論。CC BY-NC 3.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Comparison of ultrasound findings of papillary thyroid carcinoma subtypes based on the 2022 WHO classification of thyroid neoplasms",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11349574/",
    "source": "Frontiers in Endocrinology 2024（DOI 10.3389/fendo.2024.1434787，PMID 39205684）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u5",
-   "reason": "以 2022 WHO 第五版分類為病理端參照，逐一比較各乳突癌亞型的超音波表現，是本章 ultrasound–pathology correlation 的骨幹，也是「超音波不能指定亞型」的量化依據。CC BY 4.0，curl 200。",
+   "reason": "以 2022 WHO 第五版分類為病理端參照，逐一比較各乳突癌亞型的超音波表現，是本章 ultrasound–pathology correlation 的骨幹，也是「超音波不能指定亞型」的量化依據。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Navigating the rare: a case report of intrathyroidal thymic carcinoma",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12004328/",
    "source": "Gland Surgery 2025（DOI 10.21037/gs-2024-540，PMID 40256475）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u5",
-   "reason": "CASTLE 無任何合格 YouTube 教學影片，改以期刊病例報告補；含影像描述與 CD5 免疫組織化學。CC BY-NC-ND 4.0，curl 200。",
+   "reason": "CASTLE 無任何合格 YouTube 教學影片，改以期刊病例報告補；含影像描述與 CD5 免疫組織化學。CC BY-NC-ND 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
    "title": "A Case of Cribriform-Morular Thyroid Carcinoma Presenting Without Thyroid Nodule",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11025625/",
    "source": "JCEM Case Reports 2024（DOI 10.1210/jcemcr/luae062，PMID 38638335）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u5",
-   "reason": "cribriform-morular 型別在超音波上常不夠可疑，此例甚至無明顯結節，最能傳達「診斷線索來自 FAP 病史而非影像」。CC BY-NC-ND 4.0，curl 200。",
+   "reason": "cribriform-morular 型別在超音波上常不夠可疑，此例甚至無明顯結節，最能傳達「診斷線索來自 FAP 病史而非影像」。CC BY-NC-ND 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
    "title": "Risk Factors for Contralateral Occult Carcinoma in Patients With Unilateral Papillary Thyroid Carcinoma: A Retrospective Study and Meta-Analysis",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8310921/",
    "source": "Frontiers in Endocrinology 2021（DOI 10.3389/fendo.2021.675643，PMID 34322091）",
-   "decision": "included",
+   "decision": "superseded",
    "unit": "ch6-u5",
-   "reason": "multifocal／bilateral 的量化證據：術前判為單側者仍有可觀比例在病理發現對側隱匿癌。CC BY 4.0，curl 200。",
+   "reason": "multifocal／bilateral 的量化證據：術前判為單側者仍有可觀比例在病理發現對側隱匿癌。CC BY 4.0，curl 200。｜2026-08-02 影音改版：課程資源欄位改為只收影片，本篇移出資源層，保留在實證層 citations。",
    "last_verified": "2026-08-02"
   },
   {
@@ -254,13 +281,6 @@
    "source": "YouTube / THANC Foundation",
    "decision": "excluded",
    "reason": "oEmbed 200；病理學價值高，但整場為病理切片與投影片、無超音波影像，且 ch6-u3 配額已滿。"
-  },
-  {
-   "title": "Special Types of Thyroid Cancer with Dr. Virginia LiVolsi",
-   "url": "https://www.youtube.com/watch?v=LYf9QcUjCSw",
-   "source": "YouTube / THANC Foundation",
-   "decision": "excluded",
-   "reason": "oEmbed 200；LiVolsi 為甲狀腺病理權威，但內容為純病理演講、無超音波動態影像，不符「必須有實際掃描」的納入標準。列為 ch6-u5 的延伸閱讀備選。"
   },
   {
    "title": "Diagnostic performance of thyroid ultrasound in Hürthle cell carcinomas",
@@ -346,13 +366,185 @@
    "decision": "excluded",
    "unit": "ch6-u1/u2/u3/u4",
    "reason": "網站本身 curl 200、內容可信，且本章多支影片的完整病例（臨床、細胞學、組織學）都在其上；但為避免與同內容的 YouTube 影片重複佔用配額，改以各 drill 的 dose 欄位指引學員從影片說明連過去，不另列為獨立資源。"
+  },
+  {
+   "title": "Lymphocytic thyroiditis - videolecture",
+   "url": "https://www.youtube.com/watch?v=AkBp2-yuKqA",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u1",
+   "replaces": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma…（PMC10967076）",
+   "reason": "DSV 超音波影片在公開影音上不存在（見 searched 的四組查詢＋Solymosi 全頻道＋thyrosite 病例索引）。改以鑑別診斷的另一半——慢性淋巴球性甲狀腺炎的完整超音波型態——承載該判讀落差。31:17，Tier A，oEmbed 200，551 次觀看。"
+  },
+  {
+   "title": "Dr. Baloch Discusses the Features of the Hobnail Variant",
+   "url": "https://www.youtube.com/watch?v=YOOioJLUEt0",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u1",
+   "replaces": "Sonographic appearances of hobnail papillary thyroid carcinoma（PMC9058386）",
+   "reason": "hobnail 變異型無任何公開超音波影片。Zubair Baloch 的 3:22 病理定義短講直接支撐本章鐵則（亞型是細胞層級定義，影像不可及）。oEmbed 200，220 次觀看（低於 300 門檻，以作者權威性與內容一致性判定收錄）。"
+  },
+  {
+   "title": "Follicular adenoma - case 8",
+   "url": "https://www.youtube.com/watch?v=aKYaJjkazJM",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u2",
+   "replaces": "Sonographic Features Differentiating Follicular Thyroid Cancer from Follicular Adenoma – A Meta-Analysis（PMC7956257）",
+   "reason": "改以與同單元 Follicular carcinoma - case 11 配對的盲測病例承載「兩者影像分不出來」這個結論。thyrosite.com 病例頁已確認為病理確診的 microfollicular adenoma。1:22，oEmbed 200。"
+  },
+  {
+   "title": "Medullary Thyroid Carcinoma: A Surgeon’s Perspective with Dr. Lorenz (Part 1)",
+   "url": "https://www.youtube.com/watch?v=lJAnLJ4H-N4",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u3",
+   "replaces": "Ultrasound features of medullary thyroid cancer as predictors of biological behavior（PMC8033672，原 lesson）",
+   "reason": "Kerstin Lorenz 從外科決策端整合 calcitonin、超音波與基因型對分期與手術範圍的影響，正面處理「超音波不能指認 MTC、分級系統也不是為它調校」這個落差。27:02，Tier A，oEmbed 200，321 次觀看。"
+  },
+  {
+   "title": "Medullary carcinoma - case 16",
+   "url": "https://www.youtube.com/watch?v=UxG7FN1dhHo",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u3",
+   "replaces": "The application value of modified TI-RADS in diagnosing medullary thyroid carcinoma（PMC6601574）",
+   "reason": "thyrosite.com 病例頁明載：21 歲女性、雙側髓質癌、腫瘤內高回音點大於微鈣化且無後方聲影（類澱粉沉積）、合併頸部淋巴結轉移。正好把 echogenic foci 計分不適用於 MTC 這件事變成可實作的練習。1:44，oEmbed 200。"
+  },
+  {
+   "title": "Updates on the Management of Anaplastic Thyroid Cancer with Dr. Maria Cabanillas",
+   "url": "https://www.youtube.com/watch?v=FkK0_wL9Bcw",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u4",
+   "replaces": "Anaplastic Thyroid Cancer: Ultrasonographic Findings…（PMC3809886，原 lesson）",
+   "reason": "MD Anderson ATC 臨床試驗主持人，ThyCa 年會 Session 135。補上文獻做不到的處置節奏（取檢方式、分子檢測、治療啟動的時限）。29:28，Tier A，oEmbed 200，884 次觀看。"
+  },
+  {
+   "title": "Metastastis of a clear cell adenocancer of the kidney. Secondary thyroid cancers - case 1.",
+   "url": "https://www.youtube.com/watch?v=BSTFrMtyP9Q",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u4",
+   "replaces": "Sonographic features and US-guided FNA of metastases to the thyroid gland（PMC4058967）",
+   "reason": "thyrosite.com 病例頁確認：51 歲男性腎細胞癌轉移，細胞學一度往髓質癌方向走（calcitonin 免疫細胞化學弱陽性），最後靠 thyroglobulin 與病史翻案。腎為轉移到甲狀腺最常見來源。1:09，oEmbed 200。"
+  },
+  {
+   "title": "Case-based approach to Thyroid Cancer: Dr Abhishek Mahajan",
+   "url": "https://www.youtube.com/watch?v=PBYbawnuzJw",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u5",
+   "replaces": "Comparison of ultrasound findings of PTC subtypes based on the 2022 WHO classification（PMC11349574，原 lesson）",
+   "reason": "Tata Memorial 腫瘤放射科官方頻道；講者 Abhishek Mahajan 為甲狀腺癌影像建議與 CT-based ETE 分級系統作者（J Clin Med review、Front Oncol 2024）。影片說明載明以超音波在甲狀腺癌中的演變與實務判讀為主軸，符合本單元 ultrasound–pathology correlation 的需求。1:04:29，Tier A，oEmbed 200，1843 次觀看。"
+  },
+  {
+   "title": "Special Types of Thyroid Cancer with Dr. Virginia LiVolsi",
+   "url": "https://www.youtube.com/watch?v=LYf9QcUjCSw",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u5",
+   "replaces": "Navigating the rare: a case report of intrathyroidal thymic carcinoma（PMC12004328）",
+   "reason": "第一輪曾以「純病理演講、無超音波動態影像」排除；影音改版後本課程資源欄位只收影片，且本單元的教學重點正是「亞型定義落在病理端、影像不可及」，故改為收錄並在 target 中明講全片無超音波。CASTLE 專屬影片經 yt-dlp 與 tavily 限定網域搜尋確認不存在。1:01:07，Tier A，oEmbed 200，1914 次觀看。"
+  },
+  {
+   "title": "Cribriform-morular thyroid carcinoma: case report",
+   "url": "https://www.youtube.com/watch?v=H3jV-uxdFAU",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u5",
+   "replaces": "A Case of Cribriform-Morular Thyroid Carcinoma Presenting Without Thyroid Nodule（PMC11025625）",
+   "reason": "個人頻道，但作者身分經外部查證：William Kuenstner, MD，MedStar Health 內分泌科（Georgetown 訓練），即本欄位原引 JCEM Case Reports 個案報告的作者。內容與該篇文獻一致。4:26，oEmbed 200，89 次觀看（遠低於門檻，以作者身分與文獻對應性判定收錄）。"
+  },
+  {
+   "title": "Preoperative Imaging for Thyroid Cancer with Dr. James Wu",
+   "url": "https://www.youtube.com/watch?v=7zccu4izgTI",
+   "source": "YouTube",
+   "decision": "included",
+   "unit": "ch6-u5",
+   "replaces": "Risk Factors for Contralateral Occult Carcinoma…（PMC8310921）",
+   "reason": "以多發性／對側隱匿癌為主題的公開影片不存在（查詢零命中）。改以外科端術前影像講座的 36:31「Ultrasound and Other Imaging Methods to Inform Thyroid Cancer Surgery」承載「超音波沒看到不等於沒有」。52:57，Tier A，oEmbed 200，605 次觀看。與 ch7-u4 刻意共用（該處用 12:23／28:41 談 ETE 與術前 CT）。"
+  },
+  {
+   "title": "Understanding Diffuse Sclerosing Variant of Papillary Thyroid Cancer",
+   "url": "https://www.youtube.com/watch?v=zzfoHpqBF0E",
+   "source": "YouTube / Without a Ribbon Australia",
+   "decision": "excluded",
+   "reason": "2:00 病友團體衛教短片，無任何超音波影像，對 fellow 無教學價值（30 次觀看）。"
+  },
+  {
+   "title": "Case Presentation | DIFFUSE SCLEROSING VARIANT OF PAPILLARY THYROID | OSMECON 2019",
+   "url": "https://www.youtube.com/watch?v=GUVrms55mVo",
+   "source": "YouTube / OSMECON - Undergraduate Medical Conference",
+   "decision": "excluded",
+   "reason": "大學部研討會個案報告，影像品質與判讀正確性無法確認，受眾層級不符（本課程對象為 fellow 以上）。"
+  },
+  {
+   "title": "Histological Variants of Papillary Thyroid Cancer",
+   "url": "https://www.youtube.com/watch?v=nCz-N_9RzHo",
+   "source": "YouTube / Telemedicine And Digital Health（講者 Dr. PRK Bhargav）",
+   "decision": "excluded",
+   "reason": "講者身分可查，但頻道影片說明為關鍵字堆疊、無章節或內容摘要，無法確認是否實際涵蓋 DSV；改用其他來源。"
+  },
+  {
+   "title": "The 2022 WHO Classification of Thyroid by Ronald Ghossein",
+   "url": "https://www.youtube.com/watch?v=ThCXmePaY2I",
+   "source": "YouTube / Telemedicine and Digital Health",
+   "decision": "excluded",
+   "reason": "oEmbed 200、講者為 MSKCC 病理權威，但影片無任何說明文字，發布單位與授權關係無法確認；本單元改用 THANC 的 LiVolsi 場次。"
+  },
+  {
+   "title": "#ENTPATH What's New in Thyroid Gland 5th edition WHO",
+   "url": "https://www.youtube.com/watch?v=I7_96ULhaME",
+   "source": "YouTube / pathCast",
+   "decision": "excluded",
+   "reason": "oEmbed 200、品質佳（13,579 次觀看），但無法在不觀看全片的情況下確認是否涵蓋 CASTLE 與 cribriform-morular；不以推測填欄位。列為本章備選。"
+  },
+  {
+   "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+   "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200、主題貼切，但 ch6-u4 的 lesson 需涵蓋未分化癌的時限決策，且淋巴瘤已有病例影片；列為 ch6-u4 備選。"
+  },
+  {
+   "title": "AHNS Virtual Tumor Board: Thyroid: Good, Bad, Ugly",
+   "url": "https://www.youtube.com/watch?v=jydBlP-sDH8",
+   "source": "YouTube / American Head and Neck Society",
+   "decision": "excluded",
+   "reason": "oEmbed 200，但影片無說明文字、無章節，內容涵蓋範圍無法在不觀看全片下確認；291 次觀看。列為 ch6-u4 備選。"
+  },
+  {
+   "title": "Diagnostic Test Accuracy of Ultrasonography vs Computed Tomography with Dr. Alabousi",
+   "url": "https://www.youtube.com/watch?v=AtFVOy5mzro",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "已用於 ch7-u3（頸部淋巴結的 US vs CT），且主題為淋巴結而非多發性；不重複使用。"
+  },
+  {
+   "title": "Follicular adenoma - case 14",
+   "url": "https://www.youtube.com/watch?v=Rfq9ELbX4vg",
+   "source": "YouTube / Tamas Solymosi",
+   "decision": "excluded",
+   "reason": "內容合適（thyrosite 病例頁已確認為 microfollicular adenoma），但只有 25 秒，低於本課程 drill 長度下限 0:30；改用同系列 case 8（1:22）。"
+  },
+  {
+   "title": "Update on Management of Medullary Thyroid Cancer w/ Dr. Hu",
+   "url": "https://www.youtube.com/watch?v=Z3QCPJ3dYos",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200、品質佳，但章節顯示內容集中在轉移性 MTC 的全身性治療與分子路徑，與本單元的術前影像判讀落差不相符。列為備選。"
   }
  ],
  "notes": [
-  "本章刻意不宣稱超音波可單獨確定組織型別：五個單元的 tight 第一條都是這一原則的具體版本，五個單元的 lesson/drill 選材也都以「影像重疊」而非「特徵辨型」為主軸。",
-  "罕見型別（CASTLE、cribriform-morular、hobnail）確實查無合格 YouTube 教學影片。已用 provider: journal 的開放取用病例報告補齊，未為了配額塞不對題的影片。",
-  "非 YouTube 來源共 11 個（全部為 PMC 開放取用期刊全文，含大韓超音波醫學會期刊 Ultrasonography 一篇），超過每章至少 2 個的門檻。",
-  "全部 21 個資源的 URL 在本章內無重複（已用 Python 去重檢查）。",
-  "所有 Solymosi 病例影片僅含年齡與性別，無姓名、病歷號或生日等可辨識患者資料。"
+  "本章刻意不宣稱超音波可單獨確定組織型別：五個單元的 tight 第一條都是這一原則的具體版本，五個單元的 lesson/drill 選材也都以「影像重疊」而非「特徵辨型」為主軸。影音改版後新收的每一個欄位都在 target 或 why 中重申這個限制。",
+  "影音改版（2026-08-02）：本章原有 11 個非影音欄位（PMC 期刊全文），已全部換成經 oEmbed 驗證的 YouTube 影片，無留空。被換掉的 11 篇文獻不會消失，它們的位置在 drill-evidence-*.json / oe-*.json 的 citations。",
+  "罕見型別確實查無專屬影音：CASTLE／intrathyroidal thymic carcinoma 與 cribriform-morular carcinoma 的 yt-dlp 搜尋為零命中，hobnail 與 diffuse sclerosing variant 沒有任何超音波影片。這四個欄位改以「病理端定義」或「鑑別診斷的另一半」承載，並在各自的 note 欄位寫明查過哪些 query 與為什麼不合格。",
+  "有三支影片的觀看數低於 300 的品質門檻（YOOioJLUEt0 220、H3jV-uxdFAU 89、以及數支 Solymosi 病例）。收錄依據是作者身分可確認（Zubair Baloch、William Kuenstner、Tamas Solymosi）與內容可對照外部來源，而非觀看數。",
+  "跨章共用一支：7zccu4izgTI 同時用於 ch6-u5 與 ch7-u4，但取用段落與教學目的不同（本章 36:31 談手術範圍，ch7 用 12:23／28:41 談 ETE 與術前 CT）。",
+  "全部 21 個資源的 URL 在本章內無重複（已用 Python Counter 去重檢查）；單元數 5、drills 數 16 未變動。",
+  "所有 Solymosi 病例影片僅含年齡與性別，無姓名、病歷號或生日等可辨識患者資料；THANC／ThyCa／Tata Memorial 場次為公開會議錄影。",
+  "source_type 一併正規化：本章原有 7 個 YouTube 欄位標為 source_type: \"case\"，已依新規則改為 \"video\"（病例語意由 kind: \"case\" 承載）。"
  ]
 }
