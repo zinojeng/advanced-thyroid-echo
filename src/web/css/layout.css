@@ -365,33 +365,49 @@
    原本是 fixed + <details>，收合時免責聲明被截成一行、其餘內容整個藏起來——
    「課程整理｜童綜合醫院 新陳代謝科」在預設狀態下根本不會出現。
    改成正常文件流的頁尾：內容全開，捲到底就看得到，也不再永久佔用畫面高度。 */
+/* 頁尾：滿版靠左的多欄排列。
+   原本是 max-width: 80ch + margin: 0 auto——文字擠在中間一條，左右大片留白，
+   高度被拉得比需要的長。改成用滿寬度、欄位並排，同樣的內容佔更少的垂直空間。 */
 .AppFooter {
   border-top: 1px solid var(--borderColor-default);
   background-color: var(--bgColor-muted);
-  font-size: 12px;
-  line-height: 1.7;
+  font-size: 11.5px;
+  line-height: 1.6;
   color: var(--fgColor-muted);
 }
 
 .AppFooter__inner {
-  max-width: 80ch;
-  margin: 0 auto;
-  padding: var(--base-size-24) var(--base-size-16);
   display: grid;
-  gap: var(--base-size-8);
+  grid-template-columns: max-content minmax(0, 2fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: var(--base-size-8) var(--base-size-24);
+  padding: var(--base-size-12) var(--base-size-16);
 }
 
-/* 課程整理單位：頁尾裡唯一需要被認出來的一行 */
+/* 課程整理單位：頁尾裡唯一需要被認出來的一行，不換行 */
 .AppFooter__creator {
   font-weight: 600;
   color: var(--fgColor-default);
+  white-space: nowrap;
 }
 
 .AppFooter__colophon {
+  grid-column: 1 / -1;
   padding-top: var(--base-size-8);
   border-top: 1px solid var(--borderColor-muted);
+  color: var(--ink-6);
 }
 
+/* 窄螢幕欄位並排會擠成細長條，改回單欄堆疊 */
+@media (max-width: 900px) {
+  .AppFooter__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .AppFooter__creator {
+    white-space: normal;
+  }
+}
 
 /* --- Responsive --------------------------------------------------------- */
 

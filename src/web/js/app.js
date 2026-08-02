@@ -113,9 +113,12 @@ function applyChrome(data) {
       .replace("{units}", data.meta.units)
       .replace("{problems}", data.meta.problem_units),
   );
+  // footer 的三段文案都是課程設定檔裡自己寫的（不是使用者輸入），
+  // 並且刻意含 <strong> 標示重點——三段要走同一條路，
+  // 否則像 credits 那樣被 esc() 就會在畫面上印出 <strong> 字面。
   set(".AppFooter__disclaimer", c.footer?.disclaimer || "");
-  set(".AppFooter__creator", esc(c.footer?.creator || ""));
-  set(".AppFooter__credits", esc(c.footer?.credits || ""));
+  set(".AppFooter__creator", c.footer?.creator || "");
+  set(".AppFooter__credits", c.footer?.credits || "");
 }
 
 /* --- 瀏覽次數 -------------------------------------------------------------
