@@ -72,12 +72,12 @@ async function fetchAgg(video) {
   }
 }
 
-async function send(video, score, reason) {
+async function send(video, score, reason, comment) {
   try {
     const res = await fetch("/api/rate", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ video, score, reason, voter: voter() }),
+      body: JSON.stringify({ video, score, reason, comment, voter: voter() }),
     });
     if (!res.ok) return null;
     const data = await res.json();
@@ -153,6 +153,12 @@ function render(video, agg, state = {}) {
                  )
                  .join("")}
              </div>
+             <label class="Rate__commentWrap">
+               <span>${esc(CFG.commentPrompt || "")}</span>
+               <textarea class="Rate__comment" rows="2" maxlength="600"
+                         placeholder="${esc(CFG.commentPlaceholder || "")}"></textarea>
+             </label>
+             <p class="Rate__commentNote">${esc(CFG.commentNote || "")}</p>
            </div>`
         : ""
     }
@@ -201,7 +207,7 @@ export function init() {
         render(current, CACHE.get(current), { pending: score, askReason: true });
       } else {
         rememberMine(current, score);
-        const agg = await send(current, score, null);
+        const agg = await send(current, score, null, null);
         render(current, agg || CACHE.get(current), { mine: score, done: true });
       }
       return;
@@ -211,8 +217,10 @@ export function init() {
     if (reason && current) {
       const score = Number($("#rateBlock")?.dataset.pendingScore || 0);
       if (!score) return;
+      // 標籤說「哪一類問題」，文字說「到底哪裡不對」——後者才是換片時真正需要的
+      const text = $("#rateBlock .Rate__comment")?.value?.trim() || null;
       rememberMine(current, score);
-      const agg = await send(current, score, reason.dataset.reason);
+      const agg = await send(current, score, reason.dataset.reason, text);
       render(current, agg || CACHE.get(current), { mine: score, done: true });
     }
   });

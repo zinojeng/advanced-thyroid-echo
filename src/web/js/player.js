@@ -34,6 +34,7 @@ export function buildPlaylist(course) {
           views: les.views,
           url: les.url,
           why: les.why,
+          target: les.target,
           provider: les.provider,
           embeddable: les.embeddable,
           embed_url: les.embed_url,
@@ -216,6 +217,9 @@ function brief(item) {
   // 所以實際上每個項目只會出現其中一行。兩個都留著是因為 schema 允許同時有，
   // 不是因為現在有——不要據此宣稱「常駐兩層」。
   const rows = [
+    // target 是「這個資源要學員看出什麼」——288 個欄位全都填了，
+    // 但先前只存在資料裡沒顯示出來。它才是內容摘要；dose 講的是怎麼用。
+    item.target ? row(UI.targetLabel, item.target) : "",
     item.dose ? row(UI.doseLabel, item.dose) : "",
     item.why ? row(UI.whyLabel, item.why) : "",
   ].join("");

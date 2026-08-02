@@ -66,6 +66,9 @@ gaps: ## 列出誠實留空的欄位、需登入的來源與證據不足的主�
 ratings: ## 讀線上評價，印出建議換片的影片清單（低分且有具體原因）
 	$(PY) src/build/ratings.py
 
+feedback: ## 整理使用者回饋（含文字），可加 ARGS="--post" 開成 GitHub Issue 寄信通知
+	$(PY) src/build/feedback.py $(ARGS)
+
 serve: ## 本機預覽
 	@echo "→ http://localhost:$(PORT)"
 	@$(PY) -m http.server $(PORT) --directory $(DIST)

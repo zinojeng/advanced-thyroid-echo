@@ -221,6 +221,36 @@ make ratings
 低分但**沒有**原因標籤的只列在「待觀察」，不進必換清單——不足以決定換成什麼。
 門檻是平均 ≤ 2 且至少 3 票（`MIN_VOTES` 可調），避免單一使用者決定策展。
 
+### 使用者寫的文字怎麼到你手上
+
+點「差」或「內容有錯」時會多出一個**選填文字欄**。只有標籤的話，
+你知道某支片有問題卻不知道哪裡有問題——文字才是換片時真正需要的東西。
+
+**文字不會顯示在網站上。** 匿名文字公開顯示等於開一個沒人管的留言板，
+而這門課沒有帳號系統也沒有審核流程。它只走 `/api/feedback`，要帶
+`FEEDBACK_TOKEN` 才讀得到。
+
+```bash
+make feedback                    # 印出摘要（上次讀到哪之後的新回饋）
+make feedback ARGS="--since 7d"
+make feedback ARGS="--post"      # 開一則 GitHub Issue → GitHub 自動寄信通知你
+```
+
+`--post` 用 GitHub Issue 當送信管道，是為了**不再多接一個寄信服務、不再多存一組金鑰**：
+repo 已經開了 Issues，GitHub 本來就會把新 Issue 寄到維護者信箱，
+而且順便留下公開可討論的紀錄，其他人看得到也能回覆。
+
+刻意**不做「每則寄一封信」**——單則通知很快變成噪音，看幾天就開始忽略，
+忽略掉的通知等於沒有通知。
+
+設定（兩邊要同一個值）：
+
+```bash
+openssl rand -hex 24                                   # 產生
+echo 'FEEDBACK_TOKEN=<值>' >> .env                      # 本機
+npx wrangler pages secret put FEEDBACK_TOKEN --project-name thyroid-us
+```
+
 **這個評價機制的誠實說明**：voter 是瀏覽器端產生的隨機 token，存在 localStorage。
 這**不是身分驗證**——清掉瀏覽器資料就能再投一次。它擋的是誤觸與同一個人連按，
 不是有意灌票。要防灌票需要真正的登入，而這門課刻意不做帳號系統。

@@ -22,6 +22,7 @@ const BOT =
 
 const VIDEO_ID = /^[\w-]{11}$/;
 const MAX_REASON = 40;
+const MAX_COMMENT = 600;
 
 function json(body, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: NO_STORE });
@@ -32,7 +33,8 @@ async function one(db, video) {
   const agg = await db
     .prepare(
       `SELECT COUNT(*) AS n, AVG(score) AS avg,
-              SUM(score <= 2) AS low
+              SUM(score <= 2) AS low,
+              SUM(comment IS NOT NULL AND comment <> '') AS comments
          FROM ratings WHERE video = ?`,
     )
     .bind(video)
@@ -52,6 +54,8 @@ async function one(db, video) {
     n: agg?.n ?? 0,
     avg: agg?.n ? Math.round(agg.avg * 100) / 100 : null,
     low: agg?.low ?? 0,
+    // 有幾則文字回饋（內容不公開，只讓使用者知道有人寫過）
+    comments: agg?.comments ?? 0,
     reasons: (reasons?.results ?? []).map((r) => ({ reason: r.reason, n: r.n })),
   };
 }
@@ -107,6 +111,10 @@ export async function onRequestPost({ env, request }) {
   const score = Number(body.score);
   const voter = String(body.voter || "");
   const reason = body.reason ? String(body.reason).slice(0, MAX_REASON) : null;
+  // 自由文字：只有標籤的話，策展者知道有問題卻不知道問題在哪。
+  // 這段**不會**回傳給一般讀者（匿名文字公開顯示等於開一個沒人管的留言板），
+  // 只在 /api/feedback 帶對 token 時才讀得到。
+  const comment = body.comment ? String(body.comment).trim().slice(0, MAX_COMMENT) : null;
 
   if (!VIDEO_ID.test(video)) return json({ error: "bad-video" }, 400);
   if (!Number.isInteger(score) || score < 1 || score > 5) {
@@ -117,12 +125,13 @@ export async function onRequestPost({ env, request }) {
 
   try {
     await env.HITS.prepare(
-      `INSERT INTO ratings (video, voter, score, reason, ts)
-       VALUES (?, ?, ?, ?, unixepoch())
+      `INSERT INTO ratings (video, voter, score, reason, comment, ts)
+       VALUES (?, ?, ?, ?, ?, unixepoch())
        ON CONFLICT(video, voter) DO UPDATE SET
-         score = excluded.score, reason = excluded.reason, ts = excluded.ts`,
+         score = excluded.score, reason = excluded.reason,
+         comment = excluded.comment, ts = excluded.ts`,
     )
-      .bind(video, voter, score, reason)
+      .bind(video, voter, score, reason, comment)
       .run();
     return json(await one(env.HITS, video));
   } catch {

@@ -112,6 +112,7 @@ function applyChrome(data) {
       .replace("{problems}", data.meta.problem_units),
   );
   set(".AppFooter__disclaimer", c.footer?.disclaimer || "");
+  set(".AppFooter__creator", esc(c.footer?.creator || ""));
   set(".AppFooter__credits", esc(c.footer?.credits || ""));
 }
 

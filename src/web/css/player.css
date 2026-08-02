@@ -804,3 +804,31 @@ body[data-tab="player"] {
   font-size: 12px;
   font-weight: 600;
 }
+
+/* 選填文字回饋：標籤說「哪一類問題」，文字說「到底哪裡不對」 */
+.Rate__commentWrap {
+  display: block;
+  margin-top: var(--base-size-8);
+  font-size: 12px;
+  color: var(--fgColor-muted);
+}
+
+.Rate__comment {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--fgColor-default);
+  background: var(--bgColor-default);
+  border: 1px solid var(--borderColor-default);
+  border-radius: var(--borderRadius-medium);
+  resize: vertical;
+}
+
+.Rate__commentNote {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--fgColor-muted);
+}
