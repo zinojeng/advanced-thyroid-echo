@@ -305,25 +305,89 @@ function externalCard(item) {
  *  用 innerHeight 而不是 stage 的高度，是因為窄螢幕下 stage 的高度由內容決定，
  *  拿它回推影片高度會變成自己餵自己，ResizeObserver 每次都再長一點。 */
 const MIN_FRAME_H = 240;
-const FRAME_H_RATIO = 0.36;
+// 影片至少要拿走這麼多可用高度。原本是 0.36，實際用起來影片偏小——
+// 摘要是要讀的，但使用者是來看影像的，預設應該偏向影像。
+const FRAME_H_RATIO = 0.52;
+const MIN_INFO_H = 96; // 摘要至少留這麼多，不然拖到底會整塊看不見
+let manualFrameH = 0; // 使用者拖出來的影片高度（px）；0 = 自動
 
 /** 依實際可用高度算出影片寬度，讓它吃滿又不變形。
  *  純 CSS 同時給 max-width + max-height 會讓 aspect-ratio 失效，所以這裡用量的。 */
 export function fitFrame() {
   const stage = $(".Player__stage");
   const frame = $(".Player__frame");
-  const info = $("#playerInfo");
   if (!stage || !frame) return;
   // 分頁隱藏時 clientWidth/Height 是 0，算出來會把 --frame-w 寫成 0px。
-  // setTab 與 ResizeObserver 事後會補算，所以使用者看不到破圖，但別留這個中間狀態。
   if (!stage.clientWidth || !stage.clientHeight) return;
 
-  // 用 scrollHeight：資訊區要完整放得下，影片才拿剩下的空間
-  const infoH = info ? Math.max(info.offsetHeight, info.scrollHeight) : 0;
-  const floor = Math.max(MIN_FRAME_H, Math.round(innerHeight * FRAME_H_RATIO));
-  const avail = Math.max(stage.clientHeight - infoH - 12, floor);
-  const byHeight = avail * (16 / 9);
-  frame.style.setProperty("--frame-w", `${Math.floor(Math.min(stage.clientWidth, byHeight))}px`);
+  const gripH = $(".Player__vResizer")?.offsetHeight || 0;
+  const room = stage.clientHeight - gripH - 12;
+
+  // 影片高度是主變數：先決定它，剩下的交給摘要（摘要自己會捲）。
+  // 上限有兩個——欄寬換算回來的高度，以及要留給摘要的最小空間。
+  const capByWidth = Math.floor((stage.clientWidth * 9) / 16);
+  const wanted = manualFrameH || Math.max(MIN_FRAME_H, Math.round(room * FRAME_H_RATIO));
+  const h = Math.min(clampFrameH(wanted, room), capByWidth);
+
+  frame.style.setProperty("--frame-w", `${Math.floor((h * 16) / 9)}px`);
+}
+
+function clampFrameH(h, room) {
+  return Math.max(MIN_FRAME_H, Math.min(h, Math.max(MIN_FRAME_H, room - MIN_INFO_H)));
+}
+
+/** 讓使用者上下拖曳，決定影片與摘要各佔多少。雙擊還原成自動。
+ *  回傳目前高度供外部保存；傳 0 代表回到自動。 */
+export function initVResizer(initial, onChange) {
+  const stage = $(".Player__stage");
+  const grip = $("#playerVResizer");
+  const frame = $(".Player__frame");
+  if (!stage || !grip || !frame) return;
+
+  if (initial) manualFrameH = initial;
+
+  const apply = (h) => {
+    manualFrameH = h;
+    fitFrame();
+  };
+
+  grip.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    grip.setPointerCapture(e.pointerId);
+    grip.classList.add("is-dragging");
+    document.body.classList.add("is-resizing-v");
+
+    const move = (ev) => {
+      const top = frame.getBoundingClientRect().top;
+      apply(clampFrameH(ev.clientY - top, stage.clientHeight - grip.offsetHeight - 12));
+    };
+    const up = () => {
+      grip.classList.remove("is-dragging");
+      document.body.classList.remove("is-resizing-v");
+      grip.removeEventListener("pointermove", move);
+      grip.removeEventListener("pointerup", up);
+      onChange?.(manualFrameH);
+    };
+    grip.addEventListener("pointermove", move);
+    grip.addEventListener("pointerup", up);
+  });
+
+  // 雙擊還原：拖壞了要有退路，不然只能清 localStorage
+  grip.addEventListener("dblclick", () => {
+    apply(0);
+    onChange?.(0);
+  });
+
+  // 鍵盤也能調，上下鍵每次 24px
+  grip.addEventListener("keydown", (e) => {
+    const step = e.key === "ArrowUp" ? -24 : e.key === "ArrowDown" ? 24 : 0;
+    if (!step) return;
+    e.preventDefault();
+    const room = stage.clientHeight - grip.offsetHeight - 12;
+    const cur = manualFrameH || frame.getBoundingClientRect().height;
+    apply(clampFrameH(cur + step, room));
+    onChange?.(manualFrameH);
+  });
 }
 
 /** 視窗大小改變或資訊區內容變動時重算 */

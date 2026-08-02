@@ -72,10 +72,15 @@
 /* --- 影片資訊 ------------------------------------------------------------ */
 
 /* 資訊區永遠完整顯示、不捲動；空間不夠是影片讓步，不是資訊被切掉 */
+/* 摘要吃掉影片以外的剩餘高度，並且自己捲。
+   原本是 flex: 0 0 auto + overflow: visible——摘要長到 477px 時會把 812px 的
+   stage 撐爆 133px，底部的評價 chips 直接被切掉搆不到。 */
 .Player__info {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   margin-top: var(--base-size-12);
-  flex: 0 0 auto;
-  overflow: visible;
 }
 
 /* 收起播放清單，讓影片吃滿整個寬度 */
@@ -831,4 +836,46 @@ body[data-tab="player"] {
   margin-top: 4px;
   font-size: 11px;
   color: var(--fgColor-muted);
+}
+
+/* --- 影片與摘要之間的上下拖曳把手 ----------------------------------------
+ * 摘要區塊常駐之後，影片能拿多少高度就變成一個取捨——不同人的螢幕與偏好不同，
+ * 與其替他決定，不如給一個可以拖的分隔線。雙擊還原成自動計算。 */
+.Player__vResizer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  margin: 2px auto 0;
+  width: var(--frame-w, 100%);
+  max-width: 100%;
+  flex: 0 0 auto;
+  cursor: row-resize;
+  color: var(--ink-5);
+  border-radius: var(--borderRadius-small);
+  touch-action: none;
+}
+
+.Player__vResizer svg {
+  transform: rotate(90deg);
+  opacity: 0.6;
+}
+
+.Player__vResizer:hover,
+.Player__vResizer:focus-visible,
+.Player__vResizer.is-dragging {
+  background-color: var(--bgColor-neutral-muted);
+  color: var(--fgColor-default);
+}
+
+body.is-resizing-v {
+  cursor: row-resize;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  /* 手機版面是上下堆疊、整頁捲動，拖高度沒有意義 */
+  .Player__vResizer {
+    display: none;
+  }
 }

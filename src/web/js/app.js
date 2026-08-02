@@ -5,7 +5,8 @@ import {
 } from "./render.js";
 import { renderMusclePanel, syncMuscleChips, applyFilters as runFilters } from "./filters.js";
 import {
-  buildPlaylist, renderPlaylist, play, stop, fitFrame, watchFrame, initResizer, setLanguages,
+  buildPlaylist, renderPlaylist, play, stop, fitFrame, watchFrame, initResizer, initVResizer,
+  setLanguages,
 } from "./player.js";
 import { bindKeys, listen as ytListen } from "./keys.js";
 import * as discuss from "./discuss.js";
@@ -25,6 +26,7 @@ const STORE = {
   playing: "bc:playing",
   wide: "bc:wide",
   listW: "bc:listW",
+  frameH: "bc:frameH", // 使用者拖出來的影片高度；0 = 自動
 };
 
 /** playlist 的 url -> index，讓課程內容的影片連結能導向站內播放 */
@@ -645,6 +647,7 @@ async function init() {
   bindEvents();
   watchFrame();
   initResizer(load(STORE.listW, 0), (w) => save(STORE.listW, w));
+  initVResizer(load(STORE.frameH, 0), (h) => save(STORE.frameH, h));
   bindKeys({
     next: () => {
       if (state.tab !== "player") setTab("player");
