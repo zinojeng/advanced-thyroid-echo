@@ -23,7 +23,15 @@ og: ## 用 headless Chrome 重新產生社群預覽圖
 	@"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
 		--headless --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
 		--window-size=1200,630 --screenshot="$(PWD)/$(DIST)/og.png" "$(PWD)/src/web/og.html"
-	@magick $(DIST)/og.png -resize 1200x630 -strip $(DIST)/og.png
+	@# headless Chrome 以 2x 出圖，要縮回 og:image 宣告的 1200x630。
+	@# ImageMagick 不是每台機器都有，macOS 內建的 sips 可以頂替。
+	@if command -v magick >/dev/null 2>&1; then \
+		magick $(DIST)/og.png -resize 1200x630 -strip $(DIST)/og.png; \
+	elif command -v sips >/dev/null 2>&1; then \
+		sips -Z 1200 $(DIST)/og.png --out $(DIST)/og.png >/dev/null; \
+	else \
+		echo "⚠ 找不到 magick 或 sips，og.png 維持 2x 尺寸（社群平台仍可用，但與 og:image 宣告的尺寸不符）"; \
+	fi
 	@echo "→ $(DIST)/og.png"
 
 meta: ## 用 yt-dlp 補齊 video-meta.json（長度、觀看數、頻道）
