@@ -384,11 +384,32 @@
   padding: var(--base-size-12) var(--base-size-16);
 }
 
-/* 課程整理單位：頁尾裡唯一需要被認出來的一行，不換行 */
+/* 課程整理單位與聯絡方式：頁尾裡唯一需要被認出來的一欄 */
+.AppFooter__by {
+  display: grid;
+  gap: 2px;
+}
+
 .AppFooter__creator {
   font-weight: 600;
   color: var(--fgColor-default);
   white-space: nowrap;
+}
+
+.AppFooter__contact {
+  white-space: nowrap;
+}
+
+.AppFooter__contact a {
+  color: var(--fgColor-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--ink-5);
+  text-underline-offset: 0.18em;
+}
+
+.AppFooter__contact a:hover {
+  color: var(--fgColor-default);
+  text-decoration-color: var(--fgColor-default);
 }
 
 .AppFooter__colophon {
@@ -404,7 +425,8 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .AppFooter__creator {
+  .AppFooter__creator,
+  .AppFooter__contact {
     white-space: normal;
   }
 }

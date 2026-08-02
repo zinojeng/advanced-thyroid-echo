@@ -118,6 +118,7 @@ function applyChrome(data) {
   // 否則像 credits 那樣被 esc() 就會在畫面上印出 <strong> 字面。
   set(".AppFooter__disclaimer", c.footer?.disclaimer || "");
   set(".AppFooter__creator", c.footer?.creator || "");
+  set(".AppFooter__contact", c.footer?.contact || "");
   set(".AppFooter__credits", c.footer?.credits || "");
 }
 
