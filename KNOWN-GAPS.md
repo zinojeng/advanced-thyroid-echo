@@ -172,7 +172,21 @@ K-TIRADS (2021)，並另闢兩節處理系統間不一致與臨床選擇。
 這些連結本身是安全的（只連結、不重製），但若未來要引用其內容、截圖或做成教材，
 **必須先取得授權**。清單見附錄。
 
-### 5.5 3 支影片抓不到長度
+### 5.5 Gemini 內容查核標記的 15 支影片
+
+`make verify-content` 用 Gemini 直接看影片，在已查的 72 支裡標記了 15 支
+（完整清單見文末附錄）。兩類問題：
+
+- **課程宣稱有實機動態掃描，模型判定為投影片講座**——與 CH12 稽核抓到的是同一類錯誤
+- **片頭 10 秒內疑似劇透最終診斷，但資料沒設 `start`**
+
+**這是輔助訊號不是判決**：模型最常分不清「投影片上貼的靜態超音波截圖」與
+「實機動態掃描」，同一支重跑結果也可能不同。每一支都要人工開影片確認後，
+再決定換片、改寫描述或補 `start`。
+
+尚有 185 支未查（全量一輪約 US$8，預設有快取）。
+
+### 5.6 3 支影片抓不到長度
 
 `ch8-u1`、`ch8-u4`、`ch10-u3` 的 YouTube 中繼資料只回傳標題與觀看數，沒有長度。
 原因是本次改版在短時間內對 YouTube 發出約 500 次中繼資料請求後被限流，
@@ -183,7 +197,7 @@ yt-dlp 在限流下會回傳**部分**資料而不是直接失敗。
 這三支的長度目前是策展值而非 API 值，差異在 45 秒以內，`make audit` 會持續警告到重抓為止。
 限流解除後跑 `make meta` 即可補上。
 
-### 5.6 75 支觀看數低於 300 的影片
+### 5.7 75 支觀看數低於 300 的影片
 
 改成全影音之後這個數字從 20 支增加到 75 支。
 `make audit` 依門檻（300 次）發出警告。**這 75 支我們選擇保留**，理由是：
@@ -191,7 +205,7 @@ yt-dlp 在限流下會回傳**部分**資料而不是直接失敗。
 151 次觀看，不代表它比 50 萬觀看的一般衛教影片差，通常正好相反。
 這些資源的品質是靠來源機構與內容判斷的，不是靠數字。**但這代表它們未經廣泛同儕檢視。**
 
-### 5.7 1 支超過長度上限的資源
+### 5.8 1 支超過長度上限的資源
 
 `ch12-u2` 的 Advanced Online Papillon Course webinar 長 2:11:19，超過 1:30:00 的上限。
 保留理由：那是一整場進階課程，本身就是這個長度；課程頁面已標出建議觀看區間。
@@ -292,6 +306,28 @@ python3 src/build/gaps.py --json   # 機器可讀
 | CH7 | `ch7-u1` | 頸部淋巴結超音波：四參數逐項判讀 |
 | CH7 | `ch7-u1` | 逐項特徵的權重與它們的重疊區 |
 | CH7 | `ch7-u2` | 分區、術前 mapping 與甲狀腺床以外的頸部所見 |
+
+### Gemini 內容查核標記、待人工複驗的影片
+
+共 15 支。**這是 Gemini 的輔助訊號，不是判決**——模型最常見的錯誤是分不清「投影片上貼的靜態超音波截圖」與「實機動態掃描」。每一支都要人工開影片確認後再決定換片、改寫描述或補 `start`。
+
+| 影片 | 形式 | 模型標記的問題 |
+|---|---|---|
+| [김일봉 원장 동영상 초음파 증례토의(261)-달걀 껍질 형태의 변연 석회화를 동반한 우측 갑상선 결절(F/37)](https://www.youtube.com/watch?v=5dtwYcQqO0c) | mixed | 有大段商業推銷 |
+| [AlbertaSono knobology and image manipulation](https://www.youtube.com/watch?v=6xBKcg1arWo) | slide_lecture | 內容與課程宣稱的教學重點對不上：影片未提及 focus 調整，未示範 frequency 調整，且未強調或示範各參數的調整順序。 |
+| [Papillary carcinoma - case 8](https://www.youtube.com/watch?v=BV9coXs3Ds8) | slide_lecture | 內容與課程宣稱的教學重點對不上：影片僅展示結節影像特徵，未提及甲狀腺炎背景、側頸淋巴結轉移、鑑別診斷或病理結果。 |
+| [Yoda Kim Ultrasound School(1015) - Dr.배병석 초음파 증례 토의. 우측 갑상선의 변연 석회화 단열을 보이는 결절](https://www.youtube.com/watch?v=CHaMnXNKr_8) | mixed | 有大段商業推銷 |
+| [The IAC QI Tool: A Facility’s QI Solution](https://www.youtube.com/watch?v=LA1lFS7JXpM) | slide_lecture | 課程宣稱有超音波影像，模型看不到任何超音波畫面 |
+| [Molecular Testing for Bethesda III Thyroid Nodules with Dr. McManus](https://www.youtube.com/watch?v=R3RLMTVnuEU) | slide_lecture | 課程宣稱有超音波影像，模型看不到任何超音波畫面；有大段商業推銷 |
+| [Extrathyroidal extension - prerecorded short summary](https://www.youtube.com/watch?v=Tn2A-pKPlPc) | slide_lecture | 課程宣稱有實機／動態掃描，模型判定為 slide_lecture（無動態影像） |
+| [Medullary carcinoma - case 20](https://www.youtube.com/watch?v=UYtiSYlAoFA) | slide_lecture | 內容與課程宣稱的教學重點對不上：影片僅呈現影像特徵，未涵蓋臨床背景、鑑別診斷、後續處置及診斷關鍵點，且影像描述與宣稱有出入。 |
+| [Webinar on Discrete lesions and Teamwork](https://www.youtube.com/watch?v=bvHEG41bVTk) | ? | 查核失敗：HTTP 403：The caller does not have permission |
+| [Yoda Kim Ultrasound School(1451) - Dr.박상훈 증례. 우측 갑상선 후방음영 동반 석회화 병변 다발성 결절](https://www.youtube.com/watch?v=ktK-IWsSXpc) | slide_lecture | 有大段商業推銷 |
+| [조대 석회화,미세 석회화를 동반한 갑상선 유두암, 54세 여성](https://www.youtube.com/watch?v=oXfcU-DE2KY) | mixed | 有大段商業推銷 |
+| [Yoda Kim Ultrasound School(1393) - Dr.최종화 증례. 좌측 갑상선의 Zenker 게실](https://www.youtube.com/watch?v=p52XW7Qts5A) | slide_lecture | 有大段商業推銷 |
+| [Discussion of three bonus cases](https://www.youtube.com/watch?v=sjgZfBOq1ko) | slide_lecture | 有大段商業推銷 |
+| [Follow-up of follicular thyroid lesions - case 3](https://www.youtube.com/watch?v=vQDIqNzL5lc) | live_scan | 片頭 10 秒內疑似劇透「Follicular adenoma」，但課程資料沒設 start（建議 start=6） |
+| [Small Parts Ultrasound | Thyroid - Protocol, Tips & Tricks](https://www.youtube.com/watch?v=vlAMWL9V9fY) | slide_lecture | 課程宣稱有實機／動態掃描，模型判定為 slide_lecture（無動態影像）；內容與課程宣稱的教學重點對不上：影片畫面皆為靜態超音波截圖，非全程動態掃描；影片也包含參數最佳化教學，與宣稱不符。 |
 
 ### 證據不足或互斥的主題
 

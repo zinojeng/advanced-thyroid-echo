@@ -176,7 +176,7 @@ def stamp(passed: set[str]) -> int:
     today = datetime.date.today().isoformat()
     touched = 0
     for path in sorted(DATA.glob("*.json")):
-        if path.name in ("video-meta.json", "external-verify.json"):
+        if path.name in ("video-meta.json", "external-verify.json", "content-verify.json"):
             continue
         try:
             blob = json.loads(path.read_text())

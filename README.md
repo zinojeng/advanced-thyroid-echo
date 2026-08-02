@@ -45,6 +45,7 @@ make meta             用 yt-dlp 補齊 video-meta.json（真實長度、觀看�
 make audit            離線稽核（設定檔、配額、來源中繼資料完整性、實證深度），不打網路
 make verify           重驗每個 YouTube 連結（oEmbed）與每個 PMID（PubMed API）
 make verify-external  重驗每個非 YouTube 來源（HTTP 狀態、重導向、標題、登入牆）
+make verify-content   用 Gemini 直接看影片，查核內容是否與課程宣稱相符（輔助訊號）
 make check            lint + build + audit，提交前跑這個
 make serve            本機預覽
 make icons            重新打包 Lucide 圖示
@@ -158,6 +159,40 @@ make deploy           部署到 Cloudflare Pages
 
 **沒有動到**：`seo.py`、`filters.js`、`keys.js`、`discuss.js`、版面與主題樣式、
 Cloudflare Pages 部署流程。原框架的 build／audit／verify／SEO／部署能力全部保留。
+
+---
+
+## `make verify-content`：連結活著，不代表影片拍了它宣稱的東西
+
+`make verify` 只能證明連結還在、PMID 存在。這門課最難防的錯誤是另一種：
+**連結是活的、標題也對，但影片內容不合格**——使用者曾回報一支「經皮喉部超音波」
+只有對話討論沒有任何超音波影像；CH12 擴充時稽核也抓到「宣稱全片實機掃描、
+實為投影片講座」與「片頭卡直接印出最終病理」。
+
+`make verify-content` 用 Gemini 的多模態影片理解直接看影片，回答：
+
+- 畫面裡有沒有**真正的超音波影像**（不是只有投影片、講者或動畫）
+- 是**實機動態掃描**，還是貼在投影片上的靜態截圖
+- 內容對不對得上課程宣稱的教學重點
+- 前 10 秒有沒有片頭卡劇透（有的話建議 `start` 秒數）
+- 旁白語言、有沒有大段商業推銷
+
+```bash
+make verify-content                                # 有快取，只查新的或 last_verified 變過的
+make verify-content ARGS="--only ch12 --limit 5"
+make verify-content ARGS="--dry-run"               # 只列出這次會查哪幾支
+```
+
+報告寫在 `course/data/content-verify.json`。需要 `.env` 的 `GEMINI_API_KEY`；
+沒有金鑰就印一行說明後正常結束，不會擋住 `make`。
+
+**這是輔助訊號，不是判決。** 模型會看錯——最常見的是分不清「投影片上貼的靜態
+超音波截圖」與「實機動態掃描」，也可能把解剖動畫當成超音波畫面；同一支影片重跑
+結果可能不一樣。被標記的影片一律要**人工開影片確認**後再決定換片或補 `start`，
+這支腳本刻意**不會自動改動任何課程資料**。
+
+成本參考：一支影片約 9–10 萬 tokens，257 支跑一輪約 2,600 萬 tokens
+（gemini-2.5-flash 約 US$8）。所以預設有快取，不要無意義地全量重跑。
 
 ---
 

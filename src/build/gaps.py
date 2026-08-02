@@ -105,7 +105,25 @@ def collect() -> dict:
                         }
                     )
 
+    # Gemini 內容查核標記的影片。放進 gaps 是因為 KNOWN-GAPS.md 就是
+    # 「仍需人工審查」的清單——只留在一份 JSON 裡，跑完的人一離開終端機就沒人記得複驗。
+    content = []
+    cv = load(DATA / "content-verify.json")
+    if isinstance(cv, dict):
+        for vid, r in (cv.get("results") or {}).items():
+            if r.get("problems"):
+                content.append(
+                    {
+                        "video": vid,
+                        "title": (r.get("title") or "")[:80],
+                        "url": r.get("url"),
+                        "format": r.get("format"),
+                        "problems": r["problems"],
+                    }
+                )
+
     return {
+        "content_flagged": content,
         "empty_slots": empty,
         "empty_by_chapter": dict(per_chapter_empty),
         "gated_sources": gated,
@@ -169,6 +187,22 @@ def as_markdown(g: dict) -> str:
             out.append(f"| {s['chapter']} | `{s['unit']}` | {s['label']} |")
         out.append("")
 
+    out.append("### Gemini 內容查核標記、待人工複驗的影片\n")
+    if not g.get("content_flagged"):
+        out.append("目前沒有被標記的影片（或尚未跑過 `make verify-content`）。\n")
+    else:
+        out.append(
+            f"共 {len(g['content_flagged'])} 支。**這是 Gemini 的輔助訊號，不是判決**——"
+            "模型最常見的錯誤是分不清「投影片上貼的靜態超音波截圖」與「實機動態掃描」。"
+            "每一支都要人工開影片確認後再決定換片、改寫描述或補 `start`。\n"
+        )
+        out.append("| 影片 | 形式 | 模型標記的問題 |")
+        out.append("|---|---|---|")
+        for c in g["content_flagged"]:
+            probs = "；".join(c["problems"]).replace("|", "／").replace("\n", " ")
+            out.append(f"| [{c['title']}]({c['url']}) | {c.get('format') or '?'} | {probs} |")
+        out.append("")
+
     out.append("### 證據不足或互斥的主題\n")
     if not g["soft_evidence"]:
         out.append("尚未產出實證資料。\n")
@@ -207,6 +241,7 @@ def main() -> int:
     print(f"需註冊／訂閱／機構帳號 {len(g['gated_sources'])} 個")
     print(f"授權未確認 {len(g['unclear_license'])} 個")
     print(f"證據不足或互斥 {len(g['soft_evidence'])} 條")
+    print(f"Gemini 標記待人工複驗 {len(g.get('content_flagged') or [])} 支")
     print("來源分布：" + " / ".join(f"{k} {v}" for k, v in sorted(g["providers"].items())))
     missing_note = [e for e in g["empty_slots"] if "沒有寫 note" in e["note"]]
     if missing_note:

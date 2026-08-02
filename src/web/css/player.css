@@ -18,11 +18,15 @@
 
 /* 影片與資訊列一起靠上，剩餘空間留在下方，
    而不是把資訊列推到畫面最底、中間開一個大洞 */
+/* fitFrame() 會給影片一個最小高度（240px）。摘要或討論串長到把可用高度吃光時，
+   影片不再繼續讓步，改由這一欄自己捲——寧可捲一下，也不要一條看不見影像的細帶。 */
 .Player__stage {
   display: flex;
   flex-direction: column;
   min-width: 0;
   min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 /* 寬度由 fitFrame() 依實際可用高度算出來寫進 --frame-w。
@@ -358,6 +362,17 @@ body[data-tab="player"] {
   .Player__title {
     font-size: 16px;
   }
+
+  /* 390px：內距收窄，chip 與長標籤自己換行，整頁不得橫向溢出 */
+  .Player__brief {
+    padding: var(--base-size-12);
+  }
+
+  .Rate__chip,
+  .Rate__reasonBtn {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* --- 精簡後的資訊列 ------------------------------------------------------ */
@@ -389,8 +404,50 @@ body[data-tab="player"] {
   flex-shrink: 0;
 }
 
+/* --- 影片正下方的摘要區塊 ------------------------------------------------
+ * 「這支影片怎麼用」是看之前就要讀到的東西，所以常駐、置中、限制行寬。
+ * 行寬 66ch 左右是中文長段落還讀得下去的上限；貼著左邊欄拉成一整條會沒人讀。 */
+.Player__brief {
+  width: min(68ch, 100%);
+  margin: var(--base-size-12) auto 0;
+  padding: var(--base-size-16);
+  background-color: var(--bgColor-muted);
+  border: 1px solid var(--borderColor-default);
+  border-radius: var(--borderRadius-medium);
+}
+
+.Player__briefTitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.Player__briefRow {
+  margin-top: var(--base-size-12);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--fgColor-default);
+  overflow-wrap: anywhere;
+}
+
+/* 單色調：標籤靠字級與明度分層，不另外上色 */
+.Player__briefTag {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--fgColor-muted);
+}
+
 .Player__more {
+  margin-top: var(--base-size-12);
+}
+
+.Player__brief .Player__note {
   margin-top: var(--base-size-8);
+  background-color: var(--bgColor-default);
 }
 
 .Player__more > summary {
@@ -419,8 +476,12 @@ body[data-tab="player"] {
     gap: var(--base-size-8);
   }
 
-  .Player__bar .Player__title {
-    white-space: normal;
+  /* 完整標題現在在下方的摘要區塊裡，這一行維持單行截斷就好——
+     窄螢幕上同一個標題連續出現兩次只是把影片往下推。
+     直排時 align-items: flex-start 會讓子項照內容寬度長，
+     單行不換行的長標題就會把整欄撐出視窗，所以明確鎖回 100%。 */
+  .Player__barMain {
+    width: 100%;
   }
 }
 
@@ -609,21 +670,55 @@ body[data-tab="player"] {
 }
 
 /* --- 影片評價 ------------------------------------------------------------
- * 低分會進入換片清單，所以低分才追問「哪裡不合格」。
- * 單色調：星星用填滿與否表示，不靠顏色。 */
+ * 一點就送出的 chip，常駐在摘要區塊下方中間。
+ * 低分與「內容有錯」會進入換片清單，所以這兩種才追問「哪裡不合格」。
+ * 單色調：選中的 chip 靠反白（填滿）表示，不靠顏色。 */
 .Rate {
-  margin-top: var(--base-size-12);
-  padding: var(--base-size-16);
-  border: 1px solid var(--borderColor-default);
-  border-radius: var(--borderRadius-medium);
-  background: var(--bgColor-muted);
+  margin-top: var(--base-size-16);
+  padding-top: var(--base-size-12);
+  border-top: 1px solid var(--borderColor-muted);
+  text-align: center;
 }
 
 .Rate__head {
   display: flex;
   align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: var(--base-size-8);
   font-size: 13px;
+}
+
+.Rate__chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--base-size-4);
+  margin-top: var(--base-size-8);
+}
+
+.Rate__chip {
+  padding: 5px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--fgColor-default);
+  background-color: var(--bgColor-default);
+  border: 1px solid var(--borderColor-default);
+  border-radius: var(--borderRadius-full);
+  cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.Rate__chip:hover {
+  background-color: var(--bgColor-neutral-muted);
+  border-color: var(--borderColor-accent-emphasis);
+}
+
+/* 已投的那一顆：反白。單色調下用填滿而不是換色來表示「選中」 */
+.Rate__chip.is-on {
+  color: var(--bgColor-default);
+  background-color: var(--fgColor-default);
+  border-color: var(--fgColor-default);
 }
 
 .Rate__avg {
@@ -636,33 +731,6 @@ body[data-tab="player"] {
 .Rate__none {
   color: var(--fgColor-muted);
   font-size: 12px;
-}
-
-.Rate__stars {
-  display: flex;
-  gap: 2px;
-  margin: var(--base-size-8) 0;
-}
-
-.Rate__star {
-  padding: 3px;
-  border: 0;
-  background: none;
-  color: var(--ink-5);
-  border-radius: var(--borderRadius-small);
-}
-
-.Rate__star:hover {
-  color: var(--fgColor-default);
-}
-
-/* 已選到的分數：實心。單色調下用 fill 而不是換色來表示「選中」 */
-.Rate__star.is-on svg {
-  fill: currentColor;
-}
-
-.Rate__star.is-on {
-  color: var(--fgColor-default);
 }
 
 .Rate__ask {
@@ -680,13 +748,17 @@ body[data-tab="player"] {
 .Rate__reasonBtns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--base-size-4);
 }
 
+/* 原因標籤是整句話，窄螢幕必須能換行——.btn 預設 nowrap 會撐破版面 */
 .Rate__reasonBtn {
   padding: 3px 9px;
   font-size: 12px;
   font-weight: 400;
+  white-space: normal;
+  text-align: left;
 }
 
 .Rate__thanks {
@@ -704,6 +776,7 @@ body[data-tab="player"] {
 
 .Rate__reasons li {
   display: flex;
+  text-align: left;
   justify-content: space-between;
   gap: var(--base-size-8);
   padding: 2px 0;
@@ -721,7 +794,13 @@ body[data-tab="player"] {
   color: var(--fgColor-muted);
 }
 
-.Rate__btnCount {
-  font-size: 11px;
-  font-variant-numeric: tabular-nums;
+
+.Rate__status:empty {
+  display: none;
+}
+
+.Rate__status {
+  margin-top: var(--base-size-8);
+  font-size: 12px;
+  font-weight: 600;
 }

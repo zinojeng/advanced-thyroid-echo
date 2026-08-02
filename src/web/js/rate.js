@@ -1,11 +1,17 @@
 // rate.js — 影片評價。低分會進入換片清單，所以低分一定要問「哪裡不合格」。
 //
-// 設計上的一個決定：**低分才問原因，高分不問。**
-// 每次評價都要選標籤會讓人懶得評；但只有分數的低分對策展沒有用——
-// 知道某支片不好卻不知道為什麼，換片時等於把使用者已經看出來的事再猜一次。
+// 兩個設計上的決定：
+//
+// 1. **一點就送出。** 星星要先想「這值幾分」再瞄準第幾顆，成本高到大部分人直接跳過。
+//    改成幾顆語意明確的 chip（很好／好／普通／差／內容有錯），點一下就記錄；
+//    分數對應仍是 1–5，後端與 `make ratings` 完全不用改。
+//
+// 2. **低分才問原因，高分不問。** 每次評價都要選標籤會讓人懶得評；
+//    但只有分數的低分對策展沒有用——知道某支片不好卻不知道為什麼，
+//    換片時等於把使用者已經看出來的事再猜一次。
+//    「內容有錯」是最需要可操作資訊的一種，所以它一定追問是哪一種錯。
 //
 // 沒有 D1 時 /api/rate 一律回 503，整個區塊安靜地不顯示。
-import { icon } from "./icons.js";
 import { esc } from "./render.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -21,7 +27,7 @@ export function setConfig(c) {
 }
 
 export function enabled() {
-  return ENABLED && !!CFG.label;
+  return ENABLED && !!CFG.label && (CFG.quick || []).length > 0;
 }
 
 /** 匿名投票 token。不是身分驗證——清掉瀏覽器資料就能再投一次。
@@ -84,27 +90,25 @@ async function send(video, score, reason) {
 
 /* --- 標記 ---------------------------------------------------------------- */
 
-/** 播放器動作列上的評價按鈕（與「討論」並排） */
-export function button() {
+/** 常駐在摘要區塊下方的快速回饋區。內容在 attach() 時填。 */
+export function block() {
   if (!enabled()) return "";
-  return `<button class="btn btn-icon" data-rate-toggle type="button" title="${esc(CFG.label || "")}">
-            ${icon("star", 16)}<span class="Rate__btnCount" data-rate-count></span>
-          </button>`;
+  // aria-live 不能掛在整塊上：attach() 每換一支影片會 render 兩次（先快取、再 fetch），
+  // 第二次是非同步變動，讀屏會把整塊樣板重念一遍。狀態訊息改由內部一個常駐節點承接。
+  return `<div class="Rate" id="rateBlock" hidden></div>`;
 }
 
-/** 面板骨架。內容在展開時才填，避免每次換片都打 API */
-export function panel() {
-  if (!enabled()) return "";
-  return `<div class="Rate" id="ratePanel" hidden></div>`;
-}
-
-function stars(current) {
-  return [1, 2, 3, 4, 5]
-    .map(
-      (n) =>
-        `<button class="Rate__star${current && n <= current ? " is-on" : ""}"
-                 type="button" data-score="${n}" aria-label="${n} 分">${icon("star", 18)}</button>`,
-    )
+/** chip 的分數與文案全部來自 course.config.json 的 ratings.quick */
+function chips(current) {
+  return (CFG.quick || [])
+    .map((q) => {
+      const score = Number(q.score);
+      if (!Number.isInteger(score) || score < 1 || score > 5) return "";
+      const on = current === score ? " is-on" : "";
+      return `<button class="Rate__chip${on}" type="button"
+                      data-score="${score}"${q.ask ? " data-ask=\"1\"" : ""}
+                      aria-pressed="${current === score}">${esc(q.label || "")}</button>`;
+    })
     .join("");
 }
 
@@ -122,21 +126,21 @@ function reasonList(agg) {
     .join("")}</ul>`;
 }
 
-/** 低分才問原因——高分每次都要選標籤會讓人懶得評 */
-function needsReason(score) {
-  return score <= (CFG.lowThreshold ?? 2);
+/** 低分才問原因；宣告 ask 的 chip（內容有錯）不管分數一律問 */
+function needsReason(score, ask) {
+  return !!ask || score <= (CFG.lowThreshold ?? 2);
 }
 
 function render(video, agg, state = {}) {
-  const el = $("#ratePanel");
+  const el = $("#rateBlock");
   if (!el) return;
-  const mine = state.mine ?? myScores()[video];
+  const mine = state.mine ?? state.pending ?? myScores()[video];
   el.innerHTML = `
     <div class="Rate__head">
-      <strong>${esc(CFG.label || "")}</strong>
+      <strong>${esc(CFG.quickPrompt || CFG.label || "")}</strong>
       ${summary(agg)}
     </div>
-    <div class="Rate__stars" data-rate-stars>${stars(state.pending || mine)}</div>
+    <div class="Rate__chips">${chips(mine)}</div>
     ${
       state.askReason
         ? `<div class="Rate__ask">
@@ -152,69 +156,64 @@ function render(video, agg, state = {}) {
            </div>`
         : ""
     }
-    ${state.done ? `<p class="Rate__thanks">${esc(CFG.thanks || "")}</p>` : ""}
+    <p class="Rate__status" role="status" aria-live="polite">${state.done ? esc(CFG.thanks || "") : ""}</p>
     ${reasonList(agg)}
     <p class="Rate__note">${esc(CFG.anonNote || "")}</p>`;
+  if (state.askReason) el.dataset.pendingScore = String(state.pending || "");
+  else delete el.dataset.pendingScore;
 }
 
 /* --- 掛載 ---------------------------------------------------------------- */
 
 let current = null;
 
-/** 換片時呼叫：更新按鈕上的平均分，並把面板收起來 */
+/** 換片時呼叫：先用快取畫出 chips，再把這一支的聚合結果補上 */
 export async function attach(video) {
   current = video;
-  if (!enabled() || !video) return;
-  const badge = $("[data-rate-count]");
-  const agg = await fetchAgg(video);
-  if (!agg) {
-    // 後端沒接：把按鈕藏起來，不留壞掉的空殼
-    const btn = $("[data-rate-toggle]");
-    if (btn && !ENABLED) btn.hidden = true;
+  const el = $("#rateBlock");
+  if (!el) return;
+  if (!enabled() || !video) {
+    el.hidden = true;
     return;
   }
-  if (badge) badge.textContent = agg.n ? agg.avg.toFixed(1) : "";
-  const panelEl = $("#ratePanel");
-  if (panelEl && !panelEl.hidden) render(video, agg);
+  el.hidden = false;
+  render(video, CACHE.get(video) || null);
+  const agg = await fetchAgg(video);
+  if (!agg && !ENABLED) {
+    // 後端沒接：整區收起來，不留壞掉的空殼
+    el.hidden = true;
+    return;
+  }
+  if (current !== video) return; // 期間又換片了，別把舊資料畫回去
+  render(video, agg);
 }
 
 export function init() {
   if (!enabled()) return;
 
   document.addEventListener("click", async (e) => {
-    const toggle = e.target.closest("[data-rate-toggle]");
-    if (toggle) {
-      const el = $("#ratePanel");
-      if (!el) return;
-      el.hidden = !el.hidden;
-      if (!el.hidden) render(current, await fetchAgg(current));
-      return;
-    }
-
-    const star = e.target.closest(".Rate__star");
-    if (star && current) {
-      const score = Number(star.dataset.score);
-      if (needsReason(score)) {
-        // 低分：先問原因再送出，這樣換片清單才有可操作的資訊
+    const chip = e.target.closest(".Rate__chip");
+    if (chip && current) {
+      const score = Number(chip.dataset.score);
+      if (!score) return;
+      if (needsReason(score, chip.dataset.ask === "1")) {
+        // 低分與「內容有錯」：先問是哪一種問題再送出，換片清單才有可操作的資訊
         render(current, CACHE.get(current), { pending: score, askReason: true });
-        $("#ratePanel").dataset.pendingScore = String(score);
       } else {
         rememberMine(current, score);
         const agg = await send(current, score, null);
-        render(current, agg, { mine: score, done: true });
-        await attach(current);
+        render(current, agg || CACHE.get(current), { mine: score, done: true });
       }
       return;
     }
 
     const reason = e.target.closest(".Rate__reasonBtn");
     if (reason && current) {
-      const score = Number($("#ratePanel")?.dataset.pendingScore || 0);
+      const score = Number($("#rateBlock")?.dataset.pendingScore || 0);
       if (!score) return;
       rememberMine(current, score);
       const agg = await send(current, score, reason.dataset.reason);
-      render(current, agg, { mine: score, done: true });
-      await attach(current);
+      render(current, agg || CACHE.get(current), { mine: score, done: true });
     }
   });
 }

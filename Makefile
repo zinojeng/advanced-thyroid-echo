@@ -50,6 +50,13 @@ verify: ## 重驗所有影片連結與 PubMed 引用（打真實 API，會跑一
 verify-external: ## 重驗非 YouTube 來源（學會、期刊、醫院、病例圖譜）的連結狀態
 	$(PY) src/build/verify_external.py
 
+# 連結是活的、標題也對，但影片裡沒有超音波影像——這種錯誤 oEmbed 抓不到。
+# 需要 .env 的 GEMINI_API_KEY；沒有金鑰時印一行說明就結束，不會讓 make 失敗。
+# 有快取（course/data/content-verify.json），只重查 last_verified 變動過的影片。
+# 傳參數：make verify-content ARGS="--only ch12 --limit 5"
+verify-content: ## 用 Gemini 查核影片內容（有無超音波影像／是否實機掃描／是否對題／片頭劇透）
+	$(PY) src/build/verify_content.py $(ARGS)
+
 registry: ## 合併各章搜尋紀錄成 SOURCE-REGISTRY.json
 	$(PY) src/build/merge_registry.py
 
@@ -79,4 +86,4 @@ check: lint build audit ## 提交前跑這個（含離線稽核）
 clean: ## 清掉建置暫存
 	rm -rf .tmp .wrangler .ruff_cache dist **/__pycache__
 
-.PHONY: help build icons og meta counter audit verify verify-external registry gaps ratings serve deploy lint fmt check clean
+.PHONY: help build icons og meta counter audit verify verify-external verify-content registry gaps ratings serve deploy lint fmt check clean

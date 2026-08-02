@@ -143,7 +143,9 @@
     "nextLabel": "下一個資源",
     "doneLabel": "完成",
     "openExternal": "在原網站開啟",
-    "moreLabel": "選材理由與驗收方式",
+    "moreLabel": "單元驗收與來源資訊",
+    "doseLabel": "怎麼用這支影片",
+    "whyLabel": "為什麼選這支",
     "discussLabel": "討論",
     "discussNote": "留言會同步到 GitHub Discussions，需要 GitHub 帳號才能發言。每個資源各有一串討論。",
     "filterAll": "全部",
@@ -514,12 +516,48 @@
     "anonNote": "匿名評價，不需要帳號。一支影片一票，重投會覆蓋前一次。",
     "countLabel": "人評價",
     "noneLabel": "尚無評價",
+    "quickPrompt": "這支影片對你有用嗎？",
+    "quick": [
+      {
+        "score": 5,
+        "label": "很好"
+      },
+      {
+        "score": 4,
+        "label": "好"
+      },
+      {
+        "score": 3,
+        "label": "普通"
+      },
+      {
+        "score": 2,
+        "label": "差"
+      },
+      {
+        "score": 1,
+        "label": "內容有錯",
+        "ask": true
+      }
+    ],
     "reasonPrompt": "哪裡不合格？（選一個，我們才知道要換成什麼）",
     "lowThreshold": 2,
     "reasons": [
       {
         "id": "no-imaging",
         "label": "只有講解／對話，沒有實際超音波影像"
+      },
+      {
+        "id": "factual-error",
+        "label": "講的內容有醫學上的錯誤"
+      },
+      {
+        "id": "mismatch",
+        "label": "影片內容與課程描述不符"
+      },
+      {
+        "id": "spoiler",
+        "label": "片頭就洩漏答案"
       },
       {
         "id": "blurry",

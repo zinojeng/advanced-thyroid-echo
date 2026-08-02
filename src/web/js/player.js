@@ -2,7 +2,7 @@
 import { icon } from "./icons.js";
 import { esc, KIND, UI, sourceBadges, sourceFootnote } from "./render.js";
 import { button as discussButton, panel as discussPanel } from "./discuss.js";
-import { button as rateButton, panel as ratePanel, attach as rateAttach } from "./rate.js";
+import { block as rateBlock, attach as rateAttach } from "./rate.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 
@@ -62,6 +62,9 @@ export function buildPlaylist(course) {
           url: d.url,
           target: d.target,
           dose: d.dose,
+          why: d.why,
+          // 驗收是單元層級的，病例與示範影片也屬於這個單元——摘要區塊要拿得到
+          assessment: u.assessment,
           provider: d.provider,
           embeddable: d.embeddable,
           embed_url: d.embed_url,
@@ -168,7 +171,7 @@ export function play(item, { total }) {
   $("#playerInfo").innerHTML = `
     <div class="Player__bar">
       <div class="Player__barMain">
-        <h2 class="Player__title">${esc(item.name)}</h2>
+        <h2 class="Player__title" title="${esc(item.name)}">${esc(item.name)}</h2>
         <div class="Player__sub">
           <span>${esc(item.chCode)} ${esc(item.chTitle)}</span>
           <span>›</span>
@@ -179,7 +182,6 @@ export function play(item, { total }) {
           ${item.lang ? `<span class="Label Label--neutral">${esc(LANG[item.lang] || item.lang)}</span>` : ""}
           <span>${esc(item.channel || "")}</span>
           ${item.duration ? `<span>· ${esc(item.duration)}</span>` : ""}
-          ${item.dose ? `<span class="Drill__dose">${esc(item.dose)}</span>` : ""}
         </div>
       </div>
       <div class="Player__actions">
@@ -187,27 +189,64 @@ export function play(item, { total }) {
         <button class="btn" data-step="1" type="button"><span class="Player__btnText">${esc(UI.nextLabel || "")}</span> ${icon("chevron-right", 14)}</button>
         <button class="btn" data-mark-unit="${esc(item.unitId)}" type="button">${icon("check", 14)} ${esc(UI.doneLabel || "")}</button>
         <button class="btn btn-icon" data-toggle-list type="button" title="收起／顯示清單">${icon("layers", 16)}<span class="visually-hidden" data-list-label>收起清單</span></button>
-        ${rateButton()}
         ${discussButton()}
         <a class="btn btn-icon" href="${esc(item.url)}" target="_blank" rel="noopener" title="${esc(UI.openExternal || "")}">${icon("external-link", 16)}</a>
       </div>
     </div>
-    ${
-      item.why || item.assessment
-        ? `<details class="Player__more">
-             <summary>${esc(UI.moreLabel || "")}</summary>
-             ${item.why ? `<p class="Player__note">${esc(item.why)}</p>` : ""}
-             ${item.assessment ? `<p class="Player__note"><strong>${esc(UI.assessmentLabel || "自我評估")}　</strong>${esc(item.assessment)}</p>` : ""}
-             ${sourceFootnote(item) ? `<p class="Player__note">${sourceFootnote(item)}</p>` : ""}
-           </details>`
-        : ""
-    }
-    ${ratePanel()}
+    ${brief(item)}
     ${discussPanel()}`;
 
   fitFrame();
   // 換片後把評價按鈕上的平均分換成這一支的
   rateAttach(item.vid || null);
+}
+
+/** 影片正下方的摘要區塊。
+ *
+ *  之前 why／assessment 收在一個小小的 <details> 裡，擠在動作列下面——
+ *  要點開才看得到，而「先答再看」這種操作說明藏起來等於沒寫。
+ *  現在把**看之前要知道的兩件事**常駐顯示：
+ *    dose  這支影片怎麼用（先做什麼、看的時候只做一件事）
+ *    why   為什麼選這支
+ *  很長而且不是每次都要讀的（單元驗收、授權、查核日期）才收進 <details>。
+ *
+ *  區塊置中並限制行寬，長段落才不會被拉成貼著左邊欄的一長條。 */
+function brief(item) {
+  // 目前的資料形狀：drill 有 dose 沒有 why，lesson 有 why 沒有 dose，
+  // 所以實際上每個項目只會出現其中一行。兩個都留著是因為 schema 允許同時有，
+  // 不是因為現在有——不要據此宣稱「常駐兩層」。
+  const rows = [
+    item.dose ? row(UI.doseLabel, item.dose) : "",
+    item.why ? row(UI.whyLabel, item.why) : "",
+  ].join("");
+
+  const foot = sourceFootnote(item);
+  const more =
+    item.assessment || foot
+      ? `<details class="Player__more">
+           <summary>${esc(UI.moreLabel || "")}</summary>
+           ${item.assessment ? `<p class="Player__note"><strong>${esc(UI.assessmentLabel || "")}　</strong>${esc(item.assessment)}</p>` : ""}
+           ${foot ? `<p class="Player__note">${foot}</p>` : ""}
+         </details>`
+      : "";
+
+  const rate = rateBlock();
+  if (!rows && !more && !rate) return "";
+
+  return `
+    <section class="Player__brief">
+      <h3 class="Player__briefTitle">${esc(item.name)}</h3>
+      ${rows}
+      ${more}
+      ${rate}
+    </section>`;
+}
+
+function row(label, text) {
+  return `<p class="Player__briefRow">
+            ${label ? `<b class="Player__briefTag">${esc(label)}</b>` : ""}
+            <span>${esc(text)}</span>
+          </p>`;
 }
 
 /** 不能嵌入的來源（學會、期刊、醫院教學站、需登入的病例庫）：
@@ -254,6 +293,16 @@ function externalCard(item) {
     </div>`;
 }
 
+/** 影片的高度下限。摘要或討論串很長時，資訊區會把可用高度吃光，
+ *  影片被壓成一條看不見任何超音波影像的細帶——那比要捲一下嚴重得多。
+ *  低於這個高度就不再讓步，改由 .Player__stage 自己捲動。
+ *
+ *  下限取「視窗高度的 36%」與 240px 的較大者：
+ *  用 innerHeight 而不是 stage 的高度，是因為窄螢幕下 stage 的高度由內容決定，
+ *  拿它回推影片高度會變成自己餵自己，ResizeObserver 每次都再長一點。 */
+const MIN_FRAME_H = 240;
+const FRAME_H_RATIO = 0.36;
+
 /** 依實際可用高度算出影片寬度，讓它吃滿又不變形。
  *  純 CSS 同時給 max-width + max-height 會讓 aspect-ratio 失效，所以這裡用量的。 */
 export function fitFrame() {
@@ -261,11 +310,14 @@ export function fitFrame() {
   const frame = $(".Player__frame");
   const info = $("#playerInfo");
   if (!stage || !frame) return;
+  // 分頁隱藏時 clientWidth/Height 是 0，算出來會把 --frame-w 寫成 0px。
+  // setTab 與 ResizeObserver 事後會補算，所以使用者看不到破圖，但別留這個中間狀態。
+  if (!stage.clientWidth || !stage.clientHeight) return;
 
   // 用 scrollHeight：資訊區要完整放得下，影片才拿剩下的空間
   const infoH = info ? Math.max(info.offsetHeight, info.scrollHeight) : 0;
-  const avail = stage.clientHeight - infoH - 12;
-  if (avail <= 0) return;
+  const floor = Math.max(MIN_FRAME_H, Math.round(innerHeight * FRAME_H_RATIO));
+  const avail = Math.max(stage.clientHeight - infoH - 12, floor);
   const byHeight = avail * (16 / 9);
   frame.style.setProperty("--frame-w", `${Math.floor(Math.min(stage.clientWidth, byHeight))}px`);
 }

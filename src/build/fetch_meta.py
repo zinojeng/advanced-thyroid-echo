@@ -43,7 +43,7 @@ def collect_ids() -> list[str]:
                 walk(v)
 
     for path in sorted(DATA.glob("*.json")):
-        if path.name in ("video-meta.json", "external-verify.json"):
+        if path.name in ("video-meta.json", "external-verify.json", "content-verify.json"):
             continue
         try:
             walk(json.loads(path.read_text()))
