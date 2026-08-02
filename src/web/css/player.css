@@ -441,8 +441,8 @@ body[data-tab="player"] {
   padding: 8px 18px;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.72);
+  color: var(--ink-0);
+  background-color: color-mix(in srgb, var(--ink-12) 78%, transparent);
   border-radius: var(--borderRadius-medium);
   opacity: 0;
   pointer-events: none;
@@ -461,7 +461,7 @@ body[data-tab="player"] {
   align-items: center;
   justify-content: center;
   padding: var(--base-size-16);
-  background-color: rgba(1, 4, 9, 0.62);
+  background-color: color-mix(in srgb, var(--ink-12) 62%, transparent);
   backdrop-filter: blur(3px);
 }
 

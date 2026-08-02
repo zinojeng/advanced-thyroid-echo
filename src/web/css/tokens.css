@@ -1,40 +1,77 @@
 /* ==========================================================================
-   tokens.css — Primer 設計語彙（primer.style）自行實作，不吃外部 CDN
+   tokens.css — 單色調（monochrome）設計語彙
+
+   這門課原本沿用 Primer 的多色語彙：accent 藍、success 綠、danger 紅…
+   單色調版本把**色相**這個維度整個拿掉，改用**明度與填滿程度**編碼層級：
+
+     訊號越強 → 顏色越深、填得越滿
+     訊號越弱 → 越接近背景、只留一條細框
+
+   為什麼這樣還讀得懂：色相負責「分類」，明度負責「輕重」。
+   證據分級要傳達的是輕重（contested 比 moderate 值得停下來看），
+   不是分類，所以用明度反而更準，而且對色覺缺陷者一樣可讀。
    ========================================================================== */
 
 :root {
   color-scheme: light dark;
 
-  --bgColor-default: #ffffff;
-  --bgColor-muted: #f6f8fa;
-  --bgColor-inset: #f6f8fa;
-  --bgColor-neutral-muted: #818b981f;
-  --bgColor-accent-muted: #ddf4ff;
-  --bgColor-success-muted: #dafbe1;
-  --bgColor-attention-muted: #fff8c5;
-  --bgColor-danger-muted: #ffebe9;
-  --bgColor-done-muted: #fbefff;
+  /* 單一中性色階。ink-0 是背景，ink-12 是前景，中間是等距的明度階 */
+  --ink-0: #ffffff;
+  --ink-1: #fafafa;
+  --ink-2: #f4f4f5;
+  --ink-3: #e8e8ea;
+  --ink-4: #d9d9dd;
+  --ink-5: #c2c2c8;
+  --ink-6: #a1a1aa;
+  --ink-7: #82828c;
+  --ink-8: #63636d;
+  --ink-9: #48484f;
+  --ink-10: #2f2f35;
+  --ink-11: #1c1c20;
+  --ink-12: #0a0a0b;
 
-  --borderColor-default: #d1d9e0;
-  --borderColor-muted: #d1d9e0b3;
-  --borderColor-accent-emphasis: #0969da;
+  --bgColor-default: var(--ink-0);
+  --bgColor-muted: var(--ink-1);
+  --bgColor-inset: var(--ink-2);
+  --bgColor-neutral-muted: var(--ink-2);
 
-  --fgColor-default: #1f2328;
-  --fgColor-muted: #59636e;
-  --fgColor-onEmphasis: #ffffff;
-  --fgColor-accent: #0969da;
-  --fgColor-success: #1a7f37;
-  --fgColor-attention: #9a6700;
-  --fgColor-danger: #d1242f;
-  --fgColor-done: #8250df;
+  /* 五個語意底色全部收斂成同一色階的不同深度 */
+  --bgColor-accent-muted: var(--ink-2);
+  --bgColor-success-muted: var(--ink-1);
+  --bgColor-attention-muted: var(--ink-3);
+  --bgColor-danger-muted: var(--ink-11);
+  --bgColor-done-muted: var(--ink-0);
 
-  --shadow-resting-small: 0 1px 0 rgba(31, 35, 40, 0.04);
-  --shadow-floating-small: 0 6px 12px -3px rgba(31, 35, 40, 0.12),
-    0 6px 18px 0 rgba(31, 35, 40, 0.12);
+  --borderColor-default: var(--ink-3);
+  --borderColor-muted: var(--ink-2);
+  --borderColor-accent-emphasis: var(--ink-10);
 
-  --borderRadius-small: 4px;
-  --borderRadius-medium: 6px;
-  --borderRadius-large: 12px;
+  --fgColor-default: var(--ink-11);
+  --fgColor-muted: var(--ink-7);
+  --fgColor-onEmphasis: var(--ink-0);
+  --fgColor-accent: var(--ink-10);
+  --fgColor-success: var(--ink-8);
+  --fgColor-attention: var(--ink-10);
+  --fgColor-danger: var(--ink-0);
+  --fgColor-done: var(--ink-8);
+
+  /* 簡約：不用陰影堆層次，靠留白與一條細線 */
+
+  /* 分類圓點專用。Label 的 --fgColor-danger 在單色調下是反白字色（近白），
+     直接拿來畫點會在淺色背景上消失，所以 marker 另立一組明度階。 */
+  --dotColor-danger: var(--ink-11);
+  --dotColor-accent: var(--ink-8);
+  --dotColor-attention: var(--ink-7);
+  --dotColor-success: var(--ink-6);
+  --dotColor-done: var(--ink-5);
+  --dotColor-neutral: var(--ink-4);
+
+  --shadow-resting-small: none;
+  --shadow-floating-small: 0 8px 24px -8px rgba(10, 10, 11, 0.16);
+
+  --borderRadius-small: 3px;
+  --borderRadius-medium: 4px;
+  --borderRadius-large: 8px;
   --borderRadius-full: 624rem;
 
   --base-size-4: 4px;
@@ -61,60 +98,106 @@
 /* 深色主題：系統偏好為預設信號，data-theme 手動切換一律勝出 */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bgColor-default: #0d1117;
-    --bgColor-muted: #151b23;
-    --bgColor-inset: #010409;
-    --bgColor-neutral-muted: #656c7633;
-    --bgColor-accent-muted: #388bfd1a;
-    --bgColor-success-muted: #23863633;
-    --bgColor-attention-muted: #bb800926;
-    --bgColor-danger-muted: #f8514926;
-    --bgColor-done-muted: #ab7df826;
+    --ink-0: #0b0b0c;
+    --ink-1: #121214;
+    --ink-2: #191A1C;
+    --ink-3: #232427;
+    --ink-4: #2f3034;
+    --ink-5: #3f4045;
+    --ink-6: #55565c;
+    --ink-7: #7a7b82;
+    --ink-8: #9a9ba2;
+    --ink-9: #b6b7bd;
+    --ink-10: #d2d3d8;
+    --ink-11: #ececef;
+    --ink-12: #ffffff;
 
-    --borderColor-default: #3d444d;
-    --borderColor-muted: #3d444db3;
-    --borderColor-accent-emphasis: #316dca;
+    --bgColor-default: var(--ink-0);
+    --bgColor-muted: var(--ink-1);
+    --bgColor-inset: var(--ink-2);
+    --bgColor-neutral-muted: var(--ink-3);
 
-    --fgColor-default: #f0f6fc;
-    --fgColor-muted: #9198a1;
-    --fgColor-accent: #4493f8;
-    --fgColor-success: #3fb950;
-    --fgColor-attention: #d29922;
-    --fgColor-danger: #f85149;
-    --fgColor-done: #ab7df8;
+    --bgColor-accent-muted: var(--ink-3);
+    --bgColor-success-muted: var(--ink-2);
+    --bgColor-attention-muted: var(--ink-4);
+    --bgColor-danger-muted: var(--ink-11);
+    --bgColor-done-muted: var(--ink-0);
 
-    --shadow-resting-small: 0 1px 0 rgba(1, 4, 9, 0.3);
-    --shadow-floating-small: 0 6px 12px -3px rgba(1, 4, 9, 0.3),
-      0 6px 18px 0 rgba(1, 4, 9, 0.3);
+    --borderColor-default: var(--ink-4);
+    --borderColor-muted: var(--ink-3);
+    --borderColor-accent-emphasis: var(--ink-9);
+
+    --fgColor-default: var(--ink-11);
+    --fgColor-muted: var(--ink-7);
+    --fgColor-onEmphasis: var(--ink-0);
+    --fgColor-accent: var(--ink-10);
+    --fgColor-success: var(--ink-8);
+    --fgColor-attention: var(--ink-10);
+    --fgColor-danger: var(--ink-0);
+    --fgColor-done: var(--ink-8);
+
+
+    --dotColor-danger: var(--ink-11);
+    --dotColor-accent: var(--ink-9);
+    --dotColor-attention: var(--ink-8);
+    --dotColor-success: var(--ink-7);
+    --dotColor-done: var(--ink-6);
+    --dotColor-neutral: var(--ink-5);
+
+    --shadow-resting-small: none;
+    --shadow-floating-small: 0 8px 24px -8px rgba(0, 0, 0, 0.6);
   }
 }
 
 :root[data-theme="dark"] {
-  --bgColor-default: #0d1117;
-  --bgColor-muted: #151b23;
-  --bgColor-inset: #010409;
-  --bgColor-neutral-muted: #656c7633;
-  --bgColor-accent-muted: #388bfd1a;
-  --bgColor-success-muted: #23863633;
-  --bgColor-attention-muted: #bb800926;
-  --bgColor-danger-muted: #f8514926;
-  --bgColor-done-muted: #ab7df826;
+    --ink-0: #0b0b0c;
+    --ink-1: #121214;
+    --ink-2: #191A1C;
+    --ink-3: #232427;
+    --ink-4: #2f3034;
+    --ink-5: #3f4045;
+    --ink-6: #55565c;
+    --ink-7: #7a7b82;
+    --ink-8: #9a9ba2;
+    --ink-9: #b6b7bd;
+    --ink-10: #d2d3d8;
+    --ink-11: #ececef;
+    --ink-12: #ffffff;
 
-  --borderColor-default: #3d444d;
-  --borderColor-muted: #3d444db3;
-  --borderColor-accent-emphasis: #316dca;
+    --bgColor-default: var(--ink-0);
+    --bgColor-muted: var(--ink-1);
+    --bgColor-inset: var(--ink-2);
+    --bgColor-neutral-muted: var(--ink-3);
 
-  --fgColor-default: #f0f6fc;
-  --fgColor-muted: #9198a1;
-  --fgColor-accent: #4493f8;
-  --fgColor-success: #3fb950;
-  --fgColor-attention: #d29922;
-  --fgColor-danger: #f85149;
-  --fgColor-done: #ab7df8;
+    --bgColor-accent-muted: var(--ink-3);
+    --bgColor-success-muted: var(--ink-2);
+    --bgColor-attention-muted: var(--ink-4);
+    --bgColor-danger-muted: var(--ink-11);
+    --bgColor-done-muted: var(--ink-0);
 
-  --shadow-resting-small: 0 1px 0 rgba(1, 4, 9, 0.3);
-  --shadow-floating-small: 0 6px 12px -3px rgba(1, 4, 9, 0.3),
-    0 6px 18px 0 rgba(1, 4, 9, 0.3);
+    --borderColor-default: var(--ink-4);
+    --borderColor-muted: var(--ink-3);
+    --borderColor-accent-emphasis: var(--ink-9);
+
+    --fgColor-default: var(--ink-11);
+    --fgColor-muted: var(--ink-7);
+    --fgColor-onEmphasis: var(--ink-0);
+    --fgColor-accent: var(--ink-10);
+    --fgColor-success: var(--ink-8);
+    --fgColor-attention: var(--ink-10);
+    --fgColor-danger: var(--ink-0);
+    --fgColor-done: var(--ink-8);
+
+
+    --dotColor-danger: var(--ink-11);
+    --dotColor-accent: var(--ink-9);
+    --dotColor-attention: var(--ink-8);
+    --dotColor-success: var(--ink-7);
+    --dotColor-done: var(--ink-6);
+    --dotColor-neutral: var(--ink-5);
+
+    --shadow-resting-small: none;
+    --shadow-floating-small: 0 8px 24px -8px rgba(0, 0, 0, 0.6);
 }
 
 /* --- Reset -------------------------------------------------------------- */
@@ -166,13 +249,43 @@ ol {
   list-style: none;
 }
 
+/* 單色調沒有「連結藍」可用，改用底線標示可點——但只給**內文連結**。
+   整塊可點的卡片（.VideoCard、.Drill__link）本身是 <a>，
+   全域加底線會把卡片裡的標題、選材理由、授權說明整段畫線。 */
 a {
-  color: var(--fgColor-accent);
+  color: var(--fgColor-default);
   text-decoration: none;
 }
 
-a:hover {
+p a,
+li a,
+dd a,
+summary a,
+.Evidence a,
+.StanceCard a,
+.Landing__stanceCard a,
+.Footer a,
+.ExternalCard__meta a {
   text-decoration: underline;
+  text-decoration-color: var(--ink-5);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+p a:hover,
+li a:hover,
+dd a:hover,
+summary a:hover,
+.Evidence a:hover,
+.StanceCard a:hover,
+.Footer a:hover {
+  text-decoration-color: var(--fgColor-default);
+}
+
+/* 卡片型連結：靠背景與邊框回饋，不畫線 */
+.VideoCard:hover,
+.Drill__link:hover {
+  text-decoration: none;
 }
 
 button {
@@ -237,9 +350,8 @@ svg {
   white-space: nowrap;
   border: 1px solid var(--borderColor-default);
   border-radius: var(--borderRadius-medium);
-  background-color: var(--bgColor-muted);
+  background-color: transparent;
   color: var(--fgColor-default);
-  box-shadow: var(--shadow-resting-small);
   transition: background-color 0.12s ease, border-color 0.12s ease;
 }
 
@@ -270,48 +382,60 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: var(--base-size-4);
-  padding: 0 7px;
-  font-size: 12px;
+  padding: 0 6px;
+  font-size: 11px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
   border: 1px solid transparent;
-  border-radius: var(--borderRadius-full);
+  border-radius: var(--borderRadius-small);
   white-space: nowrap;
 }
 
-/* tone 是主題無關的：config 的 kinds/grades 只挑 tone，不認識任何主題詞彙 */
+/* tone 是主題無關的：config 的 kinds/grades 只挑 tone，不認識任何主題詞彙。
+   單色調版本用「填滿程度」取代色相來排序輕重：
+     danger    實心反白  ← 最強訊號（證據互斥、利益關係）
+     attention 淺灰填滿 + 實線框
+     accent    淺灰填滿
+     success   極淺填滿
+     done      只有框線
+     neutral   最輕，接近純文字                                            */
+
+.Label--danger {
+  color: var(--fgColor-onEmphasis);
+  background-color: var(--ink-11);
+  border-color: var(--ink-11);
+  font-weight: 600;
+}
+
+.Label--attention {
+  color: var(--fgColor-default);
+  background-color: var(--ink-3);
+  border-color: var(--ink-5);
+}
+
+.Label--accent {
+  color: var(--fgColor-default);
+  background-color: var(--ink-2);
+  border-color: var(--ink-3);
+}
+
 .Label--success {
-  color: var(--fgColor-success);
-  background-color: var(--bgColor-success-muted);
-  border-color: color-mix(in srgb, var(--fgColor-success) 30%, transparent);
+  color: var(--fgColor-muted);
+  background-color: var(--ink-1);
+  border-color: var(--ink-3);
+}
+
+.Label--done {
+  color: var(--fgColor-default);
+  background-color: transparent;
+  border-color: var(--ink-5);
 }
 
 .Label--neutral {
   color: var(--fgColor-muted);
-  background-color: var(--bgColor-neutral-muted);
-  border-color: var(--borderColor-muted);
-}
-
-.Label--accent {
-  color: var(--fgColor-accent);
-  background-color: var(--bgColor-accent-muted);
-}
-
-.Label--attention {
-  color: var(--fgColor-attention);
-  background-color: var(--bgColor-attention-muted);
-  border-color: color-mix(in srgb, var(--fgColor-attention) 30%, transparent);
-}
-
-.Label--danger {
-  color: var(--fgColor-danger);
-  background-color: var(--bgColor-danger-muted);
-  border-color: color-mix(in srgb, var(--fgColor-danger) 30%, transparent);
-}
-
-.Label--done {
-  color: var(--fgColor-done);
-  background-color: var(--bgColor-done-muted);
+  background-color: transparent;
+  border-color: var(--ink-3);
 }
 
 .Counter {
@@ -342,7 +466,7 @@ svg {
   align-items: center;
   gap: var(--base-size-8);
   padding: var(--base-size-12) var(--base-size-16);
-  background-color: var(--bgColor-muted);
+  background-color: transparent;
   border-bottom: 1px solid var(--borderColor-default);
   border-radius: var(--borderRadius-medium) var(--borderRadius-medium) 0 0;
   font-size: 14px;
@@ -409,7 +533,7 @@ svg {
 
 .ProgressBar__fill {
   height: 100%;
-  background-color: var(--fgColor-success);
+  background-color: var(--fgColor-default);
   border-radius: var(--borderRadius-full);
   transition: width 0.3s ease;
 }

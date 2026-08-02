@@ -89,7 +89,7 @@ function applyChrome(data) {
         .map(
           (k) =>
             `<button class="FilterBar__btn" data-filter="${esc(k.id)}" type="button">` +
-            `<span class="Drill__marker" style="background:var(--fgColor-${esc(k.tone || "accent")})"></span>` +
+            `<span class="Drill__marker" style="background:var(--dotColor-${esc(k.tone || "accent")})"></span>` +
             `${esc(k.label)}</button>`,
         )
         .join("");

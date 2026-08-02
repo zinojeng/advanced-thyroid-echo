@@ -462,8 +462,11 @@
     gap: var(--base-size-16) var(--base-size-24);
   }
 
+  /* width:100% 在 flex 容器裡是「整個 header 的寬度」，
+     再加上品牌、分頁與右側動作就一定溢出。改成吃剩下的空間。 */
   .SearchBox {
-    width: 100%;
+    flex: 1 1 auto;
+    width: auto;
     min-width: 0;
   }
 

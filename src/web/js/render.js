@@ -160,7 +160,7 @@ function muscleTags(list) {
 
 function drill(d) {
   const inner = `
-    <span class="Drill__marker" style="background:var(--fgColor-${esc((KIND[d.kind] || {}).tone || "accent")})"></span>
+    <span class="Drill__marker" style="background:var(--dotColor-${esc((KIND[d.kind] || {}).tone || "accent")})"></span>
     <span class="Drill__main">
       <span class="Drill__name">${esc(d.name)}${d.en ? ` <span class="Drill__en">${esc(d.en)}</span>` : ""}</span>
       <span class="Drill__meta">
@@ -188,7 +188,7 @@ function drillGroup(kind, list) {
   return `
     <div class="DrillGroup" data-group="${kind}">
       <h4 class="DrillGroup__title">
-        <span class="Drill__marker" style="background:var(--fgColor-${esc(k.tone)})"></span>
+        <span class="Drill__marker" style="background:var(--dotColor-${esc(k.tone)})"></span>
         ${k.label}
         <span class="Counter">${list.length}</span>
       </h4>

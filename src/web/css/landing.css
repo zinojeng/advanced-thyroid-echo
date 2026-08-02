@@ -188,12 +188,12 @@
 
 .btn-primary {
   color: var(--fgColor-onEmphasis);
-  background-color: var(--fgColor-success);
-  border-color: color-mix(in srgb, var(--fgColor-success) 70%, #000);
+  background-color: var(--ink-11);
+  border-color: var(--ink-11);
 }
 
 .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--fgColor-success) 88%, #000);
+  background-color: var(--ink-10);
 }
 
 .btn-primary svg {

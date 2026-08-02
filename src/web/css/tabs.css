@@ -43,16 +43,16 @@
 .TabNav__item.is-selected {
   color: var(--fgColor-default);
   font-weight: 600;
-  border-bottom-color: #fd8c73;
+  border-bottom-color: var(--fgColor-default);
 }
 
 :root[data-theme="dark"] .TabNav__item.is-selected {
-  border-bottom-color: #f78166;
+  border-bottom-color: var(--fgColor-default);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .TabNav__item.is-selected {
-    border-bottom-color: #f78166;
+    border-bottom-color: var(--fgColor-default);
   }
 }
 
