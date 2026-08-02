@@ -361,76 +361,37 @@
 /* --- Footer ------------------------------------------------------------- */
 
 /* 固定貼在視窗底部，不隨頁面捲動；收合時一行，點開才展全文 */
+/* 頁尾不再摺疊：課程整理單位與版權聲明都要看得到。
+   原本是 fixed + <details>，收合時免責聲明被截成一行、其餘內容整個藏起來——
+   「課程整理｜童綜合醫院 新陳代謝科」在預設狀態下根本不會出現。
+   改成正常文件流的頁尾：內容全開，捲到底就看得到，也不再永久佔用畫面高度。 */
 .AppFooter {
-  position: fixed;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 60;
-  max-height: 60vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
   border-top: 1px solid var(--borderColor-default);
-  background-color: color-mix(in srgb, var(--bgColor-muted) 92%, transparent);
-  backdrop-filter: saturate(180%) blur(8px);
+  background-color: var(--bgColor-muted);
   font-size: 12px;
+  line-height: 1.7;
   color: var(--fgColor-muted);
 }
 
-.AppFooter__summary {
-  display: flex;
-  align-items: center;
+.AppFooter__inner {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: var(--base-size-24) var(--base-size-16);
+  display: grid;
   gap: var(--base-size-8);
-  min-height: calc(var(--footer-height) - 1px);
-  padding: 0 var(--base-size-16);
-  cursor: pointer;
-  list-style: none;
 }
 
-.AppFooter__summary::-webkit-details-marker {
-  display: none;
-}
-
-.AppFooter__summary:hover {
+/* 課程整理單位：頁尾裡唯一需要被認出來的一行 */
+.AppFooter__creator {
+  font-weight: 600;
   color: var(--fgColor-default);
 }
 
-.AppFooter__chevron {
-  flex-shrink: 0;
-  margin-left: auto;
-  transform: rotate(-90deg);
-  transition: transform 0.15s ease;
+.AppFooter__colophon {
+  padding-top: var(--base-size-8);
+  border-top: 1px solid var(--borderColor-muted);
 }
 
-.AppFooter__details[open] .AppFooter__chevron {
-  transform: rotate(90deg);
-}
-
-.AppFooter__disclaimer {
-  flex: 1;
-  min-width: 0;
-  line-height: 1.6;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.AppFooter__details[open] .AppFooter__summary {
-  align-items: flex-start;
-  padding-block: var(--base-size-12);
-}
-
-.AppFooter__details[open] .AppFooter__disclaimer {
-  white-space: normal;
-  max-width: 80ch;
-}
-
-.AppFooter__more {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--base-size-16);
-  padding: 0 var(--base-size-16) var(--base-size-16);
-  line-height: 1.6;
-}
 
 /* --- Responsive --------------------------------------------------------- */
 
