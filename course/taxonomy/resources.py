@@ -13,6 +13,9 @@ from __future__ import annotations
 import re
 
 NAMES = {
+    "us-anatomy": "掃描解剖、變異與假性病灶",
+    "malignancy-subtypes": "惡性型別的影像相關與其極限",
+    "overdiagnosis": "過度診斷、篩檢與治療決策的取捨",
     "acr-tirads": "ACR TI-RADS 分層",
     "ata-pattern": "ATA sonographic pattern",
     "eu-tirads": "EU-TIRADS 分層",
@@ -42,18 +45,36 @@ KINDS = ("case", "procedure", "atlas", "guideline", "lecture")
 
 # 順序有意義：先比對專一性高的，避免「TI-RADS 比較」被歸進單一系統
 PATTERNS: list[tuple[str, str]] = [
+    (
+        "overdiagnosis",
+        r"overdiagnos|過度診斷|過度治療|篩檢|screening|預防性.*廓清|prophylactic|撤稿|retract",
+    ),
+    (
+        "malignancy-subtypes",
+        r"tall[- ]cell|hobnail|cribriform|insular|低分化|未分化|anaplastic|髓質癌|medullary|濾泡癌|follicular carcinoma|濾泡腺瘤|adenoma|multifocal|bilateral|隱匿癌|occult|亞型|變異型|subtype|variant",
+    ),
+    (
+        "us-anatomy",
+        r"解剖|anatomy|界標|landmark|中央頸區|喉返|recurrent laryngeal|\brln\b|甲狀舌管|thyroglossal|食道憩室|esophageal diverticulum|氣道|airway|環甲膜|假性|pseudo|陷阱|pitfall|artifact|artefact|偽影|comet[- ]tail|harmonic|諧波|compounding|beam steering|substernal|胸骨後",
+    ),
     ("system-discordance", r"discordan|系統間|不一致|比較器|cross[- ]system|四大系統|系統比較"),
     ("acr-tirads", r"acr ti[- ]?rads|acr白皮書|acr white paper"),
     ("eu-tirads", r"eu[- ]?tirads|european thyroid association"),
     ("k-tirads", r"k[- ]?tirads|korean society of thyroid radiology"),
     ("ata-pattern", r"ata (?:guideline|pattern|sonographic)|american thyroid association"),
     ("us-lexicon", r"lexicon|標準化描述|structured description|interobserver|判讀者間"),
-    ("scan-optimization", r"機器參數|preset|gain|dynamic range|\bprf\b|wall filter|掃描技巧|probe|探頭|optimi[sz]ation"),
+    (
+        "scan-optimization",
+        r"機器參數|preset|gain|dynamic range|\bprf\b|wall filter|掃描技巧|probe|探頭|optimi[sz]ation",
+    ),
     ("diffuse-thyroid", r"thyroiditis|甲狀腺炎|graves|橋本|hashimoto|瀰漫性"),
     ("nodule-vascularity", r"vascularity|血流|doppler|都卜勒"),
     ("core-biopsy", r"core needle|\bcnb\b|粗針"),
     ("washout", r"washout|沖洗液"),
-    ("fna-technique", r"\bfna\b|fine[- ]needle|細針|穿刺技術|needle visuali|檢體適足|nondiagnostic|\brose\b"),
+    (
+        "fna-technique",
+        r"\bfna\b|fine[- ]needle|細針|穿刺技術|needle visuali|檢體適足|nondiagnostic|\brose\b",
+    ),
     ("ln-assessment", r"lymph node|淋巴結|neck mapping|頸部分區|level vi|側頸"),
     ("active-surveillance", r"active surveillance|主動監測|積極監測|microcarcinoma|微小癌"),
     ("thermal-ablation", r"ablation|消融|射頻|\brfa\b|ethanol|酒精"),
@@ -61,10 +82,16 @@ PATTERNS: list[tuple[str, str]] = [
     ("parathyroid-localization", r"parathyroid|副甲狀腺"),
     ("elastography", r"elastograph|彈性造影|shear[- ]wave"),
     ("ceus", r"contrast[- ]enhanced|\bceus\b|顯影劑"),
-    ("ai-tirads", r"artificial intelligence|deep learning|machine learning|人工智慧|深度學習|radiomics|自動化"),
+    (
+        "ai-tirads",
+        r"artificial intelligence|deep learning|machine learning|人工智慧|深度學習|radiomics|自動化",
+    ),
     ("pediatric-pregnancy", r"p(a?)ediatric|兒童|pregnan|孕期|懷孕"),
     ("incidentaloma", r"incidental|意外發現|\bpet\b|\bct\b 意外"),
-    ("structured-reporting", r"structured report|結構化報告|audit|稽核|品質保證|logbook|credential"),
+    (
+        "structured-reporting",
+        r"structured report|結構化報告|audit|稽核|品質保證|logbook|credential",
+    ),
 ]
 
 _COMPILED = [(cid, re.compile(pat, re.I)) for cid, pat in PATTERNS]
@@ -72,10 +99,7 @@ _COMPILED = [(cid, re.compile(pat, re.I)) for cid, pat in PATTERNS]
 
 def classify(item: dict) -> str | None:
     """依資源的名稱、英文名與教學重點歸類。歸不出來回 None（由 build 印出來人工看）。"""
-    blob = " ".join(
-        str(item.get(f) or "")
-        for f in ("name", "en", "target", "title", "cat_hint")
-    )
+    blob = " ".join(str(item.get(f) or "") for f in ("name", "en", "target", "title", "cat_hint"))
     if not blob.strip():
         return None
     for cid, rx in _COMPILED:

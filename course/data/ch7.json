@@ -1,0 +1,443 @@
+{
+  "chapter": "CH7",
+  "title": "頸部淋巴結與術前分期",
+  "units": [
+    {
+      "id": "ch7-u1",
+      "name": "良性與可疑淋巴結的形態學判讀",
+      "type": "anatomy",
+      "assessment": "從自己門診或病房調出 10 顆頸部淋巴結的完整影像（含灰階長短軸與 Doppler），逐顆填一張七欄表：fatty hilum（有／無／偏心）、cortex（均勻／局部增厚／偏心增厚）、short-axis 與 S/L ratio、cystic change、punctate echogenic foci、vascularity（hilar／peripheral／mixed／無）、疑似 extranodal extension（邊界外凸、與 IJV 或 SCM 界面消失）。接著把每顆同時以 K-TIRADS (2021) 淋巴結三分類與 ETA 2013 淋巴結分類各判一次，統計兩者不一致的顆數，並指出造成不一致的是哪一個特徵（多半是「正常 hilum 但 round」或「單純變大」）。最後把 10 顆依你自己的判斷排出「最該切片」到「最不該切片」的順序，寫下排序理由，兩週後不看原判再重排一次，計算 intra-observer 一致率。",
+      "tight": [
+        "把 size（尤其是 short-axis ≥ 10 mm）當成主要判斷依據，而 K-TIRADS 驗證研究顯示 nodal size 對惡性風險幾乎沒有鑑別力",
+        "看到 hilum 就放心：轉移初期 hilum 可以完全保留，cortex 只是局部偏心增厚",
+        "round shape（S/L > 0.5）在 level II 的 jugulodigastric node 本來就常見，單獨用它會製造大量偽陽性",
+        "cystic change 在頸部被直覺想成 branchial cleft cyst，忘了 PTC 轉移的囊性結節長得幾乎一樣",
+        "把 hyperechoic cortex（類似甲狀腺組織的回音）誤讀成脂肪或正常，實際上是 PTC 轉移最特異的徵象之一",
+        "Doppler 只開一次、PRF 沒調低，於是把 peripheral/capsular flow 判成無血流"
+      ],
+      "weak": [
+        "在不看臨床資料的情況下，只憑 hilum、cortex、echogenicity、cystic change、punctate foci、vascularity 六項就能把淋巴結分成 probably benign／indeterminate／suspicious 三級",
+        "能講出哪幾個特徵是獨立預測因子（absent hilum、cystic change、punctate echogenic foci、abnormal vascularity、cortical hyperechogenicity），哪些（size、round shape 單獨出現）不是",
+        "能指出同一顆結節在 ETA 與 K-TIRADS 下分類為何不同，而不是背誦其中一套",
+        "能辨識 extranodal extension 的超音波線索，並知道超音波對此的把握度有限、須以 CT 或術中所見佐證"
+      ],
+      "lesson": {
+        "title": "Diagnostic & Therapeutic Approach to Lymph Nodes with Dr. Alvarez",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=STI3ePEgkfg",
+        "duration": "1:02:18",
+        "why": "Dr. Marco Alvarez 用近 30 分鐘逐一走過正常與病理淋巴結的超音波所見並標示分區，Ashok Shaha 與 Azita Khorsandi 兩位專家在 Q&A 補上外科與影像的對照觀點；正好補上 fellow 最大的落差——把淋巴結判讀等同於量短徑，而不是逐項檢查 hilum、cortex、echogenicity 與血流型態。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 THANC Foundation，本站僅連結",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          { "at": "04:25", "note": "為什麼淋巴結判讀決定手術範圍：先建立臨床脈絡" },
+          { "at": "09:08", "note": "正常 vs 病理淋巴結逐項比較，並依 level I–VI 說明各區常見所見（本單元核心段落）" },
+          { "at": "38:48", "note": "從判讀走到介入：哪些結節值得診斷性或治療性處置" },
+          { "at": "42:07", "note": "Q&A：外科與影像對「這顆到底算不算 positive」的爭論" }
+        ]
+      },
+      "drills": [
+        {
+          "name": "頸部淋巴結超音波：四參數逐項判讀",
+          "en": "Ultrasound of Cervical Lymph Nodes",
+          "kind": "lecture",
+          "target": "把「size、morphology、echogenicity、color Doppler」四參數的權重排序內化：morphology 與 echogenicity 永遠優先於 size，而且只有短軸值得測量。同時看 PTC 轉移結節為何常與原發腫瘤的回音不同。",
+          "dose": "先自己寫下「我判斷淋巴結時最先看什麼」，看完再對照講者的排序；重點在 04:50–14:54（形態異常與 PTC 轉移回音），最後 20:50 起的 FNA 選擇技巧留到 ch7-u3 再回看。",
+          "title": "Ultrasound of Cervical Lymph Nodes",
+          "channel": "Radiology Video - radiology made esay",
+          "url": "https://www.youtube.com/watch?v=4z6I3yGVS-M",
+          "duration": "22:47",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "授權狀況未確認，僅連結不重製。此頻道為第三方轉載，影片內標示為 The Masters Lecture Series，但未標示原始主辦單位與講者；已嘗試查證原始來源未果，若原權利人提出異議應即移除",
+          "coi": "無法確認講者與廠商關係，因原始來源未標示；內容中未見產品宣傳",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "04:50", "note": "沿 jugular vein 橫掃是找到淋巴結病變的基本動作" },
+            { "at": "05:17", "note": "四參數：size、morphology、echogenicity、color Doppler" },
+            { "at": "06:13", "note": "morphology 與 echogenicity 永遠勝過 size" },
+            { "at": "06:35", "note": "只有短軸是有意義的測量值" },
+            { "at": "08:15", "note": "反應性結節：可略大、血流可增加但一律是中央型，回音正常" },
+            { "at": "09:35", "note": "異常形態：round shape、分葉或不規則輪廓" },
+            { "at": "14:54", "note": "PTC 轉移結節的回音常與原發腫瘤不同——這是最容易漏掉的一點" }
+          ]
+        },
+        {
+          "name": "反應性與惡性頸部淋巴結的並排對照",
+          "en": "Cervical Lymph Nodes Ultrasound Normal Vs Abnormal Images | Reactive & Malignant Neck Nodes USG Scan",
+          "kind": "atlas",
+          "target": "在極短時間內建立「反應性」與「惡性」兩組動態影像的視覺基準線：反應性結節保持卵圓形、hilum 完整、血流以 hilar 為中心；惡性結節變圓、hilum 消失、周邊型血流。",
+          "dose": "把畫面暫停在每一段影像的第一幀，先自己寫下三行 structured description（形狀／hilum／血流），再放行看講者結論；0:00–2:36 為反應性、2:36 起為惡性。",
+          "title": "Cervical Lymph Nodes Ultrasound Normal Vs Abnormal Images | Reactive & Malignant Neck Nodes USG Scan",
+          "channel": "Dr. Sam's Imaging Library",
+          "url": "https://www.youtube.com/watch?v=tWL-KvmqGwE",
+          "duration": "4:46",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "00:00", "note": "反應性淋巴結：卵圓形、hilum 保留、hilar 血流" },
+            { "at": "02:36", "note": "惡性淋巴結：變圓、hilum 消失、周邊血流" }
+          ]
+        },
+        {
+          "name": "ETA 與 K-TIRADS 淋巴結風險分層的逐條比較",
+          "en": "Sonographic Diagnosis of Cervical Lymph Node Metastasis in Patients with Thyroid Cancer and Comparison of European and Korean Guidelines for Stratifying the Risk of Malignant Lymph Node",
+          "kind": "guideline",
+          "target": "看清兩套系統對同一顆結節為什麼會給出不同分類。文中五個獨立預測因子為 absent hilum、cystic change、punctate echogenic foci、abnormal vascularity、cortical hyperechogenicity；而 ETA 有 9.8% 的結節落入 not specified（hilum 正常但變圓、或只是變大），作者論證這兩項單獨並無獨立預測力。",
+          "dose": "先用自己蒐集的 10 顆結節各判一次再讀本文；重點讀 Table 中兩系統的分類條件與各級惡性率（normal/probably benign 約 13%、indeterminate 約 29%、suspicious 約 90%），不要只記結論的 correlation coefficient。",
+          "title": "Sonographic Diagnosis of Cervical Lymph Node Metastasis in Patients with Thyroid Cancer and Comparison of European and Korean Guidelines for Stratifying the Risk of Malignant Lymph Node",
+          "channel": "Korean Journal of Radiology 2022;23(11):1102-1111（Chung SR, Baek JH, et al.）",
+          "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2022.0358",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Creative Commons Attribution Non-Commercial License，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "Node-RADS 移植到超音波後的實際表現",
+          "en": "Standardizing cervical lymph node evaluation in papillary thyroid carcinoma: diagnostic accuracy of Node-RADS on ultrasound",
+          "kind": "guideline",
+          "target": "認識一套「還沒進入指引」的標準化評分被移植到超音波時會發生什麼：Node-RADS 單用時 AUC 僅 0.720（cutoff > 3，敏感度 65.7%、特異度 72.2%），加上 peripheral vascularity 後才升到 0.825。用來練習區分「技術可行性」與「臨床效益」。",
+          "dose": "重點讀方法段的 size 與 configuration 兩軸如何合成 1–5 分，以及各分數的惡性率（score 1 已達 35.7%，score 5 為 88.2%）。請特別注意 score 1 的惡性率並不低——這是選擇性收案族群造成的，不要把這個數字直接搬到自己的門診。",
+          "title": "Standardizing cervical lymph node evaluation in papillary thyroid carcinoma: diagnostic accuracy of Node-RADS on ultrasound",
+          "channel": "Frontiers in Endocrinology 2026（DOI 10.3389/fendo.2026.1709522）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12890614/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Creative Commons Attribution License (CC BY)，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch7-u2",
+      "name": "中央區的困難與側頸 mapping",
+      "type": "anatomy",
+      "assessment": "選 5 位已排定甲狀腺癌手術的病人，在手術前自己重掃一次頸部，畫出一張標準 mapping 圖：以氣管、甲狀軟骨下緣、cricoid、肩胛舌骨肌與鎖骨為界標，逐區（1A、1B、2、3、4、5、6）記錄「有／無可疑結節」，可疑者標上編號、短徑、與最近的固定解剖標記距離（例如「右 level 4，距鎖骨頭 12 mm，緊貼 IJV 後外側」）。中央區請用 head rotation 與吞嚥動作各掃一次，記錄哪些氣管食道溝結節只有在某一姿勢下才顯影。術後取得病理的分區結果，逐區算出你自己的 per-level 敏感度，並特別檢查兩件事：（1）level 6 漏掉幾顆；（2）有無 level 2 或 level 4 陽性但 level 6 陰性的 skip metastasis，以及你的術前掃描有沒有看到。",
+      "tight": [
+        "中央區被氣管與食道的空氣、鈣化甲狀軟骨遮蔽，光靠一個平面與一個姿勢掃會系統性低估 level 6",
+        "把食道（尤其左側）、副甲狀腺、胸腺殘餘誤判為 level 6 淋巴結",
+        "側頸只掃到 level 3、4 就收工，沒有把探頭往上帶到 level 2 的 digastric 下緣、往後帶到 level 5 的後三角",
+        "只掃有原發腫瘤那一側，忘了對側；PTC 的雙側轉移不罕見",
+        "假設「中央區乾淨＝側頸不用細看」，但 skip metastasis 確實存在（側頸轉移者中約 7.7%），且最常被漏掉的正是 level 2 與 level 4",
+        "分區只寫「右頸淋巴結腫大」，外科拿到報告仍不知道要開哪一區"
+      ],
+      "weak": [
+        "能以固定解剖標記（hyoid、cricoid、omohyoid、IJV、carotid、SCM、clavicle）把任一顆結節指定到 1A/1B/2/3/4/5/6 其中一區，並在報告中重現",
+        "能對中央區使用 head rotation、吞嚥與探頭傾斜等動作，把氣管食道溝與 level 6 的死角掃出來",
+        "能完成雙側、由下頜下到鎖骨上的完整 mapping，而不是只掃原發側",
+        "知道 skip metastasis 的發生率、最常侵犯的分區（level 3 > 4 > 2）與超音波漏診率，並據此調整掃描順序"
+      ],
+      "lesson": {
+        "title": "Ultrasound of cervical lymph nodes technique & evaluation criteria (Gerasimos Sykiotis)",
+        "channel": "НМИЦ онкологии им. Н.Н. Петрова（N.N. Petrov NMRC of Oncology；VI St. Petersburg International Oncology Forum「White Nights」）",
+        "url": "https://www.youtube.com/watch?v=SisuHT1hQ1g",
+        "duration": "21:38",
+        "why": "由 Lausanne 大學醫院（CHUV）的內分泌科醫師示範，直接回答 fellow 的三個實作問題：什麼時候要掃頸部、怎麼掃、掃哪裡；「Where to look — cervical compartments」與「Systematic approach to scanning the neck」兩段把分區與掃描順序綁在一起，正是 mapping 能不能被外科使用的關鍵。講者為內分泌科而非放射科，用語與 fellow 的臨床脈絡一致。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 N.N. Petrov NMRC of Oncology / White Nights Forum，本站僅連結",
+        "last_verified": "2026-08-02",
+        "coi": "會議錄影，講者利益揭露未於影片中顯示",
+        "timestamps": [
+          { "at": "00:19", "note": "什麼情況下必須評估頸部淋巴結" },
+          { "at": "02:07", "note": "基本掃描手法" },
+          { "at": "03:21", "note": "Where to look：頸部 compartment 的界定（本單元核心）" },
+          { "at": "03:55", "note": "系統性掃描順序：甲狀腺右葉、峽部、左葉，再走各分區" },
+          { "at": "09:21", "note": "頸部超音波偵測淋巴結轉移的限制——中央區為主要盲點" },
+          { "at": "11:59", "note": "Take-home messages" },
+          { "at": "13:07", "note": "此後轉入唾液腺主題，本單元請看到此為止" }
+        ]
+      },
+      "drills": [
+        {
+          "name": "分區、術前 mapping 與甲狀腺床以外的頸部所見",
+          "en": "Ultrasound of the Neck: There's More to See Than Thyroid Nodules",
+          "kind": "lecture",
+          "target": "把頸部 compartment 的超音波界標與實際 PTC 轉移病例綁在一起，並看「Pre-operative US mapping of abnormal lymph nodes」這一段外科導向的做法；同時建立 Zenker diverticulum、cervical/intrathyroidal thymus、suture granuloma 這些會被誤認為淋巴結的鑑別。",
+          "dose": "重點在 17:48（Lymph Node Compartments of the Neck）到 29:46（Pre-operative US Mapping）。中段多個病例（如 26 歲 Tg 3.2 ng/mL、53 歲 PTC 追蹤兩年）請先自己判斷再看解答。",
+          "title": "Ultrasound of the Neck There's More to See Than Thyroid Nodules",
+          "channel": "Radiology Video - radiology made esay",
+          "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
+          "duration": "42:48",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "授權狀況未確認，僅連結不重製。此頻道為第三方轉載，原始主辦單位與講者未於影片外標示；若原權利人提出異議應即移除",
+          "coi": "原始來源未標示，無法確認講者利益揭露",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "17:48", "note": "頸部淋巴結分區（compartments）與超音波界標" },
+            { "at": "21:22", "note": "異常呈長條狀但回音偏高的頸部結節——不是所有轉移都變圓" },
+            { "at": "22:47", "note": "53 歲 PTC 追蹤兩年、Tg 上升的分區對照" },
+            { "at": "25:32", "note": "雜亂的周邊血流型態" },
+            { "at": "28:16", "note": "DTC 淋巴結轉移超音波特徵的 caveats" },
+            { "at": "29:46", "note": "術前 US mapping 的實作方式（接 ch7-u4）" }
+          ]
+        },
+        {
+          "name": "頸部超音波解剖與系統性掃描技巧（FNA workshop）",
+          "en": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
+          "kind": "procedure",
+          "target": "把「系統性掃描」變成可重現的固定路徑，而不是每次憑感覺移動探頭。用來校正自己掃側頸時是否真的上到 level 2、後到 level 5。",
+          "dose": "邊看邊在自己身上或標準病人身上同步操作，掃完立刻畫一張分區圖比對。注意：本場為 workshop 錄影，影片頁未附說明文字與章節，實際動態掃描比例請自行於前 5 分鐘確認後再決定是否投入全長 30 分鐘。本片 CH2-u1 亦用於正常頸部解剖，本章借用的是它的系統性掃描路徑。",
+          "title": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
+          "channel": "GM Cancer Academy（Greater Manchester Cancer Academy）",
+          "url": "https://www.youtube.com/watch?v=9C4yGa_RbUU",
+          "duration": "30:16",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 GM Cancer Academy，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "中央區的真正難題：預防性中央區廓清該不該做",
+          "en": "Prophylactic Central Compartment Neck Dissection with Dr. Victoria Harries",
+          "kind": "lecture",
+          "target": "理解為什麼「超音波看不到 level 6」不是單純的影像失敗，而是一個治療決策問題：中央區顯微轉移比例高但超音波敏感度低，外科因此要在 prophylactic 與 unnecessary 之間拉線。看完應能說出自己的報告寫法會如何影響這條線。",
+          "dose": "重點在 20:38（Prophylactic vs. Unnecessary）與 22:14（The Dichotomy of the Lymph Node）；45:30 起 Rebecca Sippel 的討論值得完整聽。請注意這是外科文獻回顧，不含動態掃描，僅作為 ch7-u2 的決策脈絡補充，不可作為影像判讀依據。",
+          "title": "Prophylactic Central Compartment Neck Dissection with Dr. Victoria Harries",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=op5A7g3TKD0",
+          "duration": "59:31",
+          "tier": "B",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "20:38", "note": "Prophylactic 與 unnecessary 的界線在哪" },
+            { "at": "22:14", "note": "同一顆淋巴結對影像與對外科的意義為何不同" },
+            { "at": "45:30", "note": "Rebecca Sippel 的討論與 Q&A" }
+          ]
+        },
+        {
+          "name": "Skip metastasis：中央區陰性不等於側頸安全",
+          "en": "The prognostic implication of skip metastasis to lateral neck in patients with papillary thyroid cancer",
+          "kind": "guideline",
+          "target": "拿到具體數字校正掃描習慣：側頸轉移病人中 7.7% 為 skip metastasis（全體 PTC 為 0.89%），最常侵犯 level 3（71.1%）、其次 level 4（47.4%）、level 2（31.6%）、level 5 僅 2.6%；術前超音波完全漏診 21.1%，漏診最多的是 level 2（41.7%）與 level 4（44.4%），level 3 僅 18.5%。",
+          "dose": "讀完把 level 2 與 level 4 排進自己掃描 checklist 的固定項目，並在下 10 位病人上驗證。注意這是單中心回溯性資料，發生率與分佈不宜直接外推到其他族群。",
+          "title": "The prognostic implication of skip metastasis to lateral neck in patients with papillary thyroid cancer",
+          "channel": "Quantitative Imaging in Medicine and Surgery 2024;14(12):9477-9485（DOI 10.21037/qims-23-1737）",
+          "url": "https://qims.amegroups.org/article/view/126401/html",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "開放取用期刊全文，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch7-u3",
+      "name": "哪些淋巴結該 FNA、何時加做 CT 或 MRI",
+      "type": "case",
+      "assessment": "回顧自己過去一年送出的 15 次頸部淋巴結 FNA，逐例填三欄：（1）當時的超音波分類（probably benign／indeterminate／suspicious）與短徑；（2）細胞學結果與 Tg washout 值（若有）；（3）這次 FNA 有沒有改變處置。用這 15 例算出自己的 unnecessary biopsy rate，並與 KSThR 驗證研究的數字對照（只切 suspicious 者特異度 82%–88%、unnecessary biopsy rate 13%–15%）。接著挑出其中 3 例「當時因為結節較大而切」的案例，重判一次若改用「只切 suspicious、不看大小」的門檻會如何。最後選 3 位你曾加做 CT 的病人，寫下你當初加做 CT 想回答什麼問題、CT 有沒有回答、以及若不做 CT 手術範圍會不會改變。",
+      "tight": [
+        "把「短徑 ≥ 8 或 10 mm」當作切片門檻，但驗證資料顯示 nodal size 在各風險分類內對惡性風險沒有鑑別力",
+        "把 indeterminate 結節一律切下去，換來的是敏感度幾乎沒進步、unnecessary biopsy rate 明顯上升",
+        "忘記併送 Tg washout，結果細胞學 nondiagnostic 時整次穿刺白做",
+        "對每一位甲狀腺癌病人都加做 CT，或反過來從不加做；兩者都不是證據支持的做法",
+        "在鎖骨後、胸骨後或體積龐大、疑似 ETE 的病灶只靠超音波下結論",
+        "把 CT 的顯影劑碘負荷對後續 RAI 的影響當成絕對禁忌，而不與治療計畫一起權衡"
+      ],
+      "weak": [
+        "能說出自己採用的切片門檻是什麼、來自哪一份文件，並用自己的資料估算 unnecessary biopsy rate",
+        "能判斷一顆 indeterminate 結節是「追蹤」「加做橫斷面影像」還是「直接 FNA + Tg washout」",
+        "能列出加做 CT 的具體臨床問題（鎖骨後／胸骨後延伸、氣管食道侵犯、level 6 與上縱膈、體積龐大或多發側頸病灶），而不是例行加做",
+        "能對病人與外科解釋為什麼某顆結節不切也安全，並訂出明確的追蹤時程"
+      ],
+      "lesson": {
+        "title": "Diagnostic Test Accuracy of Ultrasonography vs Computed Tomography with Dr. Alabousi",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=AtFVOy5mzro",
+        "duration": "57:12",
+        "why": "Mostafa Alabousi 報告自己針對 PTC 頸部淋巴結轉移的 US vs CT 系統性回顧，把「中央區」與「側頸」分開比較診斷準確度，最後直接給出「哪些情況該在超音波之外加做 CT」的具體建議——這正是 fellow 最常憑習慣而非證據決定的一步。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 THANC Foundation，本站僅連結",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          { "at": "01:54", "note": "現行各影像方式在術前評估中的定位" },
+          { "at": "13:58", "note": "中央區 vs 側頸 vs 全頸的準確度差異（先自己猜哪一區差距最大）" },
+          { "at": "24:42", "note": "什麼情況下該在超音波之外加做 CT（本單元核心）" },
+          { "at": "29:55", "note": "Harish 的討論與 Q&A" }
+        ]
+      },
+      "drills": [
+        {
+          "name": "KSThR 淋巴結風險分層與切片門檻的實測驗證",
+          "en": "Validation of Ultrasound and Computed Tomography-Based Risk Stratification System and Biopsy Criteria for Cervical Lymph Nodes in Preoperative Patients With Thyroid Cancer",
+          "kind": "guideline",
+          "target": "看清兩件會直接改變門診行為的事：US 合併 CT 可把 indeterminate 結節從 20.6% 降到 14.4%；以及在各分類內 nodal size 對惡性風險沒有鑑別力。只切 suspicious 者特異度 82%–88%、unnecessary biopsy rate 13%–15%，且敏感度未犧牲。",
+          "dose": "先寫下自己現在用的切片門檻與理由，再讀本文的 biopsy criteria 比較表。這是 277 顆淋巴結、228 位病人的單中心回溯性驗證，外推前請注意族群差異。",
+          "title": "Validation of Ultrasound and Computed Tomography-Based Risk Stratification System and Biopsy Criteria for Cervical Lymph Nodes in Preoperative Patients With Thyroid Cancer",
+          "channel": "Korean Journal of Radiology 2023;24(9):912-923（Jeon YH, Lee JY, et al.）",
+          "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2023.0215",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Creative Commons Attribution Non-Commercial License，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "作者自述：甲狀腺癌淋巴結轉移的 CT 風險分層",
+          "en": "[Listen to Authors] CT Diagnosis of Lymph Node Metastasis in Thyroid Cancer",
+          "kind": "lecture",
+          "target": "由原作者（Asan Medical Center，Roh YH / Chung SR / Baek JH 等）說明 CT-based risk stratification system 的建立與驗證，用來回答「加做 CT 之後，我要怎麼讀它、它能改變什麼」。",
+          "dose": "10 分鐘，適合在讀完上一則 KSThR 驗證研究後接著看，把 US 與 CT 兩套分類放在同一張表上比較。對應論文為 Korean J Radiol 2023;24(10):1028-1037。",
+          "title": "[Listen to Authors] CT Diagnosis of Lymph Node Metastasis in Thyroid Cancer",
+          "channel": "Korean Journal of Radiology",
+          "url": "https://www.youtube.com/watch?v=XRrPdxAn5Cg",
+          "duration": "10:00",
+          "tier": "A",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 The Korean Society of Radiology，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "不切也是一個決定：追蹤三個月後消失的頸部結節",
+          "en": "Sean Nikravan MD, Thyroid Cancer and Lymph nodes neck surveillance follow up",
+          "kind": "case",
+          "target": "練習「不穿刺」這個選項：甲狀腺全切除後兩年、左側頸動脈與 IJV 之間出現 0.5 cm 結節，臨床上有近期感染史，選擇密切追蹤而非切片，三個月後完全消失。重點是形態學與臨床脈絡如何一起支撐「不切」的決定。",
+          "dose": "看到 01:10 的提問處先暫停，自己寫下「我會切還是不切、理由是什麼、如果不切我要多久追蹤一次」，再看後半段。這是單一病例、由執業內分泌科醫師自行發布，不可當成普遍規則——大多數甲狀腺癌病人新出現的頸部結節仍需要進一步評估。本片為術後追蹤情境，CH8-u2 以「復發淋巴結轉移」角度使用同一支影片；本章借用的是它的切片門檻決策，臨床情境請以 CH8 的說明為準。",
+          "title": "Sean Nikravan MD, Thyroid Cancer and Lymph nodes neck surveillance follow up.",
+          "channel": "Sean P. Nikravan MD",
+          "url": "https://www.youtube.com/watch?v=qzDBjlS5Yc0",
+          "duration": "5:37",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "coi": "私人執業診所自行發布之教學影片，影片說明含診所聯絡資訊；同頻道同時推廣該診所的自費射頻燒灼（RFA）服務，觀看時請與臨床建議分開看待。未見廠商贊助揭露。（與 CH8 之 coi 標註一致）",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "01:10", "note": "提問處：先自己決定切或不切再往下看" },
+            { "at": "04:24", "note": "三個月後追蹤結果與結論" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch7-u4",
+      "name": "術前報告模板與外科溝通",
+      "type": "quality",
+      "assessment": "取自己最近 10 份甲狀腺癌術前超音波報告，逐份對照 KSThR 2023 標準化報告的必要欄位打勾：scan range 是否涵蓋中央區（level 1A、6）與側頸（level 1B、2、3、4、5）、是否記錄 extrathyroidal extension、是否明確寫出「有無 suspicious 或 enlarged indeterminate 淋巴結」以及其 neck level、是否量了所有 suspicious 與 indeterminate 結節的短徑、若有切片是否記錄目標病灶、切片方式與取樣次數。算出你的欄位完成率。接著把其中 3 份拿給實際會開這台刀的外科醫師，請對方只憑報告畫出他預計要清的分區，再與你的原始影像對照，記錄哪些描述造成誤解（最常見的是只寫「右頸」而未寫 level，以及未寫結節與 IJV／carotid／clavicle 的相對位置）。最後依這些回饋改寫成一份自己科內的術前 mapping 報告模板，並在下 10 位病人上使用。",
+      "tight": [
+        "報告只寫「頸部淋巴結腫大」或「右頸淋巴結」，外科無法據此決定廓清範圍",
+        "只描述最大的一顆，沒有把所有 suspicious 與 indeterminate 結節逐一編號、標區、量短徑",
+        "沒有寫 scan range，讀報告的人無從得知中央區與側頸是否都掃過、還是只掃了甲狀腺",
+        "沒有記錄結節與固定解剖標記（IJV、carotid、SCM、clavicle、氣管）的相對位置，術中因此找不到",
+        "對 extrathyroidal extension 用「不排除」帶過，外科拿到後仍要自己重掃",
+        "報告寫得很完整，但沒有人在術前與外科對過一次影像，等到術中才發現認知不同"
+      ],
+      "weak": [
+        "能產出一份符合 KSThR 2023 必要欄位、外科可以直接照著開刀的術前 mapping 報告",
+        "能把每一顆可疑結節用「分區 + 短徑 + 與固定標記的相對位置」三要素定位",
+        "能在多專科討論中用影像語言回答外科的問題，而不是重述報告文字",
+        "能誠實在報告中標示超音波回答不了的部分（中央區敏感度、extranodal extension、上縱膈），並說明是否建議加做橫斷面影像"
+      ],
+      "lesson": {
+        "title": "Standardized Imaging and Reporting for Thyroid Ultrasound: Korean Society of Thyroid Radiology Consensus Statement and Recommendation",
+        "channel": "Korean Journal of Radiology 2023;24(1):22-30（Lee MK, Na DG, Joo L, Lee JY, Ha EJ, Kim JH, et al.；Korean Society of Thyroid Radiology）",
+        "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2022.0894",
+        "why": "這是本單元真正可以拿來用的報告模板：學會層級、開放取用，明確規定 scan range 必須涵蓋甲狀腺與中央區淋巴結（level 1A、6）以及側頸（level 1B、2、3、4、5），並在報告要素表中列出「cervical lymph node：有無 suspicious 或 enlarged indeterminate 淋巴結、neck level」、extrathyroidal extension 與切片程序的記錄欄位。同時提供 head rotation、吞嚥等改善氣管食道溝顯影的操作建議，把掃描與報告綁在一起。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "society",
+        "access": "open",
+        "license": "Creative Commons Attribution Non-Commercial License，本站僅連結不重製；全文 PDF 由 kjronline.org 提供",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "ATA 術前影像立場聲明",
+          "en": "American Thyroid Association Statement on Preoperative Imaging for Thyroid Cancer Surgery",
+          "kind": "guideline",
+          "target": "取得「術前影像要回答什麼」的學會層級共識：超音波必須常規評估原發腫瘤與所有相關頸部淋巴結區域；並對照聲明中列出的可疑徵象（size、shape、echogenicity、hypervascularity、hilar architecture 消失、鈣化）與你自己報告中實際寫下的項目。",
+          "dose": "先列出自己報告中固定會寫的欄位，再讀聲明的建議清單，把缺的補進 ch7-u4 的模板。Thyroid 2015;25(1):3-14（Yeh MW, Bauer AJ, Bernet VA, Ferris RL, Loevner LA, et al.；ATA Surgical Affairs Committee），PMID 25188202。注意這份聲明發表於 2015 年，請與較新的 KSThR 2023 報告建議並置閱讀。",
+          "title": "American Thyroid Association statement on preoperative imaging for thyroid cancer surgery",
+          "channel": "Thyroid 2015;25(1):3-14（American Thyroid Association Surgical Affairs Committee）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25188202/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "subscription",
+          "license": "摘要於 PubMed 開放閱讀，全文需訂閱（DOI 10.1089/thy.2014.0096）；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "外科要的是什麼：術前影像與第一刀之前的判斷",
+          "en": "Preoperative Imaging for Thyroid Cancer with Dr. James Wu",
+          "kind": "lecture",
+          "target": "從外科端反推報告怎麼寫：「Signs of ETE Before the First Cut」示範外科如何在術前從影像判斷 extrathyroidal extension，「Preoperative CT Scans in Thyroid Cancer Care」說明什麼情況下超音波報告該主動建議加做 CT。",
+          "dose": "看 12:23（ETE 徵象）與 28:41（術前 CT 的角色）兩段，邊看邊把外科提到、但你的報告目前沒寫的項目記下來，直接加進模板。",
+          "title": "Preoperative Imaging for Thyroid Cancer with Dr. James Wu",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=7zccu4izgTI",
+          "duration": "52:57",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "12:23", "note": "下刀前如何從影像判斷 extrathyroidal extension" },
+            { "at": "28:41", "note": "術前 CT 在甲狀腺癌照護中的角色" },
+            { "at": "36:31", "note": "超音波與其他影像如何共同支撐手術決策" }
+          ]
+        },
+        {
+          "name": "國際甲狀腺 tumor board：報告如何進入多科決策",
+          "en": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (Mar 2024)",
+          "kind": "case",
+          "target": "觀察一份影像報告在多專科場合被怎麼使用與質疑：Michael Tuttle 主持，Erik Alexander、Carrie Cunningham、Lori Wirth 提案，Jill Langer（影像）、Janice Pasieka（外科）、Margaret Brandwein-Weber（病理）等在同一桌對話。用來練習「外科溝通」時該提供什麼、該保留什麼。",
+          "dose": "選 Case #1（08:58 起）完整聽一遍，過程中記下影像端每次被追問的問題類型；接著把這些問題轉成你報告中應該預先回答的欄位。",
+          "title": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (Mar 2024)",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=x7zc8FrBCJQ",
+          "duration": "58:55",
+          "tier": "A",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "08:58", "note": "Case #1（Erik Alexander）：18 歲女性多發結節，影像與臨床的交互詰問" },
+            { "at": "25:42", "note": "Case #2（Carrie Cunningham）" },
+            { "at": "45:06", "note": "Case #3（Lori Wirth）" }
+          ]
+        }
+      ]
+    }
+  ]
+}

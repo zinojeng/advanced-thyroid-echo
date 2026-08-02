@@ -1,0 +1,593 @@
+{
+ "chapter": "CH3",
+ "title": "瀰漫性甲狀腺疾病",
+ "note": "本章刻意不把 color Doppler 血流量當成任何一種瀰漫性疾病的單一確診標準。多個入選資源（Mandel 2019 演講、RAD VISION 的 PSV 影片）確實把血流或單一 PSV cutoff 講得比證據支持的更確定，這些地方已在對應的 why / target 逐一標註，請連同註記一起使用。罕見主題（Riedel、IgG4-RTD、AIT type 1 vs 2、ICI thyroiditis）在 YouTube 上找不到有實際影像且來源可考的影片，已改用開放取用期刊與 Endotext，詳見 registry-ch3.json。",
+ "units": [
+  {
+   "id": "ch3-u1",
+   "name": "Graves disease 的超音波與都卜勒判讀",
+   "type": "disease",
+   "assessment": "連續收 5 位新診斷 thyrotoxicosis 的病人，掃描前先只憑病史與 TSH／fT4 寫下你的鑑別診斷排序，再掃描並記錄三件事：(1) 腺體體積與實質回音，(2) superior thyroid artery 的 mean peak systolic velocity 實測值（不是「看起來很紅」），(3) 是否有離散結節及其 ACR TI-RADS (2017) 分級。之後對照 TRAb 與（若有做）I-123 uptake 結果，統計你有幾例僅憑血流樣態就會判錯 Graves 與破壞性甲狀腺炎，並寫出每一例的錯誤來源是探頭壓力、PRF/gain 設定、還是真的病理重疊。",
+   "tight": [
+    "把 thyroid inferno 當成 Graves 的確診依據——破壞性甲狀腺炎恢復期、亞急性甲狀腺炎早期、甚至技術上調高 color gain 或降低 PRF，都能做出一模一樣的畫面",
+    "在瀰漫性低回音、體積增大的 Graves 腺體裡漏掉真正的離散結節：Langer 的資料是超音波在 Graves 病人找到 16% 局部結節，而 I-123 掃描只找到約 2%",
+    "把 Graves 腺體內的斑塊狀低回音區直接當成惡性——這些多半是淋巴球浸潤，切片為良性；Graves 與 Hashimoto 的關鍵差別在於 Graves 典型「缺乏纖維化」",
+    "用單一 PSV cutoff（例如 40 或 50 cm/s）當成二分法，忽略不同研究之間的閾值與儀器差異"
+   ],
+   "weak": [
+    "在同一台機器上把 PRF、color gain、wall filter 固定成可重複的設定後，才去比較兩位病人的血流——否則血流「多寡」不具可比性",
+    "實際量出 superior thyroid artery 的 peak systolic velocity，並知道自己引用的是哪一份研究的閾值與其敏感度／特異度",
+    "在 Graves 背景上獨立評估結節：不因為「整片都是 Graves」就跳過 TI-RADS 分級與 FNA 判斷",
+    "說得出超音波在 thyrotoxicosis 到底取代了什麼、沒有取代什麼——什麼時候仍然必須做 TRAb 或核醫攝取率"
+   ],
+   "lesson": {
+    "title": "Sonographic Evaluation of Diffuse Thyroid Disease",
+    "channel": "Radiology Video - radiology made esay（講者於片頭自述為 Jill E. Langer, Perelman School of Medicine, University of Pennsylvania）",
+    "url": "https://www.youtube.com/watch?v=XR4nOMp_bGA",
+    "duration": "35:18",
+    "why": "目前公開可及、由甲狀腺超音波公認專家（UPenn 的 Jill Langer）完整講完 Graves／Hashimoto／淋巴瘤／亞急性／amiodarone 的單一教材，全程配真實動態掃描與病理對照。選它當 CH3 主課的關鍵在於它自己就先把 vascularity 打上折扣：10:29 明講瀰漫性疾病的血流「變異極大」，而不是拿 inferno 當診斷章。上傳頻道非講者本人，授權狀況未確認，僅作連結。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "授權狀況未確認，僅連結不重製；講者身分由影片片頭自述查證，上傳頻道非講者本人",
+    "last_verified": "2026-08-02",
+    "timestamps": [
+     {
+      "at": "04:50",
+      "note": "Graves 段落開始——第一句就是「通常不是靠超音波診斷」"
+     },
+     {
+      "at": "05:23",
+      "note": "瀰漫性低回音、體積增大的實際影像"
+     },
+     {
+      "at": "05:53",
+      "note": "thyroid inferno 與上下甲狀腺動脈的高流速"
+     },
+     {
+      "at": "06:05",
+      "note": "「有人單用都卜勒就能高敏感高特異診斷 Graves」的說法——聽完請對照 ch3-u1 drill 2 的統合分析再決定要不要信"
+     },
+     {
+      "at": "06:26",
+      "note": "實務上多數機構仍以 I-123 掃描為主；超音波的角色是找結節"
+     },
+     {
+      "at": "06:41",
+      "note": "超音波在 Graves 病人找到 16% 局部結節 vs I-123 只找到約 2%——這是 Graves 要掃超音波的真正理由"
+     },
+     {
+      "at": "07:26",
+      "note": "Graves 腺體內結節的切片結果：癌與 Graves 並存時的處理"
+     },
+     {
+      "at": "07:40",
+      "note": "Graves 內斑塊狀低回音區＝淋巴球浸潤，切片良性；Graves 典型缺乏纖維化"
+     },
+     {
+      "at": "10:29",
+      "note": "本章最重要的一句：瀰漫性疾病的血流變異極大，不能單獨當判準"
+     }
+    ]
+   },
+   "drills": [
+    {
+     "name": "Graves 與橋本的都卜勒鑑別點（含甲狀腺下動脈 PSV cutoff）",
+     "en": "GRAVES DISEASE VS HASHIMOTOS THYROIDITIS - DIFFERENTIATING POINTS",
+     "kind": "case",
+     "target": "看出灰階上 Graves 與 Hashimoto 可以極為相似，以及作者主張的量化切點（inferior thyroid artery PSV 40 cm/s）長什麼樣子。**同時要看出這支影片的問題**：它把單一 PSV cutoff 當成二分法呈現，沒有給敏感度／特異度、沒有說明是哪一條動脈的哪一段、也沒有討論儀器差異。請把它當成「一種被廣泛使用但被過度簡化的作法」來看，再用 drill 2 的統合分析校正。",
+     "dose": "先看 00:48 的 inferno 段與 02:00 的 Swiss cheese / white knight 段，自己寫下你會怎麼分；再看完 PSV 段落，然後立刻讀 drill 2，回答一個問題：40 cm/s 這個數字在文獻裡站得住腳嗎？",
+     "title": "GRAVES DISEASE VS HASHIMOTOS THYROIDITIS -DIFFERENTIATING POINTS",
+     "channel": "RAD VISION SNK",
+     "url": "https://www.youtube.com/watch?v=2kz9xVpIO7Y",
+     "duration": "9:06",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道，本站僅連結",
+     "last_verified": "2026-08-02",
+     "timestamps": [
+      {
+       "at": "00:48",
+       "note": "thyroid inferno pattern"
+      },
+      {
+       "at": "02:00",
+       "note": "Swiss cheese pattern 與 white knight"
+      },
+      {
+       "at": "04:30",
+       "note": "PSV 量測與 40 cm/s 切點的主張——本 drill 要批判的部分"
+      }
+     ]
+    },
+    {
+     "name": "上甲狀腺動脈平均 PSV 用於 thyrotoxicosis 鑑別的診斷統合分析",
+     "en": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+     "kind": "guideline",
+     "target": "把「血流很多＝Graves」換成可稽核的數字：讀出這份統合分析納入研究的閾值分布、合併敏感度與特異度，以及為什麼各研究的 cutoff 不能互相搬用。學員讀完要能回答：在自己的機器與掃描習慣下，要引用哪一個閾值、以及這個檢查在什麼情況下仍不足以取代 TRAb 或攝取率。",
+     "dose": "只讀 Methods 的納入條件、Results 的 SROC 與各研究 cutoff 表，以及 Limitations。重點不是背數字，是看清楚「同一個指標在不同研究給出不同切點」這件事本身。",
+     "title": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+     "channel": "BMC Endocrine Disorders 2019;19:56（Peng X 等）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6554950/",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "open",
+     "license": "CC BY 4.0（BMC / Springer Nature）；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "多參數超音波評估顯性甲狀腺功能亢進的瀰漫性甲狀腺疾病",
+     "en": "Multiparametric ultrasound-based assessment of overt hyperthyroid diffuse thyroid disease",
+     "kind": "guideline",
+     "target": "看出把灰階回音、彈性成像與都卜勒參數合起來看，比單一血流指標更能分開 Graves 與破壞性／自體免疫性病變；也看出即使是多參數，作者仍留下重疊區間。這是本單元「不要把 vascularity 當單一確診標準」最直接的證據支撐。",
+     "dose": "讀 Results 中各參數的 AUC 對照表，找出哪一個單一參數表現最差；再讀 Discussion 裡作者自己承認的重疊病例。掃描時把這幾個參數固定寫進你的報告模板。",
+     "title": "Multiparametric ultrasound-based assessment of overt hyperthyroid diffuse thyroid disease",
+     "channel": "Frontiers in Endocrinology 2023（Stoian D 等）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764279/",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "open",
+     "license": "CC BY 4.0（Frontiers）；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch3-u2",
+   "name": "橋本甲狀腺炎：型態變化、假性結節與淋巴瘤風險",
+   "type": "disease",
+   "assessment": "調出你自己過去 6 個月報告過「Hashimoto 背景合併結節」的 10 份檢查，逐份重看影像並重新分類每一個被你叫做結節的病灶：它是 (a) 真結節、(b) 假性結節／micronodular pattern、還是 (c) 局部型甲狀腺炎。對每一個判定寫出你的依據（形狀是否幾何、是否多發、病灶內是否有纖維化的高回音線、縱切面表現）。統計你當初有幾例做了非必要的 FNA，以及有幾例的細胞學結果是 Hashimoto。最後挑出 2 例重新以 ACR TI-RADS (2017) 分級，說明在瀰漫性低回音背景下你的 echogenicity 評分基準是什麼。",
+   "tight": [
+    "在 diffuse hypoechoic 背景上，假性結節（micronodular / pseudonodular pattern）的邊界不規則、形狀不幾何，照字面套 TI-RADS 幾乎每一顆都會落到高度可疑分類，造成大量不必要的穿刺與病人焦慮",
+    "把 honeycombing 與 giraffe pattern 誤認成多發結節——這兩者其實沒有惡性疑慮",
+    "在異質性極高的橋本腺體裡漏掉真正的乳突癌，尤其是只表現為局部鈣化的病灶",
+    "腺體「快速增大」時只想到橋本進展，忘記橋本是原發性甲狀腺淋巴瘤幾乎唯一的背景疾病",
+    "只用橫切面判斷離散病灶——縱切面在區分甲狀腺炎病灶與真結節上明顯較佳"
+   ],
+   "weak": [
+    "分得出 Hashimoto 的幾種型態：diffuse hypoechogenicity、micronodular／pseudonodular、honeycombing、局部型、萎縮型，並知道哪幾種完全不需要處理",
+    "用「病灶內是否有纖維化高回音」「病灶是否多發且形狀不幾何」來壓低假陽性，而不是照字面把每個低回音區叫結節",
+    "認得原發性甲狀腺淋巴瘤的影像樣態：極度低回音、後方回音增強（pseudocystic）、瀰漫或大片浸潤，並知道這時要立刻做什麼（core needle biopsy／流式細胞、而非只做 FNA）",
+    "在橋本背景上判定哪些病灶值得 FNA、哪些只需追蹤，並能對病人說清楚理由"
+   ],
+   "lesson": {
+    "title": "Ultrasound of non-nodular thyroid diseases - ETA Ultrasound Course",
+    "channel": "Tamas Solymosi（European Thyroid Association Ultrasound Board 成員）",
+    "url": "https://www.youtube.com/watch?v=8ejRbOaQBXw",
+    "duration": "28:28",
+    "why": "歐洲甲狀腺學會（ETA）超音波課程的正式講次，由 ETA 超音波委員會成員主講，主題正好就是本單元的核心衝突：淋巴球性甲狀腺炎的各種型態，以及「離散病灶不等於病理結節」。片中用 113 位連續病人的自家資料量化假陽性結節診斷造成的過度穿刺與病人焦慮，這是純講病灶特徵的教材給不了的。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原講者與 European Thyroid Association，本站僅連結",
+    "last_verified": "2026-08-02",
+    "timestamps": [
+     {
+      "at": "01:31",
+      "note": "淋巴球性甲狀腺炎的兩種基本型態"
+     },
+     {
+      "at": "02:16",
+      "note": "用 pixel intensity（0–255）量化低回音，而不是憑感覺"
+     },
+     {
+      "at": "03:49",
+      "note": "輕度低回音時 TPOAb 的敏感度明顯較差——影像走在抗體前面的情境"
+     },
+     {
+      "at": "06:57",
+      "note": "假性結節不只低回音，還帶不規則邊界；照字面套用任何分類系統都會落到最可疑那一格"
+     },
+     {
+      "at": "08:32",
+      "note": "honeycombing：不難辨認，也沒有惡性疑慮"
+     },
+     {
+      "at": "09:17",
+      "note": "高回音背景上多發低回音區的型態，同樣不帶腫瘤學意義"
+     },
+     {
+      "at": "10:49",
+      "note": "大片低回音field、浸潤性邊緣與矩形外觀的局部型"
+     },
+     {
+      "at": "12:22",
+      "note": "113 位連續病人的實測資料：假陽性結節診斷的代價"
+     },
+     {
+      "at": "21:31",
+      "note": "臨床資料何時決定影像判讀：疼痛／發燒指向亞急性，高 TPOAb 指向淋巴球性"
+     },
+     {
+      "at": "23:50",
+      "note": "橋本病灶 vs 乳突癌的實例對照"
+     },
+     {
+      "at": "26:55",
+      "note": "病灶內出現纖維化，較支持甲狀腺炎而非真結節"
+     },
+     {
+      "at": "27:40",
+      "note": "縱切面優於橫切面——收尾的操作結論"
+     }
+    ]
+   },
+   "drills": [
+    {
+     "name": "橋本甲狀腺炎的超音波表現（含 giraffe pattern 與假性結節）",
+     "en": "Ultrasound of Hashimoto's Thyroiditis",
+     "kind": "case",
+     "target": "在三個實例上認出 micronodular／giraffe pattern、纖維化高回音細帶、分葉狀輪廓與地圖狀低回音區，並記住主講者的操作結論：橋本腺體內若出現局部鈣化，就應該切片。這一支補足主課沒有逐項條列的量化基準（峽部 <0.4 cm、兩葉橫徑與前後徑 <2 cm）。",
+     "dose": "看之前先把三個病例的截圖暫停，自己說出你會不會叫它結節、會不會建議穿刺，再聽解答。全片 8 分半，適合一次看完。",
+     "title": "Ultrasound of Hashimoto’s Thyroiditis",
+     "channel": "Radquarters",
+     "url": "https://www.youtube.com/watch?v=Q7KWVNuxHDU",
+     "duration": "8:51",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道，本站僅連結",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "原發性甲狀腺 MALT 型淋巴瘤（含病史、細胞學與組織病理對照）",
+     "en": "Thyroid lymphomas - Case 1: Primary MALT-type non-Hodgkin lymphoma",
+     "kind": "case",
+     "target": "看出一個關鍵時序：橋本背景 + 1.5 個月內雙側迅速腫大 + 極度低回音 = 淋巴瘤，而細胞學一開始只報「Hashimoto 伴淋巴母細胞增加」。這正是為什麼懷疑淋巴瘤時不能只靠 FNA 結果收工。本頁把超音波影像、臨床資料、細胞學與組織病理放在同一頁對照。",
+     "dose": "先只讀病史與超音波描述，寫下你的鑑別診斷與下一步；再往下看細胞學，注意它並沒有直接給你答案；最後看組織病理。做完再回答：你會在哪一步決定改做 core needle biopsy。",
+     "title": "Thyroid lymphomas - Case 1: Primary MALT-type non Hodgkin lymphoma",
+     "channel": "thyrosite.com（Tamas Solymosi 甲狀腺超音波病例庫）",
+     "url": "https://thyrosite.com/thyroid/867/index",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "case_library",
+     "access": "open",
+     "license": "版權歸 thyrosite.com 與原作者，本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "瀰漫大 B 細胞淋巴瘤的動態掃描",
+     "en": "A large B-cell lymphoma. Thyroid lymphomas - case 8",
+     "kind": "case",
+     "target": "看動態影像下瀰漫大 B 細胞淋巴瘤的實際質地：極低回音、後方回音增強造成的類囊樣外觀，與橋本的異質性低回音在動態掃描下如何不同。靜態截圖看不出這個差別，這就是要看動態的理由。",
+     "dose": "1 分鐘，反覆看 3 遍。第一遍只看灰階質地，第二遍看後方回音增強，第三遍比對前一個 drill 的 MALT 病例，寫下兩者的差異。",
+     "title": "A large B-cell lymphoma. Thyroid lymphomas - case 8",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=boO1hAu3IoU",
+     "duration": "1:06",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原講者，本站僅連結",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "原發性甲狀腺淋巴瘤與自體免疫的回顧性研究（THANC 學術演講）",
+     "en": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+     "kind": "lecture",
+     "target": "把「橋本會增加淋巴瘤風險」從一句口號變成可量化的臨床背景：實際發生率有多低、哪些病人真的需要留意、以及診斷延誤發生在哪一步。學員聽完應能對病人說出一個誠實的風險量級，而不是製造恐慌或輕描淡寫。",
+     "dose": "本片 1 小時，屬於背景閱讀而非影像訓練。建議只在完成前三個 drill 之後聽，並只聚焦研究方法與結論兩段；不要拿它當影像判讀教材。",
+     "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+     "channel": "THANC Foundation（Thyroid, Head and Neck Cancer Foundation）",
+     "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
+     "duration": "1:01:41",
+     "tier": "B",
+     "source_type": "webinar",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 THANC Foundation，本站僅連結",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch3-u3",
+   "name": "亞急性、無痛性與急性化膿性甲狀腺炎的鑑別",
+   "type": "disease",
+   "assessment": "設計一份自己門診用的一頁式決策表，欄位為：疼痛有無、發燒、CRP/ESR、TSH/fT4、TPOAb、超音波表現、是否需要核醫攝取率、是否需要 CT 或食道攝影、是否需要 FNA。用它跑過你手上至少 3 位 thyrotoxicosis 且攝取率低的病人與 1 位甲狀腺疼痛的病人，記錄哪一欄真正改變了你的處置。特別針對急性化膿性個案寫下：你在超音波上看到什麼會讓你懷疑 pyriform sinus fistula，以及你會在感染的哪一個時期安排下咽部影像檢查（並說明為什麼不是急性期）。",
+   "tight": [
+    "亞急性甲狀腺炎早期可以非常充血，看起來像 Graves——Langer 的經驗是「大多數反而是血流正常到減少」，把血流當判準兩個方向都會錯",
+    "亞急性甲狀腺炎的病灶邊界不規則、極度低回音，容易被當成惡性而做了不必要的 FNA；痛感與病程才是主要線索",
+    "無痛性（silent／postpartum）甲狀腺炎沒有任何特異的超音波表現，靠影像診斷必然失敗——必須靠攝取率為零與病程",
+    "把急性化膿性甲狀腺炎當成單純膿瘍處理，沒有去找 pyriform sinus fistula（尤其是左側、反覆發作、兒童與年輕成人）",
+    "在急性發炎期安排下咽影像，此時廔管常被水腫遮蔽而找不到，導致假陰性與復發"
+   ],
+   "weak": [
+    "用「痛不痛」把甲狀腺炎先切成兩大類，再用攝取率與病程收斂，而不是先看超音波",
+    "認出亞急性甲狀腺炎典型的地圖狀、極低回音、跨葉遊走且會隨時間位移的病灶",
+    "知道無痛性甲狀腺炎的超音波角色是排除結節與量體積，不是診斷",
+    "認出急性化膿性甲狀腺炎的膿瘍、氣體與甲狀腺周圍軟組織延伸，並在恢復期用超音波找 echogenic tract sign 來提示廔管",
+    "說得出每一種甲狀腺炎「不需要」做什麼檢查"
+   ],
+   "lesson": {
+    "title": "SLCE- SLENDO2019 : Prof. Susan Mandel : The Many Faces of Thyroiditis",
+    "channel": "SLENDO LK（Sri Lanka College of Endocrinologists／International Society of Endocrinology 聯合舉辦之 SLENDO2019 ISE Thyroid Course）",
+    "url": "https://www.youtube.com/watch?v=Wt3RZp8lICY",
+    "duration": "31:32",
+    "why": "Susan Mandel（UPenn）是甲狀腺超音波與甲狀腺炎領域的公認權威，這場國際內分泌學會課程講次一口氣把無痛性、產後、亞急性、藥物相關（amiodarone、免疫檢查點抑制劑、interferon、IL-2）串成同一套鑑別流程，並在 28:29 直接批評「做個超音波就說有 thyroiditis 的證據」這種常見誤用。**但要注意**：她在 14:42 說「type 2 AIT 血流減少，超音波是區分 type 1/2 的簡便方法」，這個說法比 ETA 2018 指引的立場樂觀，請連同 ch3-u5 的指引一起讀。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸 SLENDO／Sri Lanka College of Endocrinologists 與原講者，本站僅連結",
+    "last_verified": "2026-08-02",
+    "timestamps": [
+     {
+      "at": "01:02",
+      "note": "從「不痛的」開始：painless thyroiditis"
+     },
+     {
+      "at": "01:15",
+      "note": "產後型與散發型的區分"
+     },
+     {
+      "at": "01:51",
+      "note": "總 T4 上升但攝取率為零——診斷的決定性一步不是超音波"
+     },
+     {
+      "at": "04:28",
+      "note": "懷孕期的 Graves vs 甲狀腺炎"
+     },
+     {
+      "at": "07:05",
+      "note": "只要不是 Graves，先用 beta blocker 加追蹤"
+     },
+     {
+      "at": "25:37",
+      "note": "亞急性肉芽腫性（de Quervain）與病毒／細菌性的分類"
+     },
+     {
+      "at": "28:29",
+      "note": "本課核心：整套鑑別的收斂，以及對「超音波顯示 thyroiditis」這種說法的直接批評"
+     }
+    ]
+   },
+   "drills": [
+    {
+     "name": "de Quervain 甲狀腺炎與乳突癌的超音波對照",
+     "en": "Ultrasound presentation of de Quervain's thyroiditis and papillary cancer. A comparison.",
+     "kind": "case",
+     "target": "看出亞急性甲狀腺炎的病灶為什麼會被誤判成癌：同樣是極度低回音、邊界不規則、非幾何形狀。並看出真正的差別在哪——病灶跨越解剖界線、形狀隨掃描平面改變、以及臨床上的痛與病程。這一支直接解決本單元最貴的一個錯誤（對亞急性甲狀腺炎做 FNA）。",
+     "dose": "9 分鐘。每次畫面切換就暫停，自己先判「炎 or 癌」再看解答，統計自己的正確率。做完把答錯的那幾格截圖存進自己的錯題本。",
+     "title": "Ultrasound presentation of de Quervain's thyroiditis and papillary cacer. A comparison.",
+     "channel": "Tamas Solymosi（ETA Ultrasound Board）",
+     "url": "https://www.youtube.com/watch?v=vYoSxwOjQac",
+     "duration": "9:07",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原講者，本站僅連結",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "急性、亞急性與 Riedel 甲狀腺炎（Endotext 免費章節）",
+     "en": "Acute and Subacute, and Riedel's Thyroiditis — Endotext",
+     "kind": "guideline",
+     "target": "把三種「非橋本」甲狀腺炎的臨床、實驗室與影像特徵放在同一份可引用的文字資料裡，特別是急性化膿性甲狀腺炎的致病菌、pyriform sinus fistula 的關聯與處置流程，以及亞急性甲狀腺炎的四期病程。學員要能從中抽出「什麼時候必須做超音波以外的檢查」這一條線。",
+     "dose": "不要通讀。只讀 Acute Suppurative Thyroiditis 的 Diagnosis 與 Treatment 兩節、以及 Subacute Thyroiditis 的臨床病程節；讀完把要點填進你自己的一頁式決策表。",
+     "title": "Acute and Subacute, and Riedel’s Thyroiditis",
+     "channel": "Endotext（MDText.com, Inc. / NCBI Bookshelf）",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK285553/",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "open",
+     "license": "© MDText.com, Inc.；NCBI Bookshelf 免費線上閱讀，僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "pyriform sinus fistula 的 echogenic tract sign",
+     "en": "The emerging echogenic tract sign of pyriform sinus fistula: an early indicator in the recovery stage of acute suppurative thyroiditis",
+     "kind": "case",
+     "target": "學一個可以直接改變處置的超音波徵象：急性化膿性甲狀腺炎的恢復期（不是急性期）在甲狀腺左葉上極與下咽之間出現的高回音管道。它讓你在安排 CT 或食道攝影之前就先鎖定 pyriform sinus fistula，也解釋了為什麼急性期做影像常常找不到廔管。這是本單元「何時需要進一步 CT／內視鏡」最具體的答案。",
+     "dose": "看 Figure 1–3 的超音波與對照影像，記住 tract 出現的位置與時機；再讀 Discussion 中作者建議的檢查時機。下一位疑似個案就在恢復期回掃這個位置。",
+     "title": "The Emerging Echogenic Tract Sign of Pyriform Sinus Fistula: An Early Indicator in the Recovery Stage of Acute Suppurative Thyroiditis",
+     "channel": "AJNR American Journal of Neuroradiology 2011;32(3):E44-6（Park NH 等）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8013085/",
+     "tier": "A",
+     "source_type": "case",
+     "provider": "journal",
+     "access": "open",
+     "license": "版權歸 American Society of Neuroradiology；PMC 免費全文，授權條款未逐條確認，僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch3-u4",
+   "name": "Riedel 甲狀腺炎、IgG4 相關甲狀腺疾病與少見纖維化病變",
+   "type": "disease",
+   "assessment": "寫一份 400 字以內的「硬如石頭的瀰漫性甲狀腺腫」處置備忘錄，必須明確回答四件事：(1) 超音波看到什麼會讓你把 Riedel／IgG4-RTD 放進鑑別診斷（回音、邊界、對周邊結構的侵犯、彈性成像）；(2) 為什麼 FNA 在這裡經常無法定案、以及你會改做什麼（core needle biopsy 或開放式切片）；(3) 你會在什麼時機加做頸部 CT 或 MRI、要回答什麼問題（氣管食道受壓、後腹腔纖維化、血管包繞）；(4) FDG PET/CT 在此的角色與它「與惡性無法區分」的限制。備忘錄寫完拿給一位同儕，請他找出你哪一條會導致延誤診斷。",
+   "tight": [
+    "把 Riedel／IgG4-RTD 的木質硬腺體誤判為未分化癌或淋巴瘤而直接送 FNA，然後被一份不足以定案的細胞學報告耽誤",
+    "反過來也一樣危險：看到「硬、纖維化」就滿足於 Riedel 的診斷，漏掉真正的未分化癌",
+    "把橋本的纖維化變異型（fibrosing variant）與 Riedel 混為一談——兩者的界線在臨床上經常重疊，且處置不同",
+    "只掃甲狀腺、沒有評估纖維化是否越過腺體被膜侵犯 strap muscle、氣管、食道與頸部血管",
+    "看到 FDG PET/CT 高攝取就當成惡性——Riedel 本身就會呈現高攝取"
+   ],
+   "weak": [
+    "在超音波上描述纖維化病變的四項要素：極低回音、與周邊組織界線消失、腺體外延伸、以及彈性成像的極硬表現",
+    "說出 Riedel 與 IgG4 相關硬化性疾病的關係，以及血清 IgG4 正常時仍不能排除",
+    "知道細胞學不足以定案時的正確升級路徑，以及要跟外科／病理事先溝通什麼",
+    "把甲狀腺以外的 IgG4 相關表現（後腹腔纖維化、硬化性膽管炎、唾液腺）納入病史詢問"
+   ],
+   "lesson": {
+    "title": "IgG4-related sclerosing thyroiditis (Riedel-Struma): a review of clinicopathological features and management",
+    "channel": "Virchows Archiv 2023（Czarnywojtek A 等，Springer；CC BY 4.0）",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10412505/",
+    "why": "本單元刻意不用影片當主課：YouTube 上關於 Riedel 與 IgG4 相關甲狀腺疾病的內容全部是無實際影像的口頭講解、USMLE 記憶術或病人衛教（詳見 registry-ch3.json 的排除清單），收進來只會拉低品質。這篇 2023 年的完整回顧同時涵蓋超音波、彈性成像、99mTc 掃描、CT、MRI 與 PET 的表現，明講「FNA 常無法定案，開放式切片往往才是最佳選擇」，並整理了類固醇、tamoxifen、mycophenolate mofetil 與 rituximab 的治療證據——正好對應本章要求的「何時需要進一步 FNA、CT、MRI 或核醫」。",
+    "tier": "A",
+    "source_type": "article",
+    "provider": "journal",
+    "access": "open",
+    "license": "CC BY 4.0（Virchows Archiv / Springer Nature）；PMC 免費全文，僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "IgG4 媒介的硬化性 Riedel 甲狀腺炎：多科病例與文獻回顧",
+     "en": "IgG4-Mediated Sclerosing Riedel Thyroiditis: A Multidisciplinary Case Study and Literature Review",
+     "kind": "case",
+     "target": "跟著一個真實病例走完完整路徑：影像懷疑 → 細胞學不足以定案 → 組織診斷 → 免疫組織化學（IgG4/IgG 比值）→ 治療反應。重點在看清楚每一次「檢查升級」是被什麼觸發的，而不是背診斷準則。",
+     "dose": "先只讀 Case presentation 到細胞學那一段就停下來，寫下你下一步會做什麼、為什麼；再往下讀，比對作者的決策與你的差在哪裡。",
+     "title": "IgG4-Mediated Sclerosing Riedel Thyroiditis: A Multidisciplinary Case Study and Literature Review",
+     "channel": "International Journal of Molecular Sciences 2025;26(16)（Ioachim D 等，MDPI）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12386525/",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "journal",
+     "access": "open",
+     "license": "CC BY 4.0（MDPI）；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Riedel 甲狀腺炎在 FDG PET/CT 上的高攝取",
+     "en": "Riedel's Thyroiditis with Intense FDG Uptake Demonstrated on FDG PET/CT",
+     "kind": "case",
+     "target": "記住一條會讓人誤判的事實：Riedel 甲狀腺炎在 FDG PET/CT 上可以呈現強烈攝取，影像上與惡性無法區分。學員要能因此說出核醫在這個情境「不能回答什麼」，並知道最終仍必須靠組織診斷。這是本章「超音波與其他影像各自的能力邊界」最乾淨的示範。",
+     "dose": "只看影像圖與 Discussion 的前兩段，5 分鐘。做完回答一題：如果一位病人已經有這張 PET，你會因此改變手術或切片計畫嗎？",
+     "title": "Riedel’s Thyroiditis with Intense FDG Uptake Demonstrated on FDG PET/CT",
+     "channel": "Molecular Imaging and Radionuclide Therapy 2015;24(1)（Mansberg R 等）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4372770/",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "journal",
+     "access": "open",
+     "license": "Creative Commons Attribution License；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "橋本纖維化變異型與 Riedel 甲狀腺炎重疊的診治困境",
+     "en": "Difficulties in investigating and treating fibrosing thyroid disorder (overlap of fibrosing variant of Hashimoto's thyroiditis and Riedel's thyroiditis)",
+     "kind": "case",
+     "target": "看出臨床上最麻煩的灰帶：橋本的纖維化變異型與 Riedel 在影像、細胞學甚至組織上都可以重疊，而兩者的治療與追蹤不同。學員要能因此不把「Riedel」當成一個乾淨的二分診斷，並知道多科討論在這裡不是客套話。",
+     "dose": "讀完整篇（BMJ Case Reports 篇幅短）。讀完把你在 ch3-u2 學到的橋本判讀標準拿出來，寫下：哪一項在這個病例上失效了。",
+     "title": "Difficulties in investigating and treating fibrosing thyroid disorder (overlap of fibrosing variant of Hashimoto's thyroiditis and Riedel's thyroiditis)",
+     "channel": "BMJ Case Reports 2024;17(5)（Clifford LM 等）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11085981/",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "journal",
+     "access": "open",
+     "license": "CC BY 4.0（BMJ Publishing Group）；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch3-u5",
+   "name": "藥物相關甲狀腺病變：amiodarone 與免疫檢查點抑制劑",
+   "type": "disease",
+   "assessment": "從你的病歷系統找出 3 位正在或曾經使用 amiodarone 的病人與 3 位使用免疫檢查點抑制劑的病人，各自畫一條時間軸，標上：用藥起始日、每一次 TSH/fT4/fT3、TRAb（若有）、超音波日期與結論、核醫檢查（若有）、以及處置變更。針對 amiodarone 那三位，寫出你當時是用什麼證據把 AIT 分成 type 1 或 type 2，並對照 ETA 2018 指引檢查你的依據是否被指引認可（特別檢查你是否只用了 color Doppler 血流）。針對 ICI 那三位，寫出你做過的每一次影像檢查，並誠實標註哪幾次「即使不做也不會改變處置」。",
+   "tight": [
+    "只用 color flow Doppler 的血流多寡就把 AIT 分成 type 1／type 2——ETA 2018 指引明確把 CFDS 列為輔助而非決定性，且混合型（mixed／indefinite）在真實世界並不少見",
+    "在 amiodarone 病人身上安排放射碘攝取率，卻忘記藥物本身的碘負荷會把攝取率壓到無法解讀",
+    "把 ICI 相關甲狀腺炎當成需要影像診斷的疾病：它基本上是生化與時序診斷，反射性安排超音波只會增加成本與偶發結節",
+    "在 FDG PET/CT 上看到甲狀腺瀰漫性攝取增加就當成新病灶去追查，而沒有把它與 ICI 起始時間對上",
+    "把 ICI 相關的一過性甲狀腺毒症誤認為 Graves 而給抗甲狀腺藥"
+   ],
+   "weak": [
+    "說得出 AIT type 1（既有結節性甲狀腺腫或潛在 Graves 的碘誘發亢進）與 type 2（正常腺體的破壞性甲狀腺炎）在病理機轉上的差別，以及各自的治療方向不同在哪",
+    "知道超音波在 amiodarone 病人身上真正可靠的貢獻是什麼：腺體體積、既有結節性病變、既有自體免疫背景——而不是替 type 1／type 2 下定論",
+    "熟悉 ICI 相關甲狀腺功能異常的典型時序（多在數週至數月出現一過性甲狀腺毒症，隨後持續性甲狀腺低下）",
+    "能對腫瘤科同事說清楚：什麼情況下值得為甲狀腺做影像、什麼情況下只需要追蹤 TSH"
+   ],
+   "lesson": {
+    "title": "2018 European Thyroid Association (ETA) Guidelines for the Management of Amiodarone-Associated Thyroid Dysfunction",
+    "channel": "European Thyroid Journal 2018;7(2):55-66（Bartalena L, Bogazzi F, Chiovato L 等；European Thyroid Association）",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5869486/",
+    "why": "amiodarone 相關甲狀腺病變在 YouTube 上找不到同時具備影像與現行指引一致性的教材（唯一像樣的 Emory Cardiology 講次 oEmbed 回 401、無法嵌入且無法確認公開狀態），因此本單元以 ETA 官方指引為主課。它是目前對 AIT type 1 vs type 2 分型與處置最權威的一份文件，並且明確界定 color flow Doppler sonography 只是輔助工具——正好用來校正下方 drill 1 中專家演講裡較樂觀的說法。",
+    "tier": "A",
+    "source_type": "guideline",
+    "provider": "society",
+    "access": "open",
+    "license": "© 2018 European Thyroid Association / Karger；PMC 免費全文，授權條款未逐條確認，僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "藥物相關甲狀腺炎的臨床鑑別（Mandel 演講之藥物段）",
+     "en": "The Many Faces of Thyroiditis — drug-induced section",
+     "kind": "lecture",
+     "target": "聽一位權威怎麼在門診層次把 amiodarone、免疫檢查點抑制劑、kinase inhibitor、interferon-α 與 IL-2 相關的甲狀腺病變串起來，包括 AIT type 1 仍可能保有 5–6% 攝取率這種實務細節。**這個 drill 的教學重點有一半是批判性閱讀**：14:42 起她把「血流減少」講成區分 type 2 的簡便方法，請把它與本單元主課 ETA 2018 指引對照，指出這個說法在哪裡過度簡化。",
+     "dose": "只聽 08:35–15:30 這 7 分鐘。聽完先寫下她給的判準，再打開 ETA 2018 指引中關於 CFDS 的段落，逐條標出「指引支持／指引保留」。",
+     "title": "SLCE- SLENDO2019 : Prof. Susan Mandel : The Many Faces of Thyroiditis",
+     "channel": "SLENDO LK（Sri Lanka College of Endocrinologists／ISE Thyroid Course）",
+     "url": "https://www.youtube.com/watch?v=Wt3RZp8lICY",
+     "duration": "31:32",
+     "tier": "A",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 SLENDO／Sri Lanka College of Endocrinologists 與原講者，本站僅連結",
+     "last_verified": "2026-08-02",
+     "timestamps": [
+      {
+       "at": "08:35",
+       "note": "amiodarone 段落開始"
+      },
+      {
+       "at": "09:13",
+       "note": "免疫治療、kinase inhibitor、interferon-α 與 IL-2 一併列入藥物相關名單"
+      },
+      {
+       "at": "14:02",
+       "note": "AIT type 1：攝取率仍可能有 5–6%，且可見於結節內"
+      },
+      {
+       "at": "14:21",
+       "note": "AIT type 2：破壞性、腺體原本正常、TRAb 陰性"
+      },
+      {
+       "at": "14:42",
+       "note": "需要批判的一段——「超音波血流減少」被講成區分 type 1/2 的簡便方法；請對照 ETA 2018"
+      }
+     ]
+    },
+    {
+     "name": "免疫檢查點抑制劑相關甲狀腺不良事件的處置（ATA 合作播客）",
+     "en": "Managing Thyroid Adverse Events From Checkpoint Inhibitors",
+     "kind": "lecture",
+     "target": "從 Duke 專攻腫瘤病人內分泌疾病的臨床醫師那裡，取得 ICI 相關甲狀腺毒症與後續甲狀腺低下的監測時程、何時介入、何時只需追蹤 TSH。**明確限制：本片是與 American Thyroid Association 合作的播客，全程沒有任何超音波影像**，收錄它的理由不是判讀訓練，而是回答本章要求的「何時需要（以及何時不需要）進一步檢查」。",
+     "dose": "當背景音檔聽完，或直接讀影片說明欄裡的完整逐字稿（較快）。聽完把監測時程抄成一張卡，放進你給腫瘤科的照會回覆模板。",
+     "title": "Managing Thyroid Adverse Events From Checkpoint Inhibitors",
+     "channel": "Medscape（Thyroid Stimulating Podcast，與 American Thyroid Association 合作；講者 Kaniksha Desai、Afreen Shariff）",
+     "url": "https://www.youtube.com/watch?v=8I_4Oj8QN6E",
+     "duration": "26:03",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 Medscape 與 American Thyroid Association，本站僅連結",
+     "last_verified": "2026-08-02",
+     "coi": "Medscape 為商業醫學媒體平台，內容可能含贊助；本集未見特定產品推廣，講者利益揭露未於影片中呈現"
+    },
+    {
+     "name": "免疫檢查點抑制劑後常規 FDG-PET/CT 上的甲狀腺活性增加",
+     "en": "Increased Thyroidal Activity on Routine FDG-PET/CT after Combination Immune Checkpoint Inhibition: Temporal Associations with Clinical and Biochemical Thyroiditis",
+     "kind": "case",
+     "target": "看出 ICI 病人在常規腫瘤分期 PET 上出現的甲狀腺瀰漫性攝取，與臨床／生化甲狀腺炎在時間上的關聯，因此不必把它當成新的可疑病灶去追查。學員讀完應能對核醫報告上的「甲狀腺瀰漫性攝取增加」給出正確的下一步（查 TSH，而不是排超音波加穿刺）。",
+     "dose": "看 Figure 中攝取與 TSH 變化的時間軸對照，讀 Discussion 前兩段。做完把結論寫成一句話，放進你科內對 ICI 病人偶發影像發現的處理共識。",
+     "title": "Increased Thyroidal Activity on Routine FDG-PET/CT after Combination Immune Checkpoint Inhibition: Temporal Associations with Clinical and Biochemical Thyroiditis",
+     "channel": "Cancers 2023;15(24):5803（Galligan A 等，MDPI）",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10741830/",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "open",
+     "license": "CC BY 4.0（MDPI）；PMC 免費全文，僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  }
+ ]
+}

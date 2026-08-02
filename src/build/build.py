@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import sources  # noqa: E402  來源判定（provider 推斷、URL 合法性）
+import sources
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
@@ -40,7 +40,6 @@ def _load_taxonomy(key: str):
 
 facets = _load_taxonomy("facets")
 categories = _load_taxonomy("categories")
-
 
 
 def parse_duration(s: str | None) -> int:
@@ -208,7 +207,9 @@ def main() -> int:
                 u["evidence"] = evidence[ev_key]
 
             # 單元層級的肌群：緊繃 + 無力兩側都算涉及
-            u["facets"] = facets.extract(*(u.get("tight") or []), *(u.get("weak") or [])) if facets else []
+            u["facets"] = (
+                facets.extract(*(u.get("tight") or []), *(u.get("weak") or [])) if facets else []
+            )
 
             # 主課可以有多語言版本，第一支為預設
             if u.get("lesson"):
@@ -302,9 +303,18 @@ def main() -> int:
     muscle_index.sort(key=lambda x: (group_order.index(x["group"]), -x["count"]))
 
     ui_keys = (
-        "site", "hero", "ui", "kinds", "grades", "languages",
-        "nav", "stance", "landing", "footer",
-        "discussions", "counter",
+        "site",
+        "hero",
+        "ui",
+        "kinds",
+        "grades",
+        "languages",
+        "nav",
+        "stance",
+        "landing",
+        "footer",
+        "discussions",
+        "counter",
     )
     course = {
         "config": {k: CFG[k] for k in ui_keys if k in CFG},

@@ -153,8 +153,10 @@ def render_template(meta: dict) -> None:
         val = lookup(m.group(1))
         if val is None:
             return m.group(0)
-        return str(val).replace("{units}", str(meta["units"])).replace(
-            "{problems}", str(meta.get("problem_units", 0))
+        return (
+            str(val)
+            .replace("{units}", str(meta["units"]))
+            .replace("{problems}", str(meta.get("problem_units", 0)))
         )
 
     html, n = re.subn(r"\{\{([\w.]+)\}\}", sub, html)

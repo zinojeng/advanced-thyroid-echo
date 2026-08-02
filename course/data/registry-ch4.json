@@ -1,0 +1,428 @@
+{
+ "chapter": "CH4",
+ "searched": [
+  "yt-dlp ytsearch20: ACR TI-RADS how to score thyroid nodule",
+  "yt-dlp ytsearch20: thyroid nodule ultrasound lexicon composition echogenicity margin echogenic foci",
+  "yt-dlp ytsearch20: comet tail artifact spongiform thyroid nodule ultrasound",
+  "yt-dlp ytsearch20: thyroid nodule ultrasound lexicon",
+  "yt-dlp ytsearch20: K-TIRADS Korean thyroid imaging reporting data system",
+  "yt-dlp ytsearch20: EU-TIRADS European Thyroid Association ultrasound risk",
+  "yt-dlp ytsearch20: thyroid nodule ultrasound taller than wide measurement",
+  "yt-dlp ytsearch20: thyroid nodule risk stratification systems comparison ACR ATA EU K TIRADS",
+  "yt-dlp ytsearch20: thyroid ultrasound margin extrathyroidal extension",
+  "yt-dlp ytsearch20: Jenny Hoang TI-RADS thyroid",
+  "yt-dlp ytsearch20: thyroid ultrasound reporting ACR TI-RADS lecture radiology grand rounds",
+  "yt-dlp ytsearch20: spongiform thyroid nodule ultrasound",
+  "yt-dlp ytsearch20: 갑상선 결절 초음파 K-TIRADS",
+  "yt-dlp ytsearch20: thyroid nodule interobserver variability ultrasound",
+  "yt-dlp ytsearch20: ATA sonographic pattern thyroid nodule",
+  "yt-dlp ytsearch20: thyroid nodule halo capsule ultrasound",
+  "yt-dlp ytsearch20: EU-TIRADS thyroid nodule",
+  "yt-dlp ytsearch20: comet tail artifact colloid thyroid",
+  "yt-dlp ytsearch20: THANC Foundation thyroid ultrasound risk stratification",
+  "yt-dlp ytsearch20: thyroid nodule ultrasound echogenic foci microcalcification",
+  "yt-dlp ytsearch20: C-TIRADS Chinese thyroid imaging reporting",
+  "yt-dlp ytsearch20: how to measure thyroid nodule ultrasound transverse longitudinal plane",
+  "yt-dlp ytsearch20: thyroid nodule growth follow up ultrasound measurement pitfalls",
+  "yt-dlp ytsearch20: AIUM thyroid ultrasound practice parameter",
+  "yt-dlp ytsearch20: partially cystic thyroid nodule ultrasound eccentric solid",
+  "yt-dlp ytsearch20: Korean Journal of Radiology thyroid ultrasound",
+  "yt-dlp ytsearch20: thyroid nodule ultrasound quiz case TIRADS classification practice",
+  "yt-dlp ytsearch20/25: ACR TI-RADS Webinar Part II / American College of Radiology TI-RADS Webinar Part",
+  "PubMed esearch: interobserver agreement thyroid nodule ultrasound risk stratification systems",
+  "PubMed esearch: taller than wide thyroid nodule measurement reproducibility",
+  "PubMed esearch: (ACR TI-RADS) AND (K-TIRADS) AND (EU-TIRADS) AND comparison",
+  "PubMed esearch: thyroid nodule risk stratification systems head-to-head comparison unnecessary fine-needle aspiration",
+  "PubMed esearch: thyroid nodule ultrasound measurement variability interobserver size",
+  "PubMed esearch: 2025 American Thyroid Association Management Guidelines thyroid nodules",
+  "PubMed esearch: 2020 Chinese guidelines ultrasound malignancy risk stratification thyroid nodules C-TIRADS",
+  "PubMed esearch: EU-TIRADS Russ European Thyroid Association Guidelines Ultrasound Malignancy Risk Stratification",
+  "DOI 解析驗證：10.1016/j.jacr.2017.01.046、10.1089/thy.2015.0020、10.1159/000478927、10.3348/kjr.2021.0713、10.1016/j.jacr.2021.07.019、10.1210/clinem/dgz170、10.1002/jum.14316、10.1007/s12020-020-02441-y、10.1177/10507256251363120、10.1148/cases.20227966",
+  "NCBI idconv：以 DOI 反查四份指引的 PMID/PMCID（避免憑記憶寫 PMC 編號）",
+  "acr.org TI-RADS 頁面原始碼掃描，取得官方 PDF 連結清單",
+  "eurothyroid.com/guidelines/eta_guidelines.html 頁面掃描，確認 EU-TIRADS 官方連結"
+ ],
+ "evaluated": [
+  {
+   "title": "ACR TI-RADS Webinar Part I: This Is How We Do It",
+   "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
+   "source": "YouTube / American College of Radiology 官方頻道",
+   "decision": "included",
+   "unit": "ch4-u1",
+   "reason": "白皮書作者群 Tessler、Middleton、Hoang 主講，逐項示範 5 個 feature category 與 18 個 descriptor；oEmbed 200、標題與頻道相符"
+  },
+  {
+   "title": "ACR TI-RADS Atlas",
+   "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Atlas.pdf",
+   "source": "ACR 官方 PDF",
+   "decision": "included",
+   "unit": "ch4-u1",
+   "reason": "官方 descriptor 圖譜，curl 200 application/pdf 16.3 MB；連結由 acr.org TI-RADS 頁面原始碼取得而非猜測",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+   "url": "https://www.youtube.com/watch?v=r9jwnXoUMIA",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch4-u1",
+   "reason": "Burgos 的兩學會判讀一致性研究＋Tessler 現場複習 descriptor 定義；描述欄附有可驗證的章節時間碼"
+  },
+  {
+   "title": "Spongiform thyroid nodule",
+   "url": "https://www.youtube.com/watch?v=Q7O8tNAQZEc",
+   "source": "YouTube / Radiology educational videos",
+   "decision": "included",
+   "unit": "ch4-u1",
+   "reason": "44 秒單一 descriptor 示範，正好補上 spongiform 判定門檻；頻道規模小、作者身分未公開，因此列 Tier C 且只作補充"
+  },
+  {
+   "title": "An Interobserver Comparison of the Ultrasound Lexicon Classification of Thyroid Nodules",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11856384/",
+   "source": "J Clin Med 2025 / PMC",
+   "decision": "included",
+   "unit": "ch4-u1",
+   "reason": "PMC 全文 200，citation_title 相符；提供 lexicon 各 descriptor 的一致性數據",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS: Beyond the Chart-- William Middleton, MD (SRU 2021)",
+   "url": "https://www.youtube.com/watch?v=s5o2nOI_7mk",
+   "source": "YouTube / Meetings By Mail（SRU 年會 CME 發行商）",
+   "decision": "included",
+   "unit": "ch4-u2",
+   "reason": "TI-RADS 委員會成員在 Society of Radiologists in Ultrasound 2021 年會的演講節錄，專講計分表以外的實務判斷；為官方 CME 發行商釋出，非未授權重製"
+  },
+  {
+   "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
+   "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
+   "source": "YouTube / American College of Radiology 官方頻道",
+   "decision": "included",
+   "unit": "ch4-u2",
+   "reason": "以 FAQ 形式回答量測平面、選哪一顆量等 chart 未涵蓋的問題"
+  },
+  {
+   "title": "Intraobserver and Interobserver Variability in Ultrasound Measurements of Thyroid Nodules",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28736947/",
+   "source": "J Ultrasound Med 2018 / PubMed",
+   "decision": "included",
+   "unit": "ch4-u2",
+   "reason": "量測變異的直接證據；DOI 10.1002/jum.14316 導向 Wiley 回 403，改用 PubMed 摘要頁（200，citation_title 相符）",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11475346/",
+   "source": "Diagnostics 2024 / PMC",
+   "decision": "included",
+   "unit": "ch4-u2",
+   "reason": "直接連到影像存檔政策的實務決定；PMC 200，citation_title 相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS Overview and Approach",
+   "url": "https://www.youtube.com/watch?v=lAeyb-QrXm4",
+   "source": "YouTube / Jenny Hoang（白皮書共同作者）",
+   "decision": "included",
+   "unit": "ch4-u3",
+   "reason": "十分鐘完整計分示範，適合作為判讀前的快速校正；影片描述指向 ACR 官網 TI-RADS 頁"
+  },
+  {
+   "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+   "url": "https://doi.org/10.1016/j.jacr.2017.01.046",
+   "source": "J Am Coll Radiol 2017（DOI 解析）",
+   "decision": "included",
+   "unit": "ch4-u3",
+   "reason": "ACR TI-RADS (2017) 原始文件；DOI 解析後 200，導向 linkinghub.elsevier.com/retrieve/pii/S1546144017301862",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS Assessment Categories",
+   "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Assessment-Categories.pdf",
+   "source": "ACR 官方 PDF",
+   "decision": "included",
+   "unit": "ch4-u3",
+   "reason": "官方分級與 FNA／追蹤門檻對照表；curl 200 application/pdf",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ACR TI-RADS Structured reporting template",
+   "url": "https://www.youtube.com/watch?v=P7GHtG_9GvQ",
+   "source": "YouTube / Jenny Hoang",
+   "decision": "included",
+   "unit": "ch4-u3",
+   "reason": "把計分結果轉成可執行報告文字的示範，補上「算得出來但寫不清楚」這個落差"
+  },
+  {
+   "title": "TI-RADS Thyroid Imaging Reporting and Data System Webinar Part III",
+   "url": "https://www.youtube.com/watch?v=fsWAle6u-uE",
+   "source": "YouTube / American College of Radiology 官方頻道",
+   "decision": "included",
+   "unit": "ch4-u3",
+   "reason": "三集系列的證據篇，處理「要不要在自己單位導入」的決策"
+  },
+  {
+   "title": "Thyroid Nodule Guidelines Update Panel Discussion with Dr. Mandel",
+   "url": "https://www.youtube.com/watch?v=GIVyh30Gygg",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch4-u4",
+   "reason": "2025-08-22 錄製，ATA 2015 結節超音波章節主要作者 Mandel 主講，直接處理版本落差；為本章最新的專家內容"
+  },
+  {
+   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4739132/",
+   "source": "Thyroid 2016;26(1):1-133 / PMC",
+   "decision": "included",
+   "unit": "ch4-u4",
+   "reason": "ATA sonographic pattern 原始文件；DOI 10.1089/thy.2015.0020 導向 journals.sagepub.com 回 403，PMCID 由 NCBI idconv 反查得 PMC4739132，curl 200 且 citation_title 相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5652895/",
+   "source": "Eur Thyroid J 2017;6(5):225-237 / PMC",
+   "decision": "included",
+   "unit": "ch4-u4",
+   "reason": "EU-TIRADS 2017 原始文件；DOI 10.1159/000478927 導向 journals.bioscientifica.com 回 403，PMCID 由 NCBI idconv 反查得 PMC5652895，curl 200 且 citation_title 相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Macrocalcifications and Malignancy Risk Within the ATA Sonographic Pattern System with Dr. Kobaly",
+   "url": "https://www.youtube.com/watch?v=2tCJ05wDIyQ",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch4-u4",
+   "reason": "針對 ATA pattern 架構下 macrocalcification 的實證討論，直接校正「看到粗鈣化就穿刺」的直覺；描述附章節時間碼"
+  },
+  {
+   "title": "2022년 11월 13일 알피니언 초음파 아카데미 - 갑상선 K-TIRADS 2021에 의한 평가(Dr.김일봉)",
+   "url": "https://www.youtube.com/watch?v=0si9r8pVPoo",
+   "source": "YouTube / 김일봉（Alpinion 超音波學院課程錄影）",
+   "decision": "included",
+   "unit": "ch4-u5",
+   "reason": "少數專講 K-TIRADS 2021 版且附大量實掃畫面的完整課程；韓文無官方英文字幕，故列 Tier B 並加註設備商 coi，分級規則以 KJR 原文交叉核對"
+  },
+  {
+   "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348/kjr.2021.0713",
+   "source": "Korean J Radiol 2021;22(12):2094-2123 官方全文頁",
+   "decision": "included",
+   "unit": "ch4-u5",
+   "reason": "K-TIRADS 2021 原始文件；DOI 解析 200，頁面 citation_title 與標題完全相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "(KOR)Quick analysis of a thyroid nodule based on the K-TIRADS",
+   "url": "https://www.youtube.com/watch?v=pnF5vUaIovI",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "included",
+   "unit": "ch4-u5",
+   "reason": "實掃畫面上示範 K-TIRADS 判級順序；韓文旁白但畫面有英文分級標註，列 Tier B"
+  },
+  {
+   "title": "2020 Chinese guidelines for ultrasound malignancy risk stratification of thyroid nodules: the C-TIRADS",
+   "url": "https://doi.org/10.1007/s12020-020-02441-y",
+   "source": "Endocrine 2020 / Springer（DOI 解析）",
+   "decision": "included",
+   "unit": "ch4-u5",
+   "reason": "涵蓋「其他區域性系統」且設計哲學（加分＋扣分）與 ACR 明顯不同；DOI 解析 200，citation_title 相符",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Survey on the Use of 5 Thyroid Nodule Risk Stratification Systems with Dr. Hoang",
+   "url": "https://www.youtube.com/watch?v=G-UuRVzLAoE",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch4-u6",
+   "reason": "白皮書共同作者報告國際調查，內分泌端 Singh Ospina 回應，正對本章「多系統並存」的核心張力；描述附時間碼"
+  },
+  {
+   "title": "Comparison of Thyroid Risk Categorization Systems and Fine-Needle Aspiration Recommendations in a Multi-Institutional Thyroid Ultrasound Registry",
+   "url": "https://doi.org/10.1016/j.jacr.2021.07.019",
+   "source": "J Am Coll Radiol 2021（DOI 解析）",
+   "decision": "included",
+   "unit": "ch4-u6",
+   "reason": "多機構登錄庫的系統間不一致實測；DOI 解析 200，導向 linkinghub.elsevier.com/retrieve/pii/S1546144021006062",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
+   "source": "J Clin Endocrinol Metab 2020 / PubMed",
+   "decision": "included",
+   "unit": "ch4-u6",
+   "reason": "同一組結節跑五套系統的敏感度／特異度／省下的穿刺數；DOI 10.1210/clinem/dgz170 導向 academic.oup.com 回 403，改用 PubMed 摘要頁（200，citation_title 相符）",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "International TIRADS (I-TIRADS) Descriptors",
+   "url": "https://www.youtube.com/watch?v=KagXIU-hOJ0",
+   "source": "YouTube / Prof. Dr. Mustafa Secil",
+   "decision": "included",
+   "unit": "ch4-u6",
+   "reason": "國際共識嘗試統一 descriptor 定義，說明多少分歧其實來自用語而非風險判斷；個人頻道、作者為具名放射科教授，列 Tier B"
+  },
+  {
+   "title": "TI RADS Cases  Challenges in Thyroid Nodule Analysis by Jill E  Langer, MS   SD",
+   "url": "https://www.youtube.com/watch?v=pWoultuUebE",
+   "source": "YouTube / Clinical Case From Everywhere",
+   "decision": "excluded",
+   "reason": "內容本身（Jill Langer 的 TI-RADS 病例講座）品質高，但上傳頻道與講者、主辦單位無關，描述欄全空、無授權說明，高度疑似未經授權重製會議錄影；依契約「未經授權重新上傳的完整付費課程」排除"
+  },
+  {
+   "title": "The Fluctuation & Permanence of \"Taller-than-Wide\" Status of Thyroid Nodules During Extended Periods",
+   "url": "https://www.youtube.com/watch?v=SQb1LT-9Qqg",
+   "source": "YouTube / Anum Khan",
+   "decision": "excluded",
+   "reason": "主題正中 ch4-u2，但只是 2022 年 ACP Illinois 分會摘要的口頭旁白（4:46，42 次觀看），無實際動態掃描影像、未見同儕審查全文，無法作為判讀依據"
+  },
+  {
+   "title": "¿Cómo funciona el C-TIRADS Chino? Guía Práctica de Suma y Resta de Puntos",
+   "url": "https://www.youtube.com/watch?v=Pp2RNoU6-p4",
+   "source": "YouTube / Sonolearning Academy",
+   "decision": "excluded",
+   "reason": "C-TIRADS 主題相符且為 2026 年新片，但頻道作者身分與資歷無法確認、觀看數 103、無利益揭露；改採 C-TIRADS 2020 原文（Endocrine）作為 ch4-u5 的區域性系統資源"
+  },
+  {
+   "title": "Comparison of the C-TIRADS, ACR-TIRADS, and ATA guidelines in malignancy risk stratification of thyroid nodules",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10347339/",
+   "source": "Quant Imaging Med Surg 2023 / PMC",
+   "decision": "excluded",
+   "reason": "品質合格（PMC 200、citation_title 相符），但 ch4-u6 的 drill 額度已由涵蓋面更廣的 JACR 登錄庫研究與 JCEM 五系統研究填滿；保留在此供日後替換"
+  },
+  {
+   "title": "ACR TIRADS Classification Of Thyroid Nodules Ultrasound",
+   "url": "https://www.youtube.com/watch?v=sA8Sje-Amu0",
+   "source": "YouTube / Dr. Sam's Imaging Library",
+   "decision": "excluded",
+   "reason": "所有 TI-RADS 查詢中排名最前、觀看數最高（8.5 萬），但屬影像科入門教學層級，未處理版本差異與判讀爭議；依契約不得把入門內容填進進階課程"
+  },
+  {
+   "title": "Thyroid Ultrasound Course",
+   "url": "https://www.youtube.com/watch?v=bwuUR_Z8kb4",
+   "source": "YouTube / thyroidorg（American Thyroid Association 官方頻道）",
+   "decision": "excluded",
+   "reason": "來源等級最高（ATA 官方，31 萬觀看），但錄製於 2012 年，早於 ATA 2015 sonographic pattern 與 ACR TI-RADS (2017)，用於本章會傳授過時分類；不排除在 CH0／CH1 複習單元使用"
+  },
+  {
+   "title": "Thyroid Cancer: Ultrasound for Nodules, Current Guidelines. Dr. McKinney. ThyCa Conference",
+   "url": "https://www.youtube.com/watch?v=j7rMuP7UWMo",
+   "source": "YouTube / ThyCa: Thyroid Cancer Survivors' Association",
+   "decision": "excluded",
+   "reason": "2015 年病友年會演講，講的是 ATA 2015 公布前後的狀態，且對象為病友而非專科醫師"
+  },
+  {
+   "title": "Inclusion of Thyroid Nodule Location in ACR TI-RADS Scoring: Impact on System Performance",
+   "url": "https://www.youtube.com/watch?v=xn4KxTNiaLM",
+   "source": "YouTube / AJR Radiology",
+   "decision": "excluded",
+   "reason": "作者訪談品質佳（Jasim 與 Middleton），但主題是 ACR TI-RADS 的擬議修改而非現行版本規則，放進 u3 會混淆版本；ch4 drills 額度有限"
+  },
+  {
+   "title": "Demystifying the Thyroid: TIRADS, FNA and Everything In-Between",
+   "url": "https://www.youtube.com/watch?v=28JQowWSJsg",
+   "source": "YouTube / Association of Academic Radiology",
+   "decision": "excluded",
+   "reason": "來源合格但內容與 ACR 三集官方 webinar 大幅重疊，且同時涵蓋 FNA（屬 CH5）；為避免跨章重複而不納入"
+  },
+  {
+   "title": "Case of the Week: TI-RADS 5 Papillary Thyroid Carcinoma",
+   "url": "https://www.youtube.com/watch?v=yfqRBdw39tI",
+   "source": "YouTube / RSNA Case Collection（連結至 https://doi.org/10.1148/cases.20227966，解析 200）",
+   "decision": "excluded",
+   "reason": "來源與連結都通過驗證，但只有 3:07 的單一典型 TR5 病例，對已能辨識高度懷疑結節的 fellow 增益有限；建議留給 CH6 或 CH12 的病例章節"
+  },
+  {
+   "title": "CASE 757 Multiple thyroid cystic colloid nodules with comet tail artifact score TIRAD 2",
+   "url": "https://www.youtube.com/watch?v=Fy7seNGF7y8",
+   "source": "YouTube / Educational Radiology Channel ERC",
+   "decision": "excluded",
+   "reason": "comet-tail artifact 主題正確，但 36 秒、描述欄全空、無任何說明或作者資訊，教學價值低於 ACR TI-RADS Atlas 對應章節"
+  },
+  {
+   "title": "Solid vs mixed solid and cystic thyroid nodule on US TIRADS",
+   "url": "https://www.youtube.com/watch?v=39jqgy4OhDM",
+   "source": "YouTube / Radiology educational videos",
+   "decision": "excluded",
+   "reason": "與同頻道已納入的 spongiform 短片同質，u1 已有 4 個 drills 額度上限；內容本身無誤"
+  },
+  {
+   "title": "11월 둘째 주 제일컨퍼런스 풀영상 [K-TIRADS 갑상선 결절의 초음파 분류 - 외과전문의 장 현 부장]",
+   "url": "https://www.youtube.com/watch?v=8AtYTRoVQo4",
+   "source": "YouTube / 진주제일병원",
+   "decision": "excluded",
+   "reason": "2025-11 醫院內部會議錄影，主題為 K-TIRADS 分類且無廠商利益，但觀看數 172、無時間碼與講義、韓文無字幕，教學可用性低於已納入的 Alpinion 課程"
+  },
+  {
+   "title": "2019년 9월 18일 영임초 강의 - K-TIRADS에 따른 갑상선 결절의 평가와 FNA(Dr.한정훈)",
+   "url": "https://www.youtube.com/watch?v=FAi1CUbJszA",
+   "source": "YouTube / 김일봉",
+   "decision": "excluded",
+   "reason": "錄製於 2019 年，講的是 K-TIRADS 2016 初版；本章要求標明版本，使用會傳授已被 2021 年版取代的 cut-off"
+  },
+  {
+   "title": "How To Measure Thyroid On Ultrasound | Length, Width, AP Depth & Volume Measurements USG",
+   "url": "https://www.youtube.com/watch?v=Q7TpPgTsmfU",
+   "source": "YouTube / Dr. Sam's Imaging Library",
+   "decision": "excluded",
+   "reason": "量測主題相符但講的是甲狀腺腺體體積，不是結節的 taller-than-wide 平面與重測再現性；且屬入門層級"
+  },
+  {
+   "title": "Things to know about thyroid nodule size + thyroid nodule size chart",
+   "url": "https://www.youtube.com/watch?v=nGimfmgMl_M",
+   "source": "YouTube / Nate's Nodules: Thyroid Nodules with Dr. Walsh",
+   "decision": "excluded",
+   "reason": "面向病人的衛教內容，無影像判讀教學"
+  },
+  {
+   "title": "TIRADS 3 / TIRADS 4 / TIRADS 5 Thyroid Nodule 系列",
+   "url": "https://www.youtube.com/watch?v=Cc9Dbc-2DWM",
+   "source": "YouTube / DrRRJ Health",
+   "decision": "excluded",
+   "reason": "在多組查詢中反覆出現且觀看數高，但為病人衛教頻道，未標明使用哪一版 TI-RADS，且把單一分級直接對應「該不該擔心」，屬契約排除的「使用過時或未說明版本的分類」"
+  },
+  {
+   "title": "TMT: NECK USG by Alka Singhal: Intro to TIRADS",
+   "url": "https://www.youtube.com/watch?v=72PesrQ3zB0",
+   "source": "YouTube / Indian Radiologist",
+   "decision": "excluded",
+   "reason": "2018 年入門介紹，未指明 ACR TI-RADS 或其他版本，對 fellow 層級增益不足"
+  },
+  {
+   "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
+   "source": "Thyroid 2025;35(8):841-985 / PubMed",
+   "decision": "excluded",
+   "reason": "查證用途而非教材：確認 2025 年 ATA 新版只涵蓋 differentiated thyroid cancer，結節超音波 pattern 的正式來源仍是 2015 年版；此結論已寫入 ch4-u4 的 tight。DOI 10.1177/10507256251363120 導向 SAGE 回 403，PMC13090833 亦回 403，僅 PubMed 頁 200"
+  },
+  {
+   "title": "ACR TI-RADS 官方網頁",
+   "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/TI-RADS",
+   "source": "American College of Radiology",
+   "decision": "excluded",
+   "reason": "查證用途：由此頁原始碼取得五份官方 PDF 的實際連結。注意舊網址 https://www.acr.org/Quality-Safety/Resources/TIRADS（多支影片描述仍在引用）與 .../Reporting-and-Data-Systems/TI-RADS/Webinars 均已 404"
+  },
+  {
+   "title": "ETA Guidelines 頁面",
+   "url": "https://www.eurothyroid.com/guidelines/eta_guidelines.html",
+   "source": "European Thyroid Association",
+   "decision": "excluded",
+   "reason": "查證用途：確認 ETA 官方對 EU-TIRADS 的指向就是 DOI 10.1159/000478927，未另設可公開存取的鏡像 PDF"
+  },
+  {
+   "title": "Radiopaedia: ACR Thyroid Imaging Reporting and Data System (ACR TI-RADS)",
+   "url": "https://radiopaedia.org/articles/acr-thyroid-imaging-reporting-and-data-system-acr-ti-rads",
+   "source": "Radiopaedia",
+   "decision": "excluded",
+   "reason": "curl 回 406（疑似 bot 防護），無法在不使用瀏覽器自動化的情況下確認頁面現況；依「不信任未實際打開的連結」原則不納入"
+  },
+  {
+   "title": "ACR TI-RADS Chart Combo PDF（舊網址）",
+   "url": "https://www.acr.org/-/media/ACR/Files/RADS/TI-RADS/TIRADS-Chart-Combo.pdf",
+   "source": "American College of Radiology",
+   "decision": "excluded",
+   "reason": "curl 導向 app.sitecorecloud.io 登入頁，非實際 PDF；改用 acr.org 頁面原始碼中列出的 edge.sitecorecloud.io 連結（curl 200 application/pdf）"
+  }
+ ]
+}

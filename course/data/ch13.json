@@ -1,0 +1,316 @@
+{
+  "chapter": "CH13",
+  "title": "報告、品質保證與能力認證",
+  "units": [
+    {
+      "id": "ch13-u1",
+      "name": "結構化報告與最小影像集",
+      "type": "quality",
+      "assessment": "從自己門診近三個月的甲狀腺超音波中隨機抽 10 份報告與其影像存檔。逐份對照 AIUM 的 26 項 Thyroid/Parathyroid Imaging Checklist，計算「影像完整率」（26 項中實際存檔並標註者的比例），並記錄最常漏掉的三個項目。接著逐份檢查報告文字是否具備：每顆目標結節的獨立編號、可重現的定位描述（葉／上中下／前後）、三維測量、風險分層系統全名與版本、以及與前次影像的明確對照句。最後挑出其中兩位有兩次以上檢查的病人，試著只用報告文字判斷「這次的 2 號結節是不是上次的 2 號結節」，寫下判斷不出來的原因。",
+      "tight": [
+        "只寫「右葉一顆 1.2 公分低回音結節」而不編號、不定位，下一位醫師無法確認追蹤的是同一顆",
+        "多發結節時只描述「最大的一顆」，卻沒說明其餘結節的處理原則，讓後續追蹤失去基準",
+        "報告只寫「TI-RADS 4」而不寫系統全名與版本（ACR TI-RADS (2017)／K-TIRADS 2021／EU-TIRADS 2017），跨院判讀直接失效",
+        "縱向比較寫「與前次相仿」，但前次影像存的切面與這次不同，實際上無法比較",
+        "影像存檔只留「有病灶的那幾張」，缺少雙葉上中下與峽部的基準切面，日後無法回頭重新判讀"
+      ],
+      "weak": [
+        "能在不看影像的情況下，只憑報告文字重建出結節的位置、大小與風險分層依據",
+        "能一致地執行「最小影像集」：雙葉各三張橫切、三張縱切、峽部橫切與 AP、三維測量，並正確標註側別與位置",
+        "能建立可跨次檢查沿用的 lesion numbering 規則，並在報告中明確寫出對應關係",
+        "能區分「真的長大」與「量測方式不同造成的差異」，並在報告中說明採用哪一種比較基準"
+      ],
+      "lesson": {
+        "title": "Standardized Imaging and Reporting for Thyroid Ultrasound: Korean Society of Thyroid Radiology Consensus Statement and Recommendation",
+        "channel": "Korean Society of Thyroid Radiology / Korean Journal of Radiology",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9830140/",
+        "why": "目前唯一把「掃描技術標準化」與「報告格式標準化」放在同一份文件裡處理的學會共識，明確規定該存哪些影像、結節怎麼編號定位、以及縱向追蹤要寫什麼。解決的是「同一顆結節在兩家醫院被寫成兩種東西」的判讀落差。全文開放取用。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "journal",
+        "access": "open",
+        "license": "Korean Journal of Radiology，CC BY-NC 開放取用；本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "AIUM 甲狀腺／副甲狀腺／頸部超音波認證案例影像檢核表",
+          "en": "Case Study Submission Requirements & Imaging Checklists – Thyroid/Neck Ultrasound",
+          "kind": "guideline",
+          "target": "看出一份「可通過學會認證審查」的甲狀腺超音波最小影像集到底包含哪 26 項，以及 UGFNA 必須留下什麼影像證據（穿刺前的病灶測量、針身在病灶內的畫面）。",
+          "dose": "先不看文件，自己憑印象列出你認為的最小影像集，再打開第 2 頁的 checklist 逐項對照，把自己漏掉的項目圈起來——多數人會漏掉「整體腺體血流」「鄰近軟組織異常」與「多發結節的數目記錄」。",
+          "title": "Case Study Submission Requirements & Imaging Checklists – Thyroid/Neck Ultrasound",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/docs/default-source/accreditation/case-study-requirements/thyroidneck.pdf?sfvrsn=b1e04e4a_7",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© AIUM，公開下載之認證文件；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "AIUM–ACR–SPR–SRU 顱外頭頸部超音波執業參數（含 Documentation 章節）",
+          "en": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+          "kind": "guideline",
+          "target": "看出四個學會共同認定的「完整檢查最低標準」與影像永久紀錄要求：影像須標註病人識別、機構、檢查日期與側別，且檢查範圍應隨臨床適應症調整而非一律照抄。",
+          "dose": "直接跳到 Documentation 一節（PDF 中段）與 Specifications of the Examination，對照自己科內的存檔規則；重點在它明講「檢查範圍與影像紀錄程度會因臨床適應症而異」，這是拒絕「一律掃全頸」與「一律只掃甲狀腺」兩種極端的依據。",
+          "title": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+          "channel": "AIUM / ACR / SPR / SRU",
+          "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© AIUM（doi:10.1002/jum.14830），公開下載之執業參數；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "ESR Essentials：歐洲頭頸放射線學會甲狀腺影像實務建議",
+          "en": "ESR Essentials: thyroid imaging—practice recommendations by the European Society of Head and Neck Radiology",
+          "kind": "guideline",
+          "target": "看出歐洲觀點如何把「採用標準化報告系統」直接寫成降低不必要穿刺與過度治療的手段，並比較它與 KSThR 共識在報告要件上的側重差異。",
+          "dose": "與本單元主課的 KSThR 共識並排讀，各列出三條「我明天就能改進報告的具體句子」；特別注意兩者對 EU-TIRADS 2017 與 ACR TI-RADS (2017) 併用的態度不同。",
+          "title": "ESR Essentials: thyroid imaging-practice recommendations by the European Society of Head and Neck Radiology",
+          "channel": "European Society of Head and Neck Radiology / European Radiology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13086679/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "European Radiology，開放取用（PMC）；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch13-u2",
+      "name": "判讀者間變異、discrepancy review 與 missed cancer conference",
+      "type": "quality",
+      "assessment": "與科內至少兩位同事各自獨立判讀同一批 20 個結節（建議同時保留靜態影像與 cine-loop 兩種版本），各自填寫四項關鍵特徵：margin、echogenicity、微鈣化、extrathyroidal extension，以及最終 ACR TI-RADS (2017) 分級與是否建議穿刺。計算每一項的一致度（可用簡單的兩兩一致比例，或 Fleiss kappa），找出你們科內一致度最低的那一項特徵，並針對它寫出一條「本科操作型定義」。接著回顧近一年科內至少 3 例術後病理為惡性但術前超音波未建議穿刺的個案，以 RCR REALM 的匿名格式（去識別化、聚焦學習點而非個人評分）整理成一次 30 分鐘的科內討論。",
+      "tight": [
+        "把 kappa 低歸咎於「別人不會看」，而不是回頭檢查我們對 margin 與 hypoechogenicity 的定義本來就不一致",
+        "以為看動態 cine-loop 一定比靜態影像判讀得更一致——實證顯示對非高度熟練者反而更不一致",
+        "把 discrepancy review 辦成究責大會，導致下次沒有人願意提報自己的個案",
+        "只回顧「後來確診惡性」的個案，沒有同時看「建議穿刺但結果良性」的另一半，稽核因此只往一個方向偏",
+        "把 extrathyroidal extension 當成可靠的判讀依據，忽略專家間對它的辨識率其實不到一半"
+      ],
+      "weak": [
+        "能量化自己科內的判讀者間變異，而不只是主觀認為「大家看得差不多」",
+        "能針對一致度最差的影像特徵，寫出可被同事重複執行的操作型定義",
+        "能主持一場不指名、不評分、聚焦學習點的 discrepancy／missed cancer 討論",
+        "能分辨「判讀差異」與「判讀錯誤」，並只對後者啟動個人層級的處理"
+      ],
+      "lesson": {
+        "title": "Considerable interobserver variation calls for unambiguous definitions of thyroid nodule ultrasound characteristics",
+        "channel": "European Thyroid Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10083668/",
+        "why": "七個甲狀腺中心的專家對 123 個有手術病理對照的病灶做盲讀，用的是完整錄影而非事先挑好的靜態影像，最接近真實判讀情境。結果顯示 irregular margin 的一致度只有 0.34、輕中度與極度低回音的區分只有 0.17、extrathyroidal extension 正確辨識率僅 45.8%——直接說明為什麼 TI-RADS 分數在不同人手上會不一樣。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "open",
+        "license": "European Thyroid Journal，開放取用（PMC）；本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "靜態影像 vs. cine-loop 的風險分層一致度比較",
+          "en": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
+          "kind": "guideline",
+          "target": "看出「給更多影像資訊不等於判讀更一致」：12 位判讀者在五套系統（Kwak、ACR、EU、K-TIRADS、ATA）下，靜態影像的 kappa 反而優於 cine-loop，且差距隨判讀者對該系統的熟練度而縮小。",
+          "dose": "先自己預測「靜態與動態哪個一致度高」再看結果；讀完後直接回頭檢討自己科內存檔策略——這篇是「為什麼最小影像集要規定固定切面」的實證支撐，不是「不要存動態影像」的理由。",
+          "title": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
+          "channel": "Diagnostics (MDPI)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11475346/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Diagnostics，CC BY 開放取用；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "RCR：放射事件與學習會議（REALM）標準",
+          "en": "Standards for radiology events and learning meetings (BFCR(20)1)",
+          "kind": "guideline",
+          "target": "看出一場站得住腳的 discrepancy／missed cancer conference 該怎麼設計：匿名提報、同時納入「做得好的案例」、每年最少場次與出席率門檻、以及會議結論如何回饋到部門品質計畫。",
+          "dose": "把 PDF 中的標準逐條對照自己科內現行的病例討論會，列出「我們沒做到的三件事」；重點在它明確把個人績效評分與集體學習分開處理，這是讓 missed cancer 討論能持續辦下去的關鍵設計。",
+          "title": "Standards for radiology events and learning meetings",
+          "channel": "The Royal College of Radiologists (RCR)",
+          "url": "https://www.rcr.ac.uk/media/4vaobs4a/bfcr201-standards-for-radiology-events-and-learning-meetings.pdf",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© The Royal College of Radiologists，公開下載之標準文件；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "ACR Peer Learning 資源庫",
+          "en": "ACR Peer Learning Resources",
+          "kind": "guideline",
+          "target": "看出 peer learning 與傳統計分式 peer review（RADPEER）的差別，以及要把科內品質活動從「評分」轉成「學習」需要哪些工具（提報流程、案例挑選、回饋迴路、成效指標）。",
+          "dose": "只看流程與工具包部分，直接抓一份可改寫的簡報範本；不要把 peer learning 當成「不再追究錯誤」——它仍要求把重複出現的學習點轉成具體的實務改善專案。",
+          "title": "Peer Learning Resources",
+          "channel": "American College of Radiology (ACR)",
+          "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Peer-Learning-Resources",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© American College of Radiology，公開網頁；部分下載檔案可能需會員登入。本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch13-u3",
+      "name": "不當穿刺稽核與影像品質稽核",
+      "type": "quality",
+      "assessment": "以 RCR AuditLive 的甲狀腺稽核範本為骨架，改寫成適用於自己單位的版本：從 PACS／RIS 撈出近 12 個月所有發現至少一顆結節的甲狀腺或頸部超音波，記錄（一）報告中是否寫出風險分層分數與系統版本；（二）該分數是否對應到指引建議的穿刺門檻；（三）實際是否執行 FNA；（四）若偏離門檻，報告或病歷中是否有明確臨床理由。算出「有分級率」「門檻符合率」與「無理由偏離率」三個數字。另外隨機抽 30 筆檢查做影像品質稽核，依 AIUM 影像標示標準檢查側別、方位、註記是否正確，並記錄有多少筆因病人因素造成的影像不佳「有被寫進報告」。把三個最差的指標各寫一條改善措施與再稽核日期。",
+      "tight": [
+        "只稽核「有沒有做 FNA」，不稽核「該做卻沒做」，稽核結果永遠看起來很好",
+        "把偏離穿刺門檻一律當成錯誤——臨床理由（病人偏好、共病、手術規劃）若有記錄就不是不當，沒記錄才是",
+        "影像品質稽核只看清晰度，忽略側別標示錯誤與方位反置這種會直接造成臨床傷害的問題",
+        "稽核抽樣只抽自己有印象的個案，而不是系統性地從 PACS 全撈再隨機抽",
+        "跑完一輪稽核就結束，沒有訂再稽核日期，品質循環沒有閉合"
+      ],
+      "weak": [
+        "能把一份通用稽核範本改寫成適用於本地分級系統與轉診路徑的版本",
+        "能同時量測「過度穿刺」與「穿刺不足」兩個方向，而不是只看其中一邊",
+        "能用可重現的方式抽樣，並說清楚納入與排除條件",
+        "能把稽核結果轉成具體、有負責人、有期限的改善措施"
+      ],
+      "lesson": {
+        "title": "Audit of thyroid U-classification and subsequent fine needle aspiration cytology",
+        "channel": "The Royal College of Radiologists — AuditLive",
+        "url": "https://www.rcr.ac.uk/career-development/audit-quality-improvement/auditlive-radiology-templates/audit-of-thyroid-u-classification-and-subsequent-fine-needle-aspiration-cytology/",
+        "why": "一份可以直接拿去跑的甲狀腺穿刺適當性稽核範本，標準、目標值、資料撈取方式與指標都寫好了（100% 報告須含分級；U1–U2 不應穿刺；U3–U5 應穿刺，除非有充分臨床理由）。解決的是「知道該稽核卻不知道從哪個欄位開始」的落差。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "society",
+        "access": "open",
+        "license": "© The Royal College of Radiologists，AuditLive 公開範本；本站僅連結不重製",
+        "last_verified": "2026-08-02",
+        "coi": "範本以英國 BTA 2014 U-classification 為標準，若本地使用 ACR TI-RADS (2017) 或 K-TIRADS 2021 需自行替換門檻，不可直接套用目標值"
+      },
+      "drills": [
+        {
+          "name": "非產科超音波判讀者報告品質稽核範本（QSI Ref: XR508）",
+          "en": "Audit of practitioner reporting in non-obstetric ultrasound imaging [QSI Ref: XR508]",
+          "kind": "guideline",
+          "target": "看出影像品質稽核的具體可量測項目：影像是否上傳 PACS、探頭參數是否適當、是否符合本地約定的固定影像組、標註是否正確、影像不佳時是否在報告中說明，以及異常個案是否有與資深醫師討論的紀錄。",
+          "dose": "建議每位執行者抽 30 筆回溯性檢查；重點在它把「最小影像組」與「報告品質」拆成兩組獨立指標分別計分，這樣才看得出問題出在掃描端還是判讀端。",
+          "title": "Audit of practitioner reporting in non-obstetric ultrasound imaging [QSI Ref: XR508]",
+          "channel": "The Royal College of Radiologists — AuditLive",
+          "url": "https://www.rcr.ac.uk/career-development/audit-quality-improvement/auditlive-radiology-templates/audit-of-practitioner-reporting-in-non-obstetric-ultrasound-imaging-qsi-ref-xr508/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© The Royal College of Radiologists，AuditLive 公開範本；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "AIUM 超音波影像標準呈現與標示（第六版）",
+          "en": "Standard Presentation and Labeling of Ultrasound Images, Sixth Edition",
+          "kind": "guideline",
+          "target": "看出影像品質稽核要拿什麼當標準：病人姿勢、標準切面、影像在螢幕上的呈現方位、標示規則與縮寫規範，以及 SWE／CEUS 等特殊應用的呈現要求。",
+          "dose": "只讀 Standard Planes、Image Presentation on the Monitor 與 Labeling 三節即可（約 20 頁）；讀完直接拿自己上週的十張影像逐張比對方位與標示，這比讀完整本有用。",
+          "title": "Standard Presentation and Labeling of Ultrasound Images, Sixth Edition",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://aium.s3.amazonaws.com/resourceLibrary/splv6.pdf",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "©2020 American Institute of Ultrasound in Medicine，版權所有、公開下載；未經授權不得重製，本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch13-u4",
+      "name": "logbook、直接觀察、OSCE 與 credentialing",
+      "type": "assessment",
+      "assessment": "以 EFSUMB 頭頸部超音波三級能力架構為對照，寫出自己目前落在哪一級，並逐條列出未達下一級的具體項目（知識、技術、介入、進階技術各分開列）。建立一份至少涵蓋六個月的 logbook 範本，欄位包含：日期、去識別化編號、適應症、診斷、是否執行 UGFNA、細胞學結果、與後續病理／臨床追蹤的對照、以及一欄「本次自評的困難點」。接著安排至少 3 次由資深醫師直接觀察的掃描與 UGFNA，使用固定的 checklist 評分並當場回饋。最後把 logbook 中所有 UGFNA 的檢體不足率算出來，與 ATA／ETA 建議的 10% 門檻比較，並說明若超過該從哪一個步驟開始改善。",
+      "tight": [
+        "把「做滿幾例」當成能力證明——EFSUMB 明講最低例數是不可靠的指標，已在往能力本位轉向",
+        "logbook 只記做過幾例，沒有回填細胞學與最終病理，因此無法自我校正",
+        "把學會的執業認證（practice accreditation）與個人能力認證（personal credentialing）混為一談，兩者要求的證據完全不同",
+        "假設美國的 ECNU 個人認證還在收件——AACE／ACE 已重整甲狀腺教育架構、不再提供個人認證與再認證，規劃職涯路徑時若照舊資料走會落空",
+        "直接觀察流於形式：沒有事先講好評分項目，回饋就會變成「做得不錯」四個字"
+      ],
+      "weak": [
+        "能用能力本位（而非例數）描述自己目前的頭頸部超音波程度，並指出下一步要補的具體能力",
+        "能維護一份可回溯、可自我校正的 logbook，並從中算出自己的檢體不足率與診斷符合率",
+        "能設計並接受一次結構化的直接觀察評分，而不是只讓資深醫師「在旁邊看一下」",
+        "能分辨個人認證、執業認證與付款方認證要求三者的差異，並知道各自要準備什麼文件"
+      ],
+      "lesson": {
+        "title": "Head and Neck Ultrasound - EFSUMB Training Recommendations for the Practice of Medical Ultrasound in Europe",
+        "channel": "EFSUMB / Ultrasound International Open",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546639/",
+        "why": "目前最明確、且跨專科適用的頭頸部超音波能力本位訓練架構：Level 1 獨立執行基本檢查、Level 2 加上超音波導引介入、Level 3 高階頸部超音波與進階技術，每一級都列出所需的理論知識與技術。它直接指出「用最低例數判定能力並不可靠」，是本單元反對純 logbook 計數的主要依據。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "society",
+        "access": "open",
+        "license": "Ultrasound International Open（EFSUMB 官方立場文件），開放取用（PMC）；本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "AIUM 超音波訓練指引（醫師與具執照醫療提供者）",
+          "en": "AIUM Ultrasound Training Guidelines for Physicians and Licensed Medical Providers",
+          "kind": "guideline",
+          "target": "看出北美體系如何把訓練要求寫成可查核的條件：診斷性超音波與超音波導引介入分開規範，並區分「初次取得資格」與「維持能力（maintenance of competence）」兩套持續要求。",
+          "dose": "分別打開「performing and/or interpreting diagnostic ultrasound」與「ultrasound-guided procedures」兩份指引對照著看；重點在拿它當自己 logbook 的欄位設計依據，而不是當成例數目標。",
+          "title": "Ultrasound Training Guidelines",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/resources/training-guidelines",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© AIUM，公開官方聲明；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "AIUM 甲狀腺、副甲狀腺與頸部超音波執業認證要求",
+          "en": "AIUM Practice Accreditation — Thyroid, Parathyroid, and Neck Ultrasound",
+          "kind": "guideline",
+          "target": "看出「執業單位」層級的認證要求長什麼樣：必備的執業標準與訓練指引、影像文件化參數、設備品質保證報告、人員資格文件，以及必須送審的實際案例組合（含 UGFNA 且須顯示針在病灶內）。",
+          "dose": "把送審清單當成自我稽核表用一次——就算不打算申請認證，也能立刻看出自己單位在設備 QA 報告與人員資格文件上的缺口。頁面同時列出申請費用結構（基本費 2,000 美元起、每三年重新申請），可作為評估投入成本的依據。",
+          "title": "Thyroid, Parathyroid, and Neck Ultrasound",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/accreditation/thyroid-parathyroid-and-neck-ultrasound",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© AIUM，公開網頁；實際申請需註冊帳號。本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "OSCE／image-based examination",
+      "url": null,
+      "note": "查過 PubMed 與 Europe PMC 下列組合：TITLE:\"thyroid\" AND (TITLE:\"OSCE\" OR TITLE:\"objective structured\")、(TITLE:\"OSCE\" OR TITLE:\"direct observation\" OR TITLE:\"assessment tool\") AND TITLE:\"ultrasound\" AND OPEN_ACCESS:Y AND (TITLE:\"competence\" OR \"competency\" OR \"skills\")、OSCE+ultrasound+competency+assessment+objective+structured。找不到任何針對甲狀腺／頸部超音波、經過效度驗證且可公開取得的 OSCE 站或影像考題庫；命中的都是 POCUS 心臟（PMC8476706）、EBUS-TBNA（PMC11570438）或大學部 POCUS（PMC9854184）等其他領域工具。因此 ch13-u4 改以 EFSUMB 能力本位架構＋AIUM 訓練與認證要求承載，OSCE 部分留在 assessment 欄位由學員自行以直接觀察 checklist 執行。若之後有學會釋出甲狀腺專用 OSCE 站，應優先補入本單元。"
+    },
+    {
+      "topic": "AACE ECNU（Endocrine Certification in Neck Ultrasound）",
+      "url": null,
+      "note": "ECNU 是內分泌科最具代表性的個人頸部超音波認證，本章原本要收為 ch13-u4 主課。但 https://pro.aace.com/education/certification-neck-ultrasound 於 2026-08-02 以 curl（含完整瀏覽器標頭）與 tavily extract 取得皆為 403／導向 \"We're sorry!\" 頁；https://www.aace.com/ecnu、https://pro.aace.com/ecnu、https://www.aium.org/ecnu 均為 404 或 403。文獻與 AACE 2025 得獎頁均指出該計畫為 ACE「previously administered」，且 Sistrunk 等人於 Clinical Thyroidology 2020（doi 10.1089/ct.2020;32.51-53，出版商頁面 403）明言 AACE 已重整課程、不再提供個人認證與再認證。基於「不得使用未實際打開的網址」，本章不收 ECNU 官方連結，僅在 ch13-u4 的 tight 欄位提醒此制度變動，詳情另記於 docs/COURSES-AND-CREDENTIALS.md。"
+    },
+    {
+      "topic": "YouTube 影音",
+      "url": null,
+      "note": "本章依策展指示以文件、指引與制度性資料為主。仍以 yt-dlp 跑過 ytsearch12:\"thyroid ultrasound structured reporting quality audit TI-RADS interobserver\" 與 ytsearch10:\"thyroid ultrasound report quality assurance audit\"，回傳結果全為細胞學講座、BI-RADS 播客、血管外科品質改善演講與病人衛教，無一支與甲狀腺超音波報告品質、稽核或能力認證相關。因此本章不納入任何 YouTube 資源。"
+    }
+  ]
+}

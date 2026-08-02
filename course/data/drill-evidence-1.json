@@ -1,0 +1,380 @@
+{
+  "categories": [
+    {
+      "id": "acr-tirads",
+      "name": "ACR TI-RADS 分層",
+      "evidence_grade": "guideline_supported",
+      "summary": "ACR TI-RADS 是加總分制的官方 ACR 文件，16 篇研究、21,882 顆結節的 meta-analysis 得到 pooled sensitivity 0.89、specificity 0.70、AUC 0.86。它在四大系統中最會省針：pooled unnecessary biopsy rate 25%，遠低於 ATA 51%、EU-TIRADS 38%、K-TIRADS 55%；前瞻研究中可省下 53.4% 的穿刺而 false-negative rate 僅 2.2%（NPV 97.8%）。代價要講清楚：Middleton 的 3,422 顆結節資料顯示 ACR TI-RADS 只會穿刺 68.2% 的惡性結節（K-TIRADS 78.7%、ATA 75.9%），省針是用犧牲敏感度換來的，其中多數被漏掉的是小於尺寸門檻的低危險癌。",
+      "citations": [
+        {
+          "pmid": "28372962",
+          "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+          "journal": "J Am Coll Radiol",
+          "year": 2017,
+          "design": "guideline",
+          "takeaway": "ACR TI-RADS 官方白皮書：以五個特徵類別加總計分，TR1–TR5 搭配尺寸門檻決定 FNA 或追蹤；屬委員會共識文件（Consensus Statement），本身未提供前瞻驗證數據。"
+        },
+        {
+          "pmid": "32603229",
+          "title": "Diagnostic Performance of American College of Radiology TI-RADS: A Systematic Review and Meta-Analysis",
+          "journal": "AJR Am J Roentgenol",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "16 篇研究、18,614 名病人、21,882 顆結節：ACR TI-RADS pooled sensitivity 0.89（95% CI 0.81–0.93）、specificity 0.70（0.60–0.78）、AUC 0.86、DOR 18.46。與 K-TIRADS 直接對比時特異度顯著較高（0.57 vs 0.24，p < 0.001），敏感度則略低（0.85 vs 0.91，p = 0.13）。"
+        },
+        {
+          "pmid": "29629797",
+          "title": "Comparison of Performance Characteristics of American College of Radiology TI-RADS, Korean Society of Thyroid Radiology TIRADS, and American Thyroid Association Guidelines",
+          "journal": "AJR Am J Roentgenol",
+          "year": 2018,
+          "design": "retrospective cohort",
+          "takeaway": "3,422 顆有病理的結節做三系統對照：ACR TI-RADS 的 biopsy yield of malignancy 最高（14.2% vs K-TIRADS 10.2%、ATA 10.0%），會被穿刺的良性結節最少（47.1% vs 79.7% vs 78.1%），但被穿刺的惡性結節也最少（68.2% vs 78.7% vs 75.9%）。無法分類的比例 ACR 0%、K 3.9%、ATA 13.9%。"
+        },
+        {
+          "pmid": "30299457",
+          "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2019,
+          "design": "multicenter validation",
+          "takeaway": "477 名病人的前瞻研究：五套系統把穿刺量減少 17.1%–53.4%，ACR TI-RADS 減幅最大（502 顆中 268 顆可免穿刺），false-negative rate 2.2%、NPV 97.8%（95% CI 95.2–99.2）。"
+        },
+        {
+          "pmid": "33057762",
+          "title": "Unnecessary thyroid nodule biopsy rates under four ultrasound risk stratification systems: a systematic review and meta-analysis",
+          "journal": "Eur Radiol",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "8 篇研究、13,092 顆結節：pooled unnecessary biopsy rate 為 ACR-TIRADS 25%（95% CI 22–29）、ATA 51%（44–58）、EU-TIRADS 38%（16–66）、K-TIRADS 55%（42–67）；ACR 顯著低於 ATA 與 K-TIRADS（皆 p < .001）。但三者的 DOR 沒有顯著差異（5.9、6.3、4.5）。"
+        }
+      ]
+    },
+    {
+      "id": "ata-pattern",
+      "name": "ATA sonographic pattern",
+      "evidence_grade": "guideline_supported",
+      "summary": "ATA 2015 的五個 sonographic pattern 在前瞻驗證中，實測惡性率與原始估計吻合得相當好：206 顆結節的研究中 high 100%（估 70–90%）、intermediate 11%（估 10–20%）、low 8%（估 5–10%）、very low 2%（估 <3%）；432 顆結節的前瞻系列中，不符 FNA 條件者累積惡性率 1.2%。真正的弱點不是風險估計，是 pattern 蓋不滿：Middleton 的資料中 13.9% 的結節無法歸入任何 ATA pattern，德國多中心 1,211 顆中也有 11.1% 無法分類——這是四大系統中最高的。另外 ATA 的穿刺門檻寬，pooled unnecessary biopsy rate 51%，是 ACR 的兩倍。",
+      "citations": [
+        {
+          "pmid": "26462967",
+          "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+          "journal": "Thyroid",
+          "year": 2016,
+          "design": "guideline",
+          "takeaway": "ATA 2015 成人結節與分化型甲狀腺癌指引，提出 high / intermediate / low / very low suspicion / benign 五個 sonographic pattern 與各自的估計惡性風險，並依 pattern 訂定 FNA 尺寸門檻。"
+        },
+        {
+          "pmid": "28657511",
+          "title": "Validation of American Thyroid Association Ultrasound Risk Assessment of Thyroid Nodules Selected for Ultrasound Fine-Needle Aspiration",
+          "journal": "Thyroid",
+          "year": 2017,
+          "design": "multicenter validation",
+          "takeaway": "206 顆前瞻收案結節：實測惡性率 high 100%、intermediate 11%、low 8%、very low 2%，對照 ATA 原始估計 70–90% / 10–20% / 5–10% / 3%，除 high 類別偏高外整體吻合。在細胞學不確定的結節中，惡性率同樣依 pattern 分層（100% / 21% / 17% / 12%，p = 0.003）。"
+        },
+        {
+          "pmid": "29672763",
+          "title": "Prospective Validation of ATA and ETA Sonographic Pattern Risk of Thyroid Nodules Selected for FNAC",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2018,
+          "design": "multicenter validation",
+          "takeaway": "432 顆前瞻送 FNAC 的結節同時套 ATA 與 ETA：ATA 有 23.7%、ETA 有 56.0% 不符 FNAC 條件；這些低風險類別的累積惡性率 ATA 1.2%、ETA 1.7%。兩系統辨別良惡性的能力相當。"
+        },
+        {
+          "pmid": "31740569",
+          "title": "A Multidisciplinary Head-to-Head Comparison of American College of Radiology Thyroid Imaging and Reporting Data System and American Thyroid Association Ultrasound Risk Stratification Systems",
+          "journal": "Oncologist",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "250 顆手術切除結節、6 名判讀者：ATA sensitivity 92%、specificity 10%、NPV 79%、PPV 27%（AUC 0.734），ACR TI-RADS 為 74% / 47% / 84% / 33%（AUC 0.718）。ATA 會多穿刺（226 顆 vs 146 顆），但 intermediate 類別的實測惡性率明顯偏離預期。"
+        },
+        {
+          "pmid": "34503277",
+          "title": "Diagnostic Performance of Kwak, EU, ACR, and Korean TIRADS as Well as ATA Guidelines for the Ultrasound Risk Stratification of Non-Autonomously Functioning Thyroid Nodules in a Region with Long History of Iodine Deficiency: A German Multicenter Trial",
+          "journal": "Cancers (Basel)",
+          "year": 2021,
+          "design": "multicenter validation",
+          "takeaway": "德國多中心 1,211 顆結節（缺碘地區）：ATA 準確度 0.79、AUC 0.801，與 Kwak/ACR/K-TIRADS 相當；但有 135 顆（11.1%）依 ATA 指引無法分類，而 Kwak、ACR、K-TIRADS 表現優於 EU-TIRADS 與 ATA。"
+        }
+      ]
+    },
+    {
+      "id": "eu-tirads",
+      "name": "EU-TIRADS 分層",
+      "evidence_grade": "moderate",
+      "summary": "EU-TIRADS 是 ETA 專家小組回顧文獻並參考 AACE／ATA／Korean 指引後訂出的系統，本身未附前瞻驗證。四系統 meta-analysis 中它的類別表現不差（EU-TIRADS 5 的 sensitivity 82%／specificity 90%，4 或 5 為 96%／52%），但外部驗證的一致性比 ACR 弱：德國多中心 1,211 顆結節中EU-TIRADS 準確度 0.70，是五套系統裡最低的。非歐洲族群資料很少——目前最完整的一筆是剛果 549 名手術病人（sensitivity 96.6%、specificity 59.3%、AUC 0.862）。最該講給學員聽的限制來自波蘭多中心研究：229 顆惡性結節中有 81 顆（36%）因為沒達到該類別的尺寸門檻而不會被建議切片。",
+      "citations": [
+        {
+          "pmid": "29167761",
+          "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+          "journal": "Eur Thyroid J",
+          "year": 2017,
+          "design": "guideline",
+          "takeaway": "ETA 的 EU-TIRADS 指引：包含超音波 lexicon、標準化報告、benign／low／intermediate／high risk 四級與各級估計惡性風險及 FNA 適應症。文中自述是專家小組回顧文獻並參考 AACE、ATA、Korean 指引後訂定，目標之一是提升判讀者間的可重複性。"
+        },
+        {
+          "pmid": "31731455",
+          "title": "Histopathological Verification of the Diagnostic Performance of the EU-TIRADS Classification of Thyroid Nodules-Results of a Multicenter Study Performed in a Previously Iodine-Deficient Region",
+          "journal": "J Clin Med",
+          "year": 2019,
+          "design": "multicenter validation",
+          "takeaway": "842 顆有完整組織病理的病灶（613 良性、229 惡性）：EU-TIRADS 3/4 交界 sensitivity 100%、specificity 25.1%；以 EU-TIRADS 5 為切點則為 93.4% / 54.6%。關鍵限制是尺寸門檻——229 顆惡性中 81 顆（36%）因未達該類別的切片尺寸而不會被建議穿刺。"
+        },
+        {
+          "pmid": "32303153",
+          "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+          "journal": "Thyroid",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "29 篇、33,748 顆結節：EU-TIRADS category 5 的 pooled sensitivity 82%、specificity 90%；category 4 或 5 為 96% / 52%。作者結論是四套系統（ACR、ATA、K-TIRADS、EU-TIRADS）整體表現相當。"
+        },
+        {
+          "pmid": "36323772",
+          "title": "Ultrasound performance using the EU-TIRADS score in the diagnosis of thyroid cancer in Congolese hospitals",
+          "journal": "Sci Rep",
+          "year": 2022,
+          "design": "retrospective cohort",
+          "takeaway": "非歐洲族群的少數資料：剛果 549 名手術病人，惡性率 21.7%。EU-TIRADS 4–5 的惡性率 39.7%、2–3 為 1.5%（p < 0.001），sensitivity 96.6%、specificity 59.3%、AUC 0.862。"
+        },
+        {
+          "pmid": "34503277",
+          "title": "Diagnostic Performance of Kwak, EU, ACR, and Korean TIRADS as Well as ATA Guidelines for the Ultrasound Risk Stratification of Non-Autonomously Functioning Thyroid Nodules in a Region with Long History of Iodine Deficiency: A German Multicenter Trial",
+          "journal": "Cancers (Basel)",
+          "year": 2021,
+          "design": "multicenter validation",
+          "takeaway": "德國多中心 1,211 顆結節：EU-TIRADS 準確度 0.70，低於 Kwak 0.79、ACR 0.78、Korean 0.82、ATA 0.79；作者明確建議缺碘地區優先採用 Kwak、ACR 或 Korean TIRADS，而非 EU-TIRADS 或 ATA。"
+        }
+      ]
+    },
+    {
+      "id": "k-tirads",
+      "name": "K-TIRADS 分層",
+      "evidence_grade": "guideline_supported",
+      "summary": "2021 版 K-TIRADS 的核心改動是切片條件：KSThR 明說目的是「在維持對小結節（1–2 cm）足夠敏感度的前提下，減少良性結節的不必要切片」，同時改寫了 lexicon、extrathyroidal extension 的超音波判準、甲狀腺 CT protocol 與切片前後追蹤建議。26 家醫院 5,708 顆結節的多中心驗證把這個取捨量化出來：2016 版 sensitivity 94.9%／specificity 24.4%／不必要切片率 60.9%，三種修改版分別降到 91.0%／84.9%／76.1% 的敏感度，不必要切片率則降到 48.6%／43.5%／40.1%。在 1–2 cm 的小結節，敏感度掉了 5.2–25.6%；大於 2 cm 的結節則維持 98% 敏感度。改版前的舊版是四大系統中不必要切片率最高的（pooled 55%）。",
+      "citations": [
+        {
+          "pmid": "34719893",
+          "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+          "journal": "Korean J Radiol",
+          "year": 2021,
+          "design": "guideline",
+          "takeaway": "2021 K-TIRADS 共識聲明：修訂 US lexicon、切片條件、extrathyroidal extension 的超音波判準、甲狀腺 CT protocol 與切片前後追蹤。文中自述切片條件的修訂目的是「減少良性結節的不必要切片，同時維持對小型（1–2 cm）結節惡性的適當敏感度」。"
+        },
+        {
+          "pmid": "34132082",
+          "title": "Diagnostic Performance of the Modified Korean Thyroid Imaging Reporting and Data System for Thyroid Malignancy: A Multicenter Validation Study",
+          "journal": "Korean J Radiol",
+          "year": 2021,
+          "design": "multicenter validation",
+          "takeaway": "26 家機構、5,081 名病人、5,708 顆 ≥1 cm 結節（1,111 惡性）：2016 K-TIRADS 的 sensitivity / specificity / 不必要切片率為 94.9% / 24.4% / 60.9%；modified K-TIRADS 1–3 分別為 91.0%/39.7%/48.6%、84.9%/45.9%/43.5%、76.1%/50.2%/40.1%。1–2 cm 小結節敏感度下降 5.2–25.6%、不必要切片率下降 19.2–32.8%（p < 0.001）；>2 cm 結節仍維持 98% 敏感度。"
+        },
+        {
+          "pmid": "32303153",
+          "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+          "journal": "Thyroid",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "29 篇、33,748 顆結節：K-TIRADS category 5 的 pooled sensitivity 55%、specificity 95%（四系統中特異度最高、敏感度最低）；category 4 或 5 為 89% / 64%。"
+        },
+        {
+          "pmid": "33057762",
+          "title": "Unnecessary thyroid nodule biopsy rates under four ultrasound risk stratification systems: a systematic review and meta-analysis",
+          "journal": "Eur Radiol",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "改版前的 K-TIRADS 是四系統中不必要切片率最高者：pooled 55%（95% CI 42–67），顯著高於 ACR-TIRADS 的 25%（p < .001）。但 DOR 4.5（95% CI 1.7–11.6）與 ACR、ATA 無顯著差異。"
+        }
+      ]
+    },
+    {
+      "id": "system-discordance",
+      "name": "風險分層系統間的不一致",
+      "evidence_grade": "strong",
+      "summary": "同一顆結節用不同系統會得到不同建議，這件事已被多篇 meta-analysis 反覆證實。39 篇、49,661 名病人的 network meta-analysis 與 29 篇、33,748 顆結節的 meta-analysis 都顯示：各系統的整體判別力其實接近，差異主要出在敏感度／特異度的取捨點——K-TIRADS 特異度最高（cat 5: 95%）但敏感度最低（55%），EU-TIRADS 敏感度最高（82%）特異度 90%。41,332 顆結節的 head-to-head meta-analysis 進一步指出：吵得最兇的是低風險端（ACR-TIRADS 1–2 的盛行率顯著高於 EU-TIRADS 2 與 K-TIRADS 2），中高風險類別的分布反而沒有顯著差異；但換算成癌症風險估計時，K-TIRADS 傾向估得最高、ACR 中間、EU-TIRADS 最低。最不容易被察覺的一致性問題是：這些系統幾乎全部是拿乳突癌驗出來的——19,494 顆結節中 6,162 顆惡性裡PTC 佔 95%、FTC 2%、MTC 1%，對濾泡癌與髓質癌的效度基本上沒被驗證過。",
+      "citations": [
+        {
+          "pmid": "38417254",
+          "title": "Head-to-head comparison of American, European, and Asian TIRADSs in thyroid nodule assessment: systematic review and meta-analysis",
+          "journal": "Eur Thyroid J",
+          "year": 2024,
+          "design": "meta-analysis",
+          "takeaway": "7 篇研究、41,332 顆結節的 head-to-head 比較：ACR-TIRADS 1–2 的盛行率顯著高於 EU-TIRADS 2 與 K-TIRADS 2，中、高風險類別間則無顯著差異；但以癌症風險估計來看，K-TIRADS 常把結節評為較高風險、ACR 居中、EU-TIRADS 最低。作者把這視為發展統一 I-TIRADS 的前提。"
+        },
+        {
+          "pmid": "36752367",
+          "title": "Diagnostic Performance of Six Ultrasound Risk Stratification Systems for Thyroid Nodules: A Systematic Review and Network Meta-Analysis",
+          "journal": "AJR Am J Roentgenol",
+          "year": 2023,
+          "design": "meta-analysis",
+          "takeaway": "39 篇、49,661 名病人的 network meta-analysis，比較 AACE/ACE/AME、ACR TI-RADS、ATA、EU-TIRADS、K-TIRADS、Kwak TIRADS 六套系統，逐一找出各系統準確度最高的切點（ACR 為 TR5、EU-TIRADS 為 5、AACE 為 class 3），再做敏感度與特異度的階層排序。"
+        },
+        {
+          "pmid": "32303153",
+          "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+          "journal": "Thyroid",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "四系統逐類別的 pooled 表現（category 5 → 4 或 5）：ACR 66%/91% → 95%/55%；ATA 74%/88% → 91%/64%；K-TIRADS 55%/95% → 89%/64%；EU-TIRADS 82%/90% → 96%/52%。作者結論：整體判別力相當，差異在取捨點。"
+        },
+        {
+          "pmid": "30299457",
+          "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2019,
+          "design": "multicenter validation",
+          "takeaway": "同一批 477 名病人、502 次穿刺同時套五套系統：可免除的穿刺量從 17.1% 到 53.4%，差距近三倍；除 K-TIRADS 外其餘系統都有顯著判別力，但省針幅度遠小於 ACR TI-RADS。"
+        },
+        {
+          "pmid": "32959174",
+          "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis",
+          "journal": "Rev Endocr Metab Disord",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "9 篇、19,494 顆結節：6,162 顆組織學確認的惡性中，PTC 佔 95%、FTC 2%、MTC 1%、其他 1%。作者結論——現行 TIRADS 只能視為診斷 PTC 的工具，其 pattern 與切點對 FTC、MTC 的效度需要重新檢討。"
+        }
+      ]
+    },
+    {
+      "id": "us-lexicon",
+      "name": "標準化描述語言與判讀者間一致性",
+      "evidence_grade": "strong",
+      "summary": "標準化 lexicon 確實有用，但天花板比想像中低。兩篇獨立 meta-analysis 給出幾乎相同的數字：ACR TI-RADS 整體分類的 pooled κ = 0.51（13 篇、5,238 顆結節），ACR 0.51 與 ATA 0.52（35 篇），都只到 moderate。逐特徵拆開看，最差的一致是 margin：pooled κ 0.34（95% CI 0.24–0.44），在多中心盲測中 0.33，在 8 位放射科醫師的研究中 0.25–0.39，在 15 位超音波技師手上更掉到 0.18。comet-tail artifact 更糟（多中心 κ 0.11、技師 0.08）。最好的是 composition（0.58）與 shape（0.57）。值得注意的是：即使個別特徵判讀不一致，改用 ACR TI-RADS 仍能把「要不要切片」的一致性從 κ 0.22 拉到 0.51——系統的價值在標準化決策，而不是標準化眼睛。",
+      "citations": [
+        {
+          "pmid": "26419308",
+          "title": "Thyroid Ultrasound Reporting Lexicon: White Paper of the ACR Thyroid Imaging, Reporting and Data System (TIRADS) Committee",
+          "journal": "J Am Coll Radiol",
+          "year": 2015,
+          "design": "guideline",
+          "takeaway": "ACR 的甲狀腺超音波 lexicon 白皮書：明說在回顧文獻時發現描述結節的詞彙「定義鬆散、使用不一致」，因此先建立詞彙表再建 TI-RADS；納入的詞彙以「在診斷甲狀腺癌上表現一致」為篩選標準。"
+        },
+        {
+          "pmid": "35646667",
+          "title": "Systematic Review and Meta-Analysis of American College of Radiology TI-RADS Inter-Reader Reliability for Risk Stratification of Thyroid Nodules",
+          "journal": "Front Oncol",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "13 篇、5,238 顆結節：ACR TI-RADS 整體分類 pooled inter-reader κ = 0.51（95% CI 0.42–0.59）。逐特徵：composition 0.58（0.53–0.63）> shape 0.57（0.41–0.72）> echogenicity 0.50（0.40–0.60）> echogenic foci 0.44（0.36–0.53）> margin 0.34（0.24–0.44）。margin 只達 fair。"
+        },
+        {
+          "pmid": "31952456",
+          "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+          "journal": "Thyroid",
+          "year": 2020,
+          "design": "multicenter validation",
+          "takeaway": "三家大量中心、7 位放射科與內分泌科醫師、100 張影像盲測並於 4 個月後重測：inter-observer κ 為 composition 0.53、echogenicity 0.47、intranodular vascularity 0.46、margins 0.33、microcalcification 0.47、macrocalcification 0.38、comet-tail 0.11、shape 0.42。分類系統本身：AACE 0.44 > ACR-TIRADS 0.42 > EU-TIRADS 0.39 > ATA 0.34。16% 的情況下判讀者無法界定高回音點，只能寫成「意義未明的高回音點」。"
+        },
+        {
+          "pmid": "29702015",
+          "title": "Interobserver Variability of Sonographic Features Used in the American College of Radiology Thyroid Imaging Reporting and Data System",
+          "journal": "AJR Am J Roentgenol",
+          "year": 2018,
+          "design": "retrospective cohort",
+          "takeaway": "8 位專科放射科醫師評 100 顆有確定診斷的結節：shape（κ = 0.61）與 macrocalcification（κ = 0.73）達 substantial，margin 與其他型高回音點最差（κ 0.25–0.39）。關鍵發現：依各自習慣做切片建議時 κ 只有 0.22，改套 ACR TI-RADS 後升到 0.51。"
+        },
+        {
+          "pmid": "32507343",
+          "title": "Using the American College of Radiology Thyroid Imaging Reporting and Data System at the Point of Care: Sonographer Performance and Interobserver Variability",
+          "journal": "Ultrasound Med Biol",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "15 位超音波技師評 100 顆結節：margin 的 Fleiss κ 僅 0.18（95% CI 0.16–0.20）、large comet-tail artifact 0.08（0.06–0.10），macrocalcification 0.41、no echogenic foci 0.52。技師自評對某特徵的「熟悉程度」與實際表現沒有統計相關。"
+        },
+        {
+          "pmid": "36039947",
+          "title": "Inter-Rater Reliability of Thyroid Ultrasound Risk Criteria: A Systematic Review and Meta-Analysis",
+          "journal": "Laryngoscope",
+          "year": 2023,
+          "design": "meta-analysis",
+          "takeaway": "35 篇研究：ACR TI-RADS pooled κ = 0.51（95% CI 0.42–0.57，n = 7）、ATA pooled κ = 0.52（95% CI 0.37–0.67，n = 3），皆為 moderate。作者提醒納入研究品質偏低且缺乏標準化，所有研究皆為觀察性。"
+        }
+      ]
+    },
+    {
+      "id": "scan-optimization",
+      "name": "機器參數與掃描最佳化",
+      "evidence_grade": "expert_consensus",
+      "summary": "誠實地講：這一類幾乎沒有臨床結果證據。系統性搜尋 PubMed 找不到任何「調整 gain／dynamic range／PRF／wall filter／preset 會改變甲狀腺結節分類或病人處置」的診斷準確度研究，也沒有比較不同機型或探頭的隨機試驗。現有依據只有兩類：一是學會的 practice parameter（AIUM 等），屬技術規範與專家共識，未附效果量；二是「操作者能力」的間接證據——同步遠距超音波指導的前瞻對照試驗中，受指導的住院醫師與現場專家的結節偵測一致率為 89.4%，未受指導者只有 56.5%（p < 0.001），且在灰階值、time gain compensation、深度、彩色都卜勒調整與關鍵資訊可見度五項上都顯著較佳。這是目前最接近「掃描操作影響診斷輸出」的直接數據，但它測的是整體操作能力，不是單一參數。教學上可以教參數，但不能宣稱有證據支持某個特定設定。",
+      "citations": [
+        {
+          "pmid": "27574124",
+          "title": "AIUM Practice Parameter for the Performance of a Thyroid and Parathyroid Ultrasound Examination",
+          "journal": "J Ultrasound Med",
+          "year": 2016,
+          "design": "guideline",
+          "takeaway": "AIUM 甲狀腺與副甲狀腺超音波檢查的 practice parameter：規範檢查範圍、影像紀錄與設備要求，屬學會技術規範／專家共識文件，未提供診斷準確度或臨床結果的效果量。"
+        },
+        {
+          "pmid": "35773182",
+          "title": "Synchronous tele-ultrasonography is helpful for a naive operator to perform high-quality thyroid ultrasound examinations",
+          "journal": "Ultrasonography",
+          "year": 2022,
+          "design": "RCT",
+          "takeaway": "97 名病人的前瞻平行對照試驗：有專家透過同步遠距超音波指導的住院醫師，其結節偵測與現場專家一致率 89.4%，無指導者僅 56.5%（p < 0.001）；受指導者在 ACR TI-RADS 分類、composition、shape、echogenic foci、vascularity 的 ICC 皆 > 0.75（無指導者 0.40–0.75），且在灰階值、time gain compensation、深度、彩色都卜勒調整與關鍵資訊可見度上都顯著較佳（皆 p < 0.05）。"
+        },
+        {
+          "pmid": "33908805",
+          "title": "A Novel Thyroid Ultrasound Proficiency Metric Designed Through a Multidisciplinary Delphi Approach",
+          "journal": "Am Surg",
+          "year": 2023,
+          "design": "guideline",
+          "takeaway": "多專科 Delphi（3 位外科、4 位放射科）共 3 輪後對 14 個項目達成 >70% 共識，涵蓋 Positioning、Technique、Image Capture、Measurement、Interpretation 五類，滿分 42、精熟門檻 36。5 名住院醫師試測的學習曲線轉折點落在 4–7 次操作，10 次內可達基本精熟。此為共識產出的評量工具，非診斷準確度研究。"
+        },
+        {
+          "pmid": "39713152",
+          "title": "Flipped classroom-based application of Peyton's four-step approach in standardized training of ultrasound residents for thyroid and cervical lymph node zoning",
+          "journal": "PeerJ",
+          "year": 2024,
+          "design": "RCT",
+          "takeaway": "66 名住院醫師隨機分兩組做甲狀腺與頸部淋巴結分區超音波訓練：Peyton 四步法結合翻轉教室組的技能操作分數 87.64 ± 3.72 分 vs 傳統教學 80.48 ± 5.92 分，臨床病例分析 87.94 ± 4.46 vs 82.85 ± 4.24（皆 p < 0.05）。終點是考試分數，不是病人診斷結果。"
+        }
+      ]
+    },
+    {
+      "id": "nodule-vascularity",
+      "name": "血流分布在結節分層中的角色",
+      "evidence_grade": "contested",
+      "summary": "彩色都卜勒血流被 ACR TI-RADS 等新一代系統拿掉，是有數據支撐的決定。1,083 顆結節的研究顯示：intranodular vascularity 在良性結節中反而更常見，無血流則在惡性中更常見（皆 p < .0001）；把血流加進灰階判準後，AUC 從 0.851 掉到 0.634——不是沒有幫助，是主動變差。1,309 顆結節的量化血流指數研究得到同方向結果（灰階 AUC 0.82 vs 加血流型態 0.77 vs 加 VI 0.70，皆 p < 0.001）。14 篇前瞻研究、4,154 顆結節的 meta-analysis 也找不到良惡性在整體血流、周邊血流或內部血流上的顯著差異，且 33% 的惡性結節完全沒有血流訊號。反方證據存在但範圍很窄：在 ATA intermediate-suspicion 這一群（411 顆）中，intranodular vascularity 是多變項分析下的獨立預測因子（p = 0.004）；另外 superb microvascular imaging 這種新技術的表現（pooled sens 0.80／spec 0.79）確實優於傳統 CDFI（0.62／0.81），但那是不同的檢查方法，不能用來替傳統彩色都卜勒背書。",
+      "citations": [
+        {
+          "pmid": "20308462",
+          "title": "Can vascularity at power Doppler US help predict thyroid malignancy?",
+          "journal": "Radiology",
+          "year": 2010,
+          "design": "retrospective cohort",
+          "takeaway": "1,083 顆結節（269 惡性）：intranodular vascularity 在良性結節更常見、no vascularity 在惡性更常見（皆 p < .0001）。單用可疑灰階特徵的 AUC 為 0.851，加入任何血流特徵後降到 0.634，加周邊血流 0.752、加內部血流 0.733——加血流不但沒幫助，還讓判別力變差。"
+        },
+        {
+          "pmid": "28149803",
+          "title": "Is vascular flow a predictor of malignant thyroid nodules? A meta-analysis",
+          "journal": "Gland Surg",
+          "year": 2016,
+          "design": "meta-analysis",
+          "takeaway": "14 篇前瞻研究、4,154 顆結節（1,419 顆惡性，34%）：良惡性在整體血流（95% CI −14.329 至 4.257）、周邊血流（−29.254 至 4.313）與內部血流（−72.067 至 2.824）皆無顯著差異。33% 的惡性結節完全無血流訊號，50% 有內部血流、17% 有周邊血流。"
+        },
+        {
+          "pmid": "26298035",
+          "title": "Quantitative Evaluation of Vascularity Using 2-D Power Doppler Ultrasonography May Not Identify Malignancy of the Thyroid",
+          "journal": "Ultrasound Med Biol",
+          "year": 2015,
+          "design": "retrospective cohort",
+          "takeaway": "1,309 顆結節（382 惡性）以量化軟體測 vascular index：灰階超音波 AUC 0.82，加入血流型態降為 0.77、加入 VI 降為 0.70（皆 p < 0.001）。良性結節的量化 VI 反而較高。"
+        },
+        {
+          "pmid": "32241592",
+          "title": "Intranodular Vascularity May Be Useful in Predicting Malignancy in Thyroid Nodules with the Intermediate Suspicion Pattern of the 2015 American Thyroid Association Guidelines",
+          "journal": "Ultrasound Med Biol",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "反方證據：411 顆 ATA intermediate-suspicion 結節（58 顆惡性，14.1%）中，血流型態在良惡性間有顯著差異（p = 0.005），且 intranodular vascularity 在單變項（p = 0.006）與多變項（p = 0.004）分析中都是獨立的惡性預測因子。適用範圍僅限這一個中間風險族群。"
+        },
+        {
+          "pmid": "37415660",
+          "title": "The value of conventional ultrasound combined with superb microvascular imaging and color Doppler flow imaging in the diagnosis of thyroid malignant nodules: a systematic review and meta-analysis",
+          "journal": "Front Endocrinol (Lausanne)",
+          "year": 2023,
+          "design": "meta-analysis",
+          "takeaway": "13 篇、815 顆惡性結節：superb microvascular imaging（SMI）pooled sensitivity 0.80（0.77–0.83）／specificity 0.79（0.77–0.82）／DOR 22.29／AUC 0.8944，優於傳統 color Doppler flow imaging 的0.62（0.57–0.67）／0.81（0.78–0.85）／DOR 8.93／AUC 0.8498。差別來自不同的成像技術，不等於傳統彩色都卜勒有預測價值。"
+        }
+      ]
+    }
+  ]
+}

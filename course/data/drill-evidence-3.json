@@ -1,0 +1,340 @@
+{
+  "categories": [
+    {
+      "id": "elastography",
+      "name": "彈性造影",
+      "evidence_grade": "contested",
+      "summary": "診斷準確度的 meta-analysis 表面上不錯（qualitative USE pooled sens 84%／spec 81%、AUC 0.89），但同期針對定量 2D-SWE 的 meta-analysis 只得到 sens 0.66／spec 0.78，作者直言「與早期報告的優異表現相反，效能並不理想」。跨廠商差異更大：同一個 meta-analysis 中 SuperSonic 的 sens 只有 0.63，Toshiba 則是 0.77，cutoff 無法互通。決定性的證據是 ElaTION——目前唯一的多中心隨機對照試驗，982 名受試者、英格蘭 18 家醫院，主要終點 nondiagnostic (Thy1) 率在 elastography 組與常規組之間沒有差別（19% vs 16%，RD 0.03，P = .11），診斷性半甲狀腺切除率與惡性率也無差異。WFUMB 有專門的甲狀腺彈性造影指引，但那份文件明確說明其建議部分來自專家共識而非高等級證據。結論：技術可行、準確度中等、臨床效益在 RCT 中未被證實，不得當成標準照護。",
+      "citations": [
+        {
+          "pmid": "39404634",
+          "title": "Evaluation of US Elastography in Thyroid Nodule Diagnosis: The ElaTION Randomized Control Trial",
+          "journal": "Radiology",
+          "year": 2024,
+          "design": "RCT",
+          "takeaway": "英格蘭 18 家醫院、982 名受試者的實用型多中心 RCT。首次 FNAC 的 nondiagnostic (Thy1) 率在 elastography 組與常規 US 組無差異（19% vs 16%；RD 0.03，95% CI −0.01 至 0.07，P = .11）；達到最終診斷的中位時間（3.3 vs 3.4 個月）、診斷性半甲狀腺切除率（37% vs 40%，P = .15）、惡性率（14% vs 16%，P = .39）皆無差異。493 名接受彈性造影者中 467 名（94.7%）用的是 strain elastography。作者結論：strain elastography 相對常規 US-FNAC 未見額外效益。"
+        },
+        {
+          "pmid": "35371974",
+          "title": "US-Elastography With Different Techniques for Thyroid Nodule Characterization: Systematic Review and Meta-analysis",
+          "journal": "Front Oncol",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "72 篇研究、13,505 名病人、14,015 顆結節（33% 惡性）。Qualitative USE pooled sens 84%／spec 81%／AUC 0.89；semi-quantitative 83%／80%／AUC 0.93；quantitative 78%／81%／AUC 0.87。質性與半定量表現相近且優於定量。這是支持彈性造影一方最有利的匯總數字。"
+        },
+        {
+          "pmid": "29054676",
+          "title": "Is Diagnostic Performance of Quantitative 2D-Shear Wave Elastography Optimal for Clinical Classification of Benign and Malignant Thyroid Nodules?: A Systematic Review and Meta-analysis",
+          "journal": "Acad Radiol",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "14 篇研究、2,139 名病人、2,851 顆結節。定量 2D-SWE 的 pooled sens 僅 0.66（95% CI 0.64–0.69）、spec 0.78（0.76–0.80）、AUC 0.851；DOR 12.73、LR− 0.31、LR+ 3.87。作者明確結論：定量 2D-SWE 的表現「suboptimal，sens 與 spec 都平庸，與早期報告的優異表現相反」。與 PMID 35371974 形成直接矛盾。"
+        },
+        {
+          "pmid": "32227500",
+          "title": "Diagnostic Accuracy Evaluation of Two-Dimensional Shear Wave Elastography in the Differentiation Between Benign and Malignant Thyroid Nodules: Systematic Review and Meta-analysis",
+          "journal": "J Ultrasound Med",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "依廠商分層分析顯示 2D-SWE 的效能取決於機器：Toshiba sens 0.77／spec 0.76（AUC 0.84）、Siemens VTIQ 0.72／0.81（AUC 0.85）、SuperSonic 0.63／0.81（AUC 0.88）。PPV 在各研究間從 16% 到 94%、NPV 從 29% 到 100%、整體 accuracy 從 53% 到 93%。cutoff 不能跨機器沿用，這是教學上最重要的限制。"
+        },
+        {
+          "pmid": "27570210",
+          "title": "WFUMB Guidelines and Recommendations on the Clinical Use of Ultrasound Elastography: Part 4. Thyroid",
+          "journal": "Ultrasound Med Biol",
+          "year": 2017,
+          "design": "guideline",
+          "takeaway": "WFUMB 針對甲狀腺彈性造影的專門指引，逐一分析各技術的操作流程、再現性、結果與限制。文件明言建議是「based on the level of evidence of the published literature and on the WFUMB expert group's consensus」——亦即部分建議屬專家共識層級，不可視為高等級證據背書。"
+        },
+        {
+          "pmid": "32351557",
+          "title": "Ultrasound Real-Time Tissue Elastography Improves the Diagnostic Performance of the ACR Thyroid Imaging Reporting and Data System in Differentiating Malignant from Benign Thyroid Nodules: A Summary of 1525 Thyroid Nodules",
+          "journal": "Int J Endocrinol",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "1,498 名病人、1,525 顆經 FNA／手術證實的結節（最大徑 ≤ 2.5 cm）。RTE elasticity score 與 TI-RADS 風險分層強相關（0.5–1.0 cm r = 0.768、1.0–2.0 cm r = 0.711、2.0–2.5 cm r = 0.743）；RTE 與 TI-RADS 併用在各尺寸區間的診斷效能皆優於單獨使用任一者（皆 P < 0.001）。屬單中心回溯性設計，是「加成價值」一方最常被引用的證據，但強度遠低於 ElaTION 的陰性 RCT 結果。"
+        }
+      ]
+    },
+    {
+      "id": "ceus",
+      "name": "顯影劑超音波",
+      "evidence_grade": "limited",
+      "summary": "診斷準確度的匯總數字看起來不錯但不穩定：2025 年 29 篇研究（3,521 顆結節）的 meta-analysis 得到 pooled sens 0.86／spec 0.86、AUC 0.93；2020 年 37 篇研究得到 0.87／0.83、AUC 0.926；但 2026 年納入 54 篇研究的最新 meta-analysis 只得到 sens 78.6%／spec 82.6%、整體 accuracy 81.6%，且明確指出檢查者經驗顯著影響效能。三份匯總之間的 sens 差距近 8 個百分點，主要異質性來源是各研究自訂的診斷判準（meta-regression P = 0.0259）。臨床效益層面是空的：PubMed 上找不到任何比較 CEUS 與常規 US 對處置決策或病人結果影響的隨機對照試驗，2026 年那份 meta-analysis 的結論也是「需要更多前瞻性研究、標準化造影流程與報告架構，才能界定 CEUS 在甲狀腺結節評估中的角色」。核准狀態上，美國僅核准肝臟病灶特徵化與兒科血管內／膀胱輸尿管逆流適應症，甲狀腺屬 off-label；歐洲有 EFSUMB 非肝臟 CEUS 指引涵蓋。教學時應定位為研究與問題導向的輔助工具，不是常規流程。",
+      "citations": [
+        {
+          "pmid": "40784818",
+          "title": "Diagnostic Value of Contrast-Enhanced Ultrasound for Differentiating Benign and Malignant Thyroid nodules: A Systematic Review and Meta‑Analysis",
+          "journal": "Ultrasound Med Biol",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "29 篇 cohort 研究、3,197 名病人、3,521 顆結節，一律以術後病理為 reference standard。Pooled sens 0.86（95% CI 0.83–0.89）、spec 0.86（0.82–0.89）、LR+ 6.14、LR− 0.16、DOR 38.90、SROC AUC 0.93（0.90–0.95）。結論定位為「常規超音波的有用補充」，而非取代。"
+        },
+        {
+          "pmid": "42262145",
+          "title": "Diagnostic performance of contrast-enhanced ultrasound for thyroid nodule characterization: a systematic review and meta-analysis",
+          "journal": "Acta Radiol",
+          "year": 2026,
+          "design": "meta-analysis",
+          "takeaway": "最新且納入最多研究（系統性回顧 59 篇、量化合成 54 篇 CEUS 研究）的匯總，pooled sens 只有 78.6%、spec 82.6%、整體 accuracy 81.6%——明顯低於 2025 與 2020 兩份匯總。次群分析顯示檢查者經驗顯著影響效能（經驗豐富者 sens 較高）。作者結論：仍需前瞻性研究與標準化影像流程／報告架構，才能界定 CEUS 的角色。"
+        },
+        {
+          "pmid": "32310968",
+          "title": "Contrast-enhanced ultrasound for the differential diagnosis of thyroid nodules: An updated meta-analysis with comprehensive heterogeneity analysis",
+          "journal": "PLoS One",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "37 篇研究，pooled sens 0.87、spec 0.83、LR+ 5.38、LR− 0.17、DOR 38.94、AUC 0.9263。異質性分析是重點：≤ 1 cm 結節次群 I² = 0.0%，但混合尺寸次群 I² = 69.5%；meta-regression 指出唯一顯著的異質性來源是各研究自訂的診斷判準（P = 0.0259）。換句話說，數字好看的前提是判準沒有標準化。"
+        },
+        {
+          "pmid": "32890323",
+          "title": "Contrast -Enhanced Ultrasound: State of the Art in North America",
+          "journal": "Ultrasound Q",
+          "year": 2020,
+          "design": "guideline",
+          "takeaway": "Society of Radiologists in Ultrasound 專家小組白皮書，明確載明美國核准的 CEUS 適應症為肝臟病灶特徵化、兒科血管內與膀胱內（膀胱輸尿管逆流）應用；腎臟屬「非常成功的 off-label 使用」，其餘應用（含甲狀腺）一律歸類為 off-label。這是課程講授核准狀態時可直接引用的來源。"
+        },
+        {
+          "pmid": "29510439",
+          "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Contrast-Enhanced Ultrasound (CEUS) in Non-Hepatic Applications: Update 2017 (Long Version)",
+          "journal": "Ultraschall Med",
+          "year": 2018,
+          "design": "guideline",
+          "takeaway": "歐洲對非肝臟 CEUS 的正式指引，涵蓋既有與新興應用。歐洲的規範環境與北美不同（SonoVue 在歐洲的適應症較寬），教學時必須區分歐洲與美國的核准範圍，不能把歐洲指引有涵蓋等同於全球已核准。"
+        }
+      ]
+    },
+    {
+      "id": "ai-tirads",
+      "name": "AI 與自動化風險分層",
+      "evidence_grade": "limited",
+      "summary": "回溯性研究的匯總數字很漂亮：28 篇研究、134,028 名病人、158,161 顆結節的 meta-analysis 給出 pooled sens 0.89／spec 0.84／SROC-AUC 0.93；另一份 25 篇研究的匯總顯示 AI 與放射科醫師表現相當（AUC 0.89 vs 0.91，DOR 差異 P = 0.56）。但真實世界的落差很大：一項前瞻性納入 236 名病人、312 顆結節、使用市售即時 AI（S-Detect）的研究，AI 的 AUC 只有 0.753，比 meta-analysis 的 0.93 低了 0.18。外部驗證同樣掉：一項四院多中心 CNN 研究內部測試集 sens 0.88／spec 0.86，外部測試集 spec 掉到 0.75（掉 11 個百分點）。2026 年 JCEM 的整體回顧直言「缺乏高品質、獨立的前瞻性臨床試驗驗證，AI 軟體的附加價值不確定，在非乳突型甲狀腺癌上的表現未知」。Automation bias 有直接實驗證據（見乳房攝影 Radiology 2023）：AI 給錯建議時，連資深放射科醫師的正確率都從 82.3% 掉到 45.5%。定位：研究與輔助工具，不是自動判讀，且必須教導學員 AI 錯的時候人會跟著錯。",
+      "citations": [
+        {
+          "pmid": "40997161",
+          "title": "Artificial Intelligence Applications in Thyroid Cancer Care",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2026,
+          "design": "systematic review",
+          "takeaway": "檢索至 2025 年 5 月 31 日的整體回顧，明確列出現階段限制：缺乏高品質、獨立的前瞻性臨床試驗驗證；AI 軟體的附加價值不確定；在非乳突型甲狀腺癌上的表現未知；臨床導入複雜。結論：「High-quality, independent prospective validation of AI in clinical trials is lacking and is necessary for the clinical community's broad adoption」。這是課程「不得把 AI 誇大成標準照護」最直接的權威依據。"
+        },
+        {
+          "pmid": "36622410",
+          "title": "Clinical value of artificial intelligence in thyroid ultrasound: a prospective study from the real world",
+          "journal": "Eur Radiol",
+          "year": 2023,
+          "design": "multicenter validation",
+          "takeaway": "前瞻性連續納入 236 名病人、312 顆可疑結節，使用市售即時 AI 系統（S-Detect）。AI 本身的 sens 0.95、accuracy 0.84，但 AUC 僅 0.753——遠低於各 meta-analysis 匯總的 0.89–0.93。AI 表現與資深放射科醫師相當、優於住院醫師；AI 輔助住院醫師可提升 ≤ 1.5 cm 結節的 accuracy 與 sens，並使 > 1.5 cm 結節的不必要切片率下降最多 27.7%（P = 0.034）。這是「研究數字 vs 真實世界」落差最清楚的單一證據。"
+        },
+        {
+          "pmid": "40969266",
+          "title": "Diagnostic performance of ultrasound characteristics-based artificial intelligence models for thyroid nodules: a systematic review and meta-analysis",
+          "journal": "Front Oncol",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "28 篇研究、134,028 名病人、158,161 顆結節、529,479 張超音波影像。Pooled sens 0.89（0.87–0.91）、spec 0.84（0.80–0.88）、LR+ 5.60、LR− 0.13、DOR 43.94、SROC-AUC 0.93（0.91–0.95）。作者自陳異質性顯著，且效能在亞洲國家、有外部驗證集、深度學習、術後族群的次群較高——意即族群與設計本身就是效能的來源之一。"
+        },
+        {
+          "pmid": "35767056",
+          "title": "A comparison of artificial intelligence versus radiologists in the diagnosis of thyroid nodules using ultrasonography: a systematic review and meta-analysis",
+          "journal": "Eur Arch Otorhinolaryngol",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "25 篇研究。AI 的 pooled sens 0.86（0.81–0.91）／spec 0.78（0.73–0.83），放射科醫師 0.85（0.80–0.89）／0.82（0.77–0.86）；AUC 分別 0.89（0.86–0.92）與 0.91（0.88–0.93），DOR 23.10 vs 27.12 無統計差異（P = 0.56）。重點是 AI「與醫師相當」而非「優於醫師」，且作者自己說 equivalency 仍需更多研究才能確立。"
+        },
+        {
+          "pmid": "37819276",
+          "title": "Deep learning to assist composition classification and thyroid solid nodule diagnosis: a multicenter diagnostic study",
+          "journal": "Eur Radiol",
+          "year": 2024,
+          "design": "multicenter validation",
+          "takeaway": "四家醫院、6,784 顆結節的 11,201 張影像。內部測試集最佳演算法 sens 0.88／spec 0.86（Inception-ResNet AUC 0.94，優於資深醫師 P < 0.001）；但同一最佳模型在外部測試集 sens 0.90／spec 0.75——特異度掉 11 個百分點。這是課程講「domain shift／external validation」時最具體的內外部落差數字。"
+        },
+        {
+          "pmid": "37129490",
+          "title": "Automation Bias in Mammography: The Impact of Artificial Intelligence BI-RADS Suggestions on Reader Performance",
+          "journal": "Radiology",
+          "year": 2023,
+          "design": "multicenter validation",
+          "takeaway": "27 名放射科醫師前瞻性判讀 50 幀乳房攝影，其中 12 幀 AI 給出錯誤的 BI-RADS 建議。AI 建議正確與錯誤時的判讀正確率：無經驗者 79.7% → 19.8%、中等經驗者 81.3% → 24.8%、資深者 82.3% → 45.5%（皆 P ≤ .003）。三個經驗層級全部受 automation bias 影響，資深者也掉近 37 個百分點。研究對象是乳房攝影而非甲狀腺，但這是目前少數直接量化 automation bias 的實驗性證據，可直接類推到 AI-TIRADS 的判讀情境。"
+        }
+      ]
+    },
+    {
+      "id": "diffuse-thyroid",
+      "name": "瀰漫性甲狀腺疾病的超音波判讀",
+      "evidence_grade": "moderate",
+      "summary": "灰階超音波在瀰漫性甲狀腺疾病上是「specific 但不 sensitive」：一項 149 人的研究中，peripheral hypoechogenicity 對 Hashimoto 的特異度 100% 但敏感度只有 40.3%，central hypoechogenic pattern 對 Graves 特異度 100%、敏感度僅 17.6%；兩病最常見的型態都是 homogeneous hypoechogenicity（Hashimoto 45.2%、Graves 47.1%），作者結論是「單憑超音波無法區分兩者，必須有實驗室數據佐證」。血流評估的證據較強但有明確界線：superior thyroid artery peak systolic velocity 在 11 篇研究、1,052 例（全部來自亞洲）的 meta-analysis 中，區分 Graves 與破壞性甲狀腺炎的 pooled sens 0.86／spec 0.93、AUC 0.94。但 vascularity 不能當唯一判準——194 名 Graves 病人中有 13.9% 呈現 power Doppler pattern 0（最低血流），臨床與實驗室特徵和 painless thyroiditis 幾乎重疊，只有 STA-PSV 與 TRAb 能勉強區分。ATA 2016 hyperthyroidism 指引把病因鑑別放在 RAIU／TRAb 與影像的組合上，而非單一超音波所見。",
+      "citations": [
+        {
+          "pmid": "28451576",
+          "title": "Thyroid Ultrasonography in Differentiation between Graves' Disease and Hashimoto's Thyroiditis",
+          "journal": "J Biomed Phys Eng",
+          "year": 2017,
+          "design": "retrospective cohort",
+          "takeaway": "149 人（Graves 34、Hashimoto 62、健康對照 53）由同一位放射科醫師判讀。兩病最常見型態皆為 homogeneous hypoechogenicity（Hashimoto 45.2%、Graves 47.1%）。Peripheral hypoechogenicity 對 Hashimoto 特異度 100%、敏感度 40.3%；central hypoechogenic pattern 對 Graves 特異度 100%、敏感度 17.6%。結論：灰階超音波特異度高但敏感度低，單獨無法區分兩病，需實驗室數據確認。"
+        },
+        {
+          "pmid": "31170960",
+          "title": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+          "journal": "BMC Endocr Disord",
+          "year": 2019,
+          "design": "meta-analysis",
+          "takeaway": "11 篇研究、1,052 例，區分 Graves disease 與 destructive thyroiditis：STA-PSV 的 pooled sens 0.86（95% CI 0.80–0.90）、spec 0.93（0.86–0.97）、AUC 0.94（0.92–0.96）。重要限制由作者自己指出：所有納入研究皆來自亞洲，其他族群的準確度尚待驗證，cutoff 亦未跨研究標準化。"
+        },
+        {
+          "pmid": "25253825",
+          "title": "Characteristics of patients with graves disease and intrathyroid hypovascularity compared to painless thyroiditis",
+          "journal": "J Ultrasound Med",
+          "year": 2014,
+          "design": "retrospective cohort",
+          "takeaway": "194 名 Graves 病人中有 27 名（13.9%）呈現 power Doppler pattern 0（最低血流型態），與典型的 hypervascular Graves 印象相反。這 27 名病人與 21 名 painless thyroiditis 病人相比，除 TRAb 外只有 STA-PSV 有差異，且 STA-PSV 的鑑別能力僅屬中等（moderate）。直接證明「把 vascularity 當成 Graves 活性的單一確診標準」會漏掉約七分之一的病人。"
+        },
+        {
+          "pmid": "27521067",
+          "title": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis",
+          "journal": "Thyroid",
+          "year": 2016,
+          "design": "guideline",
+          "takeaway": "以 GRADE 方法制訂的 124 條建議，涵蓋 thyrotoxicosis 的初始評估與病因鑑別。指引將 thyrotoxicosis 病因判定建立在臨床、TRAb、radioactive iodine uptake 與影像的組合上，超音波（含血流評估）為輔助而非單一決定性依據。2025 年 Thyroid 另有勘誤（PMID 40765504），引用時應一併查核。"
+        }
+      ]
+    },
+    {
+      "id": "pediatric-pregnancy",
+      "name": "兒童與孕期的甲狀腺結節",
+      "evidence_grade": "limited",
+      "summary": "把成人的 size threshold 直接套在兒童身上會漏掉癌症，而且漏得不少：314 名 19 歲以下病人、404 顆結節（19.1% 惡性）的研究顯示，若依成人版 ACR TI-RADS 的切片建議管理，初次就診時會漏掉 77 例癌症中的 17 例（22.1%），作者結論是現行 ACR TI-RADS 標準用於兒童「inadequate」。另一項 124 名兒童的研究則顯示 ATA 與 TI-RADS 的 PPV／NPV 分別為 68.0%／87.5% 與 71.7%／80.0%，「與成人相近但都不足以單獨判定」，而兒童的惡性機率本來就比成人高 2–5 倍。可行的修正方向是拿掉尺寸門檻：138 顆兒童結節的研究中，以 TI-RADS ≥ 3（不設 size cutoff）作為切片指徵可達 100% sensitivity，不漏任何可疑或惡性結節，同時把切片比例從 ATA 的 82.6% 降到 23.2–68.1%。孕期的證據等級更低：現有最大宗資料是 1997 年 61 名孕婦 vs 528 名年齡配對對照的回溯性研究，復發率 15% vs 23%、遠端復發 2% vs 3%、癌症死亡 0 vs 1.2%，皆無統計差異，即使延遲手術中位 16.1 個月結果仍相同。ATA 2026 孕期指引本身即承認「much of the evidence remains of low-to-moderate quality」，多處以 Good Practice Statement 取代正式建議。",
+      "citations": [
+        {
+          "pmid": "31821121",
+          "title": "Assessment of American College of Radiology Thyroid Imaging Reporting and Data System (TI-RADS) for Pediatric Thyroid Nodules",
+          "journal": "Radiology",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "314 名 19 歲以下病人（2–18 歲）、404 顆結節，19.1%（77/404）為惡性、其中 88.3% 為乳突癌。若依成人版 ACR TI-RADS 的尺寸門檻決定是否切片，初次就診時會漏掉 77 例癌症中的 17 例（22.1%）。結論：現行 ACR TI-RADS 標準直接用於兒童結節管理「inadequate」。這是「成人 size threshold 不能照搬到兒童」最直接的量化證據。"
+        },
+        {
+          "pmid": "28983667",
+          "title": "Utility of adult-based ultrasound malignancy risk stratifications in pediatric thyroid nodules",
+          "journal": "Pediatr Radiol",
+          "year": 2018,
+          "design": "retrospective cohort",
+          "takeaway": "124 名兒童、71 顆良性與 52 顆惡性結節、三位放射科醫師判讀。ATA pattern 把 80% 的惡性結節歸為 high（69%）或 intermediate（11%），但同時也把 20/71（28%）的良性結節歸進這兩類。PPV／NPV：ATA 68.0%／87.5%，TI-RADS 71.7%／80.0%。作者指出兒童的惡性機率比成人高 2–5 倍，兩套成人系統的 test characteristics 雖與成人相近，但皆不足以單獨判定惡性可能性。"
+        },
+        {
+          "pmid": "33745740",
+          "title": "Pediatric adaptions are needed to improve the diagnostic accuracy of thyroid ultrasound using TI-RADS",
+          "journal": "J Pediatr Surg",
+          "year": 2021,
+          "design": "retrospective cohort",
+          "takeaway": "115 名 21 歲以下病人、138 顆結節、兩位放射科醫師盲讀。放射科醫師間一致性僅中等（Kappa = 0.51，P < 0.0001）。依不同 TI-RADS 判準，建議切片的結節比例為 23.2–68.1%，而依 ATA 指引則高達 82.6%。以 TI-RADS ≥ 3 且不設尺寸門檻作為切片指徵，可達 100% sensitivity，細胞學或病理上無任何可疑／惡性結節被漏掉。提示兒童版調整的方向是移除成人尺寸門檻。"
+        },
+        {
+          "pmid": "9284711",
+          "title": "Outcome of differentiated thyroid cancer diagnosed in pregnant women",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 1997,
+          "design": "retrospective cohort",
+          "takeaway": "61 名孕期診斷分化型甲狀腺癌的婦女 vs 528 名年齡配對非孕對照，中位追蹤 22.4 與 19.5 年。癌症復發 9 例（15%）vs 107 例（23%，NS）、遠端復發 1 例（2%）vs 12 例（3%，NS）、癌症死亡 0 vs 6 例（1.2%，NS）。77% 的孕婦在產後才手術、20% 在第二孕期手術；產後手術組延遲中位 16.1 ± 19.7 個月 vs 孕期手術組 1.1 ± 1.0 個月（P < 0.001），但結果相同。這是「孕期多數可延到產後處理」最常被引用的原始資料——同時要注意它是 1997 年的單中心回溯性研究，n 僅 61。"
+        },
+        {
+          "pmid": "42219800",
+          "title": "American Thyroid Association 2026 Guidelines for Thyroid Disease in Preconception, Pregnancy, and Postpartum",
+          "journal": "Thyroid",
+          "year": 2026,
+          "design": "guideline",
+          "takeaway": "以 GRADE 制訂、10 個國際學會與病人團體參與的最新孕期指引，涵蓋甲狀腺結節與癌症。作者在結論中直言「While acknowledging that much of the evidence remains of low-to-moderate quality」，並在資料不足處改用 Good Practice Statement 而非正式建議。教學時應據此把孕期處置定位為專家共識導向，而非高等級證據支持。取代 2017 年版（PMID 28056690）。"
+        }
+      ]
+    },
+    {
+      "id": "incidentaloma",
+      "name": "其他影像意外發現的甲狀腺病灶",
+      "evidence_grade": "guideline_supported",
+      "summary": "「該不該全部做超音波」的答案是明確的「不該」，而且有數字支撐。38 篇研究、195,959 名病人的 meta-analysis 顯示 CT 上甲狀腺意外發現的盛行率 8.3%（頸部 CT 16.5%、胸部 CT 6.6%），整體惡性風險僅 3.9%；依尺寸分層差異極大：< 1 cm 為 0.1%、< 1.5 cm 為 0%，而 ≥ 1 cm 為 11.7%、≥ 1.5 cm 為 24.9%。但實務上有 34.9% 被安排超音波、28.4% 被切片、8.2% 走到手術。長期追蹤更直接：1,499 幀 CT 中 150 例 ≥ 1 cm 的意外發現追蹤 13 年，無一例出現臨床顯著的甲狀腺惡性腫瘤，期間 80% 的病人已因非甲狀腺原因死亡。PET 的情況相反且必須分開處理：focal FDG 攝取出現在約 2% 的 PET/CT，但癌症盛行率高達 35–40%，FNA 結果中 Bethesda VI 佔 19%、Bethesda II 佔 45%。非 FDG 追蹤劑（SSA、choline、PSMA、FAPI）的意外發現盛行率 3.6–6.1%，focal／heterogeneous 型態的惡性率 6–10%，diffuse 型態則一律良性或生理性攝取。ACR Incidental Thyroid Findings Committee 白皮書即是依此原則設計的分流建議。",
+      "citations": [
+        {
+          "pmid": "39283819",
+          "title": "Incidental Thyroid Nodules on Computed Tomography: A Systematic Review and Meta-Analysis Examining Prevalence, Follow-Up, and Risk of Malignancy",
+          "journal": "Thyroid",
+          "year": 2024,
+          "design": "meta-analysis",
+          "takeaway": "38 篇研究、195,959 名病人。CT 甲狀腺意外發現盛行率 8.3%（95% CI 7.4–9.3），頸部 CT 16.5% 高於胸部 CT 6.6%。25 篇研究、6,272 名病人的惡性風險為 3.9%（3.0–4.9）；依尺寸分層：< 1 cm 為 0.1%（0–0.8）、< 1.5 cm 為 0%（0–0.2）、≥ 1 cm 為 11.7%（3.9–19.4）、≥ 1.5 cm 為 24.9%（0–52.7）。實際上卻有 34.9% 做了超音波、28.4% 切片、8.2% 手術——明顯的過度檢查。"
+        },
+        {
+          "pmid": "39836633",
+          "title": "Natural history and long-term follow-up of incidental thyroid nodules on CT imaging",
+          "journal": "Br J Radiol",
+          "year": 2025,
+          "design": "retrospective cohort",
+          "takeaway": "直接影像複閱 1,499 幀連續 CT，≥ 1 cm 意外發現盛行率 11%（150 例，平均年齡 70 歲、平均徑 17.5 mm），其中僅 30% 有寫進 CT 報告。追蹤至 2022 年（13 年）：11% 做了超音波、5% 做 FNA、2% 做診斷性半甲狀腺切除，未發現任何甲狀腺惡性腫瘤；120 名（80%）病人於研究終點前死亡，無一死於甲狀腺惡性腫瘤，追蹤期間亦無人出現臨床顯著的甲狀腺癌。"
+        },
+        {
+          "pmid": "33761104",
+          "title": "The dilemma of (18)F-FDG PET/CT thyroid incidentaloma: what we should expect from FNA. A systematic review and meta-analysis",
+          "journal": "Endocrine",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "18F-FDG thyroid incidentaloma 出現在約 2% 的 PET/CT，癌症盛行率高達 35–40%——與 CT 意外發現的 3.9% 形成強烈對比，必須分開處理。15 篇研究、2,304 例 FNA 依 Bethesda 分類的匯總盛行率：I 10%、II 45%、III 8%、IV 8%、V 6%、VI 19%。三分之二的 focal FDG 意外發現最終落在明確惡性（VI）或明確良性（II），僅少數落入 indeterminate；亞洲與西方研究在 Bethesda IV 的比例差異顯著（2% vs 19%）。"
+        },
+        {
+          "pmid": "40430541",
+          "title": "Meta-Analysis on the Prevalence and Significance of Incidental Findings in the Thyroid Gland Using Other PET Radiopharmaceuticals Beyond [(18)F]FDG",
+          "journal": "Pharmaceuticals (Basel)",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "21 篇研究、29,409 名病人，涵蓋 somatostatin analogue、choline、PSMA、FAPI 四類非 FDG 追蹤劑。甲狀腺意外攝取盛行率分別為 SSA-PET 5.6%、choline-PET 6.1%、PSMA-PET 4.2%、FAPI-PET 3.6%。Diffuse 型態一律為良性或生理性攝取；focal 或 mixed／heterogeneous 型態多數仍為良性，但有 6–10% 為惡性——風險低於 FDG PET，但仍需進一步評估。攝取型態（focal vs diffuse）比追蹤劑種類更決定後續處置。"
+        },
+        {
+          "pmid": "25456025",
+          "title": "Managing incidental thyroid nodules detected on imaging: white paper of the ACR Incidental Thyroid Findings Committee",
+          "journal": "J Am Coll Radiol",
+          "year": 2015,
+          "design": "guideline",
+          "takeaway": "ACR 為 CT、MRI、核醫與超音波上的甲狀腺意外發現（ITN）制訂的分流共識。核心立場：多數 ITN 為良性，小型意外甲狀腺惡性腫瘤通常行為 indolent，而全面追查會增加成本與病人風險。屬 consensus statement（專家共識＋文獻回顧），非隨機證據，但為目前最被廣泛採用的分流依據。"
+        }
+      ]
+    },
+    {
+      "id": "structured-reporting",
+      "name": "結構化報告與品質稽核",
+      "evidence_grade": "moderate",
+      "summary": "結構化報告改善一致性的證據是具體且量化的。一項四位放射科醫師、320 份甲狀腺超音波報告的比較研究顯示：自由文字模板的 ACR TI-RADS 錯誤率 27.5%（22/80）、最低度結構化 28.8%、完全結構化 18.8%，而「完全結構化＋自動計分」模板為 0%（0/80，P < .0001），各類錯誤（給分、加總、TR 分類、建議）全部下降；報告時間中位數從 210–240 秒降到 180 秒。品質改善介入同樣有效但需要持續投入：一項兒科 QI 專案中，TI-RADS 使用率從 0%（0/57）升到 5 個月後 65%、教育會議後維持 13 個月 > 90%；報告間評分一致性從 46.7%（28/60）升到訓練後 71.4%，再到 12 個月的 78.4%，並維持在 80%。但單靠稽核回饋的效果應誠實看待：涵蓋 292 篇隨機試驗的 Cochrane 回顧顯示，audit and feedback 對目標臨床行為的絕對改善中位數僅 2.7%（IQR 0.0–8.6），meta-analysis 加權後為 6.2%（95% CI 4.1–8.2）、OR 1.47，證據確定性 moderate；效果在基線表現差、有共同介入、以個人（而非團隊）層級資料回饋、與 top peers 或 benchmark 比較、有在地 champion 時較大。實作上，甲狀腺結節風險分層的導入策略系統性回顧只找到 8 篇合格研究，作者結論是相關研究「urgently needed」。",
+      "citations": [
+        {
+          "pmid": "32818484",
+          "title": "Automated Structured Reporting for Thyroid Ultrasound: Effect on Reporting Errors and Efficiency",
+          "journal": "J Am Coll Radiol",
+          "year": 2021,
+          "design": "retrospective cohort",
+          "takeaway": "四位放射科醫師分別以四種模板各口述 20 份甲狀腺超音波報告（共 320 份）。ACR TI-RADS 相關錯誤率：自由文字 27.5%（22/80）、最低度結構化 28.8%（23/80）、完全結構化 18.8%（15/80）、完全結構化＋自動計分 0%（0/80），P < .0001；四類錯誤（給分、加總、TR 分類、建議）皆顯著下降（P < .0005 至 P < .005）。報告時間中位數 210–240 秒降至 180 秒（P = .41，未達顯著）。關鍵是「自動執行計分步驟」而不只是「有模板」。"
+        },
+        {
+          "pmid": "38168549",
+          "title": "Quality Improvement Methodology to Improve Standardized Reporting of Pediatric Thyroid Ultrasounds Using TI-RADS",
+          "journal": "J Pediatr Surg",
+          "year": 2024,
+          "design": "retrospective cohort",
+          "takeaway": "2019–2021 年、218 名兒科病人的 QI 專案（標準化 dictation template＋技術師訓練＋多科會議＋醫師教育）。TI-RADS 使用率：專案前四個月 0%（0/57）→ 模板建立後五個月 65%（39/60）→ 首次訓練會議後維持 > 90% 達 13 個月。報告間評分一致性：初期 46.7%（28/60）→ 訓練後三個月 71.4%（10/14）→ 12 個月 78.4%（58/74）→ 之後六個月維持 80%。Level III 證據（quality improvement），非隨機。"
+        },
+        {
+          "pmid": "42325158",
+          "title": "Audit and feedback: effects on professional practice",
+          "journal": "Cochrane Database Syst Rev",
+          "year": 2026,
+          "design": "meta-analysis",
+          "takeaway": "292 篇隨機試驗、678 個試驗組（46% 低偏誤風險、39% 高偏誤風險）。177 篇試驗、558 個二分類結果的合成顯示，audit and feedback 對目標臨床行為的絕對改善中位數僅 2.7%（IQR 0.0–8.6）；加權 meta-analysis 為平均絕對增加 6.2%（95% CI 4.1–8.2，moderate-certainty）、OR 1.47（1.31–1.64）。效果較大的條件：基線表現低、有共同介入、以個人而非團隊層級資料回饋、與 top peers 或 benchmark 比較、有在地 champion、互動式多模態回饋、附具體行動方案。意外的是重複回饋反而與較小的效果量相關。稽核有效，但幅度是個位數百分點，不應誇大。"
+        },
+        {
+          "pmid": "37393196",
+          "title": "Implementation strategies to support ultrasound thyroid nodule risk stratification: A systematic review",
+          "journal": "Clin Endocrinol (Oxf)",
+          "year": 2023,
+          "design": "systematic review",
+          "takeaway": "篩選 2,666 篇潛在合格研究，最終只有 8 篇納入——這個數字本身就說明實證基礎有多薄。常見的導入策略為標準化超音波報告工具、風險分層與模板使用的教育、以及在判讀當下的提醒；系統層級策略、在地共識與稽核則較少被使用。整體而言這些策略支持了導入過程，但對服務面結果的效果「variable」。作者結論：不同情境下的導入策略價值研究「urgently needed」。"
+        }
+      ]
+    }
+  ]
+}

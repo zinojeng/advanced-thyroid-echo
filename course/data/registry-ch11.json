@@ -1,0 +1,371 @@
+{
+ "chapter": "CH11",
+ "searched": [
+  "PubMed E-utilities: EFSUMB guidelines elastography thyroid",
+  "PubMed E-utilities: WFUMB guidelines elastography thyroid",
+  "PubMed E-utilities: shear wave elastography thyroid nodules meta-analysis",
+  "PubMed E-utilities: contrast enhanced ultrasound thyroid nodules meta-analysis",
+  "PubMed E-utilities: EFSUMB WFUMB guidelines contrast enhanced ultrasound non-hepatic applications",
+  "PubMed E-utilities: EFSUMB guidelines recommendations contrast enhanced ultrasound non-hepatic applications update 2017",
+  "PubMed E-utilities: Sidhu EFSUMB non-hepatic CEUS 2018",
+  "PubMed E-utilities: contrast enhanced ultrasound thyroid nodule diagnosis limitations",
+  "PubMed E-utilities: superb microvascular imaging thyroid nodules meta-analysis",
+  "PubMed E-utilities: three-dimensional ultrasound thyroid volume measurement reproducibility",
+  "PubMed E-utilities: fusion imaging ultrasound CT thyroid neck recurrence ablation",
+  "PubMed E-utilities: thyroid nodule ultrasound interobserver agreement TI-RADS reproducibility",
+  "PubMed E-utilities: artificial intelligence thyroid ultrasound external validation",
+  "PubMed E-utilities: deep learning thyroid nodule radiologist reader study randomized",
+  "PubMed E-utilities: automation bias artificial intelligence radiologists",
+  "PubMed E-utilities: automation bias incorrect AI advice reader study radiologists ultrasound",
+  "PubMed E-utilities: Automation Bias in Mammography Artificial Intelligence BI-RADS Suggestions Reader Performance",
+  "PubMed E-utilities: Buda management of thyroid nodules seen on US images deep learning radiologist consensus",
+  "PubMed E-utilities: deep learning thyroid nodules Lancet Digital Health prospective multicentre",
+  "PubMed E-utilities: artificial intelligence thyroid ultrasound systematic review risk of bias PROBAST QUADAS",
+  "PubMed E-utilities: artificial intelligence thyroid ultrasound diagnostic accuracy systematic review methodological quality",
+  "PubMed E-utilities: artificial intelligence thyroid ultrasound generalizability external cohort degradation performance",
+  "PubMed E-utilities: domain shift ultrasound deep learning generalization different scanner vendor",
+  "PubMed E-utilities: radiomics thyroid ultrasound reproducibility feature stability scanner",
+  "PubMed E-utilities: AI-SONIC OR \"AI assistance\" thyroid nodule radiologists reader study",
+  "PubMed E-utilities: thyroid nodule artificial intelligence unnecessary biopsy reduction clinical utility decision curve",
+  "PubMed E-utilities: elastography American Thyroid Association guidelines nodule recommendation",
+  "PubMed E-utilities: European Thyroid Association EU-TIRADS guidelines 2017 Russ",
+  "PubMed E-utilities: Korean Thyroid Imaging Reporting Data System 2021 revision Korean Society of Thyroid Radiology",
+  "PubMed E-utilities: 2015 American Thyroid Association Management Guidelines Adult Patients Thyroid Nodules Differentiated Thyroid Cancer",
+  "yt-dlp ytsearch20: thyroid shear wave elastography ultrasound technique",
+  "yt-dlp ytsearch20: contrast enhanced ultrasound thyroid nodule CEUS",
+  "yt-dlp ytsearch20: superb microvascular imaging thyroid nodule",
+  "yt-dlp ytsearch20: artificial intelligence thyroid ultrasound TI-RADS lecture",
+  "yt-dlp ytsearch15: 3D ultrasound thyroid volume freehand",
+  "yt-dlp ytsearch15: fusion imaging ultrasound CT MRI navigation thyroid neck",
+  "yt-dlp ytsearch15: thyroid elastography lecture endocrinology EFSUMB",
+  "yt-dlp ytsearch15: AI ultrasound automation bias overreliance radiology",
+  "yt-dlp ytsearch15: multiparametric ultrasound thyroid nodule elastography CEUS lecture",
+  "yt-dlp ytsearch15: thyroid nodule ultrasound artificial intelligence CAD S-Detect",
+  "yt-dlp ytsearch15: radiomics ultrasound machine learning limitations reproducibility talk",
+  "yt-dlp ytsearch15: elastography thyroid nodule pitfalls artifacts",
+  "全文查核：EU-TIRADS 2017 PMC 全文以頁內字串搜尋 elastography / contrast，確認 R10 條文原文與 CEUS 完全未被提及"
+ ],
+ "evaluated": [
+  {
+   "title": "WFUMB Guidelines and Recommendations on the Clinical Use of Ultrasound Elastography: Part 4. Thyroid",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27570210/",
+   "source": "WFUMB / Ultrasound in Medicine & Biology (PMID 27570210, DOI 10.1016/j.ultrasmedbio.2016.06.022)",
+   "decision": "included",
+   "unit": "ch11-u1",
+   "reason": "唯一逐一針對每種 elastography 技術寫出程序、可重現性、結果、限制再給建議的正式學會文件，可直接支撐『指引地位』這一欄；作為 u1 核心教材。已 curl 200 且標題相符。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5652895/",
+   "source": "European Thyroid Association / European Thyroid Journal (PMID 29167761, DOI 10.1159/000478927)",
+   "decision": "included",
+   "unit": "ch11-u1",
+   "reason": "開放取用全文，含 Recommendation R10（elastography 為 grade 2 補充工具、不整合進評分系統）與五類不可靠應用結節清單，是本章五欄分級中『是否已進入正式指引』最直接的教材。已抓回全文並以字串搜尋確認條文原文。Karger 官方頁 https://karger.com/etj/article/6/5/225/163170 回 403（bot 防護），故改用 PMC 連結。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "US-Elastography With Different Techniques for Thyroid Nodule Characterization: Systematic Review and Meta-analysis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8966910/",
+   "source": "Frontiers in Oncology (PMID 35371974, DOI 10.3389/fonc.2022.845549)",
+   "decision": "included",
+   "unit": "ch11-u1",
+   "reason": "72 篇、14,015 顆結節，並把 qualitative / semi-quantitative / quantitative 三種技術分開報數字，正好用來拆穿『elastography 的準確度是 84%』這種無指涉的說法。注意：esummary 一度給出錯誤的 PMC 對應（PMC8965828 實為化學論文），已重新查核並以標題比對確認正確 PMCID 為 PMC8966910。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "ECR 2019 Symposium - Multi parametric Ultrasound in Thyroid & Salivary Glands Daily Practice",
+   "url": "https://www.youtube.com/watch?v=6Gp3W20l2aM",
+   "source": "YouTube / Canon Medical ANZ",
+   "decision": "included",
+   "unit": "ch11-u1",
+   "reason": "ECR 衛星研討會錄影，含 elastography 施壓與 ROI 擺放的實際操作示範，是文獻不會描述但決定數值可重現性的部分。廠商頻道發布，已填 coi、列 Tier C。oEmbed 200，標題與頻道相符。"
+  },
+  {
+   "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Contrast-Enhanced Ultrasound (CEUS) in Non-Hepatic Applications: Update 2017 (Short Version)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29510440/",
+   "source": "EFSUMB / Ultraschall in der Medizin (PMID 29510440, DOI 10.1055/s-0044-101254)",
+   "decision": "included",
+   "unit": "ch11-u2",
+   "reason": "目前唯一把甲狀腺 CEUS 納入正式歐洲學會建議體系的文件，作為 u2 核心教材。作者群利益揭露涵蓋顯影劑與設備廠商，已填 coi。已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Diagnostic Value of Contrast-Enhanced Ultrasound for Differentiating Benign and Malignant Thyroid nodules: A Systematic Review and Meta-Analysis",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40784818/",
+   "source": "Ultrasound in Medicine & Biology 2025 (PMID 40784818, DOI 10.1016/j.ultrasmedbio.2025.07.015)",
+   "decision": "included",
+   "unit": "ch11-u2",
+   "reason": "最新且最大宗（29 篇、3,521 顆）的 CEUS 甲狀腺 meta-analysis，pooled sens/spec 0.86/0.86、SROC AUC 0.93，且納入條件明訂以術後病理為金標準，是講解『手術族群篩選如何抬高準確度』的最佳素材。已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Performance of contrast-enhanced ultrasound (CEUS) in assessing thyroid nodules: a systematic review and meta-analysis using histological standard of reference",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31970579/",
+   "source": "La Radiologia Medica 2020 (PMID 31970579, DOI 10.1007/s11547-019-01129-2)",
+   "decision": "included",
+   "unit": "ch11-u2",
+   "reason": "作者明確報告 sensitivity 與 NPV 存在 publication bias，且 14 篇全用同一顯影劑 SonoVue，是罕見的自我揭露式證據，可與上一篇並排教學。已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Friday 30th July 2021 - Morning, Lecture Hall of Famous Teachers - 詹维伟 甲状腺超声造影检查",
+   "url": "https://www.youtube.com/watch?v=ZKwl_57AplA",
+   "source": "YouTube / EFSUMB 官方頻道",
+   "decision": "included",
+   "unit": "ch11-u2",
+   "reason": "由 EFSUMB 官方頻道發布，提供 CEUS 動態影像與 enhancement pattern 的實際外觀，是把文獻名詞對上影像的唯一可行方式。中文（普通話）無英文字幕，已在 why 註明語言與交叉驗證來源。oEmbed 200。"
+  },
+  {
+   "title": "Multimodality Ultrasound Utilizing Microvascular Flow Imaging and Shear Wave Elastography to Guide Fine-Needle Aspiration of Thyroid Lesions: A Prospective Study Validating Pattern-Based Microvascular Classification",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40257933/",
+   "source": "Thyroid 2025;35(5):516-526 (PMID 40257933, DOI 10.1089/thy.2024.0586)",
+   "decision": "included",
+   "unit": "ch11-u3",
+   "reason": "前瞻、793 顆有病理結節、多模態模型 AUC 0.95 對 ACR TI-RADS 0.62、宣稱可避免 27% FNA；同時惡性盛行率高達 69%（545/793），是全章最好的『壯觀差距來自族群與對照組設定』教材。已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Diagnostic value of greyscale ultrasound combined with superb microvascular imaging in thyroid nodules: a systematic review and meta-analysis",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39839006/",
+   "source": "Quantitative Imaging in Medicine and Surgery 2025;15(1) (PMID 39839006, DOI 10.21037/qims-24-1195)",
+   "decision": "included",
+   "unit": "ch11-u3",
+   "reason": "把 SMI 依三種惡性判準分開報數字（0.90/0.74、0.86/0.83、0.87/0.88），作者結論明言判準尚未標準化，正好對應 device dependence 與判準未統一兩個主題。注意：esummary 給的 PMC 連結（PMC11744117）打開後為另一篇不相干論文，故本項改用 PubMed 連結；已 curl 200 並比對標題。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Thyroid Volume Measurement With AI-Assisted Freehand 3D Ultrasound Compared to 2D Ultrasound—A Clinical Trial",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12703570/",
+   "source": "Head & Neck 2026;48(1):64-70 (PMID 40778496, DOI 10.1002/hed.28267, NCT05510609)",
+   "decision": "included",
+   "unit": "ch11-u3",
+   "reason": "少見的『有硬金標準』新技術研究（術後水位移法），開放取用，可示範準確度真實提升但臨床效益未被檢驗（n=14、手術族群、作者用 may enhance）。已 curl 200 並比對標題。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Virtual Navigation: Prostate, Lung and Neck - Giancarlo Bizzarri, MD",
+   "url": "https://www.youtube.com/watch?v=NRSFUVftIxo",
+   "source": "YouTube / esaotegroup（Esaote 官方頻道）",
+   "decision": "included",
+   "unit": "ch11-u3",
+   "reason": "頸部融合影像／虛擬導航的可行性示範極少見，講者具名且為甲狀腺超音波領域已知專家。廠商產品導向內容，已填 coi、列 Tier C，並在 target 明示不得作為診斷準確度證據。oEmbed 200。"
+  },
+  {
+   "title": "Mateusz Buda - Radiologist-level deep learning for management of thyroid nodules based on US images",
+   "url": "https://www.youtube.com/watch?v=VMZnv5vWhUM",
+   "source": "YouTube / ML in PL（機器學習研討會頻道），講者為 Radiology 2019 論文第一作者",
+   "decision": "included",
+   "unit": "ch11-u4",
+   "reason": "同一批研究者的演講標題用 radiologist-level、論文標題用 may match，這個落差是本章核心教學點且可被學員親自查證。作者身分明確，Tier B。oEmbed 200。"
+  },
+  {
+   "title": "Management of Thyroid Nodules Seen on US Images: Deep Learning May Match Performance of Radiologists",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257128/",
+   "source": "Radiology 2019;292(3):695-701, Duke University (PMID 31287391, DOI 10.1148/radiol.2019181343)",
+   "decision": "included",
+   "unit": "ch11-u4",
+   "reason": "AI 甲狀腺超音波最常被引用的原始研究，測試集僅 99 顆（15 顆惡性）、敏感度 95% CI 下界 67%，是拆解『達到專家水準』說法的直接材料。開放取用，已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Performance Evaluation of Deep Learning for the Detection and Segmentation of Thyroid Nodules: Systematic Review and Meta-Analysis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12352704/",
+   "source": "Journal of Medical Internet Research 2025;27:e73516 (PMID 40811738, DOI 10.2196/73516)",
+   "decision": "included",
+   "unit": "ch11-u4",
+   "reason": "41 篇的系統性回顧，匯總 AUC 0.91–0.96 但結論直指方法學設計次佳、資料集影像品質不一致、外部驗證不足，是 external validation 與 domain shift 兩個必修主題在回顧層級的證據。JMIR 官方網址 https://www.jmir.org/2025/1/e73516 回 202（Cloudflare 攔截），改用 PMC 連結，已 curl 200 並比對標題。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Automation Bias in Mammography: The Impact of Artificial Intelligence BI-RADS Suggestions on Reader Performance",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37129490/",
+   "source": "Radiology 2023;307(4):e222176 (PMID 37129490, DOI 10.1148/radiol.222176)",
+   "decision": "included",
+   "unit": "ch11-u4",
+   "reason": "automation bias 為本章明令必修，而甲狀腺超音波目前查無同等設計（刻意給錯誤 AI 建議）的讀片實驗，故採用乳房攝影的直接證據，並在 dose 明示這是跨器官借用與證據缺口。已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Integration of Artificial Intelligence Decision Aids to Reduce Workload and Enhance Efficiency in Thyroid Nodule Management",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10189570/",
+   "source": "JAMA Network Open 2023;6(5):e2313674 (PMID 37191957, DOI 10.1001/jamanetworkopen.2023.13674)",
+   "decision": "included",
+   "unit": "ch11-u5",
+   "reason": "全章唯一以流程／時間為終點而非 AUC 的研究，且結果顯示同一工具對資深與資淺判讀者效益方向相反，正是『臨床效益』欄位的正面教材。開放取用，已 curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Artificial intelligence and elastography in diagnostic work-up of thyroid nodules: a systematic review and meta-analysis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12971365/",
+   "source": "Quantitative Imaging in Medicine and Surgery 2026;16(3) (PMID 41816043, DOI 10.21037/qims-2025-1161)",
+   "decision": "included",
+   "unit": "ch11-u5",
+   "reason": "納入為『過度外推的標本』：方法本身合規（19 篇、QUADAS-2），但結論由診斷準確度直接跳到 routine clinical practice 與 prognosis，且樣本單位是 4,655 張影像而非病人。已 curl 200 並比對標題。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Superb microvascular imaging for distinguishing thyroid nodules: A meta-analysis (PRISMA): Retraction",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12150927/",
+   "source": "Medicine (Baltimore) 2025;104(23):e42734 (PMID 40489890, DOI 10.1097/MD.0000000000042734)",
+   "decision": "included",
+   "unit": "ch11-u5",
+   "reason": "2022 年刊出的 SMI 甲狀腺 meta-analysis 於 2025 年 6 月遭撤稿，示範新技術證據基礎的脆弱性與『引用前查撤稿』這個可操作習慣。已 curl 200 並比對標題。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Superb microvascular imaging for distinguishing thyroid nodules: A meta-analysis (PRISMA)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35713460/",
+   "source": "Medicine (Baltimore) 2022;101(24):e29505 (PMID 35713460)",
+   "decision": "excluded",
+   "reason": "已於 2025 年 6 月被正式撤稿，不得作為教材使用；改以其撤稿通知（PMID 40489890）納入 ch11-u5 作為反面教材。"
+  },
+  {
+   "title": "Prof V Cantisani",
+   "url": "https://www.youtube.com/watch?v=rTYHKYPny4g",
+   "source": "YouTube / Canon Medical Systems Europe",
+   "decision": "excluded",
+   "reason": "oEmbed 200 存在，但片長 3627 秒與已納入的 6Gp3W20l2aM（ECR 2019 Symposium，Canon Medical ANZ）完全相同，高度可能為同一場錄影在不同區域頻道的重複上傳；標題亦僅有講者姓名、無法從標題判斷內容範圍。為避免同章重複收錄而排除。"
+  },
+  {
+   "title": "Contrast-Enhanced Ultrasound (CEUS) In Thyroid Interventional Procedure",
+   "url": "https://www.youtube.com/watch?v=Mcp1NHwq5L8",
+   "source": "YouTube / TNT Association",
+   "decision": "excluded",
+   "reason": "主題（CEUS 用於甲狀腺介入）與 u2 高度相關且 oEmbed 回 200，但發布單位「TNT Association」無法確認其學會或機構身分，yt-dlp 單片 metadata 與網頁描述抓取皆被 YouTube 擋下（HTTP 429／bot 驗證），無法核實作者與內容來源，依契約『無法確認作者或來源』排除；改以 EFSUMB 官方頻道的 ZKwl_57AplA 納入。"
+  },
+  {
+   "title": "Thyroid Elastography（同名多支）",
+   "url": "https://www.youtube.com/watch?v=TijDMtyfYm8",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "excluded",
+   "reason": "該頻道大量轉載他人講座且未標示原始來源與授權，符合契約『未經授權重新上傳』與『無法確認作者或來源』兩項排除條件。同頻道的 3nCIJIsYHmg、iGc2KR9YJy0、DH1FZdPtO6c 一併排除。"
+  },
+  {
+   "title": "Strain Elastography",
+   "url": "https://www.youtube.com/watch?v=b3hTWmIIxAk",
+   "source": "YouTube / Canon Medical ANZ",
+   "decision": "excluded",
+   "reason": "片長僅 13 秒，只有機器畫面、無教學內容與判讀說明，屬純產品畫面剪輯。"
+  },
+  {
+   "title": "Precision in Measurements for Shear Wave Elastography",
+   "url": "https://www.youtube.com/watch?v=w8-K3Z9abBA",
+   "source": "YouTube / Global Medical Business at Canon Inc.",
+   "decision": "excluded",
+   "reason": "oEmbed 200，內容為 SWE 量測精度的原廠說明，但完全以肝臟情境為主、無甲狀腺影像，且為單一廠商演算法的規格說明；與 u1 的甲狀腺判讀目標不符。"
+  },
+  {
+   "title": "Thyroid Elastography",
+   "url": "https://www.youtube.com/watch?v=TSkxBoUXdsg",
+   "source": "YouTube / Wilmington Endocrinology Thyroid Media",
+   "decision": "excluded",
+   "reason": "oEmbed 200，但片長 2:22、屬單一診所的病人衛教層級內容，無指引比較、無限制討論，未達進階 fellow 課程的收錄標準。"
+  },
+  {
+   "title": "Parametric MicroFlow Imaging (MFI)",
+   "url": "https://www.youtube.com/watch?v=Pq3UXwKShqk",
+   "source": "YouTube / Canon Medical Systems USA",
+   "decision": "excluded",
+   "reason": "oEmbed 200，微血流參數成像的原廠功能介紹，但無甲狀腺結節判讀情境、無良惡性對照；u3 已有 Chen 2025 與 SMI meta-analysis 提供判準層級的教材，收錄此片只會增加廠商宣傳比重。"
+  },
+  {
+   "title": "S DETECT FOR THYROID LESIONS",
+   "url": "https://www.youtube.com/watch?v=XOMUxA-4o2M",
+   "source": "YouTube / MSBIRIA -MCR Academics",
+   "decision": "excluded",
+   "reason": "oEmbed 200，主題為商用自動化 TI-RADS（S-Detect）示範，與 u4 相關；但內容為單一產品操作展示、未討論 external validation 或 device dependence，且發布單位為地區性教育帳號、無法確認講者資格。u4 已改以文獻為主。"
+  },
+  {
+   "title": "MICCAI 2020 - Three-dimensional thyroid assessment from untracked 2D ultrasound clips",
+   "url": "https://www.youtube.com/watch?v=_Gn-uHxOE1A",
+   "source": "YouTube / ImFusion GmbH",
+   "decision": "excluded",
+   "reason": "oEmbed 200，MICCAI 會議論文的技術示範影片，3D 重建品質清楚；但為純工程演算法展示、無臨床終點，且 u3 已納入有硬金標準的 Head & Neck 臨床試驗（PMC12703570），該篇在教學上完全覆蓋本片的論點。"
+  },
+  {
+   "title": "Converting a 2D thyroid ultrasound into 3D",
+   "url": "https://www.youtube.com/watch?v=0Ywm7IDd-6I",
+   "source": "YouTube / ORMONI NET",
+   "decision": "excluded",
+   "reason": "oEmbed 200，但片長 1:47、無旁白說明與方法描述，無法判斷重建方式與其臨床用途。"
+  },
+  {
+   "title": "Machine Learning in Thyroid Nodule and Cancer Diagnosis with Dr. Cottrill",
+   "url": "https://www.youtube.com/watch?v=inV-M1cjLBs",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200，來源可信（THANC Foundation，講者具名）；但內容偏向面向一般聽眾的訪談式概論，未觸及 external validation、domain shift、device dependence 或 automation bias 四個本單元必修主題。u4 名額有限，優先給能直接支撐這四項的文獻。"
+  },
+  {
+   "title": "Imaging of the Pediatric Thyroid Practical Tips and Newer Technologies",
+   "url": "https://www.youtube.com/watch?v=oOKZaunJBj8",
+   "source": "YouTube / AIUMultrasound（American Institute of Ultrasound in Medicine）",
+   "decision": "excluded",
+   "reason": "來源屬第一級學會、品質佳，但主題為兒科族群，與 CH10（特殊族群）重疊；依契約『能不共用就不共用』的去重規則，讓給該章使用。"
+  },
+  {
+   "title": "Deep learning models for thyroid nodules diagnosis of fine-needle aspiration biopsy: a retrospective, prospective, multicentre study in China",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38849291/",
+   "source": "Lancet Digital Health 2024;6(7):e458-e469 (PMID 38849291)",
+   "decision": "excluded",
+   "reason": "設計優良（含前瞻與多中心外部驗證），但對象是 FNA 細胞病理全玻片影像（whole-slide images），不是超音波影像；屬細胞病理 AI，落在 CH5（細針穿刺）而非本章的超音波技術範疇。"
+  },
+  {
+   "title": "External Validation of a Deep Learning-Based Artificial Intelligence System for Ultrasound Diagnosis of Thyroid Nodules: A Two-Center Retrospective Study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304967/",
+   "source": "Journal of Clinical Ultrasound 2026 (PMID 42304967, DOI 10.1002/jcu.70275)",
+   "decision": "excluded",
+   "reason": "已 curl 200、內容切題（雙中心外部驗證，並以邏輯回歸找出影響 AI 正確率的影像特徵：邊界清楚 OR 3.46、高／等回音 OR 8.83、大彗星尾 OR 2.28），其 device dependence 論點已被寫入 ch11-u4 的 tight 條目。因 u4 的 drills 上限為 3、且與已納入的 JMIR 系統性回顧在 external validation 論點上重疊，故未列為獨立 drill。"
+  },
+  {
+   "title": "Variability in the interpretation of grey-scale ultrasound features in assessing thyroid nodules: A systematic review and meta-analysis",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32447147/",
+   "source": "European Journal of Radiology 2020;128:109050 (PMID 32447147)",
+   "decision": "excluded",
+   "reason": "已 curl 200、資料可用（TI-RADS 分類 kappa 0.54；margin 0.40、echogenic foci 0.43），是新技術宣稱要解決的 interobserver 問題的基準線；但主題本質屬 CH4（結節描述語言與風險分層）與 CH13（品質保證），為避免跨章重複而不在本章收錄。"
+  },
+  {
+   "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Contrast-Enhanced Ultrasound (CEUS) in Non-Hepatic Applications: Update 2017 (Long Version)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29510439/",
+   "source": "EFSUMB / Ultraschall in der Medizin (PMID 29510439, DOI 10.1055/a-0586-1107)",
+   "decision": "excluded",
+   "reason": "與已納入的短版為同一份指引；短版把建議條文與等級集中呈現，較適合本單元『查核指引地位』的練習。長版已於 u2 的 why 欄位標註 PMID 供需要完整論述者自行取用，不另列為獨立資源以免同章重複。"
+  },
+  {
+   "title": "EFSUMB / WFUMB guidelines and recommendations on the clinical use of ultrasound elastography Part 1 (basic principles) 與 Part 2 (clinical applications)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25805059/",
+   "source": "Ultrasound in Medicine & Biology 2015 (PMID 25805059) 與 Ultraschall in der Medizin 2013 (PMID 23605169)",
+   "decision": "excluded",
+   "reason": "為 elastography 的基礎原理與跨器官臨床應用總論，甲狀腺內容已被 Part 4（本章 u1 核心教材）取代且更新；依受眾設定（假設學員已具備基本術語）不重複收錄基礎原理文件。"
+  },
+  {
+   "title": "Retracted / duplicate 之外的其他 CEUS 甲狀腺 meta-analysis（PLoS One 2020、Medicine 2018、Comput Math Methods Med 2021、J Clin Ultrasound 2016 等）",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32310968/",
+   "source": "PubMed 檢索結果（PMID 32310968、30544392、34840595、26402325 等）",
+   "decision": "excluded",
+   "reason": "同一主題的重複 meta-analysis，納入族群大量重疊、金標準多為細胞學而非組織學，且未提供本章需要的偏差自我揭露。已由 Xu 2025（最新最大宗）與 Trimboli 2020（組織學金標準＋publication bias 自報）兩篇取代。"
+  },
+  {
+   "title": "多篇 2026 年單中心 AI／radiomics 甲狀腺研究（J Imaging Inform Med、Front Endocrinol、Artif Intell Med 等）",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42527788/",
+   "source": "PubMed 檢索結果（PMID 42527788、42527780、42526280、42244954、42137357、42125226 等）",
+   "decision": "excluded",
+   "reason": "檢索『artificial intelligence thyroid ultrasound external validation』回傳大量 2026 年新作，但幾乎全為單中心、回溯、無獨立外部驗證的模型開發研究，正是本章要教學員辨識並保留距離的類型。不逐篇收錄，改以 JMIR 系統性回顧（PMC12352704）在回顧層級一次呈現此一現象。"
+  },
+  {
+   "title": "ACR TI-RADS 白皮書（JACR 2017）",
+   "url": null,
+   "source": "American College of Radiology",
+   "decision": "excluded",
+   "reason": "本章需要的是『新技術有沒有被納入分層系統』這個角度，而 EU-TIRADS 2017 對 elastography 有明文條款（R10）、對 CEUS 則全篇未提，教學效果更直接；ACR TI-RADS 白皮書屬 CH4 的核心文件，依去重規則讓給該章。註：未另行查驗其網址，故此列不附具體連結。"
+  },
+  {
+   "title": "KSThR / K-TIRADS 2021 共識聲明",
+   "url": null,
+   "source": "Korean Society of Thyroid Radiology",
+   "decision": "excluded",
+   "reason": "以『Korean Thyroid Imaging Reporting Data System 2021 revision Korean Society of Thyroid Radiology』與『Korean Society Thyroid Radiology consensus statement recommendations thyroid ultrasound 2021 K-TIRADS』兩組 query 查詢 PubMed E-utilities 均回 0 筆（查詢字串過長導致無命中），未再以較短字串重試即決定不納入：本章的指引地位教學已由 EU-TIRADS 2017 的明文條款充分覆蓋，K-TIRADS 屬 CH4 範疇。此列僅記錄查詢過程，未取得也未編造任何網址或 PMID。"
+  }
+ ]
+}

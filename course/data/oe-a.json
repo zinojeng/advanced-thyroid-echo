@@ -1,0 +1,764 @@
+{
+ "conditions": [
+  {
+   "unit": "ch1-u4",
+   "name": "Color 與 Power Doppler：PRF、wall filter 與低流速訊號",
+   "evidence_grade": "limited",
+   "summary": "都卜勒訊號的有無高度取決於 PRF、wall filter 與 gain 的設定，「沒看到血流」與「沒有血流」是兩件事。更重要的是：即使把血流訊號測準了，血流型態作為結節惡性指標的證據也很弱——現行主要風險分層系統的計分並不包含血流。都卜勒在瀰漫性甲狀腺疾病的定量應用（如甲狀腺動脈 PSV）反而比在結節上更站得住腳。",
+   "diagnostic_accuracy": "Power Doppler 於 1083 顆結節（269 惡性）的回溯研究中，單用可疑灰階特徵的 Az 為 0.851；把任何血流資訊加進判準後 Az 反而下降至 0.634–0.752，且 intranodular vascularity 在良性結節更常見（PMID 20308462）。SMI 與 CDFI 的統合分析（13 篇、815 顆惡性結節）顯示 SMI 合併敏感度 0.80（95% CI 0.77–0.83）／特異度 0.79（0.77–0.82）、SROC 0.8944，CDFI 為 0.62（0.57–0.67）／0.81（0.78–0.85）、SROC 0.8498（PMID 37415660）。",
+   "clinical_benefit": "沒有隨機試驗顯示加做都卜勒能改變穿刺率、手術率或存活。單中心回溯研究指出，在 ATA 2015 intermediate suspicion 型態的 411 顆結節（惡性 14.1%）中，intranodular vascularity 是多變項分析下的獨立惡性預測因子（p = 0.004），但此結果尚未被任何指引採納為分層依據（PMID 32241592）。",
+   "guideline_status": "四大風險分層系統的計分特徵不含血流：ACR TI-RADS 由 composition、echogenicity、shape、margin、echogenic foci 五類特徵構成（PMID 29702015）。都卜勒在指引中的定位是輔助觀察，不是計分項目。",
+   "interobserver": "多中心盲測（7 位判讀者、100 張影像）中 intranodular vascularity 的判讀者間 Cohen κ 為 0.46，同一判讀者重測 κ 0.62——後者是該研究所有特徵中重測一致性最高的（PMID 31952456）。也就是說：同一個人前後判得還算穩，換個人就未必。",
+   "discordance": "SMI 之類的微血流技術能顯示更多血管訊號，但各廠牌實作不同、研究多為單中心，「看到更多血流」不等於「分類更準」；SMI 與 CDFI 的 SROC 差距（0.894 vs 0.850）來自不同的研究族群，並非同一批結節的 head-to-head 比較（PMID 37415660）。",
+   "red_flags": [
+    "調到看不到血流之前，先確認 PRF、wall filter 與 color gain——把設定造成的無訊號當成「乏血流」是最常見的技術性誤判",
+    "不要用「血流很豐富」推論惡性：power Doppler 資料顯示 intranodular vascularity 在良性結節更常見",
+    "都卜勒的定量參數（PSV）在瀰漫性疾病有診斷價值，但在結節上沒有可用的 cutoff"
+   ],
+   "caveats": "本課程無法示範各廠牌機器的預設值與 knob 位置，公開影片示範的參數不能直接搬到你手上的機器。SMI、microvascular flow 等技術為廠商特定實作，研究結果不能互相通用。",
+   "citations": [
+    {
+     "pmid": "20308462",
+     "title": "Can vascularity at power Doppler US help predict thyroid malignancy?",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/20308462/",
+     "year": 2010
+    },
+    {
+     "pmid": "37415660",
+     "title": "The value of conventional ultrasound combined with superb microvascular imaging and color Doppler flow imaging in the diagnosis of thyroid malignant nodules: a systematic review and meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37415660/",
+     "year": 2023
+    },
+    {
+     "pmid": "32241592",
+     "title": "Intranodular Vascularity May Be Useful in Predicting Malignancy in Thyroid Nodules with the Intermediate Suspicion Pattern of the 2015 American Thyroid Association Guidelines",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32241592/",
+     "year": 2020
+    },
+    {
+     "pmid": "31170960",
+     "title": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31170960/",
+     "year": 2019
+    }
+   ]
+  },
+  {
+   "unit": "ch2-u4",
+   "name": "假性病灶與技術性偽影的辨識",
+   "evidence_grade": "expert_consensus",
+   "summary": "「這是結節還是偽影」多數時候靠的是解剖知識與動態掃描，不是靠某個影像特徵的統計數字。這個領域的文獻以技術回顧與專家共識為主，少有診斷準確度研究。唯一有硬數據的部分反而是反例：被廣泛當成良性標記的 comet-tail artifact，並非絕對可靠。",
+   "diagnostic_accuracy": "962 顆結節中有 71 顆（7.4%）出現 echogenic foci with comet-tail artifact，其中 25 顆良性、46 顆惡性。完全自由分布於囊性成分內者 11/11（100%）為良性；只要 echogenic foci 或 comet-tail 的任何部分與實質成分相連，48/67（71.6%）較常見於惡性結節（P < 0.001）。comet-tail 本身的外觀與形狀在良惡性之間無顯著差異（P = 0.139、P = 0.626）（PMID 29352286）。",
+   "guideline_status": "ACR TI-RADS 的 lexicon 把 large comet-tail artifact 列為 echogenic foci 的一個子類。正常甲狀腺與常見解剖變異的辨識屬於技術規範層級的共識，而非證據分級建議（PMID 33040846）。",
+   "interobserver": "多中心盲測中 comet-tail artifact 子類的判讀者間 κ 僅 0.11，是該研究所有特徵中最低的一項；同一判讀者重測也只有 0.47。判讀者在 16% 的病例無法決定 hyperechoic foci 的歸類，只能描述為「意義不明的高回音點」（PMID 31952456）。",
+   "discordance": "橋本甲狀腺炎背景下的「假性結節」與真結節在灰階影像上重疊；54 例的小型研究顯示 sonoelastography 可辨識部分被灰階誤判的真結節，但此結果從未被大型研究或指引證實（PMID 22289555）。",
+   "red_flags": [
+    "陰影與後方增強不只來自反射體本身，也受 depth gain compensation 與音速假設影響；把陰影一律當成鈣化會誤判",
+    "各向異性（anisotropy）意味著回音強度是相對值，換機器、換角度就會變——不要用單張靜態影像下結論",
+    "comet-tail artifact 只有在完全位於囊性成分內時才支持良性；與實質相連時不能當作良性依據"
+   ],
+   "caveats": "本單元大量依賴動態掃描（吞嚥、轉頭、加壓）才能區分食道、頸長肌與真病灶，而公開影音多半只提供靜態截圖或已剪輯片段。沒有任何研究量化「認得偽影」本身如何改變臨床結果，這是以機轉與專家共識推論的教學內容。",
+   "citations": [
+    {
+     "pmid": "29352286",
+     "title": "Echogenic foci with comet-tail artifact in resected thyroid nodules: Not an absolute predictor of benign disease",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29352286/",
+     "year": 2018
+    },
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    },
+    {
+     "pmid": "33040846",
+     "title": "Ultrasound of the Normal Thyroid with Technical Pearls and Pitfalls",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33040846/",
+     "year": 2020
+    },
+    {
+     "pmid": "28376537",
+     "title": "Ultrasound Artifacts - Part 2",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28376537/",
+     "year": 2017
+    }
+   ]
+  },
+  {
+   "unit": "ch3-u1",
+   "name": "Graves disease 的超音波與都卜勒判讀",
+   "evidence_grade": "moderate",
+   "summary": "定量都卜勒（甲狀腺動脈收縮期峰值流速，PSV）在鑑別 Graves 與破壞性甲狀腺炎上有中等強度的證據支持，統合分析的表現不錯；但 cutoff 未標準化、資料幾乎全來自亞洲族群，而且在懷孕這個最需要它的情境反而表現不佳。「血流很旺」這種主觀描述無法取代定量測量。",
+   "diagnostic_accuracy": "統合分析納入 11 篇、1052 例（全部來自亞洲）：superior thyroid artery mean PSV 鑑別 Graves 與破壞性甲狀腺炎的合併敏感度 0.86（95% CI 0.80–0.90）、特異度 0.93（0.86–0.97）、AUC 0.94（0.92–0.96）（PMID 31170960）。單中心前瞻研究（78 例，Graves 63%、無痛性甲狀腺炎 37%）中，29 例甲狀腺炎有 28 例（96.6%）的 superior thyroid artery 收縮期流速 < 43 cm/s（PMID 42077428）。",
+   "clinical_benefit": "在無法使用放射性同位素攝取掃描的情境（懷孕、哺乳、近期碘負荷）提供替代的鑑別工具，兩者治療方向相反，誤判成本高。但沒有隨機試驗比較「先做都卜勒」與「先做同位素掃描」對治療延誤或結果的影響。",
+   "discordance": "在懷孕族群，96 例的前瞻研究顯示妊娠一過性甲狀腺毒症與孕期 Graves 的 inferior thyroid artery PSV 與 EDV 有相當比例的重疊；且孕期 Graves 的流速顯著低於非孕期 Graves，作者明確結論此測量的敏感度與特異度不足以作為初步鑑別檢查（PMID 22358236）。這與非孕期族群的統合分析結論方向不同。",
+   "red_flags": [
+    "cutoff 隨機器、探頭、測量位置（上/下甲狀腺動脈）與族群而變，不能直接搬用文獻數字",
+    "懷孕族群的重疊程度大到不足以單獨依賴都卜勒，需併用臨床病程與 TRAb",
+    "「thyroid inferno」是描述性名詞不是診斷標準，Graves 與嚴重甲狀腺炎都可能高血流"
+   ],
+   "caveats": "統合分析的原始資料全數來自亞洲，作者自己指出需要其他地區的研究驗證。課程呈現的數字是族群特定的，不是普世 cutoff。",
+   "citations": [
+    {
+     "pmid": "31170960",
+     "title": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31170960/",
+     "year": 2019
+    },
+    {
+     "pmid": "42077428",
+     "title": "Use of color Doppler ultrasound to differentiate Graves' disease from silent thyroiditis in patients treated at Fundación Valle del Lili in 2022-2024",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42077428/",
+     "year": 2026
+    },
+    {
+     "pmid": "22358236",
+     "title": "Is the measurement of inferior thyroid artery blood flow velocity by color-flow Doppler ultrasonography useful for differential diagnosis between gestational transient thyrotoxicosis and Graves' disease? A prospective study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22358236/",
+     "year": 2012
+    }
+   ]
+  },
+  {
+   "unit": "ch3-u2",
+   "name": "橋本甲狀腺炎：假性結節與淋巴瘤風險",
+   "evidence_grade": "moderate",
+   "summary": "橋本甲狀腺炎確實顯著提高原發性甲狀腺淋巴瘤的相對風險，但絕對風險極低——這兩件事必須同時講，否則不是漏診就是過度檢查。橋本背景也改變乳突癌的超音波表現，讓分層系統的準確度在這群病人身上與一般族群不同。",
+   "diagnostic_accuracy": "以深度學習區分 DLBCL、MALT 淋巴瘤與橋本甲狀腺炎的單中心研究（290 位病人、313 個病灶、1294 張影像）內部測試 macro-average AUC 0.927（95% CI 0.889–0.960），但外部驗證僅 0.796（0.686–0.888）——外部驗證掉了約 0.13（PMID 42351568）。13 例手術證實的原發性甲狀腺淋巴瘤與 27 例結節性甲狀腺腫的比較顯示，中央型血流偏向淋巴瘤、周邊型偏向結節性甲狀腺腫，但多數常用的惡性特徵無法區分兩者（PMID 25614405）。54 例的小型研究顯示 sonoelastography 對區分真結節與假性結節的敏感度優於灰階超音波（PMID 22289555）。",
+   "clinical_benefit": "瑞典世代研究比較 829 例慢性淋巴球性甲狀腺炎與 829 例年齡性別配對的膠質性甲狀腺腫，追蹤 1959–1981：甲狀腺淋巴瘤的估計相對風險約 67（觀察 4 例 vs 預期 0.06，P < 0.000001），骨髓與淋巴增生性腫瘤 12 例 vs 預期 3.0（P < 0.001）；但腫瘤總數並未增加（53 vs 預期 52.7）（PMID 3838363）。相對風險 67、絕對事件 4 例／829 人／20 餘年——這就是為什麼不該對每個橋本病人做腫瘤篩檢。",
+   "discordance": "橋本背景下的乳突癌影像表現與非橋本者不同：702 顆結節的回溯分析中，女性（OR 3.15）與 aspect ratio ≥ 1（OR 1.73）與「橋本合併乳突癌」的診斷相關，而橋本本身反而是包膜侵犯的保護因子（OR 0.47，P < 0.05）（PMID 40444090）。同一套分層規則套在橋本背景上不會給出相同的表現。",
+   "red_flags": [
+    "已知橋本病人在數週至數月內出現快速增大的瀰漫性腫大，要把原發性甲狀腺淋巴瘤列入鑑別，而不是歸因於「甲狀腺炎惡化」",
+    "原發性甲狀腺淋巴瘤的疾病特異死亡集中在診斷後兩年內、尤其前六個月，延誤診斷的代價很高（PMID 41196039）",
+    "相對風險高不等於絕對風險高——不要因為淋巴瘤風險而對橋本病人做例行影像篩檢"
+   ],
+   "caveats": "淋巴瘤風險的核心證據來自 1985 年的世代研究，當時的診斷分類與現行 WHO 分類不同，也缺乏現代影像與分子資料。AI 輔助鑑別的研究外部驗證表現明顯下滑，不能當成臨床可用工具介紹。",
+   "citations": [
+    {
+     "pmid": "3838363",
+     "title": "Cancer risks in patients with chronic lymphocytic thyroiditis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/3838363/",
+     "year": 1985
+    },
+    {
+     "pmid": "42351568",
+     "title": "Deep Learning Based on B-Mode and Color Doppler Ultrasound for Differentiation of Primary Thyroid Lymphoma and Hashimoto's Thyroiditis: A Retrospective Single-Center Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42351568/",
+     "year": 2026
+    },
+    {
+     "pmid": "40444090",
+     "title": "Impact of Hashimoto's thyroiditis on ultrasound diagnosis of papillary thyroid carcinoma: a retrospective study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40444090/",
+     "year": 2025
+    },
+    {
+     "pmid": "25614405",
+     "title": "Primary thyroid lymphoma has different sonographic and color Doppler features compared to nodular goiter",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25614405/",
+     "year": 2015
+    },
+    {
+     "pmid": "22289555",
+     "title": "Nodule or pseudonodule? Differentiation in Hashimoto's thyroiditis with sonoelastography",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22289555/",
+     "year": 2011
+    },
+    {
+     "pmid": "41196039",
+     "title": "Survival Outcomes and Treatment Strategies in Primary Thyroid Lymphoma: A Population-Based Study of 401 Cases from the Tokyo Cancer Registry",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41196039/",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u1",
+   "name": "標準化 lexicon：composition、echogenicity、shape、margin、echogenic foci",
+   "evidence_grade": "guideline_supported",
+   "summary": "使用標準化詞彙是所有主要指引的共同要求，也是本課程一切分層操作的前提。但要誠實地說：即使有 lexicon，判讀者之間對個別特徵的一致性仍只有 fair 到 moderate，而其中最不一致的幾項（margin、echogenic foci）剛好是分數權重最高的特徵。lexicon 改善的是決策的一致性，不是特徵判讀本身的一致性。",
+   "diagnostic_accuracy": "lexicon 本身不是診斷測試。相關的關鍵事實是：31 篇研究、18,288 顆結節的統合分析顯示單一超音波特徵不是準確的惡性預測因子，DOR 最高的 taller-than-wide 也只有 11.14（95% CI 6.6–18.9）（PMID 24276450）。lexicon 的價值在於讓特徵可以被一致地組合計分，而不在於任何單一詞彙的預測力。",
+   "clinical_benefit": "八位放射科醫師評讀 100 顆結節的研究中，依各自習慣給穿刺建議時的 Fleiss κ 僅 0.22（fair）；改用 ACR TI-RADS 後提升到 0.51（moderate）（PMID 29702015）。這是 lexicon 加分層規則能改善決策一致性最直接的證據。",
+   "guideline_status": "ACR 於 2015 年先發表 lexicon 白皮書（PMID 26419308），2017 年才在此基礎上發表 TI-RADS 白皮書（PMID 28372962）。EU-TIRADS 明確把「提升描述的判讀者間再現性」列為建立系統的目的之一（PMID 29167761）。使用標準化詞彙在四大系統中都是前提要求，不是選項。",
+   "interobserver": "多中心盲測（3 個中心、7 位放射科與內分泌科醫師、100 張影像）判讀者間 Cohen κ：composition 0.53、echogenicity 0.47、microcalcification 0.47、intranodular vascularity 0.46、shape 0.42、macrocalcification 0.38、margin 0.33、comet-tail artifact 0.11（PMID 31952456）。未受專門訓練的 4 位放射科醫師評讀 180 顆結節：composition κ 0.327–0.533、calcification 0.229–0.527、echogenicity 0.141–0.355、shape 0.0729–0.513、margin 0.176–0.283（PMID 30415880）。八位醫師的研究中 margin 與非巨鈣化的 echogenic foci 最差（κ 0.25–0.39），shape（0.61）與 macrocalcification（0.73）反而最好（PMID 29702015）。393 位病人的前瞻驗證顯示，即使在同一中心受訓，composition 各子類的一致性從 mixed predominantly cystic 的 κ 0.729 到 pure cyst 的 0.292 不等（PMID 40004763）。",
+   "discordance": "同一個詞在不同系統裡的定義不同（例如 marked hypoechogenicity 的判定基準、taller-than-wide 的比值門檻），因此「用同一套 lexicon 描述、再套四個系統」在實作上仍需要為每個系統做定義對齊。",
+   "red_flags": [
+    "margin 與 echogenic foci 是一致性最差、卻在計分中權重最高的兩項——這兩項判錯，分級就跟著錯",
+    "口語化描述（「看起來很兇」「回音不均」）無法被另一位醫師重現，也無法被稽核",
+    "沒有受過對齊訓練就直接套用 lexicon，管理建議的一致性只有 κ 0.24–0.36"
+   ],
+   "caveats": "本課程只能提供靜態影像與公開影片作為對齊練習，無法取代與同儕一起判讀同一批影像並計算 κ 的實際校準流程。單元中引用的 κ 值來自不同族群、不同訓練程度的判讀者，不能直接當成你所在單位的一致性水準。",
+   "citations": [
+    {
+     "pmid": "26419308",
+     "title": "Thyroid Ultrasound Reporting Lexicon: White Paper of the ACR Thyroid Imaging, Reporting and Data System (TIRADS) Committee",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26419308/",
+     "year": 2015
+    },
+    {
+     "pmid": "28372962",
+     "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+     "year": 2017
+    },
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    },
+    {
+     "pmid": "30415880",
+     "title": "Inter-observer Variability in the American College of Radiology Thyroid Imaging Reporting and Data System: In-Depth Analysis and Areas for Improvement",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30415880/",
+     "year": 2019
+    },
+    {
+     "pmid": "29702015",
+     "title": "Interobserver Variability of Sonographic Features Used in the American College of Radiology Thyroid Imaging Reporting and Data System",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29702015/",
+     "year": 2018
+    },
+    {
+     "pmid": "40004763",
+     "title": "An Interobserver Comparison of the Ultrasound Lexicon Classification of Thyroid Nodules: A Single-Center Prospective Validation Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40004763/",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u2",
+   "name": "測量平面、taller-than-wide 與大小量測的再現性",
+   "evidence_grade": "moderate",
+   "summary": "taller-than-wide 是所有單一超音波特徵中預測力最強的一項，但它的定義（比值 >1 或 ≥1.2）、量測平面（橫切、縱切或任一平面）都會改變分級結果，而它本身的判讀一致性又偏低。追蹤時的大小變化更是被系統性低估的誤差來源。",
+   "diagnostic_accuracy": "471 顆結節（26.5% 惡性）的比較顯示：以「任一平面 AP/T ≥ 1」為判準時敏感度 68%、NPV 87.7%，Az 顯著高於只看橫切面（特異度 83.5%）或只看縱切面（特異度 94.5%）（P = 0.0061、0.0362）（PMID 21877934）。統合分析中 taller-than-wide 的 DOR 為 11.14（95% CI 6.6–18.9），是 14 項特徵中最高（PMID 24276450）；另一份 52 篇、12,786 顆結節的統合分析給出 taller-than-wide 特異度 96.6%、陽性概似比 8.07（PMID 25747526）。",
+   "clinical_benefit": "553 顆前瞻收案的結節中，把 taller-than-wide 定義從 AP/T > 1 改為 ≥ 1.2，符合者由 94 顆（17%）降到 28 顆（5.1%）：敏感度 26.2% → 11.9%（p = 0.03）、特異度 83.8% → 95.5%（p < 0.001）。套用到分層系統時，新定義讓可避免的穿刺增加（ACR TI-RADS 最高達 58.2%），且不損及各系統的敏感度或 DOR（PMID 32257957）。",
+   "guideline_status": "四大系統都把 taller-than-wide 納入為可疑特徵，但採用的比值門檻與量測平面規定不完全一致，這是同一顆結節在不同系統得到不同分級的來源之一（PMID 41789443）。",
+   "interobserver": "多中心盲測中 shape 的判讀者間 κ 0.42、同一判讀者重測 κ 0.35——後者是該研究所有特徵中重測一致性最差的一項（PMID 31952456）。未受訓的判讀者之間 shape κ 低至 0.0729（PMID 30415880）。文獻亦報告 AP 徑量測的同一判讀者變異可達 18%（PMID 32257957）。",
+   "discordance": "追蹤時的「變大」多數不是真的變大：197 顆乳突微小癌由兩位判讀者獨立量測，最大徑的百分比再現係數為 23.7%（95% CI 21.6–26.3），體積為 71.8%（65.4–79.7）。也就是最大徑 24% 以內、體積 72% 以內的變化都落在量測誤差範圍內，且此誤差不因結節大小、鈣化或實質異質性而異（PMID 33287640）。",
+   "red_flags": [
+    "只在橫切面判定 taller-than-wide 會漏掉一部分（敏感度較低），只看縱切面則過度保守——量測平面必須在報告裡寫明",
+    "追蹤報告寫「較前次增大」之前，先確認變化是否超過 24%（最大徑）或 72%（體積）",
+    "AP 徑要在不加壓的情況下量；探頭壓迫會系統性壓低 AP/T 比值"
+   ],
+   "caveats": "AP/T ≥ 1.2 的替代定義來自單一中心的前瞻研究，尚未被任何指引採納；課程呈現此數據是為了說明定義敏感性，不是建議改用該門檻。再現性研究的對象是乳突微小癌，推論到其他大小與型別的結節時要保留。",
+   "citations": [
+    {
+     "pmid": "21877934",
+     "title": "A taller-than-wide shape in thyroid nodules in transverse and longitudinal ultrasonographic planes and the prediction of malignancy",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21877934/",
+     "year": 2011
+    },
+    {
+     "pmid": "32257957",
+     "title": "Taller-Than-Wide Shape: A New Definition Improves the Specificity of TIRADS Systems",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32257957/",
+     "year": 2020
+    },
+    {
+     "pmid": "33287640",
+     "title": "Interobserver Reproducibility in Sonographic Measurement of Diameter and Volume of Papillary Thyroid Microcarcinoma",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33287640/",
+     "year": 2021
+    },
+    {
+     "pmid": "24276450",
+     "title": "The accuracy of thyroid nodule ultrasound to predict thyroid cancer: systematic review and meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24276450/",
+     "year": 2014
+    },
+    {
+     "pmid": "25747526",
+     "title": "Thyroid ultrasound features and risk of carcinoma: a systematic review and meta-analysis of observational studies",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25747526/",
+     "year": 2015
+    },
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u3",
+   "name": "ACR TI-RADS (2017)：計分規則、FNA 與追蹤門檻",
+   "evidence_grade": "guideline_supported",
+   "summary": "ACR TI-RADS 是四系統中減少不必要穿刺能力最強、外部驗證最完整的一個，其各分級的實測惡性風險與白皮書宣稱的門檻吻合度高。代價是特異度低、PPV 低——它擅長告訴你「這顆可以不用穿」，不擅長告訴你「這顆是癌」。",
+   "diagnostic_accuracy": "多機構研究收錄 3422 顆結節（352 顆惡性）：composition、echogenicity、margin 與 echogenic foci 各自都與惡性風險顯著相關（皆 p < 0.0001），2948/3422（86.1%）結節的實測風險落在 TI-RADS 宣稱門檻的 1% 以內；偏離超過 1% 者中有 88.0%（417/474）是風險低於門檻（PMID 28402167）。統合分析（29 篇、33,748 顆）給出 TR5 合併敏感度 66%／特異度 91%，TR4 或 TR5 為 95%／55%（PMID 32303153）。單中心真實世界 829 顆結節（234 惡性）：AUC 0.786、敏感度 99.8%、特異度 27.1%、PPV 31.9%、NPV 99.7%、漏診率 2.2%（PMID 39586159）。",
+   "clinical_benefit": "477 位病人、502 次穿刺的前瞻研究中，套用 ACR TI-RADS 的 FNA 準則可省下 268/502（53.4%）的穿刺，為五個系統中最多，且偽陰性率最低（NPV 97.8%，95% CI 95.2–99.2；FNR 2.2%）（PMID 30299457）。266 顆結節的四系統比較中，ACR TI-RADS 的不必要穿刺率最低（238 顆良性結節中 141 顆，46%）（PMID 37918114）。",
+   "guideline_status": "ACR TI-RADS 委員會 2017 年白皮書（PMID 28372962）建立在 2015 年的 lexicon 白皮書之上；2018 年 Radiology 的 user's guide 提供實作說明（PMID 29558300）。它是美國放射學會的正式建議，但不是內分泌學會的分層建議。",
+   "interobserver": "八位放射科醫師評讀 100 顆結節：整體 fair 到 moderate，shape（κ 0.61）與 macrocalcification（0.73）為 substantial；margin 與其他型態的 echogenic foci 最差（κ 0.25–0.39）。依各自習慣的穿刺建議 κ 0.22，改用 ACR TI-RADS 後升至 0.51（PMID 29702015）。未經專門訓練的四位判讀者對 ACR TI-RADS 管理建議的一致性僅 κ 0.242–0.359（PMID 30415880）。多中心研究中 ACR-TIRADS 的系統層級 κ 為 0.42（PMID 31952456）。",
+   "discordance": "3774 顆 >1 cm 結節的五系統比較中，ACR TI-RADS 在小結節（≤2 cm）與大結節（>2 cm）都呈現較低敏感度與較低不必要穿刺率，方向與 ATA、EU-TIRADS 相反（PMID 41789443）。相對 K-TIRADS，ACR TI-RADS 敏感度與 NPV 顯著較高，特異度、PPV 與不必要穿刺率顯著較低（皆 p < 0.001），兩者最終分類的一致性為 κ 0.61（PMID 42306147）。",
+   "red_flags": [
+    "PPV 只有約三成——TR5 不等於惡性，不能拿分級當診斷告知病人",
+    "計分中權重高的 margin 與 echogenic foci 正是判讀一致性最差的兩項，分數的穩定性比表面看起來低",
+    "TR1／TR2 的高 NPV 建立在盛行率約 20–28% 的族群上，換族群後 NPV 會變"
+   ],
+   "caveats": "驗證研究絕大多數為回溯設計、以手術或細胞學為參考標準，存在選擇偏誤。ACR TI-RADS 的驗證族群以乳突癌為主，對濾泡型病變的表現另見 ch6-u2。本課程呈現的分數不能取代原始白皮書的完整規則。",
+   "citations": [
+    {
+     "pmid": "28372962",
+     "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+     "year": 2017
+    },
+    {
+     "pmid": "29558300",
+     "title": "Thyroid Imaging Reporting and Data System (TI-RADS): A User's Guide",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29558300/",
+     "year": 2018
+    },
+    {
+     "pmid": "28402167",
+     "title": "Multiinstitutional Analysis of Thyroid Nodule Risk Stratification Using the American College of Radiology Thyroid Imaging Reporting and Data System",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28402167/",
+     "year": 2017
+    },
+    {
+     "pmid": "30299457",
+     "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+     "year": 2019
+    },
+    {
+     "pmid": "32303153",
+     "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+     "year": 2020
+    },
+    {
+     "pmid": "39586159",
+     "title": "A real-world comparison of the diagnostic performances of six different TI-RADS guidelines, including ACR-/Kwak-/K-/EU-/ATA-/C-TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39586159/",
+     "year": 2025
+    },
+    {
+     "pmid": "29702015",
+     "title": "Interobserver Variability of Sonographic Features Used in the American College of Radiology Thyroid Imaging Reporting and Data System",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29702015/",
+     "year": 2018
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u4",
+   "name": "ATA 2015 sonographic pattern 與 EU-TIRADS 2017",
+   "evidence_grade": "guideline_supported",
+   "summary": "ATA 與 EU-TIRADS 都是 pattern-based：先認出型態，再對應風險區間與大小門檻。統合分析顯示兩者的整體診斷表現與 point-based 系統相當，但偏向高敏感度、高不必要穿刺率的那一端。它們也是四系統中判讀者間一致性最低的兩個。",
+   "diagnostic_accuracy": "29 篇、33,748 顆結節的統合分析：ATA category 5 合併敏感度 74%／特異度 88%，category 4 或 5 為 91%／64%；EU-TIRADS category 5 為 82%／90%，category 4 或 5 為 96%／52%（PMID 32303153）。EU-TIRADS 專屬統合分析（7 篇、5672 顆、以組織學為參考標準）各類別惡性率分別為 0.5%（95% CI 0.0–1.3）、5.9%（2.6–9.2）、21.4%（11.1–31.7）、76.1%（63.7–88.5）；class 5 的敏感度 83.5%、特異度 84.3%、PPV 76.1%、NPV 85.4%、DOR 24.5（PMID 32544875）。",
+   "clinical_benefit": "477 位病人的前瞻比較中，ATA 與 EU-TIRADS 都展現顯著的鑑別力，但可省下的穿刺數顯著少於 ACR TI-RADS（全部系統的減量範圍為 17.1%–53.4%）（PMID 30299457）。沒有研究比較採用不同系統對死亡率、手術率或病人焦慮的影響。",
+   "guideline_status": "ATA 2015 指引（PMID 26462967）以 American College of Physicians 分級系統評定建議強度，涵蓋 FNA 的臨床與超音波準則；EU-TIRADS 由歐洲甲狀腺學會召集國際專家小組制定（PMID 29167761）。兩者都是學會層級的正式建議。",
+   "interobserver": "多中心盲測中，系統層級的判讀者間 Cohen κ：AACE 0.44、ACR-TIRADS 0.42、EU-TIRADS 0.39、ATA 0.34；同一判讀者重測 κ 為 AACE 0.54、ACR 0.49、ATA 0.38、EU-TIRADS 0.33。ATA 與 EU-TIRADS 分居判讀者間與重測一致性的最後一名（PMID 31952456）。",
+   "discordance": "3774 顆結節的比較中，ATA 與 EU-TIRADS 在小結節與大結節都呈現較高敏感度與較高不必要穿刺率，與 ACR TI-RADS 相反（PMID 41789443）。在 Bethesda III（意義不明）結節上，17 篇研究的統合分析顯示 ATA 特異度 0.90（95% CI 0.74–0.94）但敏感度僅 0.52（0.25–0.77），EU-TIRADS 特異度 0.81（0.73–0.87）、敏感度 0.38（0.20–0.60）——兩者在細胞學已經不確定時的補充價值很有限（PMID 34411290）。",
+   "red_flags": [
+    "ATA 的 pattern 有「無法歸類」的結節，實務上這類結節的處置沒有明確依據",
+    "pattern-based 系統對判讀者的型態辨識能力更敏感，兩者的判讀者間 κ 分別只有 0.34 與 0.39",
+    "EU-TIRADS class 5 的 PPV 76% 建立在惡性盛行率偏高的手術族群，門診族群會低很多"
+   ],
+   "caveats": "EU-TIRADS 統合分析只納入 7 篇、多為回溯設計，作者自己指出證據強度受限。ATA 2015 已有 2025 年版更新（見指引比較表），本單元的數據來自 2015 版的驗證研究，套用時須確認版本。",
+   "citations": [
+    {
+     "pmid": "26462967",
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+     "year": 2016
+    },
+    {
+     "pmid": "29167761",
+     "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29167761/",
+     "year": 2017
+    },
+    {
+     "pmid": "32544875",
+     "title": "Performance of EU-TIRADS in malignancy risk stratification of thyroid nodules: a meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32544875/",
+     "year": 2020
+    },
+    {
+     "pmid": "32303153",
+     "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+     "year": 2020
+    },
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    },
+    {
+     "pmid": "41789443",
+     "title": "Diagnostic Performance of Five Societies' Ultrasound Risk Stratification Systems for Thyroid Malignancy According to Nodule Size: A Comparison Using a Standardized Ultrasound Lexicon",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41789443/",
+     "year": 2026
+    },
+    {
+     "pmid": "34411290",
+     "title": "Ultrasonography and Fine-Needle Aspiration in Indeterminate Thyroid Nodules: A Systematic Review of Diagnostic Test Accuracy",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34411290/",
+     "year": 2022
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u5",
+   "name": "K-TIRADS 與其他區域性系統",
+   "evidence_grade": "guideline_supported",
+   "summary": "K-TIRADS 的門檻是在甲狀腺癌高偵測率、高手術率的韓國臨床環境中訂出來的，其特色是 category 5 的特異度最高、敏感度最低，以及對 1–2 cm 小結節相對保守的穿刺門檻。它與 ACR TI-RADS 的最終分類其實有 substantial 的一致性，差異主要落在大小門檻而非影像判準。",
+   "diagnostic_accuracy": "統合分析（29 篇、33,748 顆）：K-TIRADS category 5 合併敏感度 55%／特異度 95%——category 5 的特異度是四系統中最高、敏感度最低；category 4 或 5 為 89%／64%（PMID 32303153）。真實世界 829 顆結節：AUC 0.797、敏感度 97.6%、特異度 41.6%、PPV 36.0%、NPV 84.9%、漏診率 2.9%（PMID 39586159）。",
+   "clinical_benefit": "2021 年修訂明確把「在維持 1–2 cm 小結節惡性偵測敏感度的前提下，減少良性結節的不必要穿刺」列為修訂目標（PMID 34719893）。但在 477 位病人的前瞻比較中，K-TIRADS 是五個系統中唯一未能顯示顯著鑑別力（用於安全地延後穿刺）的系統（PMID 30299457）。",
+   "guideline_status": "韓國甲狀腺放射線醫學會（KSThR）2016 年修訂共識（PMID 27134526）與 2021 年版（PMID 34719893），是韓國的標準指引。",
+   "interobserver": "481 張影像、四位資深判讀者的研究中，K-TIRADS 與 ACR TI-RADS 最終分類的系統間一致性為 κ 0.61（substantial），兩者平均 AUC 無顯著差異（p = 0.52）（PMID 42306147）。",
+   "discordance": "3774 顆結節的五系統比較顯示，K-TIRADS 在 ≤2 cm 結節的敏感度與不必要穿刺率都是最低（皆 p < 0.001），但在 >2 cm 結節轉為高敏感度、高不必要穿刺率；作者指出系統間差異主要來自穿刺大小門檻與小結節判準的不同，而非影像特徵定義（PMID 41789443）。相對 K-TIRADS，ACR TI-RADS 敏感度與 NPV 顯著較高，特異度、PPV 與不必要穿刺率顯著較低（皆 p < 0.001）（PMID 42306147）。",
+   "red_flags": [
+    "K-TIRADS 的大小門檻是族群特定的：在惡性盛行率不同的族群套用，PPV 與 NPV 都會改變",
+    "category 5 敏感度僅 55%——不能用「沒到 K5」來安慰病人",
+    "同一顆結節在 ACR 與 K-TIRADS 可能得到不同的穿刺建議，差別多半在大小門檻而非影像判讀"
+   ],
+   "caveats": "統合分析的統合迴歸顯示，研究地點、女性比例、惡性結節比例與研究設計都與診斷表現顯著相關（PMID 32303153），這正是區域性系統不能直接跨族群搬用的原因。本課程呈現 K-TIRADS 是為了讓學員理解門檻差異的來源，不是建議在非韓國族群採用。",
+   "citations": [
+    {
+     "pmid": "27134526",
+     "title": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27134526/",
+     "year": 2016
+    },
+    {
+     "pmid": "34719893",
+     "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34719893/",
+     "year": 2021
+    },
+    {
+     "pmid": "42306147",
+     "title": "Comparative Analysis of ACR TI-RADS and K-TIRADS: Inter-System Agreement and Diagnostic Performance Using a Single Study Cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42306147/",
+     "year": 2026
+    },
+    {
+     "pmid": "41789443",
+     "title": "Diagnostic Performance of Five Societies' Ultrasound Risk Stratification Systems for Thyroid Malignancy According to Nodule Size: A Comparison Using a Standardized Ultrasound Lexicon",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41789443/",
+     "year": 2026
+    },
+    {
+     "pmid": "32303153",
+     "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+     "year": 2020
+    },
+    {
+     "pmid": "39586159",
+     "title": "A real-world comparison of the diagnostic performances of six different TI-RADS guidelines, including ACR-/Kwak-/K-/EU-/ATA-/C-TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39586159/",
+     "year": 2025
+    },
+    {
+     "pmid": "30299457",
+     "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+     "year": 2019
+    }
+   ]
+  },
+  {
+   "unit": "ch4-u6",
+   "name": "四系統比較器：同一顆結節、不同答案",
+   "evidence_grade": "contested",
+   "summary": "四個系統的整體診斷表現在統合分析層級相當接近，但在單一結節層級的一致性可以低到 κ 0.05。差異主要來自穿刺大小門檻與小結節判準，而不是誰「看得比較準」。沒有任何隨機試驗比較過採用不同系統對病人結果的影響——所以本課程用比較表呈現差異，不強迫選出唯一答案。",
+   "diagnostic_accuracy": "統合分析（29 篇、33,748 顆）結論為四系統整體診斷表現相當（PMID 32303153）。另一份針對「選擇結節做 FNA」的統合分析（12 篇、18,750 顆）顯示各系統 DOR 介於 2.2 至 4.9；head-to-head 比較中 ACR TI-RADS 相對 ATA（P = .002）與 K-TIRADS（P = .002）有較高的相對 DOR，主因是較高的陽性概似比（PMID 31690937）。",
+   "clinical_benefit": "477 位病人、502 次穿刺：套用各系統的 FNA 準則可減少 17.1%–53.4% 的穿刺，ACR TI-RADS 減量最多（268/502）且偽陰性率最低（2.2%）（PMID 30299457）。266 顆結節的比較中四系統 AUC 相近，ACR TI-RADS 不必要穿刺率最低（46%）（PMID 37918114）。沒有研究以死亡率、手術率或過度診斷為終點做系統間比較。",
+   "guideline_status": "四個系統分別由 ACR、ATA、ETA 與 KSThR 發布，各自在其區域是正式建議；沒有國際共識指定單一系統。3774 顆結節的比較研究明確把「建立統一 TIRADS」列為目標，並指出優化大結節的分層與穿刺門檻是前提（PMID 41789443）。",
+   "interobserver": "同一批影像、同一群判讀者下的系統層級判讀者間 κ：AACE 0.44、ACR-TIRADS 0.42、EU-TIRADS 0.39、ATA 0.34（PMID 31952456）。也就是說，四個系統沒有一個達到 substantial agreement。",
+   "discordance": "3774 顆 >1 cm 結節（721 惡性）依標準化 lexicon 分類後，五系統之間的一致性 κ 從 0.05 到 0.85 不等，各類別的結節分佈、惡性腫瘤分佈與惡性風險都有顯著差異（皆 p < 0.001）（PMID 41789443）。ACR TI-RADS 與 K-TIRADS 的最終分類則為 κ 0.61（PMID 42306147）。",
+   "red_flags": [
+    "系統間 κ 低到 0.05 代表某些結節上「四個答案」是常態，不是例外——決策要靠臨床脈絡而非再套一個系統",
+    "「哪個系統最好」的答案取決於你想最佳化什麼：漏診率、穿刺量、還是判讀一致性",
+    "系統間差異多半來自大小門檻，因此爭議最激烈的往往是 1–2 cm 的中間地帶"
+   ],
+   "caveats": "所有系統實際上都是針對乳突癌驗證的：9 篇、19,494 顆結節的統合分析中，6162 例組織學確診惡性裡乳突癌佔 95%、濾泡癌 2%、髓質癌 1%、其他 1%，作者結論這些系統只應被視為診斷乳突癌的準確工具（PMID 32959174）。比較器呈現的是分級差異，不能取代對病人整體風險的判斷。",
+   "citations": [
+    {
+     "pmid": "32303153",
+     "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+     "year": 2020
+    },
+    {
+     "pmid": "31690937",
+     "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
+     "year": 2020,
+     "last_verified": "2026-08-02"
+    },
+    {
+     "pmid": "30299457",
+     "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+     "year": 2019
+    },
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    },
+    {
+     "pmid": "41789443",
+     "title": "Diagnostic Performance of Five Societies' Ultrasound Risk Stratification Systems for Thyroid Malignancy According to Nodule Size: A Comparison Using a Standardized Ultrasound Lexicon",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41789443/",
+     "year": 2026
+    },
+    {
+     "pmid": "42306147",
+     "title": "Comparative Analysis of ACR TI-RADS and K-TIRADS: Inter-System Agreement and Diagnostic Performance Using a Single Study Cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42306147/",
+     "year": 2026
+    },
+    {
+     "pmid": "32959174",
+     "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32959174/",
+     "year": 2021
+    },
+    {
+     "pmid": "37918114",
+     "title": "Diagnostic Performance of Thyroid Nodule Risk Stratification Systems: Comparison of ACR-TIRADS, EU-TIRADS, K-TIRADS, and ATA Guidelines",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37918114/",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "unit": "ch5-u4",
+   "name": "可疑淋巴結 FNA 與 thyroglobulin washout",
+   "evidence_grade": "strong",
+   "summary": "淋巴結穿刺液的 thyroglobulin 測定（FNA-Tg）是本課程中診斷準確度證據最紮實的技術之一，統合分析一致給出高敏感度與高特異度，且與細胞學併用優於任一單獨使用。最大的未解問題是 cutoff 沒有標準化，以及甲狀腺仍在位時表現明顯下降。",
+   "diagnostic_accuracy": "24 篇、2865 個淋巴結的統合分析：整體敏感度 95.0%（95% CI 93.7–96.0）、特異度 94.5%（93.2–95.7）、DOR 338.91；只納入甲狀腺仍在位者（410 個淋巴結）敏感度降至 86.2%（80.9–90.5）、特異度 90.2%（85.1–94.0）；甲狀腺全切後（1007 個淋巴結）敏感度 96.9%（94.9–98.2）、特異度 94.1%（91.7–96.0）（PMID 24617715）。2025 年統合分析：合併敏感度 0.94（0.91–0.96）、特異度 0.92（0.88–0.94）、DOR 174.20、AUC 0.98；甲狀腺切除後敏感度 0.96、特異度 0.93、DOR 305.87；FNA-Tg 與血清 Tg 僅弱相關，與血清 TgAb 無相關（PMID 40830071）。",
+   "clinical_benefit": "2257 位病人、2786 個可疑淋巴結檢體的網絡統合分析顯示診斷效能排序為「細胞學＋FNA-Tg 併用 > FNA-Tg > 單獨細胞學」，且差異皆具統計顯著性；併用的敏感度 0.968（95% CI 0.942–0.983）、特異度 0.932（0.856–0.969）、DOR 418.42（PMID 31702649）。這是「細胞學陰性時 washout 仍有意義」的直接證據。沒有研究以復發率或存活為終點。",
+   "guideline_status": "ATA 2015 指引涵蓋以影像與血清 thyroglobulin 進行復發監測的建議（PMID 26462967）；FNA-Tg 的具體 cutoff 未在指引層級統一，請以最新指引原文核對建議等級。",
+   "discordance": "統合分析作者明確指出，病人選擇準則、檢驗方法與 cutoff 值都需要更好的標準化（PMID 24617715）。不同研究採用的 cutoff 從「高於血清 Tg」到固定 ng/mL 值都有，直接套用文獻數字會失真。",
+   "red_flags": [
+    "甲狀腺尚未切除時敏感度掉到 86%——術前情境的陰性結果不能當成排除",
+    "cutoff 依實驗室方法而異，送檢前要先確認你的檢驗室怎麼定義陽性",
+    "washout 陽性但影像找不到對應病灶時，先重新檢視取樣位置與污染可能，而不是直接安排手術"
+   ],
+   "caveats": "統合分析納入的研究異質性顯著（整體分析 I² = 65.7%），且多為回溯設計。本課程無法示範各實驗室的檢體處理流程（稀釋液種類、體積、保存），而這些前分析變數直接影響結果判讀。",
+   "citations": [
+    {
+     "pmid": "24617715",
+     "title": "Thyroglobulin in lymph node fine-needle aspiration washout: a systematic review and meta-analysis of diagnostic accuracy",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24617715/",
+     "year": 2014
+    },
+    {
+     "pmid": "40830071",
+     "title": "Diagnostic Efficiency of Thyroglobulin in Lymph Node Fine-needle Aspiration Washout: A Systematic Review and Meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40830071/",
+     "year": 2025
+    },
+    {
+     "pmid": "31702649",
+     "title": "Diagnostic value of cytology, thyroglobulin, and combination of them in fine-needle aspiration of metastatic lymph nodes in patients with differentiated thyroid cancer: A systematic review and network meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31702649/",
+     "year": 2019
+    },
+    {
+     "pmid": "26462967",
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+     "year": 2016
+    }
+   ]
+  },
+  {
+   "unit": "ch6-u2",
+   "name": "濾泡型病變與濾泡癌：超音波的極限",
+   "evidence_grade": "limited",
+   "summary": "這是超音波公認能力最弱的地方。濾泡腺瘤與濾泡癌的差別在包膜與血管侵犯，而這是組織學層級的判斷，超音波（以及細胞學）在原理上就看不到。現行分層系統能把濾泡癌送去穿刺，多半靠的是大小門檻而不是影像特徵。",
+   "diagnostic_accuracy": "回顧性文獻指出，傳統 TIRADS 對濾泡性腫瘤的鑑別效能有限，AUC 約 0.6–0.75（PMID 41708503）。七個中心的多中心研究中，專為濾泡性腫瘤設計的 F-TI-RADS 在驗證組（155 例，濾泡癌 27.7%）AUC 0.81（95% CI 0.71–0.86），顯著優於 ACR TI-RADS 0.74（0.66–0.80，P = .02）、K-TIRADS 0.69（0.61–0.76，P = .002）與 C-TIRADS 0.68（0.60–0.75，P = .002）（PMID 37987664）——換句話說，現行三套主流系統在濾泡性腫瘤上的 AUC 都低於 0.75。",
+   "clinical_benefit": "45 例濾泡癌（中位直徑 32 mm，範圍 11–100）的兩機構回溯分析中，最常見的表現是卵圓形等回音結節（有或沒有分葉狀邊緣）；被各系統歸為高風險者僅 11% 至 74%（系統間差異達統計顯著），有三分之一的病例無法被歸類；但因為大小門檻，69% 至 100% 仍會被建議 FNA（PMID 31899594）。系統「抓到」濾泡癌靠的是尺寸而非影像特徵。",
+   "guideline_status": "現行四大系統都不是針對濾泡型病變設計或驗證的。9 篇、19,494 顆結節的統合分析中，6162 例組織學確診惡性裡乳突癌佔 95%、濾泡癌僅 2%、髓質癌 1%，作者明確結論這些系統應被視為診斷乳突癌的工具，並呼籲修訂型態與 cutoff 以改善對濾泡癌與髓質癌的表現（PMID 32959174）。",
+   "discordance": "同一批濾泡癌在不同系統下被歸為高風險的比例從 11% 到 74%，差距超過六倍（PMID 31899594）；而各系統對濾泡腫瘤的 AUC 又都落在 0.68–0.74 的區間（PMID 37987664）。這個單元是四系統「吵架」最劇烈的地方。",
+   "red_flags": [
+    "等回音、邊界清楚、周邊血流的卵圓形結節在多數系統是低風險——濾泡癌最常見的樣子恰好長這樣",
+    "細胞學同樣分不出腺瘤與癌（Bethesda IV 只是『濾泡性腫瘤』），不要期待穿刺能給出答案",
+    "強調「TIRADS 低分所以安全」在大型濾泡性病灶上特別危險"
+   ],
+   "caveats": "F-TI-RADS 等專用系統尚未進入任何指引，也缺乏獨立外部驗證；課程呈現是為了說明現行系統的缺口，不是建議臨床採用。濾泡癌研究的樣本數普遍很小（45 例、155 例），信賴區間寬，結論不穩定。",
+   "citations": [
+    {
+     "pmid": "37987664",
+     "title": "US Risk Stratification System for Follicular Thyroid Neoplasms",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37987664/",
+     "year": 2023
+    },
+    {
+     "pmid": "41708503",
+     "title": "Ultrasound features of thyroid follicular adenoma and follicular carcinoma: A narrative review",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41708503/",
+     "year": 2026
+    },
+    {
+     "pmid": "31899594",
+     "title": "Can ultrasound systems for risk stratification of thyroid nodules identify follicular carcinoma?",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31899594/",
+     "year": 2020
+    },
+    {
+     "pmid": "32959174",
+     "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32959174/",
+     "year": 2021
+    }
+   ]
+  },
+  {
+   "unit": "concept-1",
+   "name": "超音波在甲狀腺結節上到底能回答什麼",
+   "evidence_grade": "strong",
+   "summary": "超音波是分層工具，不是診斷工具。它的 NPV 很高、PPV 很低：能相當可靠地告訴你哪些結節可以不用穿刺，卻無法告訴你哪一顆是癌。而在最需要它幫忙的地方——細胞學已經判為意義不明的結節——它的補充價值最小。這一條是整門課的立論基礎。",
+   "diagnostic_accuracy": "31 篇、18,288 顆結節（平均 15 mm，癌症盛行率 20%，其中乳突癌佔 84%）的統合分析結論：低至中等品質的證據顯示個別超音波特徵不是準確的惡性預測因子。DOR 最高的 taller-than-wide 為 11.14（95% CI 6.6–18.9）；被視為良性指標的 spongiform 外觀 DOR 12，但 95% CI 0.61–234.3 跨過 1（PMID 24276450）。52 篇、12,786 顆結節的統合分析中，所有特徵的 OR 介於 1.78 至 35.7，microcalcification、irregular margin 與 taller-than-wide 的特異度分別為 87.8%、83.1%、96.6%，陽性概似比 3.26、2.99、8.07，作者結論「單一特徵無法提供可靠資訊來選擇該穿刺的結節」（PMID 25747526）。",
+   "clinical_benefit": "PPV 與 NPV 的落差是關鍵數字。829 顆結節（234 惡性、盛行率 28.2%）的真實世界比較：ACR TI-RADS PPV 31.9%／NPV 99.7%，K-TIRADS PPV 36.0%／NPV 84.9%，ATA PPV 32.9%／NPV 88.2%，EU-TIRADS PPV 33.9%／NPV 97.9%（PMID 39586159）。477 位病人的前瞻研究中 ACR TI-RADS 的 NPV 為 97.8%（95% CI 95.2–99.2），可省下 53.4% 的穿刺（PMID 30299457）。EU-TIRADS class 5 在以組織學為標準的統合分析中 PPV 76.1%、NPV 85.4%（PMID 32544875）。也就是說：分級最高的那一類，仍有約四分之一到三分之二不是癌。",
+   "guideline_status": "四大系統的共同定位都是「決定是否穿刺」，不是「決定是否為癌」——ACR TI-RADS 白皮書的用語是提供結節管理的指引（PMID 28372962），EU-TIRADS 明言目的是篩選出應做 FNA 的病人（PMID 29167761）。",
+   "discordance": "與細胞學的落差最能說明超音波的極限：17 篇研究的統合分析顯示，在 Bethesda III（意義不明）結節上，ATA 特異度 0.90（95% CI 0.74–0.94）但敏感度僅 0.52（0.25–0.77）；K-TIRADS 敏感度最高 0.78（0.62–0.89）但特異度僅 0.53（0.31–0.74）；ACR TI-RADS 為 0.70／0.60；EU-TIRADS 為 0.38／0.81（PMID 34411290）。細胞學不確定時，影像也無法給出確定答案。",
+   "red_flags": [
+    "把 TR5／ATA 高度可疑講成「這是癌」是錯的——PPV 多半只有三成左右",
+    "高 NPV 是族群特定的：在惡性盛行率更高的轉診族群，同一個分級的 NPV 會下降",
+    "細胞學已經判為意義不明時，再回頭套超音波分層的補充價值有限，此時該考慮的是分子檢測、追蹤或手術"
+   ],
+   "caveats": "上述統合分析的原始研究多為回溯設計、以手術或細胞學為參考標準，存在明顯的驗證偏誤（做了手術的結節本來就比較可疑）。所有數字都與族群盛行率綁定，不能直接套到你的門診。",
+   "citations": [
+    {
+     "pmid": "24276450",
+     "title": "The accuracy of thyroid nodule ultrasound to predict thyroid cancer: systematic review and meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24276450/",
+     "year": 2014
+    },
+    {
+     "pmid": "25747526",
+     "title": "Thyroid ultrasound features and risk of carcinoma: a systematic review and meta-analysis of observational studies",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25747526/",
+     "year": 2015
+    },
+    {
+     "pmid": "39586159",
+     "title": "A real-world comparison of the diagnostic performances of six different TI-RADS guidelines, including ACR-/Kwak-/K-/EU-/ATA-/C-TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39586159/",
+     "year": 2025
+    },
+    {
+     "pmid": "30299457",
+     "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+     "year": 2019
+    },
+    {
+     "pmid": "34411290",
+     "title": "Ultrasonography and Fine-Needle Aspiration in Indeterminate Thyroid Nodules: A Systematic Review of Diagnostic Test Accuracy",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34411290/",
+     "year": 2022
+    },
+    {
+     "pmid": "32544875",
+     "title": "Performance of EU-TIRADS in malignancy risk stratification of thyroid nodules: a meta-analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32544875/",
+     "year": 2020
+    },
+    {
+     "pmid": "28372962",
+     "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+     "year": 2017
+    },
+    {
+     "pmid": "29167761",
+     "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29167761/",
+     "year": 2017
+    }
+   ]
+  },
+  {
+   "unit": "concept-2",
+   "name": "不同風險分層系統為什麼會在同一顆結節上吵架",
+   "evidence_grade": "contested",
+   "summary": "在統合分析的層級，四大系統的診斷表現「相當」；在單一結節的層級，它們的一致性可以低到 κ 0.05。這不是矛盾——高階平均值掩蓋了個案層級的分歧。分歧的主因是穿刺大小門檻與小結節判準的差異，其次是判讀者對特徵定義的不一致，而每個系統的判讀者間一致性本身都沒有達到 substantial。",
+   "diagnostic_accuracy": "29 篇、33,748 顆結節的統合分析結論為四系統整體表現相當（PMID 32303153）。12 篇、18,750 顆結節的統合分析中各系統 DOR 介於 2.2 至 4.9，head-to-head 比較顯示 ACR TI-RADS 相對 ATA（P = .002）與 K-TIRADS（P = .002）有較高的相對 DOR（PMID 31690937）。",
+   "clinical_benefit": "不必要穿刺率的差距才是實務上最有感的差異。477 位病人、502 次穿刺的前瞻研究中，五個系統可減少的穿刺數從 17.1% 到 53.4% 不等；ACR TI-RADS 減量最多（268/502，53.4%）且偽陰性率最低（2.2%，NPV 97.8%），K-TIRADS 則是唯一未顯示顯著鑑別力者（PMID 30299457）。266 顆結節的四系統比較中，ACR TI-RADS 的不必要穿刺率最低（238 顆良性結節中 141 顆，46%），K-TIRADS 與 ATA 的惡性結節穿刺率為 57.1%、ACR 與 EU-TIRADS 為 46.4%（PMID 37918114）。3774 顆結節的研究則顯示 ATA 與 EU-TIRADS 在各大小組別都是高敏感度、高不必要穿刺率，ACR TI-RADS 相反（PMID 41789443）。",
+   "guideline_status": "沒有國際共識指定單一系統；各系統分別是其發布學會的正式建議。近期大型比較研究把「建立統一 TIRADS」明列為目標，並指出必須先優化大結節的分層與穿刺門檻（PMID 41789443）。",
+   "interobserver": "同一批影像、同一群判讀者下的系統層級判讀者間 Cohen κ：AACE 0.44、ACR-TIRADS 0.42、EU-TIRADS 0.39、ATA 0.34；同一判讀者重測 κ 為 0.54、0.49、0.38、0.33。特徵層級最差的是 comet-tail artifact（κ 0.11）與 margin（0.33）（PMID 31952456）。四個系統沒有一個達到 substantial agreement——這代表「系統之間吵架」有一部分其實是「人跟人吵架」。",
+   "discordance": "3774 顆 >1 cm 結節（721 惡性）以標準化 lexicon 分類後，五系統間的一致性 κ 從 0.05 到 0.85 不等，各類別的結節分佈、惡性腫瘤分佈與惡性風險皆有顯著差異（皆 p < 0.001）；作者歸因於穿刺大小門檻、小結節判準與「不建議穿刺」的大結節判準三者的差異（PMID 41789443）。相對地，ACR TI-RADS 與 K-TIRADS 的最終分類一致性可達 κ 0.61，平均 AUC 無顯著差異（p = 0.52）（PMID 42306147）——一致性高低取決於比較哪兩個系統、哪個大小區間。",
+   "red_flags": [
+    "「四系統表現相當」是統合分析層級的敘述，不能推論到你眼前這一顆結節",
+    "同一顆結節得到不同建議時，先檢查是不是卡在大小門檻，而不是重新爭論影像特徵",
+    "系統再多也解決不了 margin 與 echogenic foci 判讀不一致這個上游問題"
+   ],
+   "caveats": "沒有任何隨機試驗以死亡率、手術率或過度診斷為終點比較不同分層系統，因此「哪個系統比較好」在病人結果的層級上是沒有答案的。本課程因此以比較表呈現差異，不強迫選出唯一答案。",
+   "citations": [
+    {
+     "pmid": "31952456",
+     "title": "Inter- and Intraobserver Agreement in the Assessment of Thyroid Nodule Ultrasound Features and Classification Systems: A Blinded Multicenter Study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31952456/",
+     "year": 2020
+    },
+    {
+     "pmid": "41789443",
+     "title": "Diagnostic Performance of Five Societies' Ultrasound Risk Stratification Systems for Thyroid Malignancy According to Nodule Size: A Comparison Using a Standardized Ultrasound Lexicon",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41789443/",
+     "year": 2026
+    },
+    {
+     "pmid": "30299457",
+     "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+     "year": 2019
+    },
+    {
+     "pmid": "42306147",
+     "title": "Comparative Analysis of ACR TI-RADS and K-TIRADS: Inter-System Agreement and Diagnostic Performance Using a Single Study Cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42306147/",
+     "year": 2026
+    },
+    {
+     "pmid": "31690937",
+     "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
+     "year": 2020,
+     "last_verified": "2026-08-02"
+    },
+    {
+     "pmid": "32303153",
+     "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+     "year": 2020
+    },
+    {
+     "pmid": "37918114",
+     "title": "Diagnostic Performance of Thyroid Nodule Risk Stratification Systems: Comparison of ACR-TIRADS, EU-TIRADS, K-TIRADS, and ATA Guidelines",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37918114/",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "unit": "concept-3",
+   "name": "從公開資源策展的課程本身有什麼限制",
+   "evidence_grade": "educational_demo_only",
+   "summary": "這一條沒有文獻，也不該有。前兩條立場聲明可以用 PubMed 背書，這一條不行——它講的是這門課的製作方式本身，屬於誠實揭露而非實證主張。把它包裝成有文獻支持，反而違背這門課的立場。本課程的所有影音與病例都是第三方機構、期刊或創作者的公開作品，本站只做策展、查核與連結，不下載、不剪輯、不重新散布，也不代管任何患者影像。",
+   "red_flags": [
+    "本課程無法驗證原始影像的去識別化品質：影片中的病人年齡、日期、機構識別碼、機器序號是否已妥善移除，只有原始上傳者知道",
+    "本課程無法查核講者的財務利益關係：多數公開影音沒有揭露 COI，即使有揭露也無從驗證其完整性",
+    "公開資源無法取代 supervision 與 credentialing：看完介入操作的影片不等於具備執行資格",
+    "策展本身帶有選擇偏誤：本課程只能收錄公開可及、語言可讀、連結仍存活的資源，這與『最好的教材』不是同一件事"
+   ],
+   "caveats": "本課程為醫學教育內容，不構成對特定病人的診斷或治療建議。所有標示的證據等級反映的是查核當下的狀態，指引會改版，請以最新原文為準。任何介入操作都應在具備資格的督導下、於符合規範的場域執行；當地的 credentialing、supervision、感染控制與法規要求，任何公開影音都不能取代。外部連結的可用性、內容正確性與授權條件由原權利人決定，本站無法保證其不會變更或下架；發現失效或不當內容時，請以最後查核日期判斷資訊的新鮮度。",
+   "citations": []
+  }
+ ]
+}

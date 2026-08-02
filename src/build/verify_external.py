@@ -13,21 +13,24 @@
 
 from __future__ import annotations
 
+import contextlib
 import datetime
-import gzip
 import html
 import json
 import os
 import re
 import sys
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import zlib
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import sources as SRC  # noqa: E402
+import sources as SRC
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
@@ -44,18 +47,53 @@ TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 CANON = re.compile(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', re.I)
 LOGIN_HINTS = re.compile(
     r"sign in to continue|please log ?in|subscription required|purchase access|"
-    r"institutional login|member login|create an account to", re.I
+    r"institutional login|member login|create an account to",
+    re.I,
 )
+
+
+# 小型期刊站（例如 kjronline.org）承受不住 8 條連線同時打過去，會直接斷線——
+# 那不是連結失效，是我們太粗魯。每個網域一次只發一個請求，並在請求之間留間隔。
+_HOST_LOCKS: dict[str, threading.Lock] = {}
+_LOCKS_GUARD = threading.Lock()
+HOST_DELAY = 0.7
+
+
+def _host_lock(url: str) -> threading.Lock:
+    host = urllib.parse.urlparse(url).netloc.lower()
+    with _LOCKS_GUARD:
+        return _HOST_LOCKS.setdefault(host, threading.Lock())
+
+
+CHROME = re.compile(r"<(nav|header|footer)\b.*?</\1>", re.I | re.S)
+
+
+def strip_chrome(text: str) -> str:
+    """去掉導覽列、頁首與頁尾再找登入牆。
+
+    幾乎每個學會網站的導覽列都有「Please login」，那是站台的會員入口，
+    不代表這一頁需要登入。不先拿掉，偵測器會把一半的公開頁面誤報成付費牆。
+    """
+    return CHROME.sub(" ", text)
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     """自己跟重導向，才記得住整條鏈。"""
 
-    def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: D102
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
         return None
 
 
-def fetch(url: str, hops: int = 0) -> dict:
+def fetch(url: str, retries: int = 2) -> dict:
+    """同一網域序列化請求；連線層失敗會退避重試，避免把伺服器的節流誤判成死連結。"""
+    with _host_lock(url):
+        try:
+            return _fetch(url, retries)
+        finally:
+            time.sleep(HOST_DELAY)
+
+
+def _fetch(url: str, retries: int) -> dict:
     out = {"url": url, "ok": False, "status": None, "redirects": [], "final_url": url}
     opener = urllib.request.build_opener(NoRedirect)
     seen = []
@@ -79,25 +117,31 @@ def fetch(url: str, hops: int = 0) -> dict:
                 cur = nxt
                 continue
             out["status"] = e.code
-            out["note"] = {403: "被擋（可能是 bot 防護，需人工確認）",
-                           404: "頁面不存在",
-                           410: "已移除"}.get(e.code, f"HTTP {e.code}")
+            out["note"] = {
+                403: "被擋（可能是 bot 防護，需人工確認）",
+                404: "頁面不存在",
+                410: "已移除",
+            }.get(e.code, f"HTTP {e.code}")
             # 403 常常只是 WAF 擋 bot，網頁對真人是活的——標為待人工確認而非死連結
             out["manual"] = e.code in (403, 429)
             out["redirects"] = seen
             out["final_url"] = cur
             return out
         except Exception as e:
+            # 一次網路抖動不該被寫成「連結失效」——重試一次再判定
+            if retries > 0:
+                time.sleep(2.0 * (3 - retries))  # 2s、4s 退避
+                return _fetch(url, retries - 1)
             out["note"] = f"連線失敗：{type(e).__name__}"
             out["redirects"] = seen
             return out
 
         body = res.read(400_000)
         if res.headers.get("Content-Encoding") == "gzip":
-            try:
-                body = gzip.decompress(body)
-            except OSError:
-                pass
+            # 我們只讀前 400 KB，gzip 串流一定是截斷的——用 decompressobj 才能
+            # 拿到已解出的部分；gzip.decompress() 會因為找不到結尾標記而丟 EOFError。
+            with contextlib.suppress(zlib.error, OSError, EOFError):
+                body = zlib.decompressobj(zlib.MAX_WBITS | 16).decompress(body)
         text = body.decode("utf-8", "replace")
         out.update(
             ok=True,
@@ -111,7 +155,7 @@ def fetch(url: str, hops: int = 0) -> dict:
             out["title"] = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip()[:160]
         if m := CANON.search(text):
             out["canonical"] = html.unescape(m.group(1))
-        out["login_wall"] = bool(LOGIN_HINTS.search(text))
+        out["login_wall"] = bool(LOGIN_HINTS.search(strip_chrome(text)))
         return out
     out["note"] = "重導向次數過多"
     out["redirects"] = seen
@@ -138,24 +182,26 @@ def stamp(passed: set[str]) -> int:
             blob = json.loads(path.read_text())
         except json.JSONDecodeError:
             continue
-        changed = [0]
-
-        def walk_node(node):
-            if isinstance(node, dict):
-                if node.get("url") in passed and node.get("last_verified") != today:
-                    node["last_verified"] = today
-                    changed[0] += 1
-                for v in node.values():
-                    walk_node(v)
-            elif isinstance(node, list):
-                for v in node:
-                    walk_node(v)
-
-        walk_node(blob)
-        if changed[0]:
+        changed = _stamp_node(blob, passed, today)
+        if changed:
             path.write_text(json.dumps(blob, ensure_ascii=False, indent=1) + "\n")
-            touched += changed[0]
+            touched += changed
     return touched
+
+
+def _stamp_node(node, passed: set[str], today: str) -> int:
+    """就地更新 last_verified，回傳改了幾個欄位。"""
+    changed = 0
+    if isinstance(node, dict):
+        if node.get("url") in passed and node.get("last_verified") != today:
+            node["last_verified"] = today
+            changed += 1
+        for v in node.values():
+            changed += _stamp_node(v, passed, today)
+    elif isinstance(node, list):
+        for v in node:
+            changed += _stamp_node(v, passed, today)
+    return changed
 
 
 def main() -> int:
@@ -194,9 +240,19 @@ def main() -> int:
     )
 
     if as_json:
-        print(json.dumps(
-            {"ok": not dead, "total": len(urls), "dead": list(dead), "manual": list(manual),
-             "login_wall": list(walled)}, ensure_ascii=False, indent=1))
+        print(
+            json.dumps(
+                {
+                    "ok": not dead,
+                    "total": len(urls),
+                    "dead": list(dead),
+                    "manual": list(manual),
+                    "login_wall": list(walled),
+                },
+                ensure_ascii=False,
+                indent=1,
+            )
+        )
         return 1 if dead else 0
 
     for label, group, mark in (
@@ -215,7 +271,9 @@ def main() -> int:
         print()
 
     ok = len(passed)
-    print(f"通過 {ok} / {len(urls)}（{ok / len(urls) * 100:.1f}%）· 報告寫入 {REPORT.relative_to(ROOT)}")
+    print(
+        f"通過 {ok} / {len(urls)}（{ok / len(urls) * 100:.1f}%）· 報告寫入 {REPORT.relative_to(ROOT)}"
+    )
 
     if do_stamp:
         n = stamp(passed)

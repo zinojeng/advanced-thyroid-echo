@@ -1,0 +1,372 @@
+{
+  "categories": [
+    {
+      "id": "fna-technique",
+      "name": "細針穿刺技術與檢體適足性",
+      "evidence_grade": "moderate",
+      "summary": "「用超音波導引」這一步有 meta-analysis 支持：pooled sensitivity 90% vs 觸診導引 76%，AUC 0.92 vs 0.827。但導引之後的技術細節證據就薄很多——毛細管法相對抽吸法可降低 nondiagnostic 的 relative risk 至 0.57（CI 0.34–0.92），而針號在兩份 meta-analysis 與一份 RCT 裡都看不出差異（23G/25G/27G 適足率 88.5%/90.4%/89.7%）。ROSE 能把平均適足率從 83% 拉到 92%，但改善幅度幾乎完全由「原本適足率有多低」決定（metaregression t=-12.7, p<0.001），也就是本來就做得好的單位加了 ROSE 沒好處。課堂上值得講清楚：真正影響檢體品質的是導引與取樣行為，不是換一支更粗的針。",
+      "citations": [
+        {
+          "pmid": "35843955",
+          "title": "Diagnostic accuracy of palpation versus ultrasound-guided fine needle aspiration biopsy for diagnosis of malignancy in thyroid nodules: a systematic review and meta-analysis.",
+          "journal": "BMC Endocr Disord",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "11 篇研究、2382 位受試者。超音波導引 FNAB 的 pooled sensitivity 90%（95% CI 81–95%）、specificity 80%、AUC 0.92、DOR 40；觸診導引為 sensitivity 76%（95% CI 49–89%）、specificity 77%、AUC 0.827、DOR 11.6。AUC 差異 0.093（p=0.000023）。"
+        },
+        {
+          "pmid": "29742978",
+          "title": "Needle Biopsy of Routine Thyroid Nodules Should Be Performed Using a Capillary Action Technique with 24- to 27-Gauge Needles: A Systematic Review and Meta-Analysis.",
+          "journal": "Thyroid",
+          "year": 2018,
+          "design": "meta-analysis",
+          "takeaway": "24 篇、4428 顆結節。毛細管法相對於抽吸法顯著降低 nondiagnostic cytopathology 的相對風險（RR 0.57，95% CI 0.34–0.92，p=0.02）；針號方面只看到偏好較細針的非顯著趨勢，因此建議不抽吸、用 24–27G。"
+        },
+        {
+          "pmid": "40883178",
+          "title": "Impact of Needle Gauge Selection on Sample Adequacy in Ultrasound-Guided Thyroid Fine-Needle Aspiration: A Systematic Review and Meta-analysis.",
+          "journal": "Acad Radiol",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "16 篇研究、3347 位病人、3438 顆結節。粗針與細針之間的檢體適足率無統計差異（差值 -0.61%，95% CI -4.18% 起）。"
+        },
+        {
+          "pmid": "29288581",
+          "title": "Comparison of Different-Gauge Needles for Fine-Needle Aspiration Biopsy of Thyroid Nodules.",
+          "journal": "J Ultrasound Med",
+          "year": 2018,
+          "design": "RCT",
+          "takeaway": "156 顆結節、每顆同時以 23G／25G／27G 各穿刺一次。適足率分別為 88.5%、90.4%、89.7%（p>0.05），無差異；但低回音結節的檢體不足機率顯著高於高回音結節（p<0.05），結節大小則無影響。"
+        },
+        {
+          "pmid": "23043247",
+          "title": "Rapid onsite evaluation improves the adequacy of fine-needle aspiration for thyroid lesions: a systematic review and meta-analysis.",
+          "journal": "Thyroid",
+          "year": 2013,
+          "design": "meta-analysis",
+          "takeaway": "8 篇雙臂研究。平均適足率無 ROSE 為 83%、有 ROSE 為 92%；但 metaregression 顯示適足率的改善幅度與「無 ROSE 時的基礎適足率」高度相關（t=-12.7, p<0.001），該變數解釋了研究間 90% 的變異——ROSE 的效益幾乎只出現在原本表現差的單位。"
+        }
+      ]
+    },
+    {
+      "id": "core-biopsy",
+      "name": "粗針切片",
+      "evidence_grade": "moderate",
+      "summary": "CNB 最站得住腳的適應症是「前次 FNA nondiagnostic」：pooled nondiagnostic 率 6.4% vs 重做 FNA 的 36.5%（p<0.0001），sensitivity 89.8% vs 60.6%（p=0.022），specificity 兩者都約 99%。2025 年針對 inconclusive 結節的 meta-analysis 也複製了方向（nondiagnostic OR 0.12，累積 sensitivity 75.1% vs 56.5%）。安全性方面，39 篇、14818 位病人的 pooled 併發症率 1.11%，重大併發症僅 0.06%。限制要說清楚：這些幾乎全是韓國單中心的回溯性資料，沒有 head-to-head RCT，且 CNB 用在 indeterminate 結節時仍有 25.1% 判讀不確定，sensitivity 在各研究間從 44.7% 擺盪到 85.0%。",
+      "citations": [
+        {
+          "pmid": "27176143",
+          "title": "THE ROLE OF CORE-NEEDLE BIOPSY FOR THYROID NODULES WITH INITIALLY NONDIAGNOSTIC FINE-NEEDLE ASPIRATION RESULTS: A SYSTEMATIC REVIEW AND META-ANALYSIS.",
+          "journal": "Endocr Pract",
+          "year": 2016,
+          "design": "meta-analysis",
+          "takeaway": "4 篇、1028 顆前次 FNA nondiagnostic 的結節。CNB 的 nondiagnostic 率 6.4%，顯著低於重做 FNA 的 36.5%（p<0.0001）；診斷惡性的 sensitivity 89.8% vs 60.6%（p=0.022），specificity 99.2% vs 99.0%（無差異）。兩組皆無重大併發症。"
+        },
+        {
+          "pmid": "28473343",
+          "title": "The Role of Core Needle Biopsy for Thyroid Nodules with Initially Indeterminate Results on Previous Fine-Needle Aspiration: A Systematic Review and Meta-Analysis.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": 2017,
+          "design": "meta-analysis",
+          "takeaway": "9 篇、2240 位病人／2245 顆前次 FNA indeterminate 的結節。CNB 的 nondiagnostic 率僅 1.8%（95% CI 0.4–3.2%），但仍有 25.1%（95% CI 15.4–34.9%）結果為 inconclusive；診斷惡性的 sensitivity 在各研究間從 44.7% 到 85.0% 不等，specificity 一律 100%。"
+        },
+        {
+          "pmid": "39843308",
+          "title": "Comparison of core-needle biopsy and repeat fine-needle aspiration biopsy for thyroid nodules with initially inconclusive findings: a systematic review, diagnostic accuracy meta-analysis, and meta-regression.",
+          "journal": "J Am Soc Cytopathol",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "9 篇研究。相較重做 FNAB，CNB 的 nondiagnostic（OR 0.12，95% CI 0.06–0.23）、AUS（OR 0.34）與 inconclusive（OR 0.12）結果都顯著較少；累積 sensitivity 75.1% vs 56.5%，但 specificity 無差異（99.9% vs 99.7%）。兩者皆無重大併發症。"
+        },
+        {
+          "pmid": "29589112",
+          "title": "Complications following ultrasound-guided core needle biopsy of thyroid nodules: a systematic review and meta-analysis.",
+          "journal": "Eur Radiol",
+          "year": 2018,
+          "design": "meta-analysis",
+          "takeaway": "39 篇、14818 位病人。整體併發症 pooled proportion 1.11%（95% CI 0.64–1.51），其中重大併發症僅 0.06%（95% CI 0.02–0.10）、輕微併發症 1.08%。亞洲／非亞洲、放射科／非放射科操作者、結節 <20mm／≥20mm 之間皆無顯著差異。"
+        },
+        {
+          "pmid": "27090114",
+          "title": "Comparison of diagnostic yield of core-needle and fine-needle aspiration biopsies of thyroid lesions: Systematic review and meta-analysis.",
+          "journal": "Eur Radiol",
+          "year": 2017,
+          "design": "meta-analysis",
+          "takeaway": "11 篇研究。CNB 得到 nondiagnostic 結果的 pooled risk ratio 為 0.27（p<0.0001），約為 FNAB 的四分之一；限於前次 FNAB nondiagnostic 的病灶時 RR 為 0.22（p<0.0001）。"
+        }
+      ]
+    },
+    {
+      "id": "washout",
+      "name": "沖洗液 thyroglobulin／PTH 檢驗",
+      "evidence_grade": "strong",
+      "summary": "FNA-Tg 的診斷準確度是本課程證據最紮實的項目之一：三份獨立 meta-analysis（2014 年 24 篇／2865 顆淋巴結、2020 年 22 篇／2670 顆、2025 年）給出高度一致的 pooled sensitivity 0.91–0.95、specificity 0.92–0.95，且甲狀腺全切後表現更好（sensitivity 0.96–0.97，DOR 300–408）。但 cut-off 完全沒有共識：meta-regression 明確指出 cut-off 值本身就是異質性來源，1 ng/mL 的 sensitivity 最高、40 ng/mL 的 specificity 最高，三份 meta-analysis 的結論都是「需要方法與 cut-off 的標準化」。PTH washout 的證據等級低一階：只有單中心回溯性資料，各研究 specificity 75–100%、sensitivity 70–100%，一個常用做法是改用「沖洗液 PTH／血清 PTH 比值」而非絕對值。",
+      "citations": [
+        {
+          "pmid": "24617715",
+          "title": "Thyroglobulin in lymph node fine-needle aspiration washout: a systematic review and meta-analysis of diagnostic accuracy.",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2014,
+          "design": "meta-analysis",
+          "takeaway": "24 篇、2865 顆淋巴結。整體 sensitivity 95.0%（95% CI 93.7–96.0）、specificity 94.5%、DOR 338.91。甲狀腺仍在者（410 顆）掉到 sensitivity 86.2%、specificity 90.2%、DOR 56.6；甲狀腺全切後（1007 顆）為 sensitivity 96.9%、specificity 94.1%、DOR 407.65。作者結論：需要更好的病人選擇、檢驗方法與 cut-off 標準化。"
+        },
+        {
+          "pmid": "40830071",
+          "title": "Diagnostic Efficiency of Thyroglobulin in Lymph Node Fine-needle Aspiration Washout: A Systematic Review and Meta-analysis.",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2025,
+          "design": "meta-analysis",
+          "takeaway": "FNA-Tg 對 PTC 頸部淋巴結轉移的 pooled sensitivity 0.94（95% CI 0.91–0.96）、specificity 0.92、DOR 174.2、AUC 0.98；甲狀腺切除後 sensitivity 升至 0.96、specificity 0.93、DOR 305.9。FNA-Tg 與血清 Tg 僅弱相關，且不受血清 Tg 抗體干擾。"
+        },
+        {
+          "pmid": "31723088",
+          "title": "Diagnostic values of thyroglobulin in lymph node fine-needle aspiration washout: a systematic review and meta-analysis diagnostic values of FNA-Tg.",
+          "journal": "Endocr J",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "22 篇、2670 顆淋巴結。Pooled sensitivity 0.91（95% CI 0.87–0.93）、specificity 0.94（95% CI 0.91–0.96）。Meta-regression 顯示 cut-off 值與血清 Tg 狀態是異質性來源；次群組分析中 1 ng/mL 的 sensitivity 最高、40 ng/mL 的 specificity 最高——這正是「沒有共識 cut-off」的直接證據。"
+        },
+        {
+          "pmid": "30004132",
+          "title": "Diagnostic accuracy of parathyroid hormone levels in washout samples of suspicious parathyroid adenomas: A single-centre retrospective cohort study.",
+          "journal": "Clin Endocrinol (Oxf)",
+          "year": 2018,
+          "design": "retrospective cohort",
+          "takeaway": "FNA-PTH washout 的診斷準確度 90.8%，遠高於細胞學（7.92%）與 MIBI（67.8%）；MIBI 與 PTH washout 的 PPV 與 specificity 皆 100%。沖洗液 PTH >436.5 pg/mL 時 sensitivity 90.3%／specificity 88.9%（AUC 94.3），沖洗液／血清 PTH 比值 >3.05 時 sensitivity 91.2%／specificity 89.0%（AUC 94.5）。作者指出文獻中 specificity 75–100%、sensitivity 70–100%，並無明確 cut-off，因此傾向使用比值。"
+        },
+        {
+          "pmid": "35963762",
+          "title": "Positive predictive values of ultrasound-guided fine-needle aspiration with parathyroid hormone assay and Tc-99m sestamibi scintigraphy in sporadic primary hyperparathyroidism.",
+          "journal": "Eur Ann Otorhinolaryngol Head Neck Dis",
+          "year": 2023,
+          "design": "retrospective cohort",
+          "takeaway": "117 位未手術的散發性原發性副甲狀腺亢進病人。US-guided FNA-PTH 的 sensitivity 72%、specificity 92%、PPV 99%、NPV 28%；sestamibi 為 89%／42%／93%／32%。Sestamibi 的 sensitivity 顯著較佳（p=0.0052），FNA 的 specificity 顯著較佳（p=0.0143），PPV 與 NPV 無顯著差異。定位錯誤率 FNA 8%、sestamibi 12%。"
+        }
+      ]
+    },
+    {
+      "id": "ln-assessment",
+      "name": "頸部淋巴結評估與術前 mapping",
+      "evidence_grade": "moderate",
+      "summary": "超音波在中央區與側頸的表現差了整整一個量級，而且被反覆複製：19 篇／4014 位病人的 meta-analysis 中，中央區 sensitivity 僅 0.33（95% CI 0.31–0.35，AUC 0.69），側頸 0.70（AUC 0.88）；47 篇／31942 筆觀察的 JAMA Otolaryngol meta-analysis 更低，中央區 sensitivity 28%（CT 39%，p=0.004），側頸 73%（CT 77%，無差異）。相對地 specificity 都不錯（中央區 93–95%）。術前 mapping 的臨床效益證據來自較舊的單中心回溯資料：超音波在 39% 的病人身上改變了手術術式，其中初次手術族群有 20% 被發現理學檢查沒摸到的病灶、再次手術族群高達 68%。這個 39% 常被引用，但從未在前瞻多中心設計中重現。",
+      "citations": [
+        {
+          "pmid": "30777203",
+          "title": "Meta-analysis of ultrasound for cervical lymph nodes in papillary thyroid cancer: Diagnosis of central and lateral compartment nodal metastases.",
+          "journal": "Eur J Radiol",
+          "year": 2019,
+          "design": "meta-analysis",
+          "takeaway": "19 篇、4014 位病人。超音波偵測中央區轉移的 pooled sensitivity 0.33（95% CI 0.31–0.35）、specificity 0.93、DOR 5.63、AUC 0.69；側頸為 sensitivity 0.70、specificity 0.84、DOR 18.7、AUC 0.88。實際中央區轉移發生率 48.0%——超音波漏掉大多數。"
+        },
+        {
+          "pmid": "34817554",
+          "title": "Diagnostic Test Accuracy of Ultrasonography vs Computed Tomography for Papillary Thyroid Cancer Cervical Lymph Node Metastasis: A Systematic Review and Meta-analysis.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "47 篇、31942 筆觀察。側頸轉移：US sensitivity 73%（95% CI 64–80）vs CT 77%（p=0.11），specificity 89% vs 88%（p=0.79），無差異。中央區：CT sensitivity 39%（95% CI 27–52）顯著高於 US 的 28%（95% CI 21–36，p=0.004），但 US specificity 95% 高於 CT 87%（p<0.001）。US 偵測甲狀腺外侵犯 sensitivity 91%、specificity 僅 47%。"
+        },
+        {
+          "pmid": "21344423",
+          "title": "Efficacy of preoperative neck ultrasound in the detection of cervical lymph node metastasis from thyroid cancer.",
+          "journal": "Laryngoscope",
+          "year": 2011,
+          "design": "multicenter cohort",
+          "takeaway": "前瞻性世代。外科醫師執行之術前頸部超音波預測中央區轉移 sensitivity 30.0%、specificity 86.8%；側頸 sensitivity 93.8%、specificity 80.0%。在復發後接受再次頸部廓清的次群組中，側頸的 sensitivity 與 specificity 皆達 100%——復發情境下的側頸評估是超音波最強的場景。"
+        },
+        {
+          "pmid": "14668727",
+          "title": "Role of preoperative ultrasonography in the surgical management of patients with thyroid cancer.",
+          "journal": "Surgery",
+          "year": 2003,
+          "design": "retrospective cohort",
+          "takeaway": "212 位病人。超音波在理學檢查正常的頸部分區找到額外轉移：初次手術族群 21/107（20%）、持續性疾病再手術族群 9/28（32%）、復發再手術族群 52/77（68%）。整體有 82/212（39%）的病人因超音波結果而改變了手術術式。這是「術前 mapping 改變手術範圍比例」最常被引用的數字，但為單中心回溯性資料。"
+        }
+      ]
+    },
+    {
+      "id": "postop-surveillance",
+      "name": "術後甲狀腺床與復發追蹤",
+      "evidence_grade": "contested",
+      "summary": "在 ATA 低危險 PTC 且初次術後評估無結構性疾病的病人身上，例行追蹤超音波找到偽陽性的機率遠高於找到真正的復發：中位追蹤 8 年、每人中位做 5 次超音波，偽陽性異常出現在 67%（114/171）的病人，而具臨床意義的結構性復發只有 1.2%（2/171）。甲狀腺床小結節的自然史也支持保守：191 位病人中位追蹤 5 年，只有 9% 的甲狀腺床結節長大，成長速率 1.3 mm/年；沒有可疑超音波特徵時的 NPV 為 0.97。ETA 分類可以把風險分開（indeterminate 病灶成長率 8% vs suspicious 36%，p=0.01），中位「掃描恢復正常」時間 2.9 年。這些都是單中心回溯性資料，且沒有任何研究顯示密集追蹤改善存活——「多久掃一次」在文獻上仍是空白。",
+      "citations": [
+        {
+          "pmid": "26372300",
+          "title": "SERIAL NECK ULTRASOUND IS MORE LIKELY TO IDENTIFY FALSE-POSITIVE ABNORMALITIES THAN CLINICALLY SIGNIFICANT DISEASE IN LOW-RISK PAPILLARY THYROID CANCER PATIENTS.",
+          "journal": "Endocr Pract",
+          "year": 2015,
+          "design": "retrospective cohort",
+          "takeaway": "171 位 ATA 低危險 PTC 病人，中位追蹤 8 年、每人中位 5 次（範圍 2–17 次）頸部超音波。結構性復發（皆 ≤1 cm）僅 1.2%（2/171）；偽陽性異常出現在 67%（114/171），導致額外檢查卻未找到具臨床意義的疾病。"
+        },
+        {
+          "pmid": "21809914",
+          "title": "Ultrasonographically detected small thyroid bed nodules identified after total thyroidectomy for differentiated thyroid cancer seldom show clinically significant structural progression.",
+          "journal": "Thyroid",
+          "year": 2011,
+          "design": "retrospective cohort",
+          "takeaway": "191 位術後首次超音波有甲狀腺床結節（≤11 mm）的病人，中位追蹤 5 年。僅 9%（17/191）有結節變大，中位大小 5 mm，成長速率 1.3 mm/年。無可疑超音波特徵時預測「不會長大」的 NPV 0.97、無異常頸部淋巴結時 0.94、血清 Tg 未上升時 0.93。"
+        },
+        {
+          "pmid": "27186860",
+          "title": "Risk Stratification of Neck Lesions Detected Sonographically During the Follow-Up of Differentiated Thyroid Cancer.",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2016,
+          "design": "retrospective cohort",
+          "takeaway": "637 位 DTC 中僅 58 位（9%）有連續兩次以上異常術後超音波，共追蹤 113 個病灶（18 個甲狀腺床腫塊、95 顆淋巴結），中位 3.7 年。依 ETA 分類，indeterminate 組的病灶成長率（>3 mm）8% 顯著低於 suspicious 組的 36%（p=0.01），持續存在率 64% vs 97%（p=0.014）；中位掃描恢復正常時間 2.9 年。"
+        },
+        {
+          "pmid": "24847448",
+          "title": "2013 European thyroid association guidelines for cervical ultrasound scan and ultrasound-guided techniques in the postoperative management of patients with thyroid cancer.",
+          "journal": "Eur Thyroid J",
+          "year": 2013,
+          "design": "guideline",
+          "takeaway": "ETA 對術後頸部超音波所見提出正式分類（normal／indeterminate／suspicious），是後續風險分層研究（如 PMID 27186860）驗證的對象；提供術後超音波掃描與導引技術的操作規範。"
+        }
+      ]
+    },
+    {
+      "id": "active-surveillance",
+      "name": "低危險乳突微小癌的主動監測",
+      "evidence_grade": "moderate",
+      "summary": "AS 的短中期腫瘤學安全性數據相當一致：meta-analysis 顯示 5 年腫瘤增大 ≥3 mm 的 pooled proportion 為 5.3%（95% CI 4.4–6.4%），5 年新出現淋巴結轉移 1.6%（95% CI 1.1–2.4%）。Kuma 醫院 1235 位病人平均觀察 75 個月，無人出現遠端轉移或死於 PTC，年輕是進展的獨立預測因子；轉手術者 191 人（約 15%），且術後幾乎無復發。外推性是真正的弱點：長期資料幾乎全來自日本／韓國單中心，唯一較大的西方世代（MSK，291 人）中位追蹤僅 25 個月、5 年累積增大率 12.1%，明顯高於日本數據。影像預測因子的證據也弱——meta-analysis 直接指出「相當比例的延遲手術原因既不是腫瘤增大也不是淋巴結轉移」，換句話說決定開刀的常常是焦慮而非影像。",
+      "citations": [
+        {
+          "pmid": "31368412",
+          "title": "Active Surveillance for Small Papillary Thyroid Cancer: A Systematic Review and Meta-Analysis.",
+          "journal": "Thyroid",
+          "year": 2019,
+          "design": "meta-analysis",
+          "takeaway": "5 年腫瘤增大 ≥3 mm 的 pooled proportion 5.3%（95% CI 4.4–6.4%），5 年淋巴結轉移 1.6%（95% CI 1.1–2.4%）。作者同時指出，許多接受延遲手術的病人，其手術原因並非腫瘤增大或淋巴結轉移。"
+        },
+        {
+          "pmid": "24001104",
+          "title": "Patient age is significantly related to the progression of papillary microcarcinoma of the thyroid under observation.",
+          "journal": "Thyroid",
+          "year": 2014,
+          "design": "retrospective cohort",
+          "takeaway": "1993–2011 年 1235 位選擇觀察的低危險 PTMC，觀察期 18–227 個月（平均 75 個月）。年輕（<40 歲）是進展的獨立預測因子，年長者（≥60 歲）進展比例最低；1235 人中無人出現遠端轉移或死於 PTC。191 位（約 15%）後續接受手術，除一位殘餘甲狀腺復發外皆無復發、無人死於 PTC。"
+        },
+        {
+          "pmid": "28859191",
+          "title": "Natural History and Tumor Volume Kinetics of Papillary Thyroid Cancers During Active Surveillance.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": 2017,
+          "design": "retrospective cohort",
+          "takeaway": "美國單中心 291 位低危險 PTC（≤1.5 cm）病人，中位監測 25 個月（6–166）。直徑增大 ≥3 mm 者 11/291（3.8%），累積發生率 2 年 2.5%、5 年 12.1%；無區域或遠端轉移發生。三維體積測量比直徑提早中位 8.2 個月（3–46 個月）偵測到成長。年輕與初診風險分類是成長的獨立預測因子。"
+        },
+        {
+          "pmid": "40598902",
+          "title": "2025 Korean Thyroid Association Clinical Management Guideline on Active Surveillance for Low-Risk Papillary Thyroid Carcinoma.",
+          "journal": "Endocrinol Metab (Seoul)",
+          "year": 2025,
+          "design": "guideline",
+          "takeaway": "適用於病理確認 Bethesda V–VI、無淋巴結／遠端轉移、無明顯甲狀腺外侵犯、未侵犯氣管或喉返神經、非侵襲性組織型的 PTMC。基線需由有經驗操作者執行高解析度頸部超音波以排除上述特徵；追蹤為前 2 年每 6 個月、之後每年一次超音波與甲狀腺功能。指引明言仍存在諸多不確定性（remaining uncertainties）。"
+        }
+      ]
+    },
+    {
+      "id": "thermal-ablation",
+      "name": "熱消融與酒精消融後的影像追蹤",
+      "evidence_grade": "contested",
+      "summary": "良性結節的體積縮小率有紮實數據：單中心 456 顆結節、中位追蹤 90 個月，平均 VRR 2 年 81%、5 年 90%、≥10 年 94%，但同一批資料中 12%（53/456）出現再生長，6% 的病人最終仍需手術，初始體積 ≥20 mL 者再生長風險為 <10 mL 者的 2.3 倍。酒精消融用於囊性結節的累積 VRR 為 83.9%（95% CI 79.4–88.5%），重大併發症 0.53%。惡性適應症才是真正有爭議的地方：RFA 治療低危險 mPTC 的 15 篇 meta-analysis 中 pooled 完全消失率 79%、腫瘤進展率 1.5%，但平均追蹤僅 33 個月，且沒有任何隨機比較試驗、沒有存活終點。ATA 2023 聲明本身也只處理「安全執行與訓練原則」，明言不建議適應症或宣稱結果。要教就要講明：VRR 是替代指標，不是腫瘤學終點。",
+      "citations": [
+        {
+          "pmid": "39041607",
+          "title": "Radiofrequency Ablation for the Treatment of Benign Thyroid Nodules: 10-Year Experience.",
+          "journal": "Thyroid",
+          "year": 2024,
+          "design": "retrospective cohort",
+          "takeaway": "421 位病人、456 顆良性非功能性結節（平均體積 21±23 mL），中位追蹤 90 個月（IQR 24–143）。平均 VRR 2 年 81%、5 年 90%、≥10 年 94%。整體再生長 12%（53/456）；初始體積 ≥20 mL 者再生長風險顯著較高（HR 2.315，95% CI 1.183–4.530，p=0.014）。6%（26/421）接受延遲手術，其中 22 例是因為新發現的甲狀腺腫瘤（21 例惡性）。整體併發症率 2.4%。"
+        },
+        {
+          "pmid": "32615718",
+          "title": "Long-Term Results of Thermal Ablation of Benign Thyroid Nodules: A Systematic Review and Meta-Analysis.",
+          "journal": "Endocrinol Metab (Seoul)",
+          "year": 2020,
+          "design": "meta-analysis",
+          "takeaway": "僅納入追蹤 >3 年的研究。Pooled VRR 呈現 12 個月前快速縮小、12–36 個月進入平原期、36 個月後再度縮小的軌跡；整體併發症率 3.8%，無非預期的延遲併發症。次群組分析中 RFA 的 pooled VRR 優於雷射消融，再生長與延遲手術也較少。"
+        },
+        {
+          "pmid": "33677930",
+          "title": "Efficacy of Ethanol Ablation for Benign Thyroid Cysts and Predominantly Cystic Nodules: A Systematic Review and Meta-Analysis.",
+          "journal": "Endocrinol Metab (Seoul)",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "19 篇（4 篇 RCT、15 篇非隨機）、1514 位受試者。酒精消融累積 VRR 83.908%（95% CI 79.358–88.457%），VRR 顯著優於其他非手術治療合計（SMD 0.381，p=0.030），但治療成功率無顯著差異（OR 0.867，p=0.880）；與 RFA 相比 VRR 與成功率皆無顯著差異。重大併發症僅 6 位（0.53%）自限性聲音沙啞。"
+        },
+        {
+          "pmid": "35142816",
+          "title": "Assessment of Radiofrequency Ablation for Papillary Microcarcinoma of the Thyroid: A Systematic Review and Meta-analysis.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "15 篇、1770 位病人／1822 顆低危險 mPTC，平均追蹤僅 33.0±11.4 個月（範圍 6–131）。Pooled 完全消失率 79%（95% CI 65–94%）；整體腫瘤進展率 1.5%（26 人），其中消融區局部殘留 0.4%、甲狀腺內新病灶 0.9%、淋巴結轉移 0.2%，無遠端轉移。重大併發症 3 例。追蹤長度不足以支撐長期腫瘤學結論。"
+        },
+        {
+          "pmid": "37642289",
+          "title": "General Principles for the Safe Performance, Training, and Adoption of Ablation Techniques for Benign Thyroid Nodules: An American Thyroid Association Statement.",
+          "journal": "Thyroid",
+          "year": 2023,
+          "design": "guideline",
+          "takeaway": "ATA 聲明將消融定位為「部分症狀性良性結節病人的有效替代方案」，強調病人與結節選擇、術前諮詢、訓練與追蹤規範。聲明中明確表示其焦點是操作安全原則，並非推薦適應症或宣稱療效的指引——這是課程中區分「指引提到」與「指引推薦」的好例子。"
+        },
+        {
+          "pmid": "30887743",
+          "title": "Ethanol Ablation of the Thyroid Nodules: 2018 Consensus Statement by the Korean Society of Thyroid Radiology.",
+          "journal": "Korean J Radiol",
+          "year": 2019,
+          "design": "guideline",
+          "takeaway": "KSThR 指出酒精消融自 1990 年代即用於甲狀腺囊性結節，但至今沒有全球共識或指引；本共識聲明的建議是「基於現有文獻證據與專家意見」，自陳證據基礎有限。"
+        }
+      ]
+    },
+    {
+      "id": "parathyroid-localization",
+      "name": "副甲狀腺病灶定位",
+      "evidence_grade": "moderate",
+      "summary": "43 篇研究的 meta-analysis 顯示超音波與 sestamibi-SPECT 的定位能力接近：超音波 pooled sensitivity 76.1%（95% CI 70.4–81.4）、PPV 93.2%；sestamibi-SPECT sensitivity 78.9%（95% CI 64.0–90.6）、PPV 90.7%；4D-CT 較高（sensitivity 89.4%、PPV 93.5%）但當年僅有 2 篇初次手術資料。之後 9 篇 head-to-head 研究（911 人）證實 4D-CT sensitivity 0.85 顯著高於 SPECT/CT 的 0.68（p=0.048），代價是 specificity 較低（0.93 vs 0.98，p=0.014）與輻射劑量。操作者依賴是決定性變數：高量中心由外科醫師執行的超音波定位率達 86%（1411/1644），高於同院 sestamibi 的 69%（p<0.01），且低鈣、低 PTH 的輕症病人超音波定位率仍優於 sestamibi——這與 pooled 76% 的差距正是操作者效應。",
+      "citations": [
+        {
+          "pmid": "21710322",
+          "title": "A meta-analysis of preoperative localization techniques for patients with primary hyperparathyroidism.",
+          "journal": "Ann Surg Oncol",
+          "year": 2012,
+          "design": "meta-analysis",
+          "takeaway": "43 篇研究（19 篇超音波、9 篇 sestamibi-SPECT、4 篇 4D-CT）。超音波 pooled sensitivity 76.1%（95% CI 70.4–81.4%）、PPV 93.2%（90.7–95.3%）；sestamibi-SPECT sensitivity 78.9%（64.0–90.6%）、PPV 90.7%（83.5–96.0%）；4D-CT 僅 2 篇為初次手術病人，sensitivity 89.4%、PPV 93.5%。結論為超音波與 sestamibi-SPECT 能力相當。"
+        },
+        {
+          "pmid": "33306636",
+          "title": "Comparing the diagnostic accuracy of 4D CT and 99mTc-MIBI SPECT/CT for localizing hyperfunctioning parathyroid glands: a systematic review and meta-analysis.",
+          "journal": "Nucl Med Commun",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "9 篇 head-to-head 研究、911 位受試者。4D-CT sensitivity 0.85（95% CI 0.69–0.94）、specificity 0.93（0.88–0.96）；SPECT/CT sensitivity 0.68（0.51–0.82，p=0.048 對比 4D-CT）、specificity 0.98（0.95–0.99，p=0.014）。作者認為 4D-CT 的臨床應用受限於較低 specificity 與較高輻射暴露。"
+        },
+        {
+          "pmid": "25086814",
+          "title": "The biochemical severity of primary hyperparathyroidism correlates with the localization accuracy of sestamibi and surgeon-performed ultrasound.",
+          "journal": "J Am Coll Surg",
+          "year": 2014,
+          "design": "retrospective cohort",
+          "takeaway": "2002–2013 年 1910 位副甲狀腺切除病人。外科醫師執行之超音波定位成功 1411/1644（86%），高於 sestamibi 的 802/1165（69%，p<0.01）；但 PPV 較低（80% vs 88%，p<0.01）。定位率隨術前血鈣（US OR 1.29）與 PTH 上升而提高。血鈣 <10.5 mg/dL、PTH <90 pg/mL 的輕症病人，超音波定位率顯著優於 sestamibi。"
+        },
+        {
+          "pmid": "35963762",
+          "title": "Positive predictive values of ultrasound-guided fine-needle aspiration with parathyroid hormone assay and Tc-99m sestamibi scintigraphy in sporadic primary hyperparathyroidism.",
+          "journal": "Eur Ann Otorhinolaryngol Head Neck Dis",
+          "year": 2023,
+          "design": "retrospective cohort",
+          "takeaway": "117 位病人。US-guided FNA-PTH sensitivity 72%、specificity 92%、PPV 99%、NPV 28%；sestamibi 為 89%／42%／93%／32%。定位錯誤率 FNA 8% vs sestamibi 12%。作者建議由有經驗操作者執行的 US-guided FNA 可作為過半數病人的第一線方法，FNA 陰性或可疑時再做 sestamibi。"
+        },
+        {
+          "pmid": "27532368",
+          "title": "The American Association of Endocrine Surgeons Guidelines for Definitive Management of Primary Hyperparathyroidism.",
+          "journal": "JAMA Surg",
+          "year": 2016,
+          "design": "guideline",
+          "takeaway": "AAES 正式指引，涵蓋原發性副甲狀腺亢進的確定性處置，包含術前影像定位在手術規劃中的角色與微創副甲狀腺切除的前提條件。"
+        }
+      ]
+    }
+  ]
+}

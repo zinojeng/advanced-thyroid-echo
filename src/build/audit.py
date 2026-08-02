@@ -562,8 +562,14 @@ def audit_videos(cfg: dict, units: list[dict], opts: dict, rep: Report) -> None:
         # 非 YouTube 來源沒有 oEmbed／yt-dlp 可查，長度與觀看數只能靠策展資料
         if not SRC.is_youtube(v):
             external.append(url)
-            if (stale := opts["verifyStaleDays"]) and (age := _age_days(v.get("last_verified"))) is not None and age > stale:
-                outdated.append(f"{uid} / {label}：last_verified {v.get('last_verified')}（{age} 天前）")
+            if (
+                (stale := opts["verifyStaleDays"])
+                and (age := _age_days(v.get("last_verified"))) is not None
+                and age > stale
+            ):
+                outdated.append(
+                    f"{uid} / {label}：last_verified {v.get('last_verified')}（{age} 天前）"
+                )
             seconds[role] += parse_clock(v.get("duration"))
             continue
 
@@ -624,7 +630,9 @@ def audit_videos(cfg: dict, units: list[dict], opts: dict, rep: Report) -> None:
             thin_meta,
         )
     if outdated:
-        rep.warn(sec, f"{len(outdated)} 個外部連結的查核日期過舊（跑 make verify-external）", outdated)
+        rep.warn(
+            sec, f"{len(outdated)} 個外部連結的查核日期過舊（跑 make verify-external）", outdated
+        )
     if dead:
         rep.err(sec, f"{len(dead)} 支影片在中繼資料裡是不可用狀態", dead)
     if dupe := [f"{uid} 重複用了 {url}" for (uid, url), n in within.items() if n > 1]:

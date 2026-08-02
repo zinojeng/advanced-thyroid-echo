@@ -45,18 +45,29 @@ BLOBS: dict[Path, dict] = {}
 def collect() -> list[tuple[str, str, str, dict]]:
     """回傳 (檔名, 類別／單元 id, pmid, citation dict)。citation 是可就地修改的參照。
 
-    兩層都要驗：`drill-evidence-*.json` 的類別層級，以及 `oe-*.json` 的單元層級。
+    三層都要驗：`drill-evidence-*.json` 的類別層級、`oe-*.json` 的單元層級，
+    以及 `guideline-refs.json` 裡指引比較表用到的原始文獻。
     只驗其中一層等於留了一半的門沒鎖。
     """
     out = []
     sources = [
         ("drill-evidence-*.json", "categories", "id"),
         ("oe-*.json", "conditions", "unit"),
+        ("guideline-refs.json", None, None),
     ]
     for pattern, key, id_field in sources:
         for path in sorted(DATA.glob(pattern)):
             blob = json.loads(path.read_text())
             BLOBS[path] = blob
+            # guideline-refs.json 是一維的引用清單，沒有中間的類別層
+            if key is None:
+                for c in blob.get("references", []):
+                    if not isinstance(c, dict):
+                        continue
+                    pmid = str(c.get("pmid") or "").strip()
+                    if pmid:  # 指引原文不見得都有 PMID，沒有的跳過不算失敗
+                        out.append((path.name, c.get("system", "?"), pmid, c))
+                continue
             for entry in blob.get(key, []):
                 if not isinstance(entry, dict):
                     continue

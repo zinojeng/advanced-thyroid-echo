@@ -75,6 +75,13 @@ def url_problem(v: dict) -> str | None:
         return f"標為 youtube 但不是合法的 watch 網址：{url}"
     if provider == "vimeo" and not VIMEO.match(url):
         return f"標為 vimeo 但不是合法的 vimeo 網址：{url}"
+    # provider 是「託管平台」不是「發布機構」。學會把影片放上 YouTube，provider 仍是
+    # youtube（發布機構寫在 channel）。標錯會讓這支影片從 oEmbed 驗證漏掉，
+    # 改由外部驗證器去打 youtube.com，然後撞上 429 看起來像連結失效。
+    if YT.match(url) and provider != "youtube":
+        return f"是 YouTube 網址卻標成 {provider}；provider 指的是託管平台，發布機構請寫在 channel"
+    if VIMEO.match(url) and provider != "vimeo":
+        return f"是 Vimeo 網址卻標成 {provider}；provider 指的是託管平台"
     if not HTTPS.match(url):
         return f"不是 https 網址：{url}"
     return None

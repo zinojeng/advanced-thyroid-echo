@@ -1,0 +1,414 @@
+{
+ "chapter": "CH3",
+ "searched": [
+  "yt-dlp ytsearch20: Graves disease thyroid ultrasound doppler",
+  "yt-dlp ytsearch20: thyroid inferno color doppler Graves disease ultrasound",
+  "yt-dlp ytsearch20: Hashimoto thyroiditis ultrasound",
+  "yt-dlp ytsearch20: diffuse thyroid disease ultrasound Hashimoto pseudonodule",
+  "yt-dlp ytsearch20: subacute thyroiditis ultrasound de Quervain",
+  "yt-dlp ytsearch20: acute suppurative thyroiditis ultrasound",
+  "yt-dlp ytsearch20: Riedel thyroiditis ultrasound",
+  "yt-dlp ytsearch20: IgG4 related thyroid disease ultrasound",
+  "yt-dlp ytsearch20: fibrosing thyroiditis imaging",
+  "yt-dlp ytsearch20: amiodarone induced thyrotoxicosis type 1 type 2",
+  "yt-dlp ytsearch20: amiodarone thyroid ultrasound doppler",
+  "yt-dlp ytsearch20: immune checkpoint inhibitor thyroiditis management",
+  "yt-dlp ytsearch20: thyroid lymphoma ultrasound",
+  "yt-dlp ytsearch20: painless silent thyroiditis postpartum ultrasound",
+  "yt-dlp ytsearch20: AIUM thyroid ultrasound webinar diffuse",
+  "yt-dlp ytsearch20: thyroiditis ultrasound grand rounds endocrinology lecture university",
+  "yt-dlp ytsearch20: ETA ultrasound course thyroid Solymosi",
+  "yt-dlp ytsearch30: Solymosi Hashimoto thyroiditis consecutive cases ultrasound",
+  "yt-dlp ytsearch30: Solymosi thyroid lymphoma ultrasound case",
+  "yt-dlp ytsearch40: Tamas Solymosi thyroid ultrasound case",
+  "PMC esearch: Riedel thyroiditis ultrasound imaging",
+  "PMC esearch: IgG4-related thyroid disease Riedel sclerosing review",
+  "PMC esearch: amiodarone induced thyrotoxicosis color flow Doppler sonography type 1 type 2",
+  "PMC esearch: color flow Doppler sonography amiodarone induced thyrotoxicosis differentiation",
+  "PMC esearch: immune checkpoint inhibitor thyroiditis ultrasound imaging findings",
+  "PMC esearch: thyroid ultrasound immune checkpoint inhibitor thyroiditis FDG PET incidental",
+  "PMC esearch: sonography of diffuse thyroid disease",
+  "PMC esearch: acute suppurative thyroiditis pyriform sinus fistula ultrasound",
+  "PMC esearch: superior thyroid artery peak systolic velocity Graves destructive thyroiditis Doppler",
+  "PMC esearch: subacute thyroiditis ultrasound elastography features review",
+  "web: 2018 European Thyroid Association Guidelines management amiodarone-associated thyroid dysfunction Eur Thyroid J",
+  "web: Korean Journal of Radiology diffuse thyroid disease ultrasound review Hashimoto Graves sonographic",
+  "web: European Thyroid Association guideline immune checkpoint inhibitor thyroid dysfunction management 2022 open access"
+ ],
+ "verification_notes": [
+  "所有 YouTube ID 均取自 yt-dlp 實際搜尋輸出，並以 https://www.youtube.com/oembed 逐支驗證回 200 且標題／頻道相符。",
+  "yt-dlp 版本 2026.07.04；部分呼叫出現 'No supported JavaScript runtime' 警告，但 metadata 與字幕擷取正常。",
+  "Jill Langer 的講者身分無法從影片說明欄查出，是下載自動字幕後從片頭自述查證（'I'm Ji[ll] Langer from the Per[el]man school of medicine at the University of Pennsylvania'，00:00:16–00:00:24；自動字幕把姓名誤轉成 'Joe Langer'）。上傳頻道非講者本人，授權狀況未確認。",
+  "所有非 YouTube 連結以 curl -sL 加瀏覽器 User-Agent 實際打開並比對 <title>；PMC 另外檢查全文長度與章節標記，確認不是只有摘要的 stub。",
+  "Radiopaedia 全站對本環境的 curl 回 406（含加 User-Agent），無法完成規定的驗證流程，因此本章一律不引用 Radiopaedia，改用 PMC 開放取用文獻與 Endotext。",
+  "thyrosite.com 有兩種路徑：/thyroid/<n>/index 的病例頁為免登入公開（已驗證），/ctu/... 的課程頁需要登入（已驗證有 login wall），本章只採用前者。"
+ ],
+ "evaluated": [
+  {
+   "title": "Sonographic Evaluation of Diffuse Thyroid Disease",
+   "url": "https://www.youtube.com/watch?v=XR4nOMp_bGA",
+   "source": "YouTube（Radiology Video - radiology made esay；講者 Jill E. Langer, UPenn）",
+   "decision": "included",
+   "unit": "ch3-u1",
+   "reason": "35 分鐘完整涵蓋 Graves／Hashimoto／假性結節／淋巴瘤／亞急性／amiodarone，全程真實動態掃描與病理對照；講者身分由片頭自述查證。10:29 明白指出瀰漫性疾病血流變異極大，符合本章不得把 vascularity 當單一標準的要求。授權狀況未確認，僅連結。"
+  },
+  {
+   "title": "GRAVES DISEASE VS HASHIMOTOS THYROIDITIS -DIFFERENTIATING POINTS",
+   "url": "https://www.youtube.com/watch?v=2kz9xVpIO7Y",
+   "source": "YouTube（RAD VISION SNK）",
+   "decision": "included",
+   "unit": "ch3-u1",
+   "reason": "有清楚的灰階與都卜勒對照及章節時間戳，可作 Tier C 技術示範。但它把 inferior thyroid artery PSV 40 cm/s 當二分切點且未給敏感度／特異度，已在 target 中明確要求學員批判並以 PMC6554950 校正。"
+  },
+  {
+   "title": "Mean peak systolic velocity of superior thyroid artery for the differential diagnosis of thyrotoxicosis: a diagnostic meta-analysis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6554950/",
+   "source": "BMC Endocrine Disorders 2019（PMC）",
+   "decision": "included",
+   "unit": "ch3-u1",
+   "reason": "把定性的『血流很多』換成可稽核的量化指標與其不確定性；CC BY 4.0 開放取用，PMC 全文已驗證。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Multiparametric ultrasound-based assessment of overt hyperthyroid diffuse thyroid disease",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764279/",
+   "source": "Frontiers in Endocrinology 2023（PMC）",
+   "decision": "included",
+   "unit": "ch3-u1",
+   "reason": "直接支撐『單一血流參數不足』的立場，並提供多參數組合的 AUC 對照；CC BY 4.0。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Ultrasound of non-nodular thyroid diseases - ETA Ultrasound Course",
+   "url": "https://www.youtube.com/watch?v=8ejRbOaQBXw",
+   "source": "YouTube（Tamas Solymosi，European Thyroid Association Ultrasound Board）",
+   "decision": "included",
+   "unit": "ch3-u2",
+   "reason": "歐洲甲狀腺學會超音波課程正式講次，主題即淋巴球性甲狀腺炎的型態與假性結節；含 113 位連續病人的假陽性結節實測資料。第一級來源，本章最強的單一教材之一。"
+  },
+  {
+   "title": "Ultrasound of Hashimoto's Thyroiditis",
+   "url": "https://www.youtube.com/watch?v=Q7KWVNuxHDU",
+   "source": "YouTube（Radquarters）",
+   "decision": "included",
+   "unit": "ch3-u2",
+   "reason": "三個實例、教學點條列明確（含峽部 <0.4 cm 等量化基準與『橋本內局部鈣化應切片』的操作結論）。作者為放射科個人頻道而非機構，故列 Tier B。"
+  },
+  {
+   "title": "Thyroid lymphomas - Case 1: Primary MALT-type non Hodgkin lymphoma",
+   "url": "http://thyrosite.com/thyroid/867/index",
+   "source": "thyrosite.com（Tamas Solymosi 病例庫）",
+   "decision": "included",
+   "unit": "ch3-u2",
+   "reason": "免登入公開病例頁，超音波、臨床病程、細胞學與組織病理同頁對照；細胞學一開始只報 Hashimoto 伴淋巴母細胞增加，正是『不能只靠 FNA 收工』的實例。非 YouTube 來源。"
+  },
+  {
+   "title": "A large B-cell lymphoma. Thyroid lymphomas - case 8",
+   "url": "https://www.youtube.com/watch?v=boO1hAu3IoU",
+   "source": "YouTube（Tamas Solymosi）",
+   "decision": "included",
+   "unit": "ch3-u2",
+   "reason": "1 分鐘動態掃描，呈現極低回音與後方回音增強造成的類囊樣外觀，靜態圖看不出來的質地差異。"
+  },
+  {
+   "title": "Primary Thyroid Lymphoma & Autoimmunity: A Retrospective Study with Dr. Suzuki",
+   "url": "https://www.youtube.com/watch?v=b7t0crwhZo8",
+   "source": "YouTube（THANC Foundation）",
+   "decision": "included",
+   "unit": "ch3-u2",
+   "reason": "把橋本與淋巴瘤的關聯量化，供學員對病人給出誠實的風險量級。屬背景閱讀非影像訓練，已在 dose 中註明。"
+  },
+  {
+   "title": "SLCE- SLENDO2019 : Prof. Susan Mandel : The Many Faces of Thyroiditis",
+   "url": "https://www.youtube.com/watch?v=Wt3RZp8lICY",
+   "source": "YouTube（SLENDO LK／Sri Lanka College of Endocrinologists + International Society of Endocrinology）",
+   "decision": "included",
+   "unit": "ch3-u3 主課；ch3-u5 drill（08:35–15:30 藥物段）",
+   "reason": "公認權威（Susan Mandel, UPenn）在國際學會課程講次，把無痛性、產後、亞急性與藥物相關甲狀腺炎串成同一套鑑別；28:29 直接批評『做超音波就說有 thyroiditis』的誤用。**保留意見**：14:42 把『血流減少』說成區分 AIT type 1/2 的簡便方法，比 ETA 2018 指引樂觀，已在 why 與 timestamps 逐處標註要求對照指引。"
+  },
+  {
+   "title": "Ultrasound presentation of de Quervain's thyroiditis and papillary cacer. A comparison.",
+   "url": "https://www.youtube.com/watch?v=vYoSxwOjQac",
+   "source": "YouTube（Tamas Solymosi）",
+   "decision": "included",
+   "unit": "ch3-u3",
+   "reason": "直接處理亞急性甲狀腺炎被誤判為惡性而做不必要 FNA 的高頻錯誤，逐格對照可當自測。"
+  },
+  {
+   "title": "Acute and Subacute, and Riedel's Thyroiditis (Endotext)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK285553/",
+   "source": "Endotext / NCBI Bookshelf",
+   "decision": "included",
+   "unit": "ch3-u3",
+   "reason": "免費、可引用、持續更新的專科層級文字資料，補足影片沒有的急性化膿性甲狀腺炎致病菌與處置流程。非 YouTube 來源。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "The Emerging Echogenic Tract Sign of Pyriform Sinus Fistula",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8013085/",
+   "source": "AJNR 2011（PMC）",
+   "decision": "included",
+   "unit": "ch3-u3",
+   "reason": "提供一個能直接改變處置的超音波徵象，並解釋為何急性期安排下咽影像常見假陰性——本章『何時需要進一步 CT／內視鏡』最具體的答案。非 YouTube 第二級來源。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "IgG4-related sclerosing thyroiditis (Riedel-Struma): a review of clinicopathological features and management",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10412505/",
+   "source": "Virchows Archiv 2023（PMC，CC BY 4.0）",
+   "decision": "included",
+   "unit": "ch3-u4（主課）",
+   "reason": "同時涵蓋超音波、彈性成像、99mTc、CT、MRI 與 PET，明講 FNA 常無法定案、開放式切片往往才是最佳選擇。用來取代品質不合格的 Riedel/IgG4 影片。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "IgG4-Mediated Sclerosing Riedel Thyroiditis: A Multidisciplinary Case Study and Literature Review",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12386525/",
+   "source": "International Journal of Molecular Sciences 2025（PMC，CC BY 4.0）",
+   "decision": "included",
+   "unit": "ch3-u4",
+   "reason": "完整呈現影像懷疑→細胞學不足→組織診斷→免疫組化→治療反應的升級路徑。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Riedel's Thyroiditis with Intense FDG Uptake Demonstrated on FDG PET/CT",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4372770/",
+   "source": "Molecular Imaging and Radionuclide Therapy 2015（PMC，CC BY）",
+   "decision": "included",
+   "unit": "ch3-u4",
+   "reason": "示範核醫『不能回答什麼』：Riedel 本身即可高攝取，與惡性無法區分。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Difficulties in investigating and treating fibrosing thyroid disorder (overlap of fibrosing variant of Hashimoto's thyroiditis and Riedel's thyroiditis)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11085981/",
+   "source": "BMJ Case Reports 2024（PMC，CC BY 4.0）",
+   "decision": "included",
+   "unit": "ch3-u4",
+   "reason": "呈現橋本纖維化變異型與 Riedel 的灰帶，防止把 Riedel 當成乾淨的二分診斷。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "2018 European Thyroid Association (ETA) Guidelines for the Management of Amiodarone-Associated Thyroid Dysfunction",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5869486/",
+   "source": "European Thyroid Journal 2018（PMC）",
+   "decision": "included",
+   "unit": "ch3-u5（主課）",
+   "reason": "AIT type 1 vs type 2 分型與處置最權威的文件，且明確把 color flow Doppler sonography 定位為輔助而非決定性——正是本章要對抗的誤用。第一級學會來源。Bioscientifica／Karger 官方頁面對本環境 curl 回 403（Cloudflare），改採已驗證 200 的 PMC 版本。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Managing Thyroid Adverse Events From Checkpoint Inhibitors",
+   "url": "https://www.youtube.com/watch?v=8I_4Oj8QN6E",
+   "source": "YouTube（Medscape，Thyroid Stimulating Podcast，與 American Thyroid Association 合作）",
+   "decision": "included",
+   "unit": "ch3-u5",
+   "reason": "ICI 相關甲狀腺不良事件的監測時程與介入時機，由 Duke 專攻腫瘤病人內分泌疾病的臨床醫師主講，附完整逐字稿。**明確弱點：全片沒有任何超音波影像**，收錄理由是回答『何時不需要進一步檢查』；已在 why 中標註限制並填 coi。本章品質最弱的入選之一。"
+  },
+  {
+   "title": "Increased Thyroidal Activity on Routine FDG-PET/CT after Combination Immune Checkpoint Inhibition",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10741830/",
+   "source": "Cancers 2023（PMC，CC BY 4.0）",
+   "decision": "included",
+   "unit": "ch3-u5",
+   "reason": "把 ICI 病人常規 PET 上的甲狀腺瀰漫性攝取與生化甲狀腺炎的時序對上，避免把它當新病灶追查。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Amiodarone Induced Thyroid Dysfunction (Emory Cardiology Friday Fellows Conference)",
+   "url": "https://www.youtube.com/watch?v=bRd92c-vWkA",
+   "source": "YouTube（Emory Cardiology）",
+   "decision": "excluded",
+   "reason": "內容本身是正規學術會議講次（Emory 心臟科 fellow conference，41 分鐘），但 oEmbed 回 401，依契約規定視為不可用（無法嵌入／公開狀態無法確認）。這是 ch3-u5 原本最想要的影片教材，被排除後改以 ETA 2018 指引當主課。"
+  },
+  {
+   "title": "RIEDEL THYROIDITIS - AN OVERVIEW - By Pramil Cheriyath MD",
+   "url": "https://www.youtube.com/watch?v=FGyYMT-3uDE",
+   "source": "YouTube（ResearchMD）",
+   "decision": "excluded",
+   "reason": "純投影片講解，無實際超音波動態掃描，不符納入標準。"
+  },
+  {
+   "title": "Riedel Thyroiditis (Mnemonic for the USMLE)",
+   "url": "https://www.youtube.com/watch?v=LNMnSRgxxN8",
+   "source": "YouTube（AJmonics）",
+   "decision": "excluded",
+   "reason": "USMLE 記憶術，程度遠低於本課受眾且無影像。"
+  },
+  {
+   "title": "RIEDEL'S THYROIDITIS (Rock Hard Thyroid)",
+   "url": "https://www.youtube.com/watch?v=5n9UwbPHag4",
+   "source": "YouTube（Daily Dose of Medicine）",
+   "decision": "excluded",
+   "reason": "科普／考試導向，無超音波影像。"
+  },
+  {
+   "title": "Riedel's thyroiditis. English. Patient teaching programme.",
+   "url": "https://www.youtube.com/watch?v=HUoL_9TJbTs",
+   "source": "YouTube（Dr Zakir Hussain ENT）",
+   "decision": "excluded",
+   "reason": "病人衛教內容，非專科判讀教材。"
+  },
+  {
+   "title": "Riedel's Thyroditis",
+   "url": "https://www.youtube.com/watch?v=gf1N5vT_bmI",
+   "source": "YouTube（個人上傳，阿拉伯文頻道名）",
+   "decision": "excluded",
+   "reason": "無法確認作者資歷與內容來源，且未見超音波影像。"
+  },
+  {
+   "title": "IgG 4 related diseases of the head and neck by Dr. Ramin Hamidi",
+   "url": "https://www.youtube.com/watch?v=NWv_z_DuuRg",
+   "source": "YouTube（Pakistan Academy of Neurological Surgery）",
+   "decision": "excluded",
+   "reason": "以神經外科／頭頸整體 IgG4 疾病為主，甲狀腺著墨極少，且無甲狀腺超音波示範。"
+  },
+  {
+   "title": "Ultrasound Case 34 - Acute Suppurative Thyroiditis",
+   "url": "https://www.youtube.com/watch?v=okYSmWtjeg0",
+   "source": "YouTube（Dr.Ismail Sayed Ismail）",
+   "decision": "excluded",
+   "reason": "確有真實病例影像，但說明欄完全空白、無臨床資料、無病理對照、無法確認來源與診斷依據。依『無法確認作者或來源』排除；急性化膿性甲狀腺炎改以 AJNR 論文與 Endotext 涵蓋。"
+  },
+  {
+   "title": "2 Key Causes of Painful Thyroid: Acute Suppurative Thyroiditis Vs Subacute (De Quervain) Thyroiditis",
+   "url": "https://www.youtube.com/watch?v=sx98lEkVzuA",
+   "source": "YouTube（Assoc Prof Dr Kishore G Banerjee）",
+   "decision": "excluded",
+   "reason": "2 分半的口述比較，影像片段過短且未做動態掃描示範。"
+  },
+  {
+   "title": "6 Stages of Hashimoto's Thyroiditis That ALL Patients Go Through",
+   "url": "https://www.youtube.com/watch?v=-RioumvSLmE",
+   "source": "YouTube（Dr. Westin Childs）",
+   "decision": "excluded",
+   "reason": "功能醫學取向的病人衛教，無影像，且部分主張缺乏指引支持。同頻道其他甲狀腺影片一併排除。"
+  },
+  {
+   "title": "4PniPifdEbo Hashimoto's Thyroiditis: How to Reverse It Naturally / rvUthITs4oI 90% of Hypothyroidism Is Hashimoto's (Dr. Berg)",
+   "url": "https://www.youtube.com/watch?v=4PniPifdEbo",
+   "source": "YouTube（KenDBerryMD / Dr. Eric Berg DC）",
+   "decision": "excluded",
+   "reason": "另類療法宣稱，與指引不一致，且無任何影像判讀內容。"
+  },
+  {
+   "title": "Thyroid Ultrasound Normal Vs Graves' Disease | Goiter, Thyroid Inferno, Heterogeneous Echotexture",
+   "url": "https://www.youtube.com/watch?v=MJeYWQugY6U",
+   "source": "YouTube（Dr. Sam's Imaging Library）",
+   "decision": "excluded",
+   "reason": "影像清楚且有對照，但把 thyroid inferno 呈現為 Graves 的特徵性依據，與本章『不得以 vascularity 為單一標準』的立場衝突；ch3-u1 已有更適合的批判性教材（2kz9xVpIO7Y 搭配統合分析），故不重複收錄。"
+  },
+  {
+   "title": "Graves disease（Ultrasound cases）/ Hyperthyroidism | Thyrotoxicosis || Doppler || Case 294（Imaging Study）",
+   "url": "https://www.youtube.com/watch?v=obF57lfCY4U",
+   "source": "YouTube（Ultrasound cases / Imaging Study）",
+   "decision": "excluded",
+   "reason": "品質可用的病例短片，但教學內容與已入選的 ch3-u1 資源重複，且同樣以 inferno 為主軸；為避免同一單元塞入同質素材而未收。"
+  },
+  {
+   "title": "Thyroid Evaluation in a Patient with Thyrotoxicosis with Bedside Ultrasound",
+   "url": "https://www.youtube.com/watch?v=suDlBZlBiFE",
+   "source": "YouTube（WestJEM；West J Emerg Med. 2012;13(6):514）",
+   "decision": "excluded",
+   "reason": "來源可靠（同儕審查期刊隨文影片），但僅 1 分 26 秒的急診 POCUS 示範，程度低於本課受眾且結論即『血流增加支持 thyrotoxicosis』，與本章立場相左。"
+  },
+  {
+   "title": "Hashimoto's Thyroiditis Ultrasound (giraffe pattern)",
+   "url": "https://www.youtube.com/watch?v=b1FyHVJ5wIU",
+   "source": "YouTube（123radiology）",
+   "decision": "excluded",
+   "reason": "影像正確但僅 1 分 46 秒單一概念，已被入選的 Radquarters 與 ETA 課程完整涵蓋。"
+  },
+  {
+   "title": "de Quervain's Thyroiditis || Ultrasound || Case 360",
+   "url": "https://www.youtube.com/watch?v=LwPDgR3_qPA",
+   "source": "YouTube（Imaging Study）",
+   "decision": "excluded",
+   "reason": "病例資料完整、影像可用，屬候補；因 ch3-u3 已有 Solymosi 的炎 vs 癌對照（教學價值更高）而未收。"
+  },
+  {
+   "title": "CoMICs Episode 22: Amiodarone-induced thyrotoxicosis",
+   "url": "https://www.youtube.com/watch?v=zUsWF-kB7U4",
+   "source": "YouTube（SIMBA & CoMICs - DEVI Collaboration）",
+   "decision": "excluded",
+   "reason": "英國內分泌教育合作計畫產出，來源可信，但僅 3 分 45 秒且為動畫式病例摘要、無超音波影像；ch3-u5 已由 ETA 2018 指引與 Mandel 演講涵蓋同一內容且深度更足。"
+  },
+  {
+   "title": "Carla Moran: Endocrine Consequences and Immune Checkpoint Inhibitors",
+   "url": "https://www.youtube.com/watch?v=kuRdeWKZ8-k",
+   "source": "YouTube（Bahrain Diabetes and Endocrine Review）",
+   "decision": "excluded",
+   "reason": "講者為合格內分泌專科醫師，但內容涵蓋所有內分泌 irAE、甲狀腺影像著墨極少，且無超音波示範。"
+  },
+  {
+   "title": "Thyroid disorders induced by immune checkpoint inhibitors",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11246261/",
+   "source": "Endocrine 2024（PMC）",
+   "decision": "excluded",
+   "reason": "內容合格的回顧文獻，但 ch3-u5 只有 3 個 drill 名額，已改選影像導向更強的 Cancers 2023 FDG-PET 研究。列此供未來擴充。"
+  },
+  {
+   "title": "Differential diagnosis of diffuse sclerotic thyroid papillary carcinoma and Hashimoto's thyroiditis using FNA cytology, BRAF V600E, and ultrasound elastography",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9541506/",
+   "source": "Journal of Clinical Ultrasound 2022（PMC）",
+   "decision": "excluded",
+   "reason": "主題極貼合 ch3-u2，但實際打開後 PMC 僅有引用資訊（全文約 2,500 字元、無章節內文），非開放全文，不符『學員實際打得開』的要求。"
+  },
+  {
+   "title": "Ultrasonography of Various Thyroid Diseases in Children and Adolescents: A Pictorial Essay",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4347278/",
+   "source": "Korean Journal of Radiology 2015（PMC）",
+   "decision": "excluded",
+   "reason": "第一／二級來源且已驗證可開啟，圖譜品質佳，但以兒童與青少年為對象，與本課成人 fellow 受眾不符，故未納入。"
+  },
+  {
+   "title": "Radiopaedia 條目：Riedel thyroiditis / IgG4-related disease / acute suppurative thyroiditis / subacute thyroiditis / primary thyroid lymphoma",
+   "url": "https://radiopaedia.org/articles/riedel-thyroiditis",
+   "source": "Radiopaedia",
+   "decision": "excluded",
+   "reason": "本環境無法完成契約規定的驗證：全部條目 curl 回 406（含加瀏覽器 User-Agent），無法確認頁面內容與存取狀態。依『不信任任何未實際打開的連結』原則不予引用，改以 PMC 開放取用文獻與 Endotext 補足罕見主題。"
+  },
+  {
+   "title": "2018 ETA amiodarone 指引官方頁面（Bioscientifica / European Thyroid Journal）",
+   "url": "https://etj.bioscientifica.com/view/journals/etj/7/2/ETJ486957.xml",
+   "source": "European Thyroid Journal 官網",
+   "decision": "excluded",
+   "reason": "curl 回 403 且回應為 Cloudflare 挑戰頁（'Just a moment...'），判定為 bot 防護而非真的擋；但因無法完成驗證，改用同一文獻已驗證 200 的 PMC5869486。"
+  },
+  {
+   "title": "Sonography of diffuse thyroid disease（Yuen 2016, Australasian Journal of Ultrasound in Medicine）",
+   "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ajum.12001",
+   "source": "Wiley Online Library",
+   "decision": "excluded",
+   "reason": "curl 回 403（Cloudflare 挑戰頁），無法完成驗證，未納入。"
+  },
+  {
+   "title": "Korean Journal of Radiology 官網（kjronline.org）",
+   "url": "https://www.kjronline.org/DOIx.php?id=10.3348%2Fkjr.2015.16.2.419",
+   "source": "KJR 官網",
+   "decision": "excluded",
+   "reason": "curl 回應碼 000（連線被 Cloudflare 挑戰中斷），無法驗證，改由 PMC 鏡像評估（見上一則 PMC4347278）。"
+  },
+  {
+   "title": "thyrosite.com PAPILLON COURSE 章節頁（Subacute, de Quervain's thyroiditis）",
+   "url": "http://thyrosite.com/ctu/section03/granulomatous_thyroiditis/ctu.php",
+   "source": "thyrosite.com",
+   "decision": "excluded",
+   "reason": "HTTP 200 但實際內容為登入牆（'You need to login to view this content'），公開頁面沒有任何影像或病例內容。改採同站免登入的 /thyroid/<n>/index 病例頁。"
+  },
+  {
+   "title": "Imaging of the Pediatric Thyroid: Practical Tips and Newer Technologies",
+   "url": "https://www.youtube.com/watch?v=oOKZaunJBj8",
+   "source": "YouTube（AIUMultrasound）",
+   "decision": "excluded",
+   "reason": "AIUM 官方 webinar、來源等級高，但主題為兒童甲狀腺，與本章成人瀰漫性疾病範圍不符。"
+  },
+  {
+   "title": "Thyroiditis | Case Study | Pathology Video（sqadia.com）／Types of Thyroiditis Part 2（Whiteboard Medicine Simplified）／Thyroiditis（Wade Hopper, DO）等一批醫學生層級講解",
+   "url": "https://www.youtube.com/watch?v=Qv_ECjiNLAA",
+   "source": "YouTube（多個頻道）",
+   "decision": "excluded",
+   "reason": "全部為醫學生／考試層級的病理或臨床概論，無超音波判讀內容，違反『不得把初學內容大量填入進階課程』。"
+  }
+ ]
+}

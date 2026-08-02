@@ -1,0 +1,499 @@
+{
+  "chapter": "CH5",
+  "title": "細針穿刺與介入超音波",
+  "units": [
+    {
+      "id": "ch5-u1",
+      "name": "適應症、知情同意與抗凝血／抗血小板藥物處理",
+      "type": "procedure",
+      "assessment": "取自己門診連續 10 位被安排 US-guided FNA 的病人，逐一寫出：(1) 依 ACR TI-RADS (2017)、ATA 2015 與 K-TIRADS 2021 各自是否達到穿刺門檻，若三者不一致，指出是哪一個影像特徵造成差異；(2) 當次抗凝血／抗血小板用藥、是否停藥、停幾天、由誰決定；(3) 同意過程實際說了哪些併發症、記錄在哪一份文件。統計這 10 位中有幾位是「三個系統都建議穿刺」、幾位是「只有一個系統建議」。最後對照自己單位的 credentialing 與 supervision 文件，寫出你目前有沒有資格獨立執行這項操作、還差哪幾項紀錄。",
+      "tight": [
+        "把「結節可以穿刺」直接當成「結節應該穿刺」——三大分層系統的 size cutoff 不同，同一顆結節在 ACR TI-RADS (2017)、ATA 2015 與 K-TIRADS 2021 下可能得到相反建議",
+        "以為 FNA 風險低就不必問抗凝血用藥；FNA 與 core needle biopsy 的出血風險不在同一個層級，術前處理建議也不一樣",
+        "同意流程只講「會有點痛」，沒有量化併發症機率，也沒有把口頭同意留下紀錄",
+        "看完公開示範影片就以為自己可以獨立執行；影片不會告訴你你所在醫院要求幾例督導下操作、要不要 time-out、探頭與器械如何消毒"
+      ],
+      "weak": [
+        "能對同一顆結節同時跑完三個分層系統，並說出穿刺建議分歧的來源",
+        "能講出抗凝血／抗血小板藥物在 FNA 與 CNB 前的處理差異，以及為什麼停藥決定必須回到開藥醫師",
+        "能用具體數字向病人說明出血、感染、聲音改變與 vasovagal 的風險",
+        "能指出自己單位在 credentialing、supervision 與感染控制上對這項操作的成文規定，並說出自己目前落在哪一級"
+      ],
+      "lesson": {
+        "title": "FNA Workshop 17th May 2023 - Session 5 (Guided FNAC & Core Biopsy)",
+        "channel": "GM Cancer Academy",
+        "url": "https://www.youtube.com/watch?v=VRRvvpavQVY",
+        "duration": "20:39",
+        "why": "英國 Greater Manchester Cancer Academy 的 FNA workshop 實錄，講者在鏡頭前把三件通常不會寫進教科書的事講白了：抗凝血／抗血小板病人要不要停藥，同一間醫院的同儕之間就有分歧；他們用口頭同意記在門診信裡，而不是完整的 WHO safe surgery checklist；以及真實遇過的併發症（血腫、感染、誤穿動脈、暫時性聲音沙啞）。它解決的落差是：多數教材只寫「應該怎麼做」，不寫「實際上大家怎麼做、差在哪」。也正因如此必須強調——影片裡的做法是講者所在 NHS 單位的做法，不是通用標準，更不能取代你所在機構的 credentialing、supervision 與感染控制規範；看完影片不等於取得獨立執行資格。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 GM Cancer Academy，本站僅連結不重製",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "00:34", "note": "抗凝血／抗血小板病人要不要停藥：講者個人做法與同儕之間的差異"},
+          {"at": "02:35", "note": "耦合劑污染玻片會毀掉細胞學判讀；改用酒精棉片替代的做法"},
+          {"at": "15:24", "note": "併發症實錄：血腫、感染、誤穿動脈、暫時性聲音沙啞與 vasovagal 的處置"},
+          {"at": "19:16", "note": "口頭同意的記錄方式，以及「理論上該做 WHO checklist 但實際沒做」的坦白"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "從超音波分級走到穿刺決定：BTA U 分級與 Thy 細胞學分類",
+          "en": "FNA Workshop 17th May 2023 - Session 3 (Thyroid Nodules Clinical Context)",
+          "kind": "lecture",
+          "target": "同一場 workshop 中負責「這顆該不該穿刺」的一節，用英國 BTA 的 U1–U5 超音波分級與 Thy1–Thy5 細胞學分類把影像決策與病理結果扣在一起。教學重點不是背 BTA，而是看見穿刺門檻在不同國家的系統中並不相同——拿它去對照 ACR TI-RADS (2017) 與 ATA 2015，就能具體說出差異來自哪一個影像特徵。",
+          "dose": "先挑三顆自己的結節，各給一個 ACR TI-RADS 分級與穿刺建議，再看影片用 BTA U 分級跑一次，比對哪幾顆結論不同。",
+          "title": "FNA Workshop 17th May 2023 - Session 3 (Thyroid Nodules Clinical Context)",
+          "channel": "GM Cancer Academy",
+          "url": "https://www.youtube.com/watch?v=g-14NxPymDQ",
+          "duration": "38:29",
+          "tier": "A",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 GM Cancer Academy，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "AIUM 超音波導引操作的執行者訓練規範",
+          "en": "Training Guidelines for Licensed Medical Providers Who Perform and Interpret Ultrasound-Guided Procedures",
+          "kind": "guideline",
+          "target": "AIUM 對「誰可以執行超音波導引操作」的成文要求：有效執照、對該部位診斷性超音波的判讀能力、對適應症與限制的理解、對超音波物理與 ALARA 原則的認識、對相關解剖與病理生理的掌握。這份文件就是本章一再強調的那條線——公開影音可以教技術，但獨立執行資格必須由所屬機構的 credentialing 程序授予，並受當地 supervision 與感染控制規範約束。",
+          "dose": "把文件裡的能力項目逐條抄下來，對照自己單位的 credentialing 表格，標出哪幾項你有正式紀錄、哪幾項只是「我覺得我會」。",
+          "title": "Training Guidelines for Licensed Medical Providers Who Perform and Interpret Ultrasound-Guided Procedures",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/resources/training-guidelines/view/training-guidelines-for-licensed-medical-providers-who-perform-and-interpret-ultrasound-guided-procedures",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "版權歸 AIUM，本站僅連結不重製；頁面標示最後更新 2025-03-29",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "SIR 影像導引經皮介入的血栓與出血風險術前處理共識（Part II：建議）",
+          "en": "Society of Interventional Radiology Consensus Guidelines for the Periprocedural Management of Thrombotic and Bleeding Risk in Patients Undergoing Percutaneous Image-Guided Interventions—Part II: Recommendations",
+          "kind": "guideline",
+          "target": "介入放射學界處理抗凝血／抗血小板藥物的通用框架：先把操作依出血風險分級，再決定停不停藥，而不是憑「這個病人在吃血液稀釋劑」就一律取消。甲狀腺 FNA 落在低出血風險端，CNB 則需要更謹慎的評估。把這份泛用共識與 KSThR 甲狀腺專屬建議（見 ch5-u5）並排讀，就能看出「通用框架」與「器官專屬建議」之間必須由本地政策補上的那一段。",
+          "dose": "JVIR 全文需訂閱，此連結為 PubMed 書目與摘要頁（PMID 31229333）。先讀摘要建立「依操作風險分級」的心智模型，再回頭看 KSThR 給的具體停藥天數，寫下你單位缺哪一層規定。",
+          "title": "Society of Interventional Radiology Consensus Guidelines for the Periprocedural Management of Thrombotic and Bleeding Risk in Patients Undergoing Percutaneous Image-Guided Interventions-Part II: Recommendations: Endorsed by the Canadian Association for Interventional Radiology and the Cardiovascular and Interventional Radiological Society of Europe",
+          "channel": "J Vasc Interv Radiol 2019;30(8):1168-1184.e1（Society of Interventional Radiology）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31229333/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "版權歸 Elsevier／SIR；PubMed 書目與摘要公開，全文需訂閱，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch5-u2",
+      "name": "針的可視化：parallel、perpendicular 與 trans-isthmic approach",
+      "type": "procedure",
+      "assessment": "在穿刺模型或商用 phantom 上，對同一個目標各做 5 次 parallel（in-plane，與探頭長軸同線）與 5 次 perpendicular（out-of-plane，約 90 度）進針，全程錄下超音波畫面。逐次記錄：從進針到第一次確實看到針尖所花的秒數、有沒有把 needle shaft 誤認成 needle tip、有幾次需要退針重來。接著在同一個模型上練 trans-isthmic 路徑，畫出每一次的進針線與 recurrent laryngeal nerve、頸動脈、氣管的相對位置。最後寫出：在哪一種目標深度與角度下哪一種方法的針尖顯影明顯較差，以及你打算用什麼參數或角度調整來補償。",
+      "tight": [
+        "把 needle shaft 的高回音線當成 needle tip——這是 out-of-plane 進針最常見也最危險的誤判",
+        "以為 in-plane 一定看得到整根針；探頭稍微偏軸，針就整根消失，這時繼續推針就是盲穿",
+        "角度愈陡，針反射回探頭的能量愈少，深部病灶沿用同一組參數會突然看不見針",
+        "只練一條 lateral approach，遇到需要避開 recurrent laryngeal nerve 走行區的情況時沒有替代路徑"
+      ],
+      "weak": [
+        "能在動態畫面上分辨 needle tip 與 needle shaft，並用小幅前後移動確認針尖真正位置",
+        "能依病灶位置與深度選擇 parallel 或 perpendicular，並說出各自的取捨",
+        "能執行 trans-isthmic 進針，並說出它為什麼被建議用來降低 recurrent laryngeal nerve 直接損傷的風險",
+        "能調整 gain、focus 與 beam steering／needle enhancement 功能改善針的顯影"
+      ],
+      "lesson": {
+        "title": "Fine Needle Aspiration Biopsy (FNA) Techniques - Dr. Britt Marie Ljung",
+        "channel": "USCAP Your Academy",
+        "url": "https://www.youtube.com/watch?v=mXh9en_nCBU",
+        "duration": "36:05",
+        "why": "USCAP（美國與加拿大病理學會）出品、由 UCSF 細胞病理學家 Britt-Marie Ljung 主講，是少數把 parallel needle placement 與 perpendicular needle placement 分成兩段各自示範、再接上 pitfalls 與甲狀腺專屬段落的完整教材，並以動畫拆解針在病灶內的移動方式。它解決的落差是：多數人只學過一種進針法，遇到那一種做不到的情境就沒有備案。仍須提醒：這是技術與判讀示範，不是執業授權——你能不能獨立執行、需不需要有人在旁督導，以及無菌鋪單、探頭套與銳器處理的細節，一律以你所屬機構的 credentialing、supervision 與感染控制規範為準。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 USCAP Your Academy，本站僅連結不重製",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "18:03", "note": "Ultrasound Guided FNA：影像導引取樣的整體流程"},
+          {"at": "20:06", "note": "Parallel needle placement（in-plane）"},
+          {"at": "21:05", "note": "Perpendicular needle placement（out-of-plane）"},
+          {"at": "22:48", "note": "Pitfalls of Ultrasound Guided FNA"},
+          {"at": "24:13", "note": "甲狀腺專屬的超音波導引 FNA"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "In-plane 進針的針體追蹤示範",
+          "en": "Ultrasound for Needle Guidance Using the In Plane Approach",
+          "kind": "procedure",
+          "target": "把 in-plane（parallel）進針拆成「先固定探頭平面、再讓針走進聲束平面」兩件事。重點在看清楚兩件事：探頭只要偏離針的平面幾度，整根針就會消失；以及畫面上怎麼確認你看到的是針尖而不是針身的斷面。",
+          "dose": "四分半的短片，建議連看兩次：第一次看操作者的手，第二次只盯超音波畫面，數出畫面中針「消失又出現」的次數。",
+          "title": "Ultrasound for Needle Guidance Using the In Plane Approach",
+          "channel": "Gulfcoast Ultrasound Institute",
+          "url": "https://www.youtube.com/watch?v=tMpjaozbegU",
+          "duration": "4:34",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Gulfcoast Ultrasound Institute，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "針的導航：陡角度與深部目標的顯影對策",
+          "en": "Webinar: Needle Navigation in Ultrasound-Guided Procedures",
+          "kind": "lecture",
+          "target": "為什麼角度一陡針就看不見（鏡面反射把能量帶離探頭），以及可以怎麼補償：改變進針角度、使用 beam steering／needle enhancement、換較粗或帶回音塗層的針、改用 out-of-plane。這是本章「後方與深部病灶」問題的物理基礎。",
+          "dose": "廠商自製教育內容，重點只放在物理原理與參數調整那幾段；凡是提到特定機型功能名稱處，請自行換算成你手上機器的對應鍵，產品比較一律略過。",
+          "title": "Webinar: Needle Navigation in Ultrasound-Guided Procedures",
+          "channel": "Sonosite",
+          "url": "https://www.youtube.com/watch?v=qfvu9E2iy2k",
+          "duration": "29:08",
+          "tier": "C",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 FUJIFILM Sonosite，本站僅連結不重製",
+          "coi": "設備廠商（FUJIFILM Sonosite）自製之教育內容，影片說明欄直接連往其產品頁；技術原理可用，產品功能宣稱不得視為臨床證據",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "操作者、病人與器械的擺位：針看不看得見從這裡決定",
+          "en": "How to position for ultrasound FNA biopsy",
+          "kind": "procedure",
+          "target": "在扎針之前就決定了針能不能被看見：病人頸部伸展的角度、操作者的手肘與視線、超音波螢幕與穿刺點是否落在同一條視線上、器械盤放哪一側。影片分別示範側頸病灶與甲狀腺 FNA 的擺位。",
+          "dose": "三分鐘。看完後在自己診間實地擺一次，拍照記錄螢幕、病人與你的相對位置，下次操作前照著重現。",
+          "title": "How to position for ultrasound FNA biopsy",
+          "channel": "Britt-Marie Ljung",
+          "url": "https://www.youtube.com/watch?v=tEbLiAhc7Hs",
+          "duration": "3:11",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Britt-Marie Ljung，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "KSThR 甲狀腺 CNB 共識：四條進針路徑與 trans-isthmic 的理由",
+          "en": "Core Needle Biopsy of the Thyroid: 2016 Consensus Statement and Recommendations from Korean Society of Thyroid Radiology",
+          "kind": "guideline",
+          "target": "共識文明列四條進針路徑——transisthmic、lateral、longitudinal、oblique——並指出 transisthmic 是被建議的首選；理由是曾有 lateral approach 直接切斷 recurrent laryngeal nerve 造成永久性聲音損傷的病例報告，trans-isthmic 路徑可避免針直接指向 RLN 走行區。另外記住三個操作細節：術前以 color Doppler 規劃路徑避開血管、選擇 specimen notch 長度與結節直徑相當的針以減少取到正常組織、擊發前先量好針尖與危險構造的安全距離並全程監看 specimen notch。",
+          "dose": "讀 Procedure 段落與 Recommendation 4A／4B，把四條路徑畫在自己的甲狀腺橫切示意圖上，標出各自會經過哪些構造。",
+          "title": "Core Needle Biopsy of the Thyroid: 2016 Consensus Statement and Recommendations from Korean Society of Thyroid Radiology",
+          "channel": "Korean Journal of Radiology 2017;18(1):217-237（KSThR／Korean Society of Radiology）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240493/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "Korean Journal of Radiology 開放取用（PMC 全文），版權歸原作者與 KSThR，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch5-u3",
+      "name": "困難病灶：囊性、鈣化、後方、深部與微小病灶",
+      "type": "procedure",
+      "assessment": "回顧自己過去 30 例 FNA，挑出所有 nondiagnostic（Bethesda I）的個案，逐例回填：結節組成（solid／predominantly solid／predominantly cystic／cystic）、有無 macrocalcification 或 rim calcification、病灶最深點到皮膚的距離、最大徑、當次使用的針號與取樣次數。算出各組的 nondiagnostic 率，找出自己的失敗集中在哪一種病灶。針對命中率最差的那一類，寫出下一次要改變的三件事（例如抽吸與否、針號、取樣點改到囊壁的實質部分、改轉 CNB），並在接下來 10 例中實測是否改善。",
+      "tight": [
+        "囊性病灶把囊液抽乾就交件——囊液多半只有 macrophage 與 colloid，診斷資訊在實質成分與囊壁",
+        "遇到 isolated macrocalcification 就當成良性放過；實際惡性率並不低，而且 FNA 在這類病灶的 nondiagnostic 率極高",
+        "血流豐富的病灶還用力抽吸，結果整管都是血，抹片被血蓋掉",
+        "後方與深部病灶不調 focus、不改進針角度，只是把針推得更深",
+        "微小病灶只憑一次進針就宣告取樣完成，沒有在畫面上確認針尖真的在病灶內來回"
+      ],
+      "weak": [
+        "能對囊實混合的結節選對取樣標的（實質成分、囊壁不規則處），而不是只抽液",
+        "能說出 isolated macrocalcification 的惡性風險量級，以及為什麼這類病灶 CNB 的 inconclusive 率明顯低於 FNA",
+        "能在血流豐富的病灶改用少抽吸或不抽吸的毛細管取樣，並判斷抹片是否被血稀釋",
+        "能為後方、深部與 <1 cm 病灶重新規劃進針路徑、探頭壓迫程度與焦點深度"
+      ],
+      "lesson": {
+        "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+        "channel": "Korean Journal of Radiology 2021;22(12):2094-2123（KSThR）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8628155/",
+        "why": "本單元主課刻意用指引而不用影片：搜尋後找不到任何一支來源可靠、同時涵蓋囊性／鈣化／後方／深部／微小病灶穿刺技術的公開影音（搜尋紀錄見 registry-ch5.json），而困難病灶真正的第一個決策也不是「怎麼扎」而是「該不該扎、扎哪一點」。這份 KSThR 共識給出完整 lexicon 定義（partially cystic 的 solid component 判定、spongiform 的 >50% 微囊定義、macrocalcification >1 mm 且帶後方聲影、rim calcification）、各級對應的切片 size cutoff，以及 FNA 結果 × 超音波風險的後續處置表，正好解釋為什麼同一顆囊實混合結節在不同系統下會得到不同建議。技術示範由本單元的 drills 補上。注意：指引寫的是決策標準，不是執業授權——高難度病灶要不要由更資深的人執行、要不要有人在旁督導，取決於你所屬機構的 credentialing 與 supervision 規定，感染控制細節亦同。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "journal",
+        "access": "open",
+        "license": "Korean Journal of Radiology 開放取用（PMC 全文），版權歸原作者與 KSThR，本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "困難取樣的四種失敗：血太多、抽太用力、針尖不在病灶內、抹片做壞",
+          "en": "Fine Needle Aspiration Biopsy (FNA) Techniques - Dr. Britt Marie Ljung",
+          "kind": "procedure",
+          "target": "同一支 USCAP 教材在本單元換一組時間軸來看：Sampling Highly Vascular Targets、Suction vs No Suction Sampling、Pitfalls of Ultrasound Guided FNA 與 Troubleshooting，正好對應困難病灶最常見的四種失敗。教學重點是把 nondiagnostic 的歸因從「這顆病灶本來就難取」轉回「我的取樣與製片方式可以改」。",
+          "dose": "只看 09:52、16:17、22:48、27:14 四段共約十分鐘。看完後對照自己最近三例 nondiagnostic，指出各自最可能踩到哪一種失敗。",
+          "title": "Fine Needle Aspiration Biopsy (FNA) Techniques - Dr. Britt Marie Ljung",
+          "channel": "USCAP Your Academy",
+          "url": "https://www.youtube.com/watch?v=mXh9en_nCBU",
+          "duration": "36:05",
+          "tier": "A",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 USCAP Your Academy，本站僅連結不重製",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            {"at": "09:52", "note": "Sampling Highly Vascular Targets：血流豐富病灶的取樣策略"},
+            {"at": "16:17", "note": "Suction vs No Suction Sampling：什麼時候不該抽吸"},
+            {"at": "22:48", "note": "Pitfalls of Ultrasound Guided FNA"},
+            {"at": "27:14", "note": "Troubleshooting：取不到東西時的下一步"}
+          ]
+        },
+        {
+          "name": "囊性甲狀腺結節的超音波導引抽吸實錄",
+          "en": "Thyroid cystic nodule ultrasound-guided drainage/aspiration",
+          "cat_hint": "囊性病灶的穿刺技術與檢體適足",
+          "kind": "procedure",
+          "target": "看囊液黏稠度如何決定抽不抽得動，以及抽完之後真正該被評估的是什麼：殘餘的實質成分與囊壁。這支影片示範的是減壓，不是診斷——把它當成「抽液之後別忘了回頭穿刺實質部分」的提醒。",
+          "dose": "三分半。看的時候只問一件事：如果這是你的病人，抽完液之後你的針要往哪裡再走一次。",
+          "title": "Thyroid cystic nodule ultrasound-guided drainage/aspiration",
+          "channel": "Vincent ENT, Thyroid, Head and Neck Biopsy & Surgery Specialist Clinic",
+          "url": "https://www.youtube.com/watch?v=Gi9hGI-jBD4",
+          "duration": "3:32",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（馬來西亞私人耳鼻喉暨頭頸外科診所），授權狀況未確認，僅連結不重製",
+          "coi": "由私人診所頻道發布，內容同時具服務推廣性質；操作示範可用，治療選擇的宣稱不得視為臨床證據",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "孤立 macrocalcification 結節：惡性風險與 FNA／CNB 的診斷效能",
+          "en": "Thyroid nodules with isolated macrocalcification: malignancy risk and diagnostic efficacy of fine-needle aspiration and core needle biopsy",
+          "kind": "guideline",
+          "target": "本單元最硬的數字：44 例孤立 macrocalcification 結節中，有最終診斷的 31 顆惡性率 16.1%（全體 11.4%），<1 cm 與 ≥1 cm 之間無顯著差異；在同時做過兩種切片的 26 顆中，CNB 的 nondiagnostic 率 7.7% vs FNA 53.8%、inconclusive 率 15.4% vs 57.7%。結論是這類結節不能當良性看，而且 FNA 在它身上會失敗過半。要注意這是單一機構的回溯性研究、樣本數小，不能直接外推成普遍規則。",
+          "dose": "先自己猜一個 FNA nondiagnostic 率再看數字，落差通常會讓人印象深刻。讀完後決定：你單位有沒有 CNB 可以轉介？",
+          "title": "Thyroid nodules with isolated macrocalcification: malignancy risk and diagnostic efficacy of fine-needle aspiration and core needle biopsy",
+          "channel": "Ultrasonography 2016;35(3):212-219（Korean Society of Ultrasound in Medicine）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4939718/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Ultrasonography 開放取用（PMC 全文），版權歸原作者，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "超音波導引抽吸的陷阱（ETA 超音波課程講者的案例集）",
+          "en": "Ultrasound-guided aspiration - piffalls",
+          "cat_hint": "細針穿刺技術與檢體適足",
+          "kind": "case",
+          "target": "以案例形式呈現抽吸過程中容易出錯的判讀——針尖位置的錯覺、抽到的東西與影像不相符、抽吸後結節形態改變造成的誤判。作者 Tamas Solymosi 為 ETA 超音波課程講者，其病例完整病史另放在 thyrosite.com。",
+          "dose": "每個案例先暫停，自己說出「他接下來會遇到什麼問題」再往下看。誠實揭露：本站僅以 YouTube oEmbed 確認此影片存在、標題與頻道相符、長度 9:06；YouTube 擋下了 metadata 與字幕抓取，因此未能逐字檢視內容，上述教學重點是依標題與該頻道其他已審閱影片的水準推定。請自行先看前兩分鐘再決定要不要繼續。影片為英語旁白，無官方字幕。",
+          "title": "Ultrasound-guided aspiration - piffalls",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=HfOLBthdHnM",
+          "duration": "9:06",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Tamas Solymosi，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch5-u4",
+      "name": "可疑淋巴結 FNA 與 thyroglobulin／PTH washout",
+      "type": "procedure",
+      "assessment": "挑 5 位已知或疑似甲狀腺癌、且有可疑頸部淋巴結的病人，逐例寫出：淋巴結所在 level、短徑、可疑特徵（微鈣化、囊性變、周邊血流、hilum 消失、高回音實質）、依 KSThR 建議是否達到穿刺門檻（術前可疑 >3–5 mm、不確定 >5 mm；術後追蹤 >8–10 mm）、有沒有同時送 FNA-Tg washout、送檢容器與稀釋方式為何、實驗室 cutoff 是多少、血中 anti-Tg antibody 狀態。再挑 2 例做過 PTH washout 的個案，記錄病灶大小與是否為囊性。最後寫出你所在實驗室 washout 檢體的完整處理流程（誰送、幾分鐘內送到、用什麼溶液、多少毫升）以及這份流程有沒有成文。",
+      "tight": [
+        "只憑細胞學報告判定淋巴結陰性——轉移淋巴結的細胞可能被壞死物或囊液稀釋，washout Tg 是必要的補強",
+        "washout 檢體的稀釋液體積、送檢時間與 cutoff 每間實驗室不同，直接套用文獻的 cutoff 會錯",
+        "假設血中 anti-Tg antibody 陽性就不能做 FNA-Tg——現有統合分析顯示血中 TgAb 對 FNA-Tg 的干擾有限",
+        "把 PTH washout 的絕對數值當成固定判準，忽略病灶大小與囊性型態會系統性影響數值",
+        "central compartment 的小淋巴結一律穿刺，忽略解剖風險與 KSThR 對中央區採選擇性 washout 的建議"
+      ],
+      "weak": [
+        "能依短徑與可疑特徵決定哪些淋巴結該穿刺，並說出術前與術後追蹤門檻的差別",
+        "能正確執行並記錄 FNA-Tg washout 的檢體處理流程，並知道自己實驗室的 cutoff 從何而來",
+        "能說出 FNA-Tg 在有無殘餘甲狀腺兩種情境下的診斷效能差異",
+        "能在副甲狀腺定位困難時判斷 PTH washout 的適用時機，並在解讀時校正病灶大小與囊性因素"
+      ],
+      "lesson": {
+        "title": "FNA Workshop 17th May 2023 - Session 7 (Cervical Lymph Nodes Ultrasound)",
+        "channel": "GM Cancer Academy",
+        "url": "https://www.youtube.com/watch?v=fOlf7lDArXc",
+        "duration": "22:06",
+        "why": "同一場 NHS workshop 中專門處理頸部淋巴結的一節，把「哪一顆淋巴結值得扎」拆成可以在螢幕上逐項確認的特徵，而不是只講「大於一公分就穿刺」。它解決的落差是：多數人對甲狀腺結節的 lexicon 很熟，對淋巴結卻只會看大小。仍要提醒：影片示範的是英國單一癌症網絡的作業方式，頸部淋巴結穿刺的執行資格、督導要求、檢體送驗與感染控制流程必須依你所屬機構的 credentialing 規範辦理，公開影音無法取代。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 GM Cancer Academy，本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "頸部淋巴結的超音波評估（ETA 超音波課程）",
+          "en": "Sonographic assessment of cervical lymph nodes - ETA Ultrasound Course",
+          "kind": "lecture",
+          "target": "把正常、反應性與轉移性淋巴結的超音波表現並排比較，重點在 hilum、實質回音、形狀比例與血流型態的組合判讀，而不是單一特徵。這是決定「要不要扎、扎哪一顆」的影像基礎。",
+          "dose": "十三分鐘。看的時候把每個案例先蓋住結論，自己給一個「良性／不確定／可疑」的分類再對答案。英語旁白，無官方字幕；作者為 ETA 超音波課程講者，完整病史另見 thyrosite.com。",
+          "title": "Sonographic assessment of cervical lymph nodes - ETA Ultrasound Course",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=_aJF1Uv-e1s",
+          "duration": "13:19",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Tamas Solymosi，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "KSThR 共識：頸部淋巴結 FNA 的大小門檻與 Tg washout 適應症",
+          "en": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+          "kind": "guideline",
+          "target": "共識文明列的門檻：術前——可疑淋巴結短徑 >3–5 mm、不確定淋巴結 >5 mm；術後追蹤——可疑或不確定淋巴結 >8–10 mm。並明確建議：對側頸（lateral neck）淋巴結執行 FNA 時應加測 tissue-washout thyroglobulin，中央區則選擇性使用；若淋巴結緊鄰重要構造，或正在考慮非手術治療（酒精或射頻消融），較小的淋巴結也可以穿刺。文中另附 FNA 結果 × 超音波型態的後續處置表。",
+          "dose": "把兩組門檻（術前 vs 術後）抄在檢查室牆上；下次遇到 4 mm 的可疑淋巴結，先確認病人是術前還是術後再決定。",
+          "title": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+          "channel": "Korean Journal of Radiology 2016;17(3):370-395（KSThR）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4842857/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "Korean Journal of Radiology 開放取用（PMC 全文），版權歸原作者與 KSThR，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "淋巴結 FNA-Tg washout 的診斷效能：系統性回顧與統合分析",
+          "en": "Diagnostic Efficiency of Thyroglobulin in Lymph Node Fine-needle Aspiration Washout: A Systematic Review and Meta-analysis",
+          "kind": "guideline",
+          "target": "FNA-Tg 的彙總敏感度 0.94（95% CI 0.91–0.96）、特異度 0.92（0.88–0.94）、AUC 0.98；已切除甲狀腺者敏感度升到 0.96、特異度 0.93。關鍵臨床訊息有二：血中 anti-Tg antibody 對 FNA-Tg 的干擾很小，TgAb 陽性不是不做 washout 的理由；FNA-Tg 與血中 Tg 只有弱相關，兩者不能互相取代。要注意各研究採用的 cutoff 與沖洗液體積彼此有出入，這正是你必須回頭確認自己實驗室做法的原因。",
+          "dose": "讀 Data Synthesis 與 Limitations 兩段，然後打電話問實驗室三件事：沖洗液是什麼、體積多少、cutoff 怎麼訂的。",
+          "title": "Diagnostic Efficiency of Thyroglobulin in Lymph Node Fine-needle Aspiration Washout: A Systematic Review and Meta-analysis",
+          "channel": "The Journal of Clinical Endocrinology and Metabolism 2025（PMC12623056）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12623056/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "JCEM 文章之 PMC 全文開放取用，版權歸原作者與 Endocrine Society，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "PTH washout：病灶大小與囊性型態如何改變數值判讀",
+          "en": "Lesion size and cystic morphology are key determinants of parathyroid hormone washout in primary hyperparathyroidism",
+          "kind": "guideline",
+          "target": "原發性副甲狀腺亢進的 PTH washout 值會隨病灶超音波尺寸而變動，囊性腺瘤測得的數值明顯較高；而 B-mode 回音特徵與 Doppler 血流型態則與 PTH-WO 數值無顯著關聯。臨床意涵：解讀 PTH washout 必須把病灶大小納入考量，不能只用一個固定門檻。該研究的檢體處理方式（以 1 mL 生理食鹽水沖洗三次、10 分鐘內送驗、可接受的最低 PTH-WO 值 33 pg/mL）也可以直接拿來對照你單位的做法。",
+          "dose": "重點讀 Methods 的檢體處理段與 Discussion；把該研究的送檢流程與你單位的做法逐項對照，差一項就記一項。",
+          "title": "Lesion size and cystic morphology are key determinants of parathyroid hormone washout in primary hyperparathyroidism",
+          "channel": "Frontiers in Endocrinology 2025（PMC12479290）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12479290/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Frontiers in Endocrinology 以 CC BY 授權開放取用，版權歸原作者，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch5-u5",
+      "name": "檢體適足性、ROSE、nondiagnostic 處理、core needle biopsy 與併發症",
+      "type": "procedure",
+      "assessment": "第一部分：抽出自己過去 12 個月所有 FNA 的細胞學報告，依 Bethesda 分類統計比例，特別算出 Bethesda I（nondiagnostic）佔比；把每一例 Bethesda I 對應回當時的超音波風險分級（ACR TI-RADS 2017 或 K-TIRADS 2021 擇一），寫出你的重複切片時程是否符合指引、有多少例最後改用 CNB。第二部分：寫一份可以貼在自己檢查室牆上的併發症緊急處理流程，至少涵蓋血腫（壓迫多久、何時該回頭掃影像、何時通報）、vasovagal（如何擺位）、聲音改變（暫時性 vs 需轉診喉鏡）、感染徵象與病人返診指示，每一條都註明依據來源與你單位的通報窗口。第三部分：對照你單位的 credentialing 文件，寫出這份流程該由誰簽署、CNB 由誰執行。",
+      "tight": [
+        "把「併發症很少見」當成不必準備——KSThR 統整的 CNB 併發症率為 0–4.1%、主要併發症 0–1.9%，不是零",
+        "血腫只用手壓五分鐘就讓病人回家；文獻描述的壓迫時間是 30–120 分鐘，CNB 後更應留觀",
+        "Bethesda I 一律「三個月後再抽一次」，沒有依超音波風險分層調整時程，也沒有考慮改做 CNB",
+        "把 Bethesda 各類的 malignancy risk 當成固定數字，忽略第 3 版明確指出各地區差異很大",
+        "沒有 ROSE 就完全不知道這一針有沒有取到東西，卻也沒有建立自己看抹片的自我檢查習慣"
+      ],
+      "weak": [
+        "能在抹片與針座上初步判斷這一針是否可能足量，當場決定要不要再取一次",
+        "能把 Bethesda 分類與超音波風險分級合併使用，決定重複切片的時程與方式",
+        "能說出 CNB 相對 FNA 在 non-conclusive 結果上的改善幅度，以及它換來的併發症代價",
+        "能背出並執行血腫、vasovagal、聲音改變與感染的即時處理步驟，並知道自己單位的通報路徑"
+      ],
+      "lesson": {
+        "title": "Updates to the Bethesda System with Dr. Baloch",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=s1HMOIKaGvw",
+        "duration": "1:01:04",
+        "why": "由 Zubair Baloch（Bethesda 系統核心作者之一）親自講第 1 到第 3 版的演變，正面處理本章要求的「Bethesda cytology 與超音波風險的連結」：第 3 版把影像研究與分子檢測正式列為 FNA 診斷的 adjunct，並承認各地 malignancy risk 差異極大；中段直接把超音波、細胞學與組織學三者並排對照。這是理解「為什麼同一個 Bethesda 類別在不同超音波風險下要有不同處置」的最佳入口。但講座談的是判讀與分類，不是操作授權——檢體處理流程、有沒有 ROSE 人力、CNB 由誰執行、併發症如何通報，一律回到你所屬機構的 credentialing、supervision 與感染控制規範。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 THANC Foundation，本站僅連結不重製",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "12:39", "note": "第 2 版：NIFTP 的納入如何改變各類別的 malignancy risk"},
+          {"at": "19:00", "note": "超音波、細胞學與組織學三者對照的實例"},
+          {"at": "24:02", "note": "第 3 版：影像與分子檢測列為 adjunct、各地 malignancy risk 的異質性"},
+          {"at": "34:57", "note": "超音波＋細胞學＋分子檢測如何共同決定復發風險分層"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "KSThR core needle biopsy 共識：適應症、術前用藥與併發症處理",
+          "en": "Core Needle Biopsy of the Thyroid: 2016 Consensus Statement and Recommendations from Korean Society of Thyroid Radiology",
+          "kind": "guideline",
+          "target": "本單元併發症段落的主要依據，數字都在文中：整體併發症率 0–4.1%、主要併發症 0–1.9%。血管損傷是最常見的併發症，其中以血腫最常見（CNB 後血管損傷率報告可達 3.9%，FNA 為 1–6.4%），另有 pseudoaneurysm 與動靜脈廔管的報告。血腫依位置分為 perithyroidal、subcapsular 與 intranodular，多數以頸部壓迫 30–120 分鐘處理，1–2 週內消退。其他併發症包括聲音沙啞（多為暫時性，但曾有 lateral approach 直接切斷 recurrent laryngeal nerve 造成永久損傷的病例，故建議採 trans-isthmic 路徑）、感染／膿瘍、咳血、水腫、vasovagal 反應與吞嚥困難。術前用藥：aspirin 與 clopidogrel 停 7–10 天、warfarin 停 3–5 天、heparin 停 4–6 小時，術後 aspirin／clopidogrel 隔日、warfarin 當晚、heparin 2 小時後恢復，但停藥決定必須與開藥醫師討論，warfarin 可暫時橋接為短效 heparin。術後應立即手動壓迫穿刺處 20–30 分鐘。",
+          "dose": "把 Complications 一節整段讀完，直接改寫成你單位檢查室可以貼的中文流程；每一條後面註明原文出處段落，方便日後被質疑時回查。要特別留意：文中的數字來自韓國以放射科醫師為主的執行環境，你單位的併發症率必須自己稽核，不能直接引用。",
+          "title": "Core Needle Biopsy of the Thyroid: 2016 Consensus Statement and Recommendations from Korean Society of Thyroid Radiology",
+          "channel": "Korean Journal of Radiology 2017;18(1):217-237（KSThR／Korean Society of Radiology）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240493/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "Korean Journal of Radiology 開放取用（PMC 全文），版權歸原作者與 KSThR，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "FNA 結果不確定時改做 CNB：配對比較的實際收益與代價",
+          "en": "Clinical Value of Core Needle Biopsy as a Second-Line Approach After Non-Conclusive Fine-Needle Aspiration in Thyroid Nodules: A Paired Analysis",
+          "kind": "guideline",
+          "target": "單一轉診中心 434 顆結節、其中 82 顆同時做過兩種切片的配對分析：FNAB 的 non-conclusive 率 56.5%，CNB 為 23.5%；在 FNAB non-conclusive 的結節中，有 53.7% 經 CNB 後被重新分類為 conclusive（p < 0.001）。代價是 CNB 的輕微併發症較多，兩者的主要併發症都罕見。超音波風險分層採 ACR TI-RADS，hypoechogenicity、irregular margin 與 punctate echogenic foci 是惡性的獨立預測因子。要注意這是單一中心、FNAB non-conclusive 率偏高的族群，外推前先算出你單位的 baseline。",
+          "dose": "先算出自己的 Bethesda I 比例，再看這篇的 56.5%；如果你的數字低很多，這篇估計的收益對你就會偏高。",
+          "title": "Clinical Value of Core Needle Biopsy as a Second-Line Approach After Non-Conclusive Fine-Needle Aspiration in Thyroid Nodules: A Paired Analysis",
+          "channel": "Diagnostics (Basel) 2026（PMC13072916）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13072916/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Diagnostics 以 CC BY 授權開放取用，版權歸原作者，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "頭頸部細針穿刺的 ROSE 適足性判讀速成",
+          "en": "Cytopathology: Head and Neck Cytology - ROSE Adequacy Crash Course",
+          "kind": "lecture",
+          "target": "以甲狀腺、唾液腺與淋巴結三種頭頸部檢體為例，示範 rapid on-site evaluation 判斷適足性的實際看法：什麼算足量、什麼是血稀釋、什麼情況下當場就該再取一針。即使你的單位沒有 ROSE 人力，這些判斷標準也能改寫成自己看抹片的自我檢查清單。",
+          "dose": "由新加坡國立大學 Pathweb 教學資源發布。二十八分鐘，建議在能看清顯微影像的螢幕上看；每出現一張抹片先自己判「足夠／不足」再看解答。英語授課，可用 YouTube 自動翻譯字幕。",
+          "title": "Cytopathology: Head and Neck Cytology - ROSE Adequacy Crash Course",
+          "channel": "Pathweb Teacher",
+          "url": "https://www.youtube.com/watch?v=EYScWqHDgug",
+          "duration": "28:12",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Pathweb（NUS Yong Loo Lin School of Medicine 教學資源），本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}

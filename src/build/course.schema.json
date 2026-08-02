@@ -474,7 +474,7 @@
    "properties": {
     "id": {
      "type": "string",
-     "pattern": "^[a-z0-9-]+$"
+     "pattern": "^[a-z0-9][a-z0-9_-]*$"
     },
     "label": {
      "type": "string"
@@ -503,11 +503,13 @@
    "properties": {
     "min": {
      "type": "string",
-     "pattern": "^\\d+:\\d{2}$"
+     "pattern": "^\\d+:\\d{2}(:\\d{2})?$",
+     "description": "分:秒 或 時:分:秒"
     },
     "max": {
      "type": "string",
-     "pattern": "^\\d+:\\d{2}$"
+     "pattern": "^\\d+:\\d{2}(:\\d{2})?$",
+     "description": "分:秒 或 時:分:秒"
     }
    }
   }

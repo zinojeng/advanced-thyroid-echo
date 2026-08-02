@@ -1,0 +1,343 @@
+{
+ "chapter": "CH9",
+ "title": "副甲狀腺及甲狀腺外病灶",
+ "units": [
+  {
+   "id": "ch9-u1",
+   "name": "副甲狀腺腺瘤、增生與副甲狀腺癌",
+   "type": "disease",
+   "assessment": "回頭調閱自己近一年門診中「PTH 或血鈣異常」的病人，至少 10 位，把當時的頸部超音波影像重看一次。逐一記錄：(1) 有沒有描述甲狀腺後方或下極外側的低回音病灶；(2) 該病灶長軸是否與頸部長軸平行、與甲狀腺被膜之間是否看得到分隔的高回音線；(3) Doppler 有沒有極部進入血管（polar vessel）。統計自己當初漏掉或報成「淋巴結／甲狀腺結節」的比例，並針對每一個漏掉的病灶寫出當時應該加掃的切面（縱切延伸到胸骨上窩、吞嚥動態、上縱膈方向），下次門診實際執行一次。",
+   "tight": [
+    "把副甲狀腺腺瘤報成淋巴結：淋巴結有 fatty hilum、血流由 hilum 進入呈樹枝狀分布；副甲狀腺腺瘤沒有 fatty hilum，血流是單一 polar vessel 從一極進入（多來自 inferior thyroid artery），常呈周邊弧狀（arc/rim）分布。",
+    "把副甲狀腺腺瘤報成甲狀腺結節：腺瘤位在被膜外，橫切時與甲狀腺之間可見一條高回音的被膜界面，壓迫或吞嚥時兩者可相對滑動；甲狀腺結節被甲狀腺實質包圍且無 polar vessel。",
+    "長軸方向：副甲狀腺腺瘤多為橢圓形且長軸與頸部長軸（cranio-caudal）平行，橫切看起來反而「小」；只掃橫切面很容易低估或整個略過。",
+    "只看甲狀腺後方就收工：上副甲狀腺常在甲狀腺中上段背側、Zuckerkandl tubercle 附近；下副甲狀腺位置變異大，可落到胸腺舌部或上縱膈，必須把探頭往胸骨上窩壓並請病人吞嚥。",
+    "副甲狀腺癌極罕見，不能靠超音波下診斷；但「大、外形分葉、邊界侵犯甲狀腺或氣管、血鈣與 PTH 明顯偏高」時要在報告寫出可疑侵犯而不是給良性結論。",
+    "增生（尤其四腺增生與次發性副甲狀腺亢進）常常四顆都只是輕度腫大，超音波敏感度遠低於單一腺瘤；一顆病灶被找到不代表其他三顆正常。"
+   ],
+   "weak": [
+    "在標準甲狀腺掃描流程中額外加入副甲狀腺搜尋段落，並能說出上、下副甲狀腺各自的常見與異位位置。",
+    "以 greyscale 形態（橢圓、均質低回音、長軸方向）加上 Doppler（polar vessel、arc vascularity）建立副甲狀腺病灶的正向判讀依據，而不只是「排除法」。",
+    "區分單一腺瘤與多腺體疾病在影像上的表現差異，並知道超音波在多腺體疾病的敏感度明顯下降。",
+    "對可疑副甲狀腺癌寫出結構化描述（大小、形狀、邊界、與甲狀腺／氣管／食道的關係、血流），並連結到後續處置。"
+   ],
+   "lesson": {
+    "title": "DR ANIL AHUJA | Parathyroid Adenoma - Ultrasound Tips For Accurate Detection #sonobuzz #neckimaging",
+    "channel": "Indian Radiologist",
+    "url": "https://www.youtube.com/watch?v=6usNKWKfEcA",
+    "duration": "11:10",
+    "why": "Anil T. Ahuja 是頭頸部超音波領域公認的權威（《Diagnostic Imaging: Ultrasound》與多本頭頸超音波專書作者），這段是 Sonobuzz 教育活動的受邀講題，直接針對「掃得到卻認不出來」這個內分泌科最常見的落差：先講解剖搜尋順序，再用實際動態影像示範 polar vessel 與長軸方向的判讀。長度短、教學密度高，適合當本單元主課。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 Indian Radiologist 與講者，本站僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "副甲狀腺腺瘤位於非典型位置",
+     "en": "Parathyroid adenoma in an unusual location (Parathyroid lesions - case 5)",
+     "kind": "case",
+     "target": "在非典型位置（非甲狀腺正後方）發現副甲狀腺腺瘤，練習把搜尋範圍從「甲狀腺背側」擴大到頸動脈內側、胸骨上窩與上縱膈方向。",
+     "dose": "先不看標題，只播影片並自己說出病灶位置與最可能的診斷，再到 thyrosite.com 的 Parathyroid lesions 案例索引核對完整臨床資料與病理。片長不到一分鐘，適合當門診前的 90 秒暖身。",
+     "title": "Parathyroid adenoma in an unusual location. Parathyroid lesions - case 5",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=EMR-16wQNdI",
+     "duration": "0:43",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 Tamás Solymosi（thyrosite.com），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "四腺增生：兩次都被當成 Hashimoto 假結節",
+     "en": "Hyperplasia of all four parathyroids (thyrosite case 899)",
+     "kind": "case",
+     "target": "多腺體疾病的影像陷阱：甲狀腺背側兩顆低回音病灶第一次細胞學被判為 Hashimoto thyroiditis，三年後才靠 washout PTH（>474 pg/mL）解開；同時示範 washout thyroglobulin 因為針道穿過腹側甲狀腺組織而假性升高（74.4 ng/mL）。",
+     "dose": "先只讀第一次檢查那一段與第一排影像，寫下自己的鑑別診斷與下一步；再往下讀三年後的追蹤。重點放在「為什麼 washout Tg 高不能用來排除副甲狀腺」。",
+     "title": "Parathyroid lesions - case 899",
+     "channel": "thyrosite.com（Tamás Solymosi，ETA 2026 超音波課程網站）",
+     "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/899/index.php",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "case_library",
+     "access": "open",
+     "license": "授權狀況未確認（站方 Terms and Conditions 頁面標示 under construction），僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "副甲狀腺癌：細胞學看起來像濾泡性腫瘤",
+     "en": "Parathyroid carcinoma with nodal metastases (thyrosite case 755)",
+     "kind": "case",
+     "target": "41 歲女性，進行性骨痛與反覆腎結石，PTH 194、鈣 2.91 mM/L；甲狀腺左下極背外側深度低回音、血流增加的病灶。示範副甲狀腺癌的細胞學與甲狀腺濾泡性腫瘤幾乎無法區分，而 washout thyroglobulin <0.1 ng/mL 才是關鍵線索。",
+     "dose": "把臨床數據（高鈣＋高 PTH）遮住只看影像描述，判斷自己會不會下「濾泡性腫瘤，建議手術」；再加回生化數據重做一次判斷，體會臨床資訊如何改變影像結論。",
+     "title": "Parathyroid lesions - case 755",
+     "channel": "thyrosite.com（Tamás Solymosi，ETA 2026 超音波課程網站）",
+     "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/755/index.php",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "case_library",
+     "access": "open",
+     "license": "授權狀況未確認（站方 Terms and Conditions 頁面標示 under construction），僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch9-u2",
+   "name": "甲狀腺內副甲狀腺病灶的鑑別",
+   "type": "case",
+   "assessment": "挑三個自己曾經以 ACR TI-RADS (2017) 或 K-TIRADS (2021) 分級為 TR3–TR4 的低回音實心結節，重新調閱影像並回答：這顆結節的四周是否完整被甲狀腺實質包圍？有沒有一條進入單一極的血管？病人當時有沒有驗過血鈣或 PTH？接著建立一條自己的門診規則並寫成一句話（例如「甲狀腺下極、均質低回音、無鈣化、TR3–TR4 的結節，穿刺前先看一次血鈣」），下個月門診實際套用並記錄有幾例因此加驗生化、有幾例改變了處置。",
+   "tight": [
+    "甲狀腺內副甲狀腺（intrathyroidal parathyroid）四周被甲狀腺實質完整包圍，看不到被膜界面，這時「與甲狀腺被膜的關係」這個平常最好用的線索完全失效，只剩下均質低回音、無鈣化、單一 polar vessel 與臨床生化。",
+    "細胞學會騙人：副甲狀腺細胞在抹片上與甲狀腺濾泡細胞高度相似，甚至可以出現核內包涵體而被判為 papillary carcinoma 可疑；只有 washout PTH 才能定性。",
+    "washout thyroglobulin 的解讀陷阱：針穿過腹側甲狀腺組織時，非甲狀腺病灶的 washout Tg 一樣會升高，不能因為 Tg 高就排除副甲狀腺。",
+    "MIBI scintigraphy 對甲狀腺內病灶常常是 equivocal，因為甲狀腺本身也會攝取；核醫報告陰性不代表可以排除。",
+    "沒有高血鈣就不會想到副甲狀腺：normocalcemic primary hyperparathyroidism 與早期病例可能只有 PTH 偏高，超音波看到「怪怪的低回音結節」時要主動回頭問生化。"
+   ],
+   "weak": [
+    "在沒有被膜界面可用時，改以 Doppler 血管型態、病灶均質度與臨床生化三者交叉判讀。",
+    "在超音波導引穿刺前就決定要不要同時送 washout PTH，而不是等細胞學報告出來才回頭補做。",
+    "正確解讀 washout PTH 與 washout thyroglobulin 的組合結果，包括 Tg 假性升高的情境。",
+    "知道甲狀腺內副甲狀腺是最少見的位置，因此「先驗生化再懷疑」比「先懷疑再驗生化」更有效率。"
+   ],
+   "lesson": {
+    "title": "(ENG)Differentiation between thyroid and parathyroid lesions",
+    "channel": "KeepMyThyroid",
+    "url": "https://www.youtube.com/watch?v=p6s_zNlyUqY",
+    "duration": "5:11",
+    "why": "頻道作者為韓國甲狀腺影像與介入專科放射科醫師（頻道自述：大韓民國醫學翰林院正會員、Yonsei Medical Journal 編輯委員、《Thyroid Ultrasound and Intervention》1–5 版作者、Kwak TI-RADS 原始論文第一作者 Radiology 2011;260:892-9），可信度高。這五分鐘正面回答「甲狀腺與副甲狀腺病灶怎麼分」，用實際動態影像逐項對照，正好補上內分泌科最常誤判的地方。英文口述，無字幕。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 KeepMyThyroid，本站僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "甲狀腺內副甲狀腺腺瘤動態影像",
+     "en": "An intrathyroidal parathyroid adenoma (Parathyroid lesions - case 9)",
+     "kind": "case",
+     "target": "看實際動態掃描：位於右葉上中段實質內、帶有高回音顆粒的低回音病灶，四周完全被甲狀腺包圍，沒有任何被膜界面可用。",
+     "dose": "先播影片，不看診斷，自己寫一段 structured description 並給 ACR TI-RADS (2017) 分級與穿刺建議；再打開同一個案的完整病歷（本單元下一項 thyrosite case 1399）比對 washout PTH 203 pg/mL 與 washout Tg 9.08 的結果。影片僅 33 秒、觀看數低（約 185 次），價值在動態影像本身而非講解。",
+     "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
+     "channel": "Tamas Solymosi",
+     "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
+     "duration": "0:33",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸 Tamás Solymosi（thyrosite.com），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "甲狀腺下極內的副甲狀腺腺瘤：washout 定性",
+     "en": "Intrathyroidal parathyroid adenoma confirmed by PTH washout (thyrosite case 521)",
+     "kind": "case",
+     "target": "43 歲女性 PHPT，核醫指出右下副甲狀腺腫大；超音波在右葉下極內見一顆四周完全被甲狀腺組織包圍的低回音腫塊，細胞學只報 benign，最後靠 washout PTH 769 pg/mL 與 washout thyroglobulin 0 ng/mL 定性。",
+     "dose": "重點在數字對比：把 washout PTH 769 / Tg 0 這一組結果，和上一單元 case 899 的 PTH >474 / Tg 74.4 放在一起看，寫出自己解讀 washout 的判讀規則（什麼時候 Tg 高仍不能排除副甲狀腺）。",
+     "title": "Parathyroid lesions - case 521",
+     "channel": "thyrosite.com（Tamás Solymosi，ETA 2026 超音波課程網站）",
+     "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/521/index.php",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "case_library",
+     "access": "open",
+     "license": "授權狀況未確認（站方 Terms and Conditions 頁面標示 under construction），僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "細胞學誤導：被判為疑似乳突癌的副甲狀腺腺瘤",
+     "en": "Parathyroid adenoma with deceptive cytology (thyrosite case 1597)",
+     "kind": "case",
+     "target": "40 歲女性，外院細胞學 AUS/FLUS；超音波在右葉上方腹外側見低回音病灶、血流不具特異性。重做細胞學時抹片上細胞質豐富、有空泡，最大細胞團中多個核內包涵體，被判為疑似 papillary carcinoma，術後病理卻是副甲狀腺腺瘤。",
+     "dose": "先讀完影像描述再讀細胞學，然後停下來自問：影像上有沒有任何惡性特徵？作者的結論是「正因為超音波沒有惡性特徵，才沒有給出確定的乳突癌診斷」。把這個案當成「影像與細胞學不一致時，影像可以怎麼發揮煞車作用」的範例。",
+     "title": "Parathyroid lesions - case 1597",
+     "channel": "thyrosite.com（Tamás Solymosi，ETA 2026 超音波課程網站）",
+     "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/1597/index.php",
+     "tier": "B",
+     "source_type": "case",
+     "provider": "case_library",
+     "access": "open",
+     "license": "授權狀況未確認（站方 Terms and Conditions 頁面標示 under construction），僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch9-u3",
+   "name": "頸部非甲狀腺腫塊",
+   "type": "disease",
+   "assessment": "設計一份自己的「頸部非甲狀腺病灶」報告模板並實際用滿 10 例：每一例必須寫出 (1) 病灶所在的頸部分區與相對於頸動脈、胸鎖乳突肌、食道的位置；(2) 囊性／實心／混合；(3) 有無 fatty hilum；(4) 血流型態；(5) 與吞嚥或壓迫的動態變化（食道憩室會隨吞嚥出現氣體訊號並改變形狀）。統計這 10 例中有幾例是原本被排入「甲狀腺結節追蹤」的，並寫下自己因此改掉的一個掃描習慣。",
+   "tight": [
+    "食道憩室（含 Zenker 及其他上段食道憩室）在左葉後方最常被報成甲狀腺結節或可疑淋巴結：關鍵是內部氣體造成的 ring-down/reverberation artifact、隨吞嚥改變形狀與內容物、並可追出與食道相連。靜態單張影像幾乎一定判錯，必須錄動態並讓病人吞口水。",
+    "正常結構被當成病灶：胸鎖乳突肌與頸長肌（longus colli）橫切、頸椎橫突前後結節、下頷下腺尾部與胸腺舌部，都可能在單一切面上像低回音腫塊；轉 90 度看長軸通常立刻解決。",
+    "囊性病灶不等於良性：甲狀舌管囊腫、第二鰓裂囊腫、與轉移性囊性淋巴結（尤其乳突癌）在灰階上可以非常相似；位置（中線 vs 頸動脈外側）、與舌骨的關係、有無壁上實心結節與血流才是分辨點。",
+    "神經鞘瘤（schwannoma）常沿頸動脈鞘走行、兩端可見連續的神經束（entering/exiting nerve sign），沒有 fatty hilum，很容易被當成腫大的 level II–IV 淋巴結。",
+    "頸動脈體瘤／副神經節瘤位於頸動脈分叉、血流極豐富、可撐開內外頸動脈；誤穿刺會出血，Doppler 沒開就直接下針是真正的風險。",
+    "脂肪瘤與異位胸腺在小兒與年輕族群常見，回音特徵（脂肪瘤的線狀高回音、胸腺的點狀高回音「星空」樣）需要與甲狀腺實質做直接對照才看得出來。"
+   ],
+   "weak": [
+    "把頸部掃描從「甲狀腺加淋巴結」擴大成完整的頸部軟組織掃描，並能用分區與鄰近構造描述病灶位置。",
+    "使用動態操作（吞嚥、壓迫、Valsalva、轉頭）區分食道憩室、血管性病灶與真正的實心腫塊。",
+    "對囊性頸部病灶建立「先看位置、再看壁與血流」的判讀順序，而不是一律歸類為良性囊腫。",
+    "知道哪些非甲狀腺病灶不該由內分泌科逕行穿刺（血管性病灶、疑似副神經節瘤），並知道轉介時機。"
+   ],
+   "lesson": {
+    "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+    "channel": "AIUMultrasound",
+    "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+    "duration": "44:34",
+    "why": "AIUM（American Institute of Ultrasound in Medicine）官方頻道，影片描述具名由 Jennifer A. Sipos, MD 主講，學習目標寫明是「列出頸部超音波的適應症」。這正好是為「已經會掃甲狀腺、但沒有系統性看過頸部其他構造」的臨床醫師設計的講題：從適應症談到實際能看到什麼、看不到什麼，是本單元最合適的主課。英文，無字幕。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸 AIUM，本站僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "食道憩室的超音波診斷",
+     "en": "(ENG)Diagnosis of esophageal diverticulum on US",
+     "kind": "case",
+     "target": "學會辨認上段食道憩室：內部氣體造成的 artifact、隨吞嚥的動態變化、與食道的連續性；並理解為什麼靜態影像會被誤判成甲狀腺左葉後方的低回音結節。",
+     "dose": "看完後在下一位左葉後方有可疑病灶的病人身上，實際錄一段「請病人吞口水」的動態影像再下判讀。同頻道另有一支無旁白的對照片 esophageal diverticulum misinterpreted as a thyroid nodule，但該片停用嵌入，僅能在 YouTube 站上直接觀看。",
+     "title": "(ENG)Diagnosis of esophageal diverticulum on US",
+     "channel": "KeepMyThyroid",
+     "url": "https://www.youtube.com/watch?v=-n0tiRuBu_4",
+     "duration": "9:42",
+     "tier": "A",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 KeepMyThyroid，本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "甲狀舌管囊腫的超音波表現",
+     "en": "Ultrasound of Thyroglossal Duct Cyst",
+     "kind": "case",
+     "target": "中線頸部囊性病灶的判讀：與舌骨的相對位置、撐開 strap muscles、後方回音增強、壁薄且無內部血流；並以兩個非典型個案練習「看起來像實心（pseudo-solid）的囊腫」。",
+     "dose": "重點放在「壁上有沒有實心結節與血流」這一項——這是甲狀舌管囊腫惡性變（幾乎都是 papillary thyroid carcinoma，約 1–3%）唯一可能在超音波上被抓到的線索。看完後回頭把自己報過的中線囊腫影像重看一次。",
+     "title": "Ultrasound of Thyroglossal Duct Cyst",
+     "channel": "Radquarters",
+     "url": "https://www.youtube.com/watch?v=f4MPmWPdpvI",
+     "duration": "8:05",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Radquarters（Daniel Kowal, MD, RMSK），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "第二鰓裂囊腫：側頸囊性病灶的鑑別",
+     "en": "Second branchial cleft cyst — Radiopaedia reference article",
+     "kind": "atlas",
+     "target": "側頸囊性病灶的影像特徵與量化數據：邊界銳利、後方回音增強（約 70%）、壁不可辨（約 82%），回音變異大（無回音 41%、均質低回音含碎屑 24%、pseudo-solid 12%、不均質 23%），以及與 paramedian 甲狀舌管囊腫、囊性淋巴結的鑑別。",
+     "dose": "把 pseudo-solid 這一項（12%）記起來——這正是側頸「看起來是實心腫塊」卻其實是囊腫的比例。搭配條目最下方的鑑別診斷清單，自己畫一張「側頸囊性病灶」的分流圖。Radiopaedia 對自動化存取有 bot 防護，請用一般瀏覽器開啟。",
+     "title": "Second branchial cleft cyst",
+     "channel": "Radiopaedia.org",
+     "url": "https://radiopaedia.org/articles/second-branchial-cleft-cyst",
+     "tier": "B",
+     "source_type": "atlas",
+     "provider": "case_library",
+     "access": "open",
+     "license": "版權歸 Radiopaedia.org 與各條目作者（授權條款見 radiopaedia.org/licence），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch9-u4",
+   "name": "甲狀腺旁病灶的鑑別流程與 Doppler、PTH washout 的角色",
+   "type": "case",
+   "assessment": "寫出一份屬於自己的「甲狀腺旁低回音病灶」單頁決策流程，必須明確包含四個判斷節點：(1) 病灶在被膜內或被膜外；(2) 有無 fatty hilum；(3) Doppler 是 hilar 型、polar 型還是無血流（並註明所用的 PRF 與 wall filter 設定）；(4) 血鈣與 PTH 是否已知。流程末端要對應到三種明確處置：直接追蹤、細胞學合併 washout PTH、或轉介外科／進一步定位影像。做好之後拿五個舊個案回測，記錄有幾例流程給出的建議與當初實際處置不同，並說明差在哪一個節點。",
+   "tight": [
+    "Doppler 設定不對就看不到 polar vessel：副甲狀腺的供應血管流速低，PRF 開太高、wall filter 開太強會把訊號濾掉，得到「無血流」的假陰性後就會被歸類成淋巴結或退化性結節。",
+    "「有血流」不是重點，血流「從哪裡進來」才是重點：淋巴結是 hilar 血流呈樹枝狀由中央 hilum 散開；副甲狀腺腺瘤是單一 polar vessel 從一極進入、常沿周邊呈弧狀（arc/rim）分布；甲狀腺結節沒有 polar vessel。",
+    "小腺瘤與次發性增生比較不會出現典型的 Doppler 特徵，陰性的 Doppler 不能用來排除。",
+    "washout PTH 是定性檢查不是定位檢查：它只能回答「這一針抽到的是不是副甲狀腺」，不能回答「這是不是唯一的病灶」，多腺體疾病仍需完整探查。",
+    "sestamibi scintigraphy 與 4D-CT 屬於術前定位工具，主要服務外科的 minimally invasive parathyroidectomy 決策；它們沒有動態超音波影像，不能取代自己在門診做出的即時鑑別，本課程只把它們當補充資料。",
+    "定位影像不影響是否手術的決定：第五屆國際工作坊指引明確指出，PHPT 的診斷與手術適應症獨立於定位結果，定位只在確定要開刀之後才做——把定位當成診斷工具是常見的臨床順序錯誤。",
+    "食道也會偽裝：左葉後方的低回音構造若有內部氣體、黏膜線或隨吞嚥移動，先想食道（或憩室）而不是副甲狀腺。"
+   ],
+   "weak": [
+    "在同一個病灶上同時完成灰階、Doppler 與臨床生化三軸判讀，並寫成可被別人重複的結構化描述。",
+    "為低流速訊號調整 Doppler 參數（降低 PRF、降低 wall filter、縮小 color box），並知道調整後偽影會怎麼變化。",
+    "在超音波導引穿刺前決定是否加驗 washout PTH，並能向病理／檢驗端說明檢體處理方式。",
+    "說明超音波、sestamibi SPECT/CT 與 4D-CT 各自回答什麼問題、在多腺體疾病與異位腺體的表現差異，以及何時該把病人交給有經驗的中心。"
+   ],
+   "lesson": {
+    "title": "Ultrasound of Parathyroid Adenoma",
+    "channel": "Radquarters",
+    "url": "https://www.youtube.com/watch?v=W8_4e2E9iXo",
+    "duration": "6:38",
+    "why": "由具名的美國執業放射科醫師 Daniel Kowal, MD, RMSK 製作，六分半鐘把副甲狀腺腺瘤的灰階特徵、polar vessel 與「和淋巴結、甲狀腺結節怎麼分」講完，是本單元鑑別流程的骨架。長度短、影像清楚，適合當每次門診前重看的主課。英文，無字幕。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 Radquarters（Daniel Kowal, MD, RMSK），本站僅連結不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "細針抽吸檢體的 PTH 分析",
+     "en": "(ENG)Parathyroid Hormone Analysis in the FNA Samples",
+     "kind": "procedure",
+     "target": "washout PTH 的實作細節：什麼時候該做、針洗到哪裡、檢體怎麼送、結果怎麼解讀，以及它與細胞學結果不一致時該相信哪一個。",
+     "dose": "看完後把自己醫院的作業流程走一遍：檢驗科接不接受 FNA washout PTH？用什麼稀釋液？多久出報告？把答案寫進自己的穿刺 checklist。作者為韓國甲狀腺影像與介入專科放射科醫師（Kwak TI-RADS 原始論文第一作者），英文口述、無字幕。",
+     "title": "(ENG)Parathyroid Hormone Analysis in the FNA Samples",
+     "channel": "KeepMyThyroid",
+     "url": "https://www.youtube.com/watch?v=9_Xw5fAM47s",
+     "duration": "3:36",
+     "tier": "A",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 KeepMyThyroid，本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Polar vessel 與副甲狀腺腺瘤的鑑別診斷清單",
+     "en": "Parathyroid adenoma — Radiopaedia reference article",
+     "kind": "atlas",
+     "target": "把本單元的鑑別點對到可引用的文字敘述：典型腺瘤為 0.5–3 cm 橢圓形、相對甲狀腺均質低回音；Doppler 在原發性疾病約 85–97% 可見內部／中央血流，並可見來自 inferior thyroid artery 的 polar feeding vessel；鑑別診斷段落逐條列出淋巴結（fatty hilum、中央而非極部血流）、偏心甲狀腺結節（回音較不一致、血流較少、無 polar vessel）與食道（會移動、內部有氣體或黏膜線）。",
+     "dose": "直接讀 Radiographic features → Doppler 與 Differential diagnosis 兩節，抄成自己的兩欄對照表（副甲狀腺 vs 淋巴結 vs 甲狀腺結節 vs 食道），貼在超音波室。條目同時列出 shear-wave elastography 與 SMI/MVFI 微血流成像的角色，但這些仍屬輔助、非標準照護，勿當定論。Radiopaedia 對自動化存取有 bot 防護，請用一般瀏覽器開啟。",
+     "title": "Parathyroid adenoma",
+     "channel": "Radiopaedia.org",
+     "url": "https://radiopaedia.org/articles/parathyroid-adenoma",
+     "tier": "A",
+     "source_type": "atlas",
+     "provider": "case_library",
+     "access": "open",
+     "license": "版權歸 Radiopaedia.org 與各條目作者（授權條款見 radiopaedia.org/licence），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "術前副甲狀腺定位：超音波與其他檢查各自回答什麼",
+     "en": "Update on Preoperative Parathyroid Localization in Primary Hyperparathyroidism",
+     "kind": "guideline",
+     "target": "釐清超音波、99mTc-sestamibi SPECT/CT、4D-CT、PET/CT 與副甲狀腺靜脈採樣在術前定位的位置；理解多腺體疾病、異位腺體、復發性疾病與 normocalcemic PHPT 這四種情況為什麼定位特別困難。",
+     "dose": "只讀 ULTRASONOGRAPHY 一節即可完成本單元；要向外科溝通或處理定位失敗的病人時再讀 RADIONUCLIDE IMAGING 與 FOUR-DIMENSIONAL COMPUTED TOMOGRAPHY。搭配 Bilezikian 等人 2022 年第五屆國際工作坊指引（J Bone Miner Res 2022;37:2293-2314, PMID 36245251）一起讀，該指引明確指出定位影像只用於已決定手術的病人。Endocrinol Metab (Seoul) 2022（韓國內分泌學會），CC BY-NC 4.0 開放取用。",
+     "title": "Update on Preoperative Parathyroid Localization in Primary Hyperparathyroidism",
+     "channel": "Endocrinology and Metabolism (Seoul)／Korean Endocrine Society",
+     "url": "https://www.e-enm.org/journal/view.php?doi=10.3803%2FEnM.2022.1589",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "open",
+     "license": "Creative Commons Attribution Non-Commercial 4.0（CC BY-NC 4.0），© 2022 Korean Endocrine Society；本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  }
+ ]
+}

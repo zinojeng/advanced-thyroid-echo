@@ -1,0 +1,366 @@
+{
+ "chapter": "CH8",
+ "search_date": "2026-08-02",
+ "searched": [
+  "yt-dlp ytsearch20: postoperative thyroid bed ultrasound recurrence",
+  "yt-dlp ytsearch20: thyroid cancer surveillance neck ultrasound follow up",
+  "yt-dlp ytsearch20: post thyroidectomy neck ultrasound surveillance lecture",
+  "yt-dlp ytsearch20: thyroid bed ultrasound scar versus recurrence",
+  "yt-dlp ytsearch20: suture granuloma ultrasound neck",
+  "yt-dlp ytsearch20: thyroglobulin elevated negative whole body scan ultrasound",
+  "yt-dlp ytsearch20: radiofrequency ablation thyroid nodule follow up ultrasound volume reduction",
+  "yt-dlp ytsearch20: active surveillance papillary microcarcinoma ultrasound",
+  "yt-dlp ytsearch20: ethanol ablation thyroid cystic nodule lymph node recurrence",
+  "yt-dlp ytsearch20: ultrasound follow up differentiated thyroid cancer dynamic risk stratification Tuttle",
+  "yt-dlp ytsearch20: recurrent lymph node metastasis thyroid cancer ultrasound FNA thyroglobulin washout",
+  "yt-dlp ytsearch20: neck ultrasound thyroid cancer follow up how I scan endocrinologist",
+  "yt-dlp ytsearch20: postoperative neck ultrasound thyroid cancer pitfalls normal findings",
+  "yt-dlp ytsearch20: thyroid bed nodule ultrasound case",
+  "yt-dlp ytsearch20: 갑상선 수술 후 초음파 재발 (韓文)",
+  "yt-dlp ytsearch20: elevated thyroglobulin negative imaging thyroid cancer what to do next endocrine",
+  "yt-dlp ytsearch20: thyroid cancer follow up tumor board case discussion ultrasound recurrence",
+  "yt-dlp ytsearch20: thyroglobulin antibody interference thyroid cancer surveillance lecture",
+  "yt-dlp ytsearch15: postoperative thyroid bed sonography scanning demonstration after thyroidectomy",
+  "web: postoperative thyroid bed ultrasound normal appearance suture granuloma recurrence RadioGraphics review",
+  "web: Korean Society of Thyroid Radiology consensus statement postoperative ultrasound surveillance thyroid cancer Korean Journal of Radiology",
+  "web: 2013 European Thyroid Association guidelines cervical ultrasound scan ultrasound-guided techniques postoperative management thyroid cancer Leenhardt",
+  "web: Radiopaedia recurrent papillary thyroid carcinoma thyroid bed ultrasound case",
+  "web: 2024 Korean Society of Thyroid Radiology radiofrequency ablation guideline thyroid nodules recurrent thyroid cancer",
+  "web: ATA 2015 management guidelines differentiated thyroid cancer Haugen full text free surveillance section",
+  "web: \"Role of Neck Sonography After Total Thyroidectomy for Differentiated Thyroid Cancer\" lecture original"
+ ],
+ "verification_method": {
+  "youtube": "yt-dlp ytsearchN 取得 ID，再以 https://www.youtube.com/oembed 逐支確認 HTTP 200 與標題／頻道相符。逐支中繼資料（時長、上傳日、說明欄）以 yt-dlp --skip-download 取得；過程中遭 YouTube 機器人偵測阻擋，改用 --extractor-args \"youtube:player_client=android\" 後成功。--cookies-from-browser chrome 無效。",
+  "non_youtube": "curl -sL -o /dev/null -w \"%{http_code} %{url_effective} %{content_type}\" 逐一驗證；回 403 者（pubs.rsna.org、karger.com、etj.bioscientifica.com、ajronline.org、onlinelibrary.wiley.com）另以瀏覽器 user agent 抓取頁面內容判斷是機器人防護還是真的封鎖，並在可能時改用 PMC 版本。"
+ },
+ "evaluated": [
+  {
+   "title": "Differentiated Thyroid Cancer after Thyroidectomy",
+   "url": "https://pubs.rsna.org/doi/10.1148/rg.240021",
+   "source": "RadioGraphics (RSNA), 2024;44(10), CC BY 4.0",
+   "decision": "included",
+   "unit": "ch8-u1",
+   "role": "lesson",
+   "reason": "唯一把正常術後床、疤痕、縫線肉芽腫、殘餘組織與真正復發放在同一組標註影像逐項對照的開放取用回顧。curl 回 403（Cloudflare／Atypon 機器人防護），以瀏覽器 UA 取得全文確認為 CC BY 4.0 開放取用而非付費牆。"
+  },
+  {
+   "title": "Post-operative thyroid ultrasound: what to look for? (ECR 2024, C-17536)",
+   "url": "https://epos.myesr.org/poster/esr/ecr2024/C-17536",
+   "source": "European Society of Radiology — EPOS",
+   "decision": "included",
+   "unit": "ch8-u1",
+   "role": "drill",
+   "reason": "ESR 官方教育電子壁報，公開無登入牆（curl 200），涵蓋正常術後床、復發、轉移淋巴結與縫線肉芽腫的影像對照。會議展示未經期刊審稿，列 Tier B 僅作影像清單。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Suture Granuloma and Surgical Clips as a Mimic of Thyroid Cancer Recurrence",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9363507/",
+   "source": "AACE Clinical Case Reports 2022;8(4):185-187, PMID 35959081",
+   "decision": "included",
+   "unit": "ch8-u1",
+   "role": "drill",
+   "reason": "完整記錄一次真實誤判（超音波與 PET/CT 同時指向復發，病理為異物肉芽腫）。CC BY-NC-ND，PMC 全文 200。單一病例，Tier B。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Expert Tips & Tricks for Thyroid Cancer Ultrasound with Dr. Orloff - Season 02 Episode 09",
+   "url": "https://www.youtube.com/watch?v=7mgQ0jO2AHI",
+   "source": "YouTube — THANC Foundation",
+   "decision": "included",
+   "unit": "ch8-u1",
+   "role": "drill",
+   "reason": "Lisa Orloff（Stanford）談甲狀腺癌超音波常被漏掃的區域與術後追蹤。oEmbed 200。訪談形式、動態掃描比例低，Tier B。"
+  },
+  {
+   "title": "2013 European Thyroid Association Guidelines for Cervical Ultrasound Scan and Ultrasound-Guided Techniques in the Postoperative Management of Patients with Thyroid Cancer",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4017749/",
+   "source": "European Thyroid Journal 2013;2(3):147-159, PMID 24847448",
+   "decision": "included",
+   "unit": "ch8-u2",
+   "role": "lesson",
+   "reason": "唯一專為術後頸部超音波撰寫的學會指引，含甲狀腺床與淋巴結的良性／病理性樣態、報告標準、FNA 與 in situ Tg 測定適應症。karger.com 官方頁 403，改用 PMC 版本（200）。已逾十年且未更新，須與 ATA 2015、RadioGraphics 2024 交叉核對。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Sean Nikravan MD, Thyroid Cancer and Lymph nodes neck surveillance follow up.",
+   "url": "https://www.youtube.com/watch?v=qzDBjlS5Yc0",
+   "source": "YouTube — Sean P. Nikravan MD",
+   "decision": "included",
+   "unit": "ch8-u2",
+   "role": "drill",
+   "reason": "術後兩年出現 0.5 cm 頸部淋巴結，以病史加影像判為反應性並選擇縱向追蹤，是少數有實際動態掃描的術後追蹤病例。oEmbed 200。已標註 coi（講者診所同時推廣自費 RFA 服務）。"
+  },
+  {
+   "title": "Lymph node evaluation in patient with history of papillary thyroid cancer by Dr Sean Nikravan, MD",
+   "url": "https://www.youtube.com/watch?v=miY4SkdhTiY",
+   "source": "YouTube — Sean P. Nikravan MD",
+   "decision": "included",
+   "unit": "ch8-u2",
+   "role": "drill",
+   "reason": "0.38 cm 淋巴結的辨識與超音波導引穿刺，與前一支形成「追蹤 vs 穿刺」對照組。oEmbed 200。影片極短、無證據討論，Tier C；已標註 coi。"
+  },
+  {
+   "title": "Radiofrequency Ablation for Recurrent Thyroid Cancers: 2025 Korean Society of Thyroid Radiology Guideline",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2024.0963",
+   "source": "Korean Journal of Radiology 2025;26(1):10-28, CC BY-NC 4.0",
+   "decision": "included",
+   "unit": "ch8-u2",
+   "role": "drill",
+   "reason": "復發確認後的下一步：非手術處理的適應症、禁忌症與消融後影像追蹤時程。curl 200，開放取用。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Controversies in thyroglobulin and TGab lab results with Drs LoPresti and Spencer 241",
+   "url": "https://www.youtube.com/watch?v=3ZktDaJ8hN8",
+   "source": "YouTube — ThyCa: Thyroid Cancer Survivors' Association",
+   "decision": "included",
+   "unit": "ch8-u3",
+   "role": "lesson",
+   "reason": "Carole Spencer（USC）為 Tg 檢驗方法學與 TgAb 干擾研究的建立者之一，直接處理「數值為什麼會騙人」。oEmbed 200。場合為病友年會但內容為方法學層級；無影像，須與本單元其他資源合用。"
+  },
+  {
+   "title": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (Oct 2023)",
+   "url": "https://www.youtube.com/watch?v=MEOy1vkzWEc",
+   "source": "YouTube — THANC Foundation",
+   "decision": "included",
+   "unit": "ch8-u3",
+   "role": "drill",
+   "reason": "Case #2（26:40–42:30）為術後 TgAb 長期持續陽性的實際處置討論，說明欄有完整時間戳。oEmbed 200。專家組含 Tuttle、Pasieka、Baloch、Alexander、Rossleigh。"
+  },
+  {
+   "title": "Evaluation of Thyroid Bed Nodules on Ultrasonography after Total Thyroidectomy: Risk for Loco-Regional Recurrence of Thyroid Cancer",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4521061/",
+   "source": "European Thyroid Journal 2015;4(2):106-114, PMID 26279996",
+   "decision": "included",
+   "unit": "ch8-u3",
+   "role": "drill",
+   "reason": "把「病灶 >3 mm 增大」與「Tg 兩倍上升」組合起來判讀的量化依據。etj.bioscientifica.com 403，改用 PMC 版本（200）。單中心回溯性、n=60，Tier B，100% PPV 不可外推。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "151 Use of thyroglobulin in patient management after thyroid surgery. Trevor E. Angell, MD",
+   "url": "https://www.youtube.com/watch?v=Py46irFZ2Hw",
+   "source": "YouTube — ThyCa: Thyroid Cancer Survivors' Association",
+   "decision": "included",
+   "unit": "ch8-u3",
+   "role": "drill",
+   "reason": "補上 lesson 偏檢驗方法學、而此處偏臨床決策的一半（何時測、看絕對值或趨勢、何時改變處置）。oEmbed 200。病友年會場合、無影像，Tier B。"
+  },
+  {
+   "title": "Active Surveillance of Papillary Thyroid Cancer: Tumor Volume Kinetics with Dr. Morris",
+   "url": "https://www.youtube.com/watch?v=dY5ukAzI9b4",
+   "source": "YouTube — THANC Foundation",
+   "decision": "included",
+   "unit": "ch8-u4",
+   "role": "lesson",
+   "reason": "Luc Morris（MSKCC）整理主動監測期間腫瘤體積的六種變化型態，直接回答「這次比上次大代表什麼」。oEmbed 200，說明欄有時間戳。"
+  },
+  {
+   "title": "Standardized Ultrasound Evaluation for Active Surveillance of Low-Risk Thyroid Microcarcinoma in Adults: 2024 Korean Society of Thyroid Radiology Consensus Statement",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2024.0871",
+   "source": "Korean Journal of Radiology 2024;25(11):942-958, CC BY-NC 4.0",
+   "decision": "included",
+   "unit": "ch8-u4",
+   "role": "drill",
+   "reason": "把「怎麼量」寫成可稽核規則（同切面三軸、進展定義 ≥3 mm 或雙徑 ≥2 mm、追蹤間隔、13 mm 轉手術門檻），是本單元 assessment 的操作依據。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Ethanol Ablation to Treat Metastatic Lymph Nodes with Dr. Pål Stefan Frich",
+   "url": "https://www.youtube.com/watch?v=uHdfhaZhKJM",
+   "source": "YouTube — THANC Foundation",
+   "decision": "included",
+   "unit": "ch8-u4",
+   "role": "drill",
+   "reason": "乙醇消融處理 PTC 頸部轉移淋巴結的長期成效，含討論者 Schmitz 對既有 PEI 文獻方法學限制的批評。oEmbed 200，說明欄有完整時間戳。"
+  },
+  {
+   "title": "Papillary Thyroid Cancer follow up 8 weeks post thyroid RFA",
+   "url": "https://www.youtube.com/watch?v=np3RpENTOYQ",
+   "source": "YouTube — Sean P. Nikravan MD",
+   "decision": "included",
+   "unit": "ch8-u4",
+   "role": "drill",
+   "reason": "本章少數真正呈現「同一病灶不同時間點」的動態素材（術前高血流 → 八週後血流幾近消失、體積 −14%）。oEmbed 200。單一病例、有商業推廣性質，Tier C 並標註 coi，必須搭配 KSThR 2025 指引。"
+  },
+  {
+   "title": "Role of Neck Sonography After Total Thyroidectomy for Differentiated Thyroid Cancer",
+   "url": "https://www.youtube.com/watch?v=VJEiIvYIQsk",
+   "source": "YouTube — 「Radiology Video - radiology made esay」",
+   "decision": "excluded",
+   "reason": "主題與 ch8-u1／u2 完全吻合（31:57，2016 上傳，oEmbed 200），但說明欄全空、無講者姓名或機構標示，頻道為聚合型重新上傳帳號。同頻道另有 Thyroid Cancer Staging and Surveillance，而同一講題在另一頻道以「by Sheila Sheth, MD」標示，強烈提示為學會／付費講座之未經授權轉載。依契約「無法確認作者或來源」與「未經授權重新上傳」兩條排除。"
+  },
+  {
+   "title": "Thyroid Cancer Staging and Surveillance",
+   "url": "https://www.youtube.com/watch?v=aW-hrZru6bs",
+   "source": "YouTube — 「Radiology Video - radiology made esay」",
+   "decision": "excluded",
+   "reason": "同上，來源與授權不可考。另一帳號「Clinical Case From Everywhere」以相同時長上傳同一講題並標示 Sheila Sheth, MD，兩者皆非原始發布機構。"
+  },
+  {
+   "title": "ETHANOL INJECTION THERAPY. PEI, FOR THYROID CYSTS AND THYROID CANCER LYMPH NODES",
+   "url": "https://www.youtube.com/watch?v=TXciYRG4wyQ",
+   "source": "YouTube — thyroiddoc (Dr. Richard Guttler)",
+   "decision": "excluded",
+   "reason": "oEmbed 200 且主題相符（復發淋巴結乙醇消融），但說明欄為診所行銷文案（含電話、預約連結、「You Can Avoid Thyroid Surgery!」），屬缺乏利益揭露的高度商業宣傳；2010 年上傳、影像品質偏舊。以 THANC Frich 該場取代。"
+  },
+  {
+   "title": "Recurrent Papillary Thyroid Carcinoma with Bilateral Lateral Cervical Lymph Node Metastasis",
+   "url": "https://www.youtube.com/watch?v=kREbfOxZHIE",
+   "source": "YouTube — MET Summit",
+   "decision": "excluded",
+   "reason": "oEmbed 200，但 yt-dlp 顯示 age-restricted、僅能在 YouTube 站內播放、不可嵌入，且無法取得說明欄以確認內容與授權。"
+  },
+  {
+   "title": "SonoWorld: Ablation of Metastatic Papillary Thyroid Cancer in Neck Lymph Nodes",
+   "url": "https://www.youtube.com/watch?v=WosHt-khAM8",
+   "source": "YouTube — SonoWorld",
+   "decision": "excluded",
+   "reason": "僅 1:58，為 SonoWorld 付費課程的預告片段，完整內容需至 sonoworld.com 註冊。教學資訊量不足以獨立成為 drill。"
+  },
+  {
+   "title": "Radiofrequency Ablation of Recurrent Metastatic Papillary Thyroid Cancer to a Lymph Node",
+   "url": "https://www.youtube.com/watch?v=1nP8hkgtA1A",
+   "source": "YouTube — 「Endocrinologist Thyroid」",
+   "decision": "excluded",
+   "reason": "2:37，說明欄僅重複標題，無講者、機構或病例背景，作者身分無法確認。"
+  },
+  {
+   "title": "Normal and Abnormal Sonographic Findings at the Thyroidectomy Sites in Postoperative Patients With Thyroid Malignancy",
+   "url": "https://ajronline.org/doi/10.2214/AJR.09.2513",
+   "source": "AJR (American Journal of Roentgenology)",
+   "decision": "excluded",
+   "reason": "主題極貼合 ch8-u1，但 curl 回 403 且非開放取用，全文需訂閱。以同主題且為 CC BY 4.0 的 RadioGraphics 2024 回顧取代。"
+  },
+  {
+   "title": "Clinical review: Thyroid cancer mimics on surveillance neck sonography",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25375984/",
+   "source": "J Clin Endocrinol Metab 2015;100(2):371-5",
+   "decision": "excluded",
+   "reason": "題目正中 ch8-u1 核心，但 PubMed elink 確認未進入 PMC，全文為訂閱制，僅摘要可讀（PubMed 頁 200）。列為讀者可自行延伸的參考，不放入課程資源。"
+  },
+  {
+   "title": "Surveillance Neck Sonography After Thyroidectomy for Papillary Thyroid Carcinoma: Pitfalls in the Diagnosis of Locally Recurrent and Metastatic Disease",
+   "url": "https://onlinelibrary.wiley.com/doi/abs/10.7863/ultra.16.08086",
+   "source": "Journal of Ultrasound in Medicine (AIUM) 2017",
+   "decision": "excluded",
+   "reason": "curl 403 且為訂閱制期刊，僅摘要可得。內容主題與 RadioGraphics 2024 高度重疊，故不重複收錄。"
+  },
+  {
+   "title": "Post-surgical thyroid bed myofibroma simulating a recurrent papillary thyroid carcinoma",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10783218/",
+   "source": "PMC (case report)",
+   "decision": "excluded",
+   "reason": "curl 200、開放取用且為真實 mimic 病例，但診斷（myofibroma）過於罕見，對 fellow 的日常判讀增益低於已收錄的縫線肉芽腫病例。列為備用。"
+  },
+  {
+   "title": "Active Surveillance of Adult Low-Risk Papillary Thyroid Microcarcinoma with Dr. Sugitani",
+   "url": "https://www.youtube.com/watch?v=dXEmFqRzFTo",
+   "source": "YouTube — THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200，品質為 Tier A（Sugitani 為日本主動監測共識主要作者，說明欄含完整時間戳）。因 ch8-u4 僅有 3 個 drill 額度、且已選 Morris 的體積動力學與 KSThR 2024 量測共識，內容重疊而割捨。強烈建議列為本單元延伸閱讀。"
+  },
+  {
+   "title": "Active Surveillance vs. Surgery in Low Risk Thyroid Cancer with Dr. Akira Miyauchi",
+   "url": "https://www.youtube.com/watch?v=9fKn0Jauiz0",
+   "source": "YouTube — THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200，Miyauchi 為 Kuma Hospital 主動監測系列研究主持人，品質高。與已收錄的 Morris 場次主題重疊，額度不足而割捨。"
+  },
+  {
+   "title": "Radiofrequency Ablation (RFA) in Microcarcinoma with Dr. Dueñas",
+   "url": "https://www.youtube.com/watch?v=Eb5Nj3u5SiU",
+   "source": "YouTube — THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200、說明欄有詳細時間戳、內容涵蓋微小癌消融的適應症。與 ch8-u4 已收錄的 KSThR 2025 指引重疊，且該指引證據層級較高，故以指引優先。"
+  },
+  {
+   "title": "Thyroid Radiofrequency Ablation: Ready for Prime Time",
+   "url": "https://www.youtube.com/watch?v=YeiOQU3dcR8",
+   "source": "YouTube — Stanford Otolaryngology — Head & Neck Surgery",
+   "decision": "excluded",
+   "reason": "oEmbed 200、機構可信（Stanford，50:23，2021）。但說明欄為空無法確認涵蓋範圍，且主題偏良性結節消融，與 CH8 的「復發／術後」核心距離較遠。建議移交 CH5 或 CH11 評估。"
+  },
+  {
+   "title": "Management of Recurrent/Persistent Nodal Disease | Pro Surgical Intervention",
+   "url": "https://www.youtube.com/watch?v=q7CddCNR_m8",
+   "source": "YouTube — Rambam Pro（Merav Fraenkel, Soroka Medical Center）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、主題貼合 ch8-u2（復發／持續性淋巴結疾病：手術 vs 主動監測的正反辯論，18:27）。惟為 2015 年錄影、屬辯論的單方（Pro）而非完整論述，且說明欄含希伯來文免責聲明、無時間戳。額度不足而割捨，列為 ch8-u2 備用。"
+  },
+  {
+   "title": "Recurrent thyroid cancer: screening and treatment. 302",
+   "url": "https://www.youtube.com/watch?v=njM_Ci88TNQ",
+   "source": "YouTube — ThyCa（Cord Sturgeon, MD, Endocrine Surgeon）",
+   "decision": "excluded",
+   "reason": "oEmbed 200、講者為 Northwestern 內分泌外科醫師（34:15，2022 ThyCa 年會）。內容為病友衛教層級、無影像判讀細節，對 fellow 增益有限。"
+  },
+  {
+   "title": "Monitoring of low & intermediate risk papillary and follicular TC patients in the first 5 years. 254",
+   "url": "https://www.youtube.com/watch?v=RpIguvITnoM",
+   "source": "YouTube — ThyCa（Sana Ghaznavi, MD, Endocrinologist）",
+   "decision": "excluded",
+   "reason": "oEmbed 200，主題貼合追蹤策略。與已收錄的 Angell 場次（同為 ThyCa 年會、同談術後監測）重疊，避免同一場合來源過度集中而割捨。"
+  },
+  {
+   "title": "Ultrasound in the management of thyroid cancer with Dr Noureldine 262",
+   "url": "https://www.youtube.com/watch?v=SqiYpDY67x8",
+   "source": "YouTube — ThyCa",
+   "decision": "excluded",
+   "reason": "oEmbed 200、講者可信（Salem Noureldine），59:52。但說明欄完全空白、無時間戳，無法確認術前與術後內容的比重與影像品質，不宜作為 Tier A 核心教材。"
+  },
+  {
+   "title": "PANEL – Follow Up of Differentiated Thyroid Cancer",
+   "url": "https://www.youtube.com/watch?v=x0_B-fbcp6s",
+   "source": "YouTube — World Congress on Thyroid Cancer",
+   "decision": "excluded",
+   "reason": "oEmbed 200、來源為國際甲狀腺癌大會（46:40，2020）。說明欄空白、無講者名單與時間戳，無法確認內容涵蓋範圍。"
+  },
+  {
+   "title": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (Mar 2024)",
+   "url": "https://www.youtube.com/watch?v=x7zc8FrBCJQ",
+   "source": "YouTube — THANC Foundation",
+   "decision": "excluded",
+   "reason": "oEmbed 200、說明欄時間戳完整。惟三個病例分別為兒童 TI-RADS、MTC 診斷與 RET 標靶治療，與 CH8 的術後追蹤主題不合；建議移交 CH6 或 CH10。"
+  },
+  {
+   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4739132/",
+   "source": "Thyroid 2016;26(1):1-133 (PMC 全文)",
+   "decision": "excluded",
+   "unit": "ch8-u2",
+   "reason": "curl 200、開放全文，術後監測章節為本章的基礎依據。惟 ATA 2015 是全課程多章（尤其 CH4 風險分層）都會用到的通用文件，依去重規則應盡量避免跨章重複收錄；CH8 因此改以 ETA 2013 這份術後專用指引為核心，本文件僅在 ch8-u2 lesson 的 note 中作為交叉核對來源提及。若最終彙整時 CH4 未收錄，可考慮回補至 ch8-u2。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Standardized Imaging and Reporting for Thyroid Ultrasound: Korean Society of Thyroid Radiology Consensus Statement and Recommendation",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2022.0894",
+   "source": "Korean Journal of Radiology (KSThR)",
+   "decision": "excluded",
+   "reason": "curl 200、開放取用。內容為一般甲狀腺超音波的影像取得與報告標準，術後追蹤僅為其中一小節；主題歸屬 CH13（報告與品質保證）較適當。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "韓文搜尋結果整體（갑상선 수술 후 초음파 재발 等）",
+   "url": null,
+   "source": "YouTube 韓文",
+   "decision": "excluded",
+   "reason": "20 筆結果幾乎全為醫院／電視台製作的病友衛教（術後飲食、聲音變化、藥物），無 fellow 層級的術後影像判讀教學，亦無字幕可交叉驗證。韓國的高品質術後與消融資源集中在 Korean Journal of Radiology 的 KSThR 文件（已收錄兩份），而非 YouTube。"
+  },
+  {
+   "title": "Tamas Solymosi 乙醇硬化治療系列（case 3–12，多支 20–130 秒短片）",
+   "url": "https://www.youtube.com/watch?v=X98Miw0Chk4",
+   "source": "YouTube — Tamas Solymosi",
+   "decision": "excluded",
+   "reason": "匈牙利內分泌科醫師的乙醇硬化治療前後對照短片系列，具縱向對照價值。但每支僅 20–130 秒、無說明欄、無病例背景與追蹤結果，且多為良性囊腫而非復發病灶；單支資訊量不足，整個系列又無法在 3 個 drill 額度內合理呈現。"
+  }
+ ],
+ "gaps": [
+  "術後甲狀腺床的「動態掃描」教學影片在公開平台上幾近不存在。唯一主題完全吻合的 YouTube 講座（VJEiIvYIQsk）來源不可考而排除，因此 ch8-u1 的核心教材改用 RadioGraphics 2024 開放取用圖像回顧。這是誠實的缺口，不是選材偏好。",
+  "ETA 2013 是唯一一份術後頸部超音波專用指引，但已發表逾十年且未更新。本章以 ATA 2015 與 RadioGraphics 2024 交叉核對，但仍建議由專家人工複核其中的 FNA 與 Tg washout 門檻是否仍與現行實務一致。",
+  "縫線肉芽腫的關鍵鑑別特徵（echogenic foci >1 mm、成對出現、位置偏中央）原始出處為 Kim JH 等發表於 Ultrasound Med Biol 的研究，該文為訂閱制（sciencedirect），本章以 AACE 病例報告與 RadioGraphics 回顧間接呈現同一觀念，未直接引用原始研究。",
+  "「Tg 陽性／掃描陰性」情境缺少有實際超音波影像的教學資源。ch8-u3 目前以檢驗方法學（Spencer）＋病例討論（Tuttle tumor board）＋量化研究（ETJ 2015）三者組合來覆蓋，但沒有一支能直接示範「Tg 上升後如何把頸部重新掃一遍」的動態影像。",
+  "消融後的縱向影像對照，公開資源以單一病例短片為主（且多帶診所商業推廣）。ch8-u4 的 np3RpENTOYQ 已標註 coi 並列 Tier C；若日後找到學會或大學醫院發布的消融後系列追蹤影像，應優先替換。"
+ ]
+}

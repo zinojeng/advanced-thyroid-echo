@@ -42,6 +42,12 @@ verify: ## 重驗所有影片連結與 PubMed 引用（打真實 API，會跑一
 verify-external: ## 重驗非 YouTube 來源（學會、期刊、醫院、病例圖譜）的連結狀態
 	$(PY) src/build/verify_external.py
 
+registry: ## 合併各章搜尋紀錄成 SOURCE-REGISTRY.json
+	$(PY) src/build/merge_registry.py
+
+gaps: ## 列出誠實留空的欄位、需登入的來源與證據不足的主題
+	$(PY) src/build/gaps.py
+
 serve: ## 本機預覽
 	@echo "→ http://localhost:$(PORT)"
 	@$(PY) -m http.server $(PORT) --directory $(DIST)
@@ -62,4 +68,4 @@ check: lint build audit ## 提交前跑這個（含離線稽核）
 clean: ## 清掉建置暫存
 	rm -rf .tmp .wrangler .ruff_cache dist **/__pycache__
 
-.PHONY: help build icons og meta counter audit verify verify-external serve deploy lint fmt check clean
+.PHONY: help build icons og meta counter audit verify verify-external registry gaps serve deploy lint fmt check clean

@@ -1,0 +1,440 @@
+{
+ "chapter": "CH7",
+ "search_date": "2026-08-02",
+ "tools": [
+  "yt-dlp 2026.07.04 ytsearch20（YouTube 搜尋，ID 一律取自實際搜尋輸出）",
+  "YouTube oEmbed API（每一支影片實測 HTTP 200 並比對標題與頻道）",
+  "curl -sL -o /dev/null -w '%{http_code}'（非 YouTube 連結實測）",
+  "NCBI E-utilities esearch / esummary / elink（PMID、PMC 對應與書目查核）",
+  "WebFetch（實際讀取期刊頁面內容，確認標題、作者、卷期頁、授權與內文重點）",
+  "pypdf（讀取 KJR 2023;24(1):22-30 全文 PDF，確認淋巴結報告欄位確實存在）"
+ ],
+ "searched": [
+  "cervical lymph node ultrasound benign versus malignant features",
+  "thyroid cancer metastatic lymph node ultrasound features",
+  "neck lymph node levels ultrasound sonoanatomy mapping",
+  "central compartment ultrasound thyroid cancer level VI",
+  "ultrasound guided FNA cervical lymph node thyroglobulin washout",
+  "preoperative neck mapping ultrasound thyroid cancer surgeon",
+  "extranodal extension ultrasound lymph node neck",
+  "neck ultrasound lymph node levels I II III IV V VI radiology lecture",
+  "ultrasound guided fine needle aspiration lymph node technique neck demonstration",
+  "structured reporting thyroid ultrasound neck lymph node report template",
+  "how I scan the neck lymph nodes thyroid cancer surveillance ultrasound technique",
+  "neck ultrasound compartment mapping thyroid cancer AACE endocrine ultrasound course",
+  "skip metastasis lateral neck thyroid papillary carcinoma lymph node ultrasound",
+  "thyroid neck ultrasound live scanning lymph node levels demonstration endocrinologist",
+  "neck ultrasound lymph node compartments live scanning demonstration thyroid cancer levels",
+  "thyroglobulin washout lymph node fine needle aspiration thyroid cancer",
+  "Korean Society of Thyroid Radiology consensus statement cervical lymph node ultrasound thyroid cancer 2023",
+  "\"Ultrasonography Diagnosis and Imaging-Based Management of Cervical Lymph Nodes\" Korean Society of Thyroid Radiology consensus statement thyroid cancer",
+  "American Thyroid Association Statement on Preoperative Imaging for Thyroid Cancer Surgery Yeh Thyroid 2015",
+  "radreport.org RSNA structured reporting template thyroid ultrasound neck lymph node",
+  "\"Masters Lecture Series\" ultrasound cervical lymph nodes thyroid lecture series source",
+  "PubMed: skip metastasis[title] AND papillary thyroid",
+  "PMC: skip metastasis papillary thyroid carcinoma lateral neck lymph node ultrasound",
+  "PubMed: Standardized Imaging and Reporting for Thyroid Ultrasound Korean Society of Thyroid Radiology consensus"
+ ],
+ "evaluated": [
+  {
+   "title": "Diagnostic & Therapeutic Approach to Lymph Nodes with Dr. Alvarez",
+   "url": "https://www.youtube.com/watch?v=STI3ePEgkfg",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch7-u1",
+   "role": "lesson",
+   "reason": "1:02:18；章節顯示 09:08–38:48 共約 30 分鐘專講正常 vs 病理淋巴結超音波所見並依 level I–VI 說明，Ashok Shaha 與 Azita Khorsandi 為討論人。基金會層級、講者與討論人可查證、與現行指引一致，作為 u1 核心教材。oEmbed 200。"
+  },
+  {
+   "title": "Ultrasound of Cervical Lymph Nodes",
+   "url": "https://www.youtube.com/watch?v=4z6I3yGVS-M",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "included",
+   "unit": "ch7-u1",
+   "role": "drill",
+   "reason": "22:47；YouTube 章節逐條對應 u1 教學重點（四參數、morphology 勝過 size、只測短軸、反應性 vs 異常形態、PTC 轉移結節回音差異、FNA 選擇）。保留但降為 Tier B：頻道為第三方轉載，影片內標示 The Masters Lecture Series 但未標示原始主辦單位與講者，已用 WebSearch 查證原始來源未果，license 欄註明授權未確認、僅連結不重製。oEmbed 200。"
+  },
+  {
+   "title": "Cervical Lymph Nodes Ultrasound Normal Vs Abnormal Images | Reactive & Malignant Neck Nodes USG Scan",
+   "url": "https://www.youtube.com/watch?v=tWL-KvmqGwE",
+   "source": "YouTube / Dr. Sam's Imaging Library",
+   "decision": "included",
+   "unit": "ch7-u1",
+   "role": "drill",
+   "reason": "4:46；影片說明列出兩組病例與時間碼（0:00 反應性、2:36 惡性），為實際動態掃描含 Doppler 的並排對照，適合作為視覺基準線。內容為一般性衛教式整理，故列 Tier C。oEmbed 200。"
+  },
+  {
+   "title": "Sonographic Diagnosis of Cervical Lymph Node Metastasis in Patients with Thyroid Cancer and Comparison of European and Korean Guidelines for Stratifying the Risk of Malignant Lymph Node",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2022.0358",
+   "source": "Korean Journal of Radiology 2022;23(11):1102-1111（DOI 10.3348/kjr.2022.0358）",
+   "decision": "included",
+   "unit": "ch7-u1",
+   "role": "drill",
+   "reason": "非 YouTube 第二級來源。實際讀取頁面確認標題、作者（Chung SR, Baek JH 等）、卷期頁、CC BY-NC 開放取用。提供 ETA 與 K-TIRADS 淋巴結分類的逐條比較與各級惡性率，正是本章要求的『比較不同指引而非背誦單一系統』。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Standardizing cervical lymph node evaluation in papillary thyroid carcinoma: diagnostic accuracy of Node-RADS on ultrasound",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12890614/",
+   "source": "Frontiers in Endocrinology 2026（DOI 10.3389/fendo.2026.1709522）/ PMC",
+   "decision": "included",
+   "unit": "ch7-u1",
+   "role": "drill",
+   "reason": "非 YouTube 第二級來源。實際讀取確認標題、期刊、DOI 與 CC BY 授權，並取得 AUC 0.720、加入 peripheral vascularity 後 0.825、各分數惡性率 35.7%–88.2% 等數字。列 Tier B 並在 dose 中明確標示尚未進入指引、score 1 惡性率偏高係選擇性收案所致。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Ultrasound of cervical lymph nodes technique & evaluation criteria (Gerasimos Sykiotis)",
+   "url": "https://www.youtube.com/watch?v=SisuHT1hQ1g",
+   "source": "YouTube / НМИЦ онкологии им. Н.Н. Петрова（N.N. Petrov NMRC of Oncology，White Nights Forum 官方頻道）",
+   "decision": "included",
+   "unit": "ch7-u2",
+   "role": "lesson",
+   "reason": "21:38；講者為 CHUV Lausanne 內分泌科醫師，章節含 where to look（cervical compartments）、systematic approach to scanning the neck、limitations，正是 u2 的分區與掃描順序主題。官方會議頻道、授權來源明確。無字幕，英文演講，已在 lesson 中註明 13:07 之後轉唾液腺主題。oEmbed 200。"
+  },
+  {
+   "title": "Ultrasound of the Neck There's More to See Than Thyroid Nodules",
+   "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "included",
+   "unit": "ch7-u2",
+   "role": "drill",
+   "reason": "42:48；章節含 Lymph Node Compartments of the Neck（17:48）與 Pre-operative US Mapping of Abnormal Lymph Nodes（29:46），以及多個具 Tg 數值的 PTC 追蹤病例與 DTC 淋巴結轉移 caveats。與 4z6I3yGVS-M 同屬轉載頻道，同樣降為 Tier B 並註明授權未確認。oEmbed 200。"
+  },
+  {
+   "title": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
+   "url": "https://www.youtube.com/watch?v=9C4yGa_RbUU",
+   "source": "YouTube / GM Cancer Academy（Greater Manchester Cancer Academy）",
+   "decision": "included",
+   "unit": "ch7-u2",
+   "role": "drill",
+   "reason": "30:16；NHS 區域癌症教育單位的 FNA workshop 錄影，主題為系統性頸部掃描技巧。列 Tier C：影片頁無說明文字、無章節，無法在不觀看全片的情況下確認動態掃描比例，已在 dose 中誠實標示請先確認前 5 分鐘再決定投入。這是本章確認度最低的兩個選材之一。oEmbed 200。【跨章協調 2026-08-02】此片與 ch2-u1 共用。曾改收同系列 Session 7（fOlf7lDArXc，Cervical Lymph Nodes Ultrasound，22:06）以消除共用，但查出 Session 7 已由 ch5-u4 使用——該系列兩個場次分別被 CH2 與 CH5 取用，任何選擇都會產生共用。既然如此，回到主題最貼合 ch7-u2（系統性分區掃描路徑）的 Session 2。契約允許跨單元共用（上限 30 支），本章共用 2 支。"
+  },
+  {
+   "title": "Prophylactic Central Compartment Neck Dissection with Dr. Victoria Harries",
+   "url": "https://www.youtube.com/watch?v=op5A7g3TKD0",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch7-u2",
+   "role": "drill",
+   "reason": "59:31；提供『超音波看不到 level 6』的治療決策脈絡（prophylactic vs unnecessary、the dichotomy of the lymph node），Rebecca Sippel 為討論人。列 Tier B 並在 dose 中明確標示本片不含動態掃描、僅作決策脈絡補充、不可作為影像判讀依據。oEmbed 200。"
+  },
+  {
+   "title": "The prognostic implication of skip metastasis to lateral neck in patients with papillary thyroid cancer",
+   "url": "https://qims.amegroups.org/article/view/126401/html",
+   "source": "Quantitative Imaging in Medicine and Surgery 2024;14(12):9477-9485（DOI 10.21037/qims-23-1737）",
+   "decision": "included",
+   "unit": "ch7-u2",
+   "role": "drill",
+   "reason": "非 YouTube 第二級來源，開放取用全文。實際讀取取得 skip metastasis 定義、發生率（側頸轉移者 7.7%、全體 PTC 0.89%）、分區分佈（level 3 71.1% > 4 47.4% > 2 31.6% > 5 2.6%）與術前超音波漏診率（整體 21.1%，level 2 41.7%、level 4 44.4%、level 3 18.5%）。YouTube 上完全找不到 skip metastasis 的合格影音教材，以文獻補上此缺口。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Diagnostic Test Accuracy of Ultrasonography vs Computed Tomography with Dr. Alabousi",
+   "url": "https://www.youtube.com/watch?v=AtFVOy5mzro",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch7-u3",
+   "role": "lesson",
+   "reason": "57:12；系統性回顧作者本人報告 PTC 頸部淋巴結轉移的 US vs CT 診斷準確度，並分中央區／側頸／全頸比較，章節 24:42 直接處理『何時該加做 CT』。證據層級明確、與 u3 主題完全對應。oEmbed 200。"
+  },
+  {
+   "title": "Validation of Ultrasound and Computed Tomography-Based Risk Stratification System and Biopsy Criteria for Cervical Lymph Nodes in Preoperative Patients With Thyroid Cancer",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2023.0215",
+   "source": "Korean Journal of Radiology 2023;24(9):912-923（DOI 10.3348/kjr.2023.0215）",
+   "decision": "included",
+   "unit": "ch7-u3",
+   "role": "drill",
+   "reason": "非 YouTube 第二級來源。實際讀取確認書目與 CC BY-NC 授權，取得 indeterminate 由 20.6% 降至 14.4%、nodal size 對惡性風險無鑑別力、只切 suspicious 者特異度 82%–88% 與 unnecessary biopsy rate 13%–15% 等可直接改變門診行為的數字。已在 dose 標示為 277 顆／228 人單中心回溯性資料。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "[Listen to Authors] CT Diagnosis of Lymph Node Metastasis in Thyroid Cancer",
+   "url": "https://www.youtube.com/watch?v=XRrPdxAn5Cg",
+   "source": "YouTube / Korean Journal of Radiology 官方頻道",
+   "decision": "included",
+   "unit": "ch7-u3",
+   "role": "drill",
+   "reason": "10:00；期刊官方頻道發布的作者自述，對應論文 Korean J Radiol 2023;24(10):1028-1037（Roh YH, Chung SR, Baek JH 等，Asan Medical Center），影片說明頁載明完整書目與 DOI。授權來源明確、證據可回溯。oEmbed 200。"
+  },
+  {
+   "title": "Sean Nikravan MD, Thyroid Cancer and Lymph nodes neck surveillance follow up.",
+   "url": "https://www.youtube.com/watch?v=qzDBjlS5Yc0",
+   "source": "YouTube / Sean P. Nikravan MD（私人執業內分泌科）",
+   "decision": "included",
+   "unit": "ch7-u3",
+   "role": "drill",
+   "reason": "5:37；診間即時超音波的單一病例，示範『選擇不穿刺』並以三個月追蹤驗證。Tier B，並在 dose 明確警告不可當成普遍規則。影片說明未含可識別患者資料。oEmbed 200。【跨章協調 2026-08-02】CH8 策展 agent 主動通報本片同時用於 ch8-u2（復發淋巴結轉移），並指出其臨床情境為純術後追蹤、CH8 無同等品質替代品。評估後決定保留共用：本章唯二的替代候選（XjGeCKzFsOs 8:06／108 次觀看，個人上傳、無章節無字幕、疑為純投影片；N9VqVK62wRU 8:42／36 次觀看，無說明文字）品質均明顯較低，為求章節界線好看而換入未經內容驗證的素材並不符合『誠實比好看重要』。契約允許跨單元共用（上限 30 支），本章共用數已由 2 降為 1。已依 CH8 標準補齊 coi（同頻道推廣自費 RFA），並在 dose 中標明臨床情境以 CH8 說明為準、本章僅借用其切片門檻決策。"
+  },
+  {
+   "title": "Standardized Imaging and Reporting for Thyroid Ultrasound: Korean Society of Thyroid Radiology Consensus Statement and Recommendation",
+   "url": "https://kjronline.org/DOIx.php?id=10.3348%2Fkjr.2022.0894",
+   "source": "Korean Journal of Radiology 2023;24(1):22-30（DOI 10.3348/kjr.2022.0894）/ KSThR",
+   "decision": "included",
+   "unit": "ch7-u4",
+   "role": "lesson",
+   "reason": "非 YouTube 第一級來源（學會共識）。除 curl 200 外，另下載全文 PDF（kjr-24-22.pdf，9 頁）以 pypdf 解析，實際確認內含：scan range 規定涵蓋 thyroid + central neck（levels 1A、6）與 lateral neck（levels 1B、2、3、4、5）；報告要素表列出『Cervical lymph node: Absence/presence of suspicious or enlarged indeterminate lymph node, neck level』；另含 extrathyroidal extension 與 biopsy procedure 記錄欄位、head rotation 改善 level 6 顯影等操作建議。這是 ch7-u4 所要求的『實際可用的 preoperative reporting template』。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "American Thyroid Association statement on preoperative imaging for thyroid cancer surgery",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25188202/",
+   "source": "Thyroid 2015;25(1):3-14（DOI 10.1089/thy.2014.0096）/ ATA Surgical Affairs Committee",
+   "decision": "included",
+   "unit": "ch7-u4",
+   "role": "drill",
+   "reason": "非 YouTube 第一級來源。以 NCBI esummary 核對書目：標題、期刊、卷期頁、年份、作者（Yeh MW, Bauer AJ, Bernet VA, Ferris RL, Loevner LA 等）、DOI 均一致，PubMed 頁面 curl 200。全文於 Liebert/Sage 需訂閱（doi.org 導向 journals.sagepub.com 回 403 Cloudflare 防護），故 access 標 subscription 並註明摘要開放。已在 dose 標示 2015 年版本，須與 KSThR 2023 並置閱讀。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Preoperative Imaging for Thyroid Cancer with Dr. James Wu",
+   "url": "https://www.youtube.com/watch?v=7zccu4izgTI",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch7-u4",
+   "role": "drill",
+   "reason": "52:57；外科（UCLA）角度說明術前影像需求，章節含 Signs of ETE Before the First Cut（12:23）與 Preoperative CT Scans in Thyroid Cancer Care（28:41），正好支撐 u4 的『外科溝通』面向。oEmbed 200。"
+  },
+  {
+   "title": "Int'l Thyroid Tumor Board w/ Dr. Mike Tuttle (Mar 2024)",
+   "url": "https://www.youtube.com/watch?v=x7zc8FrBCJQ",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch7-u4",
+   "role": "drill",
+   "reason": "58:55；多專科 tumor board 實錄，影片說明列出主持人與各專科討論者姓名（Tuttle、Alexander、Cunningham、Wirth、Pasieka、Robenshtok、Brandwein-Weber、Langer、Newbold、Ghesani），三個病例各有章節時間碼。用於練習影像報告如何進入跨科決策。說明中的病例描述已去識別化（僅年齡與性別）。oEmbed 200。"
+  },
+  {
+   "title": "Ultrasound Evaluation of Regional Lymph Nodes.",
+   "url": "https://www.youtube.com/watch?v=UtgJ85-OdHM",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "excluded",
+   "reason": "拉出章節後發現全片為乳房／腋下淋巴結（axillary LN、sentinel LN、internal mammary LN、BIRADS），與頸部淋巴結無關。標題誤導，若只看標題會誤收。"
+  },
+  {
+   "title": "Nodal Disease Sonographic Findings/ Very important",
+   "url": "https://www.youtube.com/watch?v=vwpeKL7haxA",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "excluded",
+   "reason": "內容品質不差（灰階特徵、hilus 外觀、頸部淋巴結鈣化成因、Doppler、術後甲狀腺床、suture granuloma），但同一轉載頻道已在本章收了兩支（4z6I3yGVS-M、YhegLgK796Q），且其術後甲狀腺床段落屬 CH8 範圍。為避免單一授權來源不明的頻道在本章佔比過高而排除。"
+  },
+  {
+   "title": "Thyroid Cancer Staging and Surveillance",
+   "url": "https://www.youtube.com/watch?v=aW-hrZru6bs",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "excluded",
+   "reason": "同上，同一轉載頻道；且主題偏術後追蹤（CH8）。"
+  },
+  {
+   "title": "Cervical Lymph Nodes Ultrasound Reporting | Benign/Reactive & Malignant Lymphadenopathy | Neck USG",
+   "url": "https://www.youtube.com/watch?v=zzXDA9OeNA4",
+   "source": "YouTube / Dr. Sam's Imaging Library",
+   "decision": "excluded",
+   "reason": "7:44，說明頁附有完整報告範例文字（含 level III、level II 分區與 hilar vascularity 描述），一度考慮收入 ch7-u4。最後排除：範例為一般性反應性淋巴結報告（扁桃腺炎、頸淋巴腺炎），不是甲狀腺癌術前 mapping 報告，與 u4 的外科溝通目的不合；u4 已有 KSThR 2023 的正式報告要素表。"
+  },
+  {
+   "title": "PREOPERATIVE ULTRASOUND CERVICAL MAPPING IN THYROID CANCER WHY, HOW | Dr. Bui Van Giang",
+   "url": "https://www.youtube.com/watch?v=fqpoeLdVFLY",
+   "source": "YouTube / Cận lâm sàng",
+   "decision": "excluded",
+   "reason": "標題與 ch7-u2、u4 完全對應（22:46，2019），但影片說明只重複標題、無章節、無字幕（subtitles 與 automatic_captions 皆為 NA），頻道未標示主辦單位，播放數 112。無法在不觀看全片的情況下確認語言、是否含動態掃描與分區標示，也無法交叉驗證講者身分與內容。依『留空比捏造好』原則排除，但值得日後人工複驗。"
+  },
+  {
+   "title": "Cervical Lymph Node Levels in 5 minutes",
+   "url": "https://www.youtube.com/watch?v=K_nzlhMsTbU",
+   "source": "YouTube / Dave Nascene",
+   "decision": "excluded",
+   "reason": "分區定義講解清楚（17 萬觀看），但以 CT 橫斷面與示意圖為主，無超音波動態掃描。本章依團隊要求提高門檻，排除純靜態講解。"
+  },
+  {
+   "title": "Neck Anatomy 2: Lymph Nodes",
+   "url": "https://www.youtube.com/watch?v=6q-UXVVW_pg",
+   "source": "YouTube / Barton Branstetter (ENT Imaging Lectures)",
+   "decision": "excluded",
+   "reason": "講者為可信的頭頸影像學者（University of Pittsburgh），但為 CT/MR 導向的投影片講座，無超音波動態掃描。同理由排除。"
+  },
+  {
+   "title": "Lymph Node Levels in the Neck Explained | Cervical Lymph Nodes Anatomy",
+   "url": "https://www.youtube.com/watch?v=KtdhdjM2VfE",
+   "source": "YouTube / The ENT Resident",
+   "decision": "excluded",
+   "reason": "住院醫師層級的解剖投影片講解，無超音波影像，且程度低於本課程受眾。"
+  },
+  {
+   "title": "Cervical Lymph Nodes and Head and Neck Lymphoma & Vascular Lesions of the Head and Neck",
+   "url": "https://www.youtube.com/watch?v=bW7R3chDPu4",
+   "source": "YouTube / Association of Program Directors in Radiology",
+   "decision": "excluded",
+   "reason": "來源可信（放射科 program director 協會，59:55），但主題以 CT/MR 的頭頸淋巴瘤與血管病灶為主，非甲狀腺癌淋巴結超音波；與本章重點偏離。"
+  },
+  {
+   "title": "imaging of cervical lymph nodes , new leveling",
+   "url": "https://www.youtube.com/watch?v=voYD1MWoRII",
+   "source": "YouTube / Ayda Youssef .,MD",
+   "decision": "excluded",
+   "reason": "37:11，主題（新分區系統）高度相關，但為個人上傳、無說明文字，且遭 YouTube bot 防護阻擋而無法取得章節或字幕以確認是否含超音波動態影像；oEmbed 雖 200，仍不足以判定品質。留待人工複驗。"
+  },
+  {
+   "title": "Imaging of Cervical Lymph Nodes Part 1 Health4theworld Academy",
+   "url": "https://www.youtube.com/watch?v=0-_ZmF7Vof0",
+   "source": "YouTube / Health4TheWorld Academy",
+   "decision": "excluded",
+   "reason": "23:13，非營利醫學教育機構，但系列以 CT/MR 判讀為主，且未能取得章節確認超音波比重。本章門檻已提高，排除。"
+  },
+  {
+   "title": "Benign vs Malignant lymph nodes",
+   "url": "https://www.youtube.com/watch?v=9hOBP5y13g8",
+   "source": "YouTube / Dr Randhawas Institute of Ultrasound Training",
+   "decision": "excluded",
+   "reason": "10:55、28,269 次觀看，主題契合 ch7-u1，但無影片說明、無章節，且內容涵蓋全身淋巴結而非頸部與甲狀腺癌脈絡；u1 已有 THANC 與轉載講座兩支涵蓋相同內容，不再納入。"
+  },
+  {
+   "title": "BASICS OF NECK ULTRASOUND | DR SANJEEV MANI | ULTRASOUND NECK DEMO | LYMPH NODES | THYROID GLAND",
+   "url": "https://www.youtube.com/watch?v=dInDrV5kP1g",
+   "source": "YouTube / Indian Radiologist",
+   "decision": "excluded",
+   "reason": "標題即為 BASICS，屬入門掃描示範；本課程受眾已能完成基本掃描，依 CURATION-BRIEF『不收入門內容』排除。"
+  },
+  {
+   "title": "Lymph Node – Ultrasound Image Interpretation",
+   "url": "https://www.youtube.com/watch?v=8q3TtXvXImE",
+   "source": "YouTube / Clarius Mobile Health",
+   "decision": "excluded",
+   "reason": "0:56，設備廠商內容（可收但須標 coi）。最終排除：長度過短、非甲狀腺癌脈絡，教學增益低於 u1 已收的其他資源。"
+  },
+  {
+   "title": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
+   "url": "https://www.youtube.com/watch?v=rUhmKzcUjvM",
+   "source": "YouTube / Joseph Minardi",
+   "decision": "excluded",
+   "reason": "3:52，確有實際動態掃描，但為急診 POCUS 導向的基本前／側頸掃描，未做甲狀腺癌分區標示；對本課程受眾過於基礎。"
+  },
+  {
+   "title": "Neck Soft Tissue Protocol / Neck Scan Through",
+   "url": "https://www.youtube.com/watch?v=KKLzvTwIjZo",
+   "source": "YouTube / Sonographic Tendencies",
+   "decision": "excluded",
+   "reason": "4:25，超音波技術師取向的掃描 protocol，程度與目標受眾不符（另一支 rARM1Eb5rIw『Neck Scan Through』1:17 同因排除）。"
+  },
+  {
+   "title": "Lymph node evaluation in patient with history of papillary thyroid cancer by Dr Sean Nikravan, MD",
+   "url": "https://www.youtube.com/watch?v=miY4SkdhTiY",
+   "source": "YouTube / Sean P. Nikravan MD",
+   "decision": "excluded",
+   "reason": "2:02，同一頻道的 3.8 mm 結節辨識 + 超音波導引切片，品質可用。排除原因：與已收的 qzDBjlS5Yc0 同頻道同型態，且影片說明大篇幅推介射頻燒灼作為再手術替代方案（含診所聯絡資訊），商業導向較明顯，教學上以 qzDBjlS5Yc0 的『不穿刺』決策更具訓練價值。"
+  },
+  {
+   "title": "FNA Workshop 17th May 2023 - Session 6 (Cervical Lymph Nodes Clinical Context)",
+   "url": "https://www.youtube.com/watch?v=N9VqVK62wRU",
+   "source": "YouTube / GM Cancer Academy",
+   "decision": "excluded",
+   "reason": "8:42，僅 36 次觀看，同系列 workshop，主題為淋巴結的臨床脈絡。無說明文字與章節；同系列已收 Session 7，u3 亦已有 THANC 與 KSThR 兩份更完整的資源。曾在跨章去重時被考慮作為 qzDBjlS5Yc0 的替代品，因無法驗證內容而不採用。"
+  },
+  {
+   "title": "FNA Workshop 17th May 2023 - Session 7 (Cervical Lymph Nodes Ultrasound)",
+   "url": "https://www.youtube.com/watch?v=fOlf7lDArXc",
+   "source": "YouTube / GM Cancer Academy",
+   "decision": "excluded",
+   "reason": "22:06，1,234 次觀看（該系列最高），oEmbed 200，主題與本章高度相符。2026-08-02 跨章去重時曾用它取代同系列 Session 2，但隨即查出已由 ch5-u4 使用；且其內容重心為淋巴結判讀與 FNA（CH5 範圍），而 ch7-u2 要的是系統性分區掃描路徑，Session 2 更貼合。故維持 Session 2、不收本片。"
+  },
+  {
+   "title": "Preoperative detection of metastatic lymph nodes in thyroid cancer",
+   "url": "https://www.youtube.com/watch?v=XjGeCKzFsOs",
+   "source": "YouTube / Γεώργιος Σακοράφας（Georgios Sakorafas）",
+   "decision": "excluded",
+   "reason": "8:06，2018 年上傳，僅 108 次觀看。主題（術前偵測淋巴結轉移）與 ch7-u3 高度相符，講者為希臘外科教授，說明頁寫明『Optimal diagnostic methodology to detect preoperatively lymph node metastases in thyroid cancer - practical implications』。排除原因：個人頻道上傳、無章節無字幕，無法確認是否含動態掃描（依標題與長度研判很可能為純投影片講述），本章已提高門檻。曾在跨章去重時被考慮作為 qzDBjlS5Yc0 的替代品，因品質明顯較低而不採用。"
+  },
+  {
+   "title": "Ultrasound in the management of thyroid cancer with Dr Noureldine 262",
+   "url": "https://www.youtube.com/watch?v=SqiYpDY67x8",
+   "source": "YouTube / ThyCa: Thyroid Cancer Survivors' Association, Inc.",
+   "decision": "excluded",
+   "reason": "59:52，講者可信（Salem Noureldine，頭頸內分泌外科），但 ThyCa 年會場次以病友為主要對象，深度與本課程受眾不符。"
+  },
+  {
+   "title": "Are There Benefits to Prophylactic Central Neck Dissection? with Dr. Rebecca Sippel",
+   "url": "https://www.youtube.com/watch?v=Bj8BkrP32P0",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "60:59，與已收的 op5A7g3TKD0 主題重疊（且 Sippel 本人即為 op5A7g3TKD0 的討論人），避免同章重複。"
+  },
+  {
+   "title": "Ultrasound and Other Imaging Methods to Inform Thyroid Cancer Surgery",
+   "url": "https://www.youtube.com/watch?v=Ms9GbaoZ4k0",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "1:05，為 7zccu4izgTI（James Wu 全場演講）的節錄片段；已收全場，不重複收錄片段。"
+  },
+  {
+   "title": "Ultrasound elastography for evaluation of cervical lymph nodes",
+   "url": "https://www.youtube.com/watch?v=Wx4zpgLJzi0",
+   "source": "YouTube / Ultrasonography（期刊官方頻道）",
+   "decision": "excluded",
+   "reason": "期刊補充影片，來源良好，但僅 11 秒且主題為 elastography，屬 CH11 進階技術範圍。"
+  },
+  {
+   "title": "Journal Review in Endocrine Surgery: Updates of the 2025 American Thyroid Association Guidelines",
+   "url": "https://www.youtube.com/watch?v=1gxYDNB8qlw",
+   "source": "YouTube / Behind The Knife: The Surgery Podcast",
+   "decision": "excluded",
+   "reason": "純音訊 podcast，完全無影像。依 CURATION-BRIEF『只有口頭演講、沒有實際動態掃描』一律排除。內容本身（2025 ATA 指引更新）值得由 guideline-matrix 另行處理。"
+  },
+  {
+   "title": "Ultrasound of cervical lymph nodes（Evans RM）",
+   "url": "https://academic.oup.com/imaging/article/15/3/101/7640383",
+   "source": "Imaging (British Institute of Radiology) 2003;15(3):101-108",
+   "decision": "excluded",
+   "reason": "實際讀取確認為 2003 年綜論、非開放取用需訂閱。內容雖完整（分區、良惡性鑑別、Doppler 型態），但年代過舊且早於現行 K-TIRADS／ETA 淋巴結分類，不宜作為本章教材。"
+  },
+  {
+   "title": "Cervical lymph node levels / Sonographic features of malignant lymph nodes",
+   "url": "https://radiopaedia.org/articles/cervical-lymph-node-levels",
+   "source": "Radiopaedia",
+   "decision": "excluded",
+   "reason": "curl 實測 HTTP 200（需帶瀏覽器 UA 與 Accept header，否則回 406），但頁面為 JavaScript 單頁應用，curl 與 WebFetch 皆無法取得正文（WebFetch 回 403）。僅能確認網址存在、無法確認內容與授權，依『不信任任何上游宣稱、每個連結都要實際打過』原則不予收錄。同理排除 /articles/sonographic-features-of-malignant-lymph-nodes 與 /articles/lymph-node-metastases-from-papillary-thyroid-carcinoma。"
+  },
+  {
+   "title": "Thyroid Ultrasound – Radiologist Reporting Template",
+   "url": "https://www.cancercareontario.ca/sites/ccocancercare/files/assets/RadiologistsReportingTemplate.pdf",
+   "source": "Cancer Care Ontario",
+   "decision": "excluded",
+   "reason": "曾是 ch7-u4 報告模板的優先候選（省級癌症機構發布），但 curl 與 WebFetch 皆回 403（bot 防護），無法實際打開確認內容與版本。改用可完整讀取並已用 pypdf 驗證內文的 KSThR 2023 共識。此連結留待人工以瀏覽器複驗。"
+  },
+  {
+   "title": "RadReport / RSNA structured reporting templates",
+   "url": "https://radreport.org/home",
+   "source": "RSNA",
+   "decision": "excluded",
+   "reason": "首頁 curl 200，但未能在不逐一開啟範本頁的情況下確認哪一份範本含甲狀腺癌術前頸部淋巴結分區欄位；未實際確認的範本編號不予寫入。留作日後補查。"
+  },
+  {
+   "title": "Decoding lymph node skip metastasis: impact on long-term outcomes in stage T1 papillary thyroid carcinoma",
+   "url": "https://doi.org/10.1093/ejendo/lvaf050",
+   "source": "European Journal of Endocrinology 2025（PMID 40088464）",
+   "decision": "excluded",
+   "reason": "主題契合 ch7-u2，書目已用 esummary 核實，但 elink 查無 PMC 版本、doi.org 導向 academic.oup.com 回 403，無可穩定開啟的全文。改採同主題且開放取用的 QIMS 2024 論文。"
+  }
+ ],
+ "gaps": [
+  {
+   "topic": "extranodal extension（淋巴結包膜外侵犯）的超音波判讀",
+   "status": "部分覆蓋",
+   "note": "以 4z6I3yGVS-M 的異常形態段落與 7zccu4izgTI 的 ETE 段落間接觸及，但兩者講的分別是淋巴結輪廓不規則與甲狀腺原發腫瘤的 extrathyroidal extension，並非嚴格意義的 extranodal extension。搜尋 'extranodal extension ultrasound lymph node neck' 僅回傳乳癌與不明原發癌內容，無合格的頸部超音波教材。已在 ch7-u1 的 weak 中明列此能力，並提醒須以 CT 或術中所見佐證。"
+  },
+  {
+   "topic": "MRI 在頸部淋巴結分期的角色",
+   "status": "未覆蓋",
+   "note": "ch7-u3 標題含 MRI，但實際搜尋（US vs CT、preoperative imaging）所得的合格資源幾乎全部只比較超音波與 CT。ATA 2015 術前影像聲明有涵蓋 MRI，惟全文需訂閱。單元內容目前以 US 與 CT 為主，MRI 僅在 ATA 聲明的連結中間接涵蓋，屬誠實缺口。"
+  },
+  {
+   "topic": "Thyroglobulin washout 與 PTH washout 的操作示範",
+   "status": "未覆蓋（本章）",
+   "note": "搜尋 'ultrasound guided FNA cervical lymph node thyroglobulin washout' 與 'thyroglobulin washout lymph node fine needle aspiration thyroid cancer' 兩次，YouTube 幾乎無合格結果（僅回傳一支結節切片動畫與一支 THANC webinar）。washout 技術主要屬 CH5 範圍，本章僅在 ch7-u3 的 tight 中提醒不要漏送。"
+  },
+  {
+   "topic": "中央區（level 6）的實際動態掃描示範",
+   "status": "弱覆蓋",
+   "note": "本章找不到專門示範氣管食道溝與 level 6 掃描動作的合格影片。目前以 KSThR 2023 共識的操作建議（head rotation、吞嚥、探頭傾斜）與 SisuHT1hQ1g 的 limitations 段落補足，並把實作要求寫進 ch7-u2 的 assessment。這是本章最需要日後補強的一塊。"
+  }
+ ]
+}

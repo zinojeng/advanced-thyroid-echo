@@ -1,0 +1,406 @@
+{
+  "chapter": "CH11",
+  "title": "進階技術與新興議題",
+  "units": [
+    {
+      "id": "ch11-u1",
+      "name": "Strain 與 shear-wave elastography",
+      "type": "scan",
+      "assessment": "挑 10 顆自己門診已有細胞學或病理結果的結節，逐顆做兩件事。(1) 先按 EU-TIRADS 2017 的排除清單判斷這顆結節「能不能做 elastography」：>30 mm、有 macrocalcification、囊性成分為主、位置太深或在峽部、與鄰近結節相連者標為不適用；記錄不適用的比例。(2) 對適用的結節做 strain 與 SWE，寫下你用的機器型號、探頭、施壓方式、ROI 大小與 kPa 或 strain ratio 的 cut-off 出處。最後填一張五欄表：技術可行性（我這台機器做得出來嗎）／診斷準確度（文獻的 pooled sensitivity、specificity 各是多少）／臨床效益（有沒有一顆結節因為 elastography 而改變了 FNA 決定）／指引地位（EU-TIRADS R10 的 SOR 是幾級、ACR TI-RADS 2017 有沒有把它納入評分）／是否僅研究用途。若十顆裡沒有任何一顆改變決定，就照實寫「本批病例臨床效益為零」。",
+      "tight": [
+        "最常被過度推銷的說法是「硬的就是癌、軟的可以不用穿刺」。真正被 EU-TIRADS 2017 支持的只有半句：Recommendation R10 說 elastography「不應取代 grayscale study，但可作為評估是否 FNA 的輔助工具，特別是因為它的高 NPV」，證據等級 QOE = ++、推薦強度只有 SOR = grade 2。任務小組明確寫出「無法推薦常規使用 elastography，也不推薦把它直接整合進風險分層系統」。把 R10 讀成「軟就免穿」是把 grade 2 的補充工具當成 grade 1 的決策規則。",
+        "meta-analysis 的漂亮數字幾乎都來自「理想條件」下的研究。EU-TIRADS 2017 直接點名：這些研究是在 studies performed under ideal conditions 做出來的，而 SWE 的 cut-off 在各研究間從 35 kPa 到 90 kPa 都有，至今沒有可重現的閾值。看到某篇論文用 65 kPa 就照抄到自己機器上，是本單元最常見的錯誤。",
+        "把「不能做」當成「做出來了」。>30 mm、macrocalcification、囊性、深部或峽部、以及互相擠壓的多發結節，這五類 EU-TIRADS 明列為 elastography 無法可靠應用；但機器照樣會給你一個彩色圖和一個 kPa 數字。機器不會拒絕你，只有你會。",
+        "strain 與 SWE 是兩種不同的量、不同的單位、不同的偽影來源，卻常被混在同一句「elastography 的敏感度是 84%」裡。Cantisani 2022 的 meta-analysis 分開報：qualitative USE 84%/81%/AUC 0.89、semi-quantitative 83%/80%/AUC 0.93、quantitative 78%/81%/AUC 0.87 — 定量的那一組準確度並沒有比目視分級高。",
+        "施壓力道、ROI 大小、取樣平面、機器與軟體版本都會改變數值。跨機器比較同一顆結節的 kPa，或用去年的機器數值追蹤今年的結節，是無效的比較。"
+      ],
+      "weak": [
+        "對 strain 與 SWE 分別區分五件事：技術可行性（這顆結節符不符合可做條件、我的機器與探頭做不做得出可重複的數值）／診斷準確度（pooled sensitivity、specificity、AUC，以及這些數字來自什麼樣的研究條件）／臨床效益（有沒有證據顯示它減少不必要的 FNA、改變處置、或改善病人結果）／是否已進入正式指引（EU-TIRADS 2017 R10 是 grade 2 的補充工具，明確拒絕整合進評分系統；WFUMB 2017 Part 4 給的是分技術的條件式建議）／是否僅為研究用途。",
+        "能讀出「這個 kPa cut-off 是哪一台機器、哪一種演算法、哪一群病人算出來的」，並判斷它能不能搬到自己的機器上。",
+        "能在報告裡把 elastography 寫成補充敘述而非結論，例如寫「SWE 中位 28 kPa（Canon Aplio i800、14L5 探頭，ROI 5 mm）」而不是寫「elastography 提示良性」。",
+        "能對一顆 ACR TI-RADS TR4 的結節說明：即使 elastography 顯示很軟，為什麼 grayscale 的建議仍然成立。"
+      ],
+      "lesson": {
+        "title": "WFUMB Guidelines and Recommendations on the Clinical Use of Ultrasound Elastography: Part 4. Thyroid",
+        "channel": "World Federation for Ultrasound in Medicine and Biology (Ultrasound in Medicine & Biology 2017;43(1):4-26)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27570210/",
+        "why": "這是唯一一份逐一針對每種 elastography 技術寫出「操作程序、可重現性、結果、限制」四段再給建議的正式學會文件，正好對應本章要求的技術可行性／診斷準確度／指引地位三層切割。它不是綜述而是 consensus guideline，所以讀的時候要看的是每條建議的證據等級，而不是它引用了多少篇高 AUC 的研究。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "journal",
+        "access": "subscription",
+        "license": "版權歸 World Federation for Ultrasound in Medicine and Biology 與 Elsevier，本站僅連結 PubMed 摘要頁",
+        "last_verified": "2026-08-02",
+        "coi": "WFUMB elastography 系列指引的專家小組成員普遍與超音波設備廠商有講者費、顧問或研究支持關係（同系列文件均附利益揭露），閱讀建議條文時應同時看文末揭露"
+      },
+      "drills": [
+        {
+          "name": "EU-TIRADS 2017 指引全文：Recommendation R10 與 elastography 限制清單",
+          "en": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+          "kind": "guideline",
+          "target": "看出一份正式指引如何在同一段裡承認高 NPV、又拒絕把技術納入評分系統。要能複述 R10 的完整條文（不應取代 grayscale、可作為 FNA 評估的補充工具、QOE = ++、SOR = grade 2），以及任務小組給的理由：cut-off 在 35–90 kPa 之間無法統一、meta-analysis 來自理想條件、且 elastography 是否對 grayscale 有實質加值仍有爭議。同時抄下 elastography 不可靠應用的五類結節。",
+          "dose": "直接用瀏覽器的頁內搜尋找 \"Elastography\"，讀 Stiffness: Elastography 整節（Definition → Background and Comments → Recommendation R10），約 15 分鐘。讀完後把 R10 和你自己科內對 elastography 的口頭共識並排寫下來，看差多少。順帶讀上一段的 R9（不推薦常規用 Doppler 做風險分層），比較兩者措辭。",
+          "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+          "channel": "European Thyroid Association (European Thyroid Journal 2017;6(5):225-237)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5652895/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "Karger 開放取用，經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "三種 elastography 技術的診斷準確度 meta-analysis（72 篇、14,015 顆結節）",
+          "en": "US-Elastography With Different Techniques for Thyroid Nodule Characterization: Systematic Review and Meta-analysis",
+          "kind": "lecture",
+          "target": "學會把「準確度」拆到技術層級再比較。qualitative USE 敏感度 84%、特異度 81%、AUC 0.89；semi-quantitative 83%/80%/AUC 0.93；quantitative 78%/81%/AUC 0.87。重點不是哪個數字大，而是看出定量技術並沒有比目視分級好，以及 33% 的惡性盛行率意味著這些 PPV/NPV 不能直接套到門診族群。",
+          "dose": "先自己猜三種技術的敏感度誰高再看結果。看完後回到 EU-TIRADS R10：同樣一批文獻，為什麼 meta-analysis 作者的結論是「診斷表現良好」，而指引的結論是「無法推薦常規使用」。把兩者的差異用一句話寫下來——那句話就是本章要練的核心能力。",
+          "title": "US-Elastography With Different Techniques for Thyroid Nodule Characterization: Systematic Review and Meta-analysis",
+          "channel": "Cantisani V et al. (Frontiers in Oncology 2022;12:845549)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8966910/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Frontiers 開放取用（CC BY），經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "ECR 2019 研討會：甲狀腺與唾液腺的多參數超音波實作",
+          "en": "ECR 2019 Symposium - Multi parametric Ultrasound in Thyroid & Salivary Glands Daily Practice",
+          "kind": "lecture",
+          "target": "看廠商贊助的學會研討會怎麼把 elastography 與其他新模式整合進日常流程，並同時練習辨認「這一段是技術示範、這一段是診斷準確度資料、這一段是廠商產品定位」。特別注意講者示範施壓與 ROI 擺放的手法細節——這是文獻不會寫、但決定你數值可不可重現的部分。",
+          "dose": "只看操作示範段落即可，不必看完整場。看的時候手邊放 EU-TIRADS 的不可用結節清單，每出現一個示範病例就先自問「這顆按指引其實不該做 elastography 嗎」。全片約一小時，建議 1.5 倍速並跳過產品規格段。",
+          "title": "ECR 2019 Symposium - Multi parametric Ultrasound in Thyroid & Salivary Glands Daily Practice",
+          "channel": "Canon Medical ANZ",
+          "url": "https://www.youtube.com/watch?v=6Gp3W20l2aM",
+          "duration": "1:00:27",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 Canon Medical ANZ 頻道，本站僅連結",
+          "last_verified": "2026-08-02",
+          "coi": "由設備廠商 Canon Medical 的官方頻道發布並贊助之 ECR 衛星研討會，示範內容與該廠商機型繫結；不得將片中表現當成跨廠商的臨床證據"
+        }
+      ]
+    },
+    {
+      "id": "ch11-u2",
+      "name": "顯影劑超音波（CEUS）",
+      "type": "scan",
+      "assessment": "分兩部分。(1) 文獻對照：把 Xu 2025（29 篇、3,521 顆結節，pooled sensitivity 0.86、specificity 0.86、SROC AUC 0.93，全部以術後病理為 reference standard）與 Trimboli/Cantisani 2020（14 篇、1,515 顆，只收有組織學追蹤者，sensitivity 85%、specificity 82%、PPV 83%、NPV 85%，作者明確報告 sensitivity 與 NPV 存在 publication bias）並排。寫出：兩篇的族群怎麼被篩選、為什麼「只有拿去開刀的結節」會把準確度往上推、以及 publication bias 這句話對你解讀 0.93 這個 AUC 的影響。(2) 指引查核：打開 EFSUMB 2017 非肝臟 CEUS 指引，找到甲狀腺章節，抄下它給了什麼等級的建議、建議用在什麼情境（診斷分類？消融後評估？）；再用頁內搜尋確認 EU-TIRADS 2017 全文中 contrast-enhanced ultrasound 出現幾次。最後填五欄表：技術可行性／診斷準確度／臨床效益／是否已進入正式指引／是否僅為研究用途。",
+      "tight": [
+        "最常被過度推銷的說法是「CEUS 可以取代 FNA 分辨良惡性」，常見包裝是「AUC 0.93，比 TI-RADS 好」。這個數字有兩個致命的前提：29 篇 meta-analysis 全部只收「有術後病理」的結節，也就是已經被挑去開刀的族群；而只收組織學追蹤的那篇 meta-analysis（Trimboli 2020）自己就報出 sensitivity 與 NPV 有 publication bias。一個只在手術族群驗證過、且有發表偏差的指標，不能拿來決定門診結節要不要穿刺。",
+        "把 CEUS 有實證的用途和沒實證的用途混為一談。CEUS 在甲狀腺最站得住腳的位置是介入相關（例如熱消融前後判斷有無殘留灌流、評估壞死範圍），而不是結節良惡性分類。EU-TIRADS 2017 全文完全沒有提到 contrast-enhanced ultrasound——一個被指引整篇略過的技術，不是「指引還沒跟上」，而是「證據還不足以進入分層」。",
+        "enhancement pattern 的判讀高度主觀。ring enhancement、hypo-enhancement、heterogeneous enhancement 這些詞在不同研究裡定義不同、時相取樣點不同、微氣泡劑量與機械指數也不同；把某篇論文的 pattern 名詞抄到自己的報告，等於借用一個你沒有校準過的分類系統。",
+        "微泡顯影劑（SonoVue／Lumason 等）在許多地區並未取得甲狀腺適應症，屬 off-label 使用；同時要考慮過敏與類過敏反應的風險、施打與急救準備。把「技術上做得到」當成「可以常規做」，跳過的是適應症與知情同意這一層。",
+        "同一顆結節在動脈期與延遲期的表現不同，取樣時間差 5 秒就可能改成相反的判讀。沒有標準化的計時與存檔，CEUS 的可重複性會比 grayscale 更差而不是更好。"
+      ],
+      "weak": [
+        "對 CEUS 區分五件事：技術可行性（我的機器有沒有低機械指數對比模式、有沒有微泡顯影劑供應與適應症、誰負責施打與監測）／診斷準確度（pooled sensitivity 0.86、specificity 0.86、AUC 0.93，但族群限於手術病例且存在發表偏差）／臨床效益（有沒有證據顯示它減少 FNA、減少手術、或改善結果——目前主要證據集中在介入導引與消融後評估，不是良惡性分類）／是否已進入正式指引（EFSUMB 2017 非肝臟 CEUS 指引有甲狀腺章節，需自行查核其建議等級；EU-TIRADS 2017 完全未納入）／是否僅為研究用途。",
+        "能識別一篇 CEUS 診斷準確度研究的族群是「所有進來門診的結節」還是「已經被送去手術的結節」，並說明後者會如何抬高 sensitivity 與 PPV。",
+        "能說明為什麼「這篇指引沒有提到某技術」本身就是一項要記錄的指引地位資訊，而不是資料缺漏。",
+        "能在遇到廠商或同儕說「我們現在都做 CEUS」時，具體問出：用在哪個決策點、取代了哪一個原本會做的步驟、有沒有本院的結果資料。"
+      ],
+      "lesson": {
+        "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Contrast-Enhanced Ultrasound (CEUS) in Non-Hepatic Applications: Update 2017 (Short Version)",
+        "channel": "European Federation of Societies for Ultrasound in Medicine and Biology (Ultraschall in der Medizin 2018;39(2):154-180)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29510440/",
+        "why": "這是目前唯一把甲狀腺 CEUS 放進正式學會建議體系的歐洲文件，因此它是回答「CEUS 到底進入指引了沒、進入到什麼程度」的第一手依據。刻意選短版是因為短版把建議條文與等級集中呈現，適合做本單元「查核指引地位」的練習；長版（PMID 29510439）供需要完整論述時使用。",
+        "tier": "A",
+        "source_type": "guideline",
+        "provider": "society",
+        "access": "subscription",
+        "license": "版權歸 EFSUMB 與 Georg Thieme Verlag，本站僅連結 PubMed 摘要頁",
+        "last_verified": "2026-08-02",
+        "coi": "本指引的作者群利益揭露相當長，多數共同作者揭露來自微泡顯影劑廠商（Bracco）與超音波設備廠商（Hitachi、GE、Siemens、Toshiba、Mindray、SuperSonic、Philips 等）的講者費、顧問費或研究補助。這不使指引無效，但閱讀建議條文的措辭強度時應一併看文末揭露。"
+      },
+      "drills": [
+        {
+          "name": "CEUS 鑑別良惡性結節的最新 meta-analysis（29 篇、3,521 顆結節）",
+          "en": "Diagnostic Value of Contrast-Enhanced Ultrasound for Differentiating Benign and Malignant Thyroid nodules: A Systematic Review and Meta-Analysis",
+          "kind": "lecture",
+          "target": "看出這份 AUC 0.93 的成績是在什麼條件下取得的：納入條件明訂「以術後病理為 reference standard」，也就是族群已經被手術決策篩選過。要能指出這個設計如何同時抬高敏感度與正預測值，以及為什麼它不能回答「門診遇到的 TR3 結節該不該穿刺」。",
+          "dose": "只讀 Methods 的納入條件與 Results 的匯總數字，約 10 分鐘。讀完在紙上回答一個問題：如果把所有沒被送去開刀的結節也算進來，這個 specificity 會往哪個方向跑？把你的推理寫下來，下一個 drill 會給你對照組。",
+          "title": "Diagnostic Value of Contrast-Enhanced Ultrasound for Differentiating Benign and Malignant Thyroid nodules: A Systematic Review and Meta‑Analysis",
+          "channel": "Xu R, He Y, Xie X, Chen G (Ultrasound in Medicine & Biology 2025;51(11))",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40784818/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "版權歸 Elsevier 與 World Federation for Ultrasound in Medicine and Biology，本站僅連結 PubMed 摘要頁",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "只收組織學金標準的 CEUS meta-analysis：作者自報發表偏差",
+          "en": "Performance of contrast-enhanced ultrasound (CEUS) in assessing thyroid nodules: a systematic review and meta-analysis using histological standard of reference",
+          "kind": "lecture",
+          "target": "這篇的存在理由就是本章的主題。作者明言是為了避開「以細胞學為金標準」的潛在偏差而重做，結果 sensitivity 85%、specificity 82%、PPV 83%、NPV 85%，並直接寫出 sensitivity 與 NPV 存在 publication bias。要學會的是：同一個技術，換一個更嚴格的金標準與更誠實的偏差檢定，數字就往下走，而且作者會告訴你哪一項不可信。",
+          "dose": "與上一個 drill 並排讀，15 分鐘。做一張兩列表比較納入篇數、結節數、金標準、匯總數字與偏差說明。注意 14 篇研究全部使用同一種顯影劑 SonoVue——這代表結論不能自動外推到其他顯影劑。",
+          "title": "Performance of contrast-enhanced ultrasound (CEUS) in assessing thyroid nodules: a systematic review and meta-analysis using histological standard of reference",
+          "channel": "Trimboli P, Castellana M, Virili C, et al. (La Radiologia Medica 2020;125(4))",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31970579/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "版權歸 Springer 與 Società Italiana di Radiologia Medica，本站僅連結 PubMed 摘要頁",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "EFSUMB 名師講堂：甲狀腺超音波造影檢查（詹維偉）",
+          "en": "Friday 30th July 2021 - Morning, Lecture Hall of Famous Teachers - 詹维伟 甲状腺超声造影检查",
+          "kind": "lecture",
+          "target": "看實際的 CEUS 動態影像：微泡進入的時相、周邊環狀強化與內部灌流缺損長什麼樣、以及消融後殘餘灌流的判讀。這是文獻裡的 enhancement pattern 名詞唯一能被具體看懂的方式。同時觀察講者對每個 pattern 給的把握程度——注意他在哪些地方說「傾向」而不是「就是」。",
+          "dose": "15 分鐘全片可看完。中文（普通話）講授、無英文字幕，術語與 EFSUMB／文獻用語一致，可用本單元兩篇 meta-analysis 交叉核對。看的時候只做一件事：把片中出現的每一個 enhancement pattern 名詞抄下來，回頭到 Xu 2025 與 Trimboli 2020 找同名定義，比對是否一致——多半不會完全一致，那正是重點。",
+          "title": "Friday 30th July 2021 - Morning, Lecture Hall of Famous Teachers - 詹维伟 甲状腺超声造影检查",
+          "channel": "EFSUMB",
+          "url": "https://www.youtube.com/watch?v=ZKwl_57AplA",
+          "duration": "15:02",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 EFSUMB 官方頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch11-u3",
+      "name": "微血流成像、3D ultrasound 與融合影像",
+      "type": "scan",
+      "assessment": "三段各自獨立、都要動手。(1) 微血流：挑 8 顆結節，同一顆分別用 color Doppler 與微血流模式（SMI／MFI／MV-Flow，依機器而定）掃，記錄血流分佈型態在兩種模式下有沒有被改判；再查你機器上這個模式的原廠名稱與其對應文獻，確認你借用的診斷準則（rich vascularity？vascular distribution？penetrating vessel？）出自哪一種準則——Zheng 2025 的 meta-analysis 顯示這三種準則的敏感度／特異度分別是 0.90/0.74、0.86/0.83、0.87/0.88，混用會得到不同答案。(2) 3D 體積：對 3 位甲狀腺腫大病人同時用 2D ellipsoid 公式與（若有）3D／自動分割量體積，寫下兩者差多少、以及這個差距會不會改變任何一個臨床決定（藥量？轉介手術？追蹤間隔？）。(3) 融合影像：找一位術後或消融後追蹤病人，寫出如果有 US-CT/MRI fusion，你想解決的是哪一個具體問題（定位可疑病灶？確認殘餘？），以及沒有 fusion 時你目前是怎麼解決的。最後為三項技術各填一次五欄表。",
+      "tight": [
+        "微血流成像最常被過度推銷的說法是「它能看到 Doppler 看不到的微血管，所以能分辨良惡性」。前半句是技術事實，後半句是推論。Zheng 2025 的 SMI meta-analysis 只納入 10 篇、1,160 顆結節，而且作者在結論裡直接指出各研究採用的 SMI 惡性判準彼此不同、仍需要標準化準則。一個連判準都還沒統一的模式，不能拿來當成獨立的分級依據。",
+        "3D ultrasound 最常被過度推銷的說法是「更準的體積等於更好的照護」。Rask 2026 的臨床試驗確實顯示 AI 輔助 freehand 3D 比 2D 準（以術後水位移法為金標準，體積差中位 1.7 mL vs 3.6 mL，相關係數 0.986），但那是 14 位要接受全甲狀腺切除的病人。準確度提升是真的，臨床效益要另外問：多量準的 1.9 mL 會改變哪一個決定？在大多數門診情境，答案是不會。",
+        "融合影像（US 與 CT／MRI／PET 的即時導航疊合）在甲狀腺與頸部的證據基礎，遠比在肝臟與攝護腺薄。它真正的價值集中在「我知道 CT 上有病灶但超音波找不到」的定位問題，而不是良惡性分類。把攝護腺 fusion biopsy 的成功經驗直接搬到頸部，是跨器官的無效外推。",
+        "微血流模式在不同廠商叫不同名字（Canon SMI／MFI、Samsung MV-Flow、Mindray 等），演算法不同、對運動偽影的敏感度不同、預設參數也不同。文獻裡的 SMI 結果不能自動套到你機器上那個「看起來很像」的模式。這是本章 device dependence 的具體案例。",
+        "微血流對呼吸與吞嚥造成的組織位移極為敏感，容易產生 flash artifact 而被誤讀為豐富血流。判讀前先確認病人有沒有屏氣、影像有沒有整片閃動。"
+      ],
+      "weak": [
+        "對微血流成像、3D ultrasound、融合影像三者各自區分五件事：技術可行性（我的機器有沒有這個模式、叫什麼名字、對操作與病人配合的要求）／診斷準確度（微血流：三種判準的匯總數字互不相同；3D：對體積量測確有改善；融合：頸部缺乏匯總性診斷準確度證據）／臨床效益（哪一個決定會因此改變）／是否已進入正式指引（三者目前皆未被 ACR TI-RADS 2017、ATA、EU-TIRADS 2017 等主要風險分層系統納入評分）／是否僅為研究用途。",
+        "能指出一項技術「準確度改善」與「臨床效益」之間缺了哪幾步：需要有人因此改變處置、改變的處置要導向更好的結果、而且改善幅度要大於增加的成本與偽陽性。",
+        "能辨認自己機器上的微血流模式屬於哪一種演算法家族，並在報告中寫出模式名稱與廠商，而不是籠統寫「微血流豐富」。",
+        "能判斷一顆結節的血流型態（環繞型／穿入型／雜亂型）在自己這台機器的預設參數下是否可重現：同一顆結節換一次探頭壓力再掃一次，型態有沒有變。"
+      ],
+      "lesson": {
+        "title": "Multimodality Ultrasound Utilizing Microvascular Flow Imaging and Shear Wave Elastography to Guide Fine-Needle Aspiration of Thyroid Lesions: A Prospective Study Validating Pattern-Based Microvascular Classification",
+        "channel": "Chen J, Zhong J, Zhuang Y, et al. (Thyroid 2025;35(5):516-526)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40257933/",
+        "why": "這篇是本章最好的「研究成果 vs 臨床效益」教材，因為它兩面都極端：一方面它是前瞻設計、793 顆有病理的結節、多模態模型 AUC 0.95，並宣稱在 71% 風險閾值下可避免 27% 的 FNA（ACR TI-RADS 只有 13%）；另一方面它的族群 545/793 為惡性（惡性盛行率 69%），而其 ACR TI-RADS 對照組 AUC 只有 0.62——遠低於 ACR TI-RADS 在一般族群的常見表現。要學員自己看出：AUC 差距 0.95 對 0.62 之所以這麼壯觀，一部分來自族群與對照組的設定，而不只是新模式本身。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "subscription",
+        "license": "版權歸 Mary Ann Liebert / American Thyroid Association，本站僅連結 PubMed 摘要頁",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "灰階合併 SMI 的 meta-analysis：三種判準、三組數字",
+          "en": "Diagnostic value of greyscale ultrasound combined with superb microvascular imaging in thyroid nodules: a systematic review and meta-analysis",
+          "kind": "lecture",
+          "target": "看出「SMI 的敏感度是多少」這個問題本身問錯了。10 篇、1,160 顆結節（556 顆惡性），依判準不同結果分為：豐富血流 0.90/0.74、血流分佈 0.86/0.83、穿入血管 0.87/0.88。整體 AUC 0.92，但作者結論明白寫著仍需標準化的 SMI 甲狀腺判準。要能說出：在判準未統一之前，引用「SMI 的準確度」是沒有指涉對象的。",
+          "dose": "讀 Results 與 Conclusions 兩段，10 分鐘。讀完打開你自己的機器，找到微血流模式，確認它的名稱與這篇的 SMI 是不是同一件事；如果不是，寫下你憑什麼借用這些數字。順帶注意惡性盛行率 556/1160 = 48%，比一般門診高很多。",
+          "title": "Diagnostic value of greyscale ultrasound combined with superb microvascular imaging in thyroid nodules: a systematic review and meta-analysis",
+          "channel": "Quantitative Imaging in Medicine and Surgery 2025;15(1)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39839006/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "AME Publishing 開放取用；本站僅連結 PubMed 摘要頁",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "AI 輔助 freehand 3D 超音波量甲狀腺體積：以水位移法為金標準的臨床試驗",
+          "en": "Thyroid Volume Measurement With AI-Assisted Freehand 3D Ultrasound Compared to 2D Ultrasound—A Clinical Trial",
+          "kind": "lecture",
+          "target": "這是本章少見的「準確度提升有硬金標準」案例：14 位接受全甲狀腺切除者，術後水位移法為金標準，3D 的體積差中位 1.7 mL（IQR 1.2-3.3）、2D 為 3.6 mL，3D 相關係數 0.986。學員要看出兩件事：(1) 這是真的可行性與準確度證據，不是行銷；(2) 樣本只有 14 人、且是手術族群，作者用的動詞是 may enhance 而不是 improves outcomes——臨床效益仍未被檢驗。",
+          "dose": "全文很短，15 分鐘可讀完（開放取用）。讀完做一件事：算算看在你自己的臨床情境裡，體積量測要差多少才會改變一個決定（例如 RAI 劑量、手術轉介、追蹤間隔），再回頭看 1.9 mL 的改善落在哪裡。",
+          "title": "Thyroid Volume Measurement With AI-Assisted Freehand 3D Ultrasound Compared to 2D Ultrasound-A Clinical Trial",
+          "channel": "Rask KB, Makouei F, Wessman MHJ, et al., Rigshospitalet / University of Copenhagen (Head & Neck 2026;48(1):64-70)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12703570/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Wiley 開放取用（作者保留著作權，CC 授權），經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "虛擬導航融合影像在攝護腺、肺與頸部的應用示範",
+          "en": "Virtual Navigation: Prostate, Lung and Neck - Giancarlo Bizzarri, MD",
+          "kind": "procedure",
+          "target": "看融合影像實際運作的樣子：CT／MRI 資料集如何與即時超音波配準、配準誤差怎麼被發現、以及在頸部這個會隨吞嚥與轉頭而變形的區域，配準穩定度和肝臟或攝護腺差在哪裡。這是判斷「頸部 fusion 技術可行性」唯一能用眼睛確認的方式。",
+          "dose": "12 分鐘，重點放在 neck 段落。看的時候記錄兩件事：講者示範的頸部適應症具體是什麼（定位？導引？追蹤？），以及他有沒有給出任何診斷準確度數字。多半沒有——那正是本 drill 要你確認的「技術示範不等於診斷證據」。",
+          "title": "Virtual Navigation: Prostate, Lung and Neck - Giancarlo Bizzarri, MD",
+          "channel": "esaotegroup",
+          "url": "https://www.youtube.com/watch?v=NRSFUVftIxo",
+          "duration": "12:09",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 Esaote S.p.A. 官方頻道，本站僅連結",
+          "last_verified": "2026-08-02",
+          "coi": "由設備廠商 Esaote 官方頻道發布之產品導向技術示範（Virtual Navigator 為該公司產品名稱），講者於片中示範該廠商設備；僅可作為技術可行性參考，不得作為診斷準確度或臨床效益證據"
+        }
+      ]
+    },
+    {
+      "id": "ch11-u4",
+      "name": "AI、深度學習、自動化 TI-RADS 與 radiomics",
+      "type": "quality",
+      "assessment": "找一個你的機構真的可能會採購或已經在用的甲狀腺超音波 AI（或從文獻挑一個），寫一份不超過兩頁的採購前查核，必須逐項回答：(1) external validation：有沒有在「非開發團隊、非開發機構」的資料上驗證過？外部驗證的表現比內部掉了多少？沒有外部驗證就直接寫「無」。(2) domain shift：訓練資料來自哪個國家、哪些醫院、什麼年份、惡性盛行率多少？和你的病人差在哪？(3) device dependence：訓練影像用什麼廠牌探頭與機型？你的機器在不在其中？影像有沒有經過該廠牌特有的後處理？(4) automation bias：這個工具在畫面上怎麼呈現結果——先顯示 AI 答案再讓你判讀，還是你先判讀再揭曉？有沒有留下「我不同意 AI」的紀錄欄位？(5) 五欄分級：技術可行性／診斷準確度／臨床效益／是否已進入正式指引／是否僅為研究用途。最後做一個實測：拿 20 顆你已知結果的結節跑一次，記下 AI 與你不一致的每一顆，並標註你最後聽誰的、以及事後看誰對。",
+      "tight": [
+        "最常被過度推銷的說法是「AI 達到放射科醫師水準」。Buda 2019 那篇 Radiology 的標題其實是 Deep Learning **May Match** Performance of Radiologists，而測試集只有 99 顆結節、其中 15 顆惡性，演算法敏感度 13/15（87%，95% CI 67%–100%）、特異度 44/84（52%）。信賴區間下界 67% 的敏感度不叫 radiologist-level，叫樣本太小。看到「達到專家水準」先去找測試集的 n 與信賴區間。",
+        "第二個最常被過度推銷的說法是「外部驗證過了」。Ni 2025 的系統性回顧（41 篇）結論寫得很直接：目前研究受限於次佳的方法學設計、資料集間影像品質不一致、以及外部驗證不足，可能引入偏差——即使匯總數字是 detection AUC 0.96、segmentation AUC 0.91。匯總 AUC 高與外部驗證不足可以同時成立，而且經常同時成立。",
+        "domain shift 在甲狀腺特別隱蔽，因為它不只是機器不同。訓練集若來自惡性盛行率 50%–70% 的三級醫院手術族群（本章多篇研究皆是），搬到惡性盛行率 5%–10% 的門診，同一個模型輸出的機率值意義完全改變：閾值不變，偽陽性會暴增。這不是模型壞了，是你把它放到它沒見過的分佈裡。",
+        "device dependence 不只是「解析度不同」。Tang 2026 的雙中心外部驗證顯示，AI 判讀正確與否與影像特徵系統性相關：邊界清楚（OR 3.46）、高回音或等回音（OR 8.83）、無回音病灶或大彗星尾（OR 2.28）的良性結節較容易判對；而各廠牌的預設後處理（speckle reduction、compounding、harmonics）正好會改變這些特徵的外觀。換一台機器就等於換了輸入分佈。",
+        "automation bias 是本單元最難自我察覺的一項。Dratsch 2023 在 Radiology 的乳房攝影讀片實驗顯示：當 AI 給出錯誤的 BI-RADS 建議時，各層級的判讀者（含資深者）表現都顯著下降。關鍵不是 AI 錯，而是「AI 先講」這個介面設計本身就會改變人的判斷。所以採購時要問的不只是準確度，還有：它什麼時候把答案給我看。",
+        "radiomics 的特徵值對 ROI 勾畫方式、重取樣、灰階離散化與機器參數極度敏感。一篇 radiomics 論文若沒有報告特徵穩定度分析（例如不同觀察者重勾的 ICC），它的 AUC 無法被任何人重現，包括原作者換一台機器之後。"
+      ],
+      "weak": [
+        "對任何一個甲狀腺 AI 產品或論文，區分五件事：技術可行性（能不能在我的工作流程裡跑起來、跑一顆要多久、誰按按鈕）／診斷準確度（測試集多大、信賴區間多寬、對照的是誰、惡性盛行率多少）／臨床效益（有沒有證據顯示它改變了處置、減少了 FNA、或縮短了流程——而且是在前瞻設計裡）／是否已進入正式指引（目前主要甲狀腺風險分層指引皆未把任何 AI 系統納入建議流程）／是否僅為研究用途（有沒有法規許可、許可的宣稱範圍是什麼）。",
+        "能對一個模型指出它的 external validation 缺口：是完全沒有外部資料、還是有外部資料但仍在同一個國家／同一種機器／同一個盛行率帶。",
+        "能描述 domain shift 的具體來源（族群盛行率、掃描協定、機型與後處理、標註準則、時間漂移），並判斷哪一項最可能發生在自己的機構。",
+        "能說明 device dependence 為什麼不是靠「多收幾家醫院的資料」就自動解決，並知道要向廠商索取「各機型分層的表現」而不只是總體 AUC。",
+        "能在自己的判讀流程裡設計 automation bias 的防線：先寫下自己的 TI-RADS 與建議，再看 AI 輸出；不一致時強制寫一行理由；並定期回顧不一致的病例看誰對。"
+      ],
+      "lesson": {
+        "title": "Mateusz Buda - Radiologist-level deep learning for management of thyroid nodules based on US images",
+        "channel": "ML in PL",
+        "url": "https://www.youtube.com/watch?v=VMZnv5vWhUM",
+        "duration": "37:44",
+        "why": "選這場演講當核心教材，不是因為它證明 AI 有用，而是因為它是由 Buda 2019 Radiology 那篇論文的第一作者親自把整條研究鏈攤開講：資料怎麼收、標註怎麼定、模型怎麼訓、和放射科醫師怎麼比。要練的判讀落差是「同一份工作，在論文標題、在演講標題、在產品簡報裡分別被說成什麼」——請注意演講標題用的是 radiologist-level，而論文標題用的是 may match。這個落差就是本章最重要的一課，而且它發生在同一批人身上、沒有任何人說謊。",
+        "tier": "B",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 ML in PL 頻道與講者，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "Buda 2019 Radiology 原文：讀測試集大小與信賴區間",
+          "en": "Management of Thyroid Nodules Seen on US Images: Deep Learning May Match Performance of Radiologists",
+          "kind": "lecture",
+          "target": "把演講裡的敘事還原成數字。1,377 顆結節訓練、內部驗證測試集只有 99 顆（15 顆惡性）；演算法敏感度 13/15 = 87%（95% CI 67%–100%）與三位 ACR TI-RADS 委員會專家共識相同（P > .99），特異度 44/84 = 52%（95% CI 42%–62%）對專家的 51%。要能說出：這是一個內部、回溯、單一測試集的比較，作者的動詞是 may match；以及 67% 這個信賴區間下界對「可以拿來決定要不要穿刺」意味著什麼。",
+          "dose": "先看完 lesson 的演講，再讀本文的 Materials and Methods 與 Results，30 分鐘。全文開放取用。讀的時候把三件事分開標色：技術描述、準確度數字、作者自己寫的限制段落。多數人只記得中間那一段。",
+          "title": "Management of Thyroid Nodules Seen on US Images: Deep Learning May Match Performance of Radiologists",
+          "channel": "Buda M, Wildman-Tobriner B, Hoang JK, et al., Duke University (Radiology 2019;292(3):695-701)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257128/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "版權歸 RSNA；作者稿件經 PubMed Central 開放取用，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "41 篇深度學習研究的系統性回顧：高 AUC 與外部驗證不足並存",
+          "en": "Performance Evaluation of Deep Learning for the Detection and Segmentation of Thyroid Nodules: Systematic Review and Meta-Analysis",
+          "kind": "lecture",
+          "target": "學會同時持有兩個結論。匯總數字很好看：segmentation 敏感度 82%、特異度 95%、AUC 0.91；detection 敏感度 91%、特異度 89%、AUC 0.96；部分研究顯示模型可與臨床醫師相當甚至更好。但作者的 Conclusions 同一段寫明：現有研究受限於次佳的方法學設計、資料集間影像品質不一致、外部驗證不足，可能引入偏差。要能指出這正是 domain shift 與 external validation 兩個問題在系統性回顧層級的表現。",
+          "dose": "讀 Abstract 與 Discussion 的 limitations，20 分鐘，全文開放取用。做一件事：把作者列出的每一項方法學缺陷，對應回你自己那份採購查核表的欄位；缺哪一欄就補進去。",
+          "title": "Performance Evaluation of Deep Learning for the Detection and Segmentation of Thyroid Nodules: Systematic Review and Meta-Analysis",
+          "channel": "Ni J, You Y, Wu X, et al. (Journal of Medical Internet Research 2025;27:e73516)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12352704/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "JMIR 開放取用（CC BY），經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "Automation bias 的直接證據：AI 給錯建議時判讀者跟著錯",
+          "en": "Automation Bias in Mammography: The Impact of Artificial Intelligence BI-RADS Suggestions on Reader Performance",
+          "kind": "lecture",
+          "target": "看懂 automation bias 是一個可被實驗量到的效應，而不是一種性格弱點。這份讀片實驗刻意讓 AI 給出錯誤的 BI-RADS 建議，結果各經驗層級的判讀者表現都受影響。要能把結論轉譯到甲狀腺：一個「先顯示 AI 的 TI-RADS 分級再讓你判讀」的介面，即使 AI 準確度不錯，也會在它出錯的那些病例上把你一起拉下去。",
+          "dose": "10 分鐘讀摘要與結論即可。這是乳房攝影而非甲狀腺，選它是因為甲狀腺超音波目前沒有同等設計的錯誤建議對照實驗——這件事本身要記下來當作證據缺口。讀完立刻做一個決定：你自己的流程要不要改成「先判讀、後揭曉」。",
+          "title": "Automation Bias in Mammography: The Impact of Artificial Intelligence BI-RADS Suggestions on Reader Performance",
+          "channel": "Dratsch T, Chen X, Rezazade Mehrizi M, et al. (Radiology 2023;307(4):e222176)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37129490/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "版權歸 Radiological Society of North America，本站僅連結 PubMed 摘要頁",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch11-u5",
+      "name": "新技術是否真正改變臨床決策",
+      "type": "quality",
+      "assessment": "做一次自己的科的「新技術決策稽核」。回顧最近 30 位做過任一項本章技術（elastography、CEUS、微血流、3D、AI 輔助）的病人，對每一位回答三題：(1) 這項技術的結果有沒有被寫進報告？(2) 有沒有被寫進處置建議？(3) 如果把這項技術的結果整段刪掉，最後的處置會不會不同？把第三題答「會」的病例挑出來，逐例寫下改變的方向（多穿了？少穿了？改追蹤間隔？）與事後結果。接著算兩個比率：技術使用率、以及技術實際改變決策的比率。最後寫一段不超過 200 字的結論交給科內，格式必須是五欄：技術可行性／診斷準確度／臨床效益／指引地位／研究或臨床用途。如果改變決策的比率是 0%，就寫 0%，並提出停用或限縮適應症的具體建議。",
+      "tight": [
+        "本單元要抓的過度推銷句型有固定形狀：「diagnostic accuracy 高 → 因此可望改善診斷與預後 → 因此可整合進常規臨床實務」。中間兩個箭頭都沒有證據支撐。診斷準確度研究無法回答預後問題（它連追蹤都沒做），而「可整合進常規實務」是作者的期望，不是研究發現。看到論文結論出現 is expected to be integrated into routine clinical practice 這類措辭，就要回頭看它的設計能不能承擔這句話。",
+        "第二個要抓的形狀是「新技術 AUC 遠勝 TI-RADS」。要先看對照組被怎麼設定：TI-RADS 在該研究裡的 AUC 是多少？如果遠低於它在其他文獻的常見表現，通常代表族群特殊（惡性盛行率極高）、或 TI-RADS 是由不熟悉的人回溯套用的。壯觀的差距經常來自被削弱的對照組。",
+        "第三個要抓的是「以影像數而非病人數計算樣本」。一篇說「納入 4,655 張超音波影像」的 meta-analysis，聽起來樣本龐大，但同一顆結節可能貢獻多張影像、同一位病人可能有多顆結節。影像數不是獨立樣本數。",
+        "文獻本身也會被撤稿。Medicine 期刊 2022 年那篇 SMI 甲狀腺 meta-analysis 已於 2025 年 6 月正式撤稿——如果你在 2023 到 2025 年間引用它、或憑它買了一台機器，沒有人會通知你。引用任何支撐採購決策的文獻前，都要回 PubMed 看有沒有 Retraction 標記。",
+        "「大家都在做」不是效益證據。使用率高只證明技術可及、給付存在或病人期待存在，與它有沒有改變決策無關。本單元的稽核就是要把這兩件事分開量。"
+      ],
+      "weak": [
+        "對任何一項本章技術，能在 60 秒內完成五件事的分流：技術可行性／診斷準確度／臨床效益／是否已進入正式指引／是否僅為研究用途，並明確指出哪一格是空的。",
+        "能辨認並拆解「準確度 → 效益 → 常規實務」的跳躍式論證，指出中間缺少的是哪一種研究設計（前瞻、有處置改變的紀錄、有結果追蹤、有對照）。",
+        "能檢查一篇支持性文獻的對照組是否被削弱、樣本單位是不是病人、以及它有沒有被撤稿或更正。",
+        "能把「這項技術改變了幾成決策」變成自己科內可以持續量測的指標，而不是一次性的讀後感。",
+        "能在科務會議上用一句話說清楚差別：「它讓我更有把握」與「它讓我做了不同的事」不是同一件事，只有後者算臨床效益。"
+      ],
+      "lesson": {
+        "title": "Integration of Artificial Intelligence Decision Aids to Reduce Workload and Enhance Efficiency in Thyroid Nodule Management",
+        "channel": "Tong WJ, Wu SH, Cheng MQ, et al., Sun Yat-sen University (JAMA Network Open 2023;6(5):e2313674)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10189570/",
+        "why": "這是本章唯一一篇把終點放在「臨床流程實際發生什麼變化」而不是 AUC 的研究，也因此它的結論非常不像行銷：以 300 顆前瞻結節比較最佳化 AI 策略與全 AI 策略，敏感度（91%–100%）與特異度（94%–98%）兩組無顯著差異，真正的差別在耗時——資深判讀者變快（例如 19.4 秒降到 16.8 秒），而資淺判讀者反而變慢（15.2 秒升到 19.4 秒）。它同時示範了兩件事：效益必須用時間、決策或結果來量；以及同一個工具對不同使用者的效益方向可能相反。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "open",
+        "license": "JAMA Network Open 開放取用（CC BY），經 PubMed Central 提供全文；本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "過度外推的標本：AI 加 elastography 的 meta-analysis 結論",
+          "en": "Artificial intelligence and elastography in diagnostic work-up of thyroid nodules: a systematic review and meta-analysis",
+          "kind": "lecture",
+          "target": "拿這篇當「論證跳躍」的解剖標本。研究本身做得中規中矩：19 篇、4,655 張超音波影像、pooled sensitivity 0.88、specificity 0.91，並用 QUADAS-2 評估方法學品質。問題出在結論那一句——高診斷準確度之後直接接上「這項有前景的技術可望被整合進常規臨床實務，以改善甲狀腺結節的診斷與預後」。要能逐項指出：一篇診斷準確度 meta-analysis 憑什麼談 prognosis（沒有追蹤資料）、憑什麼談 routine clinical practice（沒有流程或決策終點）、以及 4,655 張影像是不是 4,655 個獨立樣本。",
+          "dose": "20 分鐘，全文開放取用。做法固定：先只讀 Methods 與 Results，自己寫一句你認為該有的結論；再去讀作者的 Conclusions，比對差距。這個練習每讀一篇新技術論文都可以重做一次，本章之後請養成習慣。",
+          "title": "Artificial intelligence and elastography in diagnostic work-up of thyroid nodules: a systematic review and meta-analysis",
+          "channel": "Li X, Hu W, Tang Y, et al. (Quantitative Imaging in Medicine and Surgery 2026;16(3))",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12971365/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "AME Publishing 開放取用，經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "撤稿通知：一篇曾被廣泛引用的 SMI 甲狀腺 meta-analysis",
+          "en": "Superb microvascular imaging for distinguishing thyroid nodules: A meta-analysis (PRISMA): Retraction",
+          "kind": "guideline",
+          "target": "認識新技術證據基礎的脆弱面。Medicine 期刊 2022 年 6 月刊出的 SMI 甲狀腺 meta-analysis（2022;101(24):e29505），於 2025 年 6 月被正式撤稿。要學會的動作很具體：任何要用來支撐設備採購、科內共識或報告用語的文獻，引用前一律回 PubMed 查該筆紀錄有沒有 Retraction in／Retracted 標記；並且理解「已發表過」與「目前仍成立」是兩回事。撤稿不會回頭修改任何已經買下的機器。",
+          "dose": "5 分鐘。除了讀這則通知，請立刻做一次實作：把你最近一次用來說服自己或別人的三篇影像新技術文獻的 PMID 貼進 PubMed，逐一確認上方有沒有紅字警示或 Comment/Correction 區塊。把結果記錄下來——這個檢查以後每次都要做。",
+          "title": "Superb microvascular imaging for distinguishing thyroid nodules: A meta-analysis (PRISMA): Retraction",
+          "channel": "Medicine (Baltimore) 2025;104(23):e42734",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12150927/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "Wolters Kluwer 開放取用撤稿通知，經 PubMed Central 提供全文；本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}

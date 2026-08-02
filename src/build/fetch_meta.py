@@ -99,7 +99,9 @@ def main() -> int:
         for i, (vid, info) in enumerate(pool.map(fetch, todo), 1):
             meta[vid] = info
             flag = "✓" if info["status"] == "OK" else "✗"
-            print(f"  {flag} [{i}/{len(todo)}] {vid} {info.get('title', info.get('note', ''))[:60]}")
+            print(
+                f"  {flag} [{i}/{len(todo)}] {vid} {info.get('title', info.get('note', ''))[:60]}"
+            )
 
     # 只留還在用的，避免舊資料殘留
     meta = {v: meta[v] for v in ids if v in meta}
@@ -107,7 +109,9 @@ def main() -> int:
 
     ok = sum(1 for v in meta.values() if v.get("status") == "OK")
     total_s = sum(v.get("seconds") or 0 for v in meta.values() if v.get("status") == "OK")
-    print(f"→ {META.relative_to(ROOT)}  {ok}/{len(meta)} OK，合計 {total_s // 3600}h {total_s % 3600 // 60}m")
+    print(
+        f"→ {META.relative_to(ROOT)}  {ok}/{len(meta)} OK，合計 {total_s // 3600}h {total_s % 3600 // 60}m"
+    )
     return 0 if ok == len(meta) else 1
 
 

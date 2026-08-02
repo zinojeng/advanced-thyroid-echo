@@ -1,0 +1,307 @@
+{
+  "chapter": "CH10",
+  "title": "特殊族群與特殊情境",
+  "units": [
+    {
+      "id": "ch10-u1",
+      "name": "兒童與青少年甲狀腺結節",
+      "type": "disease",
+      "assessment": "回顧自己門診或合作小兒科最近 5 例 18 歲以下的甲狀腺超音波。對每一例先只看影像寫下 ACR TI-RADS (2017) 分級，以及若套用成人尺寸門檻會給出的處置建議；再依 ATA 2015 pediatric guideline 與 ETA 2022 pediatric guideline 重寫一次處置。統計兩套結論不同的比例，並逐例說明差異來自尺寸門檻、結節與腺體體積比例，還是側頸淋巴結評估。同時檢查自己原本的報告有沒有記載 level II–VI 的掃描結果——沒有記載就算漏做。",
+      "tight": [
+        "把成人 ACR TI-RADS (2017) 的 1 公分穿刺門檻直接套到兒童，對影像可疑但未達 1 公分的結節放行",
+        "用絕對尺寸判斷，忽略同樣 1 公分的結節在體積小得多的兒童腺體中意義完全不同",
+        "把 diffuse sclerosing variant 的瀰漫性微鈣化與腺體不均質誤判為橋本氏甲狀腺炎",
+        "只掃甲狀腺不掃側頸——兒童 PTC 診斷時淋巴結轉移比例遠高於成人"
+      ],
+      "weak": [
+        "以影像特徵（而非尺寸）決定兒童結節是否穿刺，並說得出引用哪一份指引的哪一條",
+        "在兒童完成 level II–VI 的完整側頸掃描並結構化記錄",
+        "分辨 diffuse sclerosing variant 與自體免疫甲狀腺炎的瀰漫性表現",
+        "辨識 PTEN hamartoma tumor syndrome、DICER1、APC 等背景下多發結節的型態特徵"
+      ],
+      "lesson": {
+        "title": "Imaging of the Pediatric Thyroid Practical Tips and Newer Technologies",
+        "channel": "AIUMultrasound (American Institute of Ultrasound in Medicine)",
+        "url": "https://www.youtube.com/watch?v=oOKZaunJBj8",
+        "duration": "48:44",
+        "why": "AIUM 官方 webinar，由小兒放射科醫師 Janet Reid 主講，從兒童甲狀腺正常大小基準、先天異常到結節評估與新技術。它補的是最底層那個落差：成人的正常值與尺寸直覺在兒童身上根本不成立，而多數內分泌科醫師沒有兒童的正常基準線。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "兒童甲狀腺結節處置：ETA 指引解說",
+          "en": "Management of thyroid nodules in children ETA guidelines",
+          "kind": "lecture",
+          "target": "ETA 兒童結節指引為什麼不採用成人的尺寸門檻，改以影像特徵與腺體體積比例決定穿刺；以及影像追蹤間隔的訂法",
+          "dose": "先在紙上寫下「我現在對兒童結節的穿刺門檻是什麼」，再看講次，逐條標出與自己作法不一致的地方；不必看完整場，重點在 nodule evaluation 與 FNA indication 兩段",
+          "title": "Management of thyroid nodules in children ETA guidelines",
+          "channel": "Endo-ERN (European Reference Network on Rare Endocrine Conditions)",
+          "url": "https://www.youtube.com/watch?v=JOxxf5KzTM8",
+          "duration": "1:18:37",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "2022 ETA 兒童甲狀腺結節與分化型甲狀腺癌處置指引",
+          "en": "2022 European Thyroid Association Guidelines for the management of pediatric thyroid nodules and differentiated thyroid carcinoma",
+          "kind": "guideline",
+          "target": "指引原文本身：兒童結節的 FNA indication、超音波追蹤間隔，以及條文如何明說不得直接沿用成人的尺寸門檻",
+          "dose": "只讀 nodule evaluation 與 ultrasound 兩節，把「以影像特徵而非尺寸決定穿刺」的原文句子抄下來貼在工作站上；讀完後回頭比對自己上一份兒童報告的建議欄",
+          "title": "2022 European Thyroid Association Guidelines for the management of pediatric thyroid nodules and differentiated thyroid carcinoma",
+          "channel": "European Thyroid Journal (Eur Thyroid J 2022;11:e220146) — PMC9716393",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9716393/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文，版權歸 European Thyroid Journal 與原作者；授權細節未逐條確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "兒童甲狀腺結節與甲狀腺癌病例回顧（Dr. Andrew Bauer）",
+          "en": "Pediatric Thyroid Nodule & Cancer Case Review with Dr. Bauer",
+          "kind": "case",
+          "target": "實際兒童病例的影像判讀與處置討論，特別是影像可疑但尺寸小、以及初診就有淋巴結轉移的情境",
+          "dose": "每出現一個新病例就暫停，自己先寫下分級與下一步，再聽講者的處置；記錄自己與講者不同的次數與原因",
+          "title": "Pediatric Thyroid Nodule & Cancer Case Review with Dr. Bauer",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=c1mczt5Gjf4",
+          "duration": "59:24",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch10-u2",
+      "name": "孕期、高齡、家族性甲狀腺癌與 MEN2、頸部輻射病史",
+      "type": "disease",
+      "assessment": "挑 3 位不同情境的病人，各寫一段 200 字內的處置說明：(1) 懷孕 18 週新發現 1.8 公分、ACR TI-RADS (2017) 4 分的結節；(2) 一等親罹患 PTC、本人 35 歲、超音波無異常；(3) 兒童期霍奇金淋巴瘤接受頸部放療、現年 30 歲。每一段都必須明確回答四件事：這次要不要做超音波、要不要穿刺、下次什麼時候再看、你引用的是哪一份指引的哪一條。寫完後把 (2)(3) 兩段拿去和 ATA 2015 MTC guideline 與 IGHG 2018 的建議逐條比對，記下自己過度積極或過度保守的地方。",
+      "tight": [
+        "把「孕期不能做 RAI」誤讀成「孕期不能做 FNA」，讓可疑結節拖到產後才診斷",
+        "把孕期生理性的甲狀腺體積增加與 TSH 下移當成病理變化",
+        "家族史一陽性就啟動高頻超音波篩檢，沒有一併評估 overdiagnosis 的代價",
+        "MEN2 的手術時機由 RET codon 與 calcitonin 決定；超音波正常不能拿來延後預防性甲狀腺切除",
+        "MTC 的超音波表現常被 TI-RADS 系統低估——粗鈣化與實質低回音容易被歸到中低風險",
+        "把「有頸部輻射病史」直接等同於「應該定期超音波篩檢」，高估了該建議的證據等級"
+      ],
+      "weak": [
+        "對孕婦結節做出「現在穿刺 vs 產後再處理」的分流，並向病人說明理由",
+        "認出 MTC 的典型超音波型態（實質低回音、粗大鈣化、常伴中央區淋巴結）並知道它在風險分層系統中的盲點",
+        "對輻射病史者說明超音波監測的利與弊，把決策交回病人而不是直接開單",
+        "在高齡病人中辨識快速增大、固定、侵犯周邊的腫塊，與慢性多結節腫的差別"
+      ],
+      "lesson": {
+        "title": "Thyroid Nodules During Pregnancy with Dr. Spyridoula Maraka",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=ZZmGtD3ojq4",
+        "duration": "59:26",
+        "why": "整場針對孕期新發現結節的診斷時機、FNA 安全性、以及延後手術對預後的實際影響。它處理的是最常見的處置落差：因為「懷孕中不要動」而把可以在孕期完成的診斷全部往後推。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "有家族史者的超音波篩檢：做或不做（Dr. Cosimo Giannini Grani）",
+          "en": "Thyroid Cancer & Family History: Sonographic Screening Insights with Dr. Grani",
+          "kind": "lecture",
+          "target": "家族性非髓質性甲狀腺癌的篩檢邏輯：誰值得掃、掃到什麼程度停手、以及篩檢帶來的 overdiagnosis 代價",
+          "dose": "聽之前先寫下「我會建議一等親做超音波嗎」的答案與理由，聽完再改寫一次；重點放在講者對篩檢獲益上限的量化說明",
+          "title": "Thyroid Cancer & Family History: Sonographic Screening Insights with Dr. Grani",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=zOTMaAvpJXA",
+          "duration": "1:02:57",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "2015 修訂版 ATA 髓質癌處置指引（MEN2 段落）",
+          "en": "Revised American Thyroid Association Guidelines for the Management of Medullary Thyroid Carcinoma",
+          "kind": "guideline",
+          "target": "MEN2 的風險分層是由 RET codon 與 calcitonin 驅動的；超音波在其中扮演什麼角色、又不能取代什麼",
+          "dose": "只讀 RET mutation risk categories 與 preoperative imaging 兩節；讀完後回答一句話：「我的 MEN2 帶因者若超音波正常，我會不會因此延後手術時機？」正確答案要能引用條文",
+          "title": "Revised American Thyroid Association Guidelines for the Management of Medullary Thyroid Carcinoma: The American Thyroid Association Guidelines Task Force on Medullary Thyroid Carcinoma",
+          "channel": "Thyroid 2015;25(6):567–610 — American Thyroid Association（PMC4490627）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4490627/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "PMC 提供免費全文，版權歸 American Thyroid Association 與 Mary Ann Liebert, Inc.；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "頸部放療病史者的甲狀腺癌監測：IGHG 國際共識建議",
+          "en": "Balancing the benefits and harms of thyroid cancer surveillance in survivors of childhood, adolescent and young adult cancer (IGHG / PanCareSurFup)",
+          "kind": "guideline",
+          "target": "為什麼「有輻射病史就定期超音波」不是預設答案：這份共識明確把超音波監測與臨床頸部觸診並列，並要求與病人討論 overdiagnosis 的風險",
+          "dose": "PubMed 摘要即已載明主要建議，先只讀摘要並寫下你原本的作法差在哪裡；能取得全文者再看利弊權衡的表格。用它來改寫你對輻射病史病人的衛教說法",
+          "title": "Balancing the benefits and harms of thyroid cancer surveillance in survivors of Childhood, adolescent and young adult cancer: Recommendations from the international Late Effects of Childhood Cancer Guideline Harmonization Group in collaboration with the PanCareSurFup Consortium",
+          "channel": "Cancer Treatment Reviews 2018;63:28–39（PMID 29202445）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29202445/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "PubMed 摘要開放閱讀；全文由 Elsevier 訂閱，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch10-u3",
+      "name": "多結節性甲狀腺腫、胸骨後甲狀腺腫與洗腎／次發性副甲狀腺亢進",
+      "type": "disease",
+      "assessment": "找 3 位多結節性甲狀腺腫病人的影像：逐位列出所有 ≥1 公分的結節，每一顆給 ACR TI-RADS (2017) 分數，寫下你會穿刺哪一顆與理由，並明確回答「如果只穿最大顆，我會漏掉哪一顆」。另找 1 位透析中的次發性副甲狀腺亢進病人，記錄你用超音波找到幾顆副甲狀腺、各自大小與位置（上／下、氣管食道溝、胸腺內、異位），再對照其 99mTc-MIBI 或手術病理結果，算出自己的偵測率並指出漏掉的位置有什麼共同點。",
+      "tight": [
+        "多結節腺體只挑「最大顆」穿刺——非主導結節的惡性率並不會因為它比較小而歸零",
+        "報告寫「multinodular goiter」就結案，沒有對符合條件的每一顆結節分別分層",
+        "下緣進入胸骨後看不到，報告只寫 lower pole not visualized，卻沒有給出下一步影像建議",
+        "洗腎病人把增大的副甲狀腺誤判為甲狀腺後方結節（或反過來），沒有用長軸／短軸與血流方向區分",
+        "次發性副甲狀腺亢進多為四腺增生，找到一顆就停止掃描",
+        "把超音波測得的腺體體積直接拿來預測氣管壓迫程度"
+      ],
+      "weak": [
+        "在多結節腺體中用 ACR TI-RADS (2017) 逐顆分級並排出穿刺順位，而不是憑大小",
+        "判斷什麼時候超音波已經不夠、必須加做 CT——胸骨後延伸下界、氣管移位與狹窄程度、與大血管的關係",
+        "在洗腎病人系統性掃完四個副甲狀腺位置並主動找異位腺體",
+        "在報告中把「看不到」寫成具體的轉檢理由，而不是免責聲明"
+      ],
+      "lesson": {
+        "title": "Preoperative CT Assessment of a Thyroid Mass",
+        "channel": "Barton Branstetter (ENT Imaging Lectures)",
+        "url": "https://www.youtube.com/watch?v=uXXFUlbR78g",
+        "duration": "13:39",
+        "why": "由頭頸影像次專科醫師逐項示範術前 CT 要回答哪些超音波回答不了的問題：胸骨後延伸的下界在哪、氣管移位與狹窄到什麼程度、與大血管的關係。這正是甲狀腺腫最常見的落差——把「探頭到不了」寫成結論，而不是轉檢的理由。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "多結節腺體中非主導結節的惡性率（1,606 例超音波導引 FNA）",
+          "en": "Malignancy rate in nondominant nodules in patients with multinodular goiter: Experience with 1,606 cases evaluated by ultrasound-guided fine needle aspiration cytology",
+          "kind": "case",
+          "target": "用實際數字回答「只穿最大顆會漏掉多少」——非主導結節的惡性率並不低於主導結節",
+          "dose": "只讀 Results 的惡性率數字（主導 vs 非主導），然後立刻回頭抽查自己最近 5 份多結節報告：有幾份只穿了最大顆、有幾份對非主導結節逐顆分級",
+          "title": "Malignancy rate in nondominant nodules in patients with multinodular goiter: Experience with 1,606 cases evaluated by ultrasound-guided fine needle aspiration cytology",
+          "channel": "CytoJournal 2011;8:20（PMC3221080）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3221080/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CytoJournal 為開放取用期刊，PMC 提供免費全文；授權細節未逐條確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "次發性副甲狀腺亢進的術前定位：超音波與 99mTc-MIBI-SPECT/CT 的對照",
+          "en": "Preoperative localization of parathyroid glands in secondary hyperparathyroidism: correlations between 99mTc-MIBI-SPECT/CT, ultrasound, and pathological characteristics",
+          "kind": "case",
+          "target": "透析族群中超音波逐腺體的偵測率、最常漏掉的位置，以及腺體大小與定位成功率的關係",
+          "dose": "重點看逐腺體位置別的偵測率表格，把超音波最容易漏的位置抄成一張自己的掃描檢查表；下一次洗腎病人掃描時照表逐項確認",
+          "title": "Preoperative localization of parathyroid glands in secondary hyperparathyroidism: correlations between 99mTc-MIBI-SPECT/CT, ultrasound, and pathological characteristics",
+          "channel": "Clinical Kidney Journal 2025（PMC11897698）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11897698/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文，版權歸 Oxford University Press 與原作者；授權細節未逐條確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch10-u4",
+      "name": "急診頸部腫脹、出血、困難姿勢與其他影像的意外發現",
+      "type": "case",
+      "assessment": "回顧最近 10 份因其他影像（CT／MRI／PET）意外發現甲狀腺病灶而轉來的超音波：逐例記錄病人年齡、原始報告描述的病灶大小、以及依 ACR Incidental Thyroid Findings Committee 白皮書的年齡與尺寸門檻本來是否就不需要進一步影像；算出「不必要轉檢」的比例，並找出這些轉檢單最常引用的措辭。另外實際找 1 位無法後仰的病人（頸椎僵直、術後或急診情境），在不改變其姿勢的前提下完成一次可判讀的掃描，寫下你改了哪些探頭、頻率、深度與切面，以及哪一段解剖最後仍然沒看到。",
+      "tight": [
+        "CT／MRI／PET 報告一出現 incidental thyroid nodule 就一律轉超音波，製造出大量本來不需要的追蹤",
+        "把 FDG focal uptake 與 diffuse uptake 當成同一件事處理——兩者的惡性風險與後續完全不同",
+        "頸部無法後仰或術後解剖變形時，用不完整的切面掃完就簽報告，卻沒有在報告中寫明技術限制",
+        "急性頸部腫脹先找結節，沒有先確認氣道位置與有無擴大中的血腫",
+        "術後或消融後的低回音疤痕組織被當成殘餘病灶（或反過來）"
+      ],
+      "weak": [
+        "依 ACR Incidental Thyroid Findings Committee 的年齡與尺寸門檻，判斷哪些意外發現本來就不需要進一步影像",
+        "分辨 FDG focal 與 diffuse uptake，並給出不同的後續建議",
+        "在無法後仰、頸部腫脹或術後變形的病人，用小 footprint 探頭與斜切面完成一次可用的掃描",
+        "在急診情境先辨識氣管、環甲膜與血腫範圍，再談甲狀腺本身"
+      ],
+      "lesson": {
+        "title": "Managing FDG Avid Thyroid Nodules: Expert Insights with Dr. Wadsley",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=Yk0hNougD6s",
+        "duration": "50:57",
+        "why": "PET 意外發現是「其他影像轉來的甲狀腺病灶」中最容易處理過度的一類。這場專講 focal 與 diffuse uptake 的意義差異、後續 FNA 的產出，以及什麼時候應該就此打住，直接對應本單元最大的判讀落差。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "ACR 意外發現甲狀腺結節處置白皮書",
+          "en": "Managing incidental thyroid nodules detected on imaging: white paper of the ACR Incidental Thyroid Findings Committee",
+          "kind": "guideline",
+          "target": "以年齡與尺寸為軸的三段式分流：哪些 CT／MRI／PET 上的意外發現需要超音波、哪些直接不需要進一步影像",
+          "dose": "PubMed 摘要已載明分流門檻，先只讀摘要並把三段門檻寫成一張便條；接著拿你手上最近 10 份意外發現轉檢單逐張套用，算出本來就不必轉的比例",
+          "title": "Managing incidental thyroid nodules detected on imaging: white paper of the ACR Incidental Thyroid Findings Committee",
+          "channel": "Journal of the American College of Radiology 2015;12(2):143–150（PMID 25456025）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25456025/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "subscription",
+          "license": "PubMed 摘要開放閱讀；全文由 Elsevier／American College of Radiology 訂閱，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "急診與困難姿勢下的頸部氣道超音波",
+          "en": "POCUS Guided Airway Management",
+          "kind": "procedure",
+          "target": "在病人無法後仰或頸部腫脹時，如何用超音波定位氣管、環甲膜與周邊軟組織——這是急診頸部腫脹病人在談甲狀腺之前必須先完成的一步",
+          "dose": "當成「掃描技術」而非「氣道課程」來看：只取氣管與環甲膜辨識、探頭擺位與姿勢受限時的替代切面這幾段，然後在一位頸椎活動受限的病人身上實際重做一次",
+          "title": "POCUS Guided Airway Management",
+          "channel": "MetroHealth Emergency Ultrasound",
+          "url": "https://www.youtube.com/watch?v=PcVY_aFfu4A",
+          "duration": "52:36",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}

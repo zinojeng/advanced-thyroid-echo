@@ -1,0 +1,276 @@
+{
+  "categories": [
+    {
+      "id": "us-anatomy",
+      "name": "掃描解剖、變異與假性病灶",
+      "evidence_grade": "moderate",
+      "summary": "解剖變異不是罕見狀況，是常態。Pyramidal lobe 的 pooled 盛行率 42.82%（24 篇 meta-analysis），但以解剖為金標準的大體研究測到 80%——差距就是「有沒有刻意去找」：資深與資淺檢查者的 sensitivity 是 85.0% vs 42.5%，而加一段從峽部掃到舌骨的 cine loop 就能讓 1,579 人的常規檢查偵測率從 39.5% 升到 49.7%。Zuckerkandl tubercle 盛行率 70.2%，RLN 走在其後內側者 82.7%、但仍有 17% 走在外側或其上；甲狀舌管殘餘造成的正中頸部囊腫一般人口約 7%。假性病灶這一端沒有好的分母資料——現有證據多是案例系列：14 例咽食道憩室全部位於左葉後方、含氣少者的微氣泡會被當成微鈣化，喝水後改變形狀是關鍵鑑別；甲狀腺內副甲狀腺腺瘤 92.3% 呈極低回音加豐富血流，正好是 TI-RADS 的高分組合。至於用超音波直接追 RLN 走向：目前只有間接證據——經喉超音波看聲帶的顯像成功率 39.6%–100%，變異太大，不能取代喉鏡。",
+      "citations": [
+        {
+          "pmid": "37245093",
+          "title": "The prevalence and anatomy of the pyramidal lobe of the thyroid gland: A meta-analysis with implications for thyroid surgery",
+          "journal": "Clin Anat",
+          "year": 2023,
+          "design": "meta-analysis",
+          "takeaway": "24 篇研究的 pooled 分析：pyramidal lobe 盛行率 42.82%（95% CI 35.90%–49.89%），平均長度 23.09 mm、寬度 10.59 mm；起自左葉者佔 40.10%（95% CI 28.83%–51.92%）。作者強調 PL 的存在會影響甲狀腺全切除的完整性。"
+        },
+        {
+          "pmid": "35157251",
+          "title": "Ultrasound for the detection of the pyramidal lobe of the thyroid gland",
+          "journal": "J Endocrinol Invest",
+          "year": 2022,
+          "design": "prospective validation",
+          "takeaway": "50 具未防腐大體、以解剖與組織學為金標準的盲測：PL 實際盛行率高達 80%（95% CI 68.9%–91.1%）。兩位不同資歷檢查者的超音波表現落差極大——sensitivity 85.0% vs 42.5%、accuracy 78.0% vs 46.0%。甲狀腺回音、體積、年齡、體型都不是準確度的共變項（皆 p > .05）。也就是說，PL 看不看得到主要取決於「有沒有刻意去找」。"
+        },
+        {
+          "pmid": "24651740",
+          "title": "Detection of thyroid pyramidal lobe by ultrasound versus computed tomography: a single-center study",
+          "journal": "J Comput Assist Tomogr",
+          "year": 2014,
+          "design": "prospective cohort",
+          "takeaway": "160 名術前病人同一位放射科醫師先做超音波再讀 CT：超音波找到 PL 者 82 例（50.6%）、CT 96 例（59.3%）。以 CT 為參考標準時超音波的 sensitivity 82.3%、specificity 95.3%、accuracy 87.5%。PL 平均長 20.9 mm、前後徑僅 2.0 mm——薄到很容易在橫切時被跳過。"
+        },
+        {
+          "pmid": "39100789",
+          "title": "Cine clips increase the detection of thyroid pyramidal lobe in routine thyroid sonogram",
+          "journal": "Ultrasound",
+          "year": 2024,
+          "design": "prospective cohort",
+          "takeaway": "1,579 名常規甲狀腺超音波病人：在未手術者中，加入「從峽部掃到舌骨」的橫切 cine loop 後，PL 偵測率從 39.5%（480/1215）升到 49.7%（640/1215）。cine loop 對「PL 與主腺體分離」以及術後病人特別有用，並讓作者在 PL 上另外找到良性、惡性結節與橋本氏的假性結節。改的是掃描流程，不是機器。"
+        },
+        {
+          "pmid": "28377109",
+          "title": "Zuckerkandl's tubercle and its relationship to the recurrent laryngeal nerve: A cadaveric dissection and meta-analysis",
+          "journal": "Auris Nasus Larynx",
+          "year": 2017,
+          "design": "meta-analysis",
+          "takeaway": "大體解剖加上系統性回顧的 pooled 估計：Zuckerkandl tubercle 盛行率 70.2%，其中 65.0% 為 Grade 0（<1.0 cm）、35.0% 為 Grade 1（≥1.0 cm）。RLN 走在 ZT 後內側者佔 82.7%、外側 8.7%、跨過其上 8.6%——換句話說，把 ZT 當成 RLN 的定位標記有近 17% 的機會方向是錯的。"
+        },
+        {
+          "pmid": "33504311",
+          "title": "Ultrasound Imaging of Cervical Anatomic Variants",
+          "journal": "Curr Med Imaging",
+          "year": 2021,
+          "design": "review",
+          "takeaway": "頸部發育變異的超音波綜論：正中頸部囊腫（甲狀舌管殘餘為主）是最常見的先天性頸部囊性病灶，一般人口盛行率約 7%；異位甲狀腺組織盛行率僅 1/100,000 至 1/300,000，其中 90% 為舌根甲狀腺。Zuckerkandl tubercle 在 55% 的甲狀腺葉可見，且在自體免疫甲狀腺炎的腺葉中比正常或結節性腺葉更明顯（p = 0.006）。"
+        },
+        {
+          "pmid": "26677130",
+          "title": "Sonographic characteristics of pharyngoesophageal diverticula: Report of 14 cases and review of the literature",
+          "journal": "J Clin Ultrasound",
+          "year": 2016,
+          "design": "retrospective cohort",
+          "takeaway": "14 例先在甲狀腺超音波上被當成結節、後經鋇劑吞嚥攝影確診的咽食道憩室：全部位於左葉後方，最大徑 0.7–3.3 cm（平均 1.3 cm）。小於 1 cm 且含氣少者呈低回音、內部微氣泡「像微鈣化」；含氣多者可見弧形高回音線與後方 reverberation。喝水後形狀與回音改變、並可見與食道相連——吞嚥動作是最實用的鑑別手法。"
+        },
+        {
+          "pmid": "34167410",
+          "title": "The Value of Preoperative and Intraoperative Ultrasound in the Localization of Intrathyroidal Parathyroid Adenomas",
+          "journal": "J Invest Surg",
+          "year": 2022,
+          "design": "retrospective cohort",
+          "takeaway": "216 名原發性副甲狀腺亢進病人中 13 例為甲狀腺內副甲狀腺病灶：12 例（92.3%）呈邊界清楚的極低回音實質結節、血流豐富，且有源自上／下甲狀腺動脈的 polar feeding vessel；13 例中 12 例術前超音波成功定位，Tc-99m MIBI SPECT/CT 只定位出 10 例。極低回音加豐富血流本身就是 TI-RADS 的高分特徵，這是典型的「像癌但不是癌」。"
+        },
+        {
+          "pmid": "35133056",
+          "title": "Translaryngeal ultrasound in thyroid surgery: state of the art review",
+          "journal": "ANZ J Surg",
+          "year": 2022,
+          "design": "systematic review",
+          "takeaway": "15 篇比較經喉超音波與間接喉鏡的研究：術前聲帶成功顯像率 50.6%–100%、術後 39.6%–100%，NPV 60%–100%。作者明講顯像成功與否受操作者差異、年齡較大與男性影響，因此只建議用在年輕、手術順利且聲音正常的術後病人。用超音波間接看 RLN 功能可行，但可靠度遠不到能取代喉鏡。"
+        }
+      ]
+    },
+    {
+      "id": "malignancy-subtypes",
+      "name": "惡性型別的影像相關與其極限",
+      "evidence_grade": "limited",
+      "summary": "超音波看得出「像不像癌」，看不出「是哪一種癌」。這件事的根源是：現行風險分層系統幾乎全部是拿乳突癌驗出來的——19,494 顆結節中 6,162 顆惡性裡 PTC 佔 95%、FTC 2%、MTC 1%。影像與型別確實有相關但強度有限：1,117 名手術病人中，95.9% 的 tall cell PTC 落在 TIR4／TIR5，而「低回音＋不規則邊緣＋無微鈣化」的組合在 tall cell 比 classic 常見，PPV 卻只有 38.9%（NPV 85.5%），只能排除不能確診；依 2022 WHO 分類的 142 顆 PTC 研究直接寫明單靠超音波「尚無法做出確定的亞型分類」，而 tall-cell 微小乳突癌反而邊緣更規則、微鈣化更少，在 TI-RADS 上會被低估。髓質癌的情況相同：TI-RADS 抓得到 95%（68% high、26% intermediate），但 133 顆 MTC 中仍有 30.8% 呈良性外觀。最弱的是濾泡性腫瘤——251 顆 FTA/FTC 上六套系統的 AUC 只有 0.635–0.798。對側隱匿癌則是另一個超音波看不到的量級：術前顯示單側癌的 921 名病人中有 16.7% 對側藏有病灶，屍檢研究更顯示從未發病者的偶發分化型癌本身就有 28.2% 多發、18% 雙側。",
+      "citations": [
+        {
+          "pmid": "32959174",
+          "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis",
+          "journal": "Rev Endocr Metab Disord",
+          "year": 2021,
+          "design": "meta-analysis",
+          "takeaway": "9 篇、19,494 顆結節：6,162 顆組織學確認的惡性中 PTC 佔 95%、FTC 2%、MTC 1%、其他 1%。作者結論是現行 TIRADS 只能視為診斷 PTC 的工具，其 pattern 與切點對 FTC、MTC 的效度需要重新檢討——這也是本類別所有限制的根源。"
+        },
+        {
+          "pmid": "37265229",
+          "title": "Cytological and Ultrasound Features of Thyroid Nodules Correlate With Histotypes and Variants of Thyroid Carcinoma",
+          "journal": "J Clin Endocrinol Metab",
+          "year": 2023,
+          "design": "retrospective cohort",
+          "takeaway": "1,117 名手術病人、含 514 例 PTC（249 classic、167 follicular、49 tall cell、34 solid）、52 NIFT-P、50 FTC、11 PDTC、3 ATC：84.0% 的 FTC 與 69.3% 的 NIFT-P 落在細胞學不確定類別（TIR3A／TIR3B），72.5% 的 FV-PTC 與 73.6% 的 SV-PTC 亦然；相對地 79.9% 的 classic PTC 與 95.9% 的 tall cell PTC 是 TIR4／TIR5。超音波上「低回音＋不規則邊緣＋無微鈣化」的組合在 tall cell 比 classic 常見（p = .02），但 PPV 只有 38.9%、NPV 85.5%——只能用來排除，不能用來確診。"
+        },
+        {
+          "pmid": "39205684",
+          "title": "Comparison of ultrasound findings of papillary thyroid carcinoma subtypes based on the 2022 WHO classification of thyroid neoplasms",
+          "journal": "Front Endocrinol (Lausanne)",
+          "year": 2024,
+          "design": "retrospective cohort",
+          "takeaway": "依 2022 WHO 第五版分類的 142 顆 PTC：taller-than-wide、不規則邊緣、高回音點與較高 TIRADS 類別集中在 classic 與 tall cell subtype；invasive encapsulated follicular variant 與 NIFTP 幾乎不出現這些高風險特徵；oncocytic subtype 的影像與 IEFV-PTC 大量重疊。作者的結論寫得很白：單靠超音波影像目前仍無法做出確定的亞型分類。"
+        },
+        {
+          "pmid": "36425468",
+          "title": "Reconceptualize tall-cell variant papillary thyroid microcarcinoma: From a \"sonographic histology\" perspective",
+          "journal": "Front Endocrinol (Lausanne)",
+          "year": 2022,
+          "design": "retrospective cohort",
+          "takeaway": "104 例組織確診的 tall-cell variant 微小乳突癌與傳統微小乳突癌對照：TCV-PTMC 反而邊緣較規則、微鈣化較少，因而在 TI-RADS 上被低估風險；其較具特徵的表現是低回音結節內出現局部等回音區與周邊低回音暈，對應組織上環狀分布的腫瘤上皮與緻密間質。侵襲性亞型不等於「看起來更兇」。"
+        },
+        {
+          "pmid": "29680915",
+          "title": "Medullary thyroid carcinoma: Application of Thyroid Imaging Reporting and Data System (TI-RADS) Classification",
+          "journal": "Endocrine",
+          "year": 2018,
+          "design": "retrospective cohort",
+          "takeaway": "57 例細胞學確診髓質癌、4 位判讀者（2 資深 2 資淺）：95% 被歸為 high suspicion（68%）或 intermediate suspicion（26%），整體判讀者間一致性佳（Kappa 0.84、agreement 91.52%）。多變項分析中微鈣化（OR 26.6，95% CI 2.7–263.7，p = 0.005）與不規則形狀（OR 14.7，95% CI 1.3–170，p = 0.031）與淋巴結轉移相關。TI-RADS 抓得到大多數 MTC，但它抓到的理由和抓 PTC 是同一套特徵，並非 MTC 專屬。"
+        },
+        {
+          "pmid": "41869510",
+          "title": "Ultrasound characteristics of medullary thyroid carcinoma and prognostic significance",
+          "journal": "Ultrasound",
+          "year": 2026,
+          "design": "retrospective cohort",
+          "takeaway": "133 顆髓質癌結節：依超音波特徵分組後，有 41 顆（30.8%）落在「良性外觀組」——邊界清楚 65.9%、無鈣化 51.2% 或粗鈣化 36.6%。惡性外觀組的淋巴結轉移（69.6% vs 12.2%）、遠端轉移（28.3% vs 9.8%）與復發（41.3% vs 9.8%）都顯著較高。反過來說，將近三分之一的髓質癌在超音波上看起來是良性的。"
+        },
+        {
+          "pmid": "36338713",
+          "title": "Diagnostic performance of six ultrasound-based risk stratification systems in thyroid follicular neoplasm: A retrospective multi-center study",
+          "journal": "Front Oncol",
+          "year": 2022,
+          "design": "multicenter validation",
+          "takeaway": "三家中心 251 顆病理確診的濾泡性腫瘤（205 FTA、46 FTC）：FTC 較常呈實質、低回音、不規則邊緣與聲暈（皆 p < 0.001），但鈣化、形狀與 comet-tail artifact 在兩者間沒有顯著差異。六套系統區分 FTA 與 FTC 的 AUC 分別是 ATASPS 0.645、AACE/ACE/AME 0.729、K-TIRADS 0.766、EU-TIRADS 0.635、ACR-TIRADS 0.783、C-TIRADS 0.798——最好的也只到 0.8 上下，遠低於它們在乳突癌上的表現。"
+        },
+        {
+          "pmid": "32953595",
+          "title": "Predictive factors of contralateral occult carcinoma in patients with papillary thyroid carcinoma: a retrospective study",
+          "journal": "Gland Surg",
+          "year": 2020,
+          "design": "retrospective cohort",
+          "takeaway": "921 名接受全／近全甲狀腺切除加中央區廓清的 PTC 病人：對側隱匿癌的發生率 16.7%（154/921）。多變項分析中對側良性結節（p = 0.000）、多發病灶（p = 0.000）與淋巴結轉移（p = 0.009）是獨立預測因子；性別、年齡、BRAF 突變與甲狀腺外侵犯則不是。術前超音波顯示單側癌時，仍有約六分之一在對側藏著病灶。"
+        },
+        {
+          "pmid": "34779278",
+          "title": "Adverse Histological Features of Differentiated Thyroid Cancer Are Commonly Found in Autopsy Studies: Implications for Treatment Guidelines",
+          "journal": "Thyroid",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "29 篇解剖屍檢研究、8,750 名無甲狀腺癌病史者：偶發分化型甲狀腺癌出現在 740 例（8.5%），中位年齡 61 歲。這些「從未被診斷」的癌中，多發病灶 28.2%（CI 23.1–33.8）、雙側 18%（CI 12.6–25.1）、微小甲狀腺外侵犯 24.5%、淋巴結轉移 11%、血管侵犯 16%。作者的推論很關鍵：既然這些「不良組織學特徵」在一輩子沒發病的人身上就這麼常見，它們本身就不該被當成必須做補全切除或放射碘的指標。"
+        }
+      ]
+    },
+    {
+      "id": "overdiagnosis",
+      "name": "過度診斷、篩檢與治療決策的取捨",
+      "evidence_grade": "strong",
+      "summary": "這是全書最該講清楚數字的一節。IARC 用 63 個國家、385 個登記處的資料估算：2013–17 年間 2,297,057 例甲狀腺癌中有 1,736,133 例（75.6%）可歸因於過度診斷，賽普勒斯、中國、南韓、土耳其的女性超過 85%。南韓是最完整的自然實驗——發生率從 1999 年的 6.3/100,000 升到 2012 年的 63.4/100,000（十倍），區域篩檢率與發生率的相關係數 r = 0.77，但與死亡率的相關是 r = −0.08，且只有乳突癌一種組織型被推高。篩檢降溫後發生率從 2012 年的 91.9/100,000 掉到 2015 年的 50.6，而癌症專一死亡率並未跟著改善（0.76/1000 人年於 2013 年，2018 年回到 2.70，集中在全切除與未手術者）。USPSTF 因此給出 D recommendation：效益「不大於 small」、危害「至少 moderate」，淨效益為負；其證據回顧裡沒有任何一篇 fair 以上品質的研究直接檢驗過篩檢效益。治療端的取捨同樣有隨機試驗資料：5 篇 RCT、763 名 cN0 病人中預防性中央區廓清的結構性復發 risk difference 為 0%（NNT 500），永久性副甲狀腺低下卻增加 3%。而屍檢研究中 8.5% 的人身上帶著從未發病的分化型癌。有輻射暴露史者也不是自動該做超音波——IGHG 與 SHAMISEN 都不給單一建議，前者要求共同決策、後者明確反對族群篩檢。",
+      "citations": [
+        {
+          "pmid": "39389067",
+          "title": "Evolving epidemiological patterns of thyroid cancer and estimates of overdiagnosis in 2013-17 in 63 countries worldwide: a population-based study",
+          "journal": "Lancet Diabetes Endocrinol",
+          "year": 2024,
+          "design": "population-based cohort",
+          "takeaway": "IARC 以 CI5-XII 的 385 個登記處、63 個國家資料估算：2013–17 年間 2,297,057 例甲狀腺癌中，1,736,133 例（75.6%）可歸因於過度診斷（女性 1,368,181、男性 367,952）。各國落差極大——烏干達、辛巴威、千里達沒有過度診斷，賽普勒斯、中國、南韓、土耳其的女性則超過 85% 屬過度診斷。南韓、美國、加拿大、以色列與部分西歐國家在 2010 年代初期後發生率開始下降，但死亡率在整段期間各國差距只有約 1.0–2.0/100,000。"
+        },
+        {
+          "pmid": "35271818",
+          "title": "The epidemiological landscape of thyroid cancer worldwide: GLOBOCAN estimates for incidence and mortality rates in 2020",
+          "journal": "Lancet Diabetes Endocrinol",
+          "year": 2022,
+          "design": "population-based cohort",
+          "takeaway": "GLOBOCAN 2020、185 個國家：全球年齡標準化發生率女性 10.1/100,000、男性 3.1/100,000，死亡率僅 0.5 與 0.3。高與極高人類發展指數國家的發生率是低與中度國家的五倍，死亡率卻各地相近。女性發生率各區域相差 15 倍以上，南韓達 45/100,000，且南韓的發生率／死亡率比在兩性中均為全球最高。發生率跟著醫療密度跑、死亡率不跟著跑，這就是過度診斷的流行病學指紋。"
+        },
+        {
+          "pmid": "27627550",
+          "title": "Thyroid Cancer Screening in South Korea Increases Detection of Papillary Cancers with No Impact on Other Subtypes or Thyroid Cancer Mortality",
+          "journal": "Thyroid",
+          "year": 2016,
+          "design": "population-based cohort",
+          "takeaway": "以 2010 年韓國社區健康調查 226,873 人的篩檢率，對照 16 個行政區的癌症登記與死亡資料：區域篩檢率與甲狀腺癌發生率的相關係數 r = 0.77（95% CI 0.70–0.82），女性 r = 0.88、男性 r = 0.76。篩檢只與乳突癌的偵測增加相關（r = 0.74），與甲狀腺癌死亡率無關（r = −0.08，95% CI −0.59 至 0.63）。這是「篩檢驅動流行」最直接的生態學證據。"
+        },
+        {
+          "pmid": "33979040",
+          "title": "Decreasing trends in thyroid cancer incidence in South Korea: What happened in South Korea?",
+          "journal": "Cancer Med",
+          "year": 2021,
+          "design": "population-based cohort",
+          "takeaway": "韓國 1999–2016 全國癌症登記：甲狀腺癌年齡標準化發生率從 1999 年的 6.3/100,000 升到 2012 年的 63.4/100,000（十倍），2012 年後開始下降。死亡率自 2000 年代初期即已下降，遠端期別發生率自 2010 年、局部與區域期別自 2012 年開始下降。轉折點出現在 2014 年過度診斷爭議公開之前，作者認為結節檢查指引的改變才是最初的推力。"
+        },
+        {
+          "pmid": "38874484",
+          "title": "Thyroid cancer-specific mortality during 2005-2018 in Korea, aftermath of the overdiagnosis issue: a nationwide population-based cohort study",
+          "journal": "Int J Surg",
+          "year": 2024,
+          "design": "population-based cohort",
+          "takeaway": "韓國健保資料庫 434,228 名甲狀腺癌病人的長期追蹤：標準化發生率 2012 年為 91.9/100,000，2015 年急降至 50.6 並持平到 2018。但癌症專一死亡率並非單調下降——從 2005 年的 1.94/1000 人年降到 2013 年的 0.76，之後又升到 2018 年的 2.70。這個回升集中在接受全切除或未手術者，接受單側／次全切除者則持平。這是這個題目上最誠實的一筆數據：減少過度診斷後，被留下來的是真正高風險的族群。"
+        },
+        {
+          "pmid": "26133012",
+          "title": "The Impact of Diagnostic Changes on the Rise in Thyroid Cancer Incidence: A Population-Based Study in Selected High-Resource Countries",
+          "journal": "Thyroid",
+          "year": 2015,
+          "design": "population-based cohort",
+          "takeaway": "以 1970 年代前北歐國家的年齡別發生率曲線為參考基準，回推法國、義大利、美國、澳洲、南韓等高資源國家的「診斷變化可歸因比例」：2003–2007 年 80 歲以下女性的甲狀腺癌有 ≥60% 可歸因於診斷方式改變（其餘國家約 50%，日本 30%）。發生率漲最多的國家，可歸因比例也最高。"
+        },
+        {
+          "pmid": "28492905",
+          "title": "Screening for Thyroid Cancer: US Preventive Services Task Force Recommendation Statement",
+          "journal": "JAMA",
+          "year": 2017,
+          "design": "guideline",
+          "takeaway": "USPSTF 對無症狀成人甲狀腺癌篩檢給出 D recommendation（建議不要做）。理由寫得很明確：整體效益「不大於 small」——甲狀腺癌相對罕見、治療與監測在最常見的腫瘤型別上結果無差異、且大規模篩檢導入後死亡率沒有改變；而危害「至少 moderate」，因為治療的危害有充分證據、過度診斷與過度治療的間接證據也很強。淨效益為負。"
+        },
+        {
+          "pmid": "28492904",
+          "title": "Screening for Thyroid Cancer: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force",
+          "journal": "JAMA",
+          "year": 2017,
+          "design": "systematic review",
+          "takeaway": "USPSTF 的證據回顧：篩出 10,424 篇摘要、讀完 707 篇全文、納入 67 篇。結論是沒有任何一篇 fair 或 good quality 的研究直接檢驗過甲狀腺癌篩檢的效益；頸部觸診對偵測結節不敏感；三篇直接評估篩檢危害的研究（n = 5,894）未顯示篩檢或超音波導引細針抽吸有嚴重危害，但也沒有任何篩檢研究直接測量過度診斷的風險。這一類的最大問題不是證據方向，是根本沒有直接證據。"
+        },
+        {
+          "pmid": "34779278",
+          "title": "Adverse Histological Features of Differentiated Thyroid Cancer Are Commonly Found in Autopsy Studies: Implications for Treatment Guidelines",
+          "journal": "Thyroid",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "29 篇解剖屍檢研究、8,750 名無甲狀腺癌病史者：偶發分化型甲狀腺癌出現在 740 例（8.5%），中位年齡 61 歲。這些「從未被診斷」的癌中，多發病灶 28.2%（CI 23.1–33.8）、雙側 18%（CI 12.6–25.1）、微小甲狀腺外侵犯 24.5%、淋巴結轉移 11%、血管侵犯 16%。作者的推論很關鍵：既然這些「不良組織學特徵」在一輩子沒發病的人身上就這麼常見，它們本身就不該被當成必須做補全切除或放射碘的指標。"
+        },
+        {
+          "pmid": "35129470",
+          "title": "Prophylactic Central Neck Lymph Node Dissection in Low-risk Thyroid Carcinoma Patients Does Not Decrease the Incidence of Locoregional Recurrence: A Meta-analysis of Randomized Trials",
+          "journal": "Ann Surg",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "只納入隨機試驗的 pooled 分析：5 篇 RCT、763 名 cN0 乳突癌病人（全切除加預防性中央區廓清 409、單純全切除 354）。結構性復發 11/409（2.7%）vs 9/354（2.5%），risk difference 0%（95% CI −2% 至 2%）；生化復發 RD 亦為 0%。作者算出的 number needed to treat 是 500。永久性副甲狀腺低下則顯著較高（RD 3%，95% CI 0%–6%）。以隨機試驗為證據時，預防性廓清買不到復發率的下降，只買到併發症。"
+        },
+        {
+          "pmid": "34708877",
+          "title": "Prophylactic Central Neck Dissection for Clinically Node-Negative Papillary Thyroid Carcinoma",
+          "journal": "Laryngoscope",
+          "year": 2022,
+          "design": "meta-analysis",
+          "takeaway": "5 篇低偏誤風險 RCT、795 名 cN0 乳突癌病人：結構性局部區域復發在加做預防性中央區廓清與否之間無顯著差異（4 篇 RCT，RR 0.49，95% CI 0.19–1.27，p = .14），副甲狀腺低下（RR 1.48，p = .27）、RLN 損傷（RR 1.34，p = .48）與出血（RR 1.75，p = .44）亦無顯著差異。與觀察性研究 meta-analysis 得到的「能降低復發」結論方向不同——差別就在有沒有選擇偏誤。"
+        },
+        {
+          "pmid": "33171378",
+          "title": "Lessons learned from Chernobyl and Fukushima on thyroid cancer screening and recommendations in case of a future nuclear accident",
+          "journal": "Environ Int",
+          "year": 2021,
+          "design": "guideline",
+          "takeaway": "SHAMISEN 國際共識：明確不建議在核子事故後對族群做大規模或以人口為基礎的甲狀腺癌篩檢，理由是負面的心理與生理影響很可能超過任何可能的益處；但應對主動要求的人（不論是否屬高風險）提供甲狀腺健康監測，並附上適當的說明與支持。文中把福島與車諾比的篩檢經驗直接類比為南韓機會性篩檢造成的過度診斷。"
+        },
+        {
+          "pmid": "29202445",
+          "title": "Balancing the benefits and harms of thyroid cancer surveillance in survivors of Childhood, adolescent and young adult cancer: Recommendations from the international Late Effects of Childhood Cancer Guideline Harmonization Group in collaboration with the PanCareSurFup Consortium",
+          "journal": "Cancer Treat Rev",
+          "year": 2018,
+          "design": "guideline",
+          "takeaway": "IGHG 與 PanCareSurFup 聯合、33 位跨專科專家的共識：對兒童／青少年／年輕成人癌症存活者中曾接受甲狀腺區放射線暴露者，甲狀腺超音波與頸部觸診兩種監測策略「沒有一種被證明優於另一種」。因此指引不給單一建議，而是產出一份 decision aid，要求醫療人員與存活者共同決定「要不要監測」以及「用哪一種方式監測」。有輻射暴露史不等於自動該做超音波。"
+        }
+      ]
+    }
+  ]
+}

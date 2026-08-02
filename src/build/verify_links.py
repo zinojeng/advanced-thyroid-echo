@@ -20,7 +20,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import sources as SRC  # noqa: E402
+import sources as SRC
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("DIST") or ROOT / "dist").resolve() / "course.json"

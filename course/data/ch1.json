@@ -1,0 +1,439 @@
+{
+ "chapter": "CH1",
+ "title": "進階掃描技術與機器最佳化",
+ "units": [
+  {
+   "id": "ch1-u1",
+   "name": "探頭選擇、preset 與影像最佳化的決策順序",
+   "type": "scan",
+   "assessment": "找三位頸圍差異明顯的病人（正常體型、短頸、BMI ≥ 30），各自用同一台機器完成一次甲狀腺掃描。每位病人記錄：使用的探頭型號與中心頻率、選用的 preset 名稱、以及你依序動過的前三個旋鈕（含每一步為什麼動它）。掃完後對照 AIUM–ACR–SPR–SRU practice parameter 的 Equipment Specifications 段落，寫出你有哪幾次是先加 gain 而不是先換探頭或先降頻率，並說明那樣做為什麼會讓深部組織的訊噪比更差。",
+   "tight": [
+    "遇到看不清楚就先把 gain 拉高，掩蓋了「探頭頻率不對」或「focus 位置不對」這個真正的原因",
+    "整台機器只用出廠 thyroid preset，從不確認 preset 底下的頻率、focus 數目與 compound／harmonic 是開是關",
+    "把探頭斜著壓在氣管旁的斜面上，讓包膜與被膜界面因為入射角不垂直而假性變模糊，誤判為 ill-defined margin"
+   ],
+   "weak": [
+    "能在 10 秒內講出「這張影像不好，是探頭選錯／頻率太高／focus 太淺／角度不對」哪一個，而不是一律靠 gain 補",
+    "能說明為什麼 AIUM 建議頸部以線陣探頭、平均頻率 10–14 MHz 起跳，以及什麼情況要退到低頻或改用凸陣",
+    "能用入射角觀念解釋同一顆結節在不同切面下邊緣清晰度改變的原因"
+   ],
+   "lesson": {
+    "title": "General Ultrasound Image Optimization | Don't Do This!",
+    "channel": "Sonography Minutes",
+    "url": "https://www.youtube.com/watch?v=6mC2fVP248w",
+    "duration": "23:35",
+    "why": "以「常見的錯誤影像」反推最佳化順序，直接處理 fellow 最常見的落差：影像不好時第一個動作應該是重新選探頭、對準軸向與 focus，而不是加 gain。示範全部在真實影像上做前後對照，不是投影片。",
+    "tier": "C",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 Sonography Minutes，本站僅連結與嵌入，不下載也不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "AIUM–ACR–SPR–SRU 頸部超音波 practice parameter（Equipment Specifications 段）",
+     "en": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+     "kind": "guideline",
+     "target": "看出學會對頸部掃描的器材底線寫得多具體：以線陣探頭為主、設定在臨床可用的最高頻率、多數病人平均頻率 10–14 MHz 以上，但深度不足時允許降頻；深部或大型構造可用凸陣，下頸部與上縱膈可用 curved linear，小而淺的病灶用小 footprint 高頻探頭。這一段就是 u1 決策順序的官方版本。",
+     "dose": "先自己寫下你平常怎麼選探頭與頻率，再讀 PDF 的 Equipment Specifications 段落（文件末段，含 Doppler frequencies should be set to optimize flow detection 一句），逐條比對差異。",
+     "title": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+     "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+     "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+     "tier": "A",
+     "source_type": "guideline",
+     "provider": "society",
+     "access": "open",
+     "license": "© American Institute of Ultrasound in Medicine；AIUM 官網公開提供此 PDF，本站僅連結不重製",
+     "last_verified": "2026-08-02",
+     "note": "版本說明：AIUM 官網免費提供的這份 PDF 是 2018 年修訂版（J Ultrasound Med 2018，doi:10.1002/jum.14830）。AIUM 已於 2023 年發布新版「Thyroid and Extracranial Head and Neck」（doi:10.1002/jum.16251），但全文只在 Wiley Online Library，2026-08-02 以 curl 測試回 403（bot 防護／需訂閱），因此本站連結仍指向可公開取得的 2018 版，引用時請自行註明版本年份。"
+    },
+    {
+     "name": "頻率選擇：穿透力與空間解析度的取捨",
+     "en": "Choice of ultrasound frequency : Penetration vs. Resolution",
+     "kind": "lecture",
+     "target": "把「換探頭／降頻率」這個動作背後的物理講清楚：頻率上升則軸向解析度變好但衰減加劇，因此深部甲狀腺在 14 MHz 下會出現訊號不足而非「機器不好」。用來支撐 AIUM 允許降頻的那一句。",
+     "dose": "短講，看完直接回到機器上做一次對照：同一個下極，分別用高頻與低頻線陣各存一張圖，比較被膜界面與後方訊號。",
+     "title": "Choice of ultrasound frequency : Penetration vs. Resolution",
+     "channel": "FundBioImag（EPFL, Fundamentals of Biomedical Imaging 課程）",
+     "url": "https://www.youtube.com/watch?v=gxahrWViIH0",
+     "duration": "7:19",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 FundBioImag（EPFL 課程錄影），本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "入射角與灰階影像品質：為什麼同一個界面會忽明忽暗",
+     "en": "General Ultrasound | Grayscale Optimization | It's All About the Angle",
+     "kind": "lecture",
+     "target": "看出邊緣模糊有時候不是病灶特性而是入射角問題。這一點直接影響 CH4 的 margin 判讀：探頭沒有垂直於被膜或結節界面時，ill-defined margin 會被人為製造出來。",
+     "dose": "看完後拿一顆自己門診的結節，刻意用垂直與傾斜兩種角度各存一張圖，寫下 margin 描述會不會因此改變。",
+     "title": "General Ultrasound | Grayscale Optimization | It's All About the Angle",
+     "channel": "Sonography Minutes",
+     "url": "https://www.youtube.com/watch?v=jUya7d-pRvg",
+     "duration": "9:33",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Sonography Minutes，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u2",
+   "name": "depth、focus、gain、dynamic range 與頻率的實戰調整",
+   "type": "scan",
+   "assessment": "挑一次自己覺得「影像很糊」的甲狀腺檢查，在同一位病人身上依序做五組對照存圖：(1) depth 過深 vs 剛好包住甲狀腺後緣；(2) focus 放在皮下 vs 放在結節深度；(3) gain 過高 vs TGC 分段修正後；(4) dynamic range 寬 vs 窄；(5) 高頻 vs 低頻探頭。每組寫一句話說明它改變了哪一種影像特徵（邊緣、內部回音、微鈣化的可見度、後方聲影）。最後挑出對你這位病人影響最大的兩個旋鈕，並解釋為什麼是這兩個。",
+   "tight": [
+    "把 dynamic range 開很寬讓影像「柔和好看」，結果 punctate echogenic foci 與周邊實質的對比被壓掉，微鈣化直接消失",
+    "整段檢查 focus 都留在預設深度，深部結節的側向解析度變差而誤判為 ill-defined margin",
+    "用 overall gain 補償深部衰減而不是用 TGC 分段修正，導致淺層過亮、囊性成分被填滿而誤判為實質性"
+   ],
+   "weak": [
+    "能區分 output power、overall gain、TGC 三者的差別，並知道只有 output power 直接影響病人接受的能量",
+    "能為「要找微鈣化」與「要判斷囊性成分」分別選出不同的 dynamic range 設定，而不是全程一套",
+    "能把 depth 與 focus 調到讓甲狀腺後緣、longus colli 與氣管界面同時清楚"
+   ],
+   "lesson": {
+    "title": "OPTIMIZE ULTRASOUND IMAGE",
+    "channel": "IBUS BREAST IMAGING SCHOOL",
+    "url": "https://www.youtube.com/watch?v=H8nWqJArj4U",
+    "duration": "1:24:44",
+    "why": "由超音波物理學者 Prof. Jeff Bamber 為 IBUS（International Breast Ultrasound School）主講，是少見把「每一個旋鈕改變了影像的哪一個物理量」講到底的完整課程。示範對象是乳房高頻線陣掃描，與甲狀腺同屬 small parts 高頻淺層，設定邏輯可直接移植；本站選它是因為甲狀腺領域找不到同等深度的機器最佳化課程。",
+    "tier": "A",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 IBUS BREAST IMAGING SCHOOL，本站僅連結與嵌入，不下載也不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "EFSUMB Course Book 第 32 章：Ultrasound Knobology",
+     "en": "EFSUMB Course Book, 2nd Edition — Ultrasound \"Knobology\" (Ch. 32)",
+     "kind": "lecture",
+     "target": "把整章當成旋鈕字典使用：Transducer Choice、Essential Buttons/Knobs for Imaging、Advanced Imaging Buttons、Doppler Ultrasound 四節，涵蓋 depth、focus、gain、TGC、dynamic range、frequency 與進階成像的設定原則，並說明各家廠商命名不同但功能相同的對照。",
+     "dose": "不必一次讀完 24 頁。先讀 Essential Buttons/Knobs 一節，把自己機器上的實際按鍵名稱寫在旁邊，做成一張自己機型的對照表。",
+     "title": "Ultrasound \"Knobology\" — EFSUMB Course Book, 2nd Edition, Chapter 32",
+     "channel": "European Federation of Societies for Ultrasound in Medicine and Biology (EFSUMB) · Lim AKP, Moran CM, Dietrich CF",
+     "url": "https://efsumb.org/wp-content/uploads/2023/07/ECB2nd_Chapter_KNOBOLOGY_FULL.pdf",
+     "tier": "A",
+     "source_type": "article",
+     "provider": "society",
+     "access": "open",
+     "license": "© EFSUMB；官網標示 Course Book 章節免費下載（DOI 10.37713/ECB32），本站僅連結不重製",
+     "last_verified": "2026-08-02",
+     "note": "EFSUMB 另提供中文版 PDF（2024-11 更新），章節頁 https://efsumb.org/ch32-ultrasound-knobology/ 內可取得。"
+    },
+    {
+     "name": "TGC：分段補償衰減，而不是整體加 gain",
+     "en": "Time Gain Compensation | Ultrasound Physics | Radiology Physics Course #13",
+     "kind": "lecture",
+     "target": "看懂 TGC 是接收端依深度分段放大，因此它能修正「淺層剛好、深層太暗」，而 overall gain 只會把整張圖一起變亮。這是甲狀腺深部（尤其厚頸）最常被誤用的旋鈕。",
+     "dose": "看完後在機器上刻意把 TGC 排成階梯狀，觀察甲狀腺實質出現的水平亮帶，理解報告上看到的「帶狀不均勻」有時候是自己弄出來的。",
+     "title": "Time Gain Compensation | Ultrasound Physics | Radiology Physics Course #13",
+     "channel": "Radiology Tutorials",
+     "url": "https://www.youtube.com/watch?v=gFzvAajSk4U",
+     "duration": "6:36",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Radiology Tutorials，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Dynamic range 實機對照：對比壓縮如何吃掉微鈣化",
+     "en": "Adjusting Dynamic Range",
+     "kind": "procedure",
+     "target": "在真實影像上看見 dynamic range 變寬變窄時灰階層次的變化。對甲狀腺的意義是：要找 punctate echogenic foci 時應該收窄動態範圍以拉高對比，要評估囊性／實質介面時則反過來。",
+     "dose": "極短片，重點是回到自己機器上重做一次同樣的前後對照，並用一顆已知含微鈣化的結節驗證。",
+     "title": "Adjusting Dynamic Range",
+     "channel": "Clarius Mobile Health",
+     "url": "https://www.youtube.com/watch?v=Axmh3oKBhCE",
+     "duration": "1:18",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Clarius Mobile Health，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02",
+     "coi": "內容由超音波設備廠商 Clarius Mobile Health 製作，示範機型為該公司產品。僅作為旋鈕操作示範，其影像品質宣稱不得視為臨床證據；診斷主張請以指引與同儕審查文獻為準。"
+    },
+    {
+     "name": "大學超音波教學計畫的旋鈕與影像操作示範",
+     "en": "AlbertaSono knobology and image manipulation",
+     "kind": "procedure",
+     "target": "以學術單位教學版本再看一次 depth、focus、gain、frequency 的實機操作，重點在「調整順序」而不是單一旋鈕，可與 u1 的決策順序互相印證。",
+     "dose": "當成 u2 的收尾。看完後請把自己在 assessment 裡做的五組對照存圖，依這支影片的順序重新排一次。",
+     "title": "AlbertaSono knobology and image manipulation",
+     "channel": "Alberta SONO（University of Alberta 急重症超音波教學計畫）",
+     "url": "https://www.youtube.com/watch?v=6xBKcg1arWo",
+     "duration": "10:05",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Alberta SONO，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02",
+     "note": "示範情境為急重症 POCUS，非甲狀腺專用；納入理由是旋鈕操作順序可轉移，且發布單位為大學教學計畫（albertasono.ca）可查證。"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u3",
+   "name": "複合成像、諧波成像與空間／時間解析度的取捨",
+   "type": "scan",
+   "assessment": "挑三顆結節：一顆含疑似 punctate echogenic foci、一顆 spongiform、一顆有後方聲影的粗鈣化。每一顆分別在 compound imaging 開與關、harmonic imaging 開與關的四種組合下各存一張圖，記錄後方聲影、comet-tail 與邊緣清晰度在哪一種組合下最明顯、哪一種被抹掉。最後寫出你之後要用哪一組設定做 echogenic foci 的判定，理由要指向 artifact 的物理機轉而不是「這樣比較好看」。",
+   "tight": [
+    "spatial compounding 開著就直接判定「沒有後方聲影」——複合成像會把來自多角度的影像平均，聲影與 edge shadow 會被削弱甚至消失",
+    "把 comet-tail artifact 一律當成良性 colloid 的證明，忽略其他高反射物（手術夾、鈣化）也會產生同樣現象",
+    "為了畫面乾淨把多個 focus 與高線密度一起開，frame rate 掉到無法在動態掃描中追住小病灶"
+   ],
+   "weak": [
+    "能說出 compound imaging 與 harmonic imaging 各自改善什麼、各自犧牲什麼，並在需要看 artifact 時主動關掉",
+    "能分辨 comet-tail、ring-down 與單純 reverberation，並知道它們在甲狀腺的臨床意義不同",
+    "能解釋為什麼提高解析度會犧牲 frame rate，以及這在吞嚥、Valsalva 等動態掃描時為什麼要緊"
+   ],
+   "lesson": {
+    "title": "AIUM Webinar: Artifacts in Sonography",
+    "channel": "AIUMultrasound",
+    "url": "https://www.youtube.com/watch?v=WrzisTDAZcM",
+    "duration": "59:24",
+    "why": "由 Frederick Kremkau 主講的 AIUM 官方 webinar，是把「灰階與 Doppler 假影為什麼發生、怎麼辨認、怎麼靠調機器處理掉」講完整的一堂課。本章要求 fellow 不只認得假影，還要知道哪些假影是自己按了複合成像或諧波成像造成的，這支正好同時涵蓋成因與處置。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 AIUMultrasound（American Institute of Ultrasound in Medicine），本站僅連結與嵌入，不下載也不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "諧波成像：改善了什麼、代價是什麼",
+     "en": "Tissue Harmonic Ultrasound Imaging | Ultrasound Physics Course | Radiology Physics Course #24",
+     "kind": "lecture",
+     "target": "看出 tissue harmonic imaging 靠非線性產生的二次諧波成像，因而 side lobe 與近場雜訊減少、對比解析度變好，但穿透力下降。對甲狀腺的意義：厚頸病人開諧波反而可能讓下極訊號不足。",
+     "dose": "看完後在機器上對同一顆囊實混合結節開關諧波各存一張，比較囊內是否出現假性內容物。",
+     "title": "Tissue Harmonic Ultrasound Imaging | Ultrasound Physics Course | Radiology Physics Course #24",
+     "channel": "Radiology Tutorials",
+     "url": "https://www.youtube.com/watch?v=LvkXFwBlAOc",
+     "duration": "24:38",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Radiology Tutorials，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Focus、beam steering 與 spatial compounding 的相互牽制",
+     "en": "Beam Focusing, Steering and Spatial Compounding | Ultrasound Physics | Radiology Physics Course #16",
+     "kind": "lecture",
+     "target": "理解 focus 數目、beam steering 角度與 spatial compounding 三者都會吃掉 frame rate，以及複合成像為什麼會削弱後方聲影與 edge shadow——這正是判定粗鈣化與 taller-than-wide 邊界時被誤導的來源。",
+     "dose": "重點放在 spatial compounding 一節。看完後把自己的 thyroid preset 打開，確認複合成像預設是開還是關。",
+     "title": "Beam Focusing, Steering and Spatial Compounding | Ultrasound Physics | Radiology Physics Course #16",
+     "channel": "Radiology Tutorials",
+     "url": "https://www.youtube.com/watch?v=1_-BmMrxUjA",
+     "duration": "10:13",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Radiology Tutorials，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Comet-tail artifact：甲狀腺 colloid 的高反射訊號與其鑑別",
+     "en": "Comet tail artifact — Radiopaedia",
+     "kind": "atlas",
+     "target": "確認 comet-tail 屬於 reverberation artifact 的一種，可由微小鈣化／結晶／高反射物產生；條目明列 thyroid colloid nodules，同時列出膽囊腺肌症、睪丸微石症、手術夾、導管末端等其他成因，並要求與 ring-down artifact 鑑別。用來擋住「看到 comet tail 就等於良性膠質」的過度推論。",
+     "dose": "先看條目內的 thyroid colloid 相關病例影像，再回頭把自己近期報告中寫過 comet tail 的病例調出來，確認當時是否有排除粗鈣化與術後金屬。",
+     "title": "Comet tail artifact",
+     "channel": "Radiopaedia.org",
+     "url": "https://radiopaedia.org/articles/comet-tail-artifact",
+     "tier": "B",
+     "source_type": "atlas",
+     "provider": "case_library",
+     "access": "open",
+     "license": "Radiopaedia 文章預設採 CC BY-NC-SA 3.0（實際條款以站方標示為準），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u4",
+   "name": "Color 與 Power Doppler：PRF、wall filter、aliasing 與低流速訊號",
+   "type": "scan",
+   "assessment": "挑一顆有周邊血流的結節與一顆你原本判定「無血流」的結節。對每一顆做三組對照：(1) 高 PRF vs 降到剛好不 aliasing 的 PRF；(2) wall filter 最高 vs 最低；(3) color Doppler vs power Doppler。記錄「無血流」那顆在哪一組設定下開始出現訊號。最後寫一段話說明：你過去報告裡的 vascularity 描述，有多少比例其實是機器設定造成的，以及為什麼這使得 vascularity 不適合單獨當作惡性指標。",
+   "tight": [
+    "PRF 設太高把低速的結節內血流整個濾掉，然後在報告上寫「no internal vascularity」",
+    "wall filter 開太高，周邊薄環狀血流被當成雜訊剔除；開太低則呼吸與脈動造成整片閃爍假訊號",
+    "看到 aliasing 就當成高速血流或狹窄，忘記那只是 Doppler shift 超過 Nyquist limit 的折疊現象",
+    "把單一 Doppler 血流型態當成惡性與否的決定性依據"
+   ],
+   "weak": [
+    "能在 30 秒內把 PRF、wall filter、color gain、color box 大小四項調到適合甲狀腺低流速的組合",
+    "能認出 aliasing 並用降 PRF、移基線、降頻率、加大都卜勒角度四種方式之一處理掉",
+    "能說出 power Doppler 對低流速較敏感但無方向資訊、易受動作假影影響，因此在頸部要配合病人閉氣",
+    "能把 vascularity 放回它在 ACR TI-RADS (2017) 與 ATA 2015 裡實際的（有限）角色，而不是自行加權"
+   ],
+   "lesson": {
+    "title": "Doppler Ultrasound 101 | The Basics",
+    "channel": "Sonography Minutes",
+    "url": "https://www.youtube.com/watch?v=LeI3ns30mvg",
+    "duration": "38:16",
+    "why": "本單元要練的是把 Doppler 參數調到能誠實反映低流速，而不是背 Doppler 方程式。這支在真實影像上逐一示範 PRF/scale、wall filter、color gain、color box、角度與 color map 改變時畫面怎麼變，是目前公開資源中把「調錯會長什麼樣」示範得最完整的一支。標題寫 basics，但內容是逐旋鈕的實機對照，不是入門概論。",
+    "tier": "C",
+    "source_type": "video",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 Sonography Minutes，本站僅連結與嵌入，不下載也不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "甲狀腺結節 Doppler 血流型態分類的一項提案（AIUM 電子壁報）",
+     "en": "New Classification Of Doppler Vascularization Of Thyroid Nodules",
+     "kind": "lecture",
+     "target": "看的是「同一顆結節在不同 Doppler 設定下會被分到不同血流型態」這件事，以及提出新分類的人如何定義取像條件。這是全章唯一一支把 Doppler 參數直接接到甲狀腺結節判讀上的資源。",
+     "dose": "以懷疑的眼光看：這是 Lucy Kerr 醫師在 AIUM 發表的單一作者電子壁報，屬於提案而非學會建議，也未被 ACR TI-RADS (2017)、ATA 2015、EU-TIRADS 2017 或 K-TIRADS 2021 採納。請只用它來練「取像條件如何影響血流分類」，不要拿它的分類去改變穿刺決策。",
+     "title": "New Classification Of Doppler Vascularization Of Thyroid Nodules",
+     "channel": "AIUMultrasound",
+     "url": "https://www.youtube.com/watch?v=psvgHsrzRt4",
+     "duration": "10:33",
+     "tier": "B",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 AIUMultrasound，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Wall filter、beam steering 與角度校正：救回低流速訊號的三個旋鈕",
+     "en": "Wall Filter, Steering, and Angle Correction - Advanced Ultrasound Doppler Settings made Easy",
+     "kind": "lecture",
+     "target": "看懂 wall filter 是把低頻位移當雜訊濾掉的高通濾波器，因此它正是「結節內明明有血流卻顯示不出來」最常見的兇手；同時看 beam steering 與角度校正如何改變偵測到的 Doppler shift。",
+     "dose": "看完後回到機器，只動 wall filter 一項，對同一顆結節從最高調到最低逐級存圖，找出你機器上的臨界值。",
+     "title": "Wall Filter, Steering, and Angle Correction - Advanced Ultrasound Doppler Settings made Easy",
+     "channel": "POCUS 101",
+     "url": "https://www.youtube.com/watch?v=hPAnhB_ERbI",
+     "duration": "8:05",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 POCUS 101，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "Aliasing 與 Nyquist limit：認出來，然後四種方法處理掉",
+     "en": "Aliasing Artifact | Ultrasound Physics Course | Radiology Physics Course #23",
+     "kind": "lecture",
+     "target": "確認 aliasing 發生在 PRF 小於兩倍 Doppler shift 頻率時，並學會影響 PRF 的因素（深度、頻率、都卜勒角度）以及降低 aliasing 的具體做法。目的在於不要把折疊訊號誤讀成高速血流。",
+     "dose": "重點在後半段的「怎麼減少 aliasing」。看完後在頸動脈上刻意製造一次 aliasing，再用四種方法各消除一次。",
+     "title": "Aliasing Artifact | Ultrasound Physics Course | Radiology Physics Course #23",
+     "channel": "Radiology Tutorials",
+     "url": "https://www.youtube.com/watch?v=auG2nND0e7w",
+     "duration": "15:11",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 Radiology Tutorials，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u5",
+   "name": "困難體型與動態掃描：短頸、肥胖、胸骨後延伸、吞嚥與 Valsalva",
+   "type": "scan",
+   "assessment": "找兩位掃起來困難的病人（其中至少一位頸短或 BMI ≥ 30，另一位甲狀腺下極在中立位置看不到底）。對每一位完成：(1) 記錄墊肩伸頸前後下極可見範圍的差異；(2) 記錄換用低頻線陣或凸陣探頭後，深部訊號與側向解析度的改變；(3) 請病人吞一口水，錄下動態影像並判斷病灶是否隨甲狀腺同步移動；(4) 明確寫下「本次超音波無法評估的範圍」以及你是否因此建議 CT。最後對照 Radiopaedia substernal goitre 條目所述的超音波限制，檢查你的報告有沒有把「看不到底」寫清楚，還是含糊帶過。",
+   "tight": [
+    "下極看不到底卻在報告上寫「thyroid within normal limits」，沒有標明超音波無法評估胸骨後範圍",
+    "厚頸病人一律用 14 MHz 硬掃，深部訊號不足時只靠加 gain 而不換探頭",
+    "把食道（尤其左側）或頸長肌誤判為結節，沒有請病人吞水做動態確認",
+    "以為 Valsalva 或吞嚥可以把胸骨後的部分完全拉上來——它只能改善部分下極顯影，不能取代 CT"
+   ],
+   "weak": [
+    "能用墊肩伸頸、下頸部斜掃、吞嚥動作三個手法把下極可見範圍推到最大，並知道推到底之後還是有極限",
+    "能用吞嚥時的相對移動區分真結節與甲狀腺外的假病灶",
+    "能在報告上明確寫出超音波的可視下界，以及什麼情況必須改用 CT 或 MRI 評估胸骨後延伸",
+    "能為深部甲狀腺選出正確的探頭與頻率，而不是把技術限制寫成病人「難掃」"
+   ],
+   "lesson": {
+    "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+    "channel": "AIUMultrasound",
+    "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+    "duration": "44:34",
+    "why": "AIUM 官方 webinar，主題就是頸部超音波「看得到什麼、看不到什麼」。本單元的核心不是多學一個手法，而是讓 fellow 願意在報告上寫出可視範圍的界線；這支把掃描範圍與臨床用途的邊界講清楚，正好承接後面三個關於困難體型與胸骨後延伸的資源。選它也因為困難體型掃描本身缺乏專門的高品質公開課程，這是本章最需要人工補課的一節。",
+    "tier": "A",
+    "source_type": "webinar",
+    "provider": "youtube",
+    "access": "open",
+    "license": "版權歸原頻道 AIUMultrasound（American Institute of Ultrasound in Medicine），本站僅連結與嵌入，不下載也不重製",
+    "last_verified": "2026-08-02"
+   },
+   "drills": [
+    {
+     "name": "肥胖病人的甲狀腺掃描：兩支不同頻率線陣探頭的實機對照",
+     "en": "Сканирование щитовидной железы у пациента с ожирением на Mindray Resona i9（Thyroid scanning in an obese patient on the Mindray Resona i9）",
+     "kind": "procedure",
+     "target": "看示範者在同一位肥胖病人身上分別用高頻（L14-3）與低頻（L9-3）線陣掃描深部甲狀腺，並隨掃描深度調整設定，比較兩者的顯影品質。這正是 AIUM practice parameter 所說「部分病人需要較低頻率探頭以取得穿透力」的實際樣貌。",
+     "dose": "俄語發音，無官方英文字幕（可用 YouTube 自動翻譯字幕）。建議關聲音只看畫面與螢幕上的參數列，重點在換探頭前後深部訊號與側向解析度的差異；操作結論請以 u1 的 AIUM practice parameter 交叉驗證，不要採信影片中對特定機型的效能描述。",
+     "title": "Сканирование щитовидной железы у пациента с ожирением на Mindray Resona i9",
+     "channel": "MEDLIGA - поставщик медицинского оборудования",
+     "url": "https://www.youtube.com/watch?v=Fa6eAo0LgzY",
+     "duration": "11:00",
+     "tier": "C",
+     "source_type": "video",
+     "provider": "youtube",
+     "access": "open",
+     "license": "版權歸原頻道 MEDLIGA，本站僅連結與嵌入，不下載也不重製",
+     "last_verified": "2026-08-02",
+     "coi": "本片為醫療設備經銷商 MEDLIGA 製作的 Mindray Resona i9 大師班，示範者為該公司臨床專員，影片描述含產品銷售連結。僅作為「深部甲狀腺需換探頭與重新最佳化」的操作示範，其對特定機型或探頭的效能宣稱不得視為臨床證據。",
+     "note": "觀看數僅數百，且為俄語內容；納入理由是全章搜尋中唯一一支真正示範肥胖病人甲狀腺深部掃描並實際更換探頭的動態影片，且其核心做法可由 AIUM practice parameter 的 Equipment Specifications 交叉驗證。"
+    },
+    {
+     "name": "Substernal goitre：超音波為什麼掃不到底",
+     "en": "Substernal goitre — Radiopaedia",
+     "kind": "atlas",
+     "target": "條目的 Ultrasound 段落直接寫明：因甲狀腺向胸骨後方延伸而無法掃到最下極，本身就是胸骨後甲狀腺腫的線索；同時看 CT 段落如何用甲狀腺體積、是否延伸至氣管隆凸以下等特徵評估手術路徑。用來確立「超音波無法回答的問題要交給誰」。",
+     "dose": "先讀 Ultrasound 與 CT 兩段，再看條目下方的病例影像（多為 CT／X 光）。回頭修改一份自己寫過的胸骨後甲狀腺腫報告，把可視下界寫進結論。",
+     "title": "Substernal goitre",
+     "channel": "Radiopaedia.org",
+     "url": "https://radiopaedia.org/articles/retrosternal-goitre",
+     "tier": "B",
+     "source_type": "atlas",
+     "provider": "case_library",
+     "access": "open",
+     "license": "Radiopaedia 文章預設採 CC BY-NC-SA 3.0（實際條款以站方標示為準），本站僅連結不重製",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "name": "吞嚥時的相對移動：分辨真結節與甲狀腺假病灶",
+     "en": "Differential movement during swallowing as an aid in the detection of thyroid pseudonodules",
+     "kind": "lecture",
+     "target": "這是把「請病人吞一口水」寫成可重複判讀依據的原始文獻：真正位於甲狀腺內的病灶會與腺體同步移動，甲狀腺外的構造（食道、頸長肌、淋巴結）則出現相對位移。動態掃描在本課程不是花招，是鑑別工具。",
+     "dose": "PubMed 摘要免費、全文需訂閱（Head Neck 1994;16(1):21-4，PMID 8125784）。讀完摘要後，直接在下一位病人身上錄一段吞嚥動態影像，練習判斷相對移動；注意 frame rate 太低會看不出來（見 u3）。",
+     "title": "Differential movement during swallowing as an aid in the detection of thyroid pseudonodules",
+     "channel": "Siminoski K · Head & Neck 1994;16(1):21-4（PubMed／NLM）",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/8125784/",
+     "tier": "B",
+     "source_type": "article",
+     "provider": "journal",
+     "access": "subscription",
+     "license": "摘要由 NLM／PubMed 公開提供；全文版權歸 Head & Neck（Wiley），本站僅連結不重製",
+     "last_verified": "2026-08-02",
+     "note": "1994 年文獻，年代久遠但描述的是與機器無關的手法，且至今無更新的取代性研究；引用時請註明其為早期小型研究，僅支持「相對移動可輔助鑑別假結節」這一點。"
+    }
+   ]
+  }
+ ]
+}

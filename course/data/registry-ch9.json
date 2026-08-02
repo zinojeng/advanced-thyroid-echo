@@ -1,0 +1,337 @@
+{
+ "chapter": "CH9",
+ "searched": [
+  "yt-dlp ytsearch20: parathyroid adenoma ultrasound localization",
+  "yt-dlp ytsearch20: parathyroid ultrasound hyperparathyroidism lecture",
+  "yt-dlp ytsearch20: parathyroid carcinoma ultrasound",
+  "yt-dlp ytsearch20: intrathyroidal parathyroid adenoma ultrasound",
+  "yt-dlp ytsearch20: parathyroid vs lymph node ultrasound differentiation",
+  "yt-dlp ytsearch20: PTH washout fine needle aspiration parathyroid",
+  "yt-dlp ytsearch20: neck mass ultrasound differential diagnosis lecture",
+  "yt-dlp ytsearch20: schwannoma neck ultrasound",
+  "yt-dlp ytsearch20: branchial cleft cyst ultrasound",
+  "yt-dlp ytsearch15: esophageal diverticulum ultrasound thyroid mimic",
+  "yt-dlp ytsearch15: Zenker diverticulum ultrasound neck",
+  "yt-dlp ytsearch15: ectopic thymus ultrasound neck children",
+  "yt-dlp ytsearch15: parathyroid ultrasound how I scan technique endocrinologist neck",
+  "yt-dlp ytsearch15: thyroid ultrasound parathyroid pitfall lymph node mistake",
+  "yt-dlp ytsearch15: AIUM parathyroid ultrasound webinar",
+  "yt-dlp ytsearch15: vagal schwannoma ultrasound neck mass sonography case",
+  "yt-dlp ytsearch15: cervical sympathetic chain schwannoma ultrasound",
+  "yt-dlp ytsearch15: neck ultrasound cystic lesion differential thyroglossal branchial sonography lecture",
+  "yt-dlp ytsearch15: neck ultrasound lipoma carotid body tumor sonography",
+  "yt-dlp ytsearch15: AACE parathyroid ultrasound endocrinologist",
+  "yt-dlp 頻道全片單：https://www.youtube.com/channel/UCC2t3xNGvkjj42wO6O8FM3Q/videos（KeepMyThyroid）",
+  "網站爬取：thyrosite.com → case_studies → section04 Non-thyroid neck → parathyroid_lesions/ctu.php（30 個病理／細胞學確診的副甲狀腺病例索引）",
+  "Radiopaedia 站內搜尋：parathyroid adenoma polar vessel sign case",
+  "Radiopaedia 站內搜尋：neck mass ultrasound approach differential intrathyroid parathyroid adenoma",
+  "文獻搜尋：2022 international workshop guidelines primary hyperparathyroidism imaging parathyroid localization consensus",
+  "文獻搜尋：parathyroid hormone washout fine needle aspiration diagnostic accuracy meta-analysis ultrasound guided",
+  "頻道身分查核：youtube.com/@Radquarters、@sonographictendencies、@indianradiologist、channel/UCC2t3xNGvkjj42wO6O8FM3Q 的 channelMetadataRenderer 描述"
+ ],
+ "evaluated": [
+  {
+   "title": "DR ANIL AHUJA | Parathyroid Adenoma - Ultrasound Tips For Accurate Detection #sonobuzz #neckimaging",
+   "url": "https://www.youtube.com/watch?v=6usNKWKfEcA",
+   "source": "YouTube / Indian Radiologist（Sonobuzz 教育活動，講者 Anil T. Ahuja）",
+   "decision": "included",
+   "unit": "ch9-u1",
+   "reason": "頭頸超音波公認權威主講、11:10、有實際動態掃描與 polar vessel 示範；oEmbed 200，觀看數 1,231。作為 u1 主課。"
+  },
+  {
+   "title": "Parathyroid adenoma in an unusual location. Parathyroid lesions - case 5",
+   "url": "https://www.youtube.com/watch?v=EMR-16wQNdI",
+   "source": "YouTube / Tamas Solymosi（thyrosite.com）",
+   "decision": "included",
+   "unit": "ch9-u1",
+   "reason": "病理確診的異位副甲狀腺腺瘤動態影像，配合 thyrosite 上的完整病歷。片長 43 秒、觀看數 201（低於 audit minViews 300，已在 dose 註明價值在影像本身）。"
+  },
+  {
+   "title": "Parathyroid lesions - case 899（四腺增生）",
+   "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/899/index.php",
+   "source": "thyrosite.com（Tamás Solymosi；ETA 2026 年會超音波課程官方網站）",
+   "decision": "included",
+   "unit": "ch9-u1",
+   "reason": "組織病理確診四腺增生，含兩次檢查的完整時序、washout PTH >474 pg/mL 與 washout Tg 假性升高 74.4 ng/mL 的解釋。curl 200。非 YouTube 第二級來源。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Parathyroid lesions - case 755（副甲狀腺癌）",
+   "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/755/index.php",
+   "source": "thyrosite.com（Tamás Solymosi）",
+   "decision": "included",
+   "unit": "ch9-u1",
+   "reason": "組織病理確診副甲狀腺癌併頸部與縱膈淋巴結轉移，含完整生化與 washout Tg <0.1 ng/mL。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "(ENG)Differentiation between thyroid and parathyroid lesions",
+   "url": "https://www.youtube.com/watch?v=p6s_zNlyUqY",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "included",
+   "unit": "ch9-u2",
+   "reason": "頻道描述自陳為韓國甲狀腺影像與介入專科放射科醫師、Kwak TI-RADS 原始論文（Radiology 2011;260:892-9）第一作者、《Thyroid Ultrasound and Intervention》1–5 版作者，作者可查核。內容直接對應本單元主題。oEmbed 200，觀看數 60（低於 minViews，已註明）。"
+  },
+  {
+   "title": "An intrathyroidal parathyroid adenoma. Parathyroid lesions - case 9",
+   "url": "https://www.youtube.com/watch?v=g9g6i5ZvHXQ",
+   "source": "YouTube / Tamas Solymosi",
+   "decision": "included",
+   "unit": "ch9-u2",
+   "reason": "甲狀腺內副甲狀腺腺瘤的動態影像；影片描述直接指向 thyrosite.com/thyroid/1399 的完整病歷（washout PTH 203、Tg 9.08、MIBI equivocal）。33 秒、185 次觀看，僅作影像用途。"
+  },
+  {
+   "title": "Parathyroid lesions - case 521（甲狀腺內副甲狀腺腺瘤，washout 定性）",
+   "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/521/index.php",
+   "source": "thyrosite.com（Tamás Solymosi）",
+   "decision": "included",
+   "unit": "ch9-u2",
+   "reason": "組織病理確診；washout PTH 769 pg/mL 對 washout Tg 0 ng/mL 的乾淨對比，可與 case 899 的 Tg 假性升高並置教學。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Parathyroid lesions - case 1597（細胞學誤判為疑似乳突癌）",
+   "url": "https://thyrosite.com/case_studies/thyroid/04parathyroid/1597/index.php",
+   "source": "thyrosite.com（Tamás Solymosi）",
+   "decision": "included",
+   "unit": "ch9-u2",
+   "reason": "外院 AUS/FLUS、重做細胞學出現核內包涵體被判疑似 papillary carcinoma，術後病理為副甲狀腺腺瘤；示範影像在細胞學誤導時的煞車作用。curl 200。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+   "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+   "source": "YouTube / AIUMultrasound（American Institute of Ultrasound in Medicine 官方頻道）",
+   "decision": "included",
+   "unit": "ch9-u3",
+   "reason": "第一級學會官方頻道，講者 Jennifer A. Sipos, MD（影片描述具名），主題正好是「甲狀腺以外的頸部超音波」。44:34、130,137 次觀看，oEmbed 200。作為 u3 主課。"
+  },
+  {
+   "title": "(ENG)Diagnosis of esophageal diverticulum on US",
+   "url": "https://www.youtube.com/watch?v=-n0tiRuBu_4",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "included",
+   "unit": "ch9-u3",
+   "reason": "9:42 專講上段食道憩室的超音波診斷，是內分泌門診最常見的甲狀腺結節誤判來源之一。oEmbed 200，觀看數 147（低於 minViews，已註明）。"
+  },
+  {
+   "title": "Ultrasound of Thyroglossal Duct Cyst",
+   "url": "https://www.youtube.com/watch?v=f4MPmWPdpvI",
+   "source": "YouTube / Radquarters（Daniel Kowal, MD, RMSK；頻道描述具名並註明為 board certified、fellowship trained 放射科醫師）",
+   "decision": "included",
+   "unit": "ch9-u3",
+   "reason": "8:05、23,270 次觀看，兩個非典型個案含 pseudo-solid 表現，作者可查核。oEmbed 200。"
+  },
+  {
+   "title": "Second branchial cleft cyst（Radiopaedia 條目）",
+   "url": "https://radiopaedia.org/articles/second-branchial-cleft-cyst",
+   "source": "Radiopaedia.org",
+   "decision": "included",
+   "unit": "ch9-u3",
+   "reason": "側頸囊性病灶的量化超音波特徵（後方回音增強 70%、壁不可辨 82%、pseudo-solid 12% 等）與鑑別清單，內容經渲染式擷取實際讀到。註記：直接 curl 回 406（bot 防護），一般瀏覽器可正常開啟，已在課程頁面說明。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Ultrasound of Parathyroid Adenoma",
+   "url": "https://www.youtube.com/watch?v=W8_4e2E9iXo",
+   "source": "YouTube / Radquarters（Daniel Kowal, MD, RMSK）",
+   "decision": "included",
+   "unit": "ch9-u4",
+   "reason": "6:38、20,657 次觀看，聚焦灰階特徵、polar vessel 與對淋巴結／甲狀腺結節的鑑別，正是 u4 流程的骨架。oEmbed 200。"
+  },
+  {
+   "title": "(ENG)Parathyroid Hormone Analysis in the FNA Samples",
+   "url": "https://www.youtube.com/watch?v=9_Xw5fAM47s",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "included",
+   "unit": "ch9-u4",
+   "reason": "3:36 專講 FNA 檢體的 PTH 分析，是全部搜尋中唯一直接示範 washout PTH 操作的公開影音。oEmbed 200，觀看數 38（遠低於 minViews，但主題稀缺且作者可查核）。"
+  },
+  {
+   "title": "Parathyroid adenoma（Radiopaedia 條目）",
+   "url": "https://radiopaedia.org/articles/parathyroid-adenoma",
+   "source": "Radiopaedia.org",
+   "decision": "included",
+   "unit": "ch9-u4",
+   "reason": "含 Doppler 段落（內部血流 85–97%、polar feeding vessel 來自 inferior thyroid artery）與完整鑑別診斷清單（淋巴結 fatty hilum／中央血流、偏心甲狀腺結節無 polar vessel、食道會動且有氣體），是本章 tight 判讀點最可引用的文字依據。內容經渲染式擷取實際讀到；直接 curl 回 406（bot 防護）。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Update on Preoperative Parathyroid Localization in Primary Hyperparathyroidism",
+   "url": "https://www.e-enm.org/journal/view.php?doi=10.3803%2FEnM.2022.1589",
+   "source": "Endocrinology and Metabolism (Seoul)／Korean Endocrine Society（通訊作者 Yumie Rhee，Yonsei）",
+   "decision": "included",
+   "unit": "ch9-u4",
+   "reason": "同儕審查回顧，分節討論超音波、放射核種影像、4D-CT、靜脈採樣。curl 200，頁面標示 CC BY-NC 4.0 開放取用。用來把 sestamibi／4D-CT 正確定位成「術前定位的補充工具」而非診斷工具。",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Parathyroid ultrasound when, why and how to do it? (Gerasimos Sykiotis)",
+   "url": "https://www.youtube.com/watch?v=PYAM_Gl4FA8",
+   "source": "YouTube / НМИЦ онкологии им. Н.Н. Петрова（VI St. Petersburg International Oncology Forum「White Nights」主辦單位頻道）",
+   "decision": "excluded",
+   "reason": "主題與受眾都極吻合（講者為洛桑大學醫院內分泌科），但 yt-dlp 查詢顯示該片既無人工字幕也無自動字幕，Tavily 也抓不到逐字稿，無法確認實際語音語言與是否有俄語配音／口譯覆蓋；依契約「非英文資源需可交叉驗證並註明字幕」的要求，暫不納入。若日後能確認為英語原音可直接升為 u1 備選主課。"
+  },
+  {
+   "title": "Ultrasound of the Neck There's More to See Than Thyroid Nodules",
+   "url": "https://www.youtube.com/watch?v=YhegLgK796Q",
+   "source": "YouTube / Radiology Video - radiology made esay",
+   "decision": "excluded",
+   "reason": "逐字稿確認講者為 Michelle Melany（Cedars-Sinai 女性影像主任、West LA VA 影像副主任），內容品質高；但上傳者是專門轉貼他人完整演講的聚合頻道，未見授權聲明，屬「未經授權重新上傳完整課程」的疑慮，不納入。"
+  },
+  {
+   "title": "Neck Masses Ultrasound other than Thyroid and parathyroid",
+   "url": "https://www.youtube.com/watch?v=ZcRvUeusV_E",
+   "source": "YouTube / EASY Radiology Plus",
+   "decision": "excluded",
+   "reason": "涵蓋面極佳（甲狀舌管囊腫、鰓裂囊腫、異位胸腺、淋巴管畸形、神經鞘瘤、食道憩室），逐字稿也顯示是真實的超音波講課；但頻道與影片描述均未具名講者，逐字稿內容顯示為某美國小兒放射科演講的轉貼，作者與授權皆無法確認，依契約排除。"
+  },
+  {
+   "title": "Imaging of Ultrasound in the Head & Neck（ENT Masterclass）／Imaging of Parathyroid Surgery（ENT Masterclass）",
+   "url": "https://www.youtube.com/watch?v=CPmIZpRc9fI",
+   "source": "YouTube / ENT Masterclass",
+   "decision": "excluded",
+   "reason": "oEmbed 回 401（停用嵌入），依契約視為不可用；另一支 Imaging of Parathyroid Surgery（DlgSiwUFeCY）同樣 401。"
+  },
+  {
+   "title": "(Silence)esophageal diverticulum misinterpreted as a thyroid nodule",
+   "url": "https://www.youtube.com/watch?v=74VI3Eo0xRI",
+   "source": "YouTube / KeepMyThyroid",
+   "decision": "excluded",
+   "reason": "內容正是本章需要的「食道憩室被誤判為甲狀腺結節」無旁白對照片，但 oEmbed 回 401（停用嵌入）；已在 ch9-u3 的 dose 中以文字指路，不列為正式資源。"
+  },
+  {
+   "title": "HN C7 Intrathyroidal PA US (A)／(B)、HN C7 Large PA US (A)／(B)",
+   "url": "https://www.youtube.com/watch?v=0kzZAGj5d0E",
+   "source": "YouTube / Essential Radiology by Professor Ahuja et al",
+   "decision": "excluded",
+   "reason": "Ahuja 教科書的隨書 21 秒無聲影像片段，主題（甲狀腺內副甲狀腺）完全命中，但片長低於 audit 的 drill 下限 0:30、觀看數僅 4–17 次，且無任何教學旁白；同主題已由 Solymosi 的病例影像＋完整病歷取代。留作日後備援。"
+  },
+  {
+   "title": "Monday, Ultrasound of Thyroid and Parathyroid glands, Chrysa Tzakouri",
+   "url": "https://www.youtube.com/watch?v=WgnT1YYNK9g",
+   "source": "YouTube / IAEAhumanhealth（國際原子能總署 Human Health Campus）",
+   "decision": "excluded",
+   "reason": "機構層級可靠、oEmbed 200，但 37:03 中甲狀腺部分佔比高、副甲狀腺內容比例不明，且無字幕與逐字稿可供內容查核；u1 已有更聚焦的 Ahuja 主課。列為候補。"
+  },
+  {
+   "title": "Carotid Body Tumor vs Lymphadenopathy",
+   "url": "https://www.youtube.com/watch?v=RBzFAIKKpTc",
+   "source": "YouTube / Sonographic Tendencies",
+   "decision": "excluded",
+   "reason": "2:10、8,112 次觀看，主題（把血管性腫塊誤認為淋巴結）與本章高度相關；但頻道描述只有機構性使命宣言，未具名作者或機構，作者無法確認，依契約排除。頸動脈體瘤／副神經節瘤的判讀要點已寫入 ch9-u3 的 tight。"
+  },
+  {
+   "title": "Ultrasound Case 24 - Neck Lipoma／Case 26 - Haemorrhagic 2nd Branchial Cleft Cyst／Case 27 - Carotid Body Tumor (Web case)",
+   "url": "https://www.youtube.com/watch?v=CeXPyC3Kw7o",
+   "source": "YouTube / Dr.Ismail Sayed Ismail",
+   "decision": "excluded",
+   "reason": "影像品質可用、觀看數 5,000–7,000，但影片描述一律為 NA、頻道無 about 頁（handle 查詢 404），且標題自註「Web case」顯示為轉載他站病例，來源與授權皆無法確認。"
+  },
+  {
+   "title": "Imaging of Cystic Neck Masses Part 1／2、Imaging of Benign Solid Neck Masses Part 1–3、Head-to-Head: Mass in the Carotid Sheath",
+   "url": "https://www.youtube.com/watch?v=g9D_w30Bu1o",
+   "source": "YouTube / Barton Branstetter (ENT Imaging Lectures)",
+   "decision": "excluded",
+   "reason": "Branstetter 為匹茲堡大學頭頸影像知名教師、作者明確；但這系列以 CT／MRI 斷層影像為主，缺乏動態超音波掃描，不符合本課程「必須有實際超音波動態影像」的納入條件。可作為跨模態延伸閱讀。"
+  },
+  {
+   "title": "Parathyroid（Barton Branstetter ENT Imaging Lectures）",
+   "url": "https://www.youtube.com/watch?v=UJp6DBtyv-A",
+   "source": "YouTube / Barton Branstetter (ENT Imaging Lectures)",
+   "decision": "excluded",
+   "reason": "oEmbed 200、作者明確，但內容以核醫與 CT 定位為主軸，超音波動態影像不足，且與 u4 已納入的 e-ENM 回顧重疊。"
+  },
+  {
+   "title": "Lecture By Prof Gaurav Agarwal on Parathyroid carcinoma",
+   "url": "https://www.youtube.com/watch?v=GMFVpwyUoKM",
+   "source": "YouTube / Telemedicine and Digital Health",
+   "decision": "excluded",
+   "reason": "1 小時 43 分，遠超 audit 的長度上限；且為外科取向的口頭演講，超音波影像比重低。"
+  },
+  {
+   "title": "Overview of Parathyroid Disease／Parathyroid adenoma vs parathyroid hyperplasia／Large ectopic parathyroid adenoma removal case study 等",
+   "url": "https://www.youtube.com/watch?v=jw2qj3C-haA",
+   "source": "YouTube / LarianMD（CENTER for Advanced Parathyroid Surgery，私人執業行銷頻道）",
+   "decision": "excluded",
+   "reason": "內容以病人衛教與診所行銷為主，缺乏利益揭露且無 fellow 層級的超音波判讀教學；Norman Parathyroid Center 系列（B1IjDjhd4M8、NTwNtKRS0Ac 等）同理排除。"
+  },
+  {
+   "title": "Diagnosis of Parathyroid Adenomas with New Ultrasound Imaging Modalities（3DParathyroid®）",
+   "url": "https://www.youtube.com/watch?v=0tSfw86520g",
+   "source": "YouTube / Wilmington Endocrinology Thyroid Media",
+   "decision": "excluded",
+   "reason": "113 秒的產品發表短片（3DParathyroid®），屬廠商／產品宣傳且無利益揭露，不得作為臨床證據。"
+  },
+  {
+   "title": "How to read a 4D parathyroid CT",
+   "url": "https://www.youtube.com/watch?v=vd-BJ6dYLPs",
+   "source": "YouTube / LearnNeuroradiology",
+   "decision": "excluded",
+   "reason": "純 4D-CT 判讀，沒有超音波動態影像；依團隊指示，僅有 sestamibi／4D-CT 的資源排除或標為補充，本章以 e-ENM 回顧一篇涵蓋即可。"
+  },
+  {
+   "title": "Parathyroid anatomy, physiology & normal ultrasound appearance",
+   "url": "https://www.youtube.com/watch?v=eNv0vvnd4u4",
+   "source": "YouTube / Sononerds",
+   "decision": "excluded",
+   "reason": "8:05、4,142 次觀看、影像清楚，但定位在超音波技師入門層級（解剖與生理複習），對已具備基本掃描能力的 fellow 過淺，依受眾規則排除。"
+  },
+  {
+   "title": "Parathyroid Ultrasound（EASY Radiology Plus）",
+   "url": "https://www.youtube.com/watch?v=WZ3XHPD6QCo",
+   "source": "YouTube / EASY Radiology Plus",
+   "decision": "excluded",
+   "reason": "11:49、9,767 次觀看，主題相符，但同頻道作者無法確認（見上），一併排除。"
+  },
+  {
+   "title": "Parathyroid adenoma with polar vessel sign（Radiopaedia 病例）",
+   "url": "https://radiopaedia.org/cases/parathyroid-adenoma-with-polar-vessel-sign",
+   "source": "Radiopaedia.org",
+   "decision": "excluded",
+   "reason": "名稱正中本章 tight 主題，但站內搜尋摘要顯示該病例以 4D-CT 為主要影像，非超音波；u4 改採 Radiopaedia 的 parathyroid adenoma 條目（含完整 Doppler 與鑑別段落）。"
+  },
+  {
+   "title": "Parathyroid adenoma（Radiopaedia case 46638，rID 46638，貢獻者 Hein Els）",
+   "url": "https://radiopaedia.org/cases/parathyroid-adenoma-11",
+   "source": "Radiopaedia.org",
+   "decision": "excluded",
+   "reason": "70 歲男性頸部可觸摸結節、有左葉切除病史，超音波病例，鑑別診斷明列腫大淋巴結、偏心甲狀腺結節與神經鞘瘤，教學價值高；本章 4 個單元各 3 個 drill 的配額已滿，列為第一順位候補。"
+  },
+  {
+   "title": "Thyroglossal duct cyst（Radiopaedia 條目）",
+   "url": "https://radiopaedia.org/articles/thyroglossal-duct-cyst",
+   "source": "Radiopaedia.org",
+   "decision": "excluded",
+   "reason": "內容已實際讀取確認（位置分布、超音波特徵、約 1–3% 惡性變且 >99% 為 papillary carcinoma）；u3 已納入 Radquarters 的甲狀舌管囊腫影片，為避免同一單元主題重複而改列 second branchial cleft cyst 條目。本條目可作延伸閱讀。"
+  },
+  {
+   "title": "Parathyroid glands／Parathyroid 4D CT（Radiopaedia 條目）",
+   "url": "https://radiopaedia.org/articles/parathyroid-glands",
+   "source": "Radiopaedia.org",
+   "decision": "excluded",
+   "reason": "正常副甲狀腺的超音波尺寸（平均 6.5 × 5 × 3.5 mm）與 4D-CT 的解剖搜尋順序寫得很清楚，但與 u1／u4 已納入資源重疊，列為候補。"
+  },
+  {
+   "title": "Evaluation and Management of Primary Hyperparathyroidism: Summary Statement and Guidelines from the Fifth International Workshop",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36245251/",
+   "source": "J Bone Miner Res 2022;37(11):2293-2314（PMID 36245251, DOI 10.1002/jbmr.4677）",
+   "decision": "excluded",
+   "reason": "PubMed 頁面 curl 200 確認存在；內容是本章 u4「定位影像不影響是否手術」這一 tight 判讀點的來源，但屬純文字指引、無影像教學，故以引用形式寫進 ch9-u4 的 dose，不佔用 drill 名額。出版社頁面（academic.oup.com）對自動化存取回 403。"
+  },
+  {
+   "title": "The Current Role of Parathyroid Fine-Needle Biopsy (P-FNAB)",
+   "url": "https://www.mdpi.com/2227-9059/10/1/123",
+   "source": "Biomedicines 2022（Obołończyk 等）",
+   "decision": "excluded",
+   "reason": "washout PTH 的完整回顧，但同樣無影像教學；u4 已有 KeepMyThyroid 的操作示範與 e-ENM 回顧，暫不重複收錄，列為文獻候補。"
+  },
+  {
+   "title": "thyrosite.com ETA 2026 Ultrasound Course 課前線上課程（13 場預錄講座）",
+   "url": "https://thyrosite.com/eta2026_us_course/start.php",
+   "source": "European Thyroid Association 第 47 屆年會超音波課程官方網站",
+   "decision": "excluded",
+   "reason": "curl 200，網站明載 13 場預錄講座含副甲狀腺與頸部淋巴結，是理想的第一級來源；但頁面明確聲明「available only for registered participants of the Ultrasound Course of the ETA Congress」，屬需註冊且限課程學員的內容，不納入公開課程，僅在此登錄供有註冊的學員自行取用。"
+  }
+ ]
+}

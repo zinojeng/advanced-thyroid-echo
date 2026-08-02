@@ -1,0 +1,350 @@
+{
+ "chapter": "CH10",
+ "searched": [
+  "yt-dlp ytsearch20: pediatric thyroid nodule ultrasound",
+  "yt-dlp ytsearch20: pediatric thyroid cancer ultrasound children guideline",
+  "yt-dlp ytsearch20: thyroid nodule in children management ATA pediatric",
+  "yt-dlp ytsearch20: thyroid nodule pregnancy management",
+  "yt-dlp ytsearch20: medullary thyroid carcinoma ultrasound MEN2",
+  "yt-dlp ytsearch20: prior neck irradiation thyroid nodule screening ultrasound",
+  "yt-dlp ytsearch20: multinodular goiter ultrasound evaluation",
+  "yt-dlp ytsearch20: substernal retrosternal goiter imaging",
+  "yt-dlp ytsearch20: secondary hyperparathyroidism dialysis parathyroid ultrasound",
+  "yt-dlp ytsearch20: incidental thyroid nodule CT MRI PET incidentaloma management",
+  "yt-dlp ytsearch20: neck hematoma ultrasound after thyroidectomy emergency",
+  "yt-dlp ytsearch20: thyroid nodule radiofrequency ablation follow up ultrasound",
+  "yt-dlp ytsearch20: thyroid incidentaloma FDG PET CT",
+  "yt-dlp ytsearch20: airway ultrasound difficult airway neck sonoanatomy",
+  "yt-dlp ytsearch20: ultrasound neck swelling emergency point of care",
+  "yt-dlp ytsearch20: thyroid ultrasound after thyroidectomy postoperative neck ultrasound recurrence",
+  "yt-dlp ytsearch20: familial nonmedullary thyroid cancer screening",
+  "yt-dlp ytsearch20: goiter tracheal compression ultrasound CT airway",
+  "yt-dlp ytsearch20: which nodule to biopsy multinodular goiter risk stratification",
+  "yt-dlp ytsearch20: thyroid ultrasound after radiofrequency ablation imaging follow-up appearance",
+  "yt-dlp ytsearch20: renal hyperparathyroidism neck ultrasound localization parathyroid hyperplasia",
+  "yt-dlp ytsearch20: goiter management endocrinology grand rounds nodular goiter approach",
+  "yt-dlp ytsearch20: thyroid ultrasound multinodular gland how many nodules to report",
+  "yt-dlp ytsearch15: Tamas Solymosi thyroid ultrasound edifying cases",
+  "yt-dlp ytsearch20: thyroid ultrasound elderly patient anaplastic rapid growing neck mass",
+  "yt-dlp ytsearch20: postoperative thyroid bed ultrasound scar suture granuloma pseudonodule",
+  "Europe PMC TITLE:\"2017 Guidelines of the American Thyroid Association ... Pregnancy and the Postpartum\"",
+  "Europe PMC TITLE:\"Managing Incidental Thyroid Nodules Detected on Imaging\"",
+  "Europe PMC TITLE:\"European Thyroid Association Guidelines for the Management of Pediatric Thyroid Nodules\"",
+  "Europe PMC TITLE:\"Revised American Thyroid Association guidelines for the management of medullary thyroid carcinoma\"",
+  "Europe PMC TITLE:\"substernal goiter\" AND OPEN_ACCESS:Y",
+  "Europe PMC TITLE:\"retrosternal goitre\" AND OPEN_ACCESS:Y",
+  "Europe PMC (TITLE:\"secondary hyperparathyroidism\" AND TITLE:\"ultrasound\") AND OPEN_ACCESS:Y",
+  "Europe PMC (TITLE:\"multinodular goiter\" AND TITLE:\"ultrasound\") AND OPEN_ACCESS:Y",
+  "Europe PMC (TITLE:\"incidental\" AND TITLE:\"thyroid\") AND OPEN_ACCESS:Y 2015-2023",
+  "Europe PMC TITLE:\"thyroid incidentaloma\" AND OPEN_ACCESS:Y",
+  "Europe PMC TITLE:\"thyroid cancer surveillance\" AND TITLE:\"survivors\"",
+  "Europe PMC (TITLE:\"radiation-induced\" AND TITLE:\"thyroid\") AND OPEN_ACCESS:Y",
+  "Unpaywall DOI 10.1016/j.ctrv.2017.11.005 / 10.1016/j.jacr.2014.09.038 / 10.1089/thy.2016.0457"
+ ],
+ "verification": {
+  "youtube": "每支影片以 yt-dlp ytsearch 取得 video ID，再以 https://www.youtube.com/oembed 驗證，全數 HTTP 200 且標題與頻道相符（2026-08-02）。yt-dlp 單片 metadata 抓取當日被 YouTube 以 429 / bot check 擋下，因此片長取自搜尋結果的 duration 欄位，影片描述僅能取得 flat-playlist 的截斷片段；未觀看全片者一律以 tier B/C 標示或在 why 中據實說明依據。",
+  "non_youtube": "以 curl -sL 實際取回頁面，確認 HTTP 200 並比對 <meta name=\"citation_title\">（2026-08-02）。liebertpub.com、karger.com、jacr.org、radiopaedia.org 於本次環境均回 403/406（Cloudflare bot 防護），故一律改用 PMC 或 PubMed 的可驗證入口。"
+ },
+ "evaluated": [
+  {
+   "title": "Imaging of the Pediatric Thyroid Practical Tips and Newer Technologies",
+   "url": "https://www.youtube.com/watch?v=oOKZaunJBj8",
+   "source": "YouTube / AIUM",
+   "decision": "included",
+   "unit": "ch10-u1",
+   "reason": "AIUM 官方 webinar，主講者為小兒放射科醫師 Janet Reid；建立兒童甲狀腺正常基準線，正是成人經驗最容易出錯之處"
+  },
+  {
+   "title": "Management of thyroid nodules in children ETA guidelines",
+   "url": "https://www.youtube.com/watch?v=JOxxf5KzTM8",
+   "source": "YouTube / Endo-ERN",
+   "decision": "included",
+   "unit": "ch10-u1",
+   "reason": "歐洲罕見內分泌疾病參考網絡官方講次，直接解說 ETA 兒童結節指引的穿刺門檻邏輯"
+  },
+  {
+   "title": "2022 European Thyroid Association Guidelines for the management of pediatric thyroid nodules and differentiated thyroid carcinoma",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9716393/",
+   "source": "European Thyroid Journal / PMC",
+   "decision": "included",
+   "unit": "ch10-u1",
+   "reason": "第一級來源，開放全文，條文本身即說明兒童不可沿用成人尺寸門檻",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Pediatric Thyroid Nodule & Cancer Case Review with Dr. Bauer",
+   "url": "https://www.youtube.com/watch?v=c1mczt5Gjf4",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch10-u1",
+   "reason": "病例式回顧，講者為 CHOP 小兒甲狀腺中心負責人；作為 tier B 病例補充"
+  },
+  {
+   "title": "Thyroid Nodules During Pregnancy with Dr. Spyridoula Maraka",
+   "url": "https://www.youtube.com/watch?v=ZZmGtD3ojq4",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch10-u2",
+   "reason": "整場聚焦孕期結節的診斷時機與 FNA 安全性，對應「孕期不敢動」這個處置落差"
+  },
+  {
+   "title": "Thyroid Cancer & Family History: Sonographic Screening Insights with Dr. Grani",
+   "url": "https://www.youtube.com/watch?v=zOTMaAvpJXA",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch10-u2",
+   "reason": "家族史者超音波篩檢的獲益與 overdiagnosis 代價，含量化討論"
+  },
+  {
+   "title": "Revised American Thyroid Association Guidelines for the Management of Medullary Thyroid Carcinoma",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4490627/",
+   "source": "American Thyroid Association / PMC",
+   "decision": "included",
+   "unit": "ch10-u2",
+   "reason": "MEN2 的第一級指引，開放全文；明確界定超音波在 RET 導向決策中的角色",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Balancing the benefits and harms of thyroid cancer surveillance in survivors of childhood, adolescent and young adult cancer (IGHG / PanCareSurFup)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29202445/",
+   "source": "Cancer Treatment Reviews / PubMed",
+   "decision": "included",
+   "unit": "ch10-u2",
+   "reason": "頸部輻射病史監測的國際共識；全文為訂閱制，摘要即載明主要建議，已在 access 欄標為 subscription",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Preoperative CT Assessment of a Thyroid Mass",
+   "url": "https://www.youtube.com/watch?v=uXXFUlbR78g",
+   "source": "YouTube / Barton Branstetter (ENT Imaging Lectures)",
+   "decision": "included",
+   "unit": "ch10-u3",
+   "reason": "頭頸影像次專科醫師示範術前 CT 回答哪些超音波回答不了的問題；胸骨後延伸與氣管壓迫的核心教材"
+  },
+  {
+   "title": "Malignancy rate in nondominant nodules in patients with multinodular goiter (1,606 cases)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3221080/",
+   "source": "CytoJournal / PMC",
+   "decision": "included",
+   "unit": "ch10-u3",
+   "reason": "以大型病例系列直接回答「只穿最大顆會漏掉多少」；開放全文",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Preoperative localization of parathyroid glands in secondary hyperparathyroidism: correlations between 99mTc-MIBI-SPECT/CT, ultrasound, and pathological characteristics",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11897698/",
+   "source": "Clinical Kidney Journal / PMC",
+   "decision": "included",
+   "unit": "ch10-u3",
+   "reason": "透析族群逐腺體偵測率與漏診位置，開放全文，2025 年新資料",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Managing FDG Avid Thyroid Nodules: Expert Insights with Dr. Wadsley",
+   "url": "https://www.youtube.com/watch?v=Yk0hNougD6s",
+   "source": "YouTube / THANC Foundation",
+   "decision": "included",
+   "unit": "ch10-u4",
+   "reason": "PET 意外發現的 focal vs diffuse uptake 處置差異，是其他影像轉來病灶中最易處理過度的一類"
+  },
+  {
+   "title": "Managing incidental thyroid nodules detected on imaging: white paper of the ACR Incidental Thyroid Findings Committee",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25456025/",
+   "source": "JACR / PubMed",
+   "decision": "included",
+   "unit": "ch10-u4",
+   "reason": "CT／MRI 意外發現的年齡與尺寸三段式分流準則；全文訂閱制，摘要即含門檻，已標 subscription",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "POCUS Guided Airway Management",
+   "url": "https://www.youtube.com/watch?v=PcVY_aFfu4A",
+   "source": "YouTube / MetroHealth Emergency Ultrasound",
+   "decision": "included",
+   "unit": "ch10-u4",
+   "reason": "急診與姿勢受限情境下的頸部氣道掃描技術；列為 tier C 技術示範，非臨床證據來源"
+  },
+  {
+   "title": "Multinodular Goiter: Evaluation and Management",
+   "url": "https://www.youtube.com/watch?v=szyX1JFpbUU",
+   "source": "YouTube / ECUIM (East Carolina University Internal Medicine Grand Rounds)",
+   "decision": "excluded",
+   "reason": "學術來源可信，但同頻道其他內容為 JNC VIII 時期（約 2013）；本片在 ACR TI-RADS (2017) 與 ATA 2015 之前，內容年代與現行分層系統版本無法確認，違反「使用過時分類卻未說明版本」條款"
+  },
+  {
+   "title": "Secondary & Tertiary Hyperparathyroidism: A Surgical Perspective – BCR PWR (Oct 2024)",
+   "url": "https://www.youtube.com/watch?v=VTBriNE3csI",
+   "source": "YouTube / BC Renal",
+   "decision": "excluded",
+   "reason": "來源與時效均佳，但內容以外科決策為主、超音波影像比重低；本章配額僅 10 個 drills，優先讓給直接談影像判讀的資源"
+  },
+  {
+   "title": "A patient with a substernal spreading nodular goiter. Other edifying cases - case 14",
+   "url": "https://www.youtube.com/watch?v=yAYgOUvX0DQ",
+   "source": "YouTube / Tamas Solymosi",
+   "decision": "excluded",
+   "reason": "實際超音波動態影像且主題精準，但僅 52 秒、無旁白教學結構，單獨作為 drill 的教學密度不足"
+  },
+  {
+   "title": "Substernal spread - moderate degree. Other edifying cases - case 13",
+   "url": "https://www.youtube.com/watch?v=NmEV1g0lu3g",
+   "source": "YouTube / Tamas Solymosi",
+   "decision": "excluded",
+   "reason": "同上，1 分 13 秒片段，缺少完整判讀說明"
+  },
+  {
+   "title": "Pediatric Thyroid Nodules and Cancer",
+   "url": "https://www.youtube.com/watch?v=ktLWYM18b6w",
+   "source": "YouTube / Stanford Otolaryngology — Head & Neck Surgery",
+   "decision": "excluded",
+   "reason": "品質合格但與已選入的 AIUM 與 Endo-ERN 兩支內容高度重疊；ch10-u1 配額僅 3 個 drills"
+  },
+  {
+   "title": "Thyroid and Neck Ultrasound - Pediatric US Multisite Conference February 2024",
+   "url": "https://www.youtube.com/watch?v=m6ZPyB4q6eQ",
+   "source": "YouTube / Pediatric Ultrasound Multisite Conference",
+   "decision": "excluded",
+   "reason": "多院聯合會議錄影，主題涵蓋整個小兒頸部超音波，聚焦度不如已選入的 AIUM webinar；列為備選"
+  },
+  {
+   "title": "Screening in Familial Non-Medullary Thyroid Cancer with Dr. Klubo-Gwiezdzinska",
+   "url": "https://www.youtube.com/watch?v=sWAjHNIQJPc",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "主題與已選入的 Grani 場次重疊；ch10-u2 配額僅 3 個 drills，該場的超音波影像比重較低"
+  },
+  {
+   "title": "Medullary Thyroid Carcinoma: A Surgeon's Perspective with Dr. Lorenz (Part 1)",
+   "url": "https://www.youtube.com/watch?v=lJAnLJ4H-N4",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "以外科處置為主，超音波判讀比重低；MEN2 段落改採 ATA 2015 MTC 指引原文"
+  },
+  {
+   "title": "Safe Thyroid Ablation Techniques Explained by Dr. Sinclair | ATA Guidelines",
+   "url": "https://www.youtube.com/watch?v=KF6FpgJv4sw",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "品質佳，但消融技術與消融後影像屬 CH5／CH11 範圍，本章不重複收錄"
+  },
+  {
+   "title": "Radiofrequency Ablation (RFA) in Microcarcinoma with Dr. Dueñas",
+   "url": "https://www.youtube.com/watch?v=Eb5Nj3u5SiU",
+   "source": "YouTube / THANC Foundation",
+   "decision": "excluded",
+   "reason": "同上，消融主題歸屬其他章節"
+  },
+  {
+   "title": "Interesting Case of the Week: Tracheal Deviation with Dr. Rashmi Roy",
+   "url": "https://www.youtube.com/watch?v=m9ToGjPuDeI",
+   "source": "YouTube / Thyroid Goiter Guru, Dr. Rashmi Roy",
+   "decision": "excluded",
+   "reason": "頻道為個人執業行銷取向（頻道名即含自我推廣），缺乏利益揭露；影像多為 CT 截圖而非動態掃描"
+  },
+  {
+   "title": "Airway US",
+   "url": "https://www.youtube.com/watch?v=89-pwCg25GI",
+   "source": "YouTube / Maine Medical Center Emergency Medicine Ultrasound",
+   "decision": "excluded",
+   "reason": "內容合格但僅 3 分 16 秒且為氣管辨識入門；已由 MetroHealth 的完整講次取代"
+  },
+  {
+   "title": "Substernal Goiter: From Definitions to Treatment",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9350059/",
+   "source": "Sisli Etfal Hastanesi Tip Bulteni / PMC",
+   "decision": "excluded",
+   "reason": "開放全文回顧，內容合格，但以外科定義與術式為主、影像判讀著墨少；ch10-u3 配額已滿，列為備選"
+  },
+  {
+   "title": "Retrosternal Goitre: Anatomical Aspects and Technical Notes",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951771/",
+   "source": "Medicina (Kaunas) / PMC",
+   "decision": "excluded",
+   "reason": "偏向手術解剖與技術，非影像判讀教材；ch10-u3 配額已滿"
+  },
+  {
+   "title": "The dilemma of 18F-FDG PET/CT thyroid incidentaloma: what we should expect from FNA. A systematic review and meta-analysis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8325664/",
+   "source": "Endocrine / PMC",
+   "decision": "excluded",
+   "reason": "開放全文且主題精準，但與已選入的 Wadsley 講次及 ACR 白皮書內容重疊；ch10-u4 配額僅 2 個 drills，列為備選"
+  },
+  {
+   "title": "2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28056690/",
+   "source": "Thyroid / ATA",
+   "decision": "excluded",
+   "reason": "第一級指引且 Unpaywall 顯示為開放取用，但出版社頁面（liebertpub.com）在本次驗證中一律被 Cloudflare 擋為 403，無法確認實際可讀；孕期段落已由 Maraka 的主課涵蓋，故不以未驗證通過的連結充數"
+  },
+  {
+   "title": "Management Guidelines for Children with Thyroid Nodules and Differentiated Thyroid Cancer (ATA 2015 pediatric)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4854274/",
+   "source": "Thyroid / ATA / PMC",
+   "decision": "excluded",
+   "reason": "已驗證 200 且開放全文，但與選入的 ETA 2022 指引功能重疊；ETA 2022 版本較新，故僅在 ch10-u1 的 assessment 中要求學員一併對照 ATA 2015"
+  },
+  {
+   "title": "Managing Incidental Thyroid Nodules — ACR Incidental Findings 專區",
+   "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Incidental-Findings",
+   "source": "American College of Radiology",
+   "decision": "excluded",
+   "reason": "頁面回 200，但白皮書清單由 JavaScript 動態載入，靜態取回的頁面沒有可直接連到甲狀腺白皮書的網址；改用 PubMed 記錄作為可驗證入口"
+  },
+  {
+   "title": "Retrosternal goitre（Radiopaedia 條目）",
+   "url": "https://radiopaedia.org/articles/retrosternal-goitre",
+   "source": "Radiopaedia",
+   "decision": "excluded",
+   "reason": "curl 回 406（bot 防護），本次無法完成驗證，依鐵則不納入未實際打開的連結",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "title": "Thyroid Nodules During Pregnancy 等 ThyCa 病友會場次（多支）",
+   "url": "https://www.youtube.com/@ThyCaInc",
+   "source": "YouTube / ThyCa: Thyroid Cancer Survivors' Association",
+   "decision": "excluded",
+   "reason": "受眾為病友，內容以衛教與問答為主，缺乏 fellow 層級的影像判讀；不符本課程受眾設定"
+  },
+  {
+   "title": "Ultrasound cases N of 2000 || Multinodular Goiter 系列（多支）",
+   "url": "https://www.youtube.com/@unifiedmedicare",
+   "source": "YouTube / Unified Medicare",
+   "decision": "excluded",
+   "reason": "只有影像片段、無判讀教學與作者資歷說明，且部分影片畫面可能含病人識別資訊，依排除條款不收"
+  },
+  {
+   "title": "RFAMD︱Doctor Thyroid、Save Your Thyroid、Clayman Thyroid Cancer Center 等頻道（多支）",
+   "url": "https://www.youtube.com/@RFAMD",
+   "source": "YouTube",
+   "decision": "excluded",
+   "reason": "執業推廣導向、缺乏利益揭露，且將單一療法呈現為普遍建議"
+  },
+  {
+   "title": "Dr. Maria Papaleontiou — Older Thyroid Cancer Patients and Issues to Consider for Treatment",
+   "url": "https://www.youtube.com/watch?v=lQ_PD1HlCN8",
+   "source": "YouTube / RFAMD︱Doctor Thyroid",
+   "decision": "excluded",
+   "reason": "講者本身具權威性，但託管頻道為執業推廣導向且無利益揭露；內容亦無超音波影像。高齡族群因此在本章未取得合格資源，改以 ch10-u2 的 tight／assessment 涵蓋"
+  }
+ ],
+ "gaps": [
+  {
+   "topic": "高齡病人（elderly）",
+   "unit": "ch10-u2",
+   "status": "未取得合格資源",
+   "detail": "查過 'thyroid ultrasound elderly patient anaplastic rapid growing neck mass' 與 THANC／ThyCa 相關場次。唯一針對高齡的專講掛在執業推廣頻道且無影像。已改以 ch10-u2 的 tight 與 weak 條目涵蓋（快速增大、固定、侵犯周邊 vs 慢性多結節腫），不以低品質資源充數。"
+  },
+  {
+   "topic": "急診頸部出血／術後血腫",
+   "unit": "ch10-u4",
+   "status": "未取得合格資源",
+   "detail": "查過 'neck hematoma ultrasound after thyroidectomy emergency'、'ultrasound neck swelling emergency point of care'，回傳結果多為整形外科血腫、扁桃腺周圍膿瘍或兒童淋巴結炎，無甲狀腺術後血腫的超音波教學。改以 MetroHealth 的氣道 POCUS 講次涵蓋「先看氣道再看甲狀腺」這一步，並在 tight 條目寫明。"
+  },
+  {
+   "topic": "術後解剖變形與消融後影像",
+   "unit": "ch10-u4",
+   "status": "刻意不重複收錄",
+   "detail": "術後甲狀腺床追蹤屬 CH8、消融技術與消融後影像屬 CH5／CH11，本章不重複佔用配額；已在 ch10-u4 的 tight 中保留判讀陷阱條目。"
+  }
+ ]
+}

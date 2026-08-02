@@ -1,0 +1,558 @@
+{
+  "chapter": "CH4",
+  "title": "結節描述語言與風險分層",
+  "units": [
+    {
+      "id": "ch4-u1",
+      "name": "標準化 lexicon：composition、echogenicity、shape、margin、echogenic foci",
+      "type": "lexicon",
+      "assessment": "連續取自己門診的 10 顆結節，每顆先在不看舊報告的情況下寫出五個 ACR TI-RADS feature category（composition、echogenicity、shape、margin、echogenic foci）的 descriptor，並額外註記有無 halo、有無 capsule contact、有無 comet-tail artifact。三天後在不看第一次紀錄的情況下重做一次，計算自己兩次之間 descriptor 完全一致的比例；再請同科一位醫師獨立判讀同一批影像，算出兩人一致率。針對不一致的欄位，回頭對照 ACR TI-RADS Atlas 找出自己用的定義和白皮書定義差在哪裡，逐條寫下修正後的判讀規則。",
+      "tight": [
+        "把 spongiform 誤用成「只要有一些小囊狀變化就算」——ACR 與 ATA 的定義都要求微囊佔據結節絕大部分體積，判錯會直接把 TR1 變成 TR3 以上",
+        "把 comet-tail artifact 一律當成良性膠質：只有大型（>1 mm）且位於囊性成分內的 comet-tail 才算良性訊號，實質內短小的迴響仍可能是微鈣化",
+        "把 halo 當成獨立的良惡性依據——halo 不是 ACR TI-RADS 的計分項目，薄而完整的 halo 只是輔助訊息，不能拿來抵銷 punctate echogenic foci",
+        "partially cystic nodule 只描述「囊實混合」而不描述實質部分的 echogenicity、margin 與偏心程度，導致下游無法計分",
+        "echogenicity 沒有和 strap muscle 對照就宣稱 markedly hypoechoic，把 TR4 灌水成 TR5"
+      ],
+      "weak": [
+        "能在單一張靜態影像上獨立說出五個 feature category 的 descriptor，而不是先下結論再回頭找特徵",
+        "能區分 punctate echogenic foci、macrocalcification、rim（peripheral）calcification 與 comet-tail artifact 四者",
+        "能對 partially cystic nodule 只針對實質成分描述形狀、邊緣與 echogenic foci",
+        "知道自己對哪幾個 descriptor 的判讀最不穩定，並能用文字定義而非印象來校正"
+      ],
+      "lesson": {
+        "title": "ACR TI-RADS Webinar Part I: This Is How We Do It",
+        "channel": "American College of Radiology",
+        "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
+        "duration": "59:20",
+        "why": "由 ACR TI-RADS (2017) 白皮書的作者群 Tessler、Middleton、Hoang 親自逐項示範五個 feature category 與 18 個 descriptor 的判定方式，解決「同一顆結節不同人講出不同 descriptor」這個最上游的判讀落差；由發布單位 ACR 官方頻道釋出，版本歸屬明確。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道（American College of Radiology），本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "ACR TI-RADS 官方圖譜",
+          "en": "ACR TI-RADS Atlas",
+          "kind": "atlas",
+          "target": "用官方影像把 lexicon 的每一個 descriptor 對上實際影像，特別是 spongiform、大型 comet-tail artifact、punctate echogenic foci 與 macrocalcification 的邊界情形",
+          "dose": "不要從頭翻到尾。先自己在門診影像上寫下 descriptor，遇到不確定的那一項再翻到圖譜對應章節；建議至少把 echogenic foci 與 composition 兩節的每一張範例都看過，這兩節是 interobserver 分歧最大的地方。",
+          "title": "ACR TI-RADS Atlas",
+          "channel": "American College of Radiology",
+          "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Atlas.pdf",
+          "tier": "A",
+          "source_type": "atlas",
+          "provider": "society",
+          "access": "open",
+          "license": "© American College of Radiology，官方公開 PDF，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "兩個內分泌學會成員對結節超音波特徵的判讀一致性",
+          "en": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+          "kind": "lecture",
+          "target": "看見 lexicon 的 interobserver agreement 實際有多低，並由白皮書通訊作者 Tessler 當場重講一遍 5 個 feature category 與 18 個 descriptor 的定義",
+          "dose": "先自己猜「哪一個 descriptor 的判讀者間一致性最差」再看 09:20 的結果；Tessler 的定義複習從 19:34 開始，可當成 lexicon 的第二次校正。",
+          "title": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=r9jwnXoUMIA",
+          "duration": "59:44",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（THANC Foundation），本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            {"at": "09:20", "note": "以 AC1 = 0.6 為分界呈現各特徵的判讀者間一致性"},
+            {"at": "19:34", "note": "Tessler 逐一講解 ACR TI-RADS 的 5 個 feature category 與 18 個 descriptor"},
+            {"at": "40:10", "note": "討論與 Q&A"}
+          ]
+        },
+        {
+          "name": "spongiform 的判定門檻",
+          "en": "Spongiform thyroid nodule",
+          "kind": "case",
+          "cat_hint": "標準化描述語言：composition 與 spongiform 的定義門檻",
+          "target": "看清楚 TI-RADS 定義下的 spongiform 到底要「微囊佔多少比例」，避免把一般 partially cystic nodule 誤標成 spongiform",
+          "dose": "只有 44 秒，建議連看三次：第一次不看旁白自己判，第二次聽定義，第三次回頭找自己門診裡曾標成 spongiform 的結節重新檢查。",
+          "title": "Spongiform thyroid nodule",
+          "channel": "Radiology educational videos",
+          "url": "https://www.youtube.com/watch?v=Q7O8tNAQZEc",
+          "duration": "0:44",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "超音波 lexicon 分類的判讀者間比較：單中心前瞻驗證",
+          "en": "An Interobserver Comparison of the Ultrasound Lexicon Classification of Thyroid Nodules: A Single-Center Prospective Validation Study",
+          "kind": "guideline",
+          "target": "取得 lexicon 各項 descriptor 的 interobserver 一致性數據，作為自我校正時「什麼程度的分歧算正常」的參考基準",
+          "dose": "直接看方法與結果表，重點放在哪些 descriptor 的 kappa 最低；把這幾項標成自己 assessment 時要重複量兩次的欄位。",
+          "title": "An Interobserver Comparison of the Ultrasound Lexicon Classification of Thyroid Nodules: A Single-Center Prospective Validation Study",
+          "channel": "Journal of Clinical Medicine（PMC 免費全文）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11856384/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文；重製授權條款未逐項確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch4-u2",
+      "name": "測量平面、taller-than-wide 與大小量測的再現性",
+      "type": "lexicon",
+      "assessment": "挑 8 顆最大徑 1–3 cm 的結節，每顆在同一次檢查中做兩件事：(1) 在橫切面（transverse）與縱切面（longitudinal）分別量 AP 徑與最大水平徑，各判一次 taller-than-wide，記錄兩個平面是否給出相同答案；(2) 同一顆結節間隔 5 分鐘、重新放探頭後再量一次三軸長度，算出兩次最大徑的差異百分比。統計自己的最大徑重測差異超過 20% 的比例，以及 taller-than-wide 在兩個平面答案不同的比例；對答案不同的結節，寫下你最後採用哪個平面、依據哪一份系統的規定。",
+      "tight": [
+        "在縱切面判 taller-than-wide——ACR TI-RADS (2017) 與 ATA 2015 都指定用橫切面（axial/transverse plane）比較 AP 徑與橫徑",
+        "把 taller-than-wide 當成穩定屬性：同一顆結節在不同次檢查、不同壓力與不同切面可能翻轉，尤其在接近 1:1 的邊界值",
+        "探頭壓迫造成 AP 徑被壓扁，讓真正 taller-than-wide 的結節在影像上變成 wider-than-tall",
+        "追蹤時比較的是「不同技師量的最大徑」而不是同一平面同一測法，把量測變異當成生長",
+        "只用最大徑一個數字決定 FNA 門檻，卻沒注意各系統的 size cut-off 是綁在最大徑還是綁在特定分類上"
+      ],
+      "weak": [
+        "能在橫切面上以正確方式判定 taller-than-wide，並知道邊界值附近要重測",
+        "能估計自己量測的重測變異幅度，並據此決定「多少變化才算真的長大」",
+        "能判斷一次追蹤的大小差異是真實生長還是量測誤差，避免把量測噪音當成惡性訊號",
+        "能對 partially cystic 與不規則形結節選出可重現的測量平面並在報告中寫明"
+      ],
+      "lesson": {
+        "title": "ACR TI-RADS: Beyond the Chart-- William Middleton, MD (SRU 2021)",
+        "channel": "Meetings By Mail Presents...",
+        "url": "https://www.youtube.com/watch?v=s5o2nOI_7mk",
+        "duration": "16:13",
+        "why": "ACR TI-RADS (2017) 委員會成員 Middleton 在 Society of Radiologists in Ultrasound 2021 年會的演講，專講「照著表格打勾之外」的實務判斷，包含測量與形狀判定這類 chart 上沒寫清楚的地方；由 SRU 年會官方 CME 發行商 Meetings-By-Mail 釋出的節錄。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道（Meetings By Mail，SRU 年會 CME 發行商），本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "ACR TI-RADS 病例複習與常見問答",
+          "en": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
+          "kind": "lecture",
+          "target": "以病例與 Q&A 形式釐清「哪個平面判 taller-than-wide」「多顆結節怎麼選要量哪一顆」「大小要量到哪裡」這類 chart 沒回答的操作問題",
+          "dose": "把它當成問答庫而不是講座：先把自己在量測上卡住的三個問題寫下來，再看作者群怎麼回答；由 ACR TI-RADS (2017) 原作者群主講，回答具版本權威性。",
+          "title": "ACR TI-RADS Webinar Part II: Case Based Review & Frequently Asked Questions",
+          "channel": "American College of Radiology",
+          "url": "https://www.youtube.com/watch?v=Y9JU2i4IF-M",
+          "duration": "59:52",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（American College of Radiology），本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "甲狀腺結節超音波量測的觀察者內與觀察者間變異",
+          "en": "Intraobserver and Interobserver Variability in Ultrasound Measurements of Thyroid Nodules",
+          "kind": "guideline",
+          "target": "取得「同一人重量」與「不同人重量」的實際變異幅度，用來定義自己判斷結節生長的最小可信變化量",
+          "dose": "重點在結果段的變異區間。看完後回頭檢查自己過去 12 個月裡，有多少次「結節長大了」的判讀其實落在量測誤差範圍內。連結為 PubMed 摘要頁；期刊全文（Journal of Ultrasound in Medicine）需訂閱。",
+          "title": "Intraobserver and Interobserver Variability in Ultrasound Measurements of Thyroid Nodules",
+          "channel": "Journal of Ultrasound in Medicine（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28736947/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "PubMed 摘要頁為公開；期刊全文需訂閱，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "靜態影像 vs. cine-loop 對風險分層一致性的影響",
+          "en": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
+          "kind": "guideline",
+          "target": "理解「拿幾張存檔靜態圖判讀」和「看動態掃描判讀」會得到不同的 interobserver 一致性，直接影響你要存什麼影像給下一位判讀者",
+          "dose": "看完後檢查自己現行的影像存檔政策：每顆結節是否至少存了橫切與縱切、是否存了 cine-loop。這篇的結論應該改變你的存檔習慣，而不只是增加知識。",
+          "title": "Interobserver Agreement in Ultrasound Risk Stratification Systems for Thyroid Nodules on Static Images Versus Cine-Loop Video Sequences",
+          "channel": "Diagnostics（PMC 免費全文）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11475346/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文；重製授權條款未逐項確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch4-u3",
+      "name": "ACR TI-RADS (2017)：計分規則、FNA 與追蹤門檻",
+      "type": "lexicon",
+      "assessment": "取 15 顆結節，逐顆用 ACR TI-RADS (2017) 的五個 feature category 加總分數，寫出 TR 級別、對應的 FNA size cut-off 與追蹤 size cut-off，並註明是「建議 FNA」「建議追蹤」還是「不需處理」。接著把你實際發出的報告拿來比對，統計三件事：(1) 有多少顆你的實際建議比 ACR TI-RADS 更積極；(2) 有多少顆更保守；(3) 每一顆不一致的原因屬於計分錯誤、size cut-off 記錯，還是有意識地因臨床因素偏離。最後把計分錯誤的那幾顆回頭對照白皮書表格找出錯在哪一個 category。",
+      "tight": [
+        "echogenic foci 的分數是可以疊加的（例如同時有 macrocalcification 與 punctate echogenic foci），composition 與 echogenicity 則只能各取一項",
+        "TR3 與 TR4 的 FNA size cut-off 不同（分別是 2.5 cm 與 1.5 cm），追蹤 cut-off 又是另一組數字，背錯門檻比算錯分數更常見",
+        "TR5 的 FNA cut-off 是 1 cm，但小於 1 cm 的 TR5 並不是「不用管」，白皮書另有追蹤建議",
+        "把「不確定的 composition」預設打 0 分，會系統性低估分數；白皮書對無法判定的情形有明確處理方式",
+        "把 vascularity 加進計分——ACR TI-RADS (2017) 並不把血流納入計分項目"
+      ],
+      "weak": [
+        "能在不看表格的情況下把一顆結節算到正確的 TR 級別",
+        "能背出 TR3/TR4/TR5 各自的 FNA 與 follow-up size cut-off，並知道 TR1/TR2 不需要 FNA",
+        "能寫出符合 ACR 結構化模板的報告文字，讓下游臨床醫師直接看得到分數與建議",
+        "能說出 ACR TI-RADS 相較於未分層報告在減少不必要穿刺上的實際效果與其代價"
+      ],
+      "lesson": {
+        "title": "ACR TI-RADS Overview and Approach",
+        "channel": "Jenny Hoang",
+        "url": "https://www.youtube.com/watch?v=lAeyb-QrXm4",
+        "duration": "10:56",
+        "why": "由 ACR TI-RADS (2017) 白皮書共同作者 Jenny Hoang 在系統公布當年錄製的十分鐘完整計分示範，把 composition/echogenicity/shape/margin/echogenic foci 五項如何加總、如何對到 FNA 門檻一次講完；適合當作每次判讀前的快速校正。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "ACR TI-RADS 白皮書原文（2017）",
+          "en": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+          "kind": "guideline",
+          "target": "回到原始文件確認每一個 descriptor 的分數、每一級的 FNA 與 follow-up 門檻，以及委員會當初排除 vascularity 與 halo 的理由",
+          "dose": "不要只看那張人人都在轉貼的計分圖。至少讀完 descriptor 定義段與 management recommendation 段；DOI 解析後導向 Elsevier 全文頁（J Am Coll Radiol 2017;14(5):587-595），摘要公開、全文需訂閱或機構權限。",
+          "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+          "channel": "Journal of the American College of Radiology",
+          "url": "https://doi.org/10.1016/j.jacr.2017.01.046",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "© Elsevier／American College of Radiology，全文需訂閱；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "ACR TI-RADS 分級與處置對照表",
+          "en": "ACR TI-RADS Assessment Categories",
+          "kind": "guideline",
+          "target": "把 TR1–TR5 的分數區間、FNA size cut-off 與 follow-up size cut-off 記到不用查表",
+          "dose": "印出來壓在超音波機旁邊，判讀時先自己說出級別與門檻再核對。ACR 官網同一頁另有 sonographer worksheet 與結構化報告模板可一併下載。",
+          "title": "ACR TI-RADS Assessment Categories",
+          "channel": "American College of Radiology",
+          "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Assessment-Categories.pdf",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "© American College of Radiology，官方公開 PDF，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "ACR TI-RADS 結構化報告模板",
+          "en": "ACR TI-RADS Structured reporting template",
+          "kind": "procedure",
+          "target": "學會把計分結果寫成下游臨床醫師可直接執行的報告文字，而不是只在結論寫「建議追蹤」",
+          "dose": "邊看邊改自己現行的報告範本；改完後拿最近三份報告重寫一次，比較改寫前後臨床端需要打電話追問的次數。",
+          "title": "ACR TI-RADS Structured reporting template",
+          "channel": "Jenny Hoang",
+          "url": "https://www.youtube.com/watch?v=P7GHtG_9GvQ",
+          "duration": "9:39",
+          "tier": "A",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "為什麼要採用 ACR TI-RADS：證據回顧",
+          "en": "TI-RADS Thyroid Imaging Reporting and Data System Webinar Part III",
+          "kind": "lecture",
+          "target": "看清楚 ACR TI-RADS (2017) 減少不必要穿刺的證據強度，以及它在敏感度上付出的代價",
+          "dose": "這一集是三集系列的最後一集，重點不在計分而在證據；帶著「我要不要在自己的單位全面導入」這個問題來看，並注意講者引用的研究是回溯性還是前瞻性。",
+          "title": "TI-RADS Thyroid Imaging Reporting and Data System Webinar Part III",
+          "channel": "American College of Radiology",
+          "url": "https://www.youtube.com/watch?v=fsWAle6u-uE",
+          "duration": "1:00:34",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（American College of Radiology），本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch4-u4",
+      "name": "ATA 2015 sonographic pattern 與 EU-TIRADS 2017",
+      "type": "lexicon",
+      "assessment": "取 12 顆結節，先用 ATA 2015 的五個 sonographic pattern（high suspicion／intermediate suspicion／low suspicion／very low suspicion／benign）各判一次，寫出對應的預估惡性風險區間與 FNA size cut-off；再用 EU-TIRADS 2017 的 EU-TIRADS 2–5 判一次，同樣寫出風險與 cut-off。統計兩個系統給出不同 FNA 建議的顆數，並針對每一顆不一致的結節指出差異來自哪一個影像特徵（最常見的是等回音實質結節、macrocalcification 與 partially cystic 的歸類）。最後寫一段話說明：如果你的醫院同時有內分泌科與放射科在用不同系統，你會怎麼在報告中同時呈現。",
+      "tight": [
+        "ATA 2015 的 pattern 是「整體型態配對」而不是逐項加分，硬套 ACR 的加分邏輯會判錯",
+        "ATA 2015 有一類結節「不符合任何 pattern」（例如等回音／高回音但無其他特徵的實質結節），這一類的處理常被忽略",
+        "macrocalcification 在 ATA 2015 架構下不會單獨把非 high-suspicion 結節升級，把它當成強力惡性訊號會導致過度穿刺",
+        "EU-TIRADS 2017 對 EU-TIRADS 5 的定義高度依賴單一 high-risk 特徵，和 ACR 的累加分數行為明顯不同",
+        "版本問題：ATA 於 2025 年發布的是 differentiated thyroid cancer 管理指引（Thyroid 2025;35(8):841-985），結節超音波 pattern 的正式來源仍是 2015 年版（Thyroid 2016;26(1):1-133）——引用時務必寫清楚是哪一份"
+      ],
+      "weak": [
+        "能把一顆結節配對到正確的 ATA 2015 sonographic pattern，並說出該 pattern 的預估惡性風險與 size cut-off",
+        "能判定 EU-TIRADS 2017 的級別並說出對應的 FNA 門檻",
+        "能指出兩個系統在 partially cystic、等回音實質結節與 macrocalcification 上的處理差異",
+        "能在報告中同時交代 pattern 與級別，讓不同科別讀者都能接上自己習慣的系統"
+      ],
+      "lesson": {
+        "title": "Thyroid Nodule Guidelines Update Panel Discussion with Dr. Mandel",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=GIVyh30Gygg",
+        "duration": "58:39",
+        "why": "2025 年 8 月錄製的專家小組討論，由 ATA 2015 結節超音波章節的主要作者 Susan Mandel 主講，Jill Langer、Erik Alexander、Mark Urken 參與討論，直接處理「ATA 2015 的 sonographic pattern 現在還怎麼用、哪裡正在改」這個版本落差問題。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道（THANC Foundation），本站僅連結",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "03:49", "note": "Mandel 的主題報告開始"},
+          {"at": "48:52", "note": "四人討論與 Q&A"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "ATA 2015 成人甲狀腺結節與分化型甲狀腺癌處置指引原文",
+          "en": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+          "kind": "guideline",
+          "target": "回到原文確認五個 sonographic pattern 的定義、各自的預估惡性風險區間與 FNA size cut-off，以及「不符合任何 pattern」時的處理",
+          "dose": "只需要讀 Recommendation 8 附近的超音波章節與對應的 Figure；不必讀完 133 頁。原始出處為 Thyroid 2016;26(1):1-133（DOI 10.1089/thy.2015.0020，該 DOI 目前導向 SAGE 並回 403），此處連到 PMC 免費全文。",
+          "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+          "channel": "Thyroid（PMC 免費全文）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4739132/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文，版權歸 Mary Ann Liebert／American Thyroid Association；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "EU-TIRADS 2017 原文（European Thyroid Association 指引）",
+          "en": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+          "kind": "guideline",
+          "target": "掌握 EU-TIRADS 2017 的 2–5 級定義、各級預估惡性風險與 FNA size cut-off，並看出它和 ACR 累加分數在設計哲學上的差別",
+          "dose": "重點讀 EU-TIRADS 級別定義表與該表下方對「哪些特徵屬 high-risk」的界定；讀完後回頭把自己 u3 算過的 15 顆結節重判一次。原文為 Eur Thyroid J 2017;6(5):225-237（DOI 10.1159/000478927，該 DOI 導向 Bioscientifica 並回 403），此處連到 PMC 免費全文。",
+          "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS",
+          "channel": "European Thyroid Journal（PMC 免費全文）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5652895/",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "PMC 提供免費全文，版權歸 Karger／European Thyroid Association；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "macrocalcification 在 ATA sonographic pattern 架構下的意義",
+          "en": "Macrocalcifications and Malignancy Risk Within the ATA Sonographic Pattern System with Dr. Kobaly",
+          "kind": "lecture",
+          "target": "看清楚在非 high-suspicion 結節中，macrocalcification 並未改變惡性風險，藉此校正「看到粗鈣化就想穿刺」的直覺",
+          "dose": "先寫下你目前對 macrocalcification 的處理原則，再從 07:47 的文獻回顧看起；45:51 之後講的是這個結論對日常判讀的實際影響，不要跳過。",
+          "title": "Macrocalcifications and Malignancy Risk Within the ATA Sonographic Pattern System with Dr. Kobaly",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=2tCJ05wDIyQ",
+          "duration": "1:00:09",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（THANC Foundation），本站僅連結",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            {"at": "07:47", "note": "甲狀腺結節鈣化的既有文獻回顧"},
+            {"at": "25:42", "note": "macrocalcification 的後續研究方向"},
+            {"at": "45:51", "note": "為什麼分析 macrocalcification 會改變日常處置"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch4-u5",
+      "name": "K-TIRADS 2021 與其他區域性系統",
+      "type": "lexicon",
+      "assessment": "取 12 顆結節（其中至少 4 顆為 partially cystic、至少 3 顆最大徑介於 1–1.5 cm），逐顆用 K-TIRADS 2021 判出 K-TIRADS 2–5 級與對應的 FNA size cut-off，並特別記錄 K-TIRADS 對 1 cm 以下高度懷疑結節、以及對 partially cystic nodule 中偏心實質部分的處理方式。接著把同一批結節用 C-TIRADS (2020) 的加減分規則再判一次。最後統計：K-TIRADS 與 C-TIRADS 給出不同 FNA 建議的顆數，並寫下你認為在自己的病人族群（盛行率、轉診型態、健檢比例）中，哪一個系統的 size cut-off 比較合適，理由是什麼。",
+      "tight": [
+        "K-TIRADS 2021 是 2021 年版（Korean J Radiol 2021;22(12):2094-2123），和 2016 年的初版在 FNA size cut-off 與 category 定義上都有改動，引用舊版會給出不同建議",
+        "K-TIRADS 對 partially cystic nodule 的判定看的是實質部分的特徵與偏心程度，直接套用整顆結節的回音強度會判錯級別",
+        "K-TIRADS 對 1 cm 以下結節的 FNA 態度與 ACR TI-RADS 不同，套錯系統會系統性地改變小結節穿刺率",
+        "C-TIRADS (2020) 是「加分再扣分」的設計：良性徵象會扣 1 分，若只記得加分規則會高估分數",
+        "把韓國、中國族群衍生的 cut-off 直接搬到自己的病人族群，卻沒考慮甲狀腺癌篩檢盛行率差異造成的預測值變化"
+      ],
+      "weak": [
+        "能在不看表的情況下判出 K-TIRADS 2021 的級別與 FNA size cut-off",
+        "能對 partially cystic nodule 正確地只針對實質成分判級",
+        "能說出 C-TIRADS (2020) 的加減分規則與它和 ACR TI-RADS 在設計上的差異",
+        "能評估某個區域性系統的 cut-off 是否適用於自己的病人族群，而不是預設「最新的最好」"
+      ],
+      "lesson": {
+        "title": "2022년 11월 13일 알피니언 초음파 아카데미 - 갑상선 K-TIRADS 2021에 의한 평가(Dr.김일봉)",
+        "channel": "김일봉",
+        "url": "https://www.youtube.com/watch?v=0si9r8pVPoo",
+        "duration": "38:45",
+        "why": "少數專門講 K-TIRADS 2021 版（2021 年 12 月公布於 Korean Journal of Radiology）並附大量實際掃描畫面的完整課程，直接示範韓國臨床端怎麼用這一版分級；韓文授課、無官方英文字幕，但影像與分級標註可獨立閱讀，內容須以 K-TIRADS 2021 原文交叉核對（見本單元第一個資源）。",
+        "tier": "B",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道，本站僅連結",
+        "coi": "本場次為超音波設備商 Alpinion（알피니언）超音波學院的課程錄影；講者與該廠商的財務關係未公開揭露，內容中的機器設定示範應視為廠商教育內容，分級規則仍須以 K-TIRADS 2021 原文為準。",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "K-TIRADS 2021 原文（大韓甲狀腺影像醫學會共識聲明）",
+          "en": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+          "kind": "guideline",
+          "target": "取得 K-TIRADS 2021 的完整分級定義、FNA 與追蹤 size cut-off，以及對 partially cystic nodule 與 1 cm 以下結節的明確處理原則",
+          "dose": "讀分級定義表與 management algorithm 兩節即可；讀完後把 u3、u4 判過的結節重判一次並記錄差異。原文為 Korean J Radiol 2021;22(12):2094-2123（DOI 10.3348/kjr.2021.0713），連結為 Korean Journal of Radiology 官方全文頁。",
+          "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations",
+          "channel": "Korean Journal of Radiology",
+          "url": "https://kjronline.org/DOIx.php?id=10.3348/kjr.2021.0713",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "open",
+          "license": "Korean Journal of Radiology 開放取用；授權條款未逐項確認，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "用 K-TIRADS 快速判讀一顆結節",
+          "en": "(KOR)Quick analysis of a thyroid nodule based on the K-TIRADS",
+          "kind": "case",
+          "target": "看實際掃描畫面上如何在數十秒內完成 K-TIRADS 2021 的特徵判定與分級，特別是 composition 與實質部分回音的判讀順序",
+          "dose": "先暫停在第一個影像自己判級，再看講者的判法；韓文旁白但畫面上有英文分級標註，配合本單元第一個資源的定義表一起看。",
+          "title": "(KOR)Quick analysis of a thyroid nodule based on the K-TIRADS",
+          "channel": "KeepMyThyroid",
+          "url": "https://www.youtube.com/watch?v=pnF5vUaIovI",
+          "duration": "8:46",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "C-TIRADS (2020)：中國甲狀腺結節超音波惡性風險分層指引",
+          "en": "2020 Chinese guidelines for ultrasound malignancy risk stratification of thyroid nodules: the C-TIRADS",
+          "kind": "guideline",
+          "target": "理解一個採「加分＋扣分」設計的區域性系統長什麼樣，以及它和 ACR TI-RADS、K-TIRADS 的系統比較上會在哪些結節分歧",
+          "dose": "重點在計分規則段：哪些特徵 +1、哪一項良性徵象 -1。讀完後拿三顆你判為 ACR TR3 的結節用 C-TIRADS 重算，看分歧出現在哪裡。原文為 Endocrine 2020;70(2):256-279（DOI 10.1007/s12020-020-02441-y），全文需訂閱或機構權限。",
+          "title": "2020 Chinese guidelines for ultrasound malignancy risk stratification of thyroid nodules: the C-TIRADS",
+          "channel": "Endocrine（Springer）",
+          "url": "https://doi.org/10.1007/s12020-020-02441-y",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "© Springer Nature，全文需訂閱；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch4-u6",
+      "name": "四系統比較器：同一顆結節、不同答案",
+      "type": "lexicon",
+      "assessment": "建一張自己的比較表：取 20 顆連續的門診結節（不要挑困難的，就照順序取），每一顆同時跑 ACR TI-RADS (2017)、ATA 2015 sonographic pattern、EU-TIRADS 2017 與 K-TIRADS 2021 四個系統，逐顆記錄四個級別、四個 FNA 建議（做／不做／追蹤）與四個追蹤建議。統計：(1) 四系統建議完全一致的比例；(2) 至少一個系統建議穿刺而至少一個系統建議不穿刺的顆數；(3) 每一顆不一致的結節，指出分歧來自哪一個影像特徵或哪一個 size cut-off。最後寫一段 200 字以內的科內政策建議：你的單位應該主用哪一個系統、為什麼、以及對哪一類結節要額外加註第二個系統的意見。",
+      "tight": [
+        "不一致最常出現在三類結節：partially cystic、等回音／高回音實質結節、以及最大徑落在 1–1.5 cm 之間的結節",
+        "「哪個系統比較準」是錯的問題——各系統的敏感度與特異度是一組取捨，決定的是你願意漏掉多少癌來換多少次不必要穿刺",
+        "同一顆結節在不同系統得到不同建議時，把兩份建議都寫進報告而不說明取捨依據，等於把決策丟給臨床端",
+        "拿在韓國、中國或歐洲族群驗證的診斷準確度數字直接套到自己的病人族群，忽略盛行率對陽性預測值的影響",
+        "四個系統各自都有版本：務必寫成 ACR TI-RADS (2017)、ATA 2015、EU-TIRADS 2017、K-TIRADS 2021，只寫「TI-RADS」會讓比較失去意義"
+      ],
+      "weak": [
+        "能對同一顆結節同時跑完四個系統並在五分鐘內產出四組建議",
+        "能指認出不一致的來源是影像特徵判讀還是 size cut-off 設計",
+        "能用敏感度／特異度／不必要穿刺數三個維度描述系統差異，而不是說某個系統「比較好」",
+        "能為自己的單位訂出一個可執行、可稽核的系統選擇與加註規則"
+      ],
+      "lesson": {
+        "title": "Survey on the Use of 5 Thyroid Nodule Risk Stratification Systems with Dr. Hoang",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=G-UuRVzLAoE",
+        "duration": "1:02:29",
+        "why": "由 ACR TI-RADS (2017) 白皮書共同作者 Jenny Hoang 報告一份國際調查，直接處理「五套風險分層系統並存、臨床端到底想要什麼」這個 CH4 最核心的張力；Naykky Singh Ospina 以內分泌端觀點回應，正好對上本課程的受眾。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道（THANC Foundation），本站僅連結",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "10:00", "note": "臨床端對風險分層系統的期待是什麼"},
+          {"at": "18:16", "note": "調查結果：超過九成受訪者認為風險分層系統有價值"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "多機構甲狀腺超音波登錄庫中各風險分層系統的穿刺建議差異",
+          "en": "Comparison of Thyroid Risk Categorization Systems and Fine-Needle Aspiration Recommendations in a Multi-Institutional Thyroid Ultrasound Registry",
+          "kind": "guideline",
+          "target": "取得真實登錄庫資料下四大系統間的不一致比例與穿刺建議差異，作為自己 20 顆結節比較表的對照基準",
+          "dose": "先做完自己的 20 顆比較表再讀這一篇，然後比較你的不一致率和登錄庫的差多少；差太多通常代表你的取樣偏向困難病例。原文為 J Am Coll Radiol 2021;18(12):1704-1712 區間（DOI 10.1016/j.jacr.2021.07.019），全文需訂閱。",
+          "title": "Comparison of Thyroid Risk Categorization Systems and Fine-Needle Aspiration Recommendations in a Multi-Institutional Thyroid Ultrasound Registry",
+          "channel": "Journal of the American College of Radiology",
+          "url": "https://doi.org/10.1016/j.jacr.2021.07.019",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "subscription",
+          "license": "© Elsevier／American College of Radiology，全文需訂閱；本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "五套超音波風險分層系統在挑選 FNA 對象上的表現",
+          "en": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA",
+          "kind": "guideline",
+          "target": "用同一組結節看五套系統的敏感度、特異度與「避免掉的不必要穿刺數」，理解系統間的不一致其實是設計取捨而不是誰對誰錯",
+          "dose": "看結果表時把「漏掉的癌數」和「省下的穿刺數」並排比較，不要只看 AUC。連結為 PubMed 摘要頁（J Clin Endocrinol Metab 2020;105(5):1659-1669，DOI 10.1210/clinem/dgz170；該 DOI 導向 Oxford Academic 並回 403），全文需訂閱。",
+          "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA",
+          "channel": "The Journal of Clinical Endocrinology and Metabolism（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "PubMed 摘要頁為公開；期刊全文需訂閱，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "International TI-RADS（I-TIRADS）descriptors：把系統間不一致收斂回同一套用語",
+          "en": "International TIRADS (I-TIRADS) Descriptors",
+          "kind": "lecture",
+          "target": "看國際共識如何嘗試統一各系統的 descriptor 定義與基本特徵的風險數字，藉此理解目前系統比較上的分歧有多少其實來自「用語不同」而非「風險判斷不同」",
+          "dose": "配合影片中的實際病例，把講者用 I-TIRADS descriptor 標註的結節同時用 ACR TI-RADS 與 K-TIRADS 標一次，看看哪些 descriptor 是四個系統共用、哪些是某一系統獨有。",
+          "title": "International TIRADS (I-TIRADS) Descriptors #ultrasound #thyroid #cancer",
+          "channel": "Prof. Dr. Mustafa Secil",
+          "url": "https://www.youtube.com/watch?v=KagXIU-hOJ0",
+          "duration": "13:39",
+          "tier": "B",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道，本站僅連結",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}

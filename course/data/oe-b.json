@@ -1,0 +1,635 @@
+{
+ "conditions": [
+  {
+   "unit": "ch7-u1",
+   "name": "良性與可疑淋巴結的形態學判讀",
+   "evidence_grade": "moderate",
+   "summary": "頸部淋巴結的超音波特徵在單一特徵層級上，敏感度與特異度呈明顯互斥：高敏感度的特徵（fatty hilum 消失）幾乎沒有特異度，高特異度的特徵（囊性變化、高回音點狀鈣化）敏感度很低。Leboulleux 等人的前瞻性對照研究（19 位病患、56 顆可與病理逐顆對應的淋巴結，28 良性／28 惡性）是少數把每個特徵拆開報數字的研究，也是目前多數指引引用的來源。整體而言，超音波對側頸的判讀效能不錯（pooled AUC 0.88），對中央區則差（AUC 0.69）。",
+   "diagnostic_accuracy": "單一特徵（Leboulleux 2007，PMID 17609301，56 顆淋巴結）：長軸 ≥1 cm sens 68%／spec 75%；短軸 >5 mm sens 61%／spec 96%；圓形（長短軸比 <2）sens 46%／spec 64%；fatty hilum 消失 sens 100%／spec 29%；低回音 sens 39%／spec 18%；囊性變化 sens 11%／spec 100%；高回音點狀鈣化 sens 46%／spec 100%；周邊型血流 sens 86%／spec 82%。整體層級（PMID 30777203，19 篇、4014 位病患）：側頸 pooled sens 0.70（95% CI 0.68–0.72）／spec 0.84（0.82–0.85）、AUC 0.88；中央區 pooled sens 0.33（0.31–0.35）／spec 0.93（0.92–0.94）、AUC 0.69。以 neck level 為分析單位時（PMID 35788082，14 篇、6167 位病患、11601 顆淋巴結），超音波 sens 0.35（0.34–0.37）／spec 0.95（0.94–0.95）、DOR 13.94。",
+   "clinical_benefit": "沒有隨機試驗直接比較「用形態學判讀決定是否穿刺」與「不用」對病患結果的影響。可得的間接證據是：高品質超音波與社區超音波相比會改變 35.5% 病患的初始治療計畫，其中偽陽性率 5.2%（PMID 33448046）；但該研究以治療計畫改變為終點，並未追蹤存活或復發等病人層級結果。",
+   "guideline_status": "2013 ETA 頸部超音波指引（PMID 24847448）明確把淋巴結惡性風險的超音波分類與 FNA 指徵寫成標準化流程；2025 ATA 分化型甲狀腺癌指引（PMID 40844370）以修改版 GRADE 系統評讀證據，將術前與追蹤期頸部超音波列為評估與分期的標準工具。指引採用的是「多個特徵合併判讀」，不是任一單一特徵。",
+   "interobserver": "本主題缺乏以 kappa 量化的淋巴結形態學判讀一致性研究；可查到最接近的資料是操作者層級的差異：專責甲狀腺影像的放射科醫師與社區超音波相比，通報中央區可疑淋巴結的比例為 25.0% 對 3.9%（P < .001）、側頸為 15.8% 對 9.2%（P = .227）、甲狀腺外侵犯為 28.9% 對 1.3%（P < .001）（PMID 33448046）。課程應直接告知學員：這一段沒有 kappa 值可引，差異是以「同一群病人不同人掃出不同結論」的形式被記錄下來的。",
+   "discordance": "指引之間對「哪些特徵算 major criteria」大致一致（囊性、點狀高回音、周邊血流、hilum 消失），但對是否可以只憑形態學就決定手術範圍則不一致：ETA 2013 要求可疑者以 FNA 加 washout 確認，而在中央區，因為超音波敏感度過低，中國指引選擇對 cN0 病患做預防性中央區廓清，ATA 則不建議常規預防性廓清（PMID 35757396 對此差異有直接討論）。",
+   "red_flags": [
+    "囊性變化或內部點狀高回音的淋巴結——這兩個特徵特異度接近 100%，出現就當轉移處理，不要用「還小」當延後理由",
+    "周邊型（非門部）血流：敏感度與特異度兼顧最好的單一特徵（86%／82%），是實務上最值得訓練的判讀",
+    "只憑「hilum 看不到」就下轉移診斷——特異度僅 29%，正常小淋巴結與掃描條件不良都會造成 hilum 消失",
+    "短軸沒過門檻但形態高度可疑：短軸 >5 mm 的敏感度只有 61%，size 不能當唯一排除依據"
+   ],
+   "caveats": "Leboulleux 研究的分母只有 56 顆淋巴結、19 位病患，且是在轉診中心已排定手術的族群，惡性盛行率 50%，遠高於一般門診；其單一特徵的敏感度／特異度數字不可直接外推到低盛行率的追蹤族群。多數 pooled 資料以 neck level 或 patient 為分析單位，與「這一顆淋巴結是什麼」的臨床問法並不完全對應。",
+   "citations": [
+    {
+     "pmid": "17609301",
+     "title": "Ultrasound criteria of malignancy for cervical lymph nodes in patients followed up for differentiated thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17609301/",
+     "year": 2007
+    },
+    {
+     "pmid": "30777203",
+     "title": "Meta-analysis of ultrasound for cervical lymph nodes in papillary thyroid cancer: Diagnosis of central and lateral compartment nodal metastases.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30777203/",
+     "year": 2019
+    },
+    {
+     "pmid": "35788082",
+     "title": "Diagnostic accuracy of ultrasound, CT and their combination in detecting cervical lymph node metastasis in patients with papillary thyroid cancer: a systematic review and meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35788082/",
+     "year": 2022
+    },
+    {
+     "pmid": "24847448",
+     "title": "2013 European thyroid association guidelines for cervical ultrasound scan and ultrasound-guided techniques in the postoperative management of patients with thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24847448/",
+     "year": 2013
+    },
+    {
+     "pmid": "33448046",
+     "title": "Impact of high-quality ultrasound following community ultrasound on surgical planning and active surveillance in patients with thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33448046/",
+     "year": 2021
+    }
+   ]
+  },
+  {
+   "unit": "ch7-u2",
+   "name": "中央區的困難與側頸 mapping",
+   "evidence_grade": "moderate",
+   "summary": "中央區（level VI）超音波的低敏感度是這門課裡數字最一致、也最該讓學員記住的事實：多篇統合分析與真實世界多中心資料都顯示敏感度落在 23–40%，而中央區轉移的實際發生率接近一半。側頸 mapping 的效能明顯較好（pooled sens 0.70、AUC 0.88），因此「側頸靠超音波、中央區不能靠超音波排除」是有證據支撐的分工。",
+   "diagnostic_accuracy": "中央區：pooled sens 0.33（95% CI 0.31–0.35）／spec 0.93（0.92–0.94）、AUC 0.69；側頸 pooled sens 0.70（0.68–0.72）／spec 0.84（0.82–0.85）、AUC 0.88（PMID 30777203，19 篇、4014 位病患）。同一分析中，PTC 中央區轉移率 48.0%、側頸 59.2%。真實世界多中心資料（PMID 35757396，13 家三甲醫院、1015 位病患）中央區敏感度僅 23.18%、隱匿性轉移率 40.8%；經標準化訓練後升至 37.58%；由固定資深操作者執行並加做 CT 時為 84.58%（單純超音波 58.21%）。US 對 CT 的比較（PMID 32574937，10 篇、5656 位病患）：中央區 sens CT 0.400 vs US 0.284（P < 0.001），全頸 CT 0.664 vs US 0.593（P = 0.002），但 US 特異度全面較高。",
+   "clinical_benefit": "尚無隨機試驗證明「更好的中央區 mapping」能改善存活或降低復發。可得的是治療計畫層級的證據：專責甲狀腺影像的放射科醫師重做超音波後，35.5% 病患的治療計畫被更動，27.6% 的病患 ATA 風險分層改變，40% 的微小癌因社區超音波未報告的發現而改為建議手術；偽陽性率 5.2%（PMID 33448046）。ETA 指引導向的標準化報告實施後，可疑結節與淋巴結的報告合格率由 45%／68% 升至 94%／85%（PMID 37439446）。",
+   "guideline_status": "2013 ETA 指引（PMID 24847448）規範了頸部超音波的掃描流程、分區命名與報告內容，是目前唯一針對「怎麼掃、怎麼寫」給出具體協定的專科學會文件；2025 ATA 指引（PMID 40844370）維持術前頸部超音波為標準分期工具的地位。兩者都沒有把中央區的低敏感度當成禁掃理由，而是要求報告時明示未能評估的區域。",
+   "interobserver": "沒有以 kappa 表示的中央區判讀一致性研究。可引的是操作者效應：同一批 PTC 病患，未經標準化訓練的多位醫師敏感度 23.18%，經標準化訓練的同院醫師 37.58%，固定資深操作者 58.21%（PMID 35757396）；社區與專責超音波在中央區可疑淋巴結的通報率差 6.5 倍（25.0% vs 3.9%，PMID 33448046）。",
+   "discordance": "中央區的處理是指引最不一致的地方之一：中國指引因為真實世界超音波敏感度過低、隱匿性轉移率高，建議在具備技術條件下對 cN0 病患做預防性中央區廓清；ATA 則不建議常規預防性中央區廓清。PMID 35757396 直接以真實世界資料解釋兩者為何分歧。另外，US 與 CT 的相對地位也不一致：PMID 32574937 主張兩者都需要，PMID 35788082 則指出以 neck level 分析時 US 的 DOR 幾乎是 CT 的兩倍。",
+   "red_flags": [
+    "中央區「乾淨」不等於沒有轉移：敏感度 23–40%，隱匿性轉移率約 40%，報告不能寫成排除",
+    "氣管、鎖骨與胸骨造成的死角必須在報告中明講「未能評估」，而不是留白讓外科誤讀為陰性",
+    "腫瘤 >1 cm、多發病灶或已知側頸轉移時，單靠超音波做分期會低估病灶範圍",
+    "咽後與上縱膈區超音波看不到，需要靠 CT 補位"
+   ],
+   "caveats": "中央區敏感度的數字幾乎全部來自接受廓清手術的族群，存在 verification bias，實際門診族群的表現可能更差而非更好。「加做 CT 就能拉到 84%」的數字來自單一中心、固定操作者、339 位病患的子集合，不能當成一般化的期望值。課程示範的 mapping 手法屬於技術訓練，其效果尚未在多中心研究中被獨立驗證。",
+   "citations": [
+    {
+     "pmid": "30777203",
+     "title": "Meta-analysis of ultrasound for cervical lymph nodes in papillary thyroid cancer: Diagnosis of central and lateral compartment nodal metastases.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30777203/",
+     "year": 2019
+    },
+    {
+     "pmid": "35757396",
+     "title": "Real-World Evidence on the Sensitivity of Preoperative Ultrasound in Evaluating Central Lymph Node Metastasis of Papillary Thyroid Carcinoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35757396/",
+     "year": 2022
+    },
+    {
+     "pmid": "32574937",
+     "title": "Thyroid cancer neck lymph nodes metastasis: Meta-analysis of US and CT diagnosis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32574937/",
+     "year": 2020
+    },
+    {
+     "pmid": "24847448",
+     "title": "2013 European thyroid association guidelines for cervical ultrasound scan and ultrasound-guided techniques in the postoperative management of patients with thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24847448/",
+     "year": 2013
+    },
+    {
+     "pmid": "37439446",
+     "title": "Improvement in neck ultrasound report quality following the implementation of European Thyroid Association guidelines for postoperative cervical ultrasound for thyroid cancer follow-up, a prospective population study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37439446/",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "unit": "ch7-u3",
+   "name": "哪些淋巴結該 FNA、何時加做 CT 或 MRI",
+   "evidence_grade": "guideline_supported",
+   "summary": "可疑淋巴結的細胞學加上針洗液 thyroglobulin（FNA-Tg）是指引明確收錄的確認手段，統合分析顯示其效能明顯優於單獨的形態學判讀。CT 的角色則從「不建議常規」轉向「特定情境下有實質收益」：多中心前瞻資料顯示加做 CT 對 13.1% 的病患改變了手術計畫，臨床低風險族群中也有 22.5% 因 CT 更動術式。",
+   "diagnostic_accuracy": "FNA-Tg（PMID 31723088，22 篇、2670 顆淋巴結）：pooled sens 0.91（95% CI 0.87–0.93）、spec 0.94（0.91–0.96）；cutoff 1 ng/mL 敏感度最高、40 ng/mL 特異度最高，cutoff 與血清 Tg 狀態是異質性主要來源。影像組合（PMID 35788082，14 篇、6167 位病患）：以病患為單位，US sens 0.41（0.36–0.46）／spec 0.92（0.89–0.94）、CT sens 0.49（0.44–0.54）／spec 0.91（0.89–0.94）、US+CT sens 0.64（0.57–0.71）／spec 0.83（0.77–0.88）。",
+   "clinical_benefit": "CT 加做的收益有病患層級數字：7 家醫院、351 位病患的前瞻研究中，加做 CT 對 13.1%（46/351）的病患產生實質手術規劃收益，>1 cm 腫瘤收益高於 ≤1 cm（PMID 29756249）。臨床低風險（≤4 cm、超音波無可疑發現）族群中，CT 使 25/111（22.5%）病患術式改變，其中 16 位（全體 14.4%）因移除了超音波未發現的臨床顯著淋巴結而受益（PMID 31583547）。這些終點都是手術規劃與病灶清除，不是存活或復發率。",
+   "guideline_status": "2013 ETA 指引（PMID 24847448）把 US 導引 FNA 與針洗液生化檢測（Tg washout）的適應症寫成明確條列，是本單元的主要依據；2025 ATA 指引（PMID 40844370）以修改版 GRADE 系統重新評讀，維持可疑淋巴結以 US 導引 FNA 加細胞學／Tg washout 確認的建議架構。",
+   "discordance": "CT 的定位在文獻與指引之間不一致：既有指引把頸部 CT 的角色限縮在進展期或超音波無法評估的情境，但 PMID 31583547 明確指出在臨床低風險族群加做 CT 仍會改變兩成病患的術式，PMID 32574937 更主張兩者都需要；PMID 35788082 則以 DOR 支持超音波優於 CT。另外，FNA-Tg 的 cutoff 至今沒有跨中心共識，1 ng/mL 與 40 ng/mL 代表完全不同的臨床策略。",
+   "red_flags": [
+    "囊性、點狀高回音或周邊型血流的淋巴結，即使短軸未達門檻也應優先安排 FNA 加 Tg washout",
+    "血清 TgAb 陽性時針洗液 Tg 的解讀會被干擾，判讀前必須先確認 TgAb 狀態",
+    "側頸已確認轉移、腫瘤 >1 cm、或懷疑咽後／上縱膈受侵時，超音波不足以完成分期，應加做 CT",
+    "細胞學陰性但形態高度可疑：單靠細胞學可能取樣不足，Tg washout 是補救而非可有可無"
+   ],
+   "caveats": "FNA-Tg 的 pooled 數字來自 cutoff 高度異質的研究，實務上必須用自家實驗室的 cutoff 而不是引用文獻數值。CT 改變術式的研究都在有經驗的轉診中心進行，且以「術式改變」而非病人結果為終點——術式改變本身可能代表過度治療而非收益。含碘顯影劑會延後放射碘治療，這個代價在多數診斷準確度研究中沒有被計入。",
+   "citations": [
+    {
+     "pmid": "31723088",
+     "title": "Diagnostic values of thyroglobulin in lymph node fine-needle aspiration washout: a systematic review and meta-analysis diagnostic values of FNA-Tg.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31723088/",
+     "year": 2020
+    },
+    {
+     "pmid": "29756249",
+     "title": "Value of CT added to ultrasonography for the diagnosis of lymph node metastasis in patients with thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29756249/",
+     "year": 2018
+    },
+    {
+     "pmid": "31583547",
+     "title": "Preoperative Computed Tomography Changes Surgical Management for Clinically Low-Risk Well-Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31583547/",
+     "year": 2019
+    },
+    {
+     "pmid": "35788082",
+     "title": "Diagnostic accuracy of ultrasound, CT and their combination in detecting cervical lymph node metastasis in patients with papillary thyroid cancer: a systematic review and meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35788082/",
+     "year": 2022
+    },
+    {
+     "pmid": "40844370",
+     "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "unit": "ch8-u1",
+   "name": "正常術後甲狀腺床、疤痕與縫線肉芽腫",
+   "evidence_grade": "limited",
+   "summary": "這是本課程中證據最不利於「靠影像判讀」的單元之一。直接比較術後甲狀腺床復發腫瘤與非復發病灶的研究結論是：兩者的超音波特徵沒有統計上的差異，形態學無法區分，必須靠 FNA。縫線肉芽腫是唯一有可辨識特徵的例外（中央／偏中央群聚、>1 mm、成對出現的高回音點），但研究樣本極小。",
+   "diagnostic_accuracy": "59 個甲狀腺床病灶（20 個復發、36 個非復發）的比較研究中，復發腫瘤呈橢圓形 70%、邊界清楚 100%、低回音 70%、有微鈣化 10%，平均 0.7 cm（範圍 0.4–2.1 cm）；復發與非復發病灶在大小、形狀、邊界、回音、微鈣化與血流上均無統計差異（P > .05）。非復發病灶包括殘餘甲狀腺組織 8、術後纖維化 7、縫線肉芽腫 7、帶狀肌呈結節輪廓 4、反應性淋巴結 4、囊腫 3、氣管軟骨 2、脂肪壞死 1（PMID 17901139）。縫線肉芽腫（14 個）與局部復發（20 個）比較：肉芽腫多為不規則（13/14）與不均質（9/14），內部高回音點較常見（12 vs 7），且全部呈中央或偏中央群聚、多數 >1 mm、常成對出現（各項 P < 0.05）（PMID 19616361）。甲狀腺床 FNA 的效能：291 位受評病患中臨床可疑者陽性率 71.8%，NPV 88.4%、PPV 100%（PMID 23374006）。",
+   "clinical_benefit": "沒有研究顯示更精準的疤痕／復發影像判讀能改善存活或降低再手術率。可得的最接近證據是報告品質層級：實施 2013 ETA 術後頸部超音波報告規範後，甲狀腺床異常結節報告的效用分數顯著提高，可疑結節與淋巴結的報告合格率由 45%／68% 升至 94%／85%；1 年時超音波正常且 Tg <0.2 ng/mL 或 0.21–0.99 ng/mL 者，對 3 年無病況的 NPV 皆為 96%（PMID 37439446）。作者的推論是「可能減少不必要的重複超音波與 FNA」，並非已測得的結果。",
+   "guideline_status": "2013 ETA 頸部超音波指引（PMID 24847448）是唯一針對術後甲狀腺床的掃描協定與報告格式給出具體規範的學會文件；2025 ATA 指引（PMID 40844370）將術後頸部超音波納入治療反應評估的標準流程。兩者都預設「影像可疑者以 FNA 確認」，而非以影像單獨定論。",
+   "interobserver": "缺乏術後甲狀腺床判讀的 kappa 研究。ETA 規範實施前後的報告合格率差距（甲狀腺床可疑結節 45% → 94%）可視為判讀者間差異的間接指標（PMID 37439446）。",
+   "discordance": "文獻內部即有矛盾：PMID 17901139 認為超音波特徵完全無法區分復發與非復發，PMID 19616361 則主張縫線肉芽腫有可辨識的特徵組合。兩者樣本都很小（分別 59 與 34 個病灶），課程應同時呈現而非只取後者。",
+   "red_flags": [
+    "術後甲狀腺床出現任何新的實質病灶，不論形態多「良性」，都不能靠影像排除復發",
+    "追蹤中病灶尺寸或內部結構改變，比單次的形態學描述更有意義",
+    "甲狀腺床 FNA 的 NPV 只有 88.4%，陰性結果不等於安全，需搭配 Tg 與後續追蹤",
+    "把帶狀肌、氣管軟骨或殘餘甲狀腺誤判為復發，是本區最常見的偽陽性來源"
+   ],
+   "caveats": "本單元所有數字都來自單中心、樣本 <100 個病灶的回溯研究，且族群是已被轉介做 FNA 的可疑病患，惡性盛行率遠高於一般術後追蹤族群。課程必須明講：這一段教的是「如何描述與如何決定要不要穿刺」，不是「如何用影像下診斷」。",
+   "citations": [
+    {
+     "pmid": "17901139",
+     "title": "Sonographic findings in the surgical bed after thyroidectomy: comparison of recurrent tumors and nonrecurrent lesions.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17901139/",
+     "year": 2007
+    },
+    {
+     "pmid": "19616361",
+     "title": "Ultrasound features of suture granulomas in the thyroid bed after thyroidectomy for papillary thyroid carcinoma with an emphasis on their differentiation from locally recurrent thyroid carcinomas.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/19616361/",
+     "year": 2009
+    },
+    {
+     "pmid": "23374006",
+     "title": "Clinicopathologic predictors of thyroid bed recurrence of differentiated thyroid cancer using ultrasound-guided fine-needle aspiration biopsies.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23374006/",
+     "year": 2013
+    },
+    {
+     "pmid": "37439446",
+     "title": "Improvement in neck ultrasound report quality following the implementation of European Thyroid Association guidelines for postoperative cervical ultrasound for thyroid cancer follow-up, a prospective population study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37439446/",
+     "year": 2023
+    },
+    {
+     "pmid": "24847448",
+     "title": "2013 European thyroid association guidelines for cervical ultrasound scan and ultrasound-guided techniques in the postoperative management of patients with thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24847448/",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "unit": "ch8-u3",
+   "name": "thyroglobulin 與影像不一致的情境",
+   "evidence_grade": "guideline_supported",
+   "summary": "Tg 升高但頸部超音波陰性（TENIS 情境）的處置有明確的指引與共識文件支撐，且下一步影像的效能有統合分析數字：FDG PET/CT 的 pooled sens 0.87、spec 0.76。反向的不一致（超音波看到病灶但 Tg 測不到）則主要由 TgAb 干擾與檢驗方法學問題解釋，這部分有 53 條分級建議的專家共識可依循。",
+   "diagnostic_accuracy": "TENIS 情境下的 [18F]FDG PET/CT（PMID 39336848，22 篇納入系統性回顧、18 篇進入統合分析）：以病患為單位 pooled sens 0.87（95% CI 0.82–0.90）、spec 0.76（0.61–0.86），研究間異質性中等。術後頸部超音波本身對局部持續性病灶的效能（PMID 24659355，638 位 N1-PTC 病患、中位追蹤 41.6 個月）：sens 82.6%、spec 87.4%、NPV 95.6%、PPV 60.6%。",
+   "clinical_benefit": "術後超音波正常這件事本身會實質改變風險估計：5 年復發累積發生率由 ETA 高風險 26%、ATA 中風險 17%、ATA 高風險 35%，在超音波正常時分別降至 9%、8%、11%，若再結合消融時的 Tg 則降至 <6%（PMID 24659355）。這是風險重新分層的證據，可用來調整追蹤密度；但沒有隨機試驗證明據此調整追蹤能改善存活。",
+   "guideline_status": "2025 ATA 分化型甲狀腺癌指引（PMID 40844370）以修改版 GRADE 系統涵蓋治療反應評估、監測方式與後續診斷檢查的建議；Tg 與 TgAb 的檢驗與臨床解讀另有 2023 年歐洲內分泌學會期刊發表的臨床與實驗室專家共識，提出 53 條分級建議，明確處理指引未細談的檢驗干擾問題（PMID 37625447）。",
+   "discordance": "「PPV 只有 60.6% 的超音波陽性」與「高度敏感 Tg 檢測」兩條線常給出相反訊號，指引並未規定衝突時以何者為準；此外，各家 Tg 檢驗方法與 TgAb 判定閾值不一致，跨機構的數值無法直接比較，這正是專家共識文件成立的原因（PMID 37625447）。",
+   "red_flags": [
+    "Tg 持續上升但頸部超音波陰性：頸部已不是最可能的位置，應往肺、骨與縱膈評估，而非重複掃頸部",
+    "TgAb 陽性或由陽轉陰、由陰轉陽：Tg 數值本身不可信，TgAb 趨勢此時是替代標記",
+    "超音波陽性但 Tg 測不到：先懷疑檢驗干擾（TgAb、hook effect、異嗜性抗體），再考慮低分化或去分化病灶",
+    "超音波陽性的 PPV 僅 60.6%，在做出再手術決定前需細胞學或 Tg washout 佐證"
+   ],
+   "caveats": "FDG PET/CT 的 spec 0.76 且 95% CI 寬（0.61–0.86），偽陽性不少；TENIS 研究族群多為已知高風險者，效能不可外推到低風險追蹤族群。課程不應把「Tg 升高就做 PET」教成通則——文獻裡的收納標準通常包含 Tg 門檻與放射碘全身掃描陰性兩個前提。",
+   "citations": [
+    {
+     "pmid": "39336848",
+     "title": "Match Point: Nuclear Medicine Imaging for Recurrent Thyroid Cancer in TENIS Syndrome-Systematic Review and Meta-Analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39336848/",
+     "year": 2024
+    },
+    {
+     "pmid": "24659355",
+     "title": "Post-operative neck ultrasound and risk stratification in differentiated thyroid cancer patients with initial lymph node involvement.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24659355/",
+     "year": 2014
+    },
+    {
+     "pmid": "37625447",
+     "title": "Thyroglobulin and thyroglobulin antibody: an updated clinical and laboratory expert consensus.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37625447/",
+     "year": 2023
+    },
+    {
+     "pmid": "40844370",
+     "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "unit": "ch8-u4",
+   "name": "主動監測與消融後的長期影像比較",
+   "evidence_grade": "limited",
+   "summary": "主動監測本身有相當可觀的世代研究支撐（成長率低、無區域或遠端轉移發生），但「影像該怎麼量、多久量一次、什麼算進展」這件事的證據很薄：目前普遍採用的 3 mm 直徑門檻並非來自比較性研究，而體積測量雖被證明能提早約 8 個月察覺成長，其臨床意義未經驗證。消融後追蹤的證據更弱——所有研究都是單臂、無對照、追蹤中位數約 3 年，沒有與手術或主動監測的隨機比較。",
+   "diagnostic_accuracy": "主動監測的成長偵測（PMID 28859191，291 位低風險 PTC、中位追蹤 25 個月）：直徑成長 ≥3 mm 者 11/291（3.8%），累積發生率 2 年 2.5%、5 年 12.1%，追蹤期間無區域或遠端轉移；三維體積測量在所有成長個案中都比直徑更早察覺，中位提早 8.2 個月（範圍 3–46 個月），成長者呈指數型，體積倍增時間中位 2.2 年（範圍 0.5–4.8 年）。危險因子統合分析（PMID 38600392，11 篇、8880 位受試者，464 位成長）：成長發生率 3.4%–19.4%，較年輕 RR 2.32（95% CI 1.85–2.90）、TSH 較高 RR 2.28（1.19–4.37）、懷孕 RR 2.54（1.17–5.52）。轉移淋巴結的主動監測（PMID 35876426，50 位、中位追蹤 29 個月、平均 10.1 ± 4.4 mm）：24% 出現任一徑增加 ≥3 mm，Tg 上升 ≥0.5 ng/mL 為唯一預測因子（OR 16.2，95% CI 1.5–120.2）。",
+   "clinical_benefit": "尚無前瞻性隨機研究比較「主動監測 vs 立即手術」或「消融 vs 手術」對存活、生活品質或再治療率的影響，也沒有研究證明任何一種影像追蹤排程優於另一種。消融的現有數據皆為單臂：微小乳突癌 RFA（PMID 35142816，15 篇、1770 位病患、1822 顆腫瘤、平均追蹤 33.0 個月）完全消失率 79%（95% CI 65%–94%），腫瘤進展 1.5%，淋巴結轉移 0.2%，無遠端轉移，重大併發症 3 例；良性結節熱消融 3 年（PMID 40214733）體積縮小率 71.59%、再增大率 7.41%、重大併發症率 1.96%。這些是技術成效指標，不是病人結果。",
+   "guideline_status": "2025 ATA 指引（PMID 40844370）納入主動監測與後續治療選擇的建議並標示證據等級，同時明列需要更多高品質研究的領域。指引未規定體積測量取代直徑，也未訂出消融後的標準追蹤影像排程。",
+   "discordance": "「什麼算進展」在文獻間不一致：多數 AS 世代以直徑增加 ≥3 mm 為門檻，PMID 28859191 主張體積成長是更早、更可靠的訊號，兩者會給出不同的介入時機。消融後的「完全消失」定義（影像上無殘留 vs 體積縮小率門檻）也因研究而異，直接影響 79% 這個數字的可比性。",
+   "red_flags": [
+    "追蹤中任一徑增加 ≥3 mm，或體積出現指數型上升趨勢",
+    "年輕病患、TSH 偏高、或懷孕期間——這三者與腫瘤成長的關聯已在統合分析中確立",
+    "監測中的轉移淋巴結合併 Tg 上升 ≥0.5 ng/mL（OR 16.2）",
+    "消融後病灶在 6–12 個月的縮小趨勢中止或反轉，需與新生病灶鑑別而非直接歸因於治療反應",
+    "出現新的可疑淋巴結或甲狀腺外侵犯徵象——這是退出主動監測的硬指標，不受尺寸門檻限制"
+   ],
+   "caveats": "課程必須誠實告知：消融後「變大」與「復發」在影像上無法可靠區分，現有文獻沒有提供判準；79% 完全消失率來自平均僅 33 個月的追蹤，而微小乳突癌的自然史以十年計。主動監測的世代研究皆在有經驗的中心、由固定團隊執行連續超音波，測量再現性遠優於一般臨床；把 3 mm 門檻套用在不同機器、不同操作者的追蹤上，測量變異本身就可能達到這個量級。",
+   "citations": [
+    {
+     "pmid": "28859191",
+     "title": "Natural History and Tumor Volume Kinetics of Papillary Thyroid Cancers During Active Surveillance.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28859191/",
+     "year": 2017
+    },
+    {
+     "pmid": "38600392",
+     "title": "Risk factors for tumor enlargement in low-risk papillary thyroid microcarcinoma patients: a systematic review and meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38600392/",
+     "year": 2024
+    },
+    {
+     "pmid": "35876426",
+     "title": "Active Surveillance of Small Metastatic Lymph Nodes as an Alternative to Surgery in Selected Patients with Low-Risk Papillary Thyroid Cancer: A Retrospective Cohort Study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35876426/",
+     "year": 2022
+    },
+    {
+     "pmid": "35142816",
+     "title": "Assessment of Radiofrequency Ablation for Papillary Microcarcinoma of the Thyroid: A Systematic Review and Meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35142816/",
+     "year": 2022
+    },
+    {
+     "pmid": "40214733",
+     "title": "The long-term effects of thermal ablation for benign thyroid nodules: a systematic review and meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40214733/",
+     "year": 2025
+    },
+    {
+     "pmid": "40844370",
+     "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "unit": "ch9-u1",
+   "name": "副甲狀腺腺瘤、增生與癌",
+   "evidence_grade": "guideline_supported",
+   "summary": "超音波是原發性副甲狀腺功能亢進術前定位的第一線工具，這一點有外科學會指引明確背書。但學員必須知道兩件事：pooled 敏感度約 76%，且這個數字高度取決於腺體位置——單一大型系列顯示不同象限的敏感度可從 21% 到 69%；異位腺體（未手術者約 20%、再手術者高達 66%）超音波幾乎看不到。",
+   "diagnostic_accuracy": "統合分析（PMID 21710322，43 篇符合條件、19 篇超音波研究）：超音波 pooled sens 76.1%（95% CI 70.4–81.4%）、PPV 93.2%（90.7–95.3%）；sestamibi-SPECT sens 78.9%（64–90.6%）、PPV 90.7%（83.5–96.0%）；4D-CT 僅 2 篇針對初次手術，sens 89.4%、PPV 93.5%。單中心 1089 位病患（PMID 35705875）：超音波 22.5%、MIBI 27.7% 完全未偵測到任何腺體；超音波敏感度依位置由 21.3%（右上）至 68.9%（左下），特異度 85%（右下）至 99.2%（右上）；全腺體位置預測 PPV 超音波 59%、MIBI 54%，僅預測左右側時升至 78% 與 73%。MIBI 陰性或不確定後的 4D-CT（PMID 39761485，10 篇、335 位病患）pooled sens 71%（95% CI 0.610–0.811）、PPV 81%（0.708–0.917），pooled spec 47% 與 NPV 28% 的信賴區間跨越 0，不可解讀。",
+   "clinical_benefit": "沒有隨機試驗比較不同定位策略對治癒率的影響。指引層級的判斷是：定位影像的功能是使 focused／minimally invasive parathyroidectomy 成為可能，而影像陰性者仍然是手術候選者（PMID 27532368）——換言之，影像的角色是選擇術式，不是決定要不要開刀。",
+   "guideline_status": "2016 AAES 原發性副甲狀腺功能亢進手術指引（PMID 27532368）建議以頸部超音波或其他高解析度影像做術前規劃，並明列：影像未定位者仍應手術；minimally invasive parathyroidectomy 需搭配可靠的術中 PTH 監測協定；已知或懷疑多腺體病變者不建議常規採用 minimally invasive 術式。2022 第五屆國際工作坊共識（PMID 36245251）以 GRADE 方法處理無症狀病患的手術與非手術管理。",
+   "interobserver": "缺乏以 kappa 表示的副甲狀腺超音波判讀一致性研究。可引的替代指標是位置別敏感度的巨大落差（21.3%–68.9%，PMID 35705875），以及異位腺體文獻明言超音波「除甲狀腺鄰近與 thyrothymic ligament 區域外準確度有限，且高度依賴操作者經驗」（PMID 29949431）。",
+   "discordance": "指引之間與指引對文獻之間都有落差：AAES 建議以超音波做術前規劃，但同一份指引也建議避免術前副甲狀腺切片；而統合分析顯示 4D-CT 敏感度可能優於超音波與 MIBI，卻因輻射、含碘顯影劑與判讀者經驗需求而未被列為第一線。第五屆國際工作坊與 AAES 對無症狀病患的手術門檻也採不同的框架。",
+   "red_flags": [
+    "生化確診但超音波看不到腺體——約兩成病患屬此類，這是「該轉手術評估」而不是「該重掃」的訊號",
+    "上位腺體（尤其右上）敏感度可低至 21%，氣管食道溝與甲狀腺後方必須刻意加掃",
+    "再手術病患的異位腺體盛行率高達 66%，超音波不足以規劃，需 SPECT/CT 或 4D-CT",
+    "副甲狀腺癌的臨床線索是極高血鈣與極高 PTH 加上可觸及腫塊，不要期待靠超音波形態學先分辨腺瘤與癌"
+   ],
+   "caveats": "本單元的效能數字全部來自轉診至外科的族群，且以手術與病理為參考標準，存在明顯的 verification bias。超音波無法區分單腺體與多腺體病變——這正是 AAES 要求常規考慮多腺體病變、並在 minimally invasive 術式中要求術中 PTH 監測的原因。腺瘤與非典型腺瘤／癌的超音波鑑別目前多為單中心 radiomics 或 nomogram 研究，尚未進入指引，課程不應教成可操作的判準。",
+   "citations": [
+    {
+     "pmid": "21710322",
+     "title": "A meta-analysis of preoperative localization techniques for patients with primary hyperparathyroidism.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21710322/",
+     "year": 2012
+    },
+    {
+     "pmid": "35705875",
+     "title": "Accuracy of Parathyroid Adenoma Localization by Preoperative Ultrasound and Sestamibi in 1089 Patients with Primary Hyperparathyroidism.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35705875/",
+     "year": 2022
+    },
+    {
+     "pmid": "27532368",
+     "title": "The American Association of Endocrine Surgeons Guidelines for Definitive Management of Primary Hyperparathyroidism.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27532368/",
+     "year": 2016
+    },
+    {
+     "pmid": "29949431",
+     "title": "IMAGING LOCALIZATION AND SURGICAL APPROACH IN THE MANAGEMENT OF ECTOPIC PARATHYROID ADENOMAS.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29949431/",
+     "year": 2018
+    },
+    {
+     "pmid": "39761485",
+     "title": "Diagnostic Accuracy of Four-Dimensional Computed Tomography in Preoperative Localization of Primary Hyperparathyroidism After Negative or Inconclusive Sestamibi: A Systematic Review and Meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39761485/",
+     "year": 2025
+    },
+    {
+     "pmid": "36245251",
+     "title": "Evaluation and Management of Primary Hyperparathyroidism: Summary Statement and Guidelines from the Fifth International Workshop.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36245251/",
+     "year": 2022
+    }
+   ]
+  },
+  {
+   "unit": "ch9-u4",
+   "name": "甲狀腺旁病灶的鑑別流程與 washout 的角色",
+   "evidence_grade": "contested",
+   "summary": "這是課程裡指引與文獻正面衝突的單元。多篇單中心研究顯示針洗液 PTH（FNA-PTH washout）的準確度遠優於細胞學與 MIBI，特異度接近 100%；但 2016 AAES 指引明文建議「應避免術前副甲狀腺切片」。兩邊都有理由：washout 解決的是「這個低回音構造是不是副甲狀腺」，而指引擔心的是纖維化、血腫與極罕見的細胞植入對後續手術的影響。",
+   "diagnostic_accuracy": "131 位原發性副甲狀腺功能亢進病患（PMID 30004132）：FNA-PTH washout 診斷準確度 90.8%，細胞學 7.92%，MIBI 67.8%；MIBI 與 washout 的 PPV 與特異度皆 100%；washout >436.5 pg/mL 之 sens 90.3%／spec 88.9%（AUC 94.3），washout/血清 PTH 比值 >3.05 之 sens 91.2%／spec 89.0%（AUC 94.5）；作者引述文獻整體範圍為 spec 75%–100%、sens 70%–100%。Mayo Clinic 系列（PMID 22784830，74 位病患、75 次操作）：僅 31% 的細胞學可判讀為副甲狀腺細胞；washout sens 84%、spec 100%、PPV 100%、準確度 84%。甲狀腺超音波偶然發現的疑似副甲狀腺病灶（PMID 36475358，121 顆結節、38 顆為副甲狀腺、盛行率 31.4%）：單靠細胞學 sens 31.6%、spec 100%、NPV 76.1%、準確度 78.5%；取兩次以上檢體可顯著提高真陽性率（58.3% vs 23.1%，P = 0.043）。",
+   "clinical_benefit": "沒有隨機試驗顯示術前 washout 能提高治癒率或降低再手術率。安全性方面的資料互相牴觸：Mayo 系列 75 次操作中 5 位出現發炎反應、副甲狀腺膿瘍或血腫，其中 3 位因此由微創術式轉為標準手術（PMID 22784830）；另一系列 87 位病患在追蹤中未觀察到副甲狀腺細胞植入或 parathyromatosis（PMID 38608096）。",
+   "guideline_status": "2016 AAES 指引（PMID 27532368）明確建議應避免術前副甲狀腺切片，並要求微創術式搭配可靠的術中 PTH 監測協定；換言之，washout 在正式指引中沒有取得建議地位，其使用屬於指引未涵蓋或明確不建議的範圍。2022 第五屆國際工作坊共識（PMID 36245251）同樣未把 washout 列為標準流程。",
+   "interobserver": "細胞學本身即是最大的不一致來源：即使在確認為副甲狀腺的檢體中，僅 31% 能被細胞學判為副甲狀腺細胞（PMID 22784830），單獨細胞學的敏感度也只有 31.6%（PMID 36475358）。washout 為數值型檢測，判讀者間差異小，但 cutoff 選擇（絕對值 vs 與血清的比值）沒有共識。",
+   "discordance": "AAES 指引「避免術前切片」與單中心文獻「washout 準確度 90.8%、應納入疑難個案流程」直接衝突，且雙方引用的都是低偏誤風險以外的證據等級。cutoff 也未統一：有研究採 436.5 pg/mL 絕對值，有研究採 washout/血清 >3.05 比值，兩者在同一位病患上可能給出不同結論。",
+   "red_flags": [
+    "高血鈣加高 PTH 但影像找不到病灶時，不要用 washout 去「碰運氣」——它只能確認你已經看到的構造是什麼",
+    "計畫接受微創副甲狀腺切除的病患，術前穿刺可能造成纖維化或血腫而迫使術式轉換，應先與外科討論",
+    "細胞學單獨陰性完全無法排除副甲狀腺（sens 31.6%）；若非同時送 washout，陰性結果沒有意義",
+    "washout 檢體污染（針經過甲狀腺或血液）會造成偽陽性，操作路徑必須記錄在報告中",
+    "懷疑副甲狀腺癌時，穿刺有腫瘤播散的理論風險，應避免"
+   ],
+   "caveats": "課程必須把這個單元教成「有爭議的選項」而非標準流程：所有支持 washout 的證據都是單中心回溯研究，沒有多中心驗證，也沒有統合分析；而反對的一方是正式外科學會指引。cutoff 應由各機構自訂並驗證，不可直接引用文獻數值。決定是否執行前，應先確認外科團隊的術式規劃與術中 PTH 監測能力。",
+   "citations": [
+    {
+     "pmid": "30004132",
+     "title": "Diagnostic accuracy of parathyroid hormone levels in washout samples of suspicious parathyroid adenomas: A single-centre retrospective cohort study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30004132/",
+     "year": 2018
+    },
+    {
+     "pmid": "22784830",
+     "title": "Risks and benefits of parathyroid fine-needle aspiration with parathyroid hormone washout.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22784830/",
+     "year": 2012
+    },
+    {
+     "pmid": "36475358",
+     "title": "Diagnosis of parathyroid incidentaloma detected on thyroid ultrasonography: the role of fine-needle aspiration cytology and washout parathyroid hormone measurements.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36475358/",
+     "year": 2023
+    },
+    {
+     "pmid": "38608096",
+     "title": "Parathyroid fine needle aspiration with PTH washout: Can it lead to parathyroid cell seeding in primary hyperparathyroidism?",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38608096/",
+     "year": 2024
+    },
+    {
+     "pmid": "27532368",
+     "title": "The American Association of Endocrine Surgeons Guidelines for Definitive Management of Primary Hyperparathyroidism.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27532368/",
+     "year": 2016
+    }
+   ]
+  },
+  {
+   "unit": "ch10-u1",
+   "name": "兒童與青少年甲狀腺結節",
+   "evidence_grade": "guideline_supported",
+   "summary": "兒童族群有專屬的 ATA 與 ETA 指引，核心訊息是：兒童結節的惡性風險遠高於成人（研究族群中 15%–19%），而成人的 size threshold 不能直接套用。ACR TI-RADS 在兒童的驗證結果不利——依成人 size criteria 執行會在初診時漏掉約兩成癌症；把門檻下修可以不漏，但 FNA 與追蹤超音波次數大幅上升。",
+   "diagnostic_accuracy": "單一轉診中心 314 位 <19 歲病患、404 顆結節（PMID 31821121）：惡性率 19.1%（77/404），其中乳突癌佔 88.3%（68/77）；若以成人 ACR TI-RADS 管理建議執行，初診時會漏掉 17/77（22.1%）的癌症。第二個兒童世代 116 顆結節（PMID 38981907）：惡性率 15.5%（18/116），94.4%（17/18）的惡性結節屬 TR4 或 TR5；依成人 criteria 有 3/18（16.7%）惡性結節初診不會被建議 FNA；將 size threshold 下修後無惡性結節被漏掉，但 FNA 由 24.5% 升至 36.7%、追蹤超音波由 14.3% 升至 63.3%。",
+   "clinical_benefit": "沒有研究顯示採用任一種兒童風險分層策略能改善存活或降低併發症。可量化的只有取捨：漏診率下降的代價是穿刺量增加約 50%、追蹤超音波量增加約 4.4 倍（PMID 38981907）。兒童分化型甲狀腺癌的長期死亡率極低，因此這個取捨的重點是過度治療與長期追蹤負擔，而非死亡風險。",
+   "guideline_status": "2015 ATA 兒童甲狀腺結節與分化型甲狀腺癌指引（PMID 25900731）是首部兒童專屬指引，涵蓋超音波的角色與判讀、FNA 細胞學與良性結節管理，建議採用修改自美國預防服務工作小組的分級架構。2022 ETA 兒童指引（PMID 36228315）以 2015 ATA 兒童指引為框架，逐一標示不一致處並重新表述建議。兩者都要求兒童結節在有經驗的中心處理。",
+   "interobserver": "兒童族群的 ACR TI-RADS 判讀一致性以加權 kappa 評估，但兩篇兒童驗證研究的重點在管理建議層級的錯誤分類，而非判讀者間變異；本主題目前沒有可靠的兒童專屬 kappa 匯總數據可引，課程應直接說明這個缺口。",
+   "discordance": "最明確的不一致是「成人 size threshold 是否適用於兒童」：ACR TI-RADS 本身未針對兒童修訂，而兒童驗證研究要求下修門檻；ATA 兒童指引強調應以超音波特徵而非單純尺寸決定是否穿刺，與成人系統以尺寸為主的邏輯不同。ETA 2022 指引在制定過程中即明列與 ATA 兒童指引的分歧處。",
+   "red_flags": [
+    "把成人的 size threshold 直接套在兒童身上——文獻顯示會在初診漏掉 16.7%–22.1% 的癌症",
+    "兒童結節惡性率是成人的數倍（研究族群中 15%–19%），任何實質結節都不能用「兒童多為良性」帶過",
+    "頸部輻射暴露史、家族性症候群或已知可疑淋巴結——這些情境下影像門檻應更低",
+    "TR4／TR5 的兒童結節：兩篇世代中 94.4% 的惡性結節落在此區間，不應僅因尺寸未達門檻而觀察"
+   ],
+   "caveats": "兩篇兒童 ACR TI-RADS 驗證研究都是單中心、回溯性，樣本分別為 404 與 116 顆結節，且是已被安排穿刺或轉診的族群，惡性盛行率高於一般兒科門診。下修門檻的建議尚未經多中心驗證，兩篇作者本身都要求更大規模的多中心研究後才適合推廣。課程不應把任何一種修改版 TI-RADS 教成兒童標準。",
+   "citations": [
+    {
+     "pmid": "31821121",
+     "title": "Assessment of American College of Radiology Thyroid Imaging Reporting and Data System (TI-RADS) for Pediatric Thyroid Nodules.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31821121/",
+     "year": 2020
+    },
+    {
+     "pmid": "38981907",
+     "title": "Assessment of the American College of Radiology Thyroid Imaging Reporting and Data System (ACR TI-RADS™) with modification of the management recommendations for pediatric thyroid nodules.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38981907/",
+     "year": 2024
+    },
+    {
+     "pmid": "25900731",
+     "title": "Management Guidelines for Children with Thyroid Nodules and Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25900731/",
+     "year": 2015
+    },
+    {
+     "pmid": "36228315",
+     "title": "2022 European Thyroid Association Guidelines for the management of pediatric thyroid nodules and differentiated thyroid carcinoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36228315/",
+     "year": 2022
+    }
+   ]
+  },
+  {
+   "unit": "ch11-u1",
+   "name": "Strain 與 shear-wave elastography",
+   "evidence_grade": "limited",
+   "summary": "Elastography 的診斷準確度統合分析數字看起來不錯（pooled sens 78%–84%、spec 80%–81%），但這些數字有三個致命限制：異質性極高、多為單中心、且沒有任何研究把終點設在病患結果。四大 TI-RADS 系統都沒有把硬度納入評分，超音波學會的指引把它定位為輔助而非取代 B-mode。課程不得把 elastography 教成能改變穿刺決定的工具。",
+   "diagnostic_accuracy": "統合分析（PMID 35371974，72 篇、13505 位病患、14015 顆結節，惡性率 33%）：qualitative USE pooled sens 84%／spec 81%／AUC 0.89；semi-quantitative 83%／80%／0.93；quantitative 78%／81%／0.87。細胞學不確定結節的貝氏統合分析（PMID 32990793，20 篇、1734 顆結節）：sens 0.766（95% CrI 0.686–0.835）、spec 0.867（0.780–0.931）、DOR 25.9（12.8–46.2）、AUC 0.743、LR+ 6.6、LR− 0.27——AUC 0.743 明顯低於同一批研究報告的敏感度／特異度組合所暗示的水準，作者稱其為「fair」。",
+   "clinical_benefit": "尚無前瞻性臨床結果研究。沒有任何隨機或前瞻世代研究顯示，把 elastography 加入評估流程能減少不必要的穿刺、減少漏診癌症、或改變病患的手術範圍與預後。現有全部證據都停留在與細胞學／病理對照的診斷準確度層級。",
+   "guideline_status": "WFUMB 於 2017 年發表甲狀腺專章（PMID 27570210），逐項分析各技術的操作方式、再現性、結果與限制後給出建議，並標明建議所依據的證據等級與專家共識成分；EFSUMB 2018 非肝臟應用更新（PMID 31238377）同樣把甲狀腺 elastography 納入。但 ACR TI-RADS 白皮書（PMID 28372962）的評分系統只由 composition、echogenicity、shape、margin、echogenic foci 五類 B-mode 特徵構成，不含硬度；2015 ATA 指引（PMID 26462967）的超音波型態分類同樣不以 elastography 為評分依據。也就是說：有超音波學會的技術指引，但沒有進入任何一套決定穿刺與否的風險分層系統。",
+   "interobserver": "可查到的一致性資料以相關係數而非 kappa 呈現：3 位內分泌科醫師對 56 顆結節重複測量 elasticity contrast index，判讀者間 Pearson r 為 0.79、0.77、0.73，判讀者內 r 為 0.87、0.73、0.84（PMID 22451558）。該研究刻意採用頸動脈搏動作為內生壓迫來源以避免徒手加壓造成的變異——換言之，這個相對樂觀的數字是在受控條件下取得的，不代表一般徒手 strain elastography 的表現。最不一致的環節是操作者施加的壓力與 ROI 的圈選。",
+   "discordance": "超音波學會（WFUMB、EFSUMB）承認 elastography 的臨床角色並給出使用建議，而甲狀腺專科的風險分層系統（ACR TI-RADS、ATA）完全未納入硬度——同一個特徵在兩類文件中的地位截然不同。統合分析內部也不一致：PMID 35371974 的結論是「可用於日常風險分層」，PMID 32990793 對不確定結節的結論則只到「fair」。",
+   "red_flags": [
+    "硬度數值與 B-mode 判讀衝突時，以 B-mode 與風險分層系統為準——沒有任何指引授權以硬度推翻 TI-RADS 分類",
+    "囊性或以囊性為主的結節、粗大鈣化與嚴重橋本背景，會使硬度測值失真",
+    "不同廠商、不同探頭、不同壓迫方式的硬度數值不可互相比較，追蹤時換機器等於換單位",
+    "把「硬 = 惡性」教給學員：本主題的 LR− 為 0.27，硬度正常不足以排除惡性"
+   ],
+   "caveats": "課程必須明講：elastography 的研究成果不等於標準照護。所有 pooled 數字的異質性都很高，惡性盛行率 33% 的研究族群遠高於一般門診（常低於 10%），在低盛行率下同樣的敏感度／特異度會產生低得多的陽性預測值。本單元的定位是「認識這個技術與它的限制」，而非「學會用它決定要不要穿刺」。",
+   "citations": [
+    {
+     "pmid": "35371974",
+     "title": "US-Elastography With Different Techniques for Thyroid Nodule Characterization: Systematic Review and Meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35371974/",
+     "year": 2022
+    },
+    {
+     "pmid": "32990793",
+     "title": "Diagnostic reliability of elastography in thyroid nodules reported as indeterminate at prior fine-needle aspiration cytology (FNAC): a systematic review and Bayesian meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32990793/",
+     "year": 2020
+    },
+    {
+     "pmid": "27570210",
+     "title": "WFUMB Guidelines and Recommendations on the Clinical Use of Ultrasound Elastography: Part 4. Thyroid.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27570210/",
+     "year": 2017,
+     "last_verified": "2026-08-02"
+    },
+    {
+     "pmid": "31238377",
+     "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Elastography in Non-Hepatic Applications: Update 2018.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31238377/",
+     "year": 2019
+    },
+    {
+     "pmid": "22451558",
+     "title": "Interobserver agreement and intraobserver reproducibility in thyroid ultrasound elastography.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22451558/",
+     "year": 2012
+    },
+    {
+     "pmid": "28372962",
+     "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+     "year": 2017
+    },
+    {
+     "pmid": "26462967",
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+     "year": 2016
+    }
+   ]
+  },
+  {
+   "unit": "ch11-u2",
+   "name": "顯影劑超音波（CEUS）",
+   "evidence_grade": "limited",
+   "summary": "CEUS 在結節良惡性鑑別上的統合數字（sens 0.86–0.87、spec 0.83–0.86、AUC 0.93）看起來優於 elastography，但同樣沒有進入任何一套甲狀腺風險分層系統，也沒有臨床結果研究。目前證據最強的應用其實不是結節，而是小型側頸淋巴結：使用 perfluorobutane 的後血管相在前瞻研究中對 ≤8 mm 可疑淋巴結展現極高的陰性預測值。",
+   "diagnostic_accuracy": "結節鑑別（PMID 40784818，29 篇世代研究、3521 顆結節、3197 位病患，以術後病理為參考標準）：pooled sens 0.86（95% CI 0.83–0.89）、spec 0.86（0.82–0.89）、LR+ 6.14、LR− 0.16、DOR 38.90、SROC AUC 0.93（0.90–0.95）。較早的更新版統合分析（PMID 32310968，37 篇）：sens 0.87、spec 0.83、DOR 38.94、AUC 0.9263，meta-regression 顯示唯一顯著的異質性來源是各研究採用的診斷判準（P = 0.0259）。淋巴結應用（PMID 37014242，前瞻單中心、135 位 PTC 病患、161 顆短軸 ≤8 mm 的可疑側頸淋巴結，67 顆轉移）：血管相的 perfusion defect 特異度 96%（90/94）；後血管相 non-isoenhancement 的 NPV 100%（83/83）；後血管相合併 B-mode 特徵的 AUC 0.94（0.89–0.97），顯著高於單獨 B-mode 的 0.73（0.65–0.79），P < .001。",
+   "clinical_benefit": "尚無前瞻性臨床結果研究。沒有任何研究顯示加做 CEUS 能減少不必要的穿刺、減少漏診、或改變病患的手術與追蹤結果。PMID 37014242 雖為前瞻設計，終點仍是診斷準確度而非病患結果。",
+   "guideline_status": "EFSUMB 非肝臟應用 CEUS 指引 2017 更新（PMID 29510439）涵蓋 CEUS 在非肝臟器官的臨床實務建議，是本主題唯一的專科學會依據。甲狀腺結節的四大風險分層系統均未納入 CEUS：ACR TI-RADS 白皮書（PMID 28372962）的評分只用五類 B-mode 特徵，2015 ATA 指引（PMID 26462967）的型態分類亦然。在多數國家，超音波顯影劑用於甲狀腺屬於仿單外使用，課程必須說明這一點。",
+   "discordance": "統合分析明確指出各研究採用的「診斷判準」是異質性的唯一顯著來源（PMID 32310968）——也就是說，不同中心對「什麼樣的增強型態算惡性」根本沒有共識，pooled 數字建立在互不相容的判準之上。此外，超音波學會層級的指引承認 CEUS 的角色，而甲狀腺專科的風險分層系統完全不採用。",
+   "red_flags": [
+    "把 CEUS 的增強型態拿來推翻 TI-RADS 分類：沒有任何指引授權這種用法",
+    "顯影劑的過敏與類過敏反應風險、以及各國仿單外使用的規範，必須在操作前確認",
+    "不同顯影劑（SonoVue vs perfluorobutane）與不同相位的判讀標準不能互換",
+    "結節內粗大鈣化與深部位置會造成後方衰減，使增強判讀不可靠"
+   ],
+   "caveats": "課程必須明講：CEUS 的研究成果不等於標準照護。結節鑑別的統合分析幾乎全為單中心、以手術病理為參考標準（因此僅納入被切除的結節，選樣偏誤明顯），且判讀標準各研究不同。淋巴結的 NPV 100% 來自單一中心、83 顆淋巴結的子集合，在不同盛行率與不同操作者下不可能重現這個數字。本單元適合教「這個技術的原理、可能用途與限制」，不適合教成臨床流程。",
+   "citations": [
+    {
+     "pmid": "40784818",
+     "title": "Diagnostic Value of Contrast-Enhanced Ultrasound for Differentiating Benign and Malignant Thyroid nodules: A Systematic Review and Meta‑Analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40784818/",
+     "year": 2025,
+     "last_verified": "2026-08-02"
+    },
+    {
+     "pmid": "32310968",
+     "title": "Contrast-enhanced ultrasound for the differential diagnosis of thyroid nodules: An updated meta-analysis with comprehensive heterogeneity analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32310968/",
+     "year": 2020
+    },
+    {
+     "pmid": "37014242",
+     "title": "Contrast-enhanced US with Perfluorobutane to Diagnose Small Lateral Cervical Lymph Node Metastases of Papillary Thyroid Carcinoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37014242/",
+     "year": 2023
+    },
+    {
+     "pmid": "29510439",
+     "title": "The EFSUMB Guidelines and Recommendations for the Clinical Practice of Contrast-Enhanced Ultrasound (CEUS) in Non-Hepatic Applications: Update 2017 (Long Version).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29510439/",
+     "year": 2018
+    },
+    {
+     "pmid": "28372962",
+     "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+     "year": 2017
+    },
+    {
+     "pmid": "26462967",
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+     "year": 2016
+    }
+   ]
+  },
+  {
+   "unit": "ch11-u4",
+   "name": "AI、深度學習與自動化 TI-RADS",
+   "evidence_grade": "limited",
+   "summary": "AI 在甲狀腺超音波的統合分析數字與放射科醫師相當（AI AUC 0.89 vs 醫師 0.91，DOR 差異不顯著），而且已有納入外部驗證資料集的統合分析。但三個問題讓它離標準照護還很遠：訓練資料的地理與族群極度集中（197 篇研究中 124 篇來自中國）、四款 FDA 核准產品中只有一款被廣泛驗證、以及沒有任何研究以病患結果為終點。",
+   "diagnostic_accuracy": "納入外部資料集的統合分析（PMID 41477624，27 篇、146332 位病患、逾 600000 張超音波影像）：pooled sens 87%（95% CI 84–89%）、spec 83%（79–86%），summary operating point sens 88%／spec 83%，AUC 91.9%（90.0–93.2%）。AI 對放射科醫師的比較（PMID 35767056，25 篇）：AI pooled sens 0.86（0.81–0.91）／spec 0.78（0.73–0.83）／AUC 0.89（0.86–0.92）；放射科醫師 sens 0.85（0.80–0.89）／spec 0.82（0.77–0.86）／AUC 0.91（0.88–0.93）；DOR 23.10 vs 27.12，差異不顯著（P = 0.56）。多中心前瞻研究（PMID 38992655，1036 位病患、2296 顆結節、3 家醫院）：以病理為標準，AI 之 sens 0.826、spec 0.815、準確度 0.821、AUC 0.821，與資深放射科醫師相當且優於年輕醫師（皆 P < 0.05）。",
+   "clinical_benefit": "沒有隨機試驗、也沒有以病患結果（漏診癌症、手術併發症、存活）為終點的研究。目前最接近的是兩項前瞻研究的替代終點：真實世界前瞻研究（PMID 36622410，236 位病患、312 顆結節）中，AI 輔助使住院醫師對 >1.5 cm 結節的不必要切片率最多下降 27.7%（P = 0.034），並提升 ≤1.5 cm 結節的敏感度；多中心前瞻研究（PMID 38992655）中，AI 輔助使年輕醫師的表現在以病理為標準時達到與資深醫師無顯著差異的水準。這些是操作者表現與檢查量的改變，不是病患結果的改善。",
+   "guideline_status": "AI 與自動化 TI-RADS 未被任何甲狀腺風險分層系統或主要學會指引收錄為建議做法：ACR TI-RADS 白皮書（PMID 28372962）的評分完全由人工判讀的 B-mode 特徵構成；2015 ATA 指引（PMID 26462967）亦然。系統性回顧（PMID 38679750，61 篇全數具外部驗證、16 篇前瞻、33 篇與醫師預測比較）指出：四款 FDA 核准產品中只有 S-Detect 經過廣泛驗證，且在地導入前必須進行資料清理與重新驗證。",
+   "interobserver": "AI 的價值主張正是壓縮判讀者間變異，但證據呈雙面：多中心前瞻資料顯示 AI 輔助可把年輕醫師拉到資深醫師的水準（PMID 38992655）；而系統性回顧同時把「自動化邊緣判讀」與「判讀者間變異」列為現有前瞻驗證研究所暴露的弱點（PMID 38679750）。也就是說，AI 減少了人與人之間的差異，但引入了模型與模型、版本與版本之間的差異。",
+   "discordance": "統合分析的結論與方法學回顧互相牴觸：PMID 41477624 稱外部驗證下表現「excellent」並支持整合進臨床，同一篇也承認需要更多非亞洲、以組織病理為標準的研究；PMID 40865545 則以 197 篇研究、248896 位受試者的資料指出訓練族群嚴重偏斜（124 篇來自中國、26 篇來自美國；女性 12410 人 vs 男性 4222 人；東亞族群佔 14.6% 但全球盛行率為 18.7%，白人 26.8% vs 20.7%、黑人 26.8% vs 11.3%），社經地位與族裔變項多數模型根本沒納入。",
+   "red_flags": [
+    "Automation bias：AI 給出與你判讀相反的結論時，正確做法是回到影像重新檢視，而不是直接採信任一方",
+    "把在他院／他國資料訓練的模型直接用於自己的族群——文獻明確要求在地重新驗證",
+    "模型版本更新後未重新驗證就沿用舊的信任程度",
+    "以 AI 分數取代結構化報告：目前沒有任何指引承認自動化 TI-RADS 分數的法律與臨床地位",
+    "把 AI 的高敏感度當成可以省略 FNA 的理由——沒有任何研究支持這個推論"
+   ],
+   "caveats": "課程必須明講：AI 的研究成果不等於標準照護。所有 pooled 數字都建立在以細胞學或病理為參考標準的選樣族群上，惡性盛行率遠高於一般門診；訓練資料的地理與族群偏斜已被系統性回顧量化；四款 FDA 核准產品中僅一款有充分驗證。本單元的教學目標是讓學員能提出正確的問題（外部驗證掉多少？訓練族群是誰？誰為錯誤負責？），而不是學會信任某個特定產品。",
+   "citations": [
+    {
+     "pmid": "41477624",
+     "title": "Machine Learning for diagnosis of malignant thyroid nodules based on thyroid ultrasound: Systematic review and meta-analysis of studies with external datasets.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41477624/",
+     "year": 2026
+    },
+    {
+     "pmid": "35767056",
+     "title": "A comparison of artificial intelligence versus radiologists in the diagnosis of thyroid nodules using ultrasonography: a systematic review and meta-analysis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35767056/",
+     "year": 2022
+    },
+    {
+     "pmid": "40865545",
+     "title": "Representation and Bias in Artificial Intelligence Models for Thyroid Cancer: A Systematic Review.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40865545/",
+     "year": 2025
+    },
+    {
+     "pmid": "38992655",
+     "title": "The clinical value of artificial intelligence in assisting junior radiologists in thyroid ultrasound: a multicenter prospective study from real clinical practice.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38992655/",
+     "year": 2024
+    },
+    {
+     "pmid": "36622410",
+     "title": "Clinical value of artificial intelligence in thyroid ultrasound: a prospective study from the real world.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36622410/",
+     "year": 2023
+    },
+    {
+     "pmid": "38679750",
+     "title": "From Bench-to-Bedside: How Artificial Intelligence is Changing Thyroid Nodule Diagnostics, a Systematic Review.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38679750/",
+     "year": 2024
+    },
+    {
+     "pmid": "26462967",
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+     "year": 2016
+    }
+   ]
+  }
+ ]
+}

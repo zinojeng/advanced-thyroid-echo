@@ -1,254 +1,265 @@
 {
-  "references": [
-    {
-      "pmid": "28372962",
-      "doi": "10.1016/j.jacr.2017.01.046",
-      "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee.",
-      "journal": "Journal of the American College of Radiology : JACR",
-      "year": 2017,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
-      "system": "ACR TI-RADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "28402167",
-      "doi": "10.2214/AJR.16.17613",
-      "title": "Multiinstitutional Analysis of Thyroid Nodule Risk Stratification Using the American College of Radiology Thyroid Imaging Reporting and Data System.",
-      "journal": "AJR. American journal of roentgenology",
-      "year": 2017,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28402167/",
-      "system": "ACR TI-RADS",
-      "role": "validation"
-    },
-    {
-      "pmid": "29558300",
-      "doi": "10.1148/radiol.2017171240",
-      "title": "Thyroid Imaging Reporting and Data System (TI-RADS): A User's Guide.",
-      "journal": "Radiology",
-      "year": 2018,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29558300/",
-      "system": "ACR TI-RADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "39526062",
-      "doi": "10.17925/EE.2024.20.2.11",
-      "title": "The Horizon of Thyroid Imaging Reporting and Data System in the Diagnostic Performance of Thyroid Nodules: Clinical Application and Future Perspectives.",
-      "journal": "TouchREVIEWS in endocrinology",
-      "year": 2024,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39526062/",
-      "system": "ACR TI-RADS",
-      "role": "validation"
-    },
-    {
-      "pmid": "26462967",
-      "doi": "10.1089/thy.2015.0020",
-      "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer.",
-      "journal": "Thyroid : official journal of the American Thyroid Association",
-      "year": 2016,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
-      "system": "ATA",
-      "role": "primary"
-    },
-    {
-      "pmid": "40844370",
-      "doi": "10.1177/10507256251363120",
-      "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
-      "journal": "Thyroid : official journal of the American Thyroid Association",
-      "year": 2025,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
-      "system": "ATA",
-      "role": "primary"
-    },
-    {
-      "pmid": "41173539",
-      "doi": "10.1177/10507256251390877",
-      "title": "Executive Summary of the 2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
-      "journal": "Thyroid : official journal of the American Thyroid Association",
-      "year": 2025,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41173539/",
-      "system": "ATA",
-      "role": "primary"
-    },
-    {
-      "pmid": "32827126",
-      "doi": "10.1007/s12020-020-02441-y",
-      "title": "2020 Chinese guidelines for ultrasound malignancy risk stratification of thyroid nodules: the C-TIRADS.",
-      "journal": "Endocrine",
-      "year": 2020,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32827126/",
-      "system": "C-TIRADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "32852733",
-      "doi": "10.1007/s12020-020-02442-x",
-      "title": "Thyroid imaging reporting and data system (TIRADS) for ultrasound features of nodules: multicentric retrospective study in China.",
-      "journal": "Endocrine",
-      "year": 2021,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32852733/",
-      "system": "C-TIRADS",
-      "role": "validation"
-    },
-    {
-      "pmid": "34777258",
-      "doi": "10.3389/fendo.2021.763897",
-      "title": "Explore the Diagnostic Efficiency of Chinese Thyroid Imaging Reporting and Data Systems by Comparing With the Other Four Systems (ACR TI-RADS, Kwak-TIRADS, KSThR-TIRADS, and EU-TIRADS): A Single-Center Study.",
-      "journal": "Frontiers in endocrinology",
-      "year": 2021,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34777258/",
-      "system": "C-TIRADS",
-      "role": "comparison"
-    },
-    {
-      "pmid": "41695694",
-      "doi": "10.7717/peerj.20817",
-      "title": "Chinese thyroid imaging reporting and data system with redefined marked hypoechogenicity for thyroid malignancy risk stratification demonstrates improved diagnostic accuracy.",
-      "journal": "PeerJ",
-      "year": 2026,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41695694/",
-      "system": "C-TIRADS",
-      "role": "validation"
-    },
-    {
-      "pmid": "42344421",
-      "doi": "10.3389/fendo.2026.1743112",
-      "title": "Comparative diagnostic performance of C-TIRADS versus Kwak TI-RADS for thyroid nodules: implications for fine-needle aspiration biopsy referral.",
-      "journal": "Frontiers in endocrinology",
-      "year": 2026,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42344421/",
-      "system": "C-TIRADS",
-      "role": "comparison"
-    },
-    {
-      "pmid": "29167761",
-      "doi": "10.1159/000478927",
-      "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS.",
-      "journal": "European thyroid journal",
-      "year": 2017,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29167761/",
-      "system": "EU-TIRADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "32544875",
-      "doi": "10.1530/EJE-20-0204",
-      "title": "Performance of EU-TIRADS in malignancy risk stratification of thyroid nodules: a meta-analysis.",
-      "journal": "European journal of endocrinology",
-      "year": 2020,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32544875/",
-      "system": "EU-TIRADS",
-      "role": "validation"
-    },
-    {
-      "pmid": "41258456",
-      "doi": "10.1007/s00330-025-12101-2",
-      "title": "ESR Essentials: thyroid imaging-practice recommendations by the European Society of Head and Neck Radiology.",
-      "journal": "European radiology",
-      "year": 2026,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41258456/",
-      "system": "EU-TIRADS",
-      "role": "comparison"
-    },
-    {
-      "pmid": "27134526",
-      "doi": "10.3348/kjr.2016.17.3.370",
-      "title": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised Korean Society of Thyroid Radiology Consensus Statement and Recommendations.",
-      "journal": "Korean journal of radiology",
-      "year": 2016,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27134526/",
-      "system": "K-TIRADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "34719893",
-      "doi": "10.3348/kjr.2021.0713",
-      "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations.",
-      "journal": "Korean journal of radiology",
-      "year": 2021,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34719893/",
-      "system": "K-TIRADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "42306147",
-      "doi": "10.3348/jksr.2025.0054",
-      "title": "Comparative Analysis of ACR TI-RADS and K-TIRADS: Inter-System Agreement and Diagnostic Performance Using a Single Study Cohort.",
-      "journal": "Journal of the Korean Society of Radiology",
-      "year": 2026,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42306147/",
-      "system": "K-TIRADS",
-      "role": "comparison"
-    },
-    {
-      "pmid": "21771959",
-      "doi": "10.1148/radiol.11110206",
-      "title": "Thyroid imaging reporting and data system for US features of nodules: a step in establishing better stratification of cancer risk.",
-      "journal": "Radiology",
-      "year": 2011,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21771959/",
-      "system": "Kwak TI-RADS",
-      "role": "primary"
-    },
-    {
-      "pmid": "30299457",
-      "doi": "10.1210/jc.2018-01674",
-      "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS.",
-      "journal": "The Journal of clinical endocrinology and metabolism",
-      "year": 2019,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
-      "system": "multi-system",
-      "role": "comparison"
-    },
-    {
-      "pmid": "31690937",
-      "doi": "10.1210/clinem/dgz170",
-      "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA.",
-      "journal": "The Journal of clinical endocrinology and metabolism",
-      "year": 2020,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
-      "system": "multi-system",
-      "role": "comparison"
-    },
-    {
-      "pmid": "32303153",
-      "doi": "10.1089/thy.2019.0812",
-      "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis.",
-      "journal": "Thyroid : official journal of the American Thyroid Association",
-      "year": 2020,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
-      "system": "multi-system",
-      "role": "comparison"
-    },
-    {
-      "pmid": "31899594",
-      "doi": "10.1002/cncy.22235",
-      "title": "Can ultrasound systems for risk stratification of thyroid nodules identify follicular carcinoma?",
-      "journal": "Cancer cytopathology",
-      "year": 2020,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31899594/",
-      "system": "multi-system",
-      "role": "comparison"
-    },
-    {
-      "pmid": "32959174",
-      "doi": "10.1007/s11154-020-09592-3",
-      "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis.",
-      "journal": "Reviews in endocrine & metabolic disorders",
-      "year": 2021,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32959174/",
-      "system": "multi-system",
-      "role": "comparison"
-    },
-    {
-      "pmid": "37918114",
-      "doi": "10.1097/RUQ.0000000000000653",
-      "title": "Diagnostic Performance of Thyroid Nodule Risk Stratification Systems: Comparison of ACR-TIRADS, EU-TIRADS, K-TIRADS, and ATA Guidelines.",
-      "journal": "Ultrasound quarterly",
-      "year": 2023,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37918114/",
-      "system": "multi-system",
-      "role": "comparison"
-    }
-  ]
+ "references": [
+  {
+   "pmid": "28372962",
+   "doi": "10.1016/j.jacr.2017.01.046",
+   "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee.",
+   "journal": "Journal of the American College of Radiology : JACR",
+   "year": 2017,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28372962/",
+   "system": "ACR TI-RADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "28402167",
+   "doi": "10.2214/AJR.16.17613",
+   "title": "Multiinstitutional Analysis of Thyroid Nodule Risk Stratification Using the American College of Radiology Thyroid Imaging Reporting and Data System.",
+   "journal": "AJR. American journal of roentgenology",
+   "year": 2017,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28402167/",
+   "system": "ACR TI-RADS",
+   "role": "validation"
+  },
+  {
+   "pmid": "29558300",
+   "doi": "10.1148/radiol.2017171240",
+   "title": "Thyroid Imaging Reporting and Data System (TI-RADS): A User's Guide.",
+   "journal": "Radiology",
+   "year": 2018,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29558300/",
+   "system": "ACR TI-RADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "39526062",
+   "doi": "10.17925/EE.2024.20.2.11",
+   "title": "The Horizon of Thyroid Imaging Reporting and Data System in the Diagnostic Performance of Thyroid Nodules: Clinical Application and Future Perspectives.",
+   "journal": "TouchREVIEWS in endocrinology",
+   "year": 2024,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39526062/",
+   "system": "ACR TI-RADS",
+   "role": "validation"
+  },
+  {
+   "pmid": "26462967",
+   "doi": "10.1089/thy.2015.0020",
+   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer.",
+   "journal": "Thyroid : official journal of the American Thyroid Association",
+   "year": 2016,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26462967/",
+   "system": "ATA",
+   "role": "primary"
+  },
+  {
+   "pmid": "40844370",
+   "doi": "10.1177/10507256251363120",
+   "title": "2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+   "journal": "Thyroid : official journal of the American Thyroid Association",
+   "year": 2025,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40844370/",
+   "system": "ATA",
+   "role": "primary"
+  },
+  {
+   "pmid": "41173539",
+   "doi": "10.1177/10507256251390877",
+   "title": "Executive Summary of the 2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+   "journal": "Thyroid : official journal of the American Thyroid Association",
+   "year": 2025,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41173539/",
+   "system": "ATA",
+   "role": "primary"
+  },
+  {
+   "pmid": "41182278",
+   "doi": "10.1177/10507256251387671",
+   "title": "Corrigendum to: 2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.",
+   "journal": "Thyroid : official journal of the American Thyroid Association",
+   "year": 2025,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41182278/",
+   "system": "ATA",
+   "role": "primary"
+  },
+  {
+   "pmid": "32827126",
+   "doi": "10.1007/s12020-020-02441-y",
+   "title": "2020 Chinese guidelines for ultrasound malignancy risk stratification of thyroid nodules: the C-TIRADS.",
+   "journal": "Endocrine",
+   "year": 2020,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32827126/",
+   "system": "C-TIRADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "32852733",
+   "doi": "10.1007/s12020-020-02442-x",
+   "title": "Thyroid imaging reporting and data system (TIRADS) for ultrasound features of nodules: multicentric retrospective study in China.",
+   "journal": "Endocrine",
+   "year": 2021,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32852733/",
+   "system": "C-TIRADS",
+   "role": "validation"
+  },
+  {
+   "pmid": "34777258",
+   "doi": "10.3389/fendo.2021.763897",
+   "title": "Explore the Diagnostic Efficiency of Chinese Thyroid Imaging Reporting and Data Systems by Comparing With the Other Four Systems (ACR TI-RADS, Kwak-TIRADS, KSThR-TIRADS, and EU-TIRADS): A Single-Center Study.",
+   "journal": "Frontiers in endocrinology",
+   "year": 2021,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34777258/",
+   "system": "C-TIRADS",
+   "role": "comparison"
+  },
+  {
+   "pmid": "41695694",
+   "doi": "10.7717/peerj.20817",
+   "title": "Chinese thyroid imaging reporting and data system with redefined marked hypoechogenicity for thyroid malignancy risk stratification demonstrates improved diagnostic accuracy.",
+   "journal": "PeerJ",
+   "year": 2026,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41695694/",
+   "system": "C-TIRADS",
+   "role": "validation"
+  },
+  {
+   "pmid": "42344421",
+   "doi": "10.3389/fendo.2026.1743112",
+   "title": "Comparative diagnostic performance of C-TIRADS versus Kwak TI-RADS for thyroid nodules: implications for fine-needle aspiration biopsy referral.",
+   "journal": "Frontiers in endocrinology",
+   "year": 2026,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42344421/",
+   "system": "C-TIRADS",
+   "role": "comparison"
+  },
+  {
+   "pmid": "29167761",
+   "doi": "10.1159/000478927",
+   "title": "European Thyroid Association Guidelines for Ultrasound Malignancy Risk Stratification of Thyroid Nodules in Adults: The EU-TIRADS.",
+   "journal": "European thyroid journal",
+   "year": 2017,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29167761/",
+   "system": "EU-TIRADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "32544875",
+   "doi": "10.1530/EJE-20-0204",
+   "title": "Performance of EU-TIRADS in malignancy risk stratification of thyroid nodules: a meta-analysis.",
+   "journal": "European journal of endocrinology",
+   "year": 2020,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32544875/",
+   "system": "EU-TIRADS",
+   "role": "validation"
+  },
+  {
+   "pmid": "41258456",
+   "doi": "10.1007/s00330-025-12101-2",
+   "title": "ESR Essentials: thyroid imaging-practice recommendations by the European Society of Head and Neck Radiology.",
+   "journal": "European radiology",
+   "year": 2026,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41258456/",
+   "system": "EU-TIRADS",
+   "role": "comparison"
+  },
+  {
+   "pmid": "27134526",
+   "doi": "10.3348/kjr.2016.17.3.370",
+   "title": "Ultrasonography Diagnosis and Imaging-Based Management of Thyroid Nodules: Revised Korean Society of Thyroid Radiology Consensus Statement and Recommendations.",
+   "journal": "Korean journal of radiology",
+   "year": 2016,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27134526/",
+   "system": "K-TIRADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "34719893",
+   "doi": "10.3348/kjr.2021.0713",
+   "title": "2021 Korean Thyroid Imaging Reporting and Data System and Imaging-Based Management of Thyroid Nodules: Korean Society of Thyroid Radiology Consensus Statement and Recommendations.",
+   "journal": "Korean journal of radiology",
+   "year": 2021,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34719893/",
+   "system": "K-TIRADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "42306147",
+   "doi": "10.3348/jksr.2025.0054",
+   "title": "Comparative Analysis of ACR TI-RADS and K-TIRADS: Inter-System Agreement and Diagnostic Performance Using a Single Study Cohort.",
+   "journal": "Journal of the Korean Society of Radiology",
+   "year": 2026,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42306147/",
+   "system": "K-TIRADS",
+   "role": "comparison"
+  },
+  {
+   "pmid": "21771959",
+   "doi": "10.1148/radiol.11110206",
+   "title": "Thyroid imaging reporting and data system for US features of nodules: a step in establishing better stratification of cancer risk.",
+   "journal": "Radiology",
+   "year": 2011,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21771959/",
+   "system": "Kwak TI-RADS",
+   "role": "primary"
+  },
+  {
+   "pmid": "30299457",
+   "doi": "10.1210/jc.2018-01674",
+   "title": "Reducing the Number of Unnecessary Thyroid Biopsies While Improving Diagnostic Accuracy: Toward the \"Right\" TIRADS.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "year": 2019,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30299457/",
+   "system": "multi-system",
+   "role": "comparison"
+  },
+  {
+   "pmid": "31690937",
+   "doi": "10.1210/clinem/dgz170",
+   "title": "Performance of Five Ultrasound Risk Stratification Systems in Selecting Thyroid Nodules for FNA.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "year": 2020,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31690937/",
+   "system": "multi-system",
+   "role": "comparison",
+   "last_verified": "2026-08-02"
+  },
+  {
+   "pmid": "31899594",
+   "doi": "10.1002/cncy.22235",
+   "title": "Can ultrasound systems for risk stratification of thyroid nodules identify follicular carcinoma?",
+   "journal": "Cancer cytopathology",
+   "year": 2020,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31899594/",
+   "system": "multi-system",
+   "role": "comparison"
+  },
+  {
+   "pmid": "32303153",
+   "doi": "10.1089/thy.2019.0812",
+   "title": "Diagnostic Performance of Four Ultrasound Risk Stratification Systems: A Systematic Review and Meta-Analysis.",
+   "journal": "Thyroid : official journal of the American Thyroid Association",
+   "year": 2020,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32303153/",
+   "system": "multi-system",
+   "role": "comparison"
+  },
+  {
+   "pmid": "32959174",
+   "doi": "10.1007/s11154-020-09592-3",
+   "title": "The ultrasound risk stratification systems for thyroid nodule have been evaluated against papillary carcinoma. A meta-analysis.",
+   "journal": "Reviews in endocrine & metabolic disorders",
+   "year": 2021,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32959174/",
+   "system": "multi-system",
+   "role": "comparison"
+  },
+  {
+   "pmid": "37918114",
+   "doi": "10.1097/RUQ.0000000000000653",
+   "title": "Diagnostic Performance of Thyroid Nodule Risk Stratification Systems: Comparison of ACR-TIRADS, EU-TIRADS, K-TIRADS, and ATA Guidelines.",
+   "journal": "Ultrasound quarterly",
+   "year": 2023,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37918114/",
+   "system": "multi-system",
+   "role": "comparison"
+  }
+ ]
 }
