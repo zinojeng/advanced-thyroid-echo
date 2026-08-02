@@ -1,9 +1,9 @@
 {
   "$schema": "../src/build/course.schema.json",
   "site": {
-    "project": "advanced-thyroid-echo",
+    "project": "thyroid-us",
     "name": "進階甲狀腺及頸部超音波",
-    "url": "https://advanced-thyroid-echo.pages.dev",
+    "url": "https://thyroid-us.pages.dev",
     "locale": "zh-Hant",
     "ogLocale": "zh_TW",
     "brandIcon": "stethoscope",
