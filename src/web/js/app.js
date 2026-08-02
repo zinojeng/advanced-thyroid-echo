@@ -120,6 +120,7 @@ function applyChrome(data) {
   set(".AppFooter__creator", c.footer?.creator || "");
   set(".AppFooter__contact", c.footer?.contact || "");
   set(".AppFooter__credits", c.footer?.credits || "");
+  set(".AppFooter__colophon", c.footer?.colophon || "");
 }
 
 /* --- 瀏覽次數 -------------------------------------------------------------

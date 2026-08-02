@@ -523,6 +523,26 @@ export function renderHome(course) {
       </div>`;
   }).join("");
 
+  // 章節卡的單元清單是「預覽」不是「目錄」：全部串起來時長短差到三倍
+  // （CH0 61 字、CH12 225 字），卡片會從 3 行長到 7 行，整排卡片高度參差。
+  // 在單元邊界截斷，並明講還有幾個——比截半句或用 line-clamp 硬切清楚。
+  const UNIT_PREVIEW_CHARS = 110;
+
+  const unitPreview = (units) => {
+    const names = units.map((u) => u.name || "");
+    const shown = [];
+    let len = 0;
+    for (const n of names) {
+      if (shown.length && len + n.length + 1 > UNIT_PREVIEW_CHARS) break;
+      shown.push(n);
+      len += n.length + 1;
+    }
+    const text = esc(shown.join("、"));
+    return shown.length === names.length
+      ? text
+      : `${text}<span class="ChapterCard__more">…等 ${names.length} 個單元</span>`;
+  };
+
   const chapterCards = chapters.map((ch) => {
     const drills = ch.units.reduce((n, u) => n + (u.drills?.length || 0), 0);
     return `
@@ -531,7 +551,7 @@ export function renderHome(course) {
         <span class="ChapterCard__main">
           <span class="ChapterCard__title"><span class="Chapter__code">${esc(ch.code)}</span> ${esc(ch.title)}</span>
           <span class="ChapterCard__meta">${ch.units.length} 單元${drills ? ` · ${drills} ${UI.drillNoun || "支跟練影片"}` : ""}</span>
-          <span class="ChapterCard__units">${ch.units.map((u) => esc(u.name)).join("、")}</span>
+          <span class="ChapterCard__units">${unitPreview(ch.units)}</span>
         </span>
       </button>`;
   }).join("");

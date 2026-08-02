@@ -213,3 +213,9 @@
     font-size: 17px;
   }
 }
+
+/* 「…等 N 個單元」：告訴使用者被截掉了，而不是讓他以為就這些 */
+.ChapterCard__more {
+  color: var(--fgColor-muted);
+  white-space: nowrap;
+}

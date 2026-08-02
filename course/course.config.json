@@ -491,7 +491,8 @@
     "disclaimer": "<strong>免責聲明。</strong>本課程為醫學教育內容，<strong>不構成對特定病人的診療建議</strong>，也不能取代當地的 credentialing、supervision、感染控制與法規要求。「證據強度」反映查核當下的狀態，指引會改版，請以最新原文為準；任何介入操作都應在合格督導下、於符合規範的場域執行。",
     "credits": "<strong>版權。</strong>所有影音與病例版權歸原權利人所有。本站只做策展、查核與連結，不下載、不剪輯、不重新散布，也不代管任何患者影像。",
     "creator": "課程整理｜童綜合醫院 新陳代謝科",
-    "contact": "聯絡：<a href=\"mailto:zinojeng@gmail.com\">zinojeng@gmail.com</a>　·　<a href=\"https://line.me/ti/p/~zinojeng\" rel=\"noopener\">LINE zinojeng</a>"
+    "contact": "聯絡：<a href=\"https://line.me/ti/p/~zinojeng\" rel=\"noopener\">LINE zinojeng</a>",
+    "colophon": "這門課的框架衍生自 <a href=\"https://github.com/htlin222/gym-course\" rel=\"noopener\">gym-course</a>（<a href=\"https://github.com/htlin222\" rel=\"noopener\">Dr. Hsieh-Ting Lin 林協霆</a>，MIT）——章節配額、離線稽核、連結驗證與「找不到就誠實留空」的設計都出自那裡，謹此致敬。設計語彙取自 <a href=\"https://primer.style/\" rel=\"noopener\">Primer</a>，圖示為 <a href=\"https://lucide.dev/icons/\" rel=\"noopener\">Lucide</a>（ISC）。"
   },
   "llms": {
     "summary": "這是一門免費的進階甲狀腺及頸部超音波線上課程，受眾是內分泌新陳代謝科 fellow 與已取得專科資格的醫師。14 章、68 個單元，涵蓋掃描最佳化、正常解剖與變異、瀰漫性甲狀腺疾病、結節描述語言與四大風險分層系統比較、細針穿刺與介入超音波、惡性腫瘤影像、頸部淋巴結分期、術後追蹤、副甲狀腺與甲狀腺外病灶、特殊族群、新興技術、高難度病例與報告品保，涵蓋 {problems} 個病例演練單元。所有資源皆為第三方學會、期刊、醫院或創作者的公開作品，本站僅提供策展與連結。",
