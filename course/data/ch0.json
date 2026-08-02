@@ -1,0 +1,256 @@
+{
+  "chapter": "CH0",
+  "title": "能力地圖、前測與查漏補缺",
+  "units": [
+    {
+      "id": "ch0-u1",
+      "name": "Fellow 該具備的甲狀腺超音波能力地圖",
+      "type": "assessment",
+      "assessment": "用 EFSUMB 頭頸部超音波的 Level 1／2／3 能力描述，逐項對照自己過去三個月實際做過的檢查，標出「能獨立完成／需要有人在旁／完全沒做過」。接著抽自己簽出的五份報告，檢查是否記錄了雙側葉三徑、峽部厚度與側頸分區，算出缺漏比例。最後把缺口最大的兩項對應到本課程的章節編號，寫下預計在哪一章補齊、用什麼方式驗收。",
+      "tight": [
+        "把「會掃」等同於「會判讀」：能取得漂亮影像，不代表能把同一顆結節穩定分到同一個 TI-RADS 類別",
+        "以為超音波能回答組織型別，把 sonographic pattern 的機率語言當成診斷結論",
+        "能力地圖只涵蓋甲狀腺本身，漏掉側頸分區、術後甲狀腺床與副甲狀腺，等於少了一半"
+      ],
+      "weak": [
+        "說得出自己目前落在 EFSUMB Level 1／2／3 的哪一層，以及缺哪幾項才能升層",
+        "指出同一顆結節在不同判讀者之間最容易不一致的影像特徵（echogenicity、margin、echogenic foci）",
+        "分辨哪些臨床問題超音波能回答、哪些一定要靠細胞學或後續影像才能收斂"
+      ],
+      "lesson": {
+        "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+        "channel": "AIUMultrasound",
+        "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+        "duration": "44:34",
+        "why": "AIUM 出品、由內分泌科 Jennifer A. Sipos 主講，一次把頸部超音波「能回答什麼」攤開：腺體測量與體積、pyramidal lobe 與 Zuckerkandl tubercle、結節惡性徵象、FNA 取樣策略、淋巴結 Doppler、術後追蹤、副甲狀腺定位到聲帶評估。這份清單正好就是 fellow 的能力地圖，用來標出自己哪一格是空的；它不教你怎麼拿探頭，所以不會讓課程退化成入門教學。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 AIUM，本站僅連結不重製",
+        "coi": "片尾致謝 Esaote 的教育性補助。內容由學會製作、無產品比較或機型推薦，但仍屬廠商資助教材，聽取機器相關敘述時請留意。",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          { "at": "04:04", "note": "結節處置指引的全景，作為能力地圖的座標" },
+          { "at": "13:08", "note": "腺體體積計算——最常被省略的基本功" },
+          { "at": "20:17", "note": "惡性徵象逐項說明，對照自己判讀時真的會看的項目" },
+          { "at": "37:56", "note": "術後追蹤與副甲狀腺定位，能力地圖最常缺的兩格" }
+        ]
+      },
+      "drills": [
+        {
+          "name": "用歐洲學會的三層能力分級定位自己",
+          "en": "Head and Neck Ultrasound – EFSUMB Training Recommendations for the Practice of Medical Ultrasound in Europe",
+          "kind": "guideline",
+          "target": "EFSUMB 把頭頸部超音波能力切成三層：Level 1 能獨立完成基本頭頸部檢查，Level 2 加上超音波導引介入，Level 3 是高階頸部超音波與新技術。文中同時說明為什麼「做滿幾例」是不可靠的能力指標，訓練正在轉向 competence-based 評估——這正是本章要求你用 logbook 而不是例數來自評的理由。",
+          "dose": "先憑印象寫下「我應該在哪一層」，再讀能力表格逐項打勾；打不到勾的項目直接對應到本課程章節。全文開放取用（CC BY-NC-ND 4.0），約六頁，二十分鐘可讀完。",
+          "title": "Head and Neck Ultrasound – EFSUMB Training Recommendations for the Practice of Medical Ultrasound in Europe",
+          "channel": "Ultrasound International Open（EFSUMB 官方期刊，Thieme 出版）",
+          "url": "https://www.thieme-connect.com/products/ejournals/html/10.1055/a-1922-6778",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY-NC-ND 4.0；Ultrasound Int Open 2022;08(01):E29–E34，DOI 10.1055/a-1922-6778。本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "判讀者之間的一致性到底有多低",
+          "en": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+          "kind": "lecture",
+          "target": "Burgos 針對兩個內分泌學會會員做的調查顯示，同一段影像在不同臨床醫師之間的 inter-rater agreement 有多項落在 AC1 0.6 以下（moderate 與 substantial 的分界）；接著由 ACR TI-RADS (2017) 白皮書作者 Franklin Tessler 從 5 大類、18 個描述詞逐一說明歧異出在哪些定義上。這是「你以為的標準化其實沒那麼標準」的實證，也是本章前測要處理的落差來源。",
+          "dose": "先看 09:20 起的結果圖，自己先猜哪三個特徵最不一致再看答案；16:31 起 Tessler 的定義說明是重點；40:10 之後的 Q&A 可略過。注意這是 webinar，畫面以投影片與靜態影像為主，沒有連續動態掃描示範。",
+          "title": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=r9jwnXoUMIA",
+          "duration": "59:44",
+          "tier": "B",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結不重製",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "09:20", "note": "各影像特徵的 inter-rater agreement 結果" },
+            { "at": "16:31", "note": "Tessler 逐項拆解 ACR TI-RADS (2017) 的 18 個描述詞定義" }
+          ]
+        },
+        {
+          "name": "結節指引更新的全景與各系統的定位",
+          "en": "Thyroid Nodule Guidelines Update Panel Discussion with Dr. Mandel",
+          "kind": "lecture",
+          "target": "Susan Mandel 主講、Jill Langer／Erik Alexander／Mark Urken 討論的指引更新場次（2025 年錄製），用來在課程開始前建立一張「現在的建議長什麼樣」的地圖：哪些是穿刺門檻的變動、哪些是追蹤策略的變動、內分泌與外科的觀點差在哪。這一支的價值在時效，不在教你判讀單一影像。",
+          "dose": "03:49 起是主講，48:52 起是討論。建議先聽完主講、寫下三個和自己現行做法不同的地方，再聽討論段確認那三點是否仍有爭議。",
+          "title": "Thyroid Nodule Guidelines Update Panel Discussion with Dr. Mandel",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=GIVyh30Gygg",
+          "duration": "58:39",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結不重製",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "03:49", "note": "Mandel 主講：指引更新的重點" },
+            { "at": "48:52", "note": "四位講者的討論與 Q&A，爭議點集中在這一段" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch0-u2",
+      "name": "影像方位、探頭操作與標準掃描的快速複習",
+      "type": "scan",
+      "assessment": "拿自己最近三份甲狀腺超音波的存檔影像，對照 AIUM–ACR–SPR–SRU 頭頸部 practice parameter 的必錄影像清單逐張核對：雙側葉的上／中／下三張橫切、內／中／外三張縱切、峽部橫切，以及三徑測量與峽部前後徑是否齊全，左右與方位標記是否與體位一致。缺哪一張就當場補掃一次，記錄補齊前後的單次檢查耗時差，並寫下自己漏掉的是哪一類（順序漏、標記漏、還是測量漏）。",
+      "tight": [
+        "橫切時探頭沒有真正垂直於氣管，斜切把腺葉前後徑放大，體積計算跟著錯",
+        "把 longus colli 肌肉、食道或氣管旁的低回音結構當成下極結節",
+        "探頭加壓讓腺體與結節變形，taller-than-wide 的判斷因此失真"
+      ],
+      "weak": [
+        "不重新擺位就能連續完成雙側葉、峽部與側頸的標準掃描順序",
+        "正確測三徑並用 ellipsoid formula 算出單葉與全腺體體積",
+        "說得出每一張存檔影像對應 practice parameter 的哪一項要求"
+      ],
+      "lesson": {
+        "title": "Small Parts Ultrasound | Thyroid - Protocol, Tips & Tricks",
+        "channel": "Sonography Minutes",
+        "url": "https://www.youtube.com/watch?v=vlAMWL9V9fY",
+        "duration": "18:51",
+        "why": "這是 prerequisite 複習而非課程主體：影片按標準 protocol 的順序把整套掃描做過一遍（整體橫切、峽部橫縱切、雙側葉橫縱切、側頸淋巴結、頜下腺與腮腺，最後補影像最佳化），畫面全程是實際動態掃描，適合 fellow 在二十分鐘內確認自己的掃描順序有沒有缺漏。判讀與參數最佳化一律留給 CH1 之後的章節，這裡只驗收「有沒有掃到、有沒有存下來」。",
+        "tier": "C",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 Sonography Minutes，本站僅連結不重製",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          { "at": "00:13", "note": "整套 protocol 的順序總覽，先對照自己的習慣順序" },
+          { "at": "02:00", "note": "峽部橫切與縱切——最常被草草帶過的一張" },
+          { "at": "09:13", "note": "順手掃側頸淋巴結，銜接 CH7 的分區觀念" },
+          { "at": "16:55", "note": "甲狀腺影像最佳化的基本設定" }
+        ]
+      },
+      "drills": [
+        {
+          "name": "標準頸部超音波必須留下哪些影像",
+          "en": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+          "kind": "guideline",
+          "target": "Specifications of the Examination 一節把最低留影標準寫死了：頸部盡量過度伸展（不能耐受者可改坐姿）、雙側葉在縱切與橫切都要成像、存檔影像必須包含雙側葉上／中／下三張橫切與內／中／外三張縱切、峽部橫切一張，三個徑（AP／transverse／longitudinal）都要記錄，橫切面上的峽部厚度也要記錄，Doppler 屬補充而非必要。這份清單就是自己 logbook 的對照表。",
+          "dose": "只讀 Indications 與 Specifications of the Examination 兩節即可，十分鐘。版本要看清楚：AIUM 網站這份免費全文是 2018 年版（J Ultrasound Med 2018;37(11)，DOI 10.1002/jum.14830）；現行版本是 2023 年改版的「AIUM Practice Parameter for the Performance and Interpretation of Diagnostic Ultrasound of the Thyroid and Extracranial Head and Neck」（DOI 10.1002/jum.16251、PMID 37172222），該版全文需訂閱，本課程選擇連結可完整開放閱讀的 2018 年版並在此標明版本差異。",
+          "title": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "AIUM 官方 practice parameter，於 aium.org 免費公開下載；版權歸 AIUM，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "前頸與側頸的連續掃描示範",
+          "en": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
+          "kind": "procedure",
+          "target": "四分鐘內完整走一次前頸橫切、氣管旁縱切、再轉到右側頸的連續掃描，重點在探頭移動的連續性與方位切換的時機，而不是病灶判讀。用來檢查自己在「橫切轉縱切」與「中央區轉側頸」這兩個接縫處會不會失去解剖定位。",
+          "dose": "第一次先不看畫面標註，自己說出探頭現在在哪一個平面、螢幕左側對應哪一側，再回放核對。",
+          "title": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
+          "channel": "Joseph Minardi",
+          "url": "https://www.youtube.com/watch?v=rUhmKzcUjvM",
+          "duration": "3:51",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原作者 Joseph Minardi，本站僅連結不重製",
+          "last_verified": "2026-08-02",
+          "timestamps": [
+            { "at": "00:00", "note": "前頸橫切的起始位置與方位" },
+            { "at": "01:38", "note": "轉為氣管旁縱切" },
+            { "at": "02:40", "note": "移向右側頸的橫切" }
+          ]
+        },
+        {
+          "name": "三徑測量與腺體體積計算",
+          "en": "How To Measure Thyroid On Ultrasound | Length, Width, AP Depth & Volume Measurements USG",
+          "kind": "procedure",
+          "target": "兩分半內示範長徑、寬徑、前後徑的量測平面與游標擺放，以及單葉體積相加得到全腺體體積的做法。體積是瀰漫性疾病追蹤與術前評估的基本量，卻是 fellow 最常量得不一致的一項——差異多半來自斜切而不是游標。",
+          "dose": "看完後拿自己的機器實測同一位受檢者三次，比較三次體積的變異；差超過一成就回去看橫切是否垂直於氣管。影片附的正常值僅供參考，臨床判讀請以自己實驗室與族群的參考範圍為準。",
+          "title": "How To Measure Thyroid On Ultrasound | Length, Width, AP Depth & Volume Measurements USG",
+          "channel": "Dr. Sam's Imaging Library",
+          "url": "https://www.youtube.com/watch?v=Q7TpPgTsmfU",
+          "duration": "2:27",
+          "tier": "C",
+          "source_type": "video",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道 Dr. Sam's Imaging Library，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch0-u3",
+      "name": "常見基礎錯誤與個人掃描 logbook",
+      "type": "quality",
+      "assessment": "從自己最近二十次甲狀腺超音波隨機抽十次，逐項記錄六個欄位：影像有無側別與方位標記、gain 是否讓囊性成分變成假實質、focus 是否落在腺體層、有無把探頭壓到腺體變形、三徑與峽部厚度是否齊全、報告是否寫出可重複比對的結節位置與大小。算出每一項的缺失率，把缺失率最高的兩項訂為未來一個月的 logbook 追蹤指標，一個月後用同樣十個欄位重測一次並比較。",
+      "tight": [
+        "gain 開太高把單純囊腫填成低回音實質結節；gain 太低又讓正常腺體看起來像 thyroiditis",
+        "存檔影像缺側別與方位標記，事後無法確定追蹤的是不是同一顆結節",
+        "只存「有病灶」的畫面，正常側與陰性所見沒有留檔，之後無法證明當時掃過"
+      ],
+      "weak": [
+        "看自己的存檔影像就能指出是哪一個參數沒調好，並說出補救方式",
+        "把必錄影像、測量與報告欄位整理成一份可稽核、能逐月比較的個人 logbook"
+      ],
+      "lesson": {
+        "title": "General Ultrasound Image Optimization | Don't Do This!",
+        "channel": "Sonography Minutes",
+        "url": "https://www.youtube.com/watch?v=6mC2fVP248w",
+        "duration": "23:35",
+        "why": "以逐張「不要這樣做」的對照影像示範最常見的基礎技術錯誤：gain 與 TGC、深度與 focus 位置、off-axis 切面、標記與游標擺放。它講的是一般超音波而不是甲狀腺專屬，選它的理由正是這些錯誤在甲狀腺這種淺層小器官上被放大得最明顯，適合直接當個人 logbook 的自我稽核檢查表；甲狀腺專屬的參數最佳化留在 CH1 處理。",
+        "tier": "C",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道 Sonography Minutes，本站僅連結不重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "超音波檢查的最低留檔與報告要求",
+          "en": "AIUM Practice Parameter for Documentation of an Ultrasound Examination",
+          "kind": "guideline",
+          "target": "把「檢查做完了」與「檢查留得下來」分開看：這份 practice parameter 規定影像必須標示機構、日期、病人識別、側別與方位，異常所見要有可重複的測量與定位，最終報告要能獨立支持後續處置。拿它來定義自己 logbook 的欄位，而不是自己想一套。",
+          "dose": "讀 Requirements for the Ultrasound Examination 與 Documentation and Reporting 兩節，把每一條轉成 logbook 的一個是／否欄位。版本要標清楚：AIUM 網站這份免費全文為 2020 年版（J Ultrasound Med 2020;39(1)，DOI 10.1002/jum.15187）；現行版本為 2025 Revision（DOI 10.1002/jum.70168、PMID 41518118），需訂閱才能取得全文。",
+          "title": "AIUM Practice Parameter for Documentation of an Ultrasound Examination",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM)",
+          "url": "https://www.aium.org/docs/default-source/resources/guidelines/aium-practice-parameter-for-documentation-of-an-ultrasound-examination.pdf?sfvrsn=3135b66_3",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "AIUM 官方 practice parameter，於 aium.org 免費公開下載；版權歸 AIUM，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "認證送件的影像規格：把 logbook 寫成別人看得懂的樣子",
+          "en": "Case Study Submission Requirements: Thyroid, Parathyroid, and Neck",
+          "kind": "guideline",
+          "target": "AIUM 甲狀腺／副甲狀腺／頸部超音波認證的送件規格：主站需送四個病例，其中兩個是異常的甲狀腺／副甲狀腺病例（一個必須含超音波導引細針穿刺，且影像要看得到針身在病灶內），另兩個是異常頸部病例（同樣一個含導引穿刺）；接受過部分或全甲狀腺切除的病人不得作為送件病例，非適應症的檢查也不採計。這是一份外部評審真的會用的檢核表。",
+          "dose": "把這份清單當成個人 logbook 的欄位定義：每一筆記錄都要能回答「這個 case 現在送得出去嗎」。文件本身標註 updated 7/24/24；認證要求會改版，實際申請前請回 AIUM 認證頁面確認最新版。",
+          "title": "Case Study Submission Requirements: Thyroid, Parathyroid, and Neck",
+          "channel": "American Institute of Ultrasound in Medicine (AIUM) Accreditation",
+          "url": "https://www.aium.org/docs/default-source/accreditation/case-study-requirements/thyroidneck.pdf?sfvrsn=b1e04e4a_7",
+          "tier": "A",
+          "source_type": "guideline",
+          "provider": "society",
+          "access": "open",
+          "license": "AIUM 認證文件，於 aium.org 免費公開下載；版權歸 AIUM，本站僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}

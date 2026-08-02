@@ -1,0 +1,263 @@
+{
+  "chapter": "CH0",
+  "searched": [
+    "yt-dlp ytsearch20: thyroid ultrasound scanning technique protocol systematic",
+    "yt-dlp ytsearch20: thyroid ultrasound transducer orientation probe technique",
+    "yt-dlp ytsearch20: neck ultrasound scanning protocol thyroid lecture",
+    "yt-dlp ytsearch20: thyroid ultrasound competency training endocrinologist",
+    "yt-dlp ytsearch20: thyroid ultrasound pitfalls common errors",
+    "yt-dlp ytsearch20: thyroid ultrasound self assessment cases quiz",
+    "yt-dlp ytsearch15: AIUM thyroid ultrasound practice parameter",
+    "yt-dlp ytsearch15: thyroid ultrasound image optimization artifacts pseudonodule（零結果）",
+    "yt-dlp ytsearch15: interobserver variability thyroid nodule ultrasound",
+    "yt-dlp ytsearch15: thyroid ultrasound documentation report standard images",
+    "yt-dlp ytsearch15: thyroid nodule ultrasound what endocrinologists need to know lecture",
+    "yt-dlp ytsearch15: ultrasound machine knobology gain depth focus thyroid",
+    "yt-dlp ytsearch15: thyroid ultrasound artifacts anisotropy posterior acoustic（零結果）",
+    "yt-dlp ytsearch15: AACE thyroid ultrasound course endocrinologist",
+    "yt-dlp ytsearch15: thyroid ultrasound protocol tips tricks small parts",
+    "yt-dlp ytsearch15: sonography image optimization mistakes thyroid quality assurance",
+    "yt-dlp ytsearch15: ultrasound reporting quality assurance accreditation sonographer",
+    "yt-dlp ytsearch15: thyroid ultrasound pseudonodule artifact esophagus longus colli mimic（零結果）",
+    "web: AIUM practice parameter performance thyroid parathyroid ultrasound examination（限 aium.org）",
+    "web: EFSUMB minimum training requirements ultrasound thyroid neck level 1 competence",
+    "web: \"AIUM Practice Parameter\" \"Thyroid and Extracranial Head and Neck\" 2023 pdf",
+    "站內爬取 https://www.aium.org/resources/practice-parameters 取得各 parameter 的現行版本年份與 DOI",
+    "站內爬取 https://www.aium.org/accreditation/thyroid-parathyroid-and-neck-ultrasound 取得認證送件文件連結",
+    "Crossref API 查證 10.1002/jum.16251、10.1002/jum.70168、10.1002/jum.14830、10.1002/jum.15187、10.1055/a-1922-6778",
+    "Europe PMC API 查證 PMID 37172222、41518118 的開放取用狀態"
+  ],
+  "verification_notes": [
+    "所有 YouTube ID 均來自 yt-dlp 搜尋輸出，並以 oEmbed 逐一取得 HTTP 200 與相符的 title／author_name（2026-08-02）。",
+    "所有非 YouTube 連結以 curl -sL 實際取得 HTTP 200；PDF 另下載後解出內文比對標題與內容。",
+    "onlinelibrary.wiley.com 與 doi.org 對 curl 回 403 且頁面標題為「Just a moment...」，判定為 Cloudflare bot 防護而非真的封鎖；因無法自行驗證頁面內容，未將 Wiley 連結寫進 ch0.json，改以 DOI／PMID 文字形式標註現行版本。",
+    "radiopaedia.org 對 curl 回 406（bot 防護），本章未採用。",
+    "efsumb.org/minimum-training-requirements/ 回 200，但 /minimum-training-requirements（無尾斜線）會被導向 wp-admin 登入頁；本章改採 EFSUMB 官方期刊上的開放全文。"
+  ],
+  "evaluated": [
+    {
+      "title": "Neck Ultrasonography: What Can You Really See and How Can It Help Your Practice?",
+      "url": "https://www.youtube.com/watch?v=WoHz6w-_jz8",
+      "source": "YouTube / AIUMultrasound",
+      "decision": "included",
+      "unit": "ch0-u1",
+      "role": "lesson",
+      "reason": "AIUM 官方教學影片，講者為內分泌科 Jennifer A. Sipos。章節涵蓋測量、體積、變異、惡性徵象、FNA、淋巴結、術後追蹤、副甲狀腺與聲帶，正好構成能力地圖清單。44:34、130,137 次觀看。已於 coi 記錄 Esaote 教育性補助。"
+    },
+    {
+      "title": "Head and Neck Ultrasound – EFSUMB Training Recommendations for the Practice of Medical Ultrasound in Europe",
+      "url": "https://www.thieme-connect.com/products/ejournals/html/10.1055/a-1922-6778",
+      "source": "Ultrasound International Open（EFSUMB 官方期刊）",
+      "decision": "included",
+      "unit": "ch0-u1",
+      "reason": "本章唯一的能力分層原始文件：Level 1／2／3 定義，並說明例數不是可靠的能力指標。CC BY-NC-ND 4.0 開放全文，curl 200，Crossref 確認 Ultrasound Int Open 2022;08(01):E29–E34。"
+    },
+    {
+      "title": "Clinician Agreement on Thyroid Nodule Classification with Dr. Burgos",
+      "url": "https://www.youtube.com/watch?v=r9jwnXoUMIA",
+      "source": "YouTube / THANC Foundation",
+      "decision": "included",
+      "unit": "ch0-u1",
+      "reason": "Burgos 的兩學會問卷研究＋ACR TI-RADS (2017) 白皮書作者 Tessler 討論，提供判讀者間不一致的實證，是前測要處理的落差來源。以投影片與靜態影像為主、無動態掃描，故列 Tier B 並在 dose 明講。750 次觀看（高於 300 門檻但偏低，已人工核對內容）。"
+    },
+    {
+      "title": "Thyroid Nodule Guidelines Update Panel Discussion with Dr. Mandel",
+      "url": "https://www.youtube.com/watch?v=GIVyh30Gygg",
+      "source": "YouTube / THANC Foundation",
+      "decision": "included",
+      "unit": "ch0-u1",
+      "reason": "2025-08-22 上線，Susan Mandel 主講、Langer／Alexander／Urken 討論，是本章最新的指引全景。時效性高，適合當能力地圖的座標。"
+    },
+    {
+      "title": "Small Parts Ultrasound | Thyroid - Protocol, Tips & Tricks",
+      "url": "https://www.youtube.com/watch?v=vlAMWL9V9fY",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "included",
+      "unit": "ch0-u2",
+      "role": "lesson",
+      "reason": "章節標記顯示完整走過整體橫切、峽部、雙側葉橫縱切、側頸淋巴結、頜下腺與腮腺、影像最佳化，全程實際動態掃描。作為 prerequisite 複習的主課，Tier C，why 已註明不是課程主體。"
+    },
+    {
+      "title": "AIUM–ACR–SPR–SRU Practice Parameter for the Performance and Interpretation of a Diagnostic Ultrasound Examination of the Extracranial Head and Neck",
+      "url": "https://www.aium.org/docs/default-source/resources/guidelines/extracranial_head_neck.pdf?sfvrsn=a0608552_1",
+      "source": "AIUM",
+      "decision": "included",
+      "unit": "ch0-u2",
+      "reason": "免費全文，Specifications of the Examination 明列必錄影像與必測徑線，是 logbook 的對照表。已下載解出內文確認。版本為 2018 年版（DOI 10.1002/jum.14830），現行為 2023 年改版（DOI 10.1002/jum.16251、PMID 37172222），該版需訂閱，已在 dose 標明版本差異。"
+    },
+    {
+      "title": "Anterior and Lateral Neck, Ultrasound Scanning Technique",
+      "url": "https://www.youtube.com/watch?v=rUhmKzcUjvM",
+      "source": "YouTube / Joseph Minardi（West Virginia University 急診超音波教學）",
+      "decision": "included",
+      "unit": "ch0-u2",
+      "reason": "3:51 連續動態掃描，含前頸橫切、氣管旁縱切、右側頸橫切三個章節標記，正好練「切面轉換不失去定位」。學術單位教師製作，Tier C。"
+    },
+    {
+      "title": "How To Measure Thyroid On Ultrasound | Length, Width, AP Depth & Volume Measurements USG",
+      "url": "https://www.youtube.com/watch?v=Q7TpPgTsmfU",
+      "source": "YouTube / Dr. Sam's Imaging Library",
+      "decision": "included",
+      "unit": "ch0-u2",
+      "reason": "體積量測是 fellow 最常量得不一致的基本項目，本片示範平面選擇與游標擺放。頻道非學會或學術單位，故列 Tier C，並在 dose 註明其正常值僅供參考、應以各自參考範圍為準。本章最弱的選材之一。"
+    },
+    {
+      "title": "General Ultrasound Image Optimization | Don't Do This!",
+      "url": "https://www.youtube.com/watch?v=6mC2fVP248w",
+      "source": "YouTube / Sonography Minutes",
+      "decision": "included",
+      "unit": "ch0-u3",
+      "role": "lesson",
+      "reason": "以對照影像逐項示範 gain／TGC／深度／focus／off-axis／標記等基礎錯誤，可直接轉成自我稽核檢查表。缺點是非甲狀腺專屬，已在 why 誠實說明選它的理由與界線。7,711 次觀看。"
+    },
+    {
+      "title": "AIUM Practice Parameter for Documentation of an Ultrasound Examination",
+      "url": "https://www.aium.org/docs/default-source/resources/guidelines/aium-practice-parameter-for-documentation-of-an-ultrasound-examination.pdf?sfvrsn=3135b66_3",
+      "source": "AIUM",
+      "decision": "included",
+      "unit": "ch0-u3",
+      "reason": "定義影像標示、測量記錄與報告的最低要求，用來設計 logbook 欄位。免費全文並已下載確認章節結構。版本為 2020 年版（DOI 10.1002/jum.15187），現行為 2025 Revision（DOI 10.1002/jum.70168、PMID 41518118，需訂閱），已在 dose 標明。"
+    },
+    {
+      "title": "Case Study Submission Requirements: Thyroid, Parathyroid, and Neck",
+      "url": "https://www.aium.org/docs/default-source/accreditation/case-study-requirements/thyroidneck.pdf?sfvrsn=b1e04e4a_7",
+      "source": "AIUM Accreditation",
+      "decision": "included",
+      "unit": "ch0-u3",
+      "reason": "外部評審真的會用的送件檢核表（4 個病例、含 UGFNA 且針身須顯示於病灶內、甲狀腺切除後病人不採計）。文件標註 updated 7/24/24，是本章最新的非 YouTube 來源。"
+    },
+    {
+      "title": "AIUM Practice Parameter for the Performance and Interpretation of Diagnostic Ultrasound of the Thyroid and Extracranial Head and Neck（2023 現行版）",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.16251",
+      "source": "Journal of Ultrasound in Medicine / Wiley",
+      "decision": "excluded",
+      "reason": "這是現行版本，但 curl 回 403（Cloudflare 挑戰頁），Europe PMC 顯示 isOpenAccess=N、需訂閱。無法自行驗證頁面內容也無法讓學員開放取用，故不寫進資料檔，改在 ch0-u2 的 dose 以 DOI／PMID 文字標註版本。"
+    },
+    {
+      "title": "AIUM Practice Parameter for Documentation of an Ultrasound Examination, 2025 Revision",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jum.70168",
+      "source": "Journal of Ultrasound in Medicine / Wiley",
+      "decision": "excluded",
+      "reason": "同上：403 Cloudflare 挑戰頁、Europe PMC 顯示需訂閱。以 DOI／PMID 於 ch0-u3 的 dose 標註。"
+    },
+    {
+      "title": "Thyroid, Parathyroid, and Neck Ultrasound（AIUM 認證說明頁）",
+      "url": "https://www.aium.org/accreditation/thyroid-parathyroid-and-neck-ultrasound",
+      "source": "AIUM",
+      "decision": "excluded",
+      "reason": "curl 200、內容正確，但本身只是連往各規格 PDF 的入口頁，實質內容都在已收錄的 case study requirements PDF 裡；為避免同一單元內容重複而不收。"
+    },
+    {
+      "title": "Minimum Training Recommendations – EFSUMB",
+      "url": "https://efsumb.org/minimum-training-recommendations/",
+      "source": "EFSUMB",
+      "decision": "excluded",
+      "reason": "curl 200，但頁面是各專科建議的索引；頭頸部的實質內容就是已收錄的 Ultrasound International Open 開放全文，重複故不收。"
+    },
+    {
+      "title": "AIUM Practice Parameter for the Performance of Ultrasound Examinations of the Head and Neck (AAO-HNS)",
+      "url": "https://www.aium.org/docs/default-source/resources/guidelines/headneck.pdf?sfvrsn=1a8358f0_1",
+      "source": "AIUM / AAO-HNS",
+      "decision": "excluded",
+      "reason": "curl 200、PDF 可下載，但 AIUM 官網標示為 2014 年版，且已被 2023 年的 Thyroid and Extracranial Head and Neck parameter 涵蓋。用過時版本當教材違反本課程規則，故不收。"
+    },
+    {
+      "title": "Basics of Thyroid Ultrasound",
+      "url": "https://www.youtube.com/watch?v=iTK148HZjIc",
+      "source": "YouTube / POCUS 101",
+      "decision": "excluded",
+      "reason": "oEmbed 200、12:52、150,534 次觀看，品質可用。但章節顯示主體是 echogenicity／microcalcification／halo／composition／vascularity 等結節特徵，與 CH4 的風險分層高度重疊，放在 CH0 會把課程重心往入門端拉。"
+    },
+    {
+      "title": "Thyroid Ultrasound for the Sonographer",
+      "url": "https://www.youtube.com/watch?v=lstPzVhLDXI",
+      "source": "YouTube / Sononerds",
+      "decision": "excluded",
+      "reason": "oEmbed 200、22:11。內容為正常甲狀腺聲像描述，與已選的 Sonography Minutes 主課重疊，且缺章節標記不利於指定觀看區間。"
+    },
+    {
+      "title": "Sonoquickies - Thyroid Ultrasound Protocol",
+      "url": "https://www.youtube.com/watch?v=53lyqKhIu_Q",
+      "source": "YouTube / Sonographic Tendencies",
+      "decision": "excluded",
+      "reason": "1:37 的快速 protocol 摘要，作者自述「每個機構做法略有不同」，未對齊任何 practice parameter；已有 AIUM 原文可作對照表，不需再收。"
+    },
+    {
+      "title": "BASICS OF NECK ULTRASOUND | DR SANJEEV MANI",
+      "url": "https://www.youtube.com/watch?v=dInDrV5kP1g",
+      "source": "YouTube / Indian Radiologist",
+      "decision": "excluded",
+      "reason": "13:45、139,684 次觀看，影像品質可，但內容從淋巴結、結核性淋巴結、甲狀腺炎一路到 IJV 栓塞，主題分散且分屬 CH3／CH7；描述欄同時是研討會宣傳。"
+    },
+    {
+      "title": "Thyroid - Ultrasound Scanning Technique / Basic Thyroid U/S Protocol",
+      "url": "https://www.youtube.com/watch?v=ftg6kTYpzGA",
+      "source": "YouTube / Clarius Mobile Health",
+      "decision": "excluded",
+      "reason": "設備廠商內容，示範以自家掌上型探頭為主（2:04）。廠商教材可收但須有明確教學增值；本章已有更完整的 protocol 主課，收了只會增加需要揭露的利益關係而無教學增益。"
+    },
+    {
+      "title": "Ultrasound Training: Thyroid and Parathyroid Glands",
+      "url": "https://www.youtube.com/watch?v=iIO09kGSRkI",
+      "source": "YouTube / SIMTICS",
+      "decision": "excluded",
+      "reason": "商業訓練產品的宣傳性示範片（3:00），內容為模擬軟體畫面而非真實臨床掃描。"
+    },
+    {
+      "title": "ACR TI-RADS Webinar Part I: This Is How We Do It",
+      "url": "https://www.youtube.com/watch?v=s0f1cU7rxXA",
+      "source": "YouTube / American College of Radiology",
+      "decision": "excluded",
+      "reason": "品質很高（ACR 官方、59:21、80,060 次觀看），但主題是 ACR TI-RADS (2017) 的完整教學，屬於 CH4 的核心，留給該章以免跨章重複佔用。"
+    },
+    {
+      "title": "Unit 22: Quality & Performance — Ultrasound Physics with Sononerds",
+      "url": "https://www.youtube.com/watch?v=0U2Pcu2SjeM",
+      "source": "YouTube / Sononerds",
+      "decision": "excluded",
+      "reason": "44:07 的品保單元，但內容是超音波物理與機器效能測試（phantom、註冊考試導向），與本章的個人 logbook 自我稽核不同層次；較適合 CH13。"
+    },
+    {
+      "title": "Thyroid Ultrasound Reporting | How To Write USG Scan Reports",
+      "url": "https://www.youtube.com/watch?v=gt-S1ejTfAY",
+      "source": "YouTube / Dr. Sam's Imaging Library",
+      "decision": "excluded",
+      "reason": "38:54 的報告書寫教學，主題屬 CH13「報告、品質保證與能力認證」，且本章已用 AIUM documentation parameter 涵蓋最低要求。"
+    },
+    {
+      "title": "Thyroid Status Examination / Examination of the Thyroid / Clinical Examination of Thyroid Gland 等 OSCE 影片",
+      "url": "https://www.youtube.com/watch?v=ziaYBkgEZNU",
+      "source": "YouTube / Geeky Medics、AMBOSS、Royal Christ College 等",
+      "decision": "excluded",
+      "reason": "觀看數極高但全為理學檢查 OSCE 教學，完全不含超音波影像，與本課程受眾不符。"
+    },
+    {
+      "title": "How to Do a Self Thyroid Exam",
+      "url": "https://www.youtube.com/watch?v=msbHLZQz8fk",
+      "source": "YouTube / Cleveland Clinic",
+      "decision": "excluded",
+      "reason": "面向一般民眾的自我觸診衛教（1:01），非專業教材。"
+    },
+    {
+      "title": "FNA Workshop 17th May 2023 - Session 2 (Ultrasound Neck Anatomy Systemic Scanning Technique)",
+      "url": "https://www.youtube.com/watch?v=9C4yGa_RbUU",
+      "source": "YouTube / GM Cancer Academy",
+      "decision": "excluded",
+      "reason": "來源可信（NHS Greater Manchester Cancer Academy）、30:16，但僅 402 次觀看且無章節標記，內容含 FNA workshop 片段，主題橫跨 CH2 與 CH5；本章篇幅有限，留給相關章節評估。"
+    },
+    {
+      "title": "Radiopaedia — Thyroid ultrasound",
+      "url": "https://radiopaedia.org/articles/thyroid-ultrasound",
+      "source": "Radiopaedia",
+      "decision": "excluded",
+      "reason": "curl 回 406（bot 防護），無法在本次作業中實際驗證頁面內容，依「每一個 URL 都要實際驗過」的規則不採用。"
+    },
+    {
+      "title": "AIUM Practice Parameter for the Performance of a Thyroid and Parathyroid Ultrasound Examination（PMID 27574124）",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27574124/",
+      "source": "PubMed",
+      "decision": "excluded",
+      "reason": "2016 年的舊版 parameter，已被 2018 與 2023 年版取代；PubMed 頁面亦僅有摘要，教學價值低。"
+    }
+  ]
+}

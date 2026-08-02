@@ -1,0 +1,516 @@
+{
+  "$schema": "../src/build/course.schema.json",
+  "site": {
+    "project": "advanced-thyroid-echo",
+    "name": "進階甲狀腺及頸部超音波",
+    "url": "https://advanced-thyroid-echo.pages.dev",
+    "locale": "zh-Hant",
+    "ogLocale": "zh_TW",
+    "brandIcon": "stethoscope",
+    "title": "進階甲狀腺及頸部超音波 — 給內分泌 Fellow 與專科醫師的 63 個判讀單元",
+    "description": "不是入門課。假設你已經會掃，這門課處理的是判讀落差：機器參數怎麼救回困難影像、ACR TI-RADS 與 ATA／EU／K-TIRADS 在同一顆結節上為什麼給出不同答案、頸部淋巴結與術後甲狀腺床怎麼追、副甲狀腺與甲狀腺外病灶怎麼鑑別。14 章、63 個單元，每個資源都標示分級、存取條件、授權與最後查核日期，指引不一致處以比較表呈現而不強迫選出唯一答案。",
+    "ogDescription": "給內分泌 fellow 與專科醫師的進階甲狀腺及頸部超音波課程：14 章、63 個單元，涵蓋掃描最佳化、風險分層系統比較、細針穿刺與介入、淋巴結分期、術後追蹤、副甲狀腺病灶與影像陷阱。所有資源標示證據等級、利益關係與查核日期。",
+    "keywords": [
+      "甲狀腺超音波",
+      "頸部超音波",
+      "ACR TI-RADS",
+      "ATA 指引",
+      "EU-TIRADS",
+      "K-TIRADS",
+      "細針穿刺",
+      "甲狀腺結節",
+      "頸部淋巴結",
+      "副甲狀腺",
+      "內分泌 fellow"
+    ],
+    "audience": "內分泌新陳代謝科 fellow、已取得專科資格想補強超音波判讀的醫師、執行甲狀腺結節評估與細針穿刺的臨床醫師、負責教學的臨床教師",
+    "about": [
+      "甲狀腺超音波",
+      "頸部超音波",
+      "超音波風險分層",
+      "細針穿刺與介入超音波",
+      "甲狀腺癌術後追蹤"
+    ],
+    "learningResourceType": [
+      "影音課程",
+      "病例演練",
+      "操作示範",
+      "指引比較",
+      "自我評量"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Fellow 進階課程",
+    "heading": "會掃之後，才是判讀真正開始的地方",
+    "lede": "十四個章節、63 個單元、{units} 個資源欄位，從機器參數最佳化一路帶到術後甲狀腺床與副甲狀腺鑑別，涵蓋 {problems} 個病例演練單元。每個單元都回答三件事：<strong>這個影像特徵在指引裡怎麼算</strong>、<strong>不同風險分層系統會不會給出不同答案</strong>，以及<strong>超音波在這個問題上能回答到哪裡為止</strong>。"
+  },
+  "ui": {
+    "searchPlaceholder": "搜尋單元、病例、影像特徵或疾病…",
+    "tabs": {
+      "course": "課程內容",
+      "player": "上課模式",
+      "stance": "這門課的立場"
+    },
+    "progressLabel": "學習進度",
+    "facetLabel": "依影像特徵／疾病篩選",
+    "assessmentLabel": "這個單元怎麼驗收",
+    "tightLabel": "最容易誤判的地方",
+    "weakLabel": "本單元必須練成的判讀能力",
+    "lessonLabel": "核心教材",
+    "drillEvidenceLabel": "這一類做法的實證",
+    "unitEvidenceLabel": "證據強度",
+    "missingTitle": "尚未找到合格資源",
+    "missingHint": "已搜尋過的來源與未納入原因見 note；留空比捏造連結誠實。",
+    "stats": [
+      {
+        "icon": "layers",
+        "field": "lesson_units",
+        "label": "個單元"
+      },
+      {
+        "icon": "clock",
+        "field": "duration",
+        "label": "核心教材時長"
+      },
+      {
+        "icon": "book-open",
+        "field": "drill_units",
+        "label": "個病例與示範資源"
+      },
+      {
+        "icon": "external-link",
+        "field": "external_slots",
+        "label": "個非 YouTube 學術來源"
+      },
+      {
+        "icon": "microscope",
+        "field": "evidence_checked",
+        "label": "題實證查核"
+      }
+    ],
+    "unitTypes": {
+      "scan": "掃描技術",
+      "anatomy": "解剖與分區",
+      "disease": "疾病影像",
+      "lexicon": "描述與分層",
+      "procedure": "介入操作",
+      "case": "病例演練",
+      "quality": "品質與報告",
+      "assessment": "評量與能力"
+    },
+    "evidenceRows": [
+      {
+        "field": "diagnostic_accuracy",
+        "label": "診斷準確度證據"
+      },
+      {
+        "field": "clinical_benefit",
+        "label": "臨床效益證據"
+      },
+      {
+        "field": "guideline_status",
+        "label": "指引收錄狀態"
+      },
+      {
+        "field": "interobserver",
+        "label": "判讀者間一致性"
+      },
+      {
+        "field": "discordance",
+        "label": "指引之間的不一致"
+      },
+      {
+        "field": "summary",
+        "label": "摘要"
+      },
+      {
+        "field": "red_flags",
+        "label": "臨床警訊",
+        "type": "flags"
+      },
+      {
+        "field": "caveats",
+        "label": "課程須誠實告知"
+      }
+    ],
+    "problemType": "case",
+    "facetClear": "清除特徵篩選",
+    "facetPrefix": "特徵",
+    "emptyTitle": "找不到符合的內容",
+    "emptyHint": "換個關鍵字，或清除影像特徵篩選再試一次。",
+    "playlistSearch": "搜尋資源清單…",
+    "prevLabel": "上一個資源",
+    "nextLabel": "下一個資源",
+    "doneLabel": "完成",
+    "openExternal": "在原網站開啟",
+    "moreLabel": "選材理由與驗收方式",
+    "discussLabel": "討論",
+    "discussNote": "留言會同步到 GitHub Discussions，需要 GitHub 帳號才能發言。每個資源各有一串討論。",
+    "filterAll": "全部",
+    "lessonNoun": "個核心教材",
+    "drillNoun": "個病例與示範資源",
+    "source": {
+      "openLabel": "在原網站開啟",
+      "externalNote": "這個來源不允許站內嵌入，本站不下載也不重製。以下是連出去之前該知道的事。",
+      "publisherLabel": "來源",
+      "accessLabel": "存取",
+      "licenseLabel": "授權",
+      "verifiedLabel": "最後查核",
+      "coiLabel": "利益關係",
+      "timestampLabel": "建議觀看區間",
+      "accessNote": "這個來源需要註冊、訂閱或機構帳號才能完整取用。",
+      "providers": {
+        "vimeo": "Vimeo",
+        "society": "專業學會",
+        "journal": "期刊",
+        "hospital": "醫院／學術機構",
+        "case_library": "病例圖譜",
+        "external": "外部網站"
+      },
+      "sourceTypes": {
+        "video": "影片",
+        "webinar": "線上研討會",
+        "case": "病例",
+        "atlas": "影像圖譜",
+        "guideline": "指引原文",
+        "article": "文獻",
+        "quiz": "測驗"
+      },
+      "access": {
+        "open": "公開",
+        "registration": "需免費註冊",
+        "subscription": "需訂閱",
+        "institutional": "需機構帳號"
+      },
+      "tiers": {
+        "A": {
+          "label": "Tier A 核心",
+          "tone": "success",
+          "title": "正式學會、大學、醫學中心或公認專家；內容完整、影像清楚、與現行指引一致，可作為單元主要教材。"
+        },
+        "B": {
+          "label": "Tier B 病例",
+          "tone": "accent",
+          "title": "特殊或少見病例，影像價值高，但內容不夠完整或缺乏正式證據討論；僅作補充，不作唯一依據。"
+        },
+        "C": {
+          "label": "Tier C 示範",
+          "tone": "attention",
+          "title": "掃描、穿刺或機器操作示範，必須另外搭配正式文獻與安全說明。"
+        }
+      }
+    }
+  },
+  "kinds": [
+    {
+      "id": "case",
+      "label": "病例",
+      "tone": "accent"
+    },
+    {
+      "id": "procedure",
+      "label": "操作示範",
+      "tone": "danger"
+    },
+    {
+      "id": "atlas",
+      "label": "影像圖譜",
+      "tone": "success"
+    },
+    {
+      "id": "guideline",
+      "label": "指引原文",
+      "tone": "done"
+    },
+    {
+      "id": "lecture",
+      "label": "專題講座",
+      "tone": "neutral"
+    }
+  ],
+  "grades": [
+    {
+      "id": "guideline_supported",
+      "label": "指引明確建議",
+      "tone": "done"
+    },
+    {
+      "id": "strong",
+      "label": "證據充分",
+      "tone": "success"
+    },
+    {
+      "id": "moderate",
+      "label": "證據中等",
+      "tone": "accent"
+    },
+    {
+      "id": "limited",
+      "label": "證據有限",
+      "tone": "attention"
+    },
+    {
+      "id": "contested",
+      "label": "證據互斥",
+      "tone": "danger"
+    },
+    {
+      "id": "expert_consensus",
+      "label": "專家共識",
+      "tone": "neutral"
+    },
+    {
+      "id": "educational_demo_only",
+      "label": "僅供教學示範",
+      "tone": "neutral"
+    }
+  ],
+  "languages": {
+    "zh": "繁中",
+    "en": "English"
+  },
+  "taxonomy": {
+    "facets": "taxonomy.lexicon",
+    "categories": "taxonomy.resources"
+  },
+  "nav": [
+    {
+      "title": "準備與技術基礎",
+      "chapters": [
+        "CH0",
+        "CH1",
+        "CH2"
+      ]
+    },
+    {
+      "title": "疾病影像與風險分層",
+      "chapters": [
+        "CH3",
+        "CH4",
+        "CH6"
+      ]
+    },
+    {
+      "title": "介入、分期與追蹤",
+      "chapters": [
+        "CH5",
+        "CH7",
+        "CH8",
+        "CH9"
+      ]
+    },
+    {
+      "title": "特殊情境與能力驗證",
+      "chapters": [
+        "CH10",
+        "CH11",
+        "CH12",
+        "CH13"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "code": "CH0",
+      "title": "能力地圖、前測與查漏補缺",
+      "icon": "compass",
+      "source": "ch0",
+      "units": 3,
+      "drills": 8
+    },
+    {
+      "code": "CH1",
+      "title": "進階掃描技術與機器最佳化",
+      "icon": "sliders-horizontal",
+      "source": "ch1",
+      "units": 5,
+      "drills": 16
+    },
+    {
+      "code": "CH2",
+      "title": "正常解剖、變異與頸部分區",
+      "icon": "map",
+      "source": "ch2",
+      "units": 4,
+      "drills": 14
+    },
+    {
+      "code": "CH3",
+      "title": "瀰漫性甲狀腺疾病",
+      "icon": "waves",
+      "source": "ch3",
+      "units": 5,
+      "drills": 16
+    },
+    {
+      "code": "CH4",
+      "title": "結節描述語言與風險分層",
+      "icon": "ruler",
+      "source": "ch4",
+      "units": 6,
+      "drills": 20
+    },
+    {
+      "code": "CH5",
+      "title": "細針穿刺與介入超音波",
+      "icon": "syringe",
+      "source": "ch5",
+      "units": 5,
+      "drills": 18
+    },
+    {
+      "code": "CH6",
+      "title": "甲狀腺惡性腫瘤影像",
+      "icon": "biohazard",
+      "source": "ch6",
+      "units": 5,
+      "drills": 16
+    },
+    {
+      "code": "CH7",
+      "title": "頸部淋巴結與術前分期",
+      "icon": "network",
+      "source": "ch7",
+      "units": 4,
+      "drills": 14
+    },
+    {
+      "code": "CH8",
+      "title": "術後追蹤與復發",
+      "icon": "history",
+      "source": "ch8",
+      "units": 4,
+      "drills": 12
+    },
+    {
+      "code": "CH9",
+      "title": "副甲狀腺及甲狀腺外病灶",
+      "icon": "diamond",
+      "source": "ch9",
+      "units": 4,
+      "drills": 12
+    },
+    {
+      "code": "CH10",
+      "title": "特殊族群與特殊情境",
+      "icon": "users",
+      "source": "ch10",
+      "units": 4,
+      "drills": 10
+    },
+    {
+      "code": "CH11",
+      "title": "進階技術與新興議題",
+      "icon": "cpu",
+      "source": "ch11",
+      "units": 5,
+      "drills": 14
+    },
+    {
+      "code": "CH12",
+      "title": "高難度病例與影像陷阱",
+      "icon": "puzzle",
+      "source": "ch12",
+      "units": 5,
+      "drills": 16
+    },
+    {
+      "code": "CH13",
+      "title": "報告、品質保證與能力認證",
+      "icon": "clipboard-list",
+      "source": "ch13",
+      "units": 4,
+      "drills": 10
+    }
+  ],
+  "audit": {
+    "duration": {
+      "lesson": {
+        "min": "3:00",
+        "max": "1:30:00"
+      },
+      "drill": {
+        "min": "0:30",
+        "max": "1:00:00"
+      }
+    },
+    "driftSeconds": 45,
+    "minViews": 300,
+    "metaCoverage": 1,
+    "drillsPerUnit": {
+      "min": 1,
+      "max": 8
+    },
+    "maxSharedVideos": 30,
+    "requireAssessment": [
+      "scan",
+      "anatomy",
+      "disease",
+      "lexicon",
+      "procedure",
+      "case",
+      "quality",
+      "assessment"
+    ],
+    "minAssessmentChars": 80,
+    "minCitations": 2,
+    "allowMissingUrls": 12,
+    "requireSourceMetadata": true,
+    "verifyStaleDays": 180
+  },
+  "evidenceAlias": {},
+  "stance": {
+    "title": "這門課的立場",
+    "intro": "在開始之前，先把三件事講清楚：超音波在甲狀腺結節上到底能回答什麼、不同風險分層系統為什麼會在同一顆結節上吵架、以及這門課從公開資源策展而來這件事本身的限制。以下每一條都附原始文獻或指引連結，你可以自己去查。",
+    "verdicts": {},
+    "outroTitle": "所以這門課的定位是什麼？",
+    "outro": "超音波是<strong>分層工具，不是診斷工具</strong>。它能把一群結節分成「該穿刺」與「可以追蹤」，能標出可疑淋巴結的位置，能在術後區分疤痕與復發；它<strong>不能</strong>單獨確定組織型別，不能取代細胞學與病理，也不能取代完整的臨床判斷。這門課的目的是讓你在該停手的地方停手——減少不必要的穿刺、不必要的追蹤與不必要的手術——同時不漏掉真正需要處理的病灶。所有內容為醫學教育用途，不構成對特定病人的診療建議；當地的 credentialing、supervision 與感染控制規範，任何公開影音都不能取代。"
+  },
+  "landing": {
+    "howTitle": "怎麼用這門課",
+    "steps": [
+      {
+        "icon": "clipboard-check",
+        "title": "先做前測",
+        "body": "CH0 的影像前測會告訴你判讀落差在哪一章。這門課假設你已經會掃，基礎內容只用來查漏補缺，不是課程主體。"
+      },
+      {
+        "icon": "ruler",
+        "title": "用同一套語言描述",
+        "body": "每個單元都要求你用標準化 lexicon 寫出結構化描述，再分別套 ACR TI-RADS、ATA、EU-TIRADS 與 K-TIRADS，看四個系統會不會給出不同的穿刺建議。"
+      },
+      {
+        "icon": "microscope",
+        "title": "查得到來源才算數",
+        "body": "每個資源都標示分級、存取條件、授權與最後查核日期；每個論斷標示證據等級。找不到合格資源的地方誠實留空，並寫清楚查過什麼。"
+      }
+    ],
+    "stanceTitle": "開始之前，先知道這件事",
+    "stanceLede": "超音波能回答的問題比多數人以為的少，而不同指引之間的不一致比多數人以為的多。與其讓你在門診才發現，不如一開始就講清楚。",
+    "chaptersTitle": "十四個章節，從機器參數到能力認證",
+    "ctaTitle": "準備好就開始",
+    "ctaLede": "63 個單元、{videos} 個資源欄位，全部免費。進度存在你自己的瀏覽器裡，沒有帳號、沒有後端。"
+  },
+  "footer": {
+    "disclaimer": "<strong>免責聲明。</strong>本課程為<strong>醫學教育內容，不構成對特定病人的診斷或治療建議</strong>，也不能取代當地的 credentialing、supervision、感染控制與法規要求。課程中的「證據強度」註記附上原始文獻或指引連結，反映的是查核當下的狀態；指引會改版，請以最新原文為準。任何介入操作都應在具備資格的督導下、於符合規範的場域執行。",
+    "credits": "所有影音與病例為原機構、期刊或創作者的作品，版權歸原權利人所有。本站只做策展、查核與連結，不下載、不剪輯、不重新散布，也不代管任何患者影像。"
+  },
+  "llms": {
+    "summary": "這是一門免費的進階甲狀腺及頸部超音波線上課程，受眾是內分泌新陳代謝科 fellow 與已取得專科資格的醫師。14 章、63 個單元，涵蓋掃描最佳化、正常解剖與變異、瀰漫性甲狀腺疾病、結節描述語言與四大風險分層系統比較、細針穿刺與介入超音波、惡性腫瘤影像、頸部淋巴結分期、術後追蹤、副甲狀腺與甲狀腺外病灶、特殊族群、新興技術、高難度病例與報告品保，涵蓋 {problems} 個病例演練單元。所有資源皆為第三方學會、期刊、醫院或創作者的公開作品，本站僅提供策展與連結。",
+    "stanceIntro": "課程中 {evidence} 個主題經文獻與指引查核，結果照實呈現，包含對課程本身不利的部分：",
+    "stanceConclusion": "簡言之：超音波是分層工具而非診斷工具；不同 TI-RADS 系統在同一顆結節上可能給出不同的穿刺建議，課程以比較表呈現差異而不強迫選出唯一答案；elastography、CEUS 與 AI 的研究成果不等於標準照護。",
+    "disclaimer": "本課程為醫學教育內容，不構成對特定病人的診斷或治療建議，也不能取代當地的 credentialing、supervision 與感染控制規範。"
+  },
+  "discussions": {
+    "provider": "giscus",
+    "repo": "zinojeng/advanced-thyroid-echo",
+    "repoId": "R_kgDOTqnsYw",
+    "category": "General",
+    "categoryId": "DIC_kwDOTqnsY84DCfNG",
+    "mapping": "specific",
+    "termPrefix": "thyroid",
+    "lang": "zh-TW",
+    "reactions": true,
+    "inputPosition": "top"
+  }
+}

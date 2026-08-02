@@ -1,0 +1,437 @@
+{
+  "chapter": "CH6",
+  "title": "甲狀腺惡性腫瘤影像",
+  "units": [
+    {
+      "id": "ch6-u1",
+      "name": "典型乳突癌與重要變異型（tall-cell、hobnail、瀰漫硬化型）",
+      "type": "disease",
+      "assessment": "從自己單位病理已確診的甲狀腺乳突癌中挑 3 例 classical PTC 加 1 例 aggressive subtype（tall-cell、hobnail 或 diffuse sclerosing 擇一）。先蓋掉病理報告，只看術前超音波，逐例寫下 composition、echogenicity、shape、margin、echogenic foci 五項描述與 ACR TI-RADS (2017) 分級；再掀開病理對照，統計你有幾例把 aggressive subtype 判成與 classical PTC 完全相同的分級。最後寫一段 150 字內的結論：這幾個變異型在你手上的影像有沒有任何可重複的區辨特徵；若沒有，你打算用哪些非影像線索（生長速度、頸部淋巴結分布、聲帶功能、家族史）補上這個缺口。",
+      "tight": [
+        "把 hypoechoic + 微鈣化直接當成 classical PTC。髓質癌、原發性淋巴瘤、轉移癌與 tall-cell／hobnail 變異型都可以長出幾乎一樣的影像——超音波可以改變惡性機率、可以指引穿刺位置，但不能單獨決定組織型別。",
+        "把 colloid 的 comet-tail artifact、壞死或包膜的粗鈣化邊緣、後方混響雜訊，一律當成 psammoma body 微鈣化，直接把 ACR TI-RADS (2017) 的 echogenic foci 分數往上加。",
+        "瀰漫硬化型只看到單葉滿佈『暴風雪』微鈣化、卻找不到界線清楚的結節，就判成慢性淋巴球性甲狀腺炎的鈣化而不安排穿刺。",
+        "hobnail 變異型可以是囊性為主、內有分隔與壁上實質成分，看起來像退化性膠質囊腫；用『囊性成分多 ＝ 良性』這條捷徑會整例漏掉。"
+      ],
+      "weak": [
+        "在同一顆結節上分清 punctate echogenic foci、comet-tail artifact 與粗鈣化，並說得出你的判斷依據（有無後方聲影、大小、分布位置、是否隨切面消失）。",
+        "看到單葉瀰漫微鈣化加背景不均質時，能主動把 diffuse sclerosing variant PTC 列入鑑別診斷，並延伸掃描側頸 II–V 區淋巴結。",
+        "能對囊性為主的結節做出結構化描述，說出哪些特徵（壁上實質成分、分隔內血流、實質部分的微鈣化）會讓你不接受『良性囊腫』這個結論。",
+        "能用一句話向臨床同事說明超音波的能與不能：它能分層風險與導引穿刺，不能指定亞型，變異型的最終判定一定要回到病理。"
+      ],
+      "lesson": {
+        "title": "Intranodular echogenic figures - videolecture",
+        "channel": "Tamas Solymosi",
+        "url": "https://www.youtube.com/watch?v=jMOzoOn2o0E",
+        "duration": "35:44",
+        "why": "乳突癌最被依賴、也最常被過度解讀的單一特徵就是「微鈣化」。這堂 ETA 超音波課程講者的專題講座，逐一拆解 psammoma body 型微鈣化與 colloid comet-tail、包膜鈣化、壞死鈣化的影像差別，直接補上「看到亮點就往 PTC 判」這個判讀落差；影片並附 thyrosite.com 對應章節可回查病理。",
+        "tier": "A",
+        "source_type": "video",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "本週病例：ACR TI-RADS 5 的乳突癌",
+          "en": "Case of the Week: TI-RADS 5 Papillary Thyroid Carcinoma",
+          "kind": "case",
+          "target": "把一顆典型 classical PTC 的五項 ACR TI-RADS (2017) 特徵一次看齊：實質、明顯低回音、taller-than-wide、邊緣不規則、punctate echogenic foci。這是本章其他所有比較的基準線。",
+          "dose": "先暫停在影像出現後的前 30 秒，自己完成五項評分並算出總分與建議，再往下看解答。若你的分數與解答差 2 分以上，回頭確認差在哪一項描述語言。",
+          "title": "Case of the Week: TI-RADS 5 Papillary Thyroid Carcinoma",
+          "channel": "RSNA Case Collection",
+          "url": "https://www.youtube.com/watch?v=yfqRBdw39tI",
+          "duration": "3:07",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 RSNA Case Collection，本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "Tall-cell 變異型乳突癌病例",
+          "en": "Tall cell variant of papillary carcinoma. Other rare tumors - case 1",
+          "kind": "case",
+          "target": "看清楚 tall-cell 變異型在超音波上沒有專屬特徵：它就是一顆大的、低回音、邊緣不規則的結節，和 classical PTC 無法區分。學員要能說出「這例我不可能靠超音波叫出 tall-cell」。",
+          "dose": "先只看影像不看標題，寫下你的 ACR TI-RADS (2017) 分級與鑑別診斷排序，再打開影片說明中的 thyrosite.com 完整病例（含臨床、細胞學與組織學）核對。整段只有 33 秒，建議重播三次分別看 composition、margin、echogenic foci。",
+          "title": "Tall cell variant of papillary carcinoma. Other rare tumors - case 1",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=xhUfvz0uRbM",
+          "duration": "0:33",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "瀰漫硬化型乳突癌的超音波與病理對照（初步研究）",
+          "en": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma with histopathological correlation: a preliminary study",
+          "kind": "case",
+          "target": "認識瀰漫硬化型的兩種呈現：整葉瀰漫微鈣化的「snowstorm」型，以及界線模糊、微鈣化密集的低回音結節型；並理解為什麼這型常合併背景不均質與側頸淋巴結轉移，容易被當成慢性甲狀腺炎。",
+          "dose": "重點讀 Results 的超音波特徵表與對應的病理圖。讀完後回自己的 PACS 找 3 例被報成「慢性甲狀腺炎合併鈣化」的個案，重新確認鈣化是否侷限單葉、有無合併異常淋巴結。",
+          "title": "Sonographic characteristics of diffuse sclerosing variant of papillary thyroid carcinoma with histopathological correlation: a preliminary study",
+          "channel": "Orphanet Journal of Rare Diseases (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10967076/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "Hobnail 變異型乳突癌的超音波表現（病例報告）",
+          "en": "Sonographic appearances of hobnail papillary thyroid carcinoma: A case report of a rare tumour",
+          "kind": "case",
+          "target": "看一個以囊性為主、有可動內部回音、分隔帶血流、壁上實質成分的病灶，最後病理是侵襲性的 hobnail 變異型。目的是打掉「囊性成分多就安全」的捷徑。",
+          "dose": "讀完影像描述後，回頭檢查自己最近 5 例判為「良性囊性結節、不需穿刺」的個案：有沒有壁上實質成分？分隔內有沒有血流？若有，你的處置會不會改變。",
+          "title": "Sonographic appearances of hobnail papillary thyroid carcinoma: A case report of a rare tumour",
+          "channel": "Ultrasound: Journal of the British Medical Ultrasound Society (2021)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9058386/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "授權狀況未確認（PMC 全文可讀，頁面未標示 Creative Commons），僅連結不重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch6-u2",
+      "name": "濾泡型病變與濾泡癌：超音波的極限",
+      "type": "disease",
+      "assessment": "調出 10 例細胞學為 Bethesda III 或 IV、最後有手術病理的個案（含 follicular adenoma、follicular carcinoma、follicular variant PTC 與 NIFTP）。蓋住病理，逐例寫下 ACR TI-RADS (2017) 與 K-TIRADS 2021 分級，並各自標注你認為的良惡性方向與理由。掀開病理後，做兩件事：一是算出你的分級與最終病理的一致率；二是逐例寫下哪一個影像特徵誤導了你。最後用 200 字回答：在你的實務裡，超音波對濾泡型病變到底提供了什麼（是否該手術？切多大？追蹤間隔？），以及哪些決策你其實是靠細胞學、分子檢測或臨床參數而不是靠影像做的。",
+      "tight": [
+        "把「這顆看起來很像濾泡腺瘤」當成可以不手術的理由。超音波分不出 follicular adenoma 與 follicular carcinoma——兩者的差別在包膜與血管侵犯，是顯微鏡下的定義，不是影像上的定義；同理也不能靠超音波宣稱某顆是 NIFTP。",
+        "把等回音、有完整 halo、無微鈣化的結節自動歸為低風險，忘記濾泡癌本來就常長成這個樣子，而 ACR TI-RADS 這類系統的敏感度主要是為乳突癌調出來的。",
+        "反過來把所有 Bethesda IV 都當成惡性，用影像去「補強」開刀的決定，造成過度手術。",
+        "把 follicular variant PTC 與 NIFTP 混為一談：NIFTP 是有包膜、非侵襲性的濾泡型病變，2017 年後已不算癌；用舊術語溝通會直接影響病人被建議的手術範圍與後續追蹤。"
+      ],
+      "weak": [
+        "能對一顆濾泡型結節寫出誠實的報告語言：描述特徵、給出風險分層，但不對亞型下結論，也不暗示可以取代病理。",
+        "能說出哪幾個特徵在文獻上與濾泡癌相關（腫瘤突出於腺體輪廓、微鈣化或混合型鈣化、邊緣不規則、明顯低回音、形狀不規則），以及這些特徵的效應量有多小、為什麼不足以單獨決策。",
+        "能在門診用一段話向病人解釋：細針穿刺報「濾泡性腫瘤」時，為什麼超音波再掃幾次也給不出答案。",
+        "能正確使用 NIFTP 這個名詞，並知道它對手術範圍與 radioiodine 決策的影響。"
+      ],
+      "lesson": {
+        "title": "Do Ultrasound Patterns Predict Thyroid Cancer? with Dr. Linwah Yip",
+        "channel": "THANC Foundation",
+        "url": "https://www.youtube.com/watch?v=-Cb2aEnaJCg",
+        "duration": "59:52",
+        "why": "這場 webinar 直接處理本單元的核心問題：對細胞學不確定（Bethesda III／IV，也就是濾泡型病變的大宗）的結節，超音波型態與臨床參數到底能不能改變分子檢測給出的惡性機率。Linwah Yip 報告資料、Erik Alexander 提出對立觀點與 Q&A，是「超音波在濾泡型病變上的極限」最完整的一次公開辯論。",
+        "tier": "A",
+        "source_type": "webinar",
+        "provider": "youtube",
+        "access": "open",
+        "license": "版權歸 THANC Foundation，本站僅連結，未下載或重製",
+        "last_verified": "2026-08-02",
+        "timestamps": [
+          {"at": "02:13", "note": "Linwah Yip 報告：超音波型態與臨床參數對 indeterminate cytology 的加值"},
+          {"at": "22:50", "note": "Erik Alexander 的討論與不同觀點"},
+          {"at": "37:33", "note": "Q&A：實際門診怎麼用（或不用）超音波做決策"}
+        ]
+      },
+      "drills": [
+        {
+          "name": "區辨濾泡癌與濾泡腺瘤的超音波特徵：統合分析",
+          "en": "Sonographic Features Differentiating Follicular Thyroid Cancer from Follicular Adenoma – A Meta-Analysis",
+          "kind": "lecture",
+          "target": "看清楚「有統計顯著」不等於「臨床可用」。這篇統合分析列出與濾泡癌相關的超音波特徵及其效應量，是你在報告裡拒絕下亞型結論時最好的引用依據。",
+          "dose": "只讀 forest plot 與各特徵的 pooled sensitivity／specificity。讀完後挑出兩個你原本以為「很有用」的特徵，寫下它們實際的敏感度與特異度數字，貼在自己的判讀桌上。",
+          "title": "Sonographic Features Differentiating Follicular Thyroid Cancer from Follicular Adenoma–A Meta-Analysis",
+          "channel": "Cancers (2021)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7956257/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "濾泡癌病例（合併 Graves' disease）",
+          "en": "Follicular carcinoma - case 11",
+          "kind": "case",
+          "target": "一顆長在 Graves' disease 背景上的濾泡癌。要看出：它沒有任何乳突癌型的特徵，用 ACR TI-RADS (2017) 掃出來的分數不高——這正是超音波在濾泡型病變上失效的樣子。",
+          "dose": "先自己判讀 42 秒的影像並寫下分級，再打開影片說明連結的 thyrosite.com 完整病例對照臨床、細胞學與組織學。接著到同一頻道找「Follicular adenoma - case 14」自己重做一次判讀，比較兩例的描述差在哪裡——多數人會發現差不出來。",
+          "title": "Follicular carcinoma - case 11",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=pfqHaDS56Z4",
+          "duration": "0:42",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "NIFTP：臨床病理特徵與術後照護",
+          "en": "NIFTP: Clinicopathologic Traits & Post-Surgery Care with Dr. Taneja",
+          "kind": "lecture",
+          "target": "把 NIFTP 的定義（有包膜、非侵襲性、具乳突樣核特徵的濾泡型腫瘤）與它帶來的名詞改變弄清楚，並理解為什麼這個改名會影響手術範圍、radioiodine 與追蹤強度——以及為什麼超音波在術前完全無法預測它。",
+          "dose": "重點在前半段的定義與診斷標準，以及後半段的術後追蹤建議。看完後，檢查自己科內衛教與報告範本裡是否還在用「follicular variant PTC」指稱這類病灶。",
+          "title": "NIFTP: Clinicopathologic Traits & Post-Surgery Care with Dr. Taneja",
+          "channel": "THANC Foundation",
+          "url": "https://www.youtube.com/watch?v=cLY_-y82-sQ",
+          "duration": "1:02:21",
+          "tier": "A",
+          "source_type": "webinar",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸 THANC Foundation，本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch6-u3",
+      "name": "髓質癌與低分化癌",
+      "type": "disease",
+      "assessment": "回顧自己單位近三年所有髓質癌（MTC）個案的術前超音波報告，逐例回答四件事：一、當時的 ACR TI-RADS (2017) 分級是多少？二、報告有沒有寫出「建議檢驗 calcitonin」或把 MTC 列入鑑別診斷？三、有沒有同時評估中央區與側頸淋巴結？四、若當時分級為 TR3 以下，是什麼影像特徵讓你低估了它。若單位病例不足 3 例，改用本單元提供的病例影像與文獻圖表完成同樣的四題。最後寫一份 150 字的科內備忘：在什麼情境下，你會在超音波報告裡主動建議加驗 calcitonin。",
+      "tight": [
+        "看到 hypoechoic、實質、有微鈣化就寫「疑似乳突癌」——髓質癌可以完全長成這個樣子，超音波沒有辦法把它和乳突癌分開；反過來也有相當比例的髓質癌在超音波上看起來不夠可疑而被低估。",
+        "忘記絕大多數風險分層系統（ACR TI-RADS 2017、K-TIRADS 2021、ATA 2015、EU-TIRADS 2017）都是針對乳突癌調校出來的，直接把它們的穿刺門檻套用在髓質癌，會系統性地漏掉一部分病例。",
+        "把髓質癌內的粗顆粒鈣化（常較大、較粗、可有後方聲影）與乳突癌的 psammoma 型微鈣化混為一談，因而對鈣化型態的鑑別價值產生錯誤的信心。",
+        "低分化癌只當成「一顆比較大的癌」，忽略它常表現為快速長大、界線部分模糊、內部壞死與明顯異質的實質腫塊，需要更快的處置節奏而不是常規追蹤。"
+      ],
+      "weak": [
+        "能在超音波報告裡明確寫出「本次影像無法區分乳突癌與髓質癌」，並在適當情境建議加驗 calcitonin 或做細胞學 calcitonin 沖洗液。",
+        "能同時評估中央區（VI 區）與側頸，因為髓質癌在診斷時的淋巴結轉移率高，術前分期直接影響手術範圍。",
+        "能描述低分化癌的影像節奏：以「這顆多久前還沒有／多久內長多大」作為判讀的一部分，而不只描述靜態特徵。",
+        "能說明為什麼髓質癌在多數研究中被三大 TI-RADS 系統評為高風險、診斷效能卻只是中等——高分級不代表能指認型別。"
+      ],
+      "lesson": {
+        "title": "Ultrasound features of medullary thyroid cancer as predictors of biological behavior",
+        "channel": "Cancer Imaging (2021)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8033672/",
+        "why": "這篇把髓質癌分成「超音波看起來就惡性」與「超音波不夠可疑」兩群，並把影像表現連到生物行為與預後，正面回答本單元最重要的判讀落差：為什麼有相當一部分髓質癌在標準風險分層下會被低估，以及看到什麼樣的影像該提高警覺。附有超音波圖與量化資料，可直接當閱讀教材。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "open",
+        "license": "CC BY 4.0（開放取用，本站僅連結）",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "髓質癌病例（76 歲女性，新發現結節）",
+          "en": "Medullary carcinoma - case 1",
+          "kind": "case",
+          "target": "把一例病理確診的髓質癌當成盲測：學員絕大多數會判成乳突癌。目的就是親身體驗「超音波不能指定組織型別」這句話。",
+          "dose": "先關掉標題只看影像，寫下 ACR TI-RADS (2017) 分級與你的第一鑑別診斷；再打開影片說明中的 thyrosite.com 完整病例（含觸診、TSH、細胞學與組織學）核對。若你第一個想到的是乳突癌，那正是本單元要留下的印象。",
+          "title": "Medullary carcinoma - case 1",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=FDkhyjQOZOo",
+          "duration": "1:19",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "修正版 TI-RADS 用於髓質癌診斷的效能",
+          "en": "The application value of modified thyroid imaging report and data system in diagnosing medullary thyroid carcinoma",
+          "kind": "lecture",
+          "target": "看到量化證據：現行以乳突癌為主體設計的 TI-RADS 在髓質癌上的診斷效能只是中等，需要修正參數或另建系統。這是「不要把單一 TI-RADS 當成全球唯一標準」在本章的具體版本。",
+          "dose": "重點讀方法段落中修正了哪些參數，以及結果段落的 ROC 比較。讀完後回答一句話：你科內的報告模板要不要加一行「若臨床懷疑 MTC，影像分級不足以排除」。",
+          "title": "The application value of modified thyroid imaging report and data system in diagnosing medullary thyroid carcinoma",
+          "channel": "Cancer Medicine (2019)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6601574/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "低分化（insular）癌病例（25 歲產後女性）",
+          "en": "Poorly differentiated, inzular carcinoma. Other rare tumors - case 4",
+          "kind": "case",
+          "target": "看低分化癌的影像節奏與型態：一顆產後三個月才被發現的結節，體積大、內部異質。重點在建立「快速長大的實質腫塊要縮短決策時間」這個反射，而不是背特徵表。",
+          "dose": "看完 45 秒影像後，先寫下你會在幾天內安排什麼（穿刺？core biopsy？頸部 CT？喉鏡？），再打開說明中的 thyrosite.com 完整病例核對臨床經過與組織學。注意影片標題的 inzular 是匈牙利語拼法，即 insular carcinoma。",
+          "title": "Poorly differentiated, inzular carcinoma. Other rare tumors - case 4",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=SfSqzQamHlk",
+          "duration": "0:45",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch6-u4",
+      "name": "未分化癌、原發性甲狀腺淋巴瘤與轉移到甲狀腺的腫瘤",
+      "type": "disease",
+      "assessment": "寫一份自己科內可以直接貼在超音波室牆上的一頁流程：「數週內快速長大的甲狀腺腫塊」該怎麼跑。內容必須包含：一、你會在超音波上記錄哪些欄位（大小與生長速率、是否跨越包膜、氣管與食道位置、頸動脈與內頸靜脈是否被包繞或有瘤栓、淋巴結分布）；二、遇到背景是慢性淋巴球性甲狀腺炎、病灶極度低回音且後方回音增強時，你的鑑別順序與下一步；三、什麼情況下你會直接跳過細針穿刺改做粗針切片，理由寫清楚；四、什麼情況下你會主動去問其他器官原發癌病史。完成後找一位同事互審，記錄你們意見不同的兩點。",
+      "tight": [
+        "把「快速長大的甲狀腺腫塊」自動當成未分化癌。原發性甲狀腺淋巴瘤與轉移到甲狀腺的腫瘤可以有非常相似的影像，超音波無法把這三者分開，處置卻完全不同——淋巴瘤多半不需要大手術。",
+        "淋巴瘤的極度低回音病灶常有後方回音增強、內部呈假囊狀，容易被誤讀為囊性或膿瘍；又因為七到九成合併慢性淋巴球性甲狀腺炎，很容易被當成「甲狀腺炎的不均質背景」而繼續追蹤。",
+        "遇到這類病灶只送細針穿刺。細胞學對未分化癌與淋巴瘤常常不足以分型（淋巴瘤需要流式細胞儀或組織架構），延誤在等第二次穿刺的時間裡。",
+        "看到甲狀腺內單發或多發低回音結節就當成原發癌，沒有回頭問腎細胞癌、乳癌、肺癌、大腸癌、黑色素瘤等病史——轉移到甲狀腺的影像特徵和原發癌高度重疊。"
+      ],
+      "weak": [
+        "能在報告裡描述侵犯範圍而不是只描述結節：與氣管、食道、喉返神經走行區、頸動脈鞘的關係，以及內頸靜脈有無瘤栓。",
+        "看到背景為慢性淋巴球性甲狀腺炎、單側不對稱腫大、極度低回音合併後方回音增強時，能把原發性甲狀腺淋巴瘤放進前兩名鑑別並改變取檢方式。",
+        "能判斷什麼時候該把取檢升級為粗針切片或開放式切片，並在報告與臨床溝通中明確寫出理由。",
+        "能在看到甲狀腺內非典型病灶時主動追問其他器官的癌症病史，並知道轉移到甲狀腺以腎、乳房、肺最常見。"
+      ],
+      "lesson": {
+        "title": "Anaplastic Thyroid Cancer: Ultrasonographic Findings and the Role of Ultrasonography-Guided Fine Needle Aspiration Biopsy",
+        "channel": "Yonsei Medical Journal (2013)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3809886/",
+        "why": "以一組經病理確診的未分化癌逐項列出超音波特徵（實質、明顯低回音、邊緣不規則、內部鈣化、wider-than-tall、頸部淋巴結侵犯比例），並且正面討論超音波導引細針穿刺在這類腫瘤上的診斷侷限與何時該改做其他取檢。這正是本單元最需要的兩件事：影像描述語言，以及對取檢方式的判斷。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "open",
+        "license": "CC BY-NC 3.0（開放取用，本站僅連結）",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "未分化癌病例（75 歲女性，兩個月內急速增大）",
+          "en": "Anaplastic thyroid carcinoma - case 10",
+          "kind": "case",
+          "target": "看未分化癌在動態掃描下的樣子：大範圍取代腺體、界線與周邊組織分不開。重點是把「兩個月內急速增大」這個病史與影像綁在一起讀。",
+          "dose": "看完 66 秒影像，先寫下你會在 48 小時內完成哪些事，再打開影片說明中的 thyrosite.com 完整病例核對臨床經過與組織學。注意這位病人 50 年前曾因良性結節性甲狀腺腫手術——長期存在的腺腫突然變化是重要線索。",
+          "title": "Anaplastic thyroid carcinoma - case 10",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=8SWBFkaE3bM",
+          "duration": "1:06",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "原發性甲狀腺瀰漫大 B 細胞淋巴瘤病例",
+          "en": "A large B-cell lymphoma. Thyroid lymphomas - case 8",
+          "kind": "case",
+          "target": "認出原發性甲狀腺淋巴瘤的典型影像：單側大範圍、極度低回音、後方回音增強、內部呈假囊狀。學員要能說出「這不是囊腫，也不只是甲狀腺炎」。",
+          "dose": "掃描時把 gain 調高再看一次是本題的重點——極度低回音病灶在低 gain 下最容易被誤認為囊性。看完影像後打開影片說明中的 thyrosite.com 完整病例，特別注意取檢方式與診斷所需的檢體型態。",
+          "title": "A large B-cell lymphoma. Thyroid lymphomas - case 8",
+          "channel": "Tamas Solymosi",
+          "url": "https://www.youtube.com/watch?v=boO1hAu3IoU",
+          "duration": "1:05",
+          "tier": "B",
+          "source_type": "case",
+          "provider": "youtube",
+          "access": "open",
+          "license": "版權歸原頻道（Tamas Solymosi），本站僅連結，未下載或重製",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "轉移到甲狀腺的腫瘤：超音波特徵與導引穿刺",
+          "en": "Sonographic features and ultrasonography-guided fine-needle aspiration of metastases to the thyroid gland",
+          "kind": "case",
+          "target": "建立「甲狀腺內結節不一定是甲狀腺原發」的反射。看轉移灶的分布型態（單發、多發、瀰漫）與特徵和原發癌的重疊程度，並理解導引穿刺在這個情境的角色與限制。",
+          "dose": "先看圖組自己判讀再讀圖說。讀完後檢查自己的超音波申請單流程：有沒有欄位可以讓臨床端註明「已知他處惡性腫瘤病史」；若沒有，這就是本題要改的東西。",
+          "title": "Sonographic features and ultrasonography-guided fine-needle aspiration of metastases to the thyroid gland",
+          "channel": "Ultrasonography（大韓超音波醫學會，2014）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4058967/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY-NC 3.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "id": "ch6-u5",
+      "name": "罕見型別與 ultrasound–pathology correlation",
+      "type": "disease",
+      "assessment": "做一次自己的 ultrasound–pathology correlation 稽核：抽 15 例近一年有手術病理的甲狀腺惡性腫瘤，建一張表，欄位為「術前超音波描述與分級」「術前報告中寫出的鑑別診斷」「最終病理型別與亞型」「術前超音波偵測到的病灶數／病理上的病灶數」「是否雙側」。完成後計算兩個數字：一、你的術前報告有多少比例明確寫出了組織型別的猜測，其中猜對幾例；二、超音波低估病灶數（單側報告但病理為多發或雙側）的比例。最後寫 200 字結論，說明你打算怎麼修改報告用語，讓它不再暗示超音波能決定亞型，同時仍然把該給外科的分期資訊講清楚。",
+      "tight": [
+        "在報告裡寫「符合乳突癌」「typical for PTC」這類語句。本章從頭到尾的原則是：超音波不得被用來單獨確定組織型別——罕見型別（CASTLE、cribriform-morular）與常見型別在影像上高度重疊，寫死型別會誤導後續處置。",
+        "把 cribriform-morular thyroid carcinoma 當成一般結節。它常常影像特徵不夠可疑（邊緣平滑、有後方回音增強、少有微鈣化、血流不豐富），依風險分層根本達不到穿刺門檻；漏掉它同時也漏掉背後可能的家族性腺瘤性息肉症（FAP），影響的是整個家族。",
+        "intrathyroidal thymic carcinoma／CASTLE 好發於下極、常是分葉狀實質低回音、血流中等、通常沒有鈣化，容易被歸為一般可疑結節而未列入鑑別；它的預後與處置和一般甲狀腺癌不同。",
+        "把術前超音波看到一顆就當成單一病灶。文獻反覆顯示術前影像會低估多發與對側隱匿病灶，把「超音波沒看到」講成「病人沒有」，會直接影響手術範圍的討論。"
+      ],
+      "weak": [
+        "能把報告語言從「符合某某癌」改成「特徵符合高風險，建議穿刺；組織型別需病理確認」，並在教學與科內查核中堅持這個用法。",
+        "看到一顆特徵不夠可疑、卻在年輕女性身上、或伴隨家族大腸息肉病史的結節時，能想到 cribriform-morular thyroid carcinoma 與 FAP 的關聯並主動追問家族史。",
+        "能對甲狀腺下極的分葉狀無鈣化低回音實質腫塊列出包含 CASTLE 在內的鑑別診斷，而不只是寫「疑似惡性結節」。",
+        "能在術前報告中誠實表達多發性與側性的不確定：明確寫出已偵測到的病灶數與位置，同時說明超音波對隱匿小病灶的偵測有其上限。"
+      ],
+      "lesson": {
+        "title": "Comparison of ultrasound findings of papillary thyroid carcinoma subtypes based on the 2022 WHO classification of thyroid neoplasms",
+        "channel": "Frontiers in Endocrinology (2024)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11349574/",
+        "why": "這是本章 ultrasound–pathology correlation 的骨幹：以 2022 年 WHO 第五版分類為病理端的參照，逐一比較各乳突癌亞型的超音波表現，讓學員親眼看到不同亞型之間的影像重疊有多大。它同時把本章的鐵則量化了——超音波可以描述、可以分層，但不能指定亞型。",
+        "tier": "A",
+        "source_type": "article",
+        "provider": "journal",
+        "access": "open",
+        "license": "CC BY 4.0（開放取用，本站僅連結）",
+        "last_verified": "2026-08-02"
+      },
+      "drills": [
+        {
+          "name": "甲狀腺內胸腺癌（CASTLE）病例報告",
+          "en": "Navigating the rare: a case report of intrathyroidal thymic carcinoma",
+          "kind": "case",
+          "target": "認識 intrathyroidal thymic carcinoma／CASTLE 的影像輪廓（好發下極、分葉狀實質低回音、血流中等、通常無鈣化）與它為什麼在細胞學上也常被誤判，需要 CD5 等免疫組織化學才能確立。",
+          "dose": "讀影像描述與病理免疫染色兩段就好。讀完後在自己的鑑別診斷清單上加一行：「甲狀腺下極、分葉狀、無鈣化的實質腫塊——考慮 CASTLE，需病理與 CD5 確認」。",
+          "title": "Navigating the rare: a case report of intrathyroidal thymic carcinoma",
+          "channel": "Gland Surgery (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12004328/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY-NC-ND 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "沒有結節的 cribriform-morular 甲狀腺癌病例",
+          "en": "A Case of Cribriform-Morular Thyroid Carcinoma Presenting Without Thyroid Nodule",
+          "kind": "case",
+          "target": "看一個連結節都不明顯的 cribriform-morular thyroid carcinoma。這一題要留下的不是影像特徵，而是一個臨床反射：這個型別的影像常常不夠可疑，診斷線索往往來自家族性腺瘤性息肉症（FAP）的病史而不是超音波。",
+          "dose": "讀完病例後，去確認自己的甲狀腺結節問診表有沒有問到大腸息肉／大腸癌家族史。若沒有，這就是本題的具體產出。",
+          "title": "A Case of Cribriform-Morular Thyroid Carcinoma Presenting Without Thyroid Nodule",
+          "channel": "JCEM Case Reports (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11025625/",
+          "tier": "B",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY-NC-ND 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        },
+        {
+          "name": "單側乳突癌的對側隱匿癌：回溯研究與統合分析",
+          "en": "Risk Factors for Contralateral Occult Carcinoma in Patients With Unilateral Papillary Thyroid Carcinoma: A Retrospective Study and Meta-Analysis",
+          "kind": "lecture",
+          "target": "拿到 multifocality／bilaterality 的量化證據：術前超音波判為單側的病人，仍有可觀比例在病理上發現對側隱匿癌，以及哪些因子會提高這個機率。這是「超音波沒看到不等於沒有」在本章的收尾。",
+          "dose": "讀 meta-analysis 的 pooled 比率與危險因子表。讀完後把你自己的三份術前報告翻出來，檢查有沒有寫成「對側正常」；若有，改寫成「本次檢查對側未見可疑病灶」，並比較兩種寫法對外科決策的影響。",
+          "title": "Risk Factors for Contralateral Occult Carcinoma in Patients With Unilateral Papillary Thyroid Carcinoma: A Retrospective Study and Meta-Analysis",
+          "channel": "Frontiers in Endocrinology (2021)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8310921/",
+          "tier": "A",
+          "source_type": "article",
+          "provider": "journal",
+          "access": "open",
+          "license": "CC BY 4.0（開放取用，本站僅連結）",
+          "last_verified": "2026-08-02"
+        }
+      ]
+    }
+  ]
+}
