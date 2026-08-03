@@ -320,6 +320,13 @@ export function fitFrame() {
   // 分頁隱藏時 clientWidth/Height 是 0，算出來會把 --frame-w 寫成 0px。
   if (!stage.clientWidth || !stage.clientHeight) return;
 
+  // 窄螢幕是單頁捲動，stage 高度等於內容高度——拿它回推影片尺寸會變成
+  // 「影片越大 → stage 越高 → 影片再變大」的正回饋。那裡交給 CSS 的 max-width。
+  if (innerWidth <= 1012) {
+    frame.style.setProperty("--frame-w", "100%");
+    return;
+  }
+
   const gripH = $(".Player__vResizer")?.offsetHeight || 0;
   const room = stage.clientHeight - gripH - 12;
 

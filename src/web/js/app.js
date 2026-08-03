@@ -302,7 +302,21 @@ function playAt(i) {
     $("[data-list-label]").textContent = "顯示清單";
   }
   refreshPlaylist();
-  $(".PlaylistItem.is-playing")?.scrollIntoView({ block: "nearest" });
+  scrollActiveIntoList();
+}
+
+/** 把使用中的清單項目捲進視野——**只捲清單自己**。
+ *  scrollIntoView 會往上找最近的可捲祖先：桌機是清單本身（.Player__list 有自己的捲軸），
+ *  但窄螢幕改成單頁捲動之後，最近的可捲祖先變成整份文件，
+ *  於是一進上課模式就把整頁捲下去，影片被頂出視窗看不到。 */
+function scrollActiveIntoList() {
+  const el = $(".PlaylistItem.is-playing");
+  const list = $("#playlist");
+  if (!el || !list) return;
+  const top = el.offsetTop - list.offsetTop;
+  if (top < list.scrollTop || top + el.offsetHeight > list.scrollTop + list.clientHeight) {
+    list.scrollTop = top - list.clientHeight / 2 + el.offsetHeight / 2;
+  }
 }
 
 /* --- 事件 ---------------------------------------------------------------- */

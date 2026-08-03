@@ -329,10 +329,17 @@ body[data-tab="player"] {
 }
 
 @media (max-width: 1012px) {
-  /* 窄螢幕改上下堆疊：影片在上、清單在下，各自佔一段固定高度 */
+  /* 窄螢幕不要再用「整頁不捲動、三個固定高度的捲動區」那一套。
+     手機上那會互相搶高度：摘要照內容長高 → stage 吃掉整格 → 清單被壓成 0px →
+     捲動使用中的清單項目時把整個 .Player 捲走，影片就被頂出視窗
+     （實測 390px：清單列 0px、stage top = -119、影片只剩 85px 可見）。
+     改成單頁捲動：影片在上、摘要接著、清單自己有上限。 */
   .Player {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-rows: auto auto;
   }
 
   /* 上下堆疊時沒有左右欄可拖 */
@@ -341,20 +348,24 @@ body[data-tab="player"] {
   }
 
   .Player__stage {
-    grid-template-rows: auto auto;
     min-height: 0;
+    overflow: visible;
   }
 
   .Player__frame {
     max-width: calc(42dvh * 16 / 9);
   }
 
+  /* 單頁捲動時摘要不該再搶高度，也不需要自己的捲軸 */
   .Player__info {
+    flex: 0 0 auto;
+    min-height: 0;
     overflow: visible;
   }
 
   .Player__list {
     min-height: 200px;
+    max-height: 70dvh;
   }
 }
 
